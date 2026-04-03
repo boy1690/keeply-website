@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="ring" x1="80" y1="404" x2="434" y2="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4338CA"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="115" y1="171" x2="270" y2="82" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#FFB300"/>
+    </linearGradient>
+    <linearGradient id="doc-front" x1="166" y1="164" x2="308" y2="372" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5D54F6"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="doc-back" x1="208" y1="160" x2="364" y2="350" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9C98FF"/>
+      <stop offset="1" stop-color="#6F6AF0"/>
+    </linearGradient>
+    <filter id="soft-shadow" x="56" y="48" width="400" height="416" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#312E81" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#soft-shadow)">
+    <path d="M396 129C429 159 448 200 448 255C448 363 360 451 252 451C145 451 58 368 56 263C55 206 75 158 111 123" stroke="url(#ring)" stroke-width="44" stroke-linecap="round"/>
+    <path d="M111 123C145 91 190 72 239 72C253 72 265 73 278 76" stroke="url(#amber)" stroke-width="44" stroke-linecap="round"/>
+    <path d="M236 54L313 79L254 134L236 54Z" fill="url(#amber)"/>
+
+    <rect x="220" y="150" width="152" height="206" rx="32" fill="url(#doc-back)" opacity="0.48"/>
+    <path d="M306 150H372V213L306 150Z" fill="#E4E3FF" opacity="0.72"/>
+
+    <rect x="192" y="167" width="152" height="206" rx="32" fill="url(#doc-back)" opacity="0.72"/>
+    <path d="M278 167H344V230L278 167Z" fill="#E9E8FF" opacity="0.76"/>
+
+    <rect x="164" y="184" width="152" height="206" rx="32" fill="url(#doc-front)"/>
+    <path d="M250 184H316V247L250 184Z" fill="#BDBAFF" opacity="0.95"/>
+  </g>
+</svg>

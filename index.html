@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keeply — 你的檔案有故事。Keeply 記住全部。</title>
+  <meta name="description" content="讓非技術使用者以最簡單的方式管理檔案版本。免費下載，30 秒開始使用。" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              200: '#c7d2fe',
+              300: '#a5b4fc',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              800: '#3730a3',
+              900: '#312e81',
+              950: '#1e1b4b',
+            },
+            amber: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          },
+          fontFamily: {
+            sans: ['"M PLUS Rounded 1c"', '"Microsoft JhengHei"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- M PLUS Rounded 1c -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Smooth gradient animation */
+    @keyframes gradient-shift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+    .animate-gradient {
+      background-size: 200% 200%;
+      animation: gradient-shift 8s ease infinite;
+    }
+
+    /* Floating animation for cards */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+    .animate-float-delayed {
+      animation: float 6s ease-in-out 2s infinite;
+    }
+    .animate-float-delayed-2 {
+      animation: float 6s ease-in-out 4s infinite;
+    }
+
+    /* Subtle glow on hover */
+    .glow-hover:hover {
+      box-shadow: 0 0 40px rgba(79, 70, 229, 0.15);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+  <!-- ============================================ -->
+  <!-- NAVIGATION                                   -->
+  <!-- ============================================ -->
+  <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-lg border-b border-gray-100 z-50">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" class="w-9 h-9">
+          <defs>
+            <linearGradient id="ring" x1="80" y1="404" x2="434" y2="112" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#4338CA"/><stop offset="1" stop-color="#4F46E5"/>
+            </linearGradient>
+            <linearGradient id="amber" x1="115" y1="171" x2="270" y2="82" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#F59E0B"/><stop offset="1" stop-color="#FFB300"/>
+            </linearGradient>
+            <linearGradient id="doc-front" x1="166" y1="164" x2="308" y2="372" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#5D54F6"/><stop offset="1" stop-color="#4F46E5"/>
+            </linearGradient>
+            <linearGradient id="doc-back" x1="208" y1="160" x2="364" y2="350" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#9C98FF"/><stop offset="1" stop-color="#6F6AF0"/>
+            </linearGradient>
+          </defs>
+          <g>
+            <path d="M396 129C429 159 448 200 448 255C448 363 360 451 252 451C145 451 58 368 56 263C55 206 75 158 111 123" stroke="url(#ring)" stroke-width="44" stroke-linecap="round"/>
+            <path d="M111 123C145 91 190 72 239 72C253 72 265 73 278 76" stroke="url(#amber)" stroke-width="44" stroke-linecap="round"/>
+            <path d="M236 54L313 79L254 134L236 54Z" fill="url(#amber)"/>
+            <rect x="220" y="150" width="152" height="206" rx="32" fill="url(#doc-back)" opacity="0.48"/>
+            <rect x="192" y="167" width="152" height="206" rx="32" fill="url(#doc-back)" opacity="0.72"/>
+            <rect x="164" y="184" width="152" height="206" rx="32" fill="url(#doc-front)"/>
+            <path d="M250 184H316V247L250 184Z" fill="#BDBAFF" opacity="0.95"/>
+          </g>
+        </svg>
+        <span class="text-xl font-bold text-brand-700">Keeply</span>
+      </a>
+
+      <!-- Nav Links -->
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+        <a href="#features" class="hover:text-brand-600 transition-colors">功能</a>
+        <a href="#pricing" class="hover:text-brand-600 transition-colors">方案</a>
+        <a href="#" class="hover:text-brand-600 transition-colors">部落格</a>
+        <a href="#" class="hover:text-brand-600 transition-colors">文件</a>
+      </div>
+
+      <!-- CTA -->
+      <a href="#download" class="bg-brand-600 hover:bg-brand-700 text-white text-sm font-medium px-5 py-2.5 rounded-full transition-all hover:shadow-lg hover:shadow-brand-600/25">
+        免費下載
+      </a>
+    </div>
+  </nav>
+
+  <!-- ============================================ -->
+  <!-- HERO SECTION                                 -->
+  <!-- ============================================ -->
+  <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+    <!-- Background decoration -->
+    <div class="absolute inset-0 -z-10">
+      <div class="absolute top-20 left-1/4 w-96 h-96 bg-brand-100 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-gradient"></div>
+      <div class="absolute top-40 right-1/4 w-96 h-96 bg-amber-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-gradient" style="animation-delay: 4s;"></div>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 bg-brand-50 text-brand-700 text-sm font-medium px-4 py-1.5 rounded-full mb-8 border border-brand-100">
+        <span class="w-2 h-2 bg-amber-400 rounded-full"></span>
+        Windows 桌面應用程式 · 免費下載
+      </div>
+
+      <!-- Main headline -->
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
+        <span class="text-gray-900">你的檔案有故事。</span><br />
+        <span class="bg-gradient-to-r from-brand-600 to-brand-500 bg-clip-text text-transparent">Keeply 記住全部。</span>
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="mt-6 text-lg md:text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed">
+        每一次修改、每一個決定、每一條你留下的筆記，<br class="hidden md:block" />
+        都成為你專案的記憶。<br />
+        六個月後，這些記憶會拯救你。
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#download" class="group bg-brand-600 hover:bg-brand-700 text-white font-medium px-8 py-4 rounded-full text-lg transition-all hover:shadow-xl hover:shadow-brand-600/25 flex items-center gap-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+          免費下載
+        </a>
+        <span class="text-sm text-gray-400">30 秒開始使用，不需要帳號</span>
+      </div>
+
+      <!-- Hero Visual: App screenshot placeholder -->
+      <div class="mt-16 relative">
+        <div class="bg-gradient-to-b from-brand-50 to-white rounded-2xl border border-gray-200 shadow-2xl shadow-brand-900/5 overflow-hidden mx-auto max-w-3xl">
+          <!-- Mock app window -->
+          <div class="bg-gray-50 border-b border-gray-200 px-4 py-3 flex items-center gap-2">
+            <div class="flex gap-1.5">
+              <div class="w-3 h-3 rounded-full bg-red-300"></div>
+              <div class="w-3 h-3 rounded-full bg-amber-300"></div>
+              <div class="w-3 h-3 rounded-full bg-green-300"></div>
+            </div>
+            <div class="flex-1 text-center">
+              <span class="text-xs text-gray-400 font-medium">📂 我的專案 — 已保護 ✓</span>
+            </div>
+          </div>
+          <!-- Mock content -->
+          <div class="p-8 md:p-12 space-y-4">
+            <div class="flex items-center gap-3 text-sm">
+              <span class="bg-amber-100 text-amber-700 px-3 py-1 rounded-full font-medium">⚡ 有 3 個檔案尚未保存</span>
+              <button class="bg-brand-600 text-white px-4 py-1.5 rounded-full text-sm font-medium">💾 保存目前進度</button>
+            </div>
+            <div class="mt-6 space-y-3">
+              <p class="text-xs text-gray-400 font-medium uppercase tracking-wider">歷史紀錄</p>
+              <div class="bg-white border border-gray-100 rounded-xl p-4 flex items-start gap-4">
+                <div class="w-1 h-12 bg-brand-400 rounded-full flex-shrink-0 mt-0.5"></div>
+                <div>
+                  <p class="text-sm font-medium text-gray-800">今天 16:30 · 3 個檔案有變動</p>
+                  <p class="text-xs text-gray-400 mt-1">客戶要求修改封面設計 — 配色改為品牌主色調</p>
+                  <div class="mt-2 flex gap-2">
+                    <span class="text-xs bg-green-50 text-green-600 px-2 py-0.5 rounded">提案簡報_v2.pptx <strong>新增</strong></span>
+                    <span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded">專案進度表.xlsx <strong>已修改</strong></span>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white border border-gray-100 rounded-xl p-4 flex items-start gap-4 opacity-60">
+                <div class="w-1 h-12 bg-gray-200 rounded-full flex-shrink-0 mt-0.5"></div>
+                <div>
+                  <p class="text-sm font-medium text-gray-800">昨天 14:15 · 1 個檔案有變動</p>
+                  <p class="text-xs text-gray-400 mt-1">更新封面配色和內頁排版</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Glow effect behind the card -->
+        <div class="absolute inset-0 -z-10 bg-gradient-to-b from-brand-100/50 via-transparent to-transparent rounded-2xl blur-2xl scale-105"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FEATURES (3 selling points)                  -->
+  <!-- ============================================ -->
+  <section id="features" class="py-20 md:py-32 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+          每個標記。每個版本。<span class="text-brand-600">永遠可尋。</span>
+        </h2>
+        <p class="mt-4 text-gray-500 text-lg max-w-xl mx-auto">
+          不只是備份工具。Keeply 保護你工作的每一個瞬間。
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Feature 1: Remember WHY -->
+        <div class="bg-white rounded-2xl p-8 border border-gray-100 glow-hover transition-all duration-300 animate-float">
+          <div class="w-14 h-14 bg-brand-100 rounded-2xl flex items-center justify-center text-2xl mb-6">
+            💡
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">記住你的 WHY</h3>
+          <p class="text-gray-500 leading-relaxed mb-4">
+            不只記住「改了什麼」，更記住「為什麼要改」。
+          </p>
+          <p class="text-sm text-gray-400 leading-relaxed">
+            六個月後客戶問「這個決定是誰做的？」你不用翻遍 Email，打開 Keeply，答案就在那裡。
+          </p>
+        </div>
+
+        <!-- Feature 2: Time Machine -->
+        <div class="bg-white rounded-2xl p-8 border border-gray-100 glow-hover transition-all duration-300 animate-float-delayed">
+          <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-2xl mb-6">
+            ⏪
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">你的專案時光機</h3>
+          <p class="text-gray-500 leading-relaxed mb-4">
+            每次儲存都像拍一張快照。隨時回到任何一天的樣子。
+          </p>
+          <p class="text-sm text-gray-400 leading-relaxed">
+            改壞了？回去就好。客戶反悔？三秒找到舊版。稽核來了？完整紀錄在這。
+          </p>
+        </div>
+
+        <!-- Feature 3: Bold Changes -->
+        <div class="bg-white rounded-2xl p-8 border border-gray-100 glow-hover transition-all duration-300 animate-float-delayed-2">
+          <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center text-2xl mb-6">
+            🛡️
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">大膽修改，我們記住一切</h3>
+          <p class="text-gray-500 leading-relaxed mb-4">
+            你不需要在「改好」和「不敢改」之間掙扎。
+          </p>
+          <p class="text-sm text-gray-400 leading-relaxed">
+            Keeply 保護你的每一個版本，所以你可以放心嘗試任何方向。不管怎麼改，永遠回得去。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- USE CASES                                    -->
+  <!-- ============================================ -->
+  <section class="py-20 md:py-32">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+          不管你是誰，<span class="text-brand-600">關鍵訊息都需要被記住。</span>
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Use case cards -->
+        <div class="group bg-gradient-to-br from-brand-50 to-white rounded-2xl p-8 border border-brand-100 hover:shadow-lg transition-all">
+          <div class="text-3xl mb-4">📋</div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">專案管理</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            專案中的每一份檔案，都有它的故事。半年後回頭看，一條筆記可能救了整個專案。
+          </p>
+        </div>
+
+        <div class="group bg-gradient-to-br from-amber-50 to-white rounded-2xl p-8 border border-amber-100 hover:shadow-lg transition-all">
+          <div class="text-3xl mb-4">🎨</div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">設計創作</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            客戶說「還是第一版比較好」的時候，你只需要三秒。每一個版本都在。
+          </p>
+        </div>
+
+        <div class="group bg-gradient-to-br from-green-50 to-white rounded-2xl p-8 border border-green-100 hover:shadow-lg transition-all">
+          <div class="text-3xl mb-4">⚖️</div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">法務合約</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            合約改了十七版，每一版都在。誰改的、什麼時候改的、為什麼改的 — 清清楚楚。
+          </p>
+        </div>
+
+        <div class="group bg-gradient-to-br from-purple-50 to-white rounded-2xl p-8 border border-purple-100 hover:shadow-lg transition-all">
+          <div class="text-3xl mb-4">📚</div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">學術研究</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            論文_最終版_真的最終版_v3.docx？用 Keeply 追蹤，永遠不會搞混。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- HOW IT WORKS                                 -->
+  <!-- ============================================ -->
+  <section class="py-20 md:py-32 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+          三步開始，<span class="text-brand-600">零門檻。</span>
+        </h2>
+        <p class="mt-4 text-gray-500 text-lg">不需要帳號、不需要伺服器、不需要任何技術知識。</p>
+      </div>
+
+      <div class="space-y-8">
+        <div class="flex items-start gap-6">
+          <div class="w-12 h-12 bg-brand-600 text-white rounded-full flex items-center justify-center text-lg font-bold flex-shrink-0">1</div>
+          <div>
+            <h3 class="text-lg font-bold text-gray-900">下載安裝</h3>
+            <p class="text-gray-500 mt-1">60MB，30 秒完成。支援 Windows 10 以上。</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-6">
+          <div class="w-12 h-12 bg-brand-600 text-white rounded-full flex items-center justify-center text-lg font-bold flex-shrink-0">2</div>
+          <div>
+            <h3 class="text-lg font-bold text-gray-900">選一個資料夾</h3>
+            <p class="text-gray-500 mt-1">你工作的任何資料夾 — 工程圖、合約文件、設計檔案。</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-6">
+          <div class="w-12 h-12 bg-amber-500 text-white rounded-full flex items-center justify-center text-lg font-bold flex-shrink-0">3</div>
+          <div>
+            <h3 class="text-lg font-bold text-gray-900">開始保護</h3>
+            <p class="text-gray-500 mt-1">從此以後，每一次修改都被記住。想回去？一鍵就好。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- PRICING                                      -->
+  <!-- ============================================ -->
+  <section id="pricing" class="py-20 md:py-32">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+          簡單定價，<span class="text-brand-600">從免費開始。</span>
+        </h2>
+        <p class="mt-4 text-gray-500 text-lg max-w-xl mx-auto">
+          一個人用，完全免費。想要更多？成為 Founding Member。
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <!-- Free -->
+        <div class="bg-white rounded-2xl border-2 border-gray-100 p-8 text-center">
+          <div class="text-sm font-medium text-gray-400 mb-2">個人版</div>
+          <div class="text-5xl font-bold text-gray-900">免費</div>
+          <div class="text-sm text-gray-400 mt-2 mb-8">永久使用，不需要帳號</div>
+          <ul class="text-sm text-gray-600 space-y-3 text-left mb-8">
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> 無限版本歷史</li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> 一鍵退回任何版本</li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> 變更比對</li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> 版本筆記</li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> 連接任何同步空間（手動設定）</li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> 基本大檔案支援</li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> 1–3 人使用</li>
+          </ul>
+          <a href="#download" class="block border-2 border-gray-200 hover:border-brand-300 text-gray-700 hover:text-brand-700 font-medium py-3.5 rounded-full transition-all">
+            免費下載
+          </a>
+        </div>
+
+        <!-- Founding Member -->
+        <div class="bg-white rounded-2xl border-2 border-brand-500 p-8 text-center relative shadow-lg shadow-brand-500/10">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-500 text-white text-xs font-bold px-4 py-1 rounded-full">Founding Member · 限量</div>
+          <div class="text-sm font-medium text-brand-600 mb-2">創始會員</div>
+          <div class="text-5xl font-bold text-gray-900">$199</div>
+          <div class="text-sm text-gray-400 mt-2 mb-1">一次付清，永久使用</div>
+          <div class="text-xs text-brand-500 mb-8">含 2 年免費更新 · 之後 $49/年續約（可隨時跳過）</div>
+          <ul class="text-sm text-gray-600 space-y-3 text-left mb-8">
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> 免費版所有功能</li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> 一鍵同步空間設定</li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> 大檔案全自動處理</li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> 優先支援</li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> 未來團隊功能優先體驗</li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> 永久保留 Founding Member 身份</li>
+          </ul>
+          <!-- Paddle placeholder -->
+          <a href="#" class="block bg-brand-600 hover:bg-brand-700 text-white font-medium py-3.5 rounded-full transition-all hover:shadow-lg" data-paddle="true">
+            成為創始會員
+          </a>
+          <p class="mt-3 text-xs text-gray-400">Early Access 限定，售完即止</p>
+        </div>
+      </div>
+
+      <!-- Team coming soon -->
+      <div class="mt-12 max-w-3xl mx-auto">
+        <div class="bg-gray-50 border border-gray-200 rounded-2xl px-8 py-6 text-center">
+          <div class="flex items-center justify-center gap-2 mb-2">
+            <span class="text-lg">👥</span>
+            <h3 class="text-lg font-bold text-gray-900">團隊版 · 開發中</h3>
+          </div>
+          <p class="text-sm text-gray-500 max-w-lg mx-auto leading-relaxed">
+            團隊動態面板、檔案鎖定、主管審閱流程、即時同步狀態 — 正在打造中。<br />
+            留下信箱，團隊版上線時第一時間通知你。
+          </p>
+          <div class="mt-4 flex items-center justify-center gap-2 max-w-sm mx-auto">
+            <input type="email" placeholder="your@email.com" class="flex-1 border border-gray-300 rounded-full px-4 py-2.5 text-sm focus:outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100" />
+            <button class="bg-brand-600 hover:bg-brand-700 text-white text-sm font-medium px-5 py-2.5 rounded-full transition-all whitespace-nowrap">
+              通知我
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Regional pricing note -->
+      <p class="mt-6 text-center text-xs text-gray-400">
+        台灣用戶參考價：創始會員約 NT$6,500。支援信用卡付款。
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- DOWNLOAD CTA                                 -->
+  <!-- ============================================ -->
+  <section id="download" class="py-20 md:py-32 bg-gradient-to-br from-brand-600 via-brand-700 to-brand-800 text-white relative overflow-hidden">
+    <!-- Decorative -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-amber-400/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-brand-400/20 rounded-full blur-3xl"></div>
+
+    <div class="max-w-3xl mx-auto px-6 text-center relative">
+      <h2 class="text-3xl md:text-5xl font-bold leading-tight">
+        你的檔案值得被記住。
+      </h2>
+      <p class="mt-6 text-brand-200 text-lg max-w-xl mx-auto leading-relaxed">
+        你在工作上留下的每一條筆記，<br />
+        都讓你成為更好的專業人士。<br />
+        從今天開始，讓 Keeply 幫你記住。
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#" class="group bg-white text-brand-700 font-bold px-8 py-4 rounded-full text-lg transition-all hover:shadow-xl hover:shadow-black/10 flex items-center gap-3">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+          免費下載 Windows 版
+        </a>
+      </div>
+
+      <p class="mt-6 text-sm text-brand-300">
+        個人免費，永久使用。Windows 10 以上。60MB。
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FOOTER                                       -->
+  <!-- ============================================ -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" class="w-7 h-7">
+            <g>
+              <path d="M396 129C429 159 448 200 448 255C448 363 360 451 252 451C145 451 58 368 56 263C55 206 75 158 111 123" stroke="#6366f1" stroke-width="44" stroke-linecap="round"/>
+              <path d="M111 123C145 91 190 72 239 72C253 72 265 73 278 76" stroke="#fbbf24" stroke-width="44" stroke-linecap="round"/>
+              <path d="M236 54L313 79L254 134L236 54Z" fill="#fbbf24"/>
+              <rect x="164" y="184" width="152" height="206" rx="32" fill="#6366f1"/>
+            </g>
+          </svg>
+          <span class="text-white font-bold">Keeply</span>
+        </div>
+
+        <div class="flex items-center gap-6 text-sm">
+          <a href="#" class="hover:text-white transition-colors">隱私權政策</a>
+          <a href="#" class="hover:text-white transition-colors">服務條款</a>
+          <a href="#" class="hover:text-white transition-colors">GitHub</a>
+          <a href="mailto:hello@keeply.app" class="hover:text-white transition-colors">聯繫我們</a>
+        </div>
+
+        <p class="text-sm">&copy; 2026 Keeply. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="ring-dark" x1="80" y1="404" x2="434" y2="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5B57E8"/>
+      <stop offset="1" stop-color="#7C7BFF"/>
+    </linearGradient>
+    <linearGradient id="amber-dark" x1="115" y1="171" x2="270" y2="82" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFB21A"/>
+      <stop offset="1" stop-color="#FFD053"/>
+    </linearGradient>
+    <linearGradient id="doc-front-dark" x1="166" y1="164" x2="308" y2="372" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7875FF"/>
+      <stop offset="1" stop-color="#5F63F7"/>
+    </linearGradient>
+    <linearGradient id="doc-back-dark" x1="208" y1="160" x2="364" y2="350" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C2C1FF"/>
+      <stop offset="1" stop-color="#8F8DF8"/>
+    </linearGradient>
+    <filter id="soft-shadow-dark" x="56" y="48" width="400" height="416" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="14" stdDeviation="20" flood-color="#020617" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#soft-shadow-dark)">
+    <path d="M396 129C429 159 448 200 448 255C448 363 360 451 252 451C145 451 58 368 56 263C55 206 75 158 111 123" stroke="url(#ring-dark)" stroke-width="44" stroke-linecap="round"/>
+    <path d="M111 123C145 91 190 72 239 72C253 72 265 73 278 76" stroke="url(#amber-dark)" stroke-width="44" stroke-linecap="round"/>
+    <path d="M236 54L313 79L254 134L236 54Z" fill="url(#amber-dark)"/>
+
+    <rect x="220" y="150" width="152" height="206" rx="32" fill="url(#doc-back-dark)" opacity="0.54"/>
+    <path d="M306 150H372V213L306 150Z" fill="#EFEFFF" opacity="0.78"/>
+
+    <rect x="192" y="167" width="152" height="206" rx="32" fill="url(#doc-back-dark)" opacity="0.78"/>
+    <path d="M278 167H344V230L278 167Z" fill="#F4F3FF" opacity="0.82"/>
+
+    <rect x="164" y="184" width="152" height="206" rx="32" fill="url(#doc-front-dark)"/>
+    <path d="M250 184H316V247L250 184Z" fill="#DAD8FF" opacity="0.96"/>
+  </g>
+</svg>
