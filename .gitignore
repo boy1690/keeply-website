@@ -1,0 +1,25 @@
+# ===========================
+# Dev tooling (local only, NOT pushed to remote)
+# ===========================
+.claude/
+.specify/
+specs/
+*.log
+.tmp/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Translation build artifacts (keep .js and .json source)
+i18n/translation-template.md
+i18n/*.zip
+i18n/_*.cjs
+i18n/_*.js

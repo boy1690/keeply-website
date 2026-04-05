@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth" data-i18n-title="terms.meta.title" data-i18n-desc="terms.meta.description">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>服務條款 — Keeply</title>
+  <meta name="description" content="Keeply 桌面應用程式服務條款。了解授權方案、付款政策與你的權利。" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff', 100: '#e0e7ff', 200: '#c7d2fe', 300: '#a5b4fc',
+              400: '#818cf8', 500: '#6366f1', 600: '#4f46e5', 700: '#4338ca',
+              800: '#3730a3', 900: '#312e81', 950: '#1e1b4b',
+            }
+          },
+          fontFamily: {
+            sans: ['"M PLUS Rounded 1c"', '"Microsoft JhengHei"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-lg border-b border-gray-100 z-50">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" class="w-9 h-9">
+          <defs>
+            <linearGradient id="ring" x1="80" y1="404" x2="434" y2="112" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#4338CA"/><stop offset="1" stop-color="#4F46E5"/>
+            </linearGradient>
+            <linearGradient id="amber" x1="115" y1="171" x2="270" y2="82" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#F59E0B"/><stop offset="1" stop-color="#FFB300"/>
+            </linearGradient>
+            <linearGradient id="doc-front" x1="166" y1="164" x2="308" y2="372" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#5D54F6"/><stop offset="1" stop-color="#4F46E5"/>
+            </linearGradient>
+            <linearGradient id="doc-back" x1="208" y1="160" x2="364" y2="350" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#9C98FF"/><stop offset="1" stop-color="#6F6AF0"/>
+            </linearGradient>
+          </defs>
+          <g>
+            <path d="M396 129C429 159 448 200 448 255C448 363 360 451 252 451C145 451 58 368 56 263C55 206 75 158 111 123" stroke="url(#ring)" stroke-width="44" stroke-linecap="round"/>
+            <path d="M111 123C145 91 190 72 239 72C253 72 265 73 278 76" stroke="url(#amber)" stroke-width="44" stroke-linecap="round"/>
+            <path d="M236 54L313 79L254 134L236 54Z" fill="url(#amber)"/>
+            <rect x="220" y="150" width="152" height="206" rx="32" fill="url(#doc-back)" opacity="0.48"/>
+            <rect x="192" y="167" width="152" height="206" rx="32" fill="url(#doc-back)" opacity="0.72"/>
+            <rect x="164" y="184" width="152" height="206" rx="32" fill="url(#doc-front)"/>
+            <path d="M250 184H316V247L250 184Z" fill="#BDBAFF" opacity="0.95"/>
+          </g>
+        </svg>
+        <span class="text-xl font-bold text-brand-700">Keeply</span>
+      </a>
+      <div class="flex items-center gap-3">
+        <div id="lang-switcher" class="relative">
+            <button id="lang-toggle" class="flex items-center gap-1.5 text-sm font-medium text-gray-600 hover:text-brand-600 border border-gray-200 hover:border-brand-300 px-3 py-1.5 rounded-full transition-all">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span id="lang-label">繁體中文</span>
+              <svg class="w-3 h-3 opacity-50" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+          </div>
+        <a href="index.html#download" class="bg-brand-600 hover:bg-brand-700 text-white text-sm font-medium px-5 py-2.5 rounded-full transition-all hover:shadow-lg hover:shadow-brand-600/25" data-i18n="nav.download">免費下載</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENT -->
+  <div class="pt-28 pb-20">
+    <article class="max-w-3xl mx-auto px-6">
+
+      <div class="mb-12">
+        <nav class="text-sm text-gray-400 mb-4">
+          <a href="index.html" class="hover:text-brand-600 transition-colors" data-i18n="breadcrumb.home">首頁</a>
+          <span class="mx-2">/</span>
+          <span class="text-gray-600" data-i18n="terms.breadcrumb">服務條款</span>
+        </nav>
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3" data-i18n="terms.title">服務條款</h1>
+        <p class="text-sm text-gray-400" data-i18n="terms.updated">最後更新日期：2026 年 4 月 4 日</p>
+      </div>
+
+      <div class="bg-amber-50 border border-amber-100 rounded-2xl p-6 mb-10">
+        <p class="text-amber-800 font-medium leading-relaxed" data-i18n-html="terms.highlight">
+          本服務條款（「本協議」）規範你對 Keeply 桌面應用程式（「軟體」）的使用。下載、安裝或使用本軟體，即表示你同意受本協議約束。如果你不同意，請不要使用本軟體。
+        </p>
+      </div>
+
+      <!-- TOC -->
+      <div class="bg-gray-50 rounded-xl p-6 mb-10 border border-gray-100">
+        <p class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-3" data-i18n="terms.toc.title">目錄</p>
+        <div class="grid grid-cols-2 gap-2 text-sm">
+          <a href="#s1" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s1">1. 軟體</a>
+          <a href="#s8" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s8">8. 保證免責聲明</a>
+          <a href="#s2" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s2">2. 授權許可</a>
+          <a href="#s9" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s9">9. 責任限制</a>
+          <a href="#s3" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s3">3. 授權方案</a>
+          <a href="#s10" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s10">10. 期限與終止</a>
+          <a href="#s4" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s4">4. 付款、退款與 Paddle</a>
+          <a href="#s11" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s11">11. 準據法與爭議</a>
+          <a href="#s5" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s5">5. 使用限制</a>
+          <a href="#s12" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s12">12. 一般條款</a>
+          <a href="#s6" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s6">6. 智慧財產權</a>
+          <a href="#s13" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s13">13. 聯繫</a>
+          <a href="#s7" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s7">7. 隱私與資料</a>
+        </div>
+      </div>
+
+      <div class="space-y-10">
+
+        <section id="s1">
+          <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="terms.s1.title">1. 軟體</h2>
+          <p class="text-gray-600 leading-relaxed" data-i18n="terms.s1.p1">Keeply 是一款為專案檔案提供視覺化版本控制的桌面應用程式。它在你的電腦上本地運行，並將所有資料儲存在你的本地裝置或 NAS 上。Keeply 基於 Git 技術構建，但專為設計師、建築師和營建專業人員設計，使用者無需直接與 Git 互動。</p>
+        </section>
+
+        <section id="s2">
+          <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="terms.s2.title">2. 授權許可</h2>
+          <p class="text-gray-600 leading-relaxed" data-i18n-html="terms.s2.p1"><strong>本軟體為授權使用，而非出售。</strong>Keeply 授予你有限的、非獨家的、不可轉讓的、不可再授權的、可撤銷的授權，允許你在你作為主要使用者的任何電腦上安裝和使用本軟體，僅限於你的內部業務或個人用途。</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s2.p2">本協議不傳達任何所有權，無論我們的網站、通訊或第三方結帳流程中是否使用「購買」、「銷售」或「買入」等用語。</p>
+        </section>
+
+        <section id="s3">
+          <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="terms.s3.title">3. 授權方案</h2>
+
+          <!-- Overview table -->
+          <div class="overflow-x-auto mb-8">
+            <table class="w-full text-sm border border-gray-200 rounded-lg overflow-hidden">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th class="text-left px-4 py-3 font-medium text-gray-600"></th>
+                  <th class="text-left px-4 py-3 font-medium text-gray-900" data-i18n="terms.s3.table.th.free">Free</th>
+                  <th class="text-left px-4 py-3 font-medium text-brand-700" data-i18n="terms.s3.table.th.team">Team</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-100">
+                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.position">定位</td><td class="px-4 py-2.5" data-i18n="terms.s3.table.free.position">為個人和小型工作室設計</td><td class="px-4 py-2.5" data-i18n="terms.s3.table.team.position">團隊協作，有條有理</td></tr>
+                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.price">價格</td><td class="px-4 py-2.5 font-medium" data-i18n="terms.s3.table.free.price">永久免費</td><td class="px-4 py-2.5 font-medium" data-i18n="terms.s3.table.team.price">$25/月 或 $250/年</td></tr>
+                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.version">版本控制</td><td class="px-4 py-2.5 text-green-600" data-i18n="terms.s3.table.version.val">✅ 完整</td><td class="px-4 py-2.5 text-green-600" data-i18n="terms.s3.table.version.val">✅ 完整</td></tr>
+                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.users">使用者人數</td><td class="px-4 py-2.5" data-i18n="terms.s3.table.users.val">不限</td><td class="px-4 py-2.5" data-i18n="terms.s3.table.users.val">不限</td></tr>
+                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.members">成員管理與權限控制</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5 text-green-600">✅</td></tr>
+                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.activity">團隊活動紀錄</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5 text-green-600">✅</td></tr>
+                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.support">優先技術支援</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5 text-green-600">✅</td></tr>
+                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.perpetual">永久授權（Early Access）</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5" data-i18n="terms.s3.table.perpetual.team">$599（限量 500 份）</td></tr>
+                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.fallback">永久回退授權</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5 text-green-600" data-i18n="terms.s3.table.fallback.team">✅ 訂閱滿 12 個月</td></tr>
+                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.refund">30 天退款保證</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5 text-green-600">✅</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="text-lg font-bold text-gray-800 mt-6 mb-3" data-i18n="terms.s3.1.title">3.1 免費方案</h3>
+          <p class="text-gray-600 leading-relaxed" data-i18n="terms.s3.1.p1">免費方案提供完整的版本控制功能，不限使用者人數，永久免費。免費方案不包含團隊管理功能（如成員管理、權限控制、團隊活動紀錄）。免費方案以「現況」提供，不附帶服務等級承諾或保證的技術支援。</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s3.1.p2">Keeply 保留隨時修改免費方案的功能或可用性的權利。</p>
+
+          <h3 class="text-lg font-bold text-gray-800 mt-8 mb-3" data-i18n="terms.s3.2.title">3.2 Team 訂閱方案</h3>
+          <p class="text-gray-600 leading-relaxed" data-i18n="terms.s3.2.p1">Team 方案為團隊定額制（非按人頭計費）：</p>
+          <ul class="text-gray-600 space-y-1 ml-5 list-disc mt-2">
+            <li data-i18n-html="terms.s3.2.li1"><strong>月繳：</strong>$25/月</li>
+            <li data-i18n-html="terms.s3.2.li2"><strong>年繳：</strong>$250/年</li>
+          </ul>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s3.2.p2">一個價格，不按人頭收費。包含免費方案的所有功能，另外還有：成員管理與權限控制、團隊活動紀錄、優先技術支援。</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s3.2.p3">訂閱在每個計費週期結束時自動續約，除非取消。取消在當前計費週期結束時生效——你在此之前仍可繼續使用。訂閱費用不可退款，除非如第 4 節所述。</p>
+
+          <h3 class="text-lg font-bold text-gray-800 mt-8 mb-3" data-i18n="terms.s3.3.title">3.3 永久授權（Early Access 限量優惠）</h3>
+          <p class="text-gray-600 leading-relaxed" data-i18n-html="terms.s3.3.p1">永久授權以 <strong>$599</strong> 提供，作為 Early Access 限量優惠，限量 500 份。一次付清，永久使用購買時的版本。</p>
+          <div class="bg-gray-50 rounded-lg p-4 mt-3">
+            <p class="text-sm font-medium text-gray-700 mb-2" data-i18n="terms.s3.3.note.title">重點說明：</p>
+            <ul class="text-sm text-gray-600 space-y-1 ml-5 list-disc">
+              <li data-i18n-html="terms.s3.3.note.li1">你可以永久使用購買時的版本，不受時間限制</li>
+              <li data-i18n-html="terms.s3.3.note.li2">永久授權<strong>不包含</strong>未來的功能更新或主要版本升級</li>
+              <li data-i18n-html="terms.s3.3.note.li3">錯誤修復更新可能由 Keeply 自行決定提供，但不予保證</li>
+              <li data-i18n-html="terms.s3.3.note.li4">Keeply 保留隨時停止或變更此優惠的權利</li>
+              <li data-i18n-html="terms.s3.3.note.li5">停售前已購買的永久授權，仍按購買時的條款有效</li>
+              <li data-i18n-html="terms.s3.3.note.li6">附贈 Founding Member 身份：優先體驗新功能、與創辦人交流的專屬頻道</li>
+            </ul>
+          </div>
+
+          <h3 class="text-lg font-bold text-gray-800 mt-8 mb-3" data-i18n="terms.s3.4.title">3.4 永久回退授權（訂閱滿一年的安全網）</h3>
+          <p class="text-gray-600 leading-relaxed" data-i18n="terms.s3.4.p1">連續訂閱滿一年後，隨時可以取消。取消後 Keeply 照常能用，只是不再收到新版本。想要新功能時，隨時重新訂閱。</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n-html="terms.s3.4.p2"><strong>條件：</strong>連續訂閱滿 <strong>12 個月</strong>，期間不中斷、未欠款。</p>
+
+          <div class="bg-brand-50 border border-brand-100 rounded-lg p-4 mt-4">
+            <p class="text-sm font-medium text-brand-800 mb-2" data-i18n="terms.s3.4.example.title">範例：</p>
+            <p class="text-sm text-brand-700" data-i18n="terms.s3.4.example.desc">你在 2027 年 1 月開始 Team 年繳。2028 年 3 月取消，這時 Keeply 是 v2.4.1。</p>
+            <ul class="text-sm mt-2 space-y-1">
+              <li class="text-green-700" data-i18n="terms.s3.4.example.yes1">✅ 取消後，你的團隊繼續用 v2.4.1，永久免費</li>
+              <li class="text-red-500" data-i18n="terms.s3.4.example.no1">❌ 不會再收到 v2.5、v3.0 等新版本</li>
+              <li class="text-green-700" data-i18n="terms.s3.4.example.yes2">✅ 哪天想要新版本，重新訂閱就好</li>
+            </ul>
+          </div>
+
+          <div class="mt-6">
+            <p class="text-sm font-medium text-gray-700 mb-2" data-i18n="terms.s3.4.exclude.title">什麼情況不適用：</p>
+            <ul class="text-sm text-gray-600 space-y-1 ml-5 list-disc">
+              <li data-i18n="terms.s3.4.exclude.li1">訂閱不到 12 個月就取消 → 當期結束後停止使用</li>
+              <li data-i18n="terms.s3.4.exclude.li2">中途有中斷或欠款 → 12 個月重新計算</li>
+              <li data-i18n="terms.s3.4.exclude.li3">因違反本協議被終止 → 不適用</li>
+            </ul>
+          </div>
+
+          <!-- Comparison table -->
+          <div class="overflow-x-auto mt-6">
+            <table class="w-full text-sm border border-gray-200 rounded-lg overflow-hidden">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th class="text-left px-4 py-3 font-medium text-gray-600"></th>
+                  <th class="text-left px-4 py-3 font-medium text-gray-900" data-i18n="terms.s3.4.compare.th2">永久授權（買斷）</th>
+                  <th class="text-left px-4 py-3 font-medium text-gray-900" data-i18n="terms.s3.4.compare.th3">永久回退授權</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-100">
+                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.4.compare.r1.label">怎麼拿到</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r1.perpetual">直接買 $599</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r1.fallback">訂閱滿 12 個月後取消</td></tr>
+                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.4.compare.r2.label">你拿到什麼</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r2.perpetual">買的時候是什麼版本，就永久用那個版本</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r2.fallback">取消的時候在用什麼版本，就永久用那個版本</td></tr>
+                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.4.compare.r3.label">之後會更新嗎？</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r3.val">不會</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r3.val">不會</td></tr>
+                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.4.compare.r4.label">適合誰</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r4.perpetual">確定目前功能就夠用的團隊</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r4.fallback">想先用看看、之後可能不需要更新的團隊</td></tr>
+                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.4.compare.r5.label">可用性</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r5.perpetual">限量 500 份，售完即止</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r5.fallback">永久適用於所有訂閱者</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="s4">
+          <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="terms.s4.title">4. 付款、退款與 Paddle</h2>
+
+          <h3 class="text-lg font-bold text-gray-800 mt-4 mb-3" data-i18n="terms.s4.1.title">4.1 Merchant of Record</h3>
+          <p class="text-gray-600 leading-relaxed" data-i18n-html="terms.s4.1.p1">我們的訂購流程由 <strong>Paddle.com</strong> 執行。Paddle 是我們所有訂單的 Merchant of Record，負責付款處理、開立發票、稅務計算及繳納，以及帳務相關的客戶支援。</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s4.1.p2">當你購買授權時，你是與 Paddle 進行交易，而非直接與 Keeply 交易。本軟體由 Keeply 授權予你；由 Paddle 銷售予你。</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n-html="terms.s4.1.p3">你的購買亦受 <a href="https://www.paddle.com/legal/buyer-terms" class="text-brand-600 hover:underline">Paddle 買家條款</a>及 <a href="https://www.paddle.com/legal/refund-policy" class="text-brand-600 hover:underline">Paddle 退款政策</a>約束。</p>
+
+          <h3 class="text-lg font-bold text-gray-800 mt-8 mb-3" data-i18n="terms.s4.2.title">4.2 退款政策</h3>
+          <div class="bg-green-50 border border-green-100 rounded-xl p-4">
+            <p class="text-green-800 font-medium text-sm" data-i18n="terms.s4.2.highlight">Team 方案享有 30 天退款保證——購買後 30 天內聯繫 hello@keeply.work 或透過 Paddle 申請，全額退款。</p>
+          </div>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s4.2.p1">30 天之後，退款依 Paddle 的退款政策及適用消費者保護法處理。歐盟/歐洲經濟區/英國居民享有 14 天法定撤回權；台灣居民依消保法可能享有 7 天鑑賞期權利。</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n-html="terms.s4.2.p2">帳務查詢及退款請聯繫 <strong>Paddle</strong>（<a href="https://www.paddle.com/contact" class="text-brand-600 hover:underline">paddle.com/contact</a>）或 <a href="mailto:hello@keeply.work" class="text-brand-600 hover:underline">hello@keeply.work</a>。</p>
+
+          <h3 class="text-lg font-bold text-gray-800 mt-8 mb-3" data-i18n="terms.s4.3.title">4.3 價格變更</h3>
+          <p class="text-gray-600 leading-relaxed" data-i18n-html="terms.s4.3.p1">我們可能在變更生效前至少 <strong>30 天書面通知</strong>的情況下變更定價。價格變更在下次續約時適用。</p>
+
+          <h3 class="text-lg font-bold text-gray-800 mt-8 mb-3" data-i18n="terms.s4.4.title">4.4 稅務</h3>
+          <p class="text-gray-600 leading-relaxed" data-i18n="terms.s4.4.p1">Paddle 作為 MoR 負責計算、收取及繳納所有適用的銷售稅、加值稅和商品及服務稅。</p>
+        </section>
+
+        <section id="s5">
+          <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="terms.s5.title">5. 使用限制</h2>
+          <p class="text-gray-600 leading-relaxed mb-3" data-i18n="terms.s5.p1">你同意不得：</p>
+          <ol class="text-gray-600 space-y-2 ml-5 list-decimal">
+            <li data-i18n="terms.s5.li1">逆向工程、反編譯、反組譯或以其他方式嘗試取得原始碼，除非適用法律明確許可</li>
+            <li data-i18n="terms.s5.li2">複製、散布、再授權、出租、租賃或出借本軟體或授權金鑰</li>
+            <li data-i18n="terms.s5.li3">修改、改編、翻譯或建立衍生作品</li>
+            <li data-i18n="terms.s5.li4">移除或更改任何所有權聲明</li>
+            <li data-i18n="terms.s5.li5">規避或停用任何授權驗證或安全功能</li>
+            <li data-i18n="terms.s5.li6">公開分享或發布授權金鑰</li>
+            <li data-i18n="terms.s5.li7">使用本軟體向第三方提供託管服務</li>
+            <li data-i18n="terms.s5.li8">將本軟體用於任何非法目的</li>
+          </ol>
+        </section>
+
+        <section id="s6">
+          <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="terms.s6.title">6. 智慧財產權</h2>
+          <p class="text-gray-600 leading-relaxed" data-i18n="terms.s6.p1">本軟體及其所有副本、修改及衍生作品為 Keeply 及其授權人的專有財產。本軟體包含依其各自授權許可的開源元件。</p>
+        </section>
+
+        <section id="s7">
+          <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="terms.s7.title">7. 隱私與資料</h2>
+          <p class="text-gray-600 leading-relaxed" data-i18n-html="terms.s7.p1">你對本軟體的使用亦受我們的<a href="privacy.html" class="text-brand-600 hover:underline">隱私權政策</a>約束。<strong>我們不存取、收集、儲存或傳輸你的專案檔案或其內容。</strong></p>
+        </section>
+
+        <section id="s8">
+          <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="terms.s8.title">8. 保證免責聲明</h2>
+          <p class="text-gray-600 leading-relaxed" data-i18n-html="terms.s8.p1"><strong>本軟體以「現況」及「現有」基礎提供，不附帶任何形式的保證，包括但不限於適銷性、特定用途適用性、權利及不侵權的默示保證。</strong></p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n-html="terms.s8.p2"><strong>資料與檔案免責聲明：</strong>本軟體與你的本地檔案及儲存裝置互動。<strong>你應自行負責維護所有檔案及資料的充分備份。</strong>Keeply 不對因使用本軟體而導致的任何檔案遺失或損壞承擔責任。</p>
+        </section>
+
+        <section id="s9">
+          <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="terms.s9.title">9. 責任限制</h2>
+          <p class="text-gray-600 leading-relaxed" data-i18n-html="terms.s9.p1"><strong>在適用法律允許的最大範圍內：</strong>Keeply 不對任何間接、附帶、特殊、後果性或懲罰性損害賠償承擔責任。Keeply 的總累計責任不超過你在引起索賠的事件前 12 個月內實際支付的金額或 $100（以較高者為準）。</p>
+        </section>
+
+        <section id="s10">
+          <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="terms.s10.title">10. 期限與終止</h2>
+          <p class="text-gray-600 leading-relaxed" data-i18n="terms.s10.p1">本協議自你首次使用本軟體起生效，直至終止。你可隨時解除安裝並銷毀所有副本以終止本協議。我們可在你違約時終止你的授權。</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s10.p2">終止後，永久授權持有者和永久回退授權持有者保留使用其各自版本的權利。</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s10.p3">第 5、6、8、9、11 及 12 節於終止後繼續有效。</p>
+        </section>
+
+        <section id="s11">
+          <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="terms.s11.title">11. 準據法與爭議</h2>
+          <p class="text-gray-600 leading-relaxed" data-i18n-html="terms.s11.p1">本協議依<strong>中華民國（台灣）</strong>法律管轄，排除 CISG。爭議應先協商 30 天，無法解決時提交<strong>臺灣臺北地方法院</strong>。本節不限制你依消費者保護法享有的法定權利。</p>
+        </section>
+
+        <section id="s12">
+          <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="terms.s12.title">12. 一般條款</h2>
+          <p class="text-gray-600 leading-relaxed" data-i18n-html="terms.s12.p1"><strong>完整協議。</strong>本協議連同隱私權政策及 Paddle 買家條款，構成完整協議。</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n-html="terms.s12.p2"><strong>可分割性。</strong>任何條款不可執行時，其餘條款仍有效。</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n-html="terms.s12.p3"><strong>轉讓。</strong>你不得轉讓本協議。Keeply 可在合併、收購或資產出售時轉讓。</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n-html="terms.s12.p4"><strong>修訂。</strong>重大變更將提前 30 天通知。使用回退版本者可在先前條款下繼續使用。</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n-html="terms.s12.p5"><strong>語言。</strong>本協議以英文撰寫，翻譯版本衝突時以英文為準。</p>
+        </section>
+
+        <section id="s13">
+          <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="terms.s13.title">13. 聯繫</h2>
+          <p class="text-gray-600 leading-relaxed" data-i18n-html="terms.s13.email">電子郵件：<a href="mailto:hello@keeply.work" class="text-brand-600 font-medium hover:underline">hello@keeply.work</a></p>
+          <p class="text-gray-600 leading-relaxed" data-i18n-html="terms.s13.website">網站：<a href="https://keeply.work" class="text-brand-600 hover:underline">keeply.work</a></p>
+        </section>
+
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-gray-100">
+        <p class="text-sm text-gray-400 italic" data-i18n="terms.company">Keeply is a product of City-State Information Technology Co., Ltd. (城國資訊有限公司), registered in Taiwan (No. 42846493).</p>
+      </div>
+
+    </article>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" class="w-7 h-7">
+            <g>
+              <path d="M396 129C429 159 448 200 448 255C448 363 360 451 252 451C145 451 58 368 56 263C55 206 75 158 111 123" stroke="#6366f1" stroke-width="44" stroke-linecap="round"/>
+              <path d="M111 123C145 91 190 72 239 72C253 72 265 73 278 76" stroke="#fbbf24" stroke-width="44" stroke-linecap="round"/>
+              <path d="M236 54L313 79L254 134L236 54Z" fill="#fbbf24"/>
+              <rect x="164" y="184" width="152" height="206" rx="32" fill="#6366f1"/>
+            </g>
+          </svg>
+          <span class="text-white font-bold">Keeply</span>
+        </div>
+        <div class="flex items-center gap-6 text-sm">
+          <a href="privacy.html" class="hover:text-white transition-colors" data-i18n="footer.privacy">隱私權政策</a>
+          <a href="terms.html" class="hover:text-white transition-colors" data-i18n="footer.terms">服務條款</a>
+          <a href="https://github.com/boy1690/Keeply/releases/latest" class="hover:text-white transition-colors" data-i18n="footer.download">下載</a>
+          <a href="contact.html" class="hover:text-white transition-colors" data-i18n="footer.contact">聯繫我們</a>
+        </div>
+        <p class="text-sm" data-i18n="footer.copyright">&copy; 2026 Keeply. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- i18n: language packs (motherboard architecture — 19 languages) -->
+  <script src="i18n/zh-TW.js"></script>
+  <script src="i18n/zh-CN.js"></script>
+  <script src="i18n/en.js"></script>
+  <script src="i18n/ja.js"></script>
+  <script src="i18n/ko.js"></script>
+  <script src="i18n/de.js"></script>
+  <script src="i18n/fr.js"></script>
+  <script src="i18n/es.js"></script>
+  <script src="i18n/pt.js"></script>
+  <script src="i18n/it.js"></script>
+  <script src="i18n/nl.js"></script>
+  <script src="i18n/pl.js"></script>
+  <script src="i18n/cs.js"></script>
+  <script src="i18n/hu.js"></script>
+  <script src="i18n/tr.js"></script>
+  <script src="i18n/fi.js"></script>
+  <script src="i18n/sv.js"></script>
+  <script src="i18n/no.js"></script>
+  <script src="i18n/da.js"></script>
+  <script src="i18n.js"></script>
+</body>
+</html>

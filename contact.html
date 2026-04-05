@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth" data-i18n-title="contact.meta.title" data-i18n-desc="contact.meta.description">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>聯繫我們 — Keeply</title>
+  <meta name="description" content="有問題、要回報 Bug，或只是想打個招呼？聯繫 Keeply 團隊。" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff', 100: '#e0e7ff', 200: '#c7d2fe', 300: '#a5b4fc',
+              400: '#818cf8', 500: '#6366f1', 600: '#4f46e5', 700: '#4338ca',
+              800: '#3730a3', 900: '#312e81', 950: '#1e1b4b',
+            }
+          },
+          fontFamily: {
+            sans: ['"M PLUS Rounded 1c"', '"Microsoft JhengHei"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-lg border-b border-gray-100 z-50">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" class="w-9 h-9">
+          <defs>
+            <linearGradient id="ring" x1="80" y1="404" x2="434" y2="112" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#4338CA"/><stop offset="1" stop-color="#4F46E5"/>
+            </linearGradient>
+            <linearGradient id="amber" x1="115" y1="171" x2="270" y2="82" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#F59E0B"/><stop offset="1" stop-color="#FFB300"/>
+            </linearGradient>
+            <linearGradient id="doc-front" x1="166" y1="164" x2="308" y2="372" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#5D54F6"/><stop offset="1" stop-color="#4F46E5"/>
+            </linearGradient>
+            <linearGradient id="doc-back" x1="208" y1="160" x2="364" y2="350" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#9C98FF"/><stop offset="1" stop-color="#6F6AF0"/>
+            </linearGradient>
+          </defs>
+          <g>
+            <path d="M396 129C429 159 448 200 448 255C448 363 360 451 252 451C145 451 58 368 56 263C55 206 75 158 111 123" stroke="url(#ring)" stroke-width="44" stroke-linecap="round"/>
+            <path d="M111 123C145 91 190 72 239 72C253 72 265 73 278 76" stroke="url(#amber)" stroke-width="44" stroke-linecap="round"/>
+            <path d="M236 54L313 79L254 134L236 54Z" fill="url(#amber)"/>
+            <rect x="220" y="150" width="152" height="206" rx="32" fill="url(#doc-back)" opacity="0.48"/>
+            <rect x="192" y="167" width="152" height="206" rx="32" fill="url(#doc-back)" opacity="0.72"/>
+            <rect x="164" y="184" width="152" height="206" rx="32" fill="url(#doc-front)"/>
+            <path d="M250 184H316V247L250 184Z" fill="#BDBAFF" opacity="0.95"/>
+          </g>
+        </svg>
+        <span class="text-xl font-bold text-brand-700">Keeply</span>
+      </a>
+      <div class="flex items-center gap-3">
+        <div id="lang-switcher" class="relative">
+            <button id="lang-toggle" class="flex items-center gap-1.5 text-sm font-medium text-gray-600 hover:text-brand-600 border border-gray-200 hover:border-brand-300 px-3 py-1.5 rounded-full transition-all">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span id="lang-label">繁體中文</span>
+              <svg class="w-3 h-3 opacity-50" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+          </div>
+        <a href="index.html#download" class="bg-brand-600 hover:bg-brand-700 text-white text-sm font-medium px-5 py-2.5 rounded-full transition-all hover:shadow-lg hover:shadow-brand-600/25" data-i18n="nav.download">免費下載</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENT -->
+  <div class="pt-28 pb-20">
+    <article class="max-w-3xl mx-auto px-6">
+
+      <div class="mb-12">
+        <nav class="text-sm text-gray-400 mb-4">
+          <a href="index.html" class="hover:text-brand-600 transition-colors" data-i18n="breadcrumb.home">首頁</a>
+          <span class="mx-2">/</span>
+          <span class="text-gray-600" data-i18n="contact.breadcrumb">聯繫我們</span>
+        </nav>
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3" data-i18n="contact.title">與我們聯繫</h1>
+        <p class="text-gray-500 text-lg" data-i18n="contact.subtitle">有問題、要回報 Bug，或只是想打個招呼？</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- Email -->
+        <div class="bg-brand-50 border border-brand-100 rounded-2xl p-8">
+          <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center text-xl mb-4">
+            <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+          </div>
+          <h2 class="text-lg font-bold text-gray-900 mb-2" data-i18n="contact.email.title">電子郵件</h2>
+          <a href="mailto:hello@keeply.work" class="text-brand-600 font-bold text-lg hover:underline">hello@keeply.work</a>
+          <p class="text-sm text-gray-500 mt-3" data-i18n-html="contact.email.response">我們的目標是在 <strong>2 個工作天</strong>內回覆。</p>
+        </div>
+
+        <!-- Billing -->
+        <div class="bg-amber-50 border border-amber-100 rounded-2xl p-8">
+          <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-xl mb-4">
+            <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>
+          </div>
+          <h2 class="text-lg font-bold text-gray-900 mb-2" data-i18n="contact.billing.title">帳務與退款</h2>
+          <p class="text-sm text-gray-600 leading-relaxed" data-i18n-html="contact.billing.desc">
+            所有付款由 <strong>Paddle.com</strong> 處理。帳務問題或退款請聯繫 <a href="mailto:hello@keeply.work" class="text-brand-600 hover:underline">hello@keeply.work</a>，或直接造訪 <a href="https://www.paddle.com/contact" class="text-brand-600 hover:underline">Paddle 支援</a>。
+          </p>
+          <div class="mt-4 bg-white/60 rounded-lg p-3 text-sm text-amber-700 font-medium" data-i18n="contact.billing.note">
+            Team 方案享有 30 天退款保證。
+          </div>
+        </div>
+
+        <!-- Security -->
+        <div class="bg-gray-50 border border-gray-200 rounded-2xl p-8 md:col-span-2">
+          <div class="w-12 h-12 bg-gray-200 rounded-xl flex items-center justify-center text-xl mb-4">
+            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+          </div>
+          <h2 class="text-lg font-bold text-gray-900 mb-2" data-i18n="contact.security.title">安全與隱私</h2>
+          <p class="text-sm text-gray-600 leading-relaxed" data-i18n-html="contact.security.desc">
+            發現安全漏洞或有隱私問題？請發送郵件至 <strong>hello@keeply.work</strong>，主旨標註「Security」或「Privacy」。
+          </p>
+          <p class="text-sm text-gray-500 mt-3" data-i18n-html="contact.security.privacy">
+            關於我們如何處理你的資料，請參閱<a href="privacy.html" class="text-brand-600 hover:underline">隱私權政策</a>。
+          </p>
+        </div>
+
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-gray-100">
+        <p class="text-sm text-gray-400 italic" data-i18n="contact.company">Keeply is a product of City-State Information Technology Co., Ltd. (城國資訊有限公司), registered in Taiwan (No. 42846493).</p>
+      </div>
+
+    </article>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" class="w-7 h-7">
+            <g>
+              <path d="M396 129C429 159 448 200 448 255C448 363 360 451 252 451C145 451 58 368 56 263C55 206 75 158 111 123" stroke="#6366f1" stroke-width="44" stroke-linecap="round"/>
+              <path d="M111 123C145 91 190 72 239 72C253 72 265 73 278 76" stroke="#fbbf24" stroke-width="44" stroke-linecap="round"/>
+              <path d="M236 54L313 79L254 134L236 54Z" fill="#fbbf24"/>
+              <rect x="164" y="184" width="152" height="206" rx="32" fill="#6366f1"/>
+            </g>
+          </svg>
+          <span class="text-white font-bold">Keeply</span>
+        </div>
+        <div class="flex items-center gap-6 text-sm">
+          <a href="privacy.html" class="hover:text-white transition-colors" data-i18n="footer.privacy">隱私權政策</a>
+          <a href="terms.html" class="hover:text-white transition-colors" data-i18n="footer.terms">服務條款</a>
+          <a href="https://github.com/boy1690/Keeply/releases/latest" class="hover:text-white transition-colors" data-i18n="footer.download">下載</a>
+          <a href="contact.html" class="hover:text-white transition-colors" data-i18n="footer.contact">聯繫我們</a>
+        </div>
+        <p class="text-sm" data-i18n="footer.copyright">&copy; 2026 Keeply. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- i18n: language packs (motherboard architecture — 19 languages) -->
+  <script src="i18n/zh-TW.js"></script>
+  <script src="i18n/zh-CN.js"></script>
+  <script src="i18n/en.js"></script>
+  <script src="i18n/ja.js"></script>
+  <script src="i18n/ko.js"></script>
+  <script src="i18n/de.js"></script>
+  <script src="i18n/fr.js"></script>
+  <script src="i18n/es.js"></script>
+  <script src="i18n/pt.js"></script>
+  <script src="i18n/it.js"></script>
+  <script src="i18n/nl.js"></script>
+  <script src="i18n/pl.js"></script>
+  <script src="i18n/cs.js"></script>
+  <script src="i18n/hu.js"></script>
+  <script src="i18n/tr.js"></script>
+  <script src="i18n/fi.js"></script>
+  <script src="i18n/sv.js"></script>
+  <script src="i18n/no.js"></script>
+  <script src="i18n/da.js"></script>
+  <script src="i18n.js"></script>
+</body>
+</html>
