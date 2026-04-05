@@ -4,6 +4,7 @@
 .claude/
 .specify/
 specs/
+idea/
 *.log
 .tmp/
 

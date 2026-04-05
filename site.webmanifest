@@ -1,0 +1,16 @@
+{
+  "name": "Keeply",
+  "short_name": "Keeply",
+  "description": "Your files have stories. Keeply remembers them all.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#4F46E5",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ]
+}
