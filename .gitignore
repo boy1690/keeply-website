@@ -2,6 +2,7 @@
 # Dev tooling (local only, NOT pushed to remote)
 # ===========================
 CLAUDE.md
+.github/
 .claude/
 .specify/
 specs/
