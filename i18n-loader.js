@@ -15,6 +15,8 @@
   ];
 
   // 計算 i18n/ 的基礎路徑（相對於當前頁面）
+  // 在子目錄頁面中，script src 會是 ../i18n-loader.js，
+  // 所以 basePath 會是 ../ ，語言包路徑就是 ../i18n/{locale}.js
   var scripts = document.getElementsByTagName('script');
   var basePath = '';
   for (var i = 0; i < scripts.length; i++) {
@@ -23,6 +25,10 @@
       basePath = src.replace('i18n-loader.js', '');
       break;
     }
+  }
+  // Fallback: detect from URL if script detection fails
+  if (!basePath && location.pathname.match(/^\/[a-z]{2}(?:-[A-Z]{2})?\//)) {
+    basePath = '../';
   }
 
   var loaded = 0;

@@ -6,16 +6,25 @@
  * 此腳本以 defer 載入，DOM ready 後自動注入。
  */
 (function () {
-  // 偵測是否為首頁
+  // 偵測語言子目錄前綴（例如 /en/, /zh-TW/, /ja/）
   var path = location.pathname;
+  var localeMatch = path.match(/^\/([a-z]{2}(?:-[A-Z]{2})?)\//);
+  var localePrefix = localeMatch ? '/' + localeMatch[1] + '/' : '';
+
+  // 偵測是否為首頁（根目錄語言選擇頁或語言子目錄首頁）
   var isHome = path === '/' || path.endsWith('/index.html') || path.endsWith('/keeply-website/') || path === '';
+  // 語言子目錄首頁也算首頁
+  if (localeMatch) {
+    var subPath = path.substring(localeMatch[0].length);
+    isHome = subPath === '' || subPath === 'index.html';
+  }
   // file:// 協議下的判斷
   if (location.protocol === 'file:') {
     isHome = path.endsWith('index.html') || path.endsWith('/');
   }
 
-  var logoLink = isHome ? '#' : 'index.html';
-  var downloadLink = isHome ? '#download' : 'index.html#download';
+  var logoLink = isHome ? '#' : localePrefix + 'index.html';
+  var downloadLink = isHome ? '#download' : localePrefix + 'index.html#download';
 
   // === NAV ===
   var NAV_SVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" class="w-9 h-9">'
@@ -81,10 +90,10 @@
     + '<span class="text-white font-bold">Keeply</span>'
     + '</div>'
     + '<div class="flex items-center gap-6 text-sm">'
-    + '<a href="privacy.html" class="hover:text-white transition-colors" data-i18n="footer.privacy">\u96b1\u79c1\u6b0a\u653f\u7b56</a>'
-    + '<a href="terms.html" class="hover:text-white transition-colors" data-i18n="footer.terms">\u670d\u52d9\u689d\u6b3e</a>'
+    + '<a href="' + localePrefix + 'privacy.html" class="hover:text-white transition-colors" data-i18n="footer.privacy">\u96b1\u79c1\u6b0a\u653f\u7b56</a>'
+    + '<a href="' + localePrefix + 'terms.html" class="hover:text-white transition-colors" data-i18n="footer.terms">\u670d\u52d9\u689d\u6b3e</a>'
     + '<a href="https://github.com/boy1690/Keeply/releases/latest" class="hover:text-white transition-colors" data-i18n="footer.download">\u4e0b\u8f09</a>'
-    + '<a href="contact.html" class="hover:text-white transition-colors" data-i18n="footer.contact">\u806f\u7e6b\u6211\u5011</a>'
+    + '<a href="' + localePrefix + 'contact.html" class="hover:text-white transition-colors" data-i18n="footer.contact">\u806f\u7e6b\u6211\u5011</a>'
     + '</div>'
     + '<p class="text-sm" data-i18n="footer.copyright">&copy; 2026 Keeply. All rights reserved.</p>'
     + '</div>'

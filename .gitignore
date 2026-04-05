@@ -31,3 +31,25 @@ i18n/translation-template.md
 i18n/*.zip
 i18n/_*.cjs
 i18n/_*.js
+
+# i18n build output (generated locale subdirectories)
+/zh-TW/
+/zh-CN/
+/en/
+/ja/
+/ko/
+/de/
+/fr/
+/es/
+/pt/
+/it/
+/nl/
+/pl/
+/cs/
+/hu/
+/tr/
+/fi/
+/sv/
+/no/
+/da/
+/templates/

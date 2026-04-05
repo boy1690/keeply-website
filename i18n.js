@@ -151,11 +151,36 @@
     return code;
   }
 
+  // Detect if we're in a locale subdirectory (e.g. /en/, /zh-TW/)
+  function detectLocaleFromUrl() {
+    var match = location.pathname.match(/^\/([a-z]{2}(?:-[A-Z]{2})?)\//);
+    return match ? match[1] : null;
+  }
+
+  // Get current page filename (e.g. 'privacy.html', 'index.html')
+  function getCurrentPage() {
+    var parts = location.pathname.split('/').filter(Boolean);
+    var last = parts[parts.length - 1] || '';
+    if (last && last.indexOf('.html') !== -1) return last;
+    return 'index.html';
+  }
+
   function setLang(lang) {
     if (SUPPORTED.indexOf(lang) === -1) lang = DEFAULT;
+    try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) { /* ignore */ }
+
+    // If in a locale subdirectory, navigate to the new locale URL
+    var urlLocale = detectLocaleFromUrl();
+    if (urlLocale && urlLocale !== lang) {
+      var page = getCurrentPage();
+      var pagePath = page === 'index.html' ? '' : page;
+      window.location.href = '/' + lang + '/' + pagePath;
+      return;
+    }
+
+    // Fallback: in-page replacement (for root page or same locale)
     currentLang = lang;
     document.documentElement.lang = HTML_LANG_MAP[lang] || lang;
-    try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) { /* ignore */ }
 
     // Update globe button label
     var label = document.getElementById('lang-label');
@@ -190,17 +215,20 @@
     dropdown.className = 'absolute right-0 top-full mt-2 bg-white border border-gray-200 rounded-xl shadow-xl py-2 z-[100] w-48 max-h-80 overflow-y-auto hidden';
     dropdown.style.scrollbarWidth = 'thin';
 
+    var page = getCurrentPage();
+    var pagePath = page === 'index.html' ? '' : page;
+
     for (var i = 0; i < LANGUAGES.length; i++) {
       var lang = LANGUAGES[i];
-      var item = document.createElement('button');
-      item.type = 'button';
-      item.className = 'w-full text-left px-4 py-2 text-sm hover:bg-brand-50 transition-colors text-gray-700';
+      var item = document.createElement('a');
+      item.href = '/' + lang.code + '/' + pagePath;
+      item.className = 'block w-full text-left px-4 py-2 text-sm hover:bg-brand-50 transition-colors text-gray-700';
       item.setAttribute('data-lang-code', lang.code);
       item.textContent = lang.label;
       item.addEventListener('click', (function (code) {
-        return function () {
-          setLang(code);
-          dropdown.classList.add('hidden');
+        return function (e) {
+          try { localStorage.setItem(STORAGE_KEY, code); } catch (ex) {}
+          // Let the <a> navigate naturally
         };
       })(lang.code));
       dropdown.appendChild(item);
@@ -228,11 +256,18 @@
   }
 
   function init() {
-    currentLang = detectLang();
+    // If in a locale subdirectory, use that locale as the current language
+    var urlLocale = detectLocaleFromUrl();
+    if (urlLocale && SUPPORTED.indexOf(urlLocale) !== -1) {
+      currentLang = urlLocale;
+      try { localStorage.setItem(STORAGE_KEY, urlLocale); } catch (e) {}
+    } else {
+      currentLang = detectLang();
+    }
     buildDropdown();
     setLang(currentLang);
-    // Async: try IP geolocation to upgrade language (won't override manual choice)
-    detectLangFromIP();
+    // Async: try IP geolocation to upgrade language (won't override manual choice or URL locale)
+    if (!urlLocale) detectLangFromIP();
   }
 
   if (document.readyState === 'loading') {
