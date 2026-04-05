@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Self-hosted M PLUS Rounded 1c (full character set incl. CJK) */
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/MPLUSRounded1c-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./fonts/MPLUSRounded1c-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/MPLUSRounded1c-Bold.woff2') format('woff2');
+}
+
 /* Custom animations (migrated from index.html <style>) */
 @layer components {
   /* Smooth gradient animation */
