@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations (migrated from index.html <style>) */
+@layer components {
+  /* Smooth gradient animation */
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+
+  /* Floating animation for cards */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  .animate-float-delayed {
+    animation: float 6s ease-in-out 2s infinite;
+  }
+  .animate-float-delayed-2 {
+    animation: float 6s ease-in-out 4s infinite;
+  }
+
+  /* Subtle glow on hover */
+  .glow-hover:hover {
+    box-shadow: 0 0 40px rgba(79, 70, 229, 0.15);
+  }
+}

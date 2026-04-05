@@ -70,9 +70,8 @@
   <meta name="twitter:description" content="讓非技術使用者以最簡單的方式管理檔案版本。免費下載，30 秒開始使用。" />
   <meta name="twitter:image" content="https://keeply.work/og-image.png" />
 
-  <!-- Tailwind CSS CDN + Shared Config -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="tailwind-config.js"></script>
+  <!-- Tailwind CSS (compiled) -->
+  <link rel="stylesheet" href="style.css" />
 
   <!-- M PLUS Rounded 1c -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -111,37 +110,6 @@
   }
   </script>
 
-  <style>
-    /* Smooth gradient animation */
-    @keyframes gradient-shift {
-      0%, 100% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-    }
-    .animate-gradient {
-      background-size: 200% 200%;
-      animation: gradient-shift 8s ease infinite;
-    }
-
-    /* Floating animation for cards */
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
-    }
-    .animate-float {
-      animation: float 6s ease-in-out infinite;
-    }
-    .animate-float-delayed {
-      animation: float 6s ease-in-out 2s infinite;
-    }
-    .animate-float-delayed-2 {
-      animation: float 6s ease-in-out 4s infinite;
-    }
-
-    /* Subtle glow on hover */
-    .glow-hover:hover {
-      box-shadow: 0 0 40px rgba(79, 70, 229, 0.15);
-    }
-  </style>
 </head>
 
 <body class="bg-white text-gray-900 font-sans antialiased">
