@@ -1,6 +1,7 @@
 # ===========================
 # Dev tooling (local only, NOT pushed to remote)
 # ===========================
+CLAUDE.md
 .claude/
 .specify/
 specs/
