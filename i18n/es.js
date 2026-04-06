@@ -379,5 +379,9 @@ window.__i18n["es"] = {
   "index.usecases.remote.title": "Equipos remotos e híbridos",
   "index.usecases.remote.desc": "El equipo de oficina en el NAS, el diseñador remoto en GitHub. La misma bóveda, el mismo historial de versiones — todos permanecen sincronizados.",
   "terms.s3.table.free.vaultloc": "2 compartidas + 1 personal (autogestión)",
-  "terms.s3.table.team.vaultloc": "2 compartidas + 1 personal (gestión del admin)"
+  "terms.s3.table.team.vaultloc": "2 compartidas + 1 personal (gestión del admin)",
+  "index.pricing.team.badge": "Próximamente",
+  "index.pricing.team.coming": "Actualmente en desarrollo. Deja tu email para recibir la notificación de lanzamiento.",
+  "index.pricing.team.placeholder": "tu@email.com",
+  "index.pricing.team.cta.notify": "Notificarme"
 };

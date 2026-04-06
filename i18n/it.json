@@ -378,5 +378,9 @@
   "index.usecases.remote.title": "Team Remoti e Ibridi",
   "index.usecases.remote.desc": "Il team in ufficio sul NAS, il designer remoto su GitHub. Stesso vault, stessa cronologia versioni — tutti restano sincronizzati.",
   "terms.s3.table.free.vaultloc": "2 condivise + 1 personale (autogestita)",
-  "terms.s3.table.team.vaultloc": "2 condivise + 1 personale (gestita dall’amministratore)"
+  "terms.s3.table.team.vaultloc": "2 condivise + 1 personale (gestita dall’amministratore)",
+  "index.pricing.team.badge": "In arrivo",
+  "index.pricing.team.coming": "Attualmente in fase di sviluppo. Lascia la tua email per essere avvisato al lancio.",
+  "index.pricing.team.placeholder": "tua@email.com",
+  "index.pricing.team.cta.notify": "Avvisami"
 }

@@ -379,5 +379,9 @@ window.__i18n["tr"] = {
   "index.usecases.remote.title": "Uzaktan ve Hibrit Takımlar",
   "index.usecases.remote.desc": "Ofis ekibi NAS’ta, uzaktan tasarımcı GitHub’da. Aynı kasa, aynı sürüm geçmişi — herkes senkronize kalır.",
   "terms.s3.table.free.vaultloc": "2 paylaşımlı + 1 kişisel (kendi yönetiminde)",
-  "terms.s3.table.team.vaultloc": "2 paylaşımlı + 1 kişisel (yönetici tarafından yönetilen)"
+  "terms.s3.table.team.vaultloc": "2 paylaşımlı + 1 kişisel (yönetici tarafından yönetilen)",
+  "index.pricing.team.badge": "Yakında",
+  "index.pricing.team.coming": "Şu anda geliştirme aşamasında. E-postanızı bırakın, lansman bildirimini alın.",
+  "index.pricing.team.placeholder": "email@adresiniz.com",
+  "index.pricing.team.cta.notify": "Beni bilgilendir"
 };

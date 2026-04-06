@@ -378,5 +378,9 @@
   "index.usecases.remote.title": "Remote en Hybride Teams",
   "index.usecases.remote.desc": "Kantoorteam op de NAS, remote designer op GitHub. Dezelfde kluis, dezelfde versiegeschiedenis — iedereen blijft gesynchroniseerd.",
   "terms.s3.table.free.vaultloc": "2 gedeelde + 1 persoonlijke (zelfbeheerd)",
-  "terms.s3.table.team.vaultloc": "2 gedeelde + 1 persoonlijke (beheerdersbeheerd)"
+  "terms.s3.table.team.vaultloc": "2 gedeelde + 1 persoonlijke (beheerdersbeheerd)",
+  "index.pricing.team.badge": "Binnenkort",
+  "index.pricing.team.coming": "Momenteel in ontwikkeling. Laat uw e-mail achter om op de hoogte te worden gebracht.",
+  "index.pricing.team.placeholder": "uw@email.com",
+  "index.pricing.team.cta.notify": "Informeer mij"
 }

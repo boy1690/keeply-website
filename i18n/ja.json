@@ -378,5 +378,9 @@
   "index.usecases.remote.title": "リモート・ハイブリッドチーム",
   "index.usecases.remote.desc": "オフィスチームは NAS、リモートデザイナーは GitHub。同じボールト、同じバージョン履歴——全員が同期を維持。",
   "terms.s3.table.free.vaultloc": "共有 2 + 個人 1（自己管理）",
-  "terms.s3.table.team.vaultloc": "共有 2 + 個人 1（管理者管理）"
+  "terms.s3.table.team.vaultloc": "共有 2 + 個人 1（管理者管理）",
+  "index.pricing.team.badge": "近日公開",
+  "index.pricing.team.coming": "現在開発中です。メールアドレスを登録して、リリース通知を受け取りましょう。",
+  "index.pricing.team.placeholder": "your@email.com",
+  "index.pricing.team.cta.notify": "通知する"
 }

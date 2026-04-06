@@ -379,5 +379,9 @@ window.__i18n["da"] = {
   "index.usecases.remote.title": "Fjern- og hybridteams",
   "index.usecases.remote.desc": "Kontorteamet på NAS'en, fjerndesigneren på GitHub. Samme boks, samme versionshistorik — alle forbliver synkroniserede.",
   "terms.s3.table.free.vaultloc": "2 delte + 1 personlig (selvadministreret)",
-  "terms.s3.table.team.vaultloc": "2 delte + 1 personlig (administratorstyret)"
+  "terms.s3.table.team.vaultloc": "2 delte + 1 personlig (administratorstyret)",
+  "index.pricing.team.badge": "Kommer snart",
+  "index.pricing.team.coming": "I øjeblikket under udvikling. Efterlad din email for at få besked ved lancering.",
+  "index.pricing.team.placeholder": "din@email.com",
+  "index.pricing.team.cta.notify": "Giv mig besked"
 };

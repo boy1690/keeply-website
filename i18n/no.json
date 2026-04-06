@@ -378,5 +378,9 @@
   "index.usecases.remote.title": "Fjern- og hybridteam",
   "index.usecases.remote.desc": "Kontorteamet på NAS-en, fjerndesigneren på GitHub. Samme hvelv, samme versjonshistorikk — alle holder seg synkronisert.",
   "terms.s3.table.free.vaultloc": "2 delte + 1 personlig (selvadministrert)",
-  "terms.s3.table.team.vaultloc": "2 delte + 1 personlig (administratorstyrt)"
+  "terms.s3.table.team.vaultloc": "2 delte + 1 personlig (administratorstyrt)",
+  "index.pricing.team.badge": "Kommer snart",
+  "index.pricing.team.coming": "For tiden under utvikling. Legg igjen e-posten din for å bli varslet ved lansering.",
+  "index.pricing.team.placeholder": "din@email.com",
+  "index.pricing.team.cta.notify": "Varsle meg"
 }

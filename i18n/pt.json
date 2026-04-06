@@ -378,5 +378,9 @@
   "index.usecases.remote.title": "Equipas Remotas e Híbridas",
   "index.usecases.remote.desc": "Equipa do escritório no NAS, designer remoto no GitHub. Mesmo cofre, mesmo histórico de versões — todos ficam sincronizados.",
   "terms.s3.table.free.vaultloc": "2 partilhadas + 1 pessoal (autogerida)",
-  "terms.s3.table.team.vaultloc": "2 partilhadas + 1 pessoal (gerida pelo administrador)"
+  "terms.s3.table.team.vaultloc": "2 partilhadas + 1 pessoal (gerida pelo administrador)",
+  "index.pricing.team.badge": "Em breve",
+  "index.pricing.team.coming": "Atualmente em desenvolvimento. Deixe seu email para ser notificado no lançamento.",
+  "index.pricing.team.placeholder": "seu@email.com",
+  "index.pricing.team.cta.notify": "Notificar-me"
 }

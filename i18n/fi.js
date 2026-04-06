@@ -379,5 +379,9 @@ window.__i18n["fi"] = {
   "index.usecases.remote.title": "Etä- ja hybriditiimit",
   "index.usecases.remote.desc": "Toimistotiimi NAS:lla, etäsuunnittelija GitHubissa. Sama holvi, sama versiohistoria — kaikki pysyvät synkronoituina.",
   "terms.s3.table.free.vaultloc": "2 jaettua + 1 henkilökohtainen (itsehallittu)",
-  "terms.s3.table.team.vaultloc": "2 jaettua + 1 henkilökohtainen (ylläpitäjän hallinnoima)"
+  "terms.s3.table.team.vaultloc": "2 jaettua + 1 henkilökohtainen (ylläpitäjän hallinnoima)",
+  "index.pricing.team.badge": "Tulossa pian",
+  "index.pricing.team.coming": "Kehitteillä. Jätä sähköpostiosoitteesi saadaksesi ilmoituksen julkaisusta.",
+  "index.pricing.team.placeholder": "sinun@email.com",
+  "index.pricing.team.cta.notify": "Ilmoita minulle"
 };

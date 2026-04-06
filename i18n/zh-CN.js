@@ -379,5 +379,9 @@ window.__i18n["zh-CN"] = {
   "index.usecases.remote.title": "远程与混合团队",
   "index.usecases.remote.desc": "办公室团队使用 NAS，远程设计师使用 GitHub。同一个保管库，同一份版本历史——每个人都保持同步。",
   "terms.s3.table.free.vaultloc": "2 个共用 + 1 个个人（自行管理）",
-  "terms.s3.table.team.vaultloc": "2 个共用 + 1 个个人（管理员管理）"
+  "terms.s3.table.team.vaultloc": "2 个共用 + 1 个个人（管理员管理）",
+  "index.pricing.team.badge": "即将推出",
+  "index.pricing.team.coming": "目前开发中，留下 Email 抢先收到上线通知。",
+  "index.pricing.team.placeholder": "your@email.com",
+  "index.pricing.team.cta.notify": "通知我"
 };

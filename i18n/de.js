@@ -379,5 +379,9 @@ window.__i18n["de"] = {
   "index.usecases.remote.title": "Remote- & Hybrid-Teams",
   "index.usecases.remote.desc": "Büroteam am NAS, Remote-Designer auf GitHub. Derselbe Tresor, dieselbe Versionshistorie — alle bleiben synchron.",
   "terms.s3.table.free.vaultloc": "2 gemeinsame + 1 persönlicher (selbstverwaltet)",
-  "terms.s3.table.team.vaultloc": "2 gemeinsame + 1 persönlicher (admin-verwaltet)"
+  "terms.s3.table.team.vaultloc": "2 gemeinsame + 1 persönlicher (admin-verwaltet)",
+  "index.pricing.team.badge": "Demnächst",
+  "index.pricing.team.coming": "Derzeit in Entwicklung. Hinterlassen Sie Ihre E-Mail, um benachrichtigt zu werden.",
+  "index.pricing.team.placeholder": "ihre@email.com",
+  "index.pricing.team.cta.notify": "Benachrichtigen"
 };

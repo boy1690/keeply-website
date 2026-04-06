@@ -378,5 +378,9 @@
   "index.usecases.remote.title": "Distans- och hybridteam",
   "index.usecases.remote.desc": "Kontorsteamet på NAS:en, distansdesignern på GitHub. Samma valv, samma versionshistorik — alla hålls synkade.",
   "terms.s3.table.free.vaultloc": "2 delade + 1 personlig (egenhantering)",
-  "terms.s3.table.team.vaultloc": "2 delade + 1 personlig (adminhanterad)"
+  "terms.s3.table.team.vaultloc": "2 delade + 1 personlig (adminhanterad)",
+  "index.pricing.team.badge": "Kommer snart",
+  "index.pricing.team.coming": "Under utveckling. Lämna din e-post för att bli meddelad vid lansering.",
+  "index.pricing.team.placeholder": "din@email.com",
+  "index.pricing.team.cta.notify": "Meddela mig"
 }

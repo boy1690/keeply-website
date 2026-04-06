@@ -378,5 +378,9 @@
   "index.usecases.remote.title": "Zespoły zdalne i hybrydowe",
   "index.usecases.remote.desc": "Zespół biurowy na NAS, zdalny projektant na GitHub. Ten sam sejf, ta sama historia wersji — wszyscy pozostają zsynchronizowani.",
   "terms.s3.table.free.vaultloc": "2 współdzielone + 1 osobista (samodzielnie zarządzana)",
-  "terms.s3.table.team.vaultloc": "2 współdzielone + 1 osobista (zarządzana przez administratora)"
+  "terms.s3.table.team.vaultloc": "2 współdzielone + 1 osobista (zarządzana przez administratora)",
+  "index.pricing.team.badge": "Wkrótce",
+  "index.pricing.team.coming": "Obecnie w trakcie rozwoju. Zostaw swój email, aby otrzymać powiadomienie o premierze.",
+  "index.pricing.team.placeholder": "twoj@email.com",
+  "index.pricing.team.cta.notify": "Powiadom mnie"
 }

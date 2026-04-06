@@ -379,5 +379,9 @@ window.__i18n["cs"] = {
   "index.usecases.remote.title": "Vzdálené a hybridní týmy",
   "index.usecases.remote.desc": "Kancelářský tým na NAS, vzdálený designér na GitHubu. Stejný trezor, stejná historie verzí — všichni zůstávají synchronizovaní.",
   "terms.s3.table.free.vaultloc": "2 sdílená + 1 osobní (vlastní správa)",
-  "terms.s3.table.team.vaultloc": "2 sdílená + 1 osobní (správa administrátorem)"
+  "terms.s3.table.team.vaultloc": "2 sdílená + 1 osobní (správa administrátorem)",
+  "index.pricing.team.badge": "Již brzy",
+  "index.pricing.team.coming": "Aktuálně ve vývoji. Zanechte svůj email a budete informováni o spuštění.",
+  "index.pricing.team.placeholder": "vas@email.com",
+  "index.pricing.team.cta.notify": "Upozornit mě"
 };

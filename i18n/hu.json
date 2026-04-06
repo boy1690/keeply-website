@@ -378,5 +378,9 @@
   "index.usecases.remote.title": "Távoli és Hibrid Csapatok",
   "index.usecases.remote.desc": "Az irodai csapat a NAS-on, a távoli tervező a GitHubon. Ugyanaz a széf, ugyanaz a verzióelőzmény — mindenki szinkronban marad.",
   "terms.s3.table.free.vaultloc": "2 megosztott + 1 személyes (önállóan kezelt)",
-  "terms.s3.table.team.vaultloc": "2 megosztott + 1 személyes (adminisztrátor által kezelt)"
+  "terms.s3.table.team.vaultloc": "2 megosztott + 1 személyes (adminisztrátor által kezelt)",
+  "index.pricing.team.badge": "Hamarosan",
+  "index.pricing.team.coming": "Jelenleg fejlesztés alatt. Hagyja meg email címét, és értesítjük az induláskor.",
+  "index.pricing.team.placeholder": "az-on@email.com",
+  "index.pricing.team.cta.notify": "Értesítsen"
 }
