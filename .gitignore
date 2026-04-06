@@ -1,6 +1,7 @@
 # ===========================
 # Dev tooling (local only, NOT pushed to remote)
 # ===========================
+/_dev/
 CLAUDE.md
 .claude/
 .specify/
@@ -20,12 +21,7 @@ desktop.ini
 *.swp
 *.swo
 
-# Build toolchain (dev only — CI deploys pre-built output)
-/templates/
-build-i18n.js
-input.css
-tailwind.config.js
-tailwind-config.js
+# Node
 node_modules/
 package.json
 package-lock.json
@@ -35,3 +31,4 @@ i18n/translation-template.md
 i18n/*.zip
 i18n/_*.cjs
 i18n/_*.js
+.playwright-mcp/
