@@ -415,7 +415,7 @@
           </form>
           <p id="team-notify-thanks" class="text-sm text-green-600 font-medium" style="display:none" data-i18n="index.pricing.team.thanks">Vastaanotettu! Ilmoitamme sinulle, kun Team-paketti julkaistaan.</p>
           <script>
-          function submitTeamNotify(e){e.preventDefault();var f=document.getElementById('team-notify-form'),t=document.getElementById('team-notify-thanks');var d=new FormData();d.append('entry.811615319',document.getElementById('tn-name').value);d.append('entry.1905692581',document.getElementById('tn-email').value);if(document.getElementById('tn-newsletter').checked)d.append('entry.newsletter','yes');fetch('https://docs.google.com/forms/d/e/1FAIpQLSe8WpbHAy8wcAfZRdV1kiHOZa7riuxaOg7X_kgJadQX4GX0RA/formResponse',{method:'POST',mode:'no-cors',body:d});f.style.display='none';t.style.display='block';return false}
+          function submitTeamNotify(e){e.preventDefault();var f=document.getElementById('team-notify-form'),t=document.getElementById('team-notify-thanks');var d=new FormData();d.append('entry.811615319',document.getElementById('tn-name').value);d.append('entry.1905692581',document.getElementById('tn-email').value);if(document.getElementById('tn-newsletter').checked)d.append('entry.1908384673','yes');fetch('https://docs.google.com/forms/d/e/1FAIpQLSe8WpbHAy8wcAfZRdV1kiHOZa7riuxaOg7X_kgJadQX4GX0RA/formResponse',{method:'POST',mode:'no-cors',body:d});f.style.display='none';t.style.display='block';return false}
           </script>
         </div>
       </div>
