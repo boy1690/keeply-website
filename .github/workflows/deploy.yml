@@ -24,12 +24,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build i18n pages
-        run: node build-i18n.js
-
-      - name: Build Tailwind CSS
-        run: npx tailwindcss@3 -i input.css -o style.css --minify
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
