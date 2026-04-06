@@ -298,6 +298,18 @@
           <h3 class="text-lg font-bold text-gray-900 mb-2" data-i18n="index.usecases.academic.title">Recherche académique</h3>
           <p class="text-gray-500 text-sm leading-relaxed" data-i18n="index.usecases.academic.desc">These_final_VRAIMENT_final_v3.docx ? Gérez avec Keeply et ne vous trompez plus jamais.</p>
         </div>
+
+        <div class="group bg-gradient-to-br from-orange-50 to-white rounded-2xl p-8 border border-orange-100 hover:shadow-lg transition-all">
+          <div class="text-3xl mb-4">🏗️</div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2" data-i18n="index.usecases.construction.title">Construction et AEC</h3>
+          <p class="text-gray-500 text-sm leading-relaxed" data-i18n="index.usecases.construction.desc">L'ingénieur de chantier prend une clé USB pour la réunion client. L'admin approuve l'emplacement de sauvegarde — et le révoque à la fin du projet.</p>
+        </div>
+
+        <div class="group bg-gradient-to-br from-cyan-50 to-white rounded-2xl p-8 border border-cyan-100 hover:shadow-lg transition-all">
+          <div class="text-3xl mb-4">🌐</div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2" data-i18n="index.usecases.remote.title">Équipes distantes et hybrides</h3>
+          <p class="text-gray-500 text-sm leading-relaxed" data-i18n="index.usecases.remote.desc">L'équipe au bureau sur le NAS, le designer distant sur GitHub. Même coffre, même historique de versions — tout le monde reste synchronisé.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -364,7 +376,7 @@
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.5">Stockage local &amp; NAS</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.6">Comparaison de fichiers</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.7">Utilisateurs illimités</span></li>
-            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.8">Jusqu'à 3 emplacements de coffre</span></li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.8">2 emplacements partagés + 1 sauvegarde personnelle</span></li>
           </ul>
           <a href="#download" class="block border-2 border-gray-200 hover:border-brand-300 text-gray-700 hover:text-brand-700 font-medium py-3.5 rounded-full transition-all" data-i18n="index.pricing.free.cta">Téléchargement gratuit</a>
         </div>
@@ -380,12 +392,13 @@
           <div class="text-xs text-brand-500 mb-8" data-i18n="index.pricing.team.flat">Un seul prix, pas de frais par utilisateur</div>
           <ul class="text-sm text-gray-600 space-y-3 text-left mb-8">
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.1">Tout ce qui est dans Free</span></li>
-            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.2">Gestion des membres &amp; permissions</span></li>
-            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.3">Journal d'activité d'équipe</span></li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.2">Gestion d'équipe par code d'invitation</span></li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.3">Tableau de bord admin du coffre</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.4">Support technique prioritaire</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.5">Garantie satisfait ou remboursé 30 jours</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.6">Licence perpétuelle de repli après 12 mois</span></li>
-            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.7">Détection et résolution des conflits</span></li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.7">Approbation des emplacements et contrôle du délai de carence</span></li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.8">Détection et résolution des conflits</span></li>
           </ul>
           <a href="#" class="block bg-brand-600 hover:bg-brand-700 text-white font-medium py-3.5 rounded-full transition-all hover:shadow-lg" data-paddle="true" data-i18n="index.pricing.team.cta.main">Commencer avec Équipe</a>
         </div>
@@ -405,8 +418,18 @@
         <div class="bg-gray-50 border border-gray-200 rounded-2xl px-8 py-6">
           <p class="text-sm font-bold text-brand-600 mb-1" data-i18n="index.teamvault.tagline">Un coffre. Une équipe. Contrôle total.</p>
           <h3 class="text-lg font-bold text-gray-900 mb-3" data-i18n="index.teamvault.title">Qu'est-ce qu'un « Coffre d'équipe » ?</h3>
-          <p class="text-sm text-gray-600 leading-relaxed mb-3" data-i18n="index.teamvault.desc">Un Coffre d'équipe est l'emplacement de stockage partagé que votre équipe utilise pour collaborer — généralement le NAS de votre bureau ou un dépôt Git distant dans le cloud comme GitHub. Lorsque tous les membres de l'équipe pointent vers le même coffre, Keeply gère automatiquement le contrôle de version, la détection des conflits et l'historique des fichiers. Considérez-le comme la bibliothèque de projets partagée de votre équipe avec un suivi de version intégré.</p>
-          <p class="text-sm text-brand-600 font-medium" data-i18n="index.teamvault.highlight">Pas de verrouillage cloud. Pas de frais par utilisateur. Vos données restent sur votre matériel.</p>
+          <p class="text-sm text-gray-600 leading-relaxed mb-3" data-i18n="index.teamvault.desc">Chaque compte dispose de 2 emplacements partagés (NAS de bureau, Git cloud — toute combinaison) plus 1 sauvegarde personnelle par membre (clé USB, ordinateur portable de terrain). Les utilisateurs Free gèrent les leurs ; les utilisateurs Team bénéficient de l'approbation admin, des délais de carence et des journaux d'activité.</p>
+          <p class="text-sm text-brand-600 font-medium mb-3" data-i18n="index.teamvault.highlight">Pas de verrouillage cloud. Pas de frais par utilisateur. Vos données restent sur votre matériel.</p>
+          <div class="grid md:grid-cols-2 gap-3 mt-3">
+            <div class="bg-white rounded-lg px-4 py-3 border border-gray-100">
+              <p class="text-xs font-bold text-gray-500 mb-1">Free</p>
+              <p class="text-sm text-gray-600" data-i18n="index.teamvault.free">Free : gérez vos propres emplacements. Aucune approbation requise, aucun délai de carence.</p>
+            </div>
+            <div class="bg-white rounded-lg px-4 py-3 border border-brand-100">
+              <p class="text-xs font-bold text-brand-500 mb-1">Team</p>
+              <p class="text-sm text-gray-600" data-i18n="index.teamvault.team">Team : l'admin contrôle les emplacements. Les membres demandent des places de sauvegarde, l'admin approuve. Les délais de carence et limites annuelles maintiennent l'organisation.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

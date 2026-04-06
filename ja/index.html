@@ -298,6 +298,18 @@
           <h3 class="text-lg font-bold text-gray-900 mb-2" data-i18n="index.usecases.academic.title">学術研究</h3>
           <p class="text-gray-500 text-sm leading-relaxed" data-i18n="index.usecases.academic.desc">論文_最終版_本当の最終版_v3.docx？Keeplyで管理すれば、もう混乱しません。</p>
         </div>
+
+        <div class="group bg-gradient-to-br from-orange-50 to-white rounded-2xl p-8 border border-orange-100 hover:shadow-lg transition-all">
+          <div class="text-3xl mb-4">🏗️</div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2" data-i18n="index.usecases.construction.title">建設・AEC</h3>
+          <p class="text-gray-500 text-sm leading-relaxed" data-i18n="index.usecases.construction.desc">現場エンジニアがクライアントミーティング用に USB ドライブを持ち出す。管理者がバックアップロケーションを承認し、プロジェクト終了時に取り消す。</p>
+        </div>
+
+        <div class="group bg-gradient-to-br from-cyan-50 to-white rounded-2xl p-8 border border-cyan-100 hover:shadow-lg transition-all">
+          <div class="text-3xl mb-4">🌐</div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2" data-i18n="index.usecases.remote.title">リモート・ハイブリッドチーム</h3>
+          <p class="text-gray-500 text-sm leading-relaxed" data-i18n="index.usecases.remote.desc">オフィスチームは NAS、リモートデザイナーは GitHub。同じボールト、同じバージョン履歴——全員が同期を維持。</p>
+        </div>
       </div>
     </div>
   </section>
@@ -364,7 +376,7 @@
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.5">ローカル &amp; NAS ストレージ</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.6">ファイル差分</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.7">ユーザー数無制限</span></li>
-            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.8">最大 3 つのボールトの場所</span></li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.8">共有 2 か所 + 個人バックアップ 1 か所</span></li>
           </ul>
           <a href="#download" class="block border-2 border-gray-200 hover:border-brand-300 text-gray-700 hover:text-brand-700 font-medium py-3.5 rounded-full transition-all" data-i18n="index.pricing.free.cta">無料ダウンロード</a>
         </div>
@@ -380,12 +392,13 @@
           <div class="text-xs text-brand-500 mb-8" data-i18n="index.pricing.team.flat">定額制、ユーザー数による追加料金なし</div>
           <ul class="text-sm text-gray-600 space-y-3 text-left mb-8">
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.1">無料版のすべての機能</span></li>
-            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.2">メンバー管理と権限制御</span></li>
-            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.3">チーム活動ログ</span></li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.2">招待コードによるチーム管理</span></li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.3">管理者ボールトダッシュボード</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.4">優先テクニカルサポート</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.5">30日間返金保証</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.6">12ヶ月後に永久フォールバック権</span></li>
-            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.7">競合検出と解決</span></li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.7">ロケーション承認とクールダウン制御</span></li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.8">競合検出と解決</span></li>
           </ul>
           <a href="#" class="block bg-brand-600 hover:bg-brand-700 text-white font-medium py-3.5 rounded-full transition-all hover:shadow-lg" data-paddle="true" data-i18n="index.pricing.team.cta.main">チームプランを始める</a>
         </div>
@@ -405,8 +418,18 @@
         <div class="bg-gray-50 border border-gray-200 rounded-2xl px-8 py-6">
           <p class="text-sm font-bold text-brand-600 mb-1" data-i18n="index.teamvault.tagline">1 つのボールト。1 つのチーム。完全なコントロール。</p>
           <h3 class="text-lg font-bold text-gray-900 mb-3" data-i18n="index.teamvault.title">「チームボールト」とは？</h3>
-          <p class="text-sm text-gray-600 leading-relaxed mb-3" data-i18n="index.teamvault.desc">チームボールトは、チームがコラボレーションに使用する共有ストレージの場所です。通常はオフィスの NAS や GitHub などのクラウド Git リモートです。チームメンバー全員が同じボールトを指すと、Keeply はバージョン管理、競合検出、ファイル履歴を自動的に処理します。内蔵のバージョン追跡機能を備えたチームの共有プロジェクトライブラリと考えてください。</p>
-          <p class="text-sm text-brand-600 font-medium" data-i18n="index.teamvault.highlight">クラウドロックインなし。シートごとの料金なし。データはお客様のハードウェア上に。</p>
+          <p class="text-sm text-gray-600 leading-relaxed mb-3" data-i18n="index.teamvault.desc">すべてのアカウントに共有ロケーション 2 か所（オフィス NAS、クラウド Git——任意の組み合わせ）と、メンバーごとに個人バックアップ 1 か所（USB ドライブ、現場ノートパソコン）が含まれます。無料ユーザーは自分で管理し、チームユーザーは管理者の承認、クールダウン、活動ログが適用されます。</p>
+          <p class="text-sm text-brand-600 font-medium mb-3" data-i18n="index.teamvault.highlight">クラウドロックインなし。シートごとの料金なし。データはお客様のハードウェア上に。</p>
+          <div class="grid md:grid-cols-2 gap-3 mt-3">
+            <div class="bg-white rounded-lg px-4 py-3 border border-gray-100">
+              <p class="text-xs font-bold text-gray-500 mb-1">Free</p>
+              <p class="text-sm text-gray-600" data-i18n="index.teamvault.free">無料版：自分のロケーションを自分で管理。承認不要、クールダウンなし。</p>
+            </div>
+            <div class="bg-white rounded-lg px-4 py-3 border border-brand-100">
+              <p class="text-xs font-bold text-brand-500 mb-1">Team</p>
+              <p class="text-sm text-gray-600" data-i18n="index.teamvault.team">チーム版：管理者がロケーションを管理。メンバーがバックアップスポットを申請し、管理者が承認。クールダウンと年間制限で整理された運用を実現。</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
