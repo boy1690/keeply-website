@@ -384,5 +384,7 @@ window.__i18n["ko"] = {
   "index.pricing.team.coming": "현재 개발 중입니다. 이메일을 남겨주시면 출시 시 알려드립니다.",
   "index.pricing.team.placeholder": "your@email.com",
   "index.pricing.team.cta.notify": "알림 받기",
-  "index.pricing.team.thanks": "접수되었습니다! 팀 플랜 출시 시 알려드리겠습니다."
+  "index.pricing.team.thanks": "접수되었습니다! 팀 플랜 출시 시 알려드리겠습니다.",
+  "index.pricing.team.name.placeholder": "이름",
+  "index.pricing.team.newsletter": "Keeply 제품 업데이트 및 뉴스레터도 받고 싶습니다"
 };

@@ -384,5 +384,7 @@ window.__i18n["es"] = {
   "index.pricing.team.coming": "Actualmente en desarrollo. Deja tu email para recibir la notificación de lanzamiento.",
   "index.pricing.team.placeholder": "tu@email.com",
   "index.pricing.team.cta.notify": "Notificarme",
-  "index.pricing.team.thanks": "¡Recibido! Te avisaremos cuando se lance el plan Team."
+  "index.pricing.team.thanks": "¡Recibido! Te avisaremos cuando se lance el plan Team.",
+  "index.pricing.team.name.placeholder": "Nombre",
+  "index.pricing.team.newsletter": "También quiero recibir actualizaciones de producto y boletín de Keeply"
 };

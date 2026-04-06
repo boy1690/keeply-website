@@ -383,5 +383,7 @@
   "index.pricing.team.coming": "Jelenleg fejlesztés alatt. Hagyja meg email címét, és értesítjük az induláskor.",
   "index.pricing.team.placeholder": "az-on@email.com",
   "index.pricing.team.cta.notify": "Értesítsen",
-  "index.pricing.team.thanks": "Megkaptuk! Értesítjük, amikor a Team csomag elindul."
+  "index.pricing.team.thanks": "Megkaptuk! Értesítjük, amikor a Team csomag elindul.",
+  "index.pricing.team.name.placeholder": "Név",
+  "index.pricing.team.newsletter": "Szeretnék Keeply termékfrissítéseket és hírlevelet is kapni"
 }

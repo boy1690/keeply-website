@@ -372,6 +372,8 @@ window.__i18n["en"] = {
   "index.pricing.team.coming": "Currently in development. Leave your email to get notified when it launches.",
   "index.pricing.team.placeholder": "your@email.com",
   "index.pricing.team.cta.notify": "Notify Me",
+  "index.pricing.team.name.placeholder": "Name",
+  "index.pricing.team.newsletter": "I'd also like to receive Keeply product updates and newsletter",
   "index.pricing.team.thanks": "Got it! We'll notify you when the Team plan launches.",
   "index.pricing.team.cta.main": "Get Started with Team",
   "index.pricing.perpetual.badge": "Early Access · Limited to 500",
