@@ -372,6 +372,7 @@ window.__i18n["zh-TW"] = {
   "index.pricing.team.coming": "目前開發中，留下 Email 搶先收到上線通知。",
   "index.pricing.team.placeholder": "your@email.com",
   "index.pricing.team.cta.notify": "通知我",
+  "index.pricing.team.thanks": "已收到！我們會在團隊版上線時通知你。",
   "index.pricing.team.cta.main": "開始使用團隊版",
   "index.pricing.perpetual.badge": "Early Access · 限量 500 份",
   "index.pricing.perpetual.title": "永久授權 — $599 一次買斷",

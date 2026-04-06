@@ -383,5 +383,6 @@ window.__i18n["de"] = {
   "index.pricing.team.badge": "Demnächst",
   "index.pricing.team.coming": "Derzeit in Entwicklung. Hinterlassen Sie Ihre E-Mail, um benachrichtigt zu werden.",
   "index.pricing.team.placeholder": "ihre@email.com",
-  "index.pricing.team.cta.notify": "Benachrichtigen"
+  "index.pricing.team.cta.notify": "Benachrichtigen",
+  "index.pricing.team.thanks": "Erhalten! Wir benachrichtigen Sie, wenn der Team-Plan startet."
 };

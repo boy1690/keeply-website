@@ -383,5 +383,6 @@ window.__i18n["nl"] = {
   "index.pricing.team.badge": "Binnenkort",
   "index.pricing.team.coming": "Momenteel in ontwikkeling. Laat uw e-mail achter om op de hoogte te worden gebracht.",
   "index.pricing.team.placeholder": "uw@email.com",
-  "index.pricing.team.cta.notify": "Informeer mij"
+  "index.pricing.team.cta.notify": "Informeer mij",
+  "index.pricing.team.thanks": "Ontvangen! We laten het u weten wanneer het Team-plan beschikbaar is."
 };

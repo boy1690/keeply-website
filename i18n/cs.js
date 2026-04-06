@@ -383,5 +383,6 @@ window.__i18n["cs"] = {
   "index.pricing.team.badge": "Již brzy",
   "index.pricing.team.coming": "Aktuálně ve vývoji. Zanechte svůj email a budete informováni o spuštění.",
   "index.pricing.team.placeholder": "vas@email.com",
-  "index.pricing.team.cta.notify": "Upozornit mě"
+  "index.pricing.team.cta.notify": "Upozornit mě",
+  "index.pricing.team.thanks": "Přijato! Budeme vás informovat, až bude plán Team spuštěn."
 };

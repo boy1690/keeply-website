@@ -383,5 +383,6 @@ window.__i18n["fi"] = {
   "index.pricing.team.badge": "Tulossa pian",
   "index.pricing.team.coming": "Kehitteillä. Jätä sähköpostiosoitteesi saadaksesi ilmoituksen julkaisusta.",
   "index.pricing.team.placeholder": "sinun@email.com",
-  "index.pricing.team.cta.notify": "Ilmoita minulle"
+  "index.pricing.team.cta.notify": "Ilmoita minulle",
+  "index.pricing.team.thanks": "Vastaanotettu! Ilmoitamme sinulle, kun Team-paketti julkaistaan."
 };

@@ -382,5 +382,6 @@
   "index.pricing.team.badge": "Kommer snart",
   "index.pricing.team.coming": "For tiden under utvikling. Legg igjen e-posten din for å bli varslet ved lansering.",
   "index.pricing.team.placeholder": "din@email.com",
-  "index.pricing.team.cta.notify": "Varsle meg"
+  "index.pricing.team.cta.notify": "Varsle meg",
+  "index.pricing.team.thanks": "Mottatt! Vi varsler deg når Team-planen lanseres."
 }

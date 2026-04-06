@@ -383,5 +383,6 @@ window.__i18n["ja"] = {
   "index.pricing.team.badge": "近日公開",
   "index.pricing.team.coming": "現在開発中です。メールアドレスを登録して、リリース通知を受け取りましょう。",
   "index.pricing.team.placeholder": "your@email.com",
-  "index.pricing.team.cta.notify": "通知する"
+  "index.pricing.team.cta.notify": "通知する",
+  "index.pricing.team.thanks": "受け付けました！チームプランのリリース時にお知らせします。"
 };

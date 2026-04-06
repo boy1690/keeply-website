@@ -402,10 +402,12 @@
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.8">Detección y resolución de conflictos</span></li>
           </ul>
           <p class="text-sm text-gray-500 mb-3" data-i18n="index.pricing.team.coming">Actualmente en desarrollo. Deja tu email para recibir la notificación de lanzamiento.</p>
-          <div class="flex gap-2">
-            <input type="email" placeholder="your@email.com" data-i18n="index.pricing.team.placeholder" class="flex-1 border border-gray-200 rounded-full px-4 py-3 text-sm focus:outline-none focus:border-brand-400" />
-            <button type="button" class="bg-brand-600 hover:bg-brand-700 text-white font-medium px-6 py-3 rounded-full transition-all text-sm" data-i18n="index.pricing.team.cta.notify">Notificarme</button>
-          </div>
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLSe8WpbHAy8wcAfZRdV1kiHOZa7riuxaOg7X_kgJadQX4GX0RA/formResponse" method="POST" target="team-notify-iframe" class="flex gap-2" id="team-notify-form" onsubmit="setTimeout(function(){document.getElementById('team-notify-form').style.display='none';document.getElementById('team-notify-thanks').style.display='block'},300)">
+            <input type="email" name="entry.1905692581" required placeholder="your@email.com" data-i18n="index.pricing.team.placeholder" class="flex-1 border border-gray-200 rounded-full px-4 py-3 text-sm focus:outline-none focus:border-brand-400" />
+            <button type="submit" class="bg-brand-600 hover:bg-brand-700 text-white font-medium px-6 py-3 rounded-full transition-all text-sm" data-i18n="index.pricing.team.cta.notify">Notificarme</button>
+          </form>
+          <p id="team-notify-thanks" class="text-sm text-green-600 font-medium" style="display:none" data-i18n="index.pricing.team.thanks">¡Recibido! Te avisaremos cuando se lance el plan Team.</p>
+          <iframe name="team-notify-iframe" style="display:none"></iframe>
         </div>
       </div>
 

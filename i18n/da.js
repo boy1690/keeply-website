@@ -383,5 +383,6 @@ window.__i18n["da"] = {
   "index.pricing.team.badge": "Kommer snart",
   "index.pricing.team.coming": "I øjeblikket under udvikling. Efterlad din email for at få besked ved lancering.",
   "index.pricing.team.placeholder": "din@email.com",
-  "index.pricing.team.cta.notify": "Giv mig besked"
+  "index.pricing.team.cta.notify": "Giv mig besked",
+  "index.pricing.team.thanks": "Modtaget! Vi giver dig besked, når Team-planen lanceres."
 };

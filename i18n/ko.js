@@ -383,5 +383,6 @@ window.__i18n["ko"] = {
   "index.pricing.team.badge": "출시 예정",
   "index.pricing.team.coming": "현재 개발 중입니다. 이메일을 남겨주시면 출시 시 알려드립니다.",
   "index.pricing.team.placeholder": "your@email.com",
-  "index.pricing.team.cta.notify": "알림 받기"
+  "index.pricing.team.cta.notify": "알림 받기",
+  "index.pricing.team.thanks": "접수되었습니다! 팀 플랜 출시 시 알려드리겠습니다."
 };

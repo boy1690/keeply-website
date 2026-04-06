@@ -383,5 +383,6 @@ window.__i18n["zh-CN"] = {
   "index.pricing.team.badge": "即将推出",
   "index.pricing.team.coming": "目前开发中，留下 Email 抢先收到上线通知。",
   "index.pricing.team.placeholder": "your@email.com",
-  "index.pricing.team.cta.notify": "通知我"
+  "index.pricing.team.cta.notify": "通知我",
+  "index.pricing.team.thanks": "已收到！我们会在团队版上线时通知你。"
 };

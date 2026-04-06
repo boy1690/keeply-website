@@ -383,5 +383,6 @@ window.__i18n["hu"] = {
   "index.pricing.team.badge": "Hamarosan",
   "index.pricing.team.coming": "Jelenleg fejlesztés alatt. Hagyja meg email címét, és értesítjük az induláskor.",
   "index.pricing.team.placeholder": "az-on@email.com",
-  "index.pricing.team.cta.notify": "Értesítsen"
+  "index.pricing.team.cta.notify": "Értesítsen",
+  "index.pricing.team.thanks": "Megkaptuk! Értesítjük, amikor a Team csomag elindul."
 };

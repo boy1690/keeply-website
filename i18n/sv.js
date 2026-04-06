@@ -383,5 +383,6 @@ window.__i18n["sv"] = {
   "index.pricing.team.badge": "Kommer snart",
   "index.pricing.team.coming": "Under utveckling. Lämna din e-post för att bli meddelad vid lansering.",
   "index.pricing.team.placeholder": "din@email.com",
-  "index.pricing.team.cta.notify": "Meddela mig"
+  "index.pricing.team.cta.notify": "Meddela mig",
+  "index.pricing.team.thanks": "Mottaget! Vi meddelar dig när Team-planen lanseras."
 };

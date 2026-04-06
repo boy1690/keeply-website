@@ -383,5 +383,6 @@ window.__i18n["es"] = {
   "index.pricing.team.badge": "Próximamente",
   "index.pricing.team.coming": "Actualmente en desarrollo. Deja tu email para recibir la notificación de lanzamiento.",
   "index.pricing.team.placeholder": "tu@email.com",
-  "index.pricing.team.cta.notify": "Notificarme"
+  "index.pricing.team.cta.notify": "Notificarme",
+  "index.pricing.team.thanks": "¡Recibido! Te avisaremos cuando se lance el plan Team."
 };

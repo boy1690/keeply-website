@@ -382,5 +382,6 @@
   "index.pricing.team.badge": "Bientôt disponible",
   "index.pricing.team.coming": "En cours de développement. Laissez votre email pour être notifié du lancement.",
   "index.pricing.team.placeholder": "votre@email.com",
-  "index.pricing.team.cta.notify": "Me notifier"
+  "index.pricing.team.cta.notify": "Me notifier",
+  "index.pricing.team.thanks": "Reçu ! Nous vous informerons dès le lancement du plan Team."
 }

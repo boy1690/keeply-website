@@ -383,5 +383,6 @@ window.__i18n["tr"] = {
   "index.pricing.team.badge": "Yakında",
   "index.pricing.team.coming": "Şu anda geliştirme aşamasında. E-postanızı bırakın, lansman bildirimini alın.",
   "index.pricing.team.placeholder": "email@adresiniz.com",
-  "index.pricing.team.cta.notify": "Beni bilgilendir"
+  "index.pricing.team.cta.notify": "Beni bilgilendir",
+  "index.pricing.team.thanks": "Aldık! Team planı başladığında sizi bilgilendireceğiz."
 };
