@@ -192,7 +192,7 @@ window.__i18n["hu"] = {
   "terms.toc.s12": "12. Általános rendelkezések",
   "terms.toc.s13": "13. Kapcsolat",
   "terms.s1.title": "1. A Szoftver",
-  "terms.s1.p1": "A Keeply egy asztali alkalmazás, amely vizuális verziókezelést biztosít projektfájlokhoz. Helyileg fut a számítógépeden, és minden adatot a helyi eszközödön vagy NAS-odon tárol. A Keeply Git technológiára épül, de tervezők, építészek és építőipari szakemberek számára készült — a felhasználóknak soha nem kell közvetlenül a Git-tel dolgozniuk.",
+  "terms.s1.p1": "A Keeply egy asztali alkalmazás, amely vizuális verziókezelést biztosít projektfájlokhoz. Helyben fut a számítógépén, és minden adatot a helyi eszközén vagy NAS-on tárol. A Keeply Git technológiára épül, de mindenki számára készült, aki a munkája során dokumentumokat szerkeszt — a felhasználóknak soha nem kell közvetlenül a Gittel foglalkozniuk.",
   "terms.s2.title": "2. Licencadás",
   "terms.s2.p1": "<strong>A Szoftver licencelt, nem eladott.</strong> A Keeply korlátozott, nem kizárólagos, nem átruházható, nem allicencelhető, visszavonható licencet ad a Szoftver telepítésére és használatára bármely számítógépen, amelynek te vagy az elsődleges felhasználója, kizárólag belső üzleti vagy személyes célokra.",
   "terms.s2.p2": "Ez a Megállapodás nem ruház át tulajdonjogot, függetlenül az olyan kifejezések használatától, mint \"vásárlás,\" \"eladás\" vagy \"vétel\" a weboldalunkon, a kommunikációban vagy harmadik felek fizetési folyamataiban.",

@@ -192,7 +192,7 @@ window.__i18n["tr"] = {
   "terms.toc.s12": "12. Genel hükümler",
   "terms.toc.s13": "13. İletişim",
   "terms.s1.title": "1. Yazılım",
-  "terms.s1.p1": "Keeply, proje dosyaları için görsel sürüm kontrolü sağlayan bir masaüstü uygulamasıdır. Bilgisayarınızda yerel olarak çalışır ve tüm verileri yerel cihazınızda veya NAS'ınızda depolar. Keeply, Git teknolojisi üzerine inşa edilmiştir ancak tasarımcılar, mimarlar ve inşaat profesyonelleri için tasarlanmıştır — kullanıcıların Git ile doğrudan etkileşime girmesi gerekmez.",
+  "terms.s1.p1": "Keeply, proje dosyaları için görsel sürüm kontrolü sağlayan bir masaüstü uygulamasıdır. Bilgisayarınızda yerel olarak çalışır ve tüm verileri yerel cihazınızda veya NAS'ta depolar. Keeply, Git teknolojisi üzerine inşa edilmiştir ancak işte belge düzenleyen herkes için tasarlanmıştır — kullanıcıların doğrudan Git ile etkileşime girmesi gerekmez.",
   "terms.s2.title": "2. Lisans verilmesi",
   "terms.s2.p1": "<strong>Yazılım satılmaz, lisanslanır.</strong> Keeply size Yazılımı, yalnızca ana kullanıcısı olduğunuz herhangi bir bilgisayara kurmak ve kişisel veya dahili ticari amaçlarla kullanmak üzere sınırlı, münhasır olmayan, devredilemez, alt lisanslanamaz ve geri alınabilir bir lisans verir.",
   "terms.s2.p2": "Bu Sözleşme, web sitemizde, iletişimlerimizde veya üçüncü taraf ödeme süreçlerinde «satın alma», «satış» veya «edinme» gibi terimlerin kullanılmasına bakılmaksızın hiçbir mülkiyet hakkı devretmez.",

@@ -192,7 +192,7 @@ window.__i18n["es"] = {
   "terms.toc.s12": "12. Disposiciones generales",
   "terms.toc.s13": "13. Contacto",
   "terms.s1.title": "1. El Software",
-  "terms.s1.p1": "Keeply es una aplicación de escritorio que proporciona control de versiones visual para archivos de proyecto. Funciona localmente en tu ordenador y almacena todos los datos en tu dispositivo local o NAS. Keeply está construido sobre tecnología Git pero diseñado para diseñadores, arquitectos y profesionales de la construcción — los usuarios nunca necesitan interactuar directamente con Git.",
+  "terms.s1.p1": "Keeply es una aplicación de escritorio que proporciona control visual de versiones para archivos de proyecto. Se ejecuta localmente en tu computadora y almacena todos los datos en tu dispositivo local o NAS. Keeply está construido con tecnología Git pero está diseñado para cualquier persona que edite documentos en el trabajo — los usuarios nunca necesitan interactuar con Git directamente.",
   "terms.s2.title": "2. Concesión de licencia",
   "terms.s2.p1": "<strong>El Software se licencia, no se vende.</strong> Keeply te otorga una licencia limitada, no exclusiva, intransferible, no sublicenciable y revocable para instalar y usar el Software en cualquier ordenador del que seas el usuario principal, exclusivamente para tus fines comerciales internos o personales.",
   "terms.s2.p2": "Este Acuerdo no transfiere ninguna propiedad, independientemente del uso de términos como «compra», «venta» o «adquisición» en nuestro sitio web, comunicaciones o procesos de pago de terceros.",

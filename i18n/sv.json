@@ -193,7 +193,7 @@
   "terms.toc.s12": "12. Allmänna bestämmelser",
   "terms.toc.s13": "13. Kontakt",
   "terms.s1.title": "1. Programvaran",
-  "terms.s1.p1": "Keeply är en skrivbordsapp som ger visuell versionskontroll för projektfiler. Den körs lokalt på din dator och lagrar all data på din lokala enhet eller NAS. Keeply är byggt på Git-teknik men designat för designers, arkitekter och byggprofessionella — användare behöver aldrig interagera direkt med Git.",
+  "terms.s1.p1": "Keeply är en skrivbordsapplikation som erbjuder visuell versionshantering för projektfiler. Den körs lokalt på din dator och lagrar all data på din lokala enhet eller NAS. Keeply är byggt på Git-teknik men designat för alla som redigerar dokument i sitt arbete — användare behöver aldrig interagera med Git direkt.",
   "terms.s2.title": "2. Licensbeviljande",
   "terms.s2.p1": "<strong>Programvaran säljs inte, den licensieras.</strong> Keeply beviljar dig en begränsad, icke-exklusiv, icke-överförbar, icke-underlicensierbar och återkallelig licens att installera och använda Programvaran på valfri dator där du är primär användare, enbart för dina personliga eller interna affärsändamål.",
   "terms.s2.p2": "Detta Avtal överför ingen äganderätt oavsett användning av termer som «köp», «försäljning» eller «förvärv» på vår webbplats, i kommunikation eller i tredjepartsbetalningsprocesser.",

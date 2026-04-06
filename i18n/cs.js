@@ -194,7 +194,7 @@ window.__i18n["cs"] = {
   "terms.toc.s12": "12. Obecná ustanovení",
   "terms.toc.s13": "13. Kontakt",
   "terms.s1.title": "1. Software",
-  "terms.s1.p1": "Keeply je desktopová aplikace poskytující vizuální správu verzí projektových souborů. Funguje lokálně na vašem počítači a ukládá veškerá data na vaše lokální zařízení nebo NAS. Keeply je postaven na technologii Git, ale je navržen pro designéry, architekty a stavební odborníky — uživatelé nikdy nemusí pracovat přímo s Git.",
+  "terms.s1.p1": "Keeply je desktopová aplikace poskytující vizuální správu verzí projektových souborů. Běží lokálně na vašem počítači a ukládá všechna data na místní zařízení nebo NAS. Keeply je postaven na technologii Git, ale je navržen pro každého, kdo v práci upravuje dokumenty — uživatelé nikdy nemusí přímo pracovat s Gitem.",
   "terms.s2.title": "2. Udělení licence",
   "terms.s2.p1": "<strong>Software je licencován, nikoli prodáván.</strong> Keeply vám uděluje omezenou, nevýhradní, nepřevoditelnou, nepodlicencovatelnou, odvolatelnou licenci k instalaci a používání Softwaru na jakémkoli počítači, jehož jste primárním uživatelem, výhradně pro vaše interní obchodní nebo osobní účely.",
   "terms.s2.p2": "Tato Smlouva nepřevádí žádné vlastnictví bez ohledu na použití výrazů jako \"nákup,\" \"prodej\" nebo \"koupit\" na našem webu, v komunikaci nebo v platebních procesech třetích stran.",

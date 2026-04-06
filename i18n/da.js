@@ -194,7 +194,7 @@ window.__i18n["da"] = {
   "terms.toc.s12": "12. Generelle bestemmelser",
   "terms.toc.s13": "13. Kontakt",
   "terms.s1.title": "1. Softwaren",
-  "terms.s1.p1": "Keeply er en desktopapp der giver visuel versionsstyring af projektfiler. Den kører lokalt på din computer og gemmer alle data på din lokale enhed eller NAS. Keeply er bygget på Git-teknologi men designet til designere, arkitekter og byggeprofessionelle — brugere behøver aldrig at interagere direkte med Git.",
+  "terms.s1.p1": "Keeply er en desktopapplikation, der giver visuel versionsstyring af projektfiler. Den kører lokalt på din computer og gemmer alle data på din lokale enhed eller NAS. Keeply er bygget på Git-teknologi, men er designet til alle, der redigerer dokumenter på arbejdet — brugere behøver aldrig at arbejde med Git direkte.",
   "terms.s2.title": "2. Licenstildeling",
   "terms.s2.p1": "<strong>Softwaren sælges ikke, den licenseres.</strong> Keeply giver dig en begrænset, ikke-eksklusiv, ikke-overdragelig, ikke-underlicenserbar og tilbagekaldelig licens til at installere og bruge Softwaren på enhver computer hvor du er primær bruger, udelukkende til dine personlige eller interne forretningsformål.",
   "terms.s2.p2": "Denne Aftale overfører ingen ejendomsret uanset brug af termer som «køb», «salg» eller «erhvervelse» på vores hjemmeside, i kommunikation eller i tredjepartsbetalingsprocesser.",

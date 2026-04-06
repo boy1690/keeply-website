@@ -194,7 +194,7 @@ window.__i18n["fi"] = {
   "terms.toc.s12": "12. Yleiset ehdot",
   "terms.toc.s13": "13. Yhteystiedot",
   "terms.s1.title": "1. Ohjelmisto",
-  "terms.s1.p1": "Keeply on työpöytäsovellus, joka tarjoaa visuaalisen versionhallinnan projektitiedostoille. Se toimii paikallisesti tietokoneellasi ja tallentaa kaikki tiedot paikalliselle laitteellesi tai NAS-laitteellesi. Keeply on rakennettu Git-teknologialla, mutta suunniteltu suunnittelijoille, arkkitehdeille ja rakennusalan ammattilaisille — käyttäjien ei koskaan tarvitse käyttää Git:iä suoraan.",
+  "terms.s1.p1": "Keeply on työpöytäsovellus, joka tarjoaa visuaalisen versionhallinnan projektitiedostoille. Se toimii paikallisesti tietokoneellasi ja tallentaa kaikki tiedot paikalliselle laitteellesi tai NAS:iin. Keeply perustuu Git-teknologiaan, mutta se on suunniteltu kaikille, jotka muokkaavat asiakirjoja työssään — käyttäjien ei tarvitse koskaan käyttää Gitiä suoraan.",
   "terms.s2.title": "2. Lisenssin myöntäminen",
   "terms.s2.p1": "<strong>Ohjelmistoa ei myydä, vaan se lisensoidaan.</strong> Keeply myöntää sinulle rajoitetun, ei-yksinomaisen, ei-siirrettävän, ei-alilisensoitavan ja peruutettavissa olevan lisenssin asentaa ja käyttää Ohjelmistoa millä tahansa tietokoneella, jonka ensisijainen käyttäjä olet, ainoastaan henkilökohtaisiin tai sisäisiin liiketoimintatarkoituksiin.",
   "terms.s2.p2": "Tämä Sopimus ei siirrä omistusoikeutta riippumatta termeistä kuten «osto», «myynti» tai «hankinta» verkkosivustollamme, viestinnässämme tai kolmannen osapuolen maksuprosesseissa.",

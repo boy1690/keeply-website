@@ -198,7 +198,7 @@ window.__i18n["en"] = {
   "terms.toc.s12": "12. General Provisions",
   "terms.toc.s13": "13. Contact",
   "terms.s1.title": "1. The Software",
-  "terms.s1.p1": "Keeply is a desktop application that provides visual version control for project files. It runs locally on your computer and stores all data on your local device or NAS. Keeply is built on Git technology but is designed for designers, architects, and construction professionals — users never need to interact with Git directly.",
+  "terms.s1.p1": "Keeply is a desktop application that provides visual version control for project files. It runs locally on your computer and stores all data on your local device or NAS. Keeply is built on Git technology but is designed for anyone who edits documents at work — users never need to interact with Git directly.",
   "terms.s2.title": "2. License Grant",
   "terms.s2.p1": "<strong>The Software is licensed, not sold.</strong> Keeply grants you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to install and use the Software on any computer where you are the primary user, solely for your internal business or personal purposes.",
   "terms.s2.p2": "This Agreement does not convey any ownership, regardless of the use of terms such as \"purchase,\" \"sell,\" or \"buy\" on our website, in communications, or in third-party checkout flows.",
