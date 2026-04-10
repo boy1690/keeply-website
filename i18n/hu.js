@@ -386,5 +386,8 @@ window.__i18n["hu"] = {
   "index.pricing.team.cta.notify": "Értesítsen",
   "index.pricing.team.thanks": "Megkaptuk! Értesítjük, amikor a Team csomag elindul.",
   "index.pricing.team.name.placeholder": "Név",
-  "index.pricing.team.newsletter": "Szeretnék Keeply termékfrissítéseket és hírlevelet is kapni"
+  "index.pricing.team.newsletter": "Szeretnék Keeply termékfrissítéseket és hírlevelet is kapni",
+  "modal.download.title": "Hamarosan elérhető",
+  "modal.download.body": "A Keeply az utolsó előkészületi fázisban van, és hamarosan elérhető lesz. Köszönjük érdeklődését!",
+  "modal.download.close": "Értem"
 };

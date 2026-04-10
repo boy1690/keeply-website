@@ -386,5 +386,8 @@ window.__i18n["en"] = {
   "index.teamvault.desc": "Every account gets 2 shared locations (office NAS, cloud Git — any combination) plus 1 personal backup per member (USB drive, field laptop). Free users manage their own; Team users get admin approval, cooldowns, and activity logs.",
   "index.teamvault.highlight": "No cloud lock-in. No per-seat fees. Your data stays on your hardware.",
   "index.teamvault.free": "Free: manage your own locations. No approval needed, no cooldowns.",
-  "index.teamvault.team": "Team: admin controls locations. Members request backup spots, admin approves. Cooldown and annual limits keep things organized."
+  "index.teamvault.team": "Team: admin controls locations. Members request backup spots, admin approves. Cooldown and annual limits keep things organized.",
+  "modal.download.title": "Coming Soon",
+  "modal.download.body": "Keeply is in its final preparation and will be available soon. Thank you for your interest!",
+  "modal.download.close": "Got it"
 };

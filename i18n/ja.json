@@ -385,5 +385,8 @@
   "index.pricing.team.cta.notify": "通知する",
   "index.pricing.team.thanks": "受け付けました！チームプランのリリース時にお知らせします。",
   "index.pricing.team.name.placeholder": "氏名",
-  "index.pricing.team.newsletter": "Keeply の製品アップデートやニュースレターも受け取りたい"
+  "index.pricing.team.newsletter": "Keeply の製品アップデートやニュースレターも受け取りたい",
+  "modal.download.title": "近日公開",
+  "modal.download.body": "Keeply は最終準備を進めており、近日中に正式リリースいたします。ご関心をお寄せいただきありがとうございます！",
+  "modal.download.close": "了解しました"
 }

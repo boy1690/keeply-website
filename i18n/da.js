@@ -386,5 +386,8 @@ window.__i18n["da"] = {
   "index.pricing.team.cta.notify": "Giv mig besked",
   "index.pricing.team.thanks": "Modtaget! Vi giver dig besked, når Team-planen lanceres.",
   "index.pricing.team.name.placeholder": "Navn",
-  "index.pricing.team.newsletter": "Jeg vil også gerne modtage Keeply-produktopdateringer og nyhedsbrev"
+  "index.pricing.team.newsletter": "Jeg vil også gerne modtage Keeply-produktopdateringer og nyhedsbrev",
+  "modal.download.title": "Kommer snart",
+  "modal.download.body": "Keeply er i sin endelige forberedelsesfase og vil snart være tilgængelig. Tak for din interesse!",
+  "modal.download.close": "Forstået"
 };

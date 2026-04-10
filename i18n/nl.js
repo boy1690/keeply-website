@@ -386,5 +386,8 @@ window.__i18n["nl"] = {
   "index.pricing.team.cta.notify": "Informeer mij",
   "index.pricing.team.thanks": "Ontvangen! We laten het u weten wanneer het Team-plan beschikbaar is.",
   "index.pricing.team.name.placeholder": "Naam",
-  "index.pricing.team.newsletter": "Ik wil ook Keeply-productupdates en nieuwsbrief ontvangen"
+  "index.pricing.team.newsletter": "Ik wil ook Keeply-productupdates en nieuwsbrief ontvangen",
+  "modal.download.title": "Binnenkort beschikbaar",
+  "modal.download.body": "Keeply is in de laatste voorbereidingsfase en zal binnenkort beschikbaar zijn. Bedankt voor uw interesse!",
+  "modal.download.close": "Begrepen"
 };

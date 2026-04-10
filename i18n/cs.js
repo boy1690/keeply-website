@@ -386,5 +386,8 @@ window.__i18n["cs"] = {
   "index.pricing.team.cta.notify": "Upozornit mě",
   "index.pricing.team.thanks": "Přijato! Budeme vás informovat, až bude plán Team spuštěn.",
   "index.pricing.team.name.placeholder": "Jméno",
-  "index.pricing.team.newsletter": "Chci také dostávat aktualizace produktu a newsletter Keeply"
+  "index.pricing.team.newsletter": "Chci také dostávat aktualizace produktu a newsletter Keeply",
+  "modal.download.title": "Již brzy",
+  "modal.download.body": "Keeply je v závěrečné fázi příprav a brzy bude k dispozici. Děkujeme za váš zájem!",
+  "modal.download.close": "Rozumím"
 };

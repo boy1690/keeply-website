@@ -386,5 +386,8 @@ window.__i18n["tr"] = {
   "index.pricing.team.cta.notify": "Beni bilgilendir",
   "index.pricing.team.thanks": "Aldık! Team planı başladığında sizi bilgilendireceğiz.",
   "index.pricing.team.name.placeholder": "İsim",
-  "index.pricing.team.newsletter": "Keeply ürün güncellemelerini ve bülteni de almak istiyorum"
+  "index.pricing.team.newsletter": "Keeply ürün güncellemelerini ve bülteni de almak istiyorum",
+  "modal.download.title": "Yakında",
+  "modal.download.body": "Keeply son hazırlık aşamasında olup yakında kullanıma sunulacaktır. İlginiz için teşekkür ederiz!",
+  "modal.download.close": "Anladım"
 };

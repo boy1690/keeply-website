@@ -385,5 +385,8 @@
   "index.teamvault.desc": "每個帳號有 2 個共用位置（辦公室 NAS、雲端 Git，任意組合）加上每人 1 個備份位置（隨身碟、工地筆電）。免費版自行管理；團隊版由管理員核准，附帶冷卻期和活動紀錄。",
   "index.teamvault.highlight": "不被雲端綁架、不按人頭收費、資料留在你的硬體上。",
   "index.teamvault.free": "免費版：自行管理位置。不需核准、沒有冷卻期。",
-  "index.teamvault.team": "團隊版：管理員控制位置。成員申請備份位置，管理員核准。冷卻期和年度限制讓一切井然有序。"
+  "index.teamvault.team": "團隊版：管理員控制位置。成員申請備份位置，管理員核准。冷卻期和年度限制讓一切井然有序。",
+  "modal.download.title": "即將推出",
+  "modal.download.body": "Keeply 正在進行最終準備，近期將正式上線。感謝您的關注！",
+  "modal.download.close": "我知道了"
 }

@@ -386,5 +386,8 @@ window.__i18n["de"] = {
   "index.pricing.team.cta.notify": "Benachrichtigen",
   "index.pricing.team.thanks": "Erhalten! Wir benachrichtigen Sie, wenn der Team-Plan startet.",
   "index.pricing.team.name.placeholder": "Name",
-  "index.pricing.team.newsletter": "Ich möchte auch Keeply-Produktupdates und Newsletter erhalten"
+  "index.pricing.team.newsletter": "Ich möchte auch Keeply-Produktupdates und Newsletter erhalten",
+  "modal.download.title": "Demnächst verfügbar",
+  "modal.download.body": "Keeply befindet sich in der finalen Vorbereitung und wird in Kürze verfügbar sein. Vielen Dank für Ihr Interesse!",
+  "modal.download.close": "Verstanden"
 };

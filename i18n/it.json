@@ -385,5 +385,8 @@
   "index.pricing.team.cta.notify": "Avvisami",
   "index.pricing.team.thanks": "Ricevuto! Ti avviseremo al lancio del piano Team.",
   "index.pricing.team.name.placeholder": "Nome",
-  "index.pricing.team.newsletter": "Vorrei ricevere anche aggiornamenti prodotto e newsletter di Keeply"
+  "index.pricing.team.newsletter": "Vorrei ricevere anche aggiornamenti prodotto e newsletter di Keeply",
+  "modal.download.title": "In arrivo",
+  "modal.download.body": "Keeply è in fase di preparazione finale e sarà disponibile a breve. Grazie per il tuo interesse!",
+  "modal.download.close": "Ho capito"
 }

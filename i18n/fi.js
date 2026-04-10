@@ -386,5 +386,8 @@ window.__i18n["fi"] = {
   "index.pricing.team.cta.notify": "Ilmoita minulle",
   "index.pricing.team.thanks": "Vastaanotettu! Ilmoitamme sinulle, kun Team-paketti julkaistaan.",
   "index.pricing.team.name.placeholder": "Nimi",
-  "index.pricing.team.newsletter": "Haluan myös saada Keeply-tuotepäivityksiä ja uutiskirjeen"
+  "index.pricing.team.newsletter": "Haluan myös saada Keeply-tuotepäivityksiä ja uutiskirjeen",
+  "modal.download.title": "Tulossa pian",
+  "modal.download.body": "Keeply on viimeistelyvaiheessa ja tulee saataville pian. Kiitos mielenkiinnostasi!",
+  "modal.download.close": "Selvä"
 };
