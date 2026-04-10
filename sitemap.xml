@@ -1983,4 +1983,498 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://keeply.work/zh-TW/refund.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/refund.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/refund.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/refund.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/refund.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/refund.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/refund.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/refund.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/refund.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/refund.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/refund.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/refund.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/zh-CN/refund.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/refund.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/refund.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/refund.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/refund.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/refund.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/refund.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/refund.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/refund.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/refund.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/refund.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/refund.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/en/refund.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/refund.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/refund.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/refund.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/refund.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/refund.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/refund.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/refund.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/refund.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/refund.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/refund.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/refund.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/ja/refund.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/refund.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/refund.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/refund.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/refund.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/refund.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/refund.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/refund.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/refund.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/refund.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/refund.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/refund.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/ko/refund.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/refund.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/refund.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/refund.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/refund.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/refund.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/refund.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/refund.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/refund.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/refund.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/refund.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/refund.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/de/refund.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/refund.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/refund.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/refund.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/refund.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/refund.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/refund.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/refund.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/refund.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/refund.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/refund.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/refund.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/fr/refund.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/refund.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/refund.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/refund.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/refund.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/refund.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/refund.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/refund.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/refund.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/refund.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/refund.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/refund.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/es/refund.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/refund.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/refund.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/refund.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/refund.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/refund.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/refund.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/refund.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/refund.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/refund.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/refund.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/refund.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/pt/refund.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/refund.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/refund.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/refund.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/refund.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/refund.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/refund.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/refund.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/refund.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/refund.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/refund.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/refund.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/it/refund.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/refund.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/refund.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/refund.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/refund.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/refund.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/refund.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/refund.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/refund.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/refund.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/refund.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/refund.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/nl/refund.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/refund.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/refund.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/refund.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/refund.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/refund.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/refund.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/refund.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/refund.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/refund.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/refund.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/refund.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/pl/refund.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/refund.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/refund.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/refund.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/refund.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/refund.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/refund.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/refund.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/refund.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/refund.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/refund.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/refund.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/cs/refund.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/refund.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/refund.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/refund.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/refund.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/refund.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/refund.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/refund.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/refund.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/refund.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/refund.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/refund.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/hu/refund.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/refund.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/refund.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/refund.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/refund.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/refund.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/refund.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/refund.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/refund.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/refund.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/refund.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/refund.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/tr/refund.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/refund.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/refund.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/refund.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/refund.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/refund.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/refund.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/refund.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/refund.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/refund.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/refund.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/refund.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/fi/refund.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/refund.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/refund.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/refund.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/refund.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/refund.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/refund.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/refund.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/refund.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/refund.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/refund.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/refund.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/sv/refund.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/refund.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/refund.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/refund.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/refund.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/refund.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/refund.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/refund.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/refund.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/refund.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/refund.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/refund.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/no/refund.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/refund.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/refund.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/refund.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/refund.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/refund.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/refund.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/refund.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/refund.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/refund.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/refund.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/refund.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/da/refund.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/refund.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/refund.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/refund.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/refund.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/refund.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/refund.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/refund.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/refund.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/refund.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/refund.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/refund.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/refund.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/refund.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/refund.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
 </urlset>
