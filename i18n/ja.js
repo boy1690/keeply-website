@@ -346,7 +346,7 @@ window.__i18n["ja"] = {
   "index.pricing.perpetual.badge": "アーリーアクセス · 500部限定",
   "index.pricing.perpetual.title": "永久ライセンス — $599 一括購入",
   "index.pricing.perpetual.desc": "チームプランの全機能を含み、購入時のバージョンを永久使用。在庫限り。",
-  "index.pricing.free.feat.8": "共有 2 か所 + 個人バックアップ 1 か所",
+  "index.pricing.free.feat.8": "最大 3 つのボールト位置",
   "index.pricing.team.feat.7": "ロケーション承認とクールダウン制御",
   "index.teamvault.tagline": "1 つのボールト。1 つのチーム。完全なコントロール。",
   "index.teamvault.title": "「チームボールト」とは？",

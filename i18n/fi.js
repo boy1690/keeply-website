@@ -68,7 +68,7 @@ window.__i18n["fi"] = {
   "index.pricing.free.feat.5": "Paikallinen ja NAS-tallennus",
   "index.pricing.free.feat.6": "Tiedostojen vertailu",
   "index.pricing.free.feat.7": "Rajattomat käyttäjät",
-  "index.pricing.free.feat.8": "2 jaettua + 1 henkilökohtainen varmuuskopiointisijainti",
+  "index.pricing.free.feat.8": "Enintään 3 holvisijaintia",
   "index.pricing.free.cta": "Lataa ilmaiseksi",
   "index.download.title": "Tiedostosi ansaitsevat tulla muistetuiksi.",
   "index.download.subtitle": "Jokainen työhön jättämäsi muistiinpano tekee sinusta paremman ammattilaisen. Tästä päivästä alkaen anna Keeplyn muistaa puolestasi.",

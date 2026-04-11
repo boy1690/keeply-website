@@ -346,7 +346,7 @@ window.__i18n["tr"] = {
   "index.pricing.perpetual.badge": "Early Access · 500 ile sınırlı",
   "index.pricing.perpetual.title": "Kalıcı Lisans — $599 tek seferlik satın alma",
   "index.pricing.perpetual.desc": "Tüm Takım özelliklerini içerir, satın alma anındaki sürümü sonsuza kadar kullanın. Stoklar tükenene kadar.",
-  "index.pricing.free.feat.8": "2 paylaşımlı + 1 kişisel yedekleme konumu",
+  "index.pricing.free.feat.8": "En fazla 3 kasa konumu",
   "index.pricing.team.feat.7": "Konum onaylama ve bekleme süresi kontrolleri",
   "index.teamvault.tagline": "Bir kasa. Bir ekip. Tam kontrol.",
   "index.teamvault.title": "\"Ekip Kasası\" nedir?",

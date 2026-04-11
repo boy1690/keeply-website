@@ -346,7 +346,7 @@ window.__i18n["ko"] = {
   "index.pricing.perpetual.badge": "얼리 액세스 · 500개 한정",
   "index.pricing.perpetual.title": "영구 라이선스 — $599 일회성 구매",
   "index.pricing.perpetual.desc": "팀 플랜의 모든 기능 포함, 구매 시 버전을 영구 사용. 재고 소진 시 종료.",
-  "index.pricing.free.feat.8": "공유 2곳 + 개인 백업 1곳",
+  "index.pricing.free.feat.8": "최대 3개 볼트 위치",
   "index.pricing.team.feat.7": "위치 승인 및 쿨다운 제어",
   "index.teamvault.tagline": "하나의 볼트. 하나의 팀. 완벽한 통제.",
   "index.teamvault.title": "\"팀 볼트\"란 무엇인가요?",

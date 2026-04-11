@@ -346,7 +346,7 @@ window.__i18n["de"] = {
   "index.pricing.perpetual.badge": "Early Access · Auf 500 limitiert",
   "index.pricing.perpetual.title": "Dauerlizenz — $599 Einmalzahlung",
   "index.pricing.perpetual.desc": "Enthält alle Team-Funktionen, Version zum Kaufzeitpunkt dauerhaft nutzbar. Solange der Vorrat reicht.",
-  "index.pricing.free.feat.8": "2 gemeinsame + 1 persönlicher Backup-Standort",
+  "index.pricing.free.feat.8": "Bis zu 3 Vault-Standorte",
   "index.pricing.team.feat.7": "Standortgenehmigung & Abklingzeit-Steuerung",
   "index.teamvault.tagline": "Ein Tresor. Ein Team. Volle Kontrolle.",
   "index.teamvault.title": "Was ist ein „Team-Tresor“?",

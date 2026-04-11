@@ -346,7 +346,7 @@ window.__i18n["pt"] = {
   "index.pricing.perpetual.badge": "Early Access · Limitado a 500",
   "index.pricing.perpetual.title": "Licença perpétua — $599 compra única",
   "index.pricing.perpetual.desc": "Inclui todas as funcionalidades Equipa, use a versão adquirida para sempre. Até esgotar.",
-  "index.pricing.free.feat.8": "2 partilhadas + 1 localização de backup pessoal",
+  "index.pricing.free.feat.8": "Até 3 localizações de vault",
   "index.pricing.team.feat.7": "Aprovação de localização e controlo de período de espera",
   "index.teamvault.tagline": "Um cofre. Uma equipa. Controlo total.",
   "index.teamvault.title": "O que é um \"Cofre de Equipa\"?",

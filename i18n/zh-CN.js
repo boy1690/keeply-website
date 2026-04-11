@@ -346,7 +346,7 @@ window.__i18n["zh-CN"] = {
   "index.pricing.perpetual.badge": "Early Access · 限量 500 份",
   "index.pricing.perpetual.title": "永久授权 — $599 一次买断",
   "index.pricing.perpetual.desc": "包含团队版所有功能，永久使用购买时的版本。售完即止。",
-  "index.pricing.free.feat.8": "2 个共用位置 + 每人 1 个备份位置",
+  "index.pricing.free.feat.8": "最多 3 个保管库位置",
   "index.pricing.team.feat.7": "位置审批与冷却控制",
   "index.teamvault.tagline": "一个保管库。一个团队。完全掌控。",
   "index.teamvault.title": "什么是\"团队保管库\"？",

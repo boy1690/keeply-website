@@ -346,7 +346,7 @@ window.__i18n["hu"] = {
   "index.pricing.perpetual.badge": "Early Access · 500 darabra limitált",
   "index.pricing.perpetual.title": "Állandó licensz — $599 egyszeri vásárlás",
   "index.pricing.perpetual.desc": "Tartalmazza a Csapat összes funkcióját, a vásárlás időpontjában elérhető verziót használhatod örökké. Készlet erejéig.",
-  "index.pricing.free.feat.8": "2 megosztott + 1 személyes biztonsági mentési hely",
+  "index.pricing.free.feat.8": "Legfeljebb 3 széfhely",
   "index.pricing.team.feat.7": "Helyzetjóváhagyás és várakozási idő vezérlés",
   "index.teamvault.tagline": "Egy széf. Egy csapat. Teljes kontroll.",
   "index.teamvault.title": "Mi az a \"Csapat Széf\"?",

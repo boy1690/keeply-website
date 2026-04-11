@@ -346,7 +346,7 @@ window.__i18n["nl"] = {
   "index.pricing.perpetual.badge": "Early Access · Beperkt tot 500",
   "index.pricing.perpetual.title": "Eeuwigdurende licentie — $599 eenmalige aankoop",
   "index.pricing.perpetual.desc": "Bevat alle Team-functies, gebruik de versie bij aankoop voor altijd. Zolang de voorraad strekt.",
-  "index.pricing.free.feat.8": "2 gedeelde + 1 persoonlijke back-uplocatie",
+  "index.pricing.free.feat.8": "Maximaal 3 kluislocaties",
   "index.pricing.team.feat.7": "Locatiegoedkeuring en afkoelcontroles",
   "index.teamvault.tagline": "Eén kluis. Eén team. Volledige controle.",
   "index.teamvault.title": "Wat is een \"Teamkluis\"?",

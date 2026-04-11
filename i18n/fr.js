@@ -346,7 +346,7 @@ window.__i18n["fr"] = {
   "index.pricing.perpetual.badge": "Early Access · Limité à 500",
   "index.pricing.perpetual.title": "Licence perpétuelle — $599 achat unique",
   "index.pricing.perpetual.desc": "Inclut toutes les fonctionnalités Équipe, utilisez la version achetée pour toujours. Jusqu'à épuisement des stocks.",
-  "index.pricing.free.feat.8": "2 emplacements partagés + 1 sauvegarde personnelle",
+  "index.pricing.free.feat.8": "Jusqu'à 3 emplacements de coffre",
   "index.pricing.team.feat.7": "Approbation des emplacements et contrôle du délai de carence",
   "index.teamvault.tagline": "Un coffre. Une équipe. Contrôle total.",
   "index.teamvault.title": "Qu'est-ce qu'un « Coffre d'équipe » ?",

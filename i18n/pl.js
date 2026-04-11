@@ -346,7 +346,7 @@ window.__i18n["pl"] = {
   "index.pricing.perpetual.badge": "Early Access · Limit 500 sztuk",
   "index.pricing.perpetual.title": "Licencja wieczysta — $599 jednorazowy zakup",
   "index.pricing.perpetual.desc": "Zawiera wszystkie funkcje Zespołu, używaj wersji z daty zakupu na zawsze. Do wyczerpania zapasów.",
-  "index.pricing.free.feat.8": "2 współdzielone + 1 osobista lokalizacja kopii zapasowej",
+  "index.pricing.free.feat.8": "Do 3 lokalizacji sejfu",
   "index.pricing.team.feat.7": "Zatwierdzanie lokalizacji i kontrola okresu oczekiwania",
   "index.teamvault.tagline": "Jeden sejf. Jeden zespół. Pełna kontrola.",
   "index.teamvault.title": "Czym jest \"Sejf Zespołowy\"?",

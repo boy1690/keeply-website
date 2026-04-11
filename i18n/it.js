@@ -346,7 +346,7 @@ window.__i18n["it"] = {
   "index.pricing.perpetual.badge": "Early Access · Limitato a 500",
   "index.pricing.perpetual.title": "Licenza perpetua — $599 acquisto unico",
   "index.pricing.perpetual.desc": "Include tutte le funzionalità Team, usa la versione acquistata per sempre. Fino a esaurimento scorte.",
-  "index.pricing.free.feat.8": "2 condivise + 1 posizione di backup personale",
+  "index.pricing.free.feat.8": "Fino a 3 posizioni vault",
   "index.pricing.team.feat.7": "Approvazione posizioni e controllo periodo di attesa",
   "index.teamvault.tagline": "Un vault. Un team. Controllo totale.",
   "index.teamvault.title": "Cos'è un \"Team Vault\"?",

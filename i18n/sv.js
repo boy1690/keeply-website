@@ -68,7 +68,7 @@ window.__i18n["sv"] = {
   "index.pricing.free.feat.5": "Lokal och NAS-lagring",
   "index.pricing.free.feat.6": "Filjämförelse",
   "index.pricing.free.feat.7": "Obegränsat antal användare",
-  "index.pricing.free.feat.8": "2 delade + 1 personlig säkerhetskopieringsplats",
+  "index.pricing.free.feat.8": "Upp till 3 valvplatser",
   "index.pricing.free.cta": "Ladda ner gratis",
   "index.download.title": "Dina filer förtjänar att bli ihågkomna.",
   "index.download.subtitle": "Varje anteckning du lämnar i arbetet gör dig till en bättre professionell. Från och med idag, låt Keeply minnas åt dig.",

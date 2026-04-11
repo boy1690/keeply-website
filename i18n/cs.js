@@ -68,7 +68,7 @@ window.__i18n["cs"] = {
   "index.pricing.free.feat.5": "Lokální a NAS úložiště",
   "index.pricing.free.feat.6": "Porovnání souborů",
   "index.pricing.free.feat.7": "Neomezený počet uživatelů",
-  "index.pricing.free.feat.8": "2 sdílená + 1 osobní zálohovací umístění",
+  "index.pricing.free.feat.8": "Až 3 umístění trezoru",
   "index.pricing.free.cta": "Stáhnout zdarma",
   "index.download.title": "Vaše soubory si zaslouží být zapamatovány.",
   "index.download.subtitle": "Každá poznámka, kterou v práci zanecháte, z vás dělá lepšího profesionála. Od dneška nechte Keeply pamatovat za vás.",

@@ -346,7 +346,7 @@ window.__i18n["es"] = {
   "index.pricing.perpetual.badge": "Early Access · Limitado a 500",
   "index.pricing.perpetual.title": "Licencia perpetua — $599 compra única",
   "index.pricing.perpetual.desc": "Incluye todas las funciones de Equipo, usa la versión comprada para siempre. Hasta agotar existencias.",
-  "index.pricing.free.feat.8": "2 compartidas + 1 ubicación de respaldo personal",
+  "index.pricing.free.feat.8": "Hasta 3 ubicaciones de vault",
   "index.pricing.team.feat.7": "Aprobación de ubicaciones y controles de enfriamiento",
   "index.teamvault.tagline": "Una bóveda. Un equipo. Control total.",
   "index.teamvault.title": "¿Qué es una \"Bóveda de equipo\"?",
