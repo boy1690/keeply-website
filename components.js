@@ -93,6 +93,7 @@
     + '<a href="' + localePrefix + 'privacy.html" class="hover:text-white transition-colors" data-i18n="footer.privacy">\u96b1\u79c1\u6b0a\u653f\u7b56</a>'
     + '<a href="' + localePrefix + 'terms.html" class="hover:text-white transition-colors" data-i18n="footer.terms">\u670d\u52d9\u689d\u6b3e</a>'
     + '<a href="' + localePrefix + 'refund.html" class="hover:text-white transition-colors" data-i18n="footer.refund">\u9000\u6b3e\u653f\u7b56</a>'
+    + '<a href="' + localePrefix + 'buy.html" class="text-amber-400 hover:text-amber-300 font-semibold transition-colors" data-i18n="footer.buy">\u8cfc\u8cb7\u6c38\u4e45\u6388\u6b0a</a>'
     + '<a href="https://github.com/boy1690/Keeply/releases/latest" class="hover:text-white transition-colors" data-i18n="footer.download">\u4e0b\u8f09</a>'
     + '<a href="' + localePrefix + 'contact.html" class="hover:text-white transition-colors" data-i18n="footer.contact">\u806f\u7e6b\u6211\u5011</a>'
     + '</div>'
