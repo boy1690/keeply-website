@@ -221,6 +221,19 @@
         }
       }
 
+      // Paddle supports these locales for checkout UI:
+      //   en, fr, de, es, it, nl, pl, pt, ru, zh-Hans, ja, da, no, sv, cs,
+      //   sk, hu, tr, el, ar, bg, fi, ko, he, ro, uk, hr, lt, lv, ms, th,
+      //   vi, hi, id, et, sl, sr
+      // Notably NO zh-Hant/zh-TW support. For Traditional Chinese pages we
+      // fall back to English to avoid forcing Simplified Chinese on zh-Hant
+      // readers.
+      function paddleLocale() {
+        var lang = document.documentElement.lang || 'en';
+        if (lang === 'zh-Hant' || lang === 'zh-TW') return 'en';
+        return lang.split('-')[0];
+      }
+
       function handleClick() {
         if (typeof Paddle === 'undefined') {
           console.error('[Keeply] Paddle.js not available — click ignored');
@@ -240,7 +253,7 @@
             settings: {
               displayMode: 'overlay',
               theme: 'light',
-              locale: lang.split('-')[0]
+              locale: paddleLocale()
             }
           });
         } catch (e) {

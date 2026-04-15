@@ -117,7 +117,7 @@
               <span class="text-5xl font-extrabold text-gray-900" data-i18n="buy.price">$599</span>
               <span class="text-gray-500 font-medium ml-1" data-i18n="buy.price.unit">USD</span>
             </div>
-            <p class="text-sm text-gray-600 mt-2" data-i18n="buy.subtitle">一次付清,終身擁有</p>
+            <p class="text-sm text-gray-600 mt-2" data-i18n="buy.subtitle">一次付清，終身擁有</p>
           </div>
 
           <!-- Divider -->
@@ -170,7 +170,7 @@
       <!-- Already have a key -->
       <div class="text-center mt-8">
         <a href="mailto:hello@keeply.work" class="text-sm text-gray-400 hover:text-gray-600 underline" data-i18n="buy.have_key">
-          我已經有授權碼?
+          我已經有授權碼？
         </a>
       </div>
 
@@ -221,6 +221,19 @@
         }
       }
 
+      // Paddle supports these locales for checkout UI:
+      //   en, fr, de, es, it, nl, pl, pt, ru, zh-Hans, ja, da, no, sv, cs,
+      //   sk, hu, tr, el, ar, bg, fi, ko, he, ro, uk, hr, lt, lv, ms, th,
+      //   vi, hi, id, et, sl, sr
+      // Notably NO zh-Hant/zh-TW support. For Traditional Chinese pages we
+      // fall back to English to avoid forcing Simplified Chinese on zh-Hant
+      // readers.
+      function paddleLocale() {
+        var lang = document.documentElement.lang || 'en';
+        if (lang === 'zh-Hant' || lang === 'zh-TW') return 'en';
+        return lang.split('-')[0];
+      }
+
       function handleClick() {
         if (typeof Paddle === 'undefined') {
           console.error('[Keeply] Paddle.js not available — click ignored');
@@ -240,7 +253,7 @@
             settings: {
               displayMode: 'overlay',
               theme: 'light',
-              locale: lang.split('-')[0]
+              locale: paddleLocale()
             }
           });
         } catch (e) {
