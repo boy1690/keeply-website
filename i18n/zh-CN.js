@@ -480,4 +480,7 @@ window.__i18n["zh-CN"] = {
   "buy.success.discord.desc": "跟开发者和其他使用者交流、抢先知道新功能更新。",
   "buy.success.discord.button": "加入 Discord",
   "buy.success.home": "回到首页",
+  "buy.success.contact.title": "直接联系创始人",
+  "buy.success.contact.desc": "有任何问题都可以写信给我，我会亲自回复。",
+  "buy.success.community": "身为 Founding Member，你将是第一批加入未来私人社区的成员。",
 };

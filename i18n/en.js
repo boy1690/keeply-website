@@ -480,4 +480,7 @@ window.__i18n["en"] = {
   "buy.success.discord.desc": "Chat with the developer and other users. Be the first to know about new features.",
   "buy.success.discord.button": "Join Discord",
   "buy.success.home": "Back to Home",
+  "buy.success.contact.title": "Contact the Founder Directly",
+  "buy.success.contact.desc": "Have any questions? Write to me — I'll personally reply.",
+  "buy.success.community": "As a Founding Member, you'll be the first to join our private community when we launch it.",
 };

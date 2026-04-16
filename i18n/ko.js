@@ -480,4 +480,7 @@ window.__i18n["ko"] = {
   "buy.success.discord.desc": "개발자 및 다른 사용자와 소통하고 새로운 기능 소식을 먼저 받아보세요.",
   "buy.success.discord.button": "Discord 참여",
   "buy.success.home": "홈으로 돌아가기",
+  "buy.success.contact.title": "창립자에게 직접 연락",
+  "buy.success.contact.desc": "궁금한 점이 있으시면 메일을 보내주세요. 직접 답변해 드립니다.",
+  "buy.success.community": "Founding Member로서 향후 프라이빗 커뮤니티에 가장 먼저 참여할 수 있습니다.",
 };

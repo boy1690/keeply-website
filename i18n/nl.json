@@ -419,5 +419,8 @@
   "buy.success.discord.title": "Word lid van de Keeply community",
   "buy.success.discord.desc": "Chat met de ontwikkelaar en andere gebruikers. Wees de eerste die hoort over nieuwe functies.",
   "buy.success.discord.button": "Discord joinen",
-  "buy.success.home": "Terug naar home"
+  "buy.success.home": "Terug naar home",
+  "buy.success.contact.title": "Neem direct contact op met de oprichter",
+  "buy.success.contact.desc": "Heb je vragen? Stuur me een bericht — ik antwoord persoonlijk.",
+  "buy.success.community": "Als Founding Member ben je een van de eersten die onze privécommunity mag betreden bij de lancering."
 }

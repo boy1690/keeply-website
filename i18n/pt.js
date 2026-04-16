@@ -480,4 +480,7 @@ window.__i18n["pt"] = {
   "buy.success.discord.desc": "Converse com o desenvolvedor e outros utilizadores. Fique a saber das novidades em primeira mão.",
   "buy.success.discord.button": "Entrar no Discord",
   "buy.success.home": "Voltar ao início",
+  "buy.success.contact.title": "Contacte o fundador diretamente",
+  "buy.success.contact.desc": "Tem alguma pergunta? Escreva-me — eu respondo pessoalmente.",
+  "buy.success.community": "Como Founding Member, será dos primeiros a juntar-se à nossa comunidade privada quando a lançarmos.",
 };

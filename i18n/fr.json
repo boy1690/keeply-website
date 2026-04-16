@@ -419,5 +419,8 @@
   "buy.success.discord.title": "Rejoignez la communauté Keeply",
   "buy.success.discord.desc": "Échangez avec le développeur et les autres utilisateurs. Soyez informé des nouvelles fonctionnalités en avant-première.",
   "buy.success.discord.button": "Rejoindre Discord",
-  "buy.success.home": "Retour à l'accueil"
+  "buy.success.home": "Retour à l'accueil",
+  "buy.success.contact.title": "Contactez le fondateur directement",
+  "buy.success.contact.desc": "Une question ? Écrivez-moi — je vous répondrai personnellement.",
+  "buy.success.community": "En tant que Founding Member, vous serez parmi les premiers à rejoindre notre communauté privée lors de son lancement."
 }

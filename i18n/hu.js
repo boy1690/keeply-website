@@ -480,4 +480,7 @@ window.__i18n["hu"] = {
   "buy.success.discord.desc": "Beszélgessen a fejlesztővel és más felhasználókkal. Legyen az első, aki értesül az új funkciókról.",
   "buy.success.discord.button": "Csatlakozás a Discordhoz",
   "buy.success.home": "Vissza a főoldalra",
+  "buy.success.contact.title": "Lépjen kapcsolatba az alapítóval közvetlenül",
+  "buy.success.contact.desc": "Kérdése van? Írjon nekem — személyesen válaszolok.",
+  "buy.success.community": "Founding Memberként Ön lesz az elsők között, akik csatlakozhatnak privát közösségünkhöz az induláskor.",
 };

@@ -480,4 +480,7 @@ window.__i18n["cs"] = {
   "buy.success.discord.desc": "Komunikujte s vývojářem a ostatními uživateli. Buďte první, kdo se dozví o nových funkcích.",
   "buy.success.discord.button": "Přidat se na Discord",
   "buy.success.home": "Zpět na úvodní stránku",
+  "buy.success.contact.title": "Kontaktujte zakladatele přímo",
+  "buy.success.contact.desc": "Máte otázky? Napište mi — odpovím osobně.",
+  "buy.success.community": "Jako Founding Member budete mezi prvními, kdo se připojí k naší privátní komunitě po jejím spuštění.",
 };

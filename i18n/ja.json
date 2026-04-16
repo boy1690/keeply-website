@@ -419,5 +419,8 @@
   "buy.success.discord.title": "Keeply コミュニティに参加",
   "buy.success.discord.desc": "開発者や他のユーザーと交流し、新機能の最新情報をいち早くキャッチ。",
   "buy.success.discord.button": "Discord に参加",
-  "buy.success.home": "ホームに戻る"
+  "buy.success.home": "ホームに戻る",
+  "buy.success.contact.title": "創設者に直接連絡",
+  "buy.success.contact.desc": "ご質問がありましたら、メールをお送りください。私が直接お返事します。",
+  "buy.success.community": "Founding Member として、プライベートコミュニティの最初のメンバーになれます。"
 }

@@ -419,5 +419,8 @@
   "buy.success.discord.button": "加入 Discord",
   "buy.success.home": "回到首页",
   "terms.s3.4.compare.r4.fallback": "想先订阅看看、之后保留使用权的团队",
-  "terms.s4.2.highlight": "所有付费方案（包含 Team 方案和永久授权）均享有 30 天退款保证——购买后 30 天内联系 hello@keeply.work 或通过 Paddle 申请，全额退款。退款后授权将立即失效。"
+  "terms.s4.2.highlight": "所有付费方案（包含 Team 方案和永久授权）均享有 30 天退款保证——购买后 30 天内联系 hello@keeply.work 或通过 Paddle 申请，全额退款。退款后授权将立即失效。",
+  "buy.success.contact.title": "直接联系创始人",
+  "buy.success.contact.desc": "有任何问题都可以写信给我，我会亲自回复。",
+  "buy.success.community": "身为 Founding Member，你将是第一批加入未来私人社区的成员。"
 }

@@ -480,4 +480,7 @@ window.__i18n["fi"] = {
   "buy.success.discord.desc": "Keskustele kehittäjän ja muiden käyttäjien kanssa. Ole ensimmäinen, joka kuulee uusista ominaisuuksista.",
   "buy.success.discord.button": "Liity Discordiin",
   "buy.success.home": "Takaisin etusivulle",
+  "buy.success.contact.title": "Ota yhteyttä perustajaan suoraan",
+  "buy.success.contact.desc": "Onko sinulla kysyttävää? Kirjoita minulle — vastaan henkilökohtaisesti.",
+  "buy.success.community": "Founding Member -jäsenenä olet ensimmäisten joukossa liittymässä yksityiseen yhteisöömme sen käynnistyessä.",
 };

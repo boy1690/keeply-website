@@ -480,4 +480,7 @@ window.__i18n["sv"] = {
   "buy.success.discord.desc": "Chatta med utvecklaren och andra användare. Var först att veta om nya funktioner.",
   "buy.success.discord.button": "Gå med i Discord",
   "buy.success.home": "Tillbaka till startsidan",
+  "buy.success.contact.title": "Kontakta grundaren direkt",
+  "buy.success.contact.desc": "Har du frågor? Skriv till mig — jag svarar personligen.",
+  "buy.success.community": "Som Founding Member blir du bland de första att gå med i vår privata gemenskap när den lanseras.",
 };

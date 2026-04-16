@@ -480,4 +480,7 @@ window.__i18n["tr"] = {
   "buy.success.discord.desc": "Geliştirici ve diğer kullanıcılarla sohbet edin. Yeni özelliklerden ilk siz haberdar olun.",
   "buy.success.discord.button": "Discord'a katıl",
   "buy.success.home": "Ana sayfaya dön",
+  "buy.success.contact.title": "Kurucuyla doğrudan iletişime geçin",
+  "buy.success.contact.desc": "Sorularınız mı var? Bana yazın — kişisel olarak yanıtlarım.",
+  "buy.success.community": "Founding Member olarak, özel topluluğumuza katılan ilk kişiler arasında olacaksınız.",
 };
