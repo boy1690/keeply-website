@@ -409,5 +409,14 @@
   "buy.trust.tax": "Conformité fiscale mondiale",
   "buy.trust.refund": "Remboursement 30 jours",
   "footer.buy": "Acheter à vie",
-  "index.pricing.perpetual.cta": "En savoir plus sur la licence perpétuelle →"
+  "index.pricing.perpetual.cta": "En savoir plus sur la licence perpétuelle →",
+  "buy.success.title": "Paiement réussi !",
+  "buy.success.thanks": "Merci pour l'achat de la licence perpétuelle Keeply — Founding Member",
+  "buy.success.email.title": "Clé de licence envoyée par email",
+  "buy.success.email.desc": "Vérifiez votre email. Dans Keeply, cliquez sur « Mise à niveau » → « J'ai déjà une clé de licence » et collez-la pour l'activer.",
+  "buy.success.email.to": "Clé de licence envoyée à",
+  "buy.success.discord.title": "Rejoignez la communauté Keeply",
+  "buy.success.discord.desc": "Échangez avec le développeur et les autres utilisateurs. Soyez informé des nouvelles fonctionnalités en avant-première.",
+  "buy.success.discord.button": "Rejoindre Discord",
+  "buy.success.home": "Retour à l'accueil"
 }

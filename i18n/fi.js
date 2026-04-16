@@ -470,4 +470,13 @@ window.__i18n["fi"] = {
   "buy.trust.refund": "30 päivän palautus",
   "footer.buy": "Osta ikuinen",
   "index.pricing.perpetual.cta": "Lisää ikuisesta lisenssistä →",
+  "buy.success.title": "Maksu onnistui!",
+  "buy.success.thanks": "Kiitos Keeply ikuisen lisenssin ostamisesta — Founding Member",
+  "buy.success.email.title": "Lisenssiavain lähetetty sähköpostiisi",
+  "buy.success.email.desc": "Tarkista sähköpostisi. Napsauta Keeplyssä \"Päivitä\" → \"Minulla on jo lisenssiavain\" ja liitä se aktivoidaksesi.",
+  "buy.success.email.to": "Lisenssiavain lähetetty osoitteeseen",
+  "buy.success.discord.title": "Liity Keeply-yhteisöön",
+  "buy.success.discord.desc": "Keskustele kehittäjän ja muiden käyttäjien kanssa. Ole ensimmäinen, joka kuulee uusista ominaisuuksista.",
+  "buy.success.discord.button": "Liity Discordiin",
+  "buy.success.home": "Takaisin etusivulle",
 };

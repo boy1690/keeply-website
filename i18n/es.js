@@ -470,4 +470,13 @@ window.__i18n["es"] = {
   "buy.trust.refund": "Reembolso de 30 días",
   "footer.buy": "Comprar perpetua",
   "index.pricing.perpetual.cta": "Más sobre licencia perpetua →",
+  "buy.success.title": "¡Pago exitoso!",
+  "buy.success.thanks": "Gracias por comprar la licencia perpetua de Keeply — Founding Member",
+  "buy.success.email.title": "Clave de licencia enviada a tu email",
+  "buy.success.email.desc": "Revisa tu email. En Keeply, haz clic en \"Actualizar\" → \"Ya tengo una clave de licencia\" y pégala para activar.",
+  "buy.success.email.to": "Clave de licencia enviada a",
+  "buy.success.discord.title": "Únete a la comunidad Keeply",
+  "buy.success.discord.desc": "Conversa con el desarrollador y otros usuarios. Entérate primero de las nuevas funciones.",
+  "buy.success.discord.button": "Unirse a Discord",
+  "buy.success.home": "Volver al inicio",
 };

@@ -409,5 +409,14 @@
   "buy.trust.tax": "Globale Steuer-Compliance",
   "buy.trust.refund": "30-Tage-Rückerstattung",
   "footer.buy": "Dauerlizenz kaufen",
-  "index.pricing.perpetual.cta": "Mehr über Dauerlizenz →"
+  "index.pricing.perpetual.cta": "Mehr über Dauerlizenz →",
+  "buy.success.title": "Zahlung erfolgreich!",
+  "buy.success.thanks": "Vielen Dank für den Kauf der Keeply Dauerlizenz — Founding Member",
+  "buy.success.email.title": "Lizenzschlüssel an Ihre E-Mail gesendet",
+  "buy.success.email.desc": "Prüfen Sie Ihre E-Mail. Klicken Sie in Keeply auf „Upgrade\" → „Ich habe bereits einen Lizenzschlüssel\" und fügen Sie ihn ein.",
+  "buy.success.email.to": "Lizenzschlüssel gesendet an",
+  "buy.success.discord.title": "Treten Sie der Keeply Community bei",
+  "buy.success.discord.desc": "Tauschen Sie sich mit dem Entwickler und anderen Nutzern aus. Erfahren Sie als Erster von neuen Funktionen.",
+  "buy.success.discord.button": "Discord beitreten",
+  "buy.success.home": "Zurück zur Startseite"
 }

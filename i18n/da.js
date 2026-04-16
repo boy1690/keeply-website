@@ -470,4 +470,13 @@ window.__i18n["da"] = {
   "buy.trust.refund": "30 dages refundering",
   "footer.buy": "Køb evig",
   "index.pricing.perpetual.cta": "Mere om evig licens →",
+  "buy.success.title": "Betaling gennemført!",
+  "buy.success.thanks": "Tak for at du har købt Keeply evig licens — Founding Member",
+  "buy.success.email.title": "Licensnøgle sendt til din e-mail",
+  "buy.success.email.desc": "Tjek din e-mail. I Keeply, klik på \"Opgrader\" → \"Jeg har allerede en licensnøgle\" og indsæt den for at aktivere.",
+  "buy.success.email.to": "Licensnøgle sendt til",
+  "buy.success.discord.title": "Bliv en del af Keeply-fællesskabet",
+  "buy.success.discord.desc": "Chat med udvikleren og andre brugere. Vær den første til at vide om nye funktioner.",
+  "buy.success.discord.button": "Deltag i Discord",
+  "buy.success.home": "Tilbage til forsiden",
 };

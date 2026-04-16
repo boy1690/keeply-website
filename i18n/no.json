@@ -409,5 +409,14 @@
   "buy.trust.tax": "Global skatteoverholdelse",
   "buy.trust.refund": "30 dagers refusjon",
   "footer.buy": "Kjøp evig",
-  "index.pricing.perpetual.cta": "Mer om evig lisens →"
+  "index.pricing.perpetual.cta": "Mer om evig lisens →",
+  "buy.success.title": "Betaling vellykket!",
+  "buy.success.thanks": "Takk for at du kjøpte Keeply evig lisens — Founding Member",
+  "buy.success.email.title": "Lisensnøkkel sendt til din e-post",
+  "buy.success.email.desc": "Sjekk e-posten din. I Keeply, klikk på \"Oppgrader\" → \"Jeg har allerede en lisensnøkkel\" og lim den inn for å aktivere.",
+  "buy.success.email.to": "Lisensnøkkel sendt til",
+  "buy.success.discord.title": "Bli med i Keeply-fellesskapet",
+  "buy.success.discord.desc": "Snakk med utvikleren og andre brukere. Vær den første til å vite om nye funksjoner.",
+  "buy.success.discord.button": "Bli med på Discord",
+  "buy.success.home": "Tilbake til forsiden"
 }

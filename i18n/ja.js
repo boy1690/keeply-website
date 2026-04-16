@@ -470,4 +470,13 @@ window.__i18n["ja"] = {
   "buy.trust.refund": "30 日間返金",
   "footer.buy": "永久ライセンス購入",
   "index.pricing.perpetual.cta": "永久ライセンスについて →",
+  "buy.success.title": "お支払い完了！",
+  "buy.success.thanks": "Keeply 永久ライセンスをご購入いただきありがとうございます — Founding Member",
+  "buy.success.email.title": "ライセンスキーをメールで送信しました",
+  "buy.success.email.desc": "メールをご確認ください。Keeply で「アップグレード」→「ライセンスキーを持っている」をクリックし、貼り付けて有効化してください。",
+  "buy.success.email.to": "ライセンスキーの送信先",
+  "buy.success.discord.title": "Keeply コミュニティに参加",
+  "buy.success.discord.desc": "開発者や他のユーザーと交流し、新機能の最新情報をいち早くキャッチ。",
+  "buy.success.discord.button": "Discord に参加",
+  "buy.success.home": "ホームに戻る",
 };

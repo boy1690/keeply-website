@@ -470,4 +470,13 @@ window.__i18n["ko"] = {
   "buy.trust.refund": "30일 환불",
   "footer.buy": "영구 라이선스 구매",
   "index.pricing.perpetual.cta": "영구 라이선스 알아보기 →",
+  "buy.success.title": "결제 완료!",
+  "buy.success.thanks": "Keeply 영구 라이선스를 구매해 주셔서 감사합니다 — Founding Member",
+  "buy.success.email.title": "라이선스 키가 이메일로 발송되었습니다",
+  "buy.success.email.desc": "이메일을 확인하세요. Keeply에서 \"업그레이드\" → \"라이선스 키가 있습니다\"를 클릭하고 붙여넣어 활성화하세요.",
+  "buy.success.email.to": "라이선스 키 발송 주소",
+  "buy.success.discord.title": "Keeply 커뮤니티 참여",
+  "buy.success.discord.desc": "개발자 및 다른 사용자와 소통하고 새로운 기능 소식을 먼저 받아보세요.",
+  "buy.success.discord.button": "Discord 참여",
+  "buy.success.home": "홈으로 돌아가기",
 };

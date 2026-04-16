@@ -409,5 +409,14 @@
   "buy.trust.tax": "全球稅務合規",
   "buy.trust.refund": "30 天退款",
   "footer.buy": "購買永久授權",
-  "index.pricing.perpetual.cta": "了解永久授權 →"
+  "index.pricing.perpetual.cta": "了解永久授權 →",
+  "buy.success.title": "付款成功！",
+  "buy.success.thanks": "感謝購買 Keeply 永久授權 — Founding Member",
+  "buy.success.email.title": "授權碼已寄到你的 email",
+  "buy.success.email.desc": "請查收 email，複製授權碼後在 Keeply 裡點「升級」→「我已經有授權碼」貼上即可啟用。",
+  "buy.success.email.to": "授權碼已寄到",
+  "buy.success.discord.title": "加入 Keeply 社群",
+  "buy.success.discord.desc": "跟開發者和其他使用者交流、搶先知道新功能更新。",
+  "buy.success.discord.button": "加入 Discord",
+  "buy.success.home": "回到首頁"
 }

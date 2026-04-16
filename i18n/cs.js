@@ -470,4 +470,13 @@ window.__i18n["cs"] = {
   "buy.trust.refund": "Vrácení do 30 dní",
   "footer.buy": "Koupit trvalou",
   "index.pricing.perpetual.cta": "Více o trvalé licenci →",
+  "buy.success.title": "Platba úspěšná!",
+  "buy.success.thanks": "Děkujeme za zakoupení trvalé licence Keeply — Founding Member",
+  "buy.success.email.title": "Licenční klíč odeslán na váš email",
+  "buy.success.email.desc": "Zkontrolujte email. V Keeply klikněte na „Upgrade\" → „Už mám licenční klíč\" a vložte ho pro aktivaci.",
+  "buy.success.email.to": "Licenční klíč odeslán na",
+  "buy.success.discord.title": "Přidejte se ke komunitě Keeply",
+  "buy.success.discord.desc": "Komunikujte s vývojářem a ostatními uživateli. Buďte první, kdo se dozví o nových funkcích.",
+  "buy.success.discord.button": "Přidat se na Discord",
+  "buy.success.home": "Zpět na úvodní stránku",
 };

@@ -470,4 +470,13 @@ window.__i18n["nl"] = {
   "buy.trust.refund": "30 dagen terugbetaling",
   "footer.buy": "Koop eeuwigdurend",
   "index.pricing.perpetual.cta": "Meer over eeuwigdurende licentie →",
+  "buy.success.title": "Betaling geslaagd!",
+  "buy.success.thanks": "Bedankt voor de aankoop van de eeuwigdurende Keeply licentie — Founding Member",
+  "buy.success.email.title": "Licentiesleutel verzonden naar je email",
+  "buy.success.email.desc": "Controleer je email. Klik in Keeply op \"Upgraden\" → \"Ik heb al een licentiesleutel\" en plak deze om te activeren.",
+  "buy.success.email.to": "Licentiesleutel verzonden naar",
+  "buy.success.discord.title": "Word lid van de Keeply community",
+  "buy.success.discord.desc": "Chat met de ontwikkelaar en andere gebruikers. Wees de eerste die hoort over nieuwe functies.",
+  "buy.success.discord.button": "Discord joinen",
+  "buy.success.home": "Terug naar home",
 };

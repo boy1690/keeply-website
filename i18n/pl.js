@@ -470,4 +470,13 @@ window.__i18n["pl"] = {
   "buy.trust.refund": "Zwrot w 30 dni",
   "footer.buy": "Kup wieczystą",
   "index.pricing.perpetual.cta": "Więcej o licencji wieczystej →",
+  "buy.success.title": "Płatność zakończona sukcesem!",
+  "buy.success.thanks": "Dziękujemy za zakup wieczystej licencji Keeply — Founding Member",
+  "buy.success.email.title": "Klucz licencyjny wysłany na Twój email",
+  "buy.success.email.desc": "Sprawdź email. W Keeply kliknij „Uaktualnij\" → „Mam już klucz licencyjny\" i wklej go, aby aktywować.",
+  "buy.success.email.to": "Klucz licencyjny wysłany do",
+  "buy.success.discord.title": "Dołącz do społeczności Keeply",
+  "buy.success.discord.desc": "Rozmawiaj z deweloperem i innymi użytkownikami. Dowiedz się pierwszy o nowych funkcjach.",
+  "buy.success.discord.button": "Dołącz do Discord",
+  "buy.success.home": "Powrót do strony głównej",
 };

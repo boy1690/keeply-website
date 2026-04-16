@@ -470,4 +470,13 @@ window.__i18n["tr"] = {
   "buy.trust.refund": "30 gün iade",
   "footer.buy": "Sürekli lisans al",
   "index.pricing.perpetual.cta": "Sürekli lisans hakkında →",
+  "buy.success.title": "Ödeme başarılı!",
+  "buy.success.thanks": "Keeply sürekli lisansını satın aldığınız için teşekkürler — Founding Member",
+  "buy.success.email.title": "Lisans anahtarı emailinize gönderildi",
+  "buy.success.email.desc": "Emailinizi kontrol edin. Keeply'de \"Yükselt\" → \"Lisans anahtarım var\" seçeneğine tıklayıp yapıştırarak etkinleştirin.",
+  "buy.success.email.to": "Lisans anahtarı gönderildi",
+  "buy.success.discord.title": "Keeply topluluğuna katılın",
+  "buy.success.discord.desc": "Geliştirici ve diğer kullanıcılarla sohbet edin. Yeni özelliklerden ilk siz haberdar olun.",
+  "buy.success.discord.button": "Discord'a katıl",
+  "buy.success.home": "Ana sayfaya dön",
 };

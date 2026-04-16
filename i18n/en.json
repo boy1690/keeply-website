@@ -409,5 +409,14 @@
   "buy.trust.tax": "Global tax compliance",
   "buy.trust.refund": "30-day refund",
   "footer.buy": "Buy Perpetual",
-  "index.pricing.perpetual.cta": "Learn about perpetual →"
+  "index.pricing.perpetual.cta": "Learn about perpetual →",
+  "buy.success.title": "Payment Successful!",
+  "buy.success.thanks": "Thank you for purchasing Keeply Perpetual License — Founding Member",
+  "buy.success.email.title": "License key sent to your email",
+  "buy.success.email.desc": "Check your email for the license key. In Keeply, click \"Upgrade\" → \"I already have a license key\" and paste it to activate.",
+  "buy.success.email.to": "License key sent to",
+  "buy.success.discord.title": "Join the Keeply Community",
+  "buy.success.discord.desc": "Chat with the developer and other users. Be the first to know about new features.",
+  "buy.success.discord.button": "Join Discord",
+  "buy.success.home": "Back to Home"
 }

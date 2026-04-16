@@ -409,5 +409,14 @@
   "buy.trust.tax": "Globális adószabályoknak megfelelő",
   "buy.trust.refund": "30 napos visszatérítés",
   "footer.buy": "Örökös licenc vásárlás",
-  "index.pricing.perpetual.cta": "Tudjon meg többet az örökös licencről →"
+  "index.pricing.perpetual.cta": "Tudjon meg többet az örökös licencről →",
+  "buy.success.title": "Fizetés sikeres!",
+  "buy.success.thanks": "Köszönjük a Keeply örökös licenc megvásárlását — Founding Member",
+  "buy.success.email.title": "Licenckulcs elküldve az email címére",
+  "buy.success.email.desc": "Ellenőrizze az emailjét. A Keeply-ben kattintson a „Frissítés\" → „Van már licenckulcsom\" gombra, és illessze be az aktiváláshoz.",
+  "buy.success.email.to": "Licenckulcs elküldve ide",
+  "buy.success.discord.title": "Csatlakozzon a Keeply közösséghez",
+  "buy.success.discord.desc": "Beszélgessen a fejlesztővel és más felhasználókkal. Legyen az első, aki értesül az új funkciókról.",
+  "buy.success.discord.button": "Csatlakozás a Discordhoz",
+  "buy.success.home": "Vissza a főoldalra"
 }

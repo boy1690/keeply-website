@@ -470,4 +470,13 @@ window.__i18n["zh-CN"] = {
   "buy.trust.refund": "30 天退款",
   "footer.buy": "购买永久授权",
   "index.pricing.perpetual.cta": "了解永久授权 →",
+  "buy.success.title": "付款成功！",
+  "buy.success.thanks": "感谢购买 Keeply 永久授权 — Founding Member",
+  "buy.success.email.title": "授权码已寄到你的 email",
+  "buy.success.email.desc": "请查收 email，复制授权码后在 Keeply 里点「升级」→「我已经有授权码」贴上即可启用。",
+  "buy.success.email.to": "授权码已寄到",
+  "buy.success.discord.title": "加入 Keeply 社区",
+  "buy.success.discord.desc": "跟开发者和其他使用者交流、抢先知道新功能更新。",
+  "buy.success.discord.button": "加入 Discord",
+  "buy.success.home": "回到首页",
 };
