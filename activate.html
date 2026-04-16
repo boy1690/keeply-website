@@ -195,7 +195,16 @@
       function showReady(data) {
         // Fill in license key
         var keyEl = document.getElementById('license-key');
-        if (keyEl) keyEl.textContent = data.key || '';
+        var fullKey = data.key || '';
+        // Store full key for copy, show masked version in DOM
+        keyEl.setAttribute('data-full-key', fullKey);
+        if (keyEl) {
+          if (fullKey.length > 24) {
+            keyEl.textContent = fullKey.slice(0, 16) + ' •••••••• ' + fullKey.slice(-4);
+          } else {
+            keyEl.textContent = fullKey;
+          }
+        }
 
         // Fill in deep link
         var dlBtn = document.getElementById('deeplink-btn');
@@ -222,7 +231,7 @@
         if (!btn || !keyEl) return;
 
         btn.addEventListener('click', function () {
-          var key = keyEl.textContent;
+          var key = keyEl.getAttribute('data-full-key') || keyEl.textContent;
           if (!key) return;
 
           if (navigator.clipboard && navigator.clipboard.writeText) {
