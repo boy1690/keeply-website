@@ -190,45 +190,8 @@
     </article>
   </div>
 
-      <!-- Success screen (hidden until checkout.completed) -->
-      <div id="buy-success" class="hidden max-w-md mx-auto px-6 text-center">
-        <div class="text-6xl mb-6">🎉</div>
-        <h1 class="text-2xl font-bold text-gray-900 mb-2" data-i18n="buy.success.title">Paiement réussi !</h1>
-        <p class="text-gray-600 mb-8" data-i18n="buy.success.thanks">Merci pour l'achat de la licence perpétuelle Keeply — Founding Member</p>
-        <div id="success-email-line" class="hidden text-sm text-brand-600 font-medium mb-4">
-          <span data-i18n="buy.success.email.to">Clé de licence envoyée à</span> <strong id="success-email-addr"></strong>
-        </div>
-        <div class="border-t border-gray-100 my-8"></div>
-        <div class="bg-brand-50 border border-brand-100 rounded-2xl p-6 mb-4 text-left">
-          <div class="flex items-start gap-4">
-            <div class="text-2xl flex-shrink-0">📧</div>
-            <div>
-              <h2 class="font-bold text-gray-900 mb-1" data-i18n="buy.success.email.title">Clé de licence envoyée par email</h2>
-              <p class="text-sm text-gray-600 leading-relaxed" data-i18n="buy.success.email.desc">Vérifiez votre email. Dans Keeply, cliquez sur « Mise à niveau » → « J'ai déjà une clé de licence » et collez-la pour l'activer.</p>
-            </div>
-          </div>
-        </div>
-        <div class="bg-brand-50 border border-brand-100 rounded-2xl p-6 mb-4 text-left">
-          <div class="flex items-start gap-4">
-            <div class="text-2xl flex-shrink-0">✉️</div>
-            <div>
-              <h2 class="font-bold text-gray-900 mb-1" data-i18n="buy.success.contact.title">Contactez le fondateur directement</h2>
-              <p class="text-sm text-gray-600 leading-relaxed mb-3" data-i18n="buy.success.contact.desc">Une question ? Écrivez-moi — je vous répondrai personnellement.</p>
-              <a href="mailto:wei@keeply.work" class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white text-sm font-medium px-5 py-2.5 rounded-full transition-all">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-                hello@keeply.work
-              </a>
-            </div>
-          </div>
-        </div>
-        <p class="text-sm text-gray-500 text-center italic mb-4" data-i18n="buy.success.community">En tant que Founding Member, vous serez parmi les premiers à rejoindre notre communauté privée lors de son lancement.</p>
-        <div class="mt-8">
-          <a href="index.html" class="text-sm text-gray-400 hover:text-gray-600 underline" data-i18n="buy.success.home">Retour à l'accueil</a>
-        </div>
-      </div>
 
-
-  <!-- Footer (injected by components.js) -->
+    <!-- Footer (injected by components.js) -->
   <div id="footer-root"></div>
 
   <!-- Shared components + i18n -->
@@ -255,7 +218,11 @@
             token: PADDLE_TOKEN,
             eventCallback: function(data) {
               if (data.name === 'checkout.completed') {
-                showSuccess(data);
+                // Redirect to activate page with transaction ID
+                var txnId = data.data && (data.data.transaction_id || data.data.id);
+                if (txnId) {
+                  window.location.href = 'activate.html?txn=' + encodeURIComponent(txnId);
+                }
               }
             }
           });
@@ -277,22 +244,6 @@
         var lang = document.documentElement.lang || 'en';
         if (lang === 'zh-Hant' || lang === 'zh-TW') return 'en';
         return lang.split('-')[0];
-      }
-
-      function showSuccess(data) {
-        var card = document.getElementById('buy-card');
-        var success = document.getElementById('buy-success');
-        if (card) card.classList.add('hidden');
-        if (success) success.classList.remove('hidden');
-        // Show customer email if available
-        var emailLine = document.getElementById('success-email-line');
-        var emailAddr = document.getElementById('success-email-addr');
-        if (emailLine && emailAddr && data && data.data && data.data.customer && data.data.customer.email) {
-          emailAddr.textContent = data.data.customer.email;
-          emailLine.classList.remove('hidden');
-        }
-        // Scroll to top
-        window.scrollTo({ top: 0, behavior: 'smooth' });
       }
 
       function handleClick() {

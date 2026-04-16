@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth" data-i18n-title="activate.meta.title" data-i18n-desc="activate.meta.description">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4F46E5" />
+  <title>Activate License — Keeply</title>
+  <meta name="description" content="Activate your Keeply Founding Member perpetual license." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://keeply.work/fr/activate.html" />
+
+  <!-- Hreflang (19 languages + x-default) -->
+  <link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/activate.html" />
+  <link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/activate.html" />
+  <link rel="alternate" hreflang="en" href="https://keeply.work/en/activate.html" />
+  <link rel="alternate" hreflang="ja" href="https://keeply.work/ja/activate.html" />
+  <link rel="alternate" hreflang="ko" href="https://keeply.work/ko/activate.html" />
+  <link rel="alternate" hreflang="de" href="https://keeply.work/de/activate.html" />
+  <link rel="alternate" hreflang="fr" href="https://keeply.work/fr/activate.html" />
+  <link rel="alternate" hreflang="es" href="https://keeply.work/es/activate.html" />
+  <link rel="alternate" hreflang="pt" href="https://keeply.work/pt/activate.html" />
+  <link rel="alternate" hreflang="it" href="https://keeply.work/it/activate.html" />
+  <link rel="alternate" hreflang="nl" href="https://keeply.work/nl/activate.html" />
+  <link rel="alternate" hreflang="pl" href="https://keeply.work/pl/activate.html" />
+  <link rel="alternate" hreflang="cs" href="https://keeply.work/cs/activate.html" />
+  <link rel="alternate" hreflang="hu" href="https://keeply.work/hu/activate.html" />
+  <link rel="alternate" hreflang="tr" href="https://keeply.work/tr/activate.html" />
+  <link rel="alternate" hreflang="fi" href="https://keeply.work/fi/activate.html" />
+  <link rel="alternate" hreflang="sv" href="https://keeply.work/sv/activate.html" />
+  <link rel="alternate" hreflang="no" href="https://keeply.work/no/activate.html" />
+  <link rel="alternate" hreflang="da" href="https://keeply.work/da/activate.html" />
+  <link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="../favicon.ico" sizes="32x32" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://keeply.work/fr/activate.html" />
+  <meta property="og:title" content="Activate License — Keeply" />
+  <meta property="og:description" content="Activate your Keeply Founding Member perpetual license." />
+  <meta property="og:image" content="https://keeply.work/og-image.png" />
+  <meta property="og:site_name" content="Keeply" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Activate License — Keeply" />
+  <meta name="twitter:description" content="Activate your Keeply Founding Member perpetual license." />
+  <meta name="twitter:image" content="https://keeply.work/og-image.png" />
+
+  <!-- Tailwind CSS (compiled) -->
+  <link rel="preload" href="../style.css" as="style" />
+  <link rel="stylesheet" href="../style.css" />
+
+  <style>
+    @keyframes keeply-spin { to { transform: rotate(360deg); } }
+    .keeply-spinner { animation: keeply-spin 1s linear infinite; }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+  <!-- Nav (injected by components.js) -->
+  <div id="nav-root"></div>
+
+  <!-- CONTENT -->
+  <div class="pt-28 pb-20">
+    <div class="max-w-md mx-auto px-6">
+
+      <!-- STATE: LOADING -->
+      <div id="state-loading" class="text-center py-16">
+        <div class="inline-block w-12 h-12 border-4 border-brand-200 border-t-brand-600 rounded-full keeply-spinner mb-6"></div>
+        <h1 class="text-xl font-bold text-gray-900 mb-2" data-i18n="activate.loading">Preparing your license key...</h1>
+        <p class="text-sm text-gray-500" data-i18n="activate.loading.sub">Usually takes just a few seconds</p>
+      </div>
+
+      <!-- STATE: READY (hidden until API returns key) -->
+      <div id="state-ready" class="hidden">
+
+        <!-- Badge -->
+        <div class="flex justify-center mb-6">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100 border border-amber-200">
+            <span class="text-amber-600">★</span>
+            <span class="text-xs font-bold text-amber-800 tracking-wide" data-i18n="activate.ready.badge">FOUNDING MEMBER</span>
+          </div>
+        </div>
+
+        <!-- Title -->
+        <h1 class="text-2xl font-bold text-gray-900 text-center mb-6" data-i18n="activate.ready.title">Your license key is ready</h1>
+
+        <!-- License key box -->
+        <div class="bg-gray-50 border border-gray-200 rounded-2xl p-5 mb-4">
+          <div id="license-key" class="font-mono text-sm text-gray-800 break-all leading-relaxed select-all"></div>
+        </div>
+
+        <!-- Copy button -->
+        <button id="copy-btn" class="w-full py-3 rounded-xl bg-gray-900 hover:bg-gray-800 text-white font-medium text-sm transition-all flex items-center justify-center gap-2 mb-3">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+          <span id="copy-label" data-i18n="activate.ready.copy">Copy license key</span>
+        </button>
+
+        <!-- Deep link button -->
+        <a id="deeplink-btn" href="#" class="w-full py-3.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-bold text-base transition-all flex items-center justify-center gap-2 mb-6 shadow-lg no-underline">
+          <span data-i18n="activate.ready.deeplink">🚀 Activate Keeply in one click →</span>
+        </a>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-100 my-6"></div>
+
+        <!-- Manual steps -->
+        <div class="bg-brand-50 border border-brand-100 rounded-2xl p-5 mb-6">
+          <h3 class="font-bold text-gray-900 mb-3 text-sm" data-i18n="activate.ready.manual.title">Manual activation</h3>
+          <ol class="text-sm text-gray-600 space-y-2 list-decimal ml-4">
+            <li data-i18n="activate.ready.manual.step1">Open the Keeply desktop app</li>
+            <li data-i18n="activate.ready.manual.step2">Click &quot;Upgrade&quot; → &quot;I already have a license key&quot;</li>
+            <li data-i18n="activate.ready.manual.step3">Paste the license key above</li>
+            <li data-i18n="activate.ready.manual.step4">Click &quot;Activate&quot;</li>
+          </ol>
+        </div>
+
+        <!-- Email note -->
+        <p class="text-center text-sm text-gray-400">
+          📧 <span data-i18n="activate.ready.email">License key also sent to</span> <strong id="customer-email" class="text-gray-600"></strong>
+        </p>
+
+        <!-- Contact -->
+        <div class="text-center mt-6">
+          <a href="mailto:wei@keeply.work" class="text-sm text-gray-400 hover:text-gray-600 underline">
+            <span data-i18n="activate.ready.contact">Questions? Contact the founder</span> wei@keeply.work
+          </a>
+        </div>
+      </div>
+
+      <!-- STATE: TIMEOUT -->
+      <div id="state-timeout" class="hidden text-center py-16">
+        <div class="text-5xl mb-6">⏳</div>
+        <h1 class="text-xl font-bold text-gray-900 mb-2" data-i18n="activate.timeout.title">Still preparing</h1>
+        <p class="text-sm text-gray-500 mb-6 max-w-xs mx-auto leading-relaxed" data-i18n="activate.timeout.desc">Taking longer than expected. Please refresh this page shortly, or check your email.</p>
+        <button onclick="location.reload()" class="bg-brand-600 hover:bg-brand-700 text-white font-medium text-sm px-6 py-2.5 rounded-full transition-all" data-i18n="activate.timeout.retry">Refresh</button>
+        <p class="text-sm text-gray-400 mt-8">
+          <span data-i18n="activate.timeout.help">Need help? Contact</span>
+          <a href="mailto:wei@keeply.work" class="text-brand-600 hover:underline">wei@keeply.work</a>
+        </p>
+      </div>
+
+      <!-- STATE: ERROR (no txn param) -->
+      <div id="state-error" class="hidden text-center py-16">
+        <div class="text-5xl mb-6">❓</div>
+        <h1 class="text-xl font-bold text-gray-900 mb-2" data-i18n="activate.error.title">Transaction not found</h1>
+        <p class="text-sm text-gray-500 mb-6 max-w-xs mx-auto leading-relaxed" data-i18n="activate.error.desc">Missing transaction information. Please try purchasing again, or check your email.</p>
+        <a href="buy.html" class="bg-amber-500 hover:bg-amber-600 text-white font-medium text-sm px-6 py-2.5 rounded-full transition-all inline-block no-underline" data-i18n="activate.error.buy">Go to purchase page</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer (injected by components.js) -->
+  <div id="footer-root"></div>
+
+  <!-- Shared components + i18n -->
+  <script src="../components.js" defer></script>
+  <script src="../i18n-loader.js" defer></script>
+  <script src="../download-modal.js" defer></script>
+
+  <!-- Activate logic -->
+  <script>
+    (function () {
+      var WORKER_BASE = 'https://keeply-billing.boy1690.workers.dev';
+      var MAX_ATTEMPTS = 15;
+      var POLL_INTERVAL = 2000;
+
+      var txn = new URLSearchParams(location.search).get('txn');
+
+      function showState(id) {
+        ['loading', 'ready', 'timeout', 'error'].forEach(function (s) {
+          var el = document.getElementById('state-' + s);
+          if (el) el.classList.toggle('hidden', s !== id);
+        });
+      }
+
+      function showReady(data) {
+        // Fill in license key
+        var keyEl = document.getElementById('license-key');
+        if (keyEl) keyEl.textContent = data.key || '';
+
+        // Fill in deep link
+        var dlBtn = document.getElementById('deeplink-btn');
+        if (dlBtn && data.deepLink) {
+          dlBtn.href = data.deepLink;
+        } else if (dlBtn) {
+          dlBtn.style.display = 'none';
+        }
+
+        // Fill in email
+        var emailEl = document.getElementById('customer-email');
+        if (emailEl && data.email) {
+          emailEl.textContent = data.email;
+        }
+
+        showState('ready');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      function setupCopy() {
+        var btn = document.getElementById('copy-btn');
+        var label = document.getElementById('copy-label');
+        var keyEl = document.getElementById('license-key');
+        if (!btn || !keyEl) return;
+
+        btn.addEventListener('click', function () {
+          var key = keyEl.textContent;
+          if (!key) return;
+
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(key).then(function () {
+              showCopied(label);
+            }).catch(function () {
+              fallbackCopy(key, label);
+            });
+          } else {
+            fallbackCopy(key, label);
+          }
+        });
+      }
+
+      function fallbackCopy(text, label) {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); showCopied(label); }
+        catch (e) { /* silent */ }
+        document.body.removeChild(ta);
+      }
+
+      function showCopied(label) {
+        if (!label) return;
+        var original = label.textContent;
+        var lang = document.documentElement.lang || 'en';
+        var copied = (window.__i18n && window.__i18n[lang] && window.__i18n[lang]['activate.ready.copied']) || '✓';
+        label.textContent = copied;
+        setTimeout(function () { label.textContent = original; }, 2000);
+      }
+
+      var attempts = 0;
+
+      function poll() {
+        fetch(WORKER_BASE + '/license/lookup?txn=' + encodeURIComponent(txn))
+          .then(function (r) { return r.json(); })
+          .then(function (data) {
+            if (data.status === 'ready') {
+              showReady(data);
+            } else if (++attempts < MAX_ATTEMPTS) {
+              setTimeout(poll, POLL_INTERVAL);
+            } else {
+              showState('timeout');
+            }
+          })
+          .catch(function () {
+            if (++attempts < MAX_ATTEMPTS) {
+              setTimeout(poll, POLL_INTERVAL);
+            } else {
+              showState('timeout');
+            }
+          });
+      }
+
+      function init() {
+        setupCopy();
+
+        if (!txn) {
+          showState('error');
+          return;
+        }
+
+        showState('loading');
+        poll();
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
+</body>
+</html>
