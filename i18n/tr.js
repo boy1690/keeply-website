@@ -458,7 +458,7 @@ window.__i18n["tr"] = {
   "buy.price.unit": "USD",
   "buy.subtitle": "Tek seferlik ödeme, sonsuza kadar sizin",
   "buy.benefit.1": "Tüm ücretli özelliklere sınırsız erişim",
-  "buy.benefit.2": "Ömür boyu ücretsiz güncellemeler",
+  "buy.benefit.2": "Ücretsiz güvenlik ve kararlılık düzeltmeleri",
   "buy.benefit.3": "15 ekip kasası konumuna kadar",
   "buy.benefit.4": "Erken kullanıcılar için öncelikli destek",
   "buy.button": "Şimdi $599'a satın al",

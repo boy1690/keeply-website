@@ -458,7 +458,7 @@ window.__i18n["zh-CN"] = {
   "buy.price.unit": "USD",
   "buy.subtitle": "一次付清，终身拥有",
   "buy.benefit.1": "所有付费功能无限制使用",
-  "buy.benefit.2": "终身免费更新",
+  "buy.benefit.2": "免费安全与稳定性修正",
   "buy.benefit.3": "最多 15 个团队保管库位置",
   "buy.benefit.4": "支持早鸟客户优先回应",
   "buy.button": "立即购买 $599",

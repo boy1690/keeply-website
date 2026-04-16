@@ -458,7 +458,7 @@ window.__i18n["pl"] = {
   "buy.price.unit": "USD",
   "buy.subtitle": "Jednorazowa płatność, twoje na zawsze",
   "buy.benefit.1": "Nieograniczony dostęp do wszystkich płatnych funkcji",
-  "buy.benefit.2": "Dożywotnie darmowe aktualizacje",
+  "buy.benefit.2": "Darmowe poprawki bezpieczeństwa i stabilności",
   "buy.benefit.3": "Do 15 lokalizacji sejfu zespołu",
   "buy.benefit.4": "Priorytetowe wsparcie dla wczesnych klientów",
   "buy.button": "Kup teraz za $599",

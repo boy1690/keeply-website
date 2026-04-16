@@ -458,7 +458,7 @@ window.__i18n["zh-TW"] = {
   "buy.price.unit": "USD",
   "buy.subtitle": "一次付清，終身擁有",
   "buy.benefit.1": "所有付費功能無限制使用",
-  "buy.benefit.2": "終身免費更新",
+  "buy.benefit.2": "免費安全與穩定性修正",
   "buy.benefit.3": "最多 15 個團隊保管庫位置",
   "buy.benefit.4": "支援早鳥客戶優先回應",
   "buy.button": "立即購買 $599",

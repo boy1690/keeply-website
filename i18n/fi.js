@@ -458,7 +458,7 @@ window.__i18n["fi"] = {
   "buy.price.unit": "USD",
   "buy.subtitle": "Kertamaksu, sinun ikuisesti",
   "buy.benefit.1": "Rajoittamaton pääsy kaikkiin maksullisiin ominaisuuksiin",
-  "buy.benefit.2": "Elinikäiset ilmaiset päivitykset",
+  "buy.benefit.2": "Ilmaiset tietoturva- ja vakauskorjaukset",
   "buy.benefit.3": "Jopa 15 tiimiholvin sijaintia",
   "buy.benefit.4": "Ensisijainen tuki varhaisille asiakkaille",
   "buy.button": "Osta nyt $599",

@@ -458,7 +458,7 @@ window.__i18n["ko"] = {
   "buy.price.unit": "USD",
   "buy.subtitle": "한 번 결제로 평생 소유",
   "buy.benefit.1": "모든 유료 기능 무제한 사용",
-  "buy.benefit.2": "평생 무료 업데이트",
+  "buy.benefit.2": "무료 보안 및 안정성 수정",
   "buy.benefit.3": "최대 15개 팀 볼트 위치",
   "buy.benefit.4": "얼리어답터 우선 지원",
   "buy.button": "지금 $599에 구매",

@@ -458,7 +458,7 @@ window.__i18n["sv"] = {
   "buy.price.unit": "USD",
   "buy.subtitle": "Engångsbetalning, din för alltid",
   "buy.benefit.1": "Obegränsad tillgång till alla betalda funktioner",
-  "buy.benefit.2": "Livstids gratis uppdateringar",
+  "buy.benefit.2": "Gratis säkerhets- och stabilitetsfixar",
   "buy.benefit.3": "Upp till 15 teamvalv-platser",
   "buy.benefit.4": "Prioriterat stöd för tidiga kunder",
   "buy.button": "Köp nu för $599",

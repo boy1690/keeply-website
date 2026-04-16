@@ -458,7 +458,7 @@ window.__i18n["pt"] = {
   "buy.price.unit": "USD",
   "buy.subtitle": "Pagamento único, seu para sempre",
   "buy.benefit.1": "Acesso ilimitado a todas as funcionalidades pagas",
-  "buy.benefit.2": "Atualizações gratuitas para sempre",
+  "buy.benefit.2": "Correções de segurança e estabilidade gratuitas",
   "buy.benefit.3": "Até 15 localizações de cofre de equipa",
   "buy.benefit.4": "Suporte prioritário para primeiros clientes",
   "buy.button": "Comprar agora por $599",

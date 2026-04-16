@@ -458,7 +458,7 @@ window.__i18n["es"] = {
   "buy.price.unit": "USD",
   "buy.subtitle": "Pago único, tuyo para siempre",
   "buy.benefit.1": "Acceso ilimitado a todas las funciones de pago",
-  "buy.benefit.2": "Actualizaciones gratuitas de por vida",
+  "buy.benefit.2": "Correcciones de seguridad y estabilidad gratuitas",
   "buy.benefit.3": "Hasta 15 ubicaciones de bóveda de equipo",
   "buy.benefit.4": "Soporte prioritario para los primeros clientes",
   "buy.button": "Comprar ahora por $599",

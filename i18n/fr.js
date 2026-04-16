@@ -458,7 +458,7 @@ window.__i18n["fr"] = {
   "buy.price.unit": "USD",
   "buy.subtitle": "Paiement unique, à vous pour toujours",
   "buy.benefit.1": "Accès illimité à toutes les fonctionnalités payantes",
-  "buy.benefit.2": "Mises à jour gratuites à vie",
+  "buy.benefit.2": "Corrections de sécurité et de stabilité gratuites",
   "buy.benefit.3": "Jusqu'à 15 emplacements de coffre d'équipe",
   "buy.benefit.4": "Support prioritaire pour les adoptants précoces",
   "buy.button": "Acheter pour $599",

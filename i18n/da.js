@@ -458,7 +458,7 @@ window.__i18n["da"] = {
   "buy.price.unit": "USD",
   "buy.subtitle": "Engangsbetaling, din for altid",
   "buy.benefit.1": "Ubegrænset adgang til alle betalte funktioner",
-  "buy.benefit.2": "Livstids gratis opdateringer",
+  "buy.benefit.2": "Gratis sikkerheds- og stabilitetsfixes",
   "buy.benefit.3": "Op til 15 teamhvelv-placeringer",
   "buy.benefit.4": "Prioriteret support til tidlige kunder",
   "buy.button": "Køb nu for $599",
