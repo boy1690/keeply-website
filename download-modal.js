@@ -5,7 +5,7 @@
  * 移除步驟：刪除此檔案 + 各頁面的 <script src="download-modal.js"> 標籤 + i18n key modal.download.*
  */
 (function () {
-  var RELEASE_URL = 'github.com/boy1690/Keeply/releases';
+  var RELEASE_URL = 'github.com/boy1690/keeply-releases/releases';
   var MODAL_ID = 'keeply-download-modal';
   var lastTrigger = null;
 
