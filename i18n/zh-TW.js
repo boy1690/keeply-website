@@ -81,8 +81,8 @@ window.__i18n["zh-TW"] = {
   "index.download.allversions": "查看所有版本",
   "index.download.cta.mac": "免費下載 macOS 版",
   "index.download.cta.win": "免費下載 Windows 版",
-  "index.download.note.mac": "個人免費，永久使用。支援 Apple Silicon。",
-  "index.download.note.win": "個人免費，永久使用。Windows 10 以上。",
+  "index.download.note.mac": "僅支援 Apple Silicon",
+  "index.download.note.win": "Windows 10 以上",
   "breadcrumb.home": "首頁",
   "privacy.meta.title": "隱私權政策 — Keeply",
   "privacy.meta.description": "Keeply 是一款本地優先的桌面應用程式。你的檔案絕不離開你的電腦。了解我們如何處理你的資料。",
@@ -517,5 +517,6 @@ window.__i18n["zh-TW"] = {
   "terms.s3.7.15_3.title": "15.3 保留查核權（Audit Rights）",
   "terms.s3.7.15_3.html": "<p>在合理的書面通知下，我們保留要求被授權方提供下列文件以驗證授權合規性的權利：</p><ul class=\"list-disc ml-5 space-y-1\"><li>事業登記文件（如：台灣統一編號、歐盟 VAT ID、英國 Companies House 註冊號、美國 EIN）</li><li>授權代表姓名與職稱</li><li>在有合理懷疑違反本協議之情事下，授權使用範圍的說明</li></ul><p>除非存在合理懷疑違反本協議之情事，否則我們行使查核權不會超過<strong>每十二（12）個月一次</strong>。</p><p>本條款的存在不構成對過往未行使查核權的棄權（waiver）。</p>",
   "terms.s3.7.15_4.title": "15.4 關聯企業定義（Affiliate Definition）",
-  "terms.s3.7.15_4.html": "<p>本協議中「關聯企業」（Affiliate）指的是：</p><ul class=\"list-disc ml-5 space-y-1\"><li>直接或間接持有被授權法律實體 50% 以上有表決權股份 / 權益的實體</li><li>被授權法律實體直接或間接持有其 50% 以上有表決權股份 / 權益的實體</li><li>與被授權法律實體處於同一共同控制關係下的實體（即共同股東持有兩實體各 50% 以上有表決權股份）</li></ul>"
+  "terms.s3.7.15_4.html": "<p>本協議中「關聯企業」（Affiliate）指的是：</p><ul class=\"list-disc ml-5 space-y-1\"><li>直接或間接持有被授權法律實體 50% 以上有表決權股份 / 權益的實體</li><li>被授權法律實體直接或間接持有其 50% 以上有表決權股份 / 權益的實體</li><li>與被授權法律實體處於同一共同控制關係下的實體（即共同股東持有兩實體各 50% 以上有表決權股份）</li></ul>",
+  "index.download.note.shared": "個人免費，永久使用。"
 };

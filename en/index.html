@@ -31,8 +31,6 @@
   <link rel="alternate" hreflang="no" href="https://keeply.work/no/" />
   <link rel="alternate" hreflang="da" href="https://keeply.work/da/" />
   <link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
-
-
   <!-- Hreflang (19 languages + x-default) -->
 
 
@@ -376,7 +374,7 @@
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.5">Local &amp; NAS storage</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.6">File diff</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.7">Unlimited users</span></li>
-            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.8">2 shared + 1 personal backup location</span></li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.8">Up to 3 vault locations</span></li>
           </ul>
           <a href="#download" class="block border-2 border-gray-200 hover:border-brand-300 text-gray-700 hover:text-brand-700 font-medium py-3.5 rounded-full transition-all" data-i18n="index.pricing.free.cta">Free Download</a>
         </div>
@@ -425,8 +423,7 @@
         <div class="bg-gradient-to-r from-amber-50 to-brand-50 border border-amber-200 rounded-2xl px-8 py-6 text-center">
           <div class="inline-flex items-center gap-2 bg-amber-500 text-white text-xs font-bold px-4 py-1 rounded-full mb-3" data-i18n="index.pricing.perpetual.badge">Early Access · Limited to 500</div>
           <h3 class="text-lg font-bold text-gray-900 mb-1" data-i18n="index.pricing.perpetual.title">Perpetual License — $599 one-time purchase</h3>
-          <p class="text-sm text-gray-500 max-w-lg mx-auto leading-relaxed mb-4" data-i18n="index.pricing.perpetual.desc">Includes all Team features, use the version at purchase forever. While supplies last.</p>
-          <a href="buy.html" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-bold text-sm px-6 py-2.5 rounded-full transition-all hover:shadow-lg hover:shadow-amber-500/30" data-i18n="index.pricing.perpetual.cta">Learn about perpetual →</a>
+          <p class="text-sm text-gray-500 max-w-lg mx-auto leading-relaxed" data-i18n="index.pricing.perpetual.desc">Includes all Team features, use the version at purchase forever. While supplies last.</p>
         </div>
       </div>
 
@@ -435,9 +432,7 @@
         <div class="bg-gray-50 border border-gray-200 rounded-2xl px-8 py-6">
           <p class="text-sm font-bold text-brand-600 mb-1" data-i18n="index.teamvault.tagline">One vault. One team. Full control.</p>
           <h3 class="text-lg font-bold text-gray-900 mb-3" data-i18n="index.teamvault.title">What is a &quot;Team Vault&quot;?</h3>
-          <p class="text-sm text-gray-600 leading-relaxed mb-3" data-i18n="index.teamvault.desc">
-            A &quot;vault location&quot; is where you store project versions — an office NAS, a cloud storage service, or a team member's personal backup drive. Keeply lets you freely combine these locations.
-          </p>
+          <p class="text-sm text-gray-600 leading-relaxed mb-3" data-i18n="index.teamvault.desc">A &quot;vault location&quot; is where you store project versions — an office NAS, a cloud storage service, or a team member's personal backup drive. Keeply lets you freely combine these locations.</p>
           <p class="text-sm text-brand-600 font-medium mb-3" data-i18n="index.teamvault.highlight">No cloud lock-in. No per-seat fees. Your data stays on your own hardware.</p>
           <div class="grid md:grid-cols-2 gap-3 mt-3">
             <div class="bg-white rounded-lg px-4 py-3 border border-gray-100">
@@ -466,16 +461,37 @@
       <h2 class="text-3xl md:text-5xl font-bold leading-tight" data-i18n="index.download.title">Your files deserve to be remembered.</h2>
       <p class="mt-6 text-brand-200 text-lg max-w-xl mx-auto leading-relaxed" data-i18n="index.download.subtitle">Every note you leave at work makes you a better professional. Starting today, let Keeply remember for you.</p>
 
-      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a id="download-btn" href="https://github.com/boy1690/keeply-releases/releases/latest" class="group bg-white text-brand-700 font-bold px-8 py-4 rounded-full text-lg transition-all hover:shadow-xl hover:shadow-black/10 flex items-center gap-3">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
-          <span id="download-label" data-i18n="index.download.cta">Free Download</span>
-        </a>
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-4">
+        <!-- Windows column -->
+        <div class="flex flex-col items-center gap-2">
+          <a id="download-btn-win"
+             href="https://github.com/boy1690/keeply-releases/releases/download/v1.0.2/Keeply_1.0.2_x64-setup.exe"
+             class="group bg-white text-brand-700 font-bold px-8 py-4 rounded-full text-lg transition-all hover:shadow-xl hover:shadow-black/10 flex items-center justify-center gap-3 min-w-[260px]">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3 5.479L10.5 4.5V11.5H3V5.479zM11.5 4.363L21 3V11.5H11.5V4.363zM3 12.5H10.5V19.521L3 18.521V12.5zM11.5 12.5H21V21L11.5 19.637V12.5z"/>
+            </svg>
+            <span data-i18n="index.download.cta.win">Free Download for Windows</span>
+          </a>
+          <p class="text-xs text-brand-300" data-i18n="index.download.note.win">Windows 10 or later</p>
+        </div>
+
+        <!-- Mac column -->
+        <div class="flex flex-col items-center gap-2">
+          <a id="download-btn-mac"
+             href="https://github.com/boy1690/keeply-releases/releases/download/v1.0.2/Keeply_1.0.2_aarch64.dmg"
+             class="group bg-white text-brand-700 font-bold px-8 py-4 rounded-full text-lg transition-all hover:shadow-xl hover:shadow-black/10 flex items-center justify-center gap-3 min-w-[260px]">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            <span data-i18n="index.download.cta.mac">Free Download for macOS</span>
+          </a>
+          <p class="text-xs text-brand-300" data-i18n="index.download.note.mac">Apple Silicon only</p>
+        </div>
       </div>
 
-      <p id="download-note" class="mt-6 text-sm text-brand-300" data-i18n="index.download.note">Free for personal use, forever. Supports Windows and macOS.</p>
+      <p class="mt-8 text-sm text-brand-300" data-i18n="index.download.note.shared">Free for personal use, forever.</p>
 
-      <p class="mt-2 text-xs text-brand-400">
+      <p class="mt-3 text-xs text-brand-400">
         <a href="https://github.com/boy1690/keeply-releases/releases/latest" class="underline hover:text-white transition-colors" data-i18n="index.download.allversions">View all releases</a>
       </p>
     </div>
@@ -488,21 +504,6 @@
   <script src="../components.js" defer></script>
   <script src="../i18n-loader.js" defer></script>
 
-  <!-- Platform detection for download button (i18n-aware) -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var label = document.getElementById('download-label');
-      var note = document.getElementById('download-note');
-      if (!label) return;
-      var ua = navigator.userAgent || '';
-      var isMac = /Mac|Macintosh/i.test(ua);
-      label.setAttribute('data-i18n', isMac ? 'index.download.cta.mac' : 'index.download.cta.win');
-      note.setAttribute('data-i18n', isMac ? 'index.download.note.mac' : 'index.download.note.win');
-      if (window.__keeplyI18n) {
-        window.__keeplyI18n.setLang(window.__keeplyI18n.currentLang());
-      }
-    });
-  </script>
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 window.__i18n = window.__i18n || {};
 window.__i18n["sv"] = {
-  // TODO: translate new terms.s7.20_* and terms.s3.7.15_* keys from English, added 2026-04-21
+  "__todo_terms_iter2__": "TODO: translate new terms.s7.20_* and terms.s3.7.15_* keys from English, added 2026-04-21",
   "nav.download": "Ladda ner gratis",
   "footer.privacy": "Integritetspolicy",
   "footer.terms": "Användarvillkor",
@@ -78,8 +78,8 @@ window.__i18n["sv"] = {
   "index.download.allversions": "Visa alla versioner",
   "index.download.cta.mac": "Ladda ner gratis för macOS",
   "index.download.cta.win": "Ladda ner gratis för Windows",
-  "index.download.note.mac": "Gratis för personligt bruk, för alltid. Apple Silicon-kompatibel.",
-  "index.download.note.win": "Gratis för personligt bruk, för alltid. Windows 10 eller senare.",
+  "index.download.note.mac": "Apple Silicon only",
+  "index.download.note.win": "Windows 10 eller senare",
   "breadcrumb.home": "Hem",
   "privacy.meta.title": "Integritetspolicy — Keeply",
   "privacy.meta.description": "Keeply är en lokal-först skrivbordsapp. Dina filer lämnar aldrig din dator. Läs om hur vi hanterar dina data.",
@@ -518,5 +518,6 @@ window.__i18n["sv"] = {
   "terms.s3.7.15_3.title": "15.3 Audit Rights",
   "terms.s3.7.15_3.html": "<p>Upon reasonable written notice, we reserve the right to request documentation from the licensee to verify license compliance, including:</p><ul class=\"list-disc ml-5 space-y-1\"><li>Business registration documents (e.g., Taiwan Unified Business Number 統一編號, EU VAT ID, UK Companies House number, US EIN)</li><li>Authorized representative's name and title</li><li>In the event of reasonable suspicion of breach, explanation of the scope of licensed use</li></ul><p>Absent reasonable suspicion of breach of this Agreement, we will not exercise audit rights more than <strong>once per twelve (12) months</strong>.</p><p>The existence of this clause does not constitute a waiver of any past non-exercise of audit rights.</p>",
   "terms.s3.7.15_4.title": "15.4 Affiliate Definition",
-  "terms.s3.7.15_4.html": "<p>In this Agreement, \"Affiliate\" means:</p><ul class=\"list-disc ml-5 space-y-1\"><li>An entity that directly or indirectly holds 50% or more of the voting shares / interests of the licensed legal entity</li><li>An entity of which the licensed legal entity directly or indirectly holds 50% or more of the voting shares / interests</li><li>An entity under common control with the licensed legal entity (i.e., common shareholders each hold 50% or more of voting shares in both entities)</li></ul>"
+  "terms.s3.7.15_4.html": "<p>In this Agreement, \"Affiliate\" means:</p><ul class=\"list-disc ml-5 space-y-1\"><li>An entity that directly or indirectly holds 50% or more of the voting shares / interests of the licensed legal entity</li><li>An entity of which the licensed legal entity directly or indirectly holds 50% or more of the voting shares / interests</li><li>An entity under common control with the licensed legal entity (i.e., common shareholders each hold 50% or more of voting shares in both entities)</li></ul>",
+  "index.download.note.shared": "Gratis för personligt bruk, för alltid."
 };
