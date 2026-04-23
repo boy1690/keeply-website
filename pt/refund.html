@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#4F46E5" />
   <!-- Content Security Policy (spec 019). frame-ancestors / HSTS / Permissions-Policy
        are header-only and deferred to future Cloudflare migration (audit #8). -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://docs.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Política de reembolso — Keeply</title>
   <meta name="description" content="Política de reembolso da Keeply. Saiba mais sobre a garantia de reembolso de 30 dias, condições de reembolso de licenças perpétuas e seus direitos legais." />
@@ -76,8 +76,8 @@
   <meta name="twitter:image" content="https://keeply.work/og-image.png" />
 
   <!-- Tailwind CSS (compiled) -->
-  <link rel="preload" href="../style.css" as="style" integrity="sha384-/qS+gpn5K5+OUSict7GHl/zxq2Jur9nmuOQDic5hvdo4spuO/dViuKicmLgRyz0d" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../style.css" integrity="sha384-/qS+gpn5K5+OUSict7GHl/zxq2Jur9nmuOQDic5hvdo4spuO/dViuKicmLgRyz0d" crossorigin="anonymous" />
+  <link rel="preload" href="../style.css" as="style" integrity="sha384-JzT5j3lZnf9P5tPIZ6k23p3dYSO1WTESyeWqnpCtFEIjBGWwU6NHNbxADHe+AlWP" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style.css" integrity="sha384-JzT5j3lZnf9P5tPIZ6k23p3dYSO1WTESyeWqnpCtFEIjBGWwU6NHNbxADHe+AlWP" crossorigin="anonymous" />
 
   <!-- M PLUS Rounded 1c (self-hosted via input.css @font-face) -->  <!-- Schema.org JSON-LD (injected by _dev/inject-schema.js) -->
   <script type="application/ld+json">
@@ -247,7 +247,10 @@
   <div id="footer-root"></div>
 
   <!-- Shared components + i18n -->
-  <script src="../components.js" defer integrity="sha384-pYyqxFT14I4Sa3az74IdyALfh5xpEBlsFAH4v2LNgbg9hfsJSyISeJllR3AgBomx" crossorigin="anonymous"></script>
+  <script src="../consent-api.js" defer integrity="sha384-AgMsIGCbo9mV0oP2ebvR5aNCzNPtSkIGXG5v29yY6A+vEktkTMAOZtlK0WiKSEUR" crossorigin="anonymous"></script>
+  <script src="../components.js" defer integrity="sha384-Y6/6phkijVlwQ9nqNUKQEGuFnHvvxA4NczoZsCHqQFkBGHLr/F3x7QPVgeDsAi6v" crossorigin="anonymous"></script>
+  <script src="../cookie-banner.js" defer integrity="sha384-aDwCVUUSIWi62pJZ7PqUXIOz/bAoGadk/KUkD4HatS2r4S1C5cMfasX/UGBBap+8" crossorigin="anonymous"></script>
+  <script src="../ga4-loader.js" defer integrity="sha384-iZOmJm2rJB0Ir8LBKpDA1Dts7m2lb6aKPdeCQBqaL7+XB2dolJz79UeRXjqVTPBq" crossorigin="anonymous"></script>
   <script src="../i18n-loader.js" defer integrity="sha384-4/86z3+CQS2W1y+6+aUviORi8uQCOPnZcHyVgXNDVOzuap9rm02i3fXp1e1zHRj5" crossorigin="anonymous"></script>
 </body>
 </html>

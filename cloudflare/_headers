@@ -1,0 +1,29 @@
+# Keeply — Security headers for Cloudflare Pages / Netlify / Vercel (spec 022)
+#
+# This file is consumed automatically if the site is served from a platform
+# that supports `_headers` (Cloudflare Pages, Netlify, Vercel). GitHub Pages
+# does not — use the Worker at cloudflare/worker.js or the Transform Rules
+# documented in docs/cloudflare-setup.md instead.
+#
+# To activate on Cloudflare Pages: move this file to the repo root (or set
+# as the `output directory` root artifact) and redeploy.
+
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), autoplay=(), fullscreen=(self)
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://docs.google.com; form-action 'self' https://docs.google.com; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
+  X-Keeply-Security: platform-headers/spec-022
+
+# Long-lived immutable assets (Tailwind-compiled CSS, bundled JS,
+# hashed i18n files) may be cached aggressively. Keep the defaults for
+# now; tune if we hit performance issues.
+/*.css
+  Cache-Control: public, max-age=3600
+
+/*.js
+  Cache-Control: public, max-age=3600
