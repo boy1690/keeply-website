@@ -45,6 +45,22 @@
   var currentLang = null;
   var data = window.__i18n || {};
 
+  // Deep-freeze the i18n tree to prevent runtime mutation of translation
+  // strings (defence against supply-chain script compromise and prototype
+  // pollution attacks that would otherwise poison DOM insertions via
+  // data-i18n-html). i18n-loader.js guarantees all locale packs have
+  // registered onto window.__i18n before i18n.js is loaded, so freezing
+  // here cannot race with pack registration. See spec 018.
+  (function deepFreezeI18n(root) {
+    if (!root || typeof Object.freeze !== 'function') return;
+    var keys = Object.keys(root);
+    for (var i = 0; i < keys.length; i++) {
+      var v = root[keys[i]];
+      if (v && typeof v === 'object') { Object.freeze(v); }
+    }
+    Object.freeze(root);
+  })(data);
+
   // Map lang codes to HTML lang attribute values
   var HTML_LANG_MAP = {
     'zh-TW': 'zh-Hant', 'zh-CN': 'zh-Hans',
@@ -78,6 +94,91 @@
     return detectLangFromBrowser();
   }
 
+  // ---- HTML sanitizer (spec 018 / security audit #5) -------------------
+  // Allowlist-based inline sanitizer used for every data-i18n-html value.
+  // Defence-in-depth against supply-chain script compromise or prototype
+  // pollution mutating window.__i18n. Works purely client-side via DOMParser.
+  //
+  // Allowed tags: <strong> <b> <em> <i> <br> <span> <a>
+  // Allowed attrs: class (global); href/target/rel (on <a>). href must be
+  //   http(s)/mailto (relative URLs resolve via location.href).
+  // Disallowed tags: unwrap (keep text), except <script>/<style> which are
+  //   dropped entirely so their body is never displayed as plain text.
+  // Allowlist derived from actual translation usage (survey run 2026-04-23:
+  // only A, CODE, LI, P, SPAN, STRONG, UL appear). B/EM/I/BR/OL/H3/H4 are
+  // kept because they are safe (text-formatting only, no attributes of
+  // concern) and commonly needed for future translations.
+  var SAN_ALLOWED_TAGS = {
+    'STRONG': true, 'B': true, 'EM': true, 'I': true, 'BR': true,
+    'SPAN': true, 'A': true, 'CODE': true, 'P': true,
+    'UL': true, 'OL': true, 'LI': true,
+    'H3': true, 'H4': true
+  };
+  var SAN_DROP_WITH_CONTENT = {
+    'SCRIPT': true, 'STYLE': true, 'IFRAME': true, 'OBJECT': true,
+    'EMBED': true, 'LINK': true, 'META': true
+  };
+  var SAN_GLOBAL_ATTRS = { 'class': true };
+  var SAN_TAG_ATTRS = {
+    'A': { 'class': true, 'href': true, 'target': true, 'rel': true }
+  };
+  var SAN_URL_OK = /^(https?:|mailto:)/i;
+
+  function sanCleanAttrs(el) {
+    var attrs = Array.prototype.slice.call(el.attributes);
+    var tagAttrs = SAN_TAG_ATTRS[el.tagName] || null;
+    for (var i = 0; i < attrs.length; i++) {
+      var name = attrs[i].name;
+      var val = attrs[i].value;
+      var ok = SAN_GLOBAL_ATTRS[name] === true ||
+               (tagAttrs && tagAttrs[name] === true);
+      if (!ok) { el.removeAttribute(name); continue; }
+      if (name === 'href') {
+        var abs = null;
+        try { abs = new URL(val, location.href); } catch (e) { /* bad URL */ }
+        if (!abs || !SAN_URL_OK.test(abs.protocol)) {
+          el.removeAttribute('href');
+        }
+      }
+    }
+  }
+
+  function sanWalk(node) {
+    var children = Array.prototype.slice.call(node.childNodes);
+    for (var i = 0; i < children.length; i++) {
+      var child = children[i];
+      if (child.nodeType === 3) { continue; } // text — keep
+      if (child.nodeType !== 1) { node.removeChild(child); continue; } // comment/other
+      var tag = child.tagName;
+      if (SAN_DROP_WITH_CONTENT[tag]) { node.removeChild(child); continue; }
+      // Recurse first so that if this child turns out to be disallowed and
+      // gets unwrapped, the hoisted grandchildren have already been cleaned
+      // (fixes <svg><script>...</script></svg> leaking through).
+      sanWalk(child);
+      if (SAN_ALLOWED_TAGS[tag]) {
+        sanCleanAttrs(child);
+      } else {
+        // unwrap: move (already-cleaned) children out, then drop the element
+        while (child.firstChild) { node.insertBefore(child.firstChild, child); }
+        node.removeChild(child);
+      }
+    }
+  }
+
+  function sanitizeHtml(html) {
+    if (html == null) return '';
+    var s = String(html);
+    if (s === '') return '';
+    var doc = new DOMParser().parseFromString(
+      '<!doctype html><body><div id="__san">' + s + '</div>', 'text/html'
+    );
+    var root = doc.getElementById('__san');
+    if (!root) return '';
+    sanWalk(root);
+    return root.innerHTML;
+  }
+  // ---- end sanitizer ----------------------------------------------------
+
   function applyTranslations(translations) {
     if (!translations) return;
     var els = document.querySelectorAll('[data-i18n]');
@@ -95,7 +196,7 @@
     for (var j = 0; j < htmlEls.length; j++) {
       var hkey = htmlEls[j].getAttribute('data-i18n-html');
       if (translations[hkey] != null) {
-        htmlEls[j].innerHTML = translations[hkey];
+        htmlEls[j].innerHTML = sanitizeHtml(translations[hkey]);
       }
     }
     var titleKey = document.documentElement.getAttribute('data-i18n-title');
@@ -264,6 +365,7 @@
 
   window.__keeplyI18n = {
     setLang: setLang,
-    currentLang: function () { return currentLang; }
+    currentLang: function () { return currentLang; },
+    sanitizeHtml: sanitizeHtml
   };
 })();
