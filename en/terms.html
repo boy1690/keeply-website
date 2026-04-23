@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#4F46E5" />
+  <!-- Content Security Policy (spec 019). frame-ancestors / HSTS / Permissions-Policy
+       are header-only and deferred to future Cloudflare migration (audit #8). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://docs.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Terms of Service — Keeply</title>
   <meta name="description" content="Keeply desktop application Terms of Service. Learn about licensing plans, payment policies, and your rights." />
 
@@ -323,10 +327,10 @@
 
           <h3 class="text-lg font-bold text-gray-800 mt-8 mb-3" data-i18n="terms.s4.2.title">4.2 Refund Policy</h3>
           <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-            <p class="text-green-800 font-medium text-sm" data-i18n="terms.s4.2.highlight">All paid plans (including Team plan and perpetual license) come with a 30-day money-back guarantee — contact hello@keeply.work or request through Paddle within 30 days of purchase for a full refund. License is revoked upon refund.</p>
+            <p class="text-green-800 font-medium text-sm" data-i18n="terms.s4.2.highlight">All paid plans (including Team plan and perpetual license) come with a 30-day money-back guarantee — contact hello@<span class="e-decoy">null.</span>keeply.work or request through Paddle within 30 days of purchase for a full refund. License is revoked upon refund.</p>
           </div>
           <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s4.2.p1">After 30 days, refunds are handled according to Paddle's refund policy and applicable consumer protection laws. EU/EEA/UK residents have a 14-day statutory right of withdrawal; Taiwan residents may have a 7-day inspection period under consumer protection law.</p>
-          <p class="text-gray-600 leading-relaxed mt-3" data-i18n-html="terms.s4.2.p2">For billing inquiries and refunds, contact <strong>Paddle</strong> (<a href="https://www.paddle.com/contact" class="text-brand-600 hover:underline">paddle.com/contact</a>) or <a href="mailto:hello@keeply.work" class="text-brand-600 hover:underline">hello@keeply.work</a>.</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n-html="terms.s4.2.p2">For billing inquiries and refunds, contact <strong>Paddle</strong> (<a href="https://www.paddle.com/contact" class="text-brand-600 hover:underline">paddle.com/contact</a>) or <a href="mailto:hello@keeply.work" class="text-brand-600 hover:underline">hello@<span class="e-decoy">null.</span>keeply.work</a>.</p>
 
           <h3 class="text-lg font-bold text-gray-800 mt-8 mb-3" data-i18n="terms.s4.3.title">4.3 Price Changes</h3>
           <p class="text-gray-600 leading-relaxed" data-i18n-html="terms.s4.3.p1">We may change pricing with at least <strong>30 days' written notice</strong> before the change takes effect. Price changes apply at the next renewal.</p>
@@ -394,7 +398,7 @@
 
         <section id="s13">
           <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="terms.s13.title">13. Contact</h2>
-          <p class="text-gray-600 leading-relaxed" data-i18n-html="terms.s13.email">Email: <a href="mailto:hello@keeply.work" class="text-brand-600 font-medium hover:underline">hello@keeply.work</a></p>
+          <p class="text-gray-600 leading-relaxed" data-i18n-html="terms.s13.email">Email: <a href="mailto:hello@keeply.work" class="text-brand-600 font-medium hover:underline">hello@<span class="e-decoy">null.</span>keeply.work</a></p>
           <p class="text-gray-600 leading-relaxed" data-i18n-html="terms.s13.website">Website: <a href="https://keeply.work" class="text-brand-600 hover:underline">keeply.work</a></p>
         </section>
 

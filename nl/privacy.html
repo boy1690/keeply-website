@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#4F46E5" />
+  <!-- Content Security Policy (spec 019). frame-ancestors / HSTS / Permissions-Policy
+       are header-only and deferred to future Cloudflare migration (audit #8). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://docs.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Privacybeleid — Keeply</title>
   <meta name="description" content="Keeply is een local-first desktopapplicatie. Je bestanden verlaten nooit je computer. Lees hoe wij met je gegevens omgaan." />
 
@@ -300,7 +304,7 @@
               <p class="text-sm text-gray-700" data-i18n-html="privacy.rights.taiwan"><strong>Inwoners van Taiwan (PDPA):</strong> Je hebt het recht op inzage, correctie en het verzoek tot verwijdering van je persoonlijke gegevens.</p>
             </div>
           </div>
-          <p class="text-gray-600 leading-relaxed mt-4" data-i18n-html="privacy.rights.contact">Contact: <a href="mailto:hello@keeply.work" class="text-brand-600 font-medium hover:underline">hello@keeply.work</a> — we reageren binnen 30 dagen.</p>
+          <p class="text-gray-600 leading-relaxed mt-4" data-i18n-html="privacy.rights.contact">Contact: <a href="mailto:hello@keeply.work" class="text-brand-600 font-medium hover:underline">hello@<span class="e-decoy">null.</span>keeply.work</a> — we reageren binnen 30 dagen.</p>
         </section>
 
         <section id="eu-rep">
@@ -320,7 +324,7 @@
 
         <section>
           <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="privacy.contactus.title">Contact</h2>
-          <p class="text-gray-600 leading-relaxed" data-i18n-html="privacy.contactus.email">E-mail: <a href="mailto:hello@keeply.work" class="text-brand-600 font-medium hover:underline">hello@keeply.work</a></p>
+          <p class="text-gray-600 leading-relaxed" data-i18n-html="privacy.contactus.email">E-mail: <a href="mailto:hello@keeply.work" class="text-brand-600 font-medium hover:underline">hello@<span class="e-decoy">null.</span>keeply.work</a></p>
           <p class="text-gray-600 leading-relaxed" data-i18n-html="privacy.contactus.website">Website: <a href="https://keeply.work" class="text-brand-600 hover:underline">keeply.work</a></p>
         </section>
 

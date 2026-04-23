@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#4F46E5" />
+  <!-- Content Security Policy (spec 019). frame-ancestors / HSTS / Permissions-Policy
+       are header-only and deferred to future Cloudflare migration (audit #8). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://docs.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Contáctenos — Keeply</title>
   <meta name="description" content="¿Tienes una pregunta, quieres reportar un error o simplemente quieres saludar? Contacta al equipo de Keeply." />
 
@@ -155,7 +159,7 @@
             <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
           </div>
           <h2 class="text-lg font-bold text-gray-900 mb-2" data-i18n="contact.email.title">Correo electrónico</h2>
-          <a href="mailto:hello@keeply.work" class="text-brand-600 font-bold text-lg hover:underline">hello@keeply.work</a>
+          <a href="mailto:hello@keeply.work" class="text-brand-600 font-bold text-lg hover:underline">hello@<span class="e-decoy">null.</span>keeply.work</a>
           <p class="text-sm text-gray-500 mt-3" data-i18n-html="contact.email.response">Nos esforzamos por responder en un plazo de <strong>2 días hábiles</strong>.</p>
         </div>
 
@@ -165,7 +169,7 @@
             <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>
           </div>
           <h2 class="text-lg font-bold text-gray-900 mb-2" data-i18n="contact.billing.title">Facturación y reembolsos</h2>
-          <p class="text-sm text-gray-600 leading-relaxed" data-i18n-html="contact.billing.desc">Todos los pagos son procesados por <strong>Paddle.com</strong>. Para preguntas de facturación o reembolsos, contacta a <a href="mailto:hello@keeply.work" class="text-brand-600 hover:underline">hello@keeply.work</a> o visita el <a href="https://www.paddle.com/contact" class="text-brand-600 hover:underline">Soporte de Paddle</a>.</p>
+          <p class="text-sm text-gray-600 leading-relaxed" data-i18n-html="contact.billing.desc">Todos los pagos son procesados por <strong>Paddle.com</strong>. Para preguntas de facturación o reembolsos, contacta a <a href="mailto:hello@keeply.work" class="text-brand-600 hover:underline">hello@<span class="e-decoy">null.</span>keeply.work</a> o visita el <a href="https://www.paddle.com/contact" class="text-brand-600 hover:underline">Soporte de Paddle</a>.</p>
           <div class="mt-4 bg-white/60 rounded-lg p-3 text-sm text-amber-700 font-medium" data-i18n="contact.billing.note">El plan de equipo incluye una garantía de reembolso de 30 días.</div>
         </div>
 
@@ -175,7 +179,7 @@
             <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
           </div>
           <h2 class="text-lg font-bold text-gray-900 mb-2" data-i18n="contact.security.title">Seguridad y privacidad</h2>
-          <p class="text-sm text-gray-600 leading-relaxed" data-i18n-html="contact.security.desc">¿Encontraste una vulnerabilidad de seguridad o tienes una preocupación de privacidad? Envía un correo a <strong>hello@keeply.work</strong> con «Security» o «Privacy» en el asunto.</p>
+          <p class="text-sm text-gray-600 leading-relaxed" data-i18n-html="contact.security.desc">¿Encontraste una vulnerabilidad de seguridad o tienes una preocupación de privacidad? Envía un correo a <strong>hello@<span class="e-decoy">null.</span>keeply.work</strong> con «Security» o «Privacy» en el asunto.</p>
           <p class="text-sm text-gray-500 mt-3" data-i18n-html="contact.security.privacy">Para saber cómo gestionamos tus datos, consulta nuestra <a href="privacy.html" class="text-brand-600 hover:underline">Política de privacidad</a>.</p>
         </div>
 

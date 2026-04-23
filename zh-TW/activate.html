@@ -5,6 +5,9 @@
   <meta name="referrer" content="no-referrer" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#4F46E5" />
+  <!-- Content Security Policy (spec 019). frame-ancestors / HSTS / Permissions-Policy
+       are header-only and deferred to future Cloudflare migration (audit #8). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://docs.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
   <title>啟用授權 — Keeply</title>
   <meta name="description" content="啟用你的 Keeply Founding Member 永久授權。" />
 
@@ -163,7 +166,7 @@
         <!-- Contact -->
         <div class="text-center mt-6">
           <a href="mailto:wei@keeply.work" class="text-sm text-gray-400 hover:text-gray-600 underline">
-            <span data-i18n="activate.ready.contact">有問題？聯繫創辦人</span> wei@keeply.work
+            <span data-i18n="activate.ready.contact">有問題？聯繫創辦人</span> wei@<span class="e-decoy">null.</span>keeply.work
           </a>
         </div>
       </div>
@@ -176,7 +179,7 @@
         <button onclick="location.reload()" class="bg-brand-600 hover:bg-brand-700 text-white font-medium text-sm px-6 py-2.5 rounded-full transition-all" data-i18n="activate.timeout.retry">重新整理</button>
         <p class="text-sm text-gray-400 mt-8">
           <span data-i18n="activate.timeout.help">需要幫助？聯繫</span>
-          <a href="mailto:wei@keeply.work" class="text-brand-600 hover:underline">wei@keeply.work</a>
+          <a href="mailto:wei@keeply.work" class="text-brand-600 hover:underline">wei@<span class="e-decoy">null.</span>keeply.work</a>
         </p>
       </div>
 

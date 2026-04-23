@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#4F46E5" />
+  <!-- Content Security Policy (spec 019). frame-ancestors / HSTS / Permissions-Policy
+       are header-only and deferred to future Cloudflare migration (audit #8). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://docs.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Bruksvilkår — Keeply</title>
   <meta name="description" content="Bruksvilkår for Keeply-skrivebordsappen. Les om lisensplaner, betalingspolicyer og dine rettigheter." />
 
@@ -323,10 +327,10 @@
 
           <h3 class="text-lg font-bold text-gray-800 mt-8 mb-3" data-i18n="terms.s4.2.title">4.2 Refusjonspolicy</h3>
           <div class="bg-green-50 border border-green-100 rounded-xl p-4">
-            <p class="text-green-800 font-medium text-sm" data-i18n="terms.s4.2.highlight">All paid plans (including Team plan and perpetual license) come with a 30-day money-back guarantee — contact hello@keeply.work or request through Paddle within 30 days of purchase for a full refund. License is revoked upon refund.</p>
+            <p class="text-green-800 font-medium text-sm" data-i18n="terms.s4.2.highlight">All paid plans (including Team plan and perpetual license) come with a 30-day money-back guarantee — contact hello@<span class="e-decoy">null.</span>keeply.work or request through Paddle within 30 days of purchase for a full refund. License is revoked upon refund.</p>
           </div>
           <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s4.2.p1">Etter 30 dager håndteres refusjoner i henhold til Paddles refusjonspolicy og gjeldende forbrukervernlover. EU/EØS/UK-innbyggere har 14 dagers lovfestet angrerett; innbyggere i Taiwan kan ha en 7-dagers inspeksjonsperiode under forbrukervernloven.</p>
-          <p class="text-gray-600 leading-relaxed mt-3" data-i18n-html="terms.s4.2.p2">For fakturerings- og refusjonsspørsmål, kontakt <strong>Paddle</strong> (<a href="https://www.paddle.com/contact" class="text-brand-600 hover:underline">paddle.com/contact</a>) eller <a href="mailto:hello@keeply.work" class="text-brand-600 hover:underline">hello@keeply.work</a>.</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n-html="terms.s4.2.p2">For fakturerings- og refusjonsspørsmål, kontakt <strong>Paddle</strong> (<a href="https://www.paddle.com/contact" class="text-brand-600 hover:underline">paddle.com/contact</a>) eller <a href="mailto:hello@keeply.work" class="text-brand-600 hover:underline">hello@<span class="e-decoy">null.</span>keeply.work</a>.</p>
 
           <h3 class="text-lg font-bold text-gray-800 mt-8 mb-3" data-i18n="terms.s4.3.title">4.3 Prisendringer</h3>
           <p class="text-gray-600 leading-relaxed" data-i18n-html="terms.s4.3.p1">Vi kan endre priser med minst <strong>30 dagers skriftlig varsel</strong> før endringen trer i kraft. Prisendringer gjelder ved neste fornyelse.</p>
@@ -394,7 +398,7 @@
 
         <section id="s13">
           <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="terms.s13.title">13. Kontakt</h2>
-          <p class="text-gray-600 leading-relaxed" data-i18n-html="terms.s13.email">E-post: <a href="mailto:hello@keeply.work" class="text-brand-600 font-medium hover:underline">hello@keeply.work</a></p>
+          <p class="text-gray-600 leading-relaxed" data-i18n-html="terms.s13.email">E-post: <a href="mailto:hello@keeply.work" class="text-brand-600 font-medium hover:underline">hello@<span class="e-decoy">null.</span>keeply.work</a></p>
           <p class="text-gray-600 leading-relaxed" data-i18n-html="terms.s13.website">Nettsted: <a href="https://keeply.work" class="text-brand-600 hover:underline">keeply.work</a></p>
         </section>
 

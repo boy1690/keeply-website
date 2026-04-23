@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#4F46E5" />
+  <!-- Content Security Policy (spec 019). frame-ancestors / HSTS / Permissions-Policy
+       are header-only and deferred to future Cloudflare migration (audit #8). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://docs.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>聯繫我們 — Keeply</title>
   <meta name="description" content="有問題、要回報 Bug，或只是想打個招呼？聯繫 Keeply 團隊。" />
 
@@ -137,7 +141,7 @@
             <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
           </div>
           <h2 class="text-lg font-bold text-gray-900 mb-2" data-i18n="contact.email.title">電子郵件</h2>
-          <a href="mailto:hello@keeply.work" class="text-brand-600 font-bold text-lg hover:underline">hello@keeply.work</a>
+          <a href="mailto:hello@keeply.work" class="text-brand-600 font-bold text-lg hover:underline">hello@<span class="e-decoy">null.</span>keeply.work</a>
           <p class="text-sm text-gray-500 mt-3" data-i18n-html="contact.email.response">我們的目標是在 <strong>2 個工作天</strong>內回覆。</p>
         </div>
 
@@ -148,7 +152,7 @@
           </div>
           <h2 class="text-lg font-bold text-gray-900 mb-2" data-i18n="contact.billing.title">帳務與退款</h2>
           <p class="text-sm text-gray-600 leading-relaxed" data-i18n-html="contact.billing.desc">
-            所有付款由 <strong>Paddle.com</strong> 處理。帳務問題或退款請聯繫 <a href="mailto:hello@keeply.work" class="text-brand-600 hover:underline">hello@keeply.work</a>，或直接造訪 <a href="https://www.paddle.com/contact" class="text-brand-600 hover:underline">Paddle 支援</a>。
+            所有付款由 <strong>Paddle.com</strong> 處理。帳務問題或退款請聯繫 <a href="mailto:hello@keeply.work" class="text-brand-600 hover:underline">hello@<span class="e-decoy">null.</span>keeply.work</a>，或直接造訪 <a href="https://www.paddle.com/contact" class="text-brand-600 hover:underline">Paddle 支援</a>。
           </p>
           <div class="mt-4 bg-white/60 rounded-lg p-3 text-sm text-amber-700 font-medium" data-i18n="contact.billing.note">
             Team 方案享有 30 天退款保證。
@@ -162,7 +166,7 @@
           </div>
           <h2 class="text-lg font-bold text-gray-900 mb-2" data-i18n="contact.security.title">安全與隱私</h2>
           <p class="text-sm text-gray-600 leading-relaxed" data-i18n-html="contact.security.desc">
-            發現安全漏洞或有隱私問題？請發送郵件至 <strong>hello@keeply.work</strong>，主旨標註「Security」或「Privacy」。
+            發現安全漏洞或有隱私問題？請發送郵件至 <strong>hello@<span class="e-decoy">null.</span>keeply.work</strong>，主旨標註「Security」或「Privacy」。
           </p>
           <p class="text-sm text-gray-500 mt-3" data-i18n-html="contact.security.privacy">
             關於我們如何處理你的資料，請參閱<a href="privacy.html" class="text-brand-600 hover:underline">隱私權政策</a>。

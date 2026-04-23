@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#4F46E5" />
+  <!-- Content Security Policy (spec 019). frame-ancestors / HSTS / Permissions-Policy
+       are header-only and deferred to future Cloudflare migration (audit #8). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://docs.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Refund Policy — Keeply</title>
   <meta name="description" content="Keeply Refund Policy. Learn about the 30-day money-back guarantee, perpetual license refund terms, and your statutory rights." />
 
@@ -161,7 +165,7 @@
           <p class="text-gray-600 leading-relaxed mt-3" data-i18n="refund.s2.p2">如果你因任何原因對購買不滿意，請在初次購買日期的 30 天內聯繫我們，我們將全額退款——無需說明理由。</p>
           <p class="text-gray-600 leading-relaxed mt-3" data-i18n="refund.s2.p3">申請退款方式：</p>
           <ul class="text-gray-600 space-y-1 ml-5 list-disc mt-2">
-            <li data-i18n-html="refund.s2.li1">發送電子郵件至 <strong>hello@keeply.work</strong>，附上你的訂單資訊，或</li>
+            <li data-i18n-html="refund.s2.li1">發送電子郵件至 <strong>hello@<span class="e-decoy">null.</span>keeply.work</strong>，附上你的訂單資訊，或</li>
             <li data-i18n-html="refund.s2.li2">直接聯繫 Paddle：<a href="https://www.paddle.com/contact" class="text-brand-600 hover:underline">paddle.com/contact</a></li>
           </ul>
         </section>
@@ -202,7 +206,7 @@
           <div class="space-y-4">
             <div>
               <p class="text-gray-600 leading-relaxed" data-i18n="refund.s6.opt1.title"><strong>方式一 — 聯繫 Keeply：</strong></p>
-              <p class="text-gray-600 leading-relaxed" data-i18n-html="refund.s6.opt1.desc">發送電子郵件至 <strong>hello@keeply.work</strong>，並提供：</p>
+              <p class="text-gray-600 leading-relaxed" data-i18n-html="refund.s6.opt1.desc">發送電子郵件至 <strong>hello@<span class="e-decoy">null.</span>keeply.work</strong>，並提供：</p>
               <ul class="text-gray-600 space-y-1 ml-5 list-disc mt-1">
                 <li data-i18n="refund.s6.opt1.li1">你的訂單編號或購買時使用的電子郵件地址</li>
                 <li data-i18n="refund.s6.opt1.li2">你的退款原因</li>
@@ -225,7 +229,7 @@
           <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="refund.s8.title">8. 聯繫方式</h2>
           <p class="text-gray-600 leading-relaxed" data-i18n="refund.s8.p1">帳務及退款相關問題：</p>
           <ul class="text-gray-600 space-y-1 ml-5 list-disc mt-2">
-            <li data-i18n-html="refund.s8.li1"><strong>電子郵件</strong>：<a href="mailto:hello@keeply.work" class="text-brand-600 hover:underline">hello@keeply.work</a></li>
+            <li data-i18n-html="refund.s8.li1"><strong>電子郵件</strong>：<a href="mailto:hello@keeply.work" class="text-brand-600 hover:underline">hello@<span class="e-decoy">null.</span>keeply.work</a></li>
             <li data-i18n-html="refund.s8.li2"><strong>網站</strong>：<a href="https://keeply.work" class="text-brand-600 hover:underline">keeply.work</a></li>
           </ul>
         </section>
