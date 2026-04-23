@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Self-hosted M PLUS Rounded 1c (full character set incl. CJK) */
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/MPLUSRounded1c-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./fonts/MPLUSRounded1c-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/MPLUSRounded1c-Bold.woff2') format('woff2');
+}
+
+/* Email-harvesting bot decoy. See spec 019 / audit #10.
+   Bots that regex-scan HTML source see "foo@null.bar" (invalid MX).
+   Human visitors see only "foo@bar" because the decoy is display:none. */
+.e-decoy { display: none; }
+
+/* Download verify disclosure. See spec 021 / audit #12.
+   Collapsible SHA-256 + verify command next to each download button. */
+.verify-disclosure > summary::-webkit-details-marker { display: none; }
+.verify-summary {
+  list-style: none;
+  cursor: pointer;
+  color: #c4b5fd; /* brand-300-ish */
+  font-size: 13px;
+  white-space: nowrap;
+  user-select: none;
+}
+.verify-summary:hover { color: #ffffff; }
+.verify-arrow {
+  display: inline-block;
+  margin-right: 4px;
+  transition: transform 0.15s;
+}
+.verify-disclosure[open] > .verify-summary > .verify-arrow,
+.verify-disclosure[open] > summary > .verify-arrow {
+  transform: rotate(90deg);
+}
+.verify-box {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.verify-section { margin-bottom: 0.75rem; }
+.verify-section:last-child { margin-bottom: 0; }
+.verify-label {
+  color: #c4b5fd;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  margin-bottom: 0.25rem;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.verify-code {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  word-break: break-all;
+  display: block;
+  user-select: all;
+}
+.verify-note {
+  color: #c4b5fd;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 12px;
+  margin-top: 0.5rem;
+}
+
+/* Custom animations (migrated from index.html <style>) */
+@layer components {
+  /* Smooth gradient animation */
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+
+  /* Floating animation for cards */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  .animate-float-delayed {
+    animation: float 6s ease-in-out 2s infinite;
+  }
+  .animate-float-delayed-2 {
+    animation: float 6s ease-in-out 4s infinite;
+  }
+
+  /* Subtle glow on hover */
+  .glow-hover:hover {
+    box-shadow: 0 0 40px rgba(79, 70, 229, 0.15);
+  }
+}

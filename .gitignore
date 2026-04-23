@@ -1,7 +1,12 @@
 # ===========================
 # Dev tooling (local only, NOT pushed to remote)
+# Note: /_dev/ is TRACKED because GitHub Actions runs `npm run build` which
+# executes scripts inside it (spec 021). Only ad-hoc / temporary files in
+# /_dev/ remain ignored.
 # ===========================
-/_dev/
+/_dev/_tmp*
+/_dev/baseline.css
+/_dev/verify.css
 CLAUDE.md
 .claude/
 .specify/
