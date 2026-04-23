@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "build:checksums": "node _dev/build-checksums.js",
+    "build:css": "tailwindcss -c _dev/tailwind.config.js -i _dev/input.css -o style.css --minify",
+    "build:pages": "node _dev/build.js",
+    "build:schema": "node _dev/inject-schema.js",
+    "build:sri": "node _dev/build-sri.js",
+    "build": "npm run build:checksums && npm run build:css && npm run build:pages && npm run build:schema && npm run build:sri",
+    "ping:indexnow": "node _dev/ping-indexnow.js"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
