@@ -24,6 +24,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        # Fetches latest SHA-256 checksums from GitHub releases, compiles
+        # Tailwind CSS, regenerates localized pages, injects JSON-LD, and
+        # recomputes SRI hashes. See specs/website/021-download-checksums.
+        run: npm run build
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
