@@ -303,6 +303,9 @@ function fixResourcePaths(html) {
   html = html.replace(/(src=")components\.js(")/g, '$1../components.js$2');
   html = html.replace(/(src=")i18n-loader\.js(")/g, '$1../i18n-loader.js$2');
   html = html.replace(/(src=")i18n\.js(")/g, '$1../i18n.js$2');
+  html = html.replace(/(src=")consent-api\.js(")/g, '$1../consent-api.js$2');   // spec 023
+  html = html.replace(/(src=")cookie-banner\.js(")/g, '$1../cookie-banner.js$2'); // spec 023
+  html = html.replace(/(src=")ga4-loader\.js(")/g, '$1../ga4-loader.js$2');     // spec 024
 
   // Fix favicon links
   html = html.replace(/(href=")favicon\.ico(")/g, '$1../favicon.ico$2');
