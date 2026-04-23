@@ -137,7 +137,7 @@ window.__i18n["da"] = {
   "privacy.payment.p3": "For flere detaljer, se <a href=\"https://www.paddle.com/legal/privacy\" class=\"text-brand-600 hover:underline\">Paddles privatlivspolitik</a> og <a href=\"https://www.paddle.com/legal/buyer-terms\" class=\"text-brand-600 hover:underline\">Paddles købervilkår</a>.",
   "privacy.payment.p4": "<strong>Retsgrundlag (GDPR):</strong> Kontraktmæssig nødvendighed (Artikel 6(1)(b)) og berettiget interesse i forebyggelse af svindel (Artikel 6(1)(f)).",
   "privacy.website.title": "Data indsamlet på vores hjemmeside",
-  "privacy.website.p1": "Keeply-marketinghjemmesiden (keeply.work) bruger i øjeblikket ingen analyse- eller sporingsværktøjer.",
+  "privacy.website.p1": "Keeplys marketinghjemmeside (keeply.work) registrerer dit foretrukne sprog udelukkende i din browser — vi sender ikke din IP-adresse til tredjeparter til dette formål. Dit sprogvalg gemmes først i browserens lokale lager, efter at du udtrykkeligt har valgt et sprog fra sprogmenuen eller åbnet et sprogspecifikt link (f.eks. keeply.work/da/).",
   "privacy.website.p2": "Hvis du kontakter os via e-mail, beholder vi korrespondancen for at besvare din henvendelse. Du tilføjes ikke til nogen marketingliste medmindre du udtrykkeligt samtykker.",
   "privacy.thirdparty.title": "Tredjepartstjenester",
   "privacy.thirdparty.th.service": "Tjeneste",

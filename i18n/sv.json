@@ -136,7 +136,7 @@
   "privacy.payment.p3": "För mer information, se <a href=\"https://www.paddle.com/legal/privacy\" class=\"text-brand-600 hover:underline\">Paddles integritetspolicy</a> och <a href=\"https://www.paddle.com/legal/buyer-terms\" class=\"text-brand-600 hover:underline\">Paddles köparvillkor</a>.",
   "privacy.payment.p4": "<strong>Rättslig grund (GDPR):</strong> Avtalsmässig nödvändighet (Artikel 6(1)(b)) och berättigat intresse av bedrägeriförebyggande (Artikel 6(1)(f)).",
   "privacy.website.title": "Data som samlas in på vår webbplats",
-  "privacy.website.p1": "Keeply-marknadsföringswebbplatsen (keeply.work) använder för närvarande inga analys- eller spårningsverktyg.",
+  "privacy.website.p1": "Keeplys marknadsföringswebbplats (keeply.work) identifierar ditt föredragna språk helt och hållet i din webbläsare — vi skickar inte din IP-adress till någon tredje part för detta syfte. Ditt språkval sparas i webbläsarens lokala lagring först efter att du uttryckligen har valt ett i språkmenyn eller öppnat en språkspecifik länk (t.ex. keeply.work/sv/).",
   "privacy.website.p2": "Om du kontaktar oss via e-post behåller vi korrespondensen för att besvara din förfrågan. Du läggs inte till i någon marknadsföringslista om du inte uttryckligen samtycker.",
   "privacy.thirdparty.title": "Tredjepartstjänster",
   "privacy.thirdparty.th.service": "Tjänst",

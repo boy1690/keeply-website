@@ -135,7 +135,7 @@ window.__i18n["zh-CN"] = {
   "privacy.payment.p3": "详情请参阅 <a href=\"https://www.paddle.com/legal/privacy\" class=\"text-brand-600 hover:underline\">Paddle 隐私政策</a>和 <a href=\"https://www.paddle.com/legal/buyer-terms\" class=\"text-brand-600 hover:underline\">Paddle 买家条款</a>。",
   "privacy.payment.p4": "<strong>法律依据（GDPR）：</strong>合同履行的必要性（第 6 条第 1 款 (b) 项）及防欺诈的合法利益（第 6 条第 1 款 (f) 项）。",
   "privacy.website.title": "网站收集的数据",
-  "privacy.website.p1": "Keeply 营销网站（keeply.work）目前不使用任何分析或追踪工具。",
+  "privacy.website.p1": "Keeply 营销网站（keeply.work）的语言检测完全在您的浏览器本地执行——我们不会为此目的将您的 IP 地址发送给任何第三方。只有在您从语言菜单手动选择语言、或打开含语言路径的链接（例如 keeply.work/zh-CN/）时，您的语言偏好才会保存至浏览器的 local storage。",
   "privacy.website.p2": "如果你通过电子邮件联系我们，我们会保留通信内容以便回复。除非你明确选择加入，否则不会被添加到任何营销列表。",
   "privacy.thirdparty.title": "第三方服务",
   "privacy.thirdparty.th.service": "服务",

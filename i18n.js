@@ -1,11 +1,16 @@
 /**
- * Keeply i18n Engine (v4 — globe dropdown, 19 languages, IP geolocation)
+ * Keeply i18n Engine (v5 — globe dropdown, 19 languages, browser-local detection)
  *
  * How it works:
  *   1. Language packs register themselves on window.__i18n
  *   2. This script reads from window.__i18n — no fetch, works on file:// protocol
  *   3. HTML is a pure template — elements use data-i18n / data-i18n-html attributes
  *   4. Globe icon in nav opens a dropdown to pick language
+ *
+ * Language detection is 100% browser-local (navigator.language). No third-party
+ * geolocation calls are made. localStorage is written only when the visitor
+ * takes an explicit action (clicks the language menu or visits a locale URL).
+ * See /law/products/keeply/governance/2026-04-23-remove-ipapi-geolocation.md.
  *
  * To add a new language:
  *   1. Create i18n/{locale}.js
@@ -49,28 +54,6 @@
     'fi': 'fi', 'sv': 'sv', 'no': 'no', 'da': 'da'
   };
 
-  // Country code → language mapping for IP geolocation
-  var COUNTRY_LANG_MAP = {
-    'TW': 'zh-TW', 'CN': 'zh-CN', 'HK': 'zh-TW', 'MO': 'zh-TW',
-    'JP': 'ja', 'KR': 'ko',
-    'DE': 'de', 'AT': 'de', 'CH': 'de', 'LI': 'de',
-    'FR': 'fr', 'BE': 'fr', 'LU': 'fr', 'MC': 'fr',
-    'ES': 'es', 'MX': 'es', 'AR': 'es', 'CO': 'es', 'CL': 'es', 'PE': 'es',
-    'PT': 'pt', 'BR': 'pt',
-    'IT': 'it', 'SM': 'it',
-    'NL': 'nl',
-    'PL': 'pl',
-    'CZ': 'cs',
-    'HU': 'hu',
-    'TR': 'tr',
-    'FI': 'fi',
-    'SE': 'sv',
-    'NO': 'no',
-    'DK': 'da',
-    'SG': 'en', 'AU': 'en', 'NZ': 'en', 'GB': 'en', 'IE': 'en',
-    'US': 'en', 'CA': 'en', 'IN': 'en', 'PH': 'en', 'ZA': 'en'
-  };
-
   function detectLangFromBrowser() {
     var nav = (navigator.language || navigator.userLanguage || '').toLowerCase();
     for (var i = 0; i < SUPPORTED.length; i++) {
@@ -85,32 +68,14 @@
   }
 
   function detectLang() {
-    // Priority 1: User's manual choice (localStorage)
+    // Priority 1: User's prior explicit choice (localStorage)
     try {
       var stored = localStorage.getItem(STORAGE_KEY);
       if (stored && SUPPORTED.indexOf(stored) !== -1) return stored;
     } catch (e) { /* private browsing */ }
-    // Priority 2 & 3: handled in init (IP async → browser fallback)
+    // Priority 2: Browser-reported language — fully local, no network call
+    // Priority 3 (inside detectLangFromBrowser): fall back to DEFAULT
     return detectLangFromBrowser();
-  }
-
-  // Priority 2: IP geolocation (async, upgrades language after initial render)
-  function detectLangFromIP() {
-    // Skip if user already chose manually
-    try {
-      if (localStorage.getItem(STORAGE_KEY)) return;
-    } catch (e) { return; }
-
-    fetch('https://ipapi.co/json/', { signal: AbortSignal.timeout(3000) })
-      .then(function (r) { return r.json(); })
-      .then(function (geo) {
-        if (!geo || !geo.country_code) return;
-        var ipLang = COUNTRY_LANG_MAP[geo.country_code];
-        if (ipLang && SUPPORTED.indexOf(ipLang) !== -1 && ipLang !== currentLang) {
-          setLang(ipLang);
-        }
-      })
-      .catch(function () { /* timeout or blocked — keep browser detection */ });
   }
 
   function applyTranslations(translations) {
@@ -165,9 +130,22 @@
     return 'index.html';
   }
 
-  function setLang(lang) {
+  // setLang(lang, persist)
+  //   persist === true  → write the choice to localStorage
+  //                       (use when the change reflects an explicit user action:
+  //                        dropdown click, URL-locale navigation)
+  //   persist === false → apply in-page only
+  //                       (use for first-visit auto-detection, so we do not
+  //                        write storage before the visitor has chosen — see
+  //                        /law Privacy §2.4)
+  //
+  // The default is non-persisting because the safer behaviour for ambiguous
+  // call-sites is to not persist.
+  function setLang(lang, persist) {
     if (SUPPORTED.indexOf(lang) === -1) lang = DEFAULT;
-    try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) { /* ignore */ }
+    if (persist === true) {
+      try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) { /* ignore */ }
+    }
 
     // If in a locale subdirectory, navigate to the new locale URL
     var urlLocale = detectLocaleFromUrl();
@@ -227,8 +205,10 @@
       item.textContent = lang.label;
       item.addEventListener('click', (function (code) {
         return function (e) {
+          // Explicit user action — persist the preference before the
+          // <a href="/{code}/..."> navigates. The landing page's init() will
+          // also see the URL locale and re-persist, which is idempotent.
           try { localStorage.setItem(STORAGE_KEY, code); } catch (ex) {}
-          // Let the <a> navigate naturally
         };
       })(lang.code));
       dropdown.appendChild(item);
@@ -256,18 +236,24 @@
   }
 
   function init() {
-    // If in a locale subdirectory, use that locale as the current language
+    // If in a locale subdirectory, use that locale as the current language.
+    // Visiting a locale URL (including via shared link or bookmark) is treated
+    // as an explicit preference, so the choice is persisted.
     var urlLocale = detectLocaleFromUrl();
+    var persistOnApply;
     if (urlLocale && SUPPORTED.indexOf(urlLocale) !== -1) {
       currentLang = urlLocale;
-      try { localStorage.setItem(STORAGE_KEY, urlLocale); } catch (e) {}
+      persistOnApply = true;
     } else {
       currentLang = detectLang();
+      // If detectLang() returned a value from a prior localStorage entry,
+      // storage already reflects the choice; if it came from navigator.language
+      // (first visit), we deliberately do NOT write storage — the visitor has
+      // not yet taken any explicit action. See /law Privacy §2.4.
+      persistOnApply = false;
     }
     buildDropdown();
-    setLang(currentLang);
-    // Async: try IP geolocation to upgrade language (won't override manual choice or URL locale)
-    if (!urlLocale) detectLangFromIP();
+    setLang(currentLang, persistOnApply);
   }
 
   if (document.readyState === 'loading') {

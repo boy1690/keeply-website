@@ -139,7 +139,7 @@
   "privacy.payment.p3": "詳情請參閱 <a href=\"https://www.paddle.com/legal/privacy\" class=\"text-brand-600 hover:underline\">Paddle 隱私權政策</a>及 <a href=\"https://www.paddle.com/legal/buyer-terms\" class=\"text-brand-600 hover:underline\">Paddle 買家條款</a>。",
   "privacy.payment.p4": "<strong>法律依據（GDPR）：</strong>合約必要性（第 6(1)(b) 條）及詐騙防範的合法利益（第 6(1)(f) 條）。",
   "privacy.website.title": "我們網站上收集的資料",
-  "privacy.website.p1": "Keeply 行銷網站（keeply.work）目前不使用任何分析或追蹤工具。",
+  "privacy.website.p1": "Keeply 行銷網站（keeply.work）的語言偵測完全在您的瀏覽器本地執行——我們不會為此目的將您的 IP 位址傳送給任何第三方。只有在您從語言選單手動選擇語言、或開啟含語系路徑的連結（例如 keeply.work/zh-TW/）時，您的語言偏好才會儲存至瀏覽器的 local storage。",
   "privacy.website.p2": "如果你透過電子郵件聯繫我們，我們會保留通訊內容以回覆你的詢問。除非你明確選擇加入，否則不會將你加入行銷名單。",
   "privacy.thirdparty.title": "第三方服務",
   "privacy.thirdparty.th.service": "服務",

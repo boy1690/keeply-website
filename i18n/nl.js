@@ -135,7 +135,7 @@ window.__i18n["nl"] = {
   "privacy.payment.p3": "Zie voor details het <a href=\"https://www.paddle.com/legal/privacy\" class=\"text-brand-600 hover:underline\">Privacybeleid van Paddle</a> en de <a href=\"https://www.paddle.com/legal/buyer-terms\" class=\"text-brand-600 hover:underline\">Kopersvoorwaarden van Paddle</a>.",
   "privacy.payment.p4": "<strong>Rechtsgrondslag (AVG):</strong> Contractuele noodzaak (Artikel 6(1)(b)) en gerechtvaardigd belang bij fraudepreventie (Artikel 6(1)(f)).",
   "privacy.website.title": "Gegevens verzameld op onze website",
-  "privacy.website.p1": "De marketingwebsite van Keeply (keeply.work) gebruikt momenteel geen analyse- of trackingtools.",
+  "privacy.website.p1": "De marketingwebsite van Keeply (keeply.work) detecteert uw voorkeurstaal volledig in uw browser — wij sturen voor dit doel uw IP-adres niet naar derden. Uw taalkeuze wordt pas in de lokale opslag van uw browser bewaard nadat u expliciet een taal kiest in het taalmenu of een taalspecifieke link opent (bijv. keeply.work/nl/).",
   "privacy.website.p2": "Als je contact met ons opneemt per e-mail, bewaren we de correspondentie om op je vraag te reageren. Je wordt niet aan een marketinglijst toegevoegd tenzij je hier expliciet voor kiest.",
   "privacy.thirdparty.title": "Diensten van derden",
   "privacy.thirdparty.th.service": "Dienst",

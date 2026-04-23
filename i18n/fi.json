@@ -136,7 +136,7 @@
   "privacy.payment.p3": "Lisätietoja: <a href=\"https://www.paddle.com/legal/privacy\" class=\"text-brand-600 hover:underline\">Paddlen tietosuojakäytäntö</a> ja <a href=\"https://www.paddle.com/legal/buyer-terms\" class=\"text-brand-600 hover:underline\">Paddlen ostajaehdot</a>.",
   "privacy.payment.p4": "<strong>Oikeusperuste (GDPR):</strong> Sopimuksen täytäntöönpano (Artikla 6(1)(b)) ja oikeutettu etu petostentorjunnassa (Artikla 6(1)(f)).",
   "privacy.website.title": "Verkkosivustollamme kerätyt tiedot",
-  "privacy.website.p1": "Keeplyn markkinointisivusto (keeply.work) ei tällä hetkellä käytä analytiikka- tai seurantatyökaluja.",
+  "privacy.website.p1": "Keeplyn markkinointisivusto (keeply.work) tunnistaa haluamasi kielen kokonaan selaimessasi — emme lähetä IP-osoitettasi kolmannelle osapuolelle tätä tarkoitusta varten. Kielivalintasi tallennetaan selaimen paikalliseen tallennustilaan vain sen jälkeen, kun olet nimenomaisesti valinnut kielen kielivalikosta tai avannut kielikohtaisen linkin (esim. keeply.work/fi/).",
   "privacy.website.p2": "Jos otat meihin yhteyttä sähköpostitse, säilytämme kirjeenvaihdon vastataksemme kyselyysi. Sinua ei lisätä markkinointilistalle, ellet erikseen anna suostumustasi.",
   "privacy.thirdparty.title": "Kolmannen osapuolen palvelut",
   "privacy.thirdparty.th.service": "Palvelu",

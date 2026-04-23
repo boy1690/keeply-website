@@ -135,7 +135,7 @@ window.__i18n["tr"] = {
   "privacy.payment.p3": "Daha fazla bilgi için <a href=\"https://www.paddle.com/legal/privacy\" class=\"text-brand-600 hover:underline\">Paddle Gizlilik Politikası</a> ve <a href=\"https://www.paddle.com/legal/buyer-terms\" class=\"text-brand-600 hover:underline\">Paddle Alıcı Koşulları</a>'na bakınız.",
   "privacy.payment.p4": "<strong>Hukuki dayanak (KVKK/GDPR):</strong> Sözleşme gereği (Madde 6(1)(b)) ve dolandırıcılığın önlenmesinde meşru menfaat (Madde 6(1)(f)).",
   "privacy.website.title": "Web sitemizde toplanan veriler",
-  "privacy.website.p1": "Keeply pazarlama web sitesi (keeply.work) şu anda herhangi bir analiz veya izleme aracı kullanmamaktadır.",
+  "privacy.website.p1": "Keeply pazarlama web sitesi (keeply.work), tercih ettiğiniz dili tamamen tarayıcınız içinde algılar — bu amaçla IP adresinizi üçüncü taraflara göndermiyoruz. Dil seçiminiz, yalnızca dil menüsünden açıkça bir dil seçtiğinizde veya dile özgü bir bağlantı (örneğin keeply.work/tr/) açtığınızda tarayıcınızın yerel depolama alanına kaydedilir.",
   "privacy.website.p2": "Bize e-posta ile ulaşırsanız, sorgunuza yanıt vermek için yazışmayı saklarız. Açıkça onay vermediğiniz sürece herhangi bir pazarlama listesine eklenmezsiniz.",
   "privacy.thirdparty.title": "Üçüncü taraf hizmetleri",
   "privacy.thirdparty.th.service": "Hizmet",

@@ -134,7 +134,7 @@
   "privacy.payment.p3": "Részletekért lásd a <a href=\"https://www.paddle.com/legal/privacy\" class=\"text-brand-600 hover:underline\">Paddle Adatvédelmi irányelveit</a> és a <a href=\"https://www.paddle.com/legal/buyer-terms\" class=\"text-brand-600 hover:underline\">Paddle Vásárlói feltételeit</a>.",
   "privacy.payment.p4": "<strong>Jogalap (GDPR):</strong> Szerződéses szükségesség (6. cikk (1)(b)) és jogos érdek a csalásmegelőzésben (6. cikk (1)(f)).",
   "privacy.website.title": "A weboldalunkon gyűjtött adatok",
-  "privacy.website.p1": "A Keeply marketing weboldala (keeply.work) jelenleg nem használ elemzési vagy nyomkövető eszközöket.",
+  "privacy.website.p1": "A Keeply marketing weboldala (keeply.work) az Ön által preferált nyelvet teljes mértékben a böngészőjén belül észleli — erre a célra nem küldjük el az Ön IP-címét harmadik félnek. Nyelvválasztása csak akkor kerül mentésre a böngésző helyi tárolójába, ha kifejezetten kiválasztja azt a nyelvi menüből, vagy megnyit egy nyelvspecifikus hivatkozást (pl. keeply.work/hu/).",
   "privacy.website.p2": "Ha e-mailben keresel meg minket, megőrizzük a levelezést a megkeresésed megválaszolásához. Nem kerülsz fel marketing listára, hacsak nem kifejezetten feliratkozol.",
   "privacy.thirdparty.title": "Harmadik fél szolgáltatásai",
   "privacy.thirdparty.th.service": "Szolgáltatás",

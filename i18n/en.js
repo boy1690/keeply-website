@@ -140,7 +140,7 @@ window.__i18n["en"] = {
   "privacy.payment.p3": "For details, see the <a href=\"https://www.paddle.com/legal/privacy\" class=\"text-brand-600 hover:underline\">Paddle Privacy Policy</a> and <a href=\"https://www.paddle.com/legal/buyer-terms\" class=\"text-brand-600 hover:underline\">Paddle Buyer Terms</a>.",
   "privacy.payment.p4": "<strong>Legal basis (GDPR):</strong> Contractual necessity (Article 6(1)(b)) and legitimate interest in fraud prevention (Article 6(1)(f)).",
   "privacy.website.title": "Data collected on our website",
-  "privacy.website.p1": "The Keeply marketing website (keeply.work) currently does not use any analytics or tracking tools.",
+  "privacy.website.p1": "The Keeply marketing website (keeply.work) detects your preferred language entirely within your browser — we do not send your IP address to any third party for this purpose. Your language choice is saved to your browser's local storage only after you explicitly pick one from the language menu, or open a language-specific link (e.g. keeply.work/de/).",
   "privacy.website.p2": "If you contact us by email, we retain the correspondence to respond to your inquiry. You will not be added to any marketing list unless you explicitly opt in.",
   "privacy.thirdparty.title": "Third-party services",
   "privacy.thirdparty.th.service": "Service",

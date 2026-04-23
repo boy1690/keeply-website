@@ -134,7 +134,7 @@
   "privacy.payment.p3": "Szczegóły znajdziesz w <a href=\"https://www.paddle.com/legal/privacy\" class=\"text-brand-600 hover:underline\">Polityce prywatności Paddle</a> i <a href=\"https://www.paddle.com/legal/buyer-terms\" class=\"text-brand-600 hover:underline\">Warunkach kupującego Paddle</a>.",
   "privacy.payment.p4": "<strong>Podstawa prawna (RODO):</strong> Konieczność kontraktowa (Art. 6(1)(b)) i uzasadniony interes w zapobieganiu oszustwom (Art. 6(1)(f)).",
   "privacy.website.title": "Dane zbierane na naszej stronie",
-  "privacy.website.p1": "Strona marketingowa Keeply (keeply.work) obecnie nie korzysta z żadnych narzędzi analitycznych ani śledzących.",
+  "privacy.website.p1": "Strona marketingowa Keeply (keeply.work) wykrywa preferowany język w całości w Twojej przeglądarce — w tym celu nie wysyłamy Twojego adresu IP do żadnych stron trzecich. Wybór języka jest zapisywany w lokalnej pamięci przeglądarki dopiero po wyraźnym wybraniu go z menu języków lub otwarciu linku specyficznego dla języka (np. keeply.work/pl/).",
   "privacy.website.p2": "Jeśli skontaktujesz się z nami e-mailem, zachowujemy korespondencję, aby odpowiedzieć na Twoje zapytanie. Nie zostaniesz dodany do żadnej listy marketingowej, chyba że wyraźnie wyrazisz na to zgodę.",
   "privacy.thirdparty.title": "Usługi podmiotów trzecich",
   "privacy.thirdparty.th.service": "Usługa",

@@ -137,7 +137,7 @@ window.__i18n["cs"] = {
   "privacy.payment.p3": "Podrobnosti najdete v <a href=\"https://www.paddle.com/legal/privacy\" class=\"text-brand-600 hover:underline\">Zásadách ochrany osobních údajů Paddle</a> a <a href=\"https://www.paddle.com/legal/buyer-terms\" class=\"text-brand-600 hover:underline\">Podmínkách kupujícího Paddle</a>.",
   "privacy.payment.p4": "<strong>Právní základ (GDPR):</strong> Smluvní nezbytnost (Článek 6(1)(b)) a oprávněný zájem na prevenci podvodů (Článek 6(1)(f)).",
   "privacy.website.title": "Údaje shromažďované na našem webu",
-  "privacy.website.p1": "Marketingový web Keeply (keeply.work) v současné době nepoužívá žádné analytické ani sledovací nástroje.",
+  "privacy.website.p1": "Marketingový web Keeply (keeply.work) detekuje váš preferovaný jazyk zcela ve vašem prohlížeči — k tomuto účelu neodesíláme vaši IP adresu žádné třetí straně. Vaše volba jazyka se ukládá do místního úložiště prohlížeče pouze poté, co výslovně vyberete jazyk z nabídky jazyků nebo otevřete jazykově specifický odkaz (např. keeply.work/cs/).",
   "privacy.website.p2": "Pokud nás kontaktujete e-mailem, uchováváme korespondenci pro zodpovězení vašeho dotazu. Nebudete přidáni na žádný marketingový seznam, pokud se k tomu výslovně nepřihlásíte.",
   "privacy.thirdparty.title": "Služby třetích stran",
   "privacy.thirdparty.th.service": "Služba",

@@ -135,7 +135,7 @@ window.__i18n["ja"] = {
   "privacy.payment.p3": "詳細は<a href=\"https://www.paddle.com/legal/privacy\" class=\"text-brand-600 hover:underline\">Paddle プライバシーポリシー</a>および<a href=\"https://www.paddle.com/legal/buyer-terms\" class=\"text-brand-600 hover:underline\">Paddle 購入者規約</a>をご覧ください。",
   "privacy.payment.p4": "<strong>法的根拠（GDPR）：</strong>契約の履行に必要（第6条第1項(b)）および不正防止の正当な利益（第6条第1項(f)）。",
   "privacy.website.title": "ウェブサイトで収集されるデータ",
-  "privacy.website.p1": "Keeplyのマーケティングサイト（keeply.work）は、現在アナリティクスやトラッキングツールを使用していません。",
+  "privacy.website.p1": "Keeplyのマーケティングサイト（keeply.work）は、お客様の優先言語を完全にブラウザ内で検出します——この目的でお客様のIPアドレスを第三者に送信することはありません。言語の選択は、言語メニューから明示的に言語を選択するか、言語固有のリンク（例：keeply.work/ja/）を開いた場合にのみ、ブラウザのローカルストレージに保存されます。",
   "privacy.website.p2": "メールでお問い合わせいただいた場合、お問い合わせへの対応のためにその内容を保持します。明示的にオプトインされない限り、マーケティングリストに追加されることはありません。",
   "privacy.thirdparty.title": "第三者サービス",
   "privacy.thirdparty.th.service": "サービス",
