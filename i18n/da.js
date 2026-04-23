@@ -7,6 +7,8 @@ window.__i18n["da"] = {
   "footer.refund": "Refusionspolitik",
   "footer.download": "Download",
   "footer.contact": "Kontakt os",
+  "nav.blog": "Blog",
+  "footer.blog": "Blog",
   "footer.copyright": "© 2026 Keeply · City-State Information Technology Co., Ltd. (城國資訊有限公司)",
   "terms.tradedby": "Disse Servicevilkår leveres af TSAO TING-WEI, der handler under navnet <strong>Keeply</strong>.",
   "privacy.tradedby": "Denne Privatlivspolitik leveres af TSAO TING-WEI, der handler under navnet <strong>Keeply</strong>.",

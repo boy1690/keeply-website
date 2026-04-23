@@ -7,6 +7,8 @@ window.__i18n["nl"] = {
   "footer.refund": "Restitutiebeleid",
   "footer.download": "Downloaden",
   "footer.contact": "Contact",
+  "nav.blog": "Blog",
+  "footer.blog": "Blog",
   "footer.copyright": "© 2026 Keeply. Alle rechten voorbehouden.",
   "terms.tradedby": "Deze Servicevoorwaarden worden verstrekt door TSAO TING-WEI, handelend als <strong>Keeply</strong>.",
   "privacy.tradedby": "Dit Privacybeleid wordt verstrekt door TSAO TING-WEI, handelend als <strong>Keeply</strong>.",

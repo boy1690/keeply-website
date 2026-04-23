@@ -7,6 +7,8 @@ window.__i18n["hu"] = {
   "footer.refund": "Visszatérítési szabályzat",
   "footer.download": "Letöltés",
   "footer.contact": "Kapcsolat",
+  "nav.blog": "Blog",
+  "footer.blog": "Blog",
   "footer.copyright": "© 2026 Keeply. Minden jog fenntartva.",
   "terms.tradedby": "Jelen Szolgáltatási feltételeket TSAO TING-WEI biztosítja, aki a <strong>Keeply</strong> kereskedelmi név alatt tevékenykedik.",
   "privacy.tradedby": "Jelen Adatvédelmi szabályzatot TSAO TING-WEI biztosítja, aki a <strong>Keeply</strong> kereskedelmi név alatt tevékenykedik.",

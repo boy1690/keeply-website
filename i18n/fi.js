@@ -7,6 +7,8 @@ window.__i18n["fi"] = {
   "footer.refund": "Palautuskäytäntö",
   "footer.download": "Lataa",
   "footer.contact": "Ota yhteyttä",
+  "nav.blog": "Blogi",
+  "footer.blog": "Blogi",
   "footer.copyright": "© 2026 Keeply · City-State Information Technology Co., Ltd. (城國資訊有限公司)",
   "terms.tradedby": "Nämä käyttöehdot tarjoaa TSAO TING-WEI, joka toimii nimellä <strong>Keeply</strong>.",
   "privacy.tradedby": "Tämän tietosuojakäytännön tarjoaa TSAO TING-WEI, joka toimii nimellä <strong>Keeply</strong>.",

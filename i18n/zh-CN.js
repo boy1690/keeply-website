@@ -7,6 +7,8 @@ window.__i18n["zh-CN"] = {
   "footer.refund": "退款政策",
   "footer.download": "下载",
   "footer.contact": "联系我们",
+  "nav.blog": "博客",
+  "footer.blog": "博客",
   "footer.copyright": "© 2026 Keeply. All rights reserved.",
   "terms.tradedby": "本服务条款由 TSAO TING-WEI（交易名称：<strong>Keeply</strong>）提供。",
   "privacy.tradedby": "本隐私政策由 TSAO TING-WEI（交易名称：<strong>Keeply</strong>）提供。",

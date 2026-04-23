@@ -7,6 +7,8 @@ window.__i18n["it"] = {
   "footer.refund": "Politica di rimborso",
   "footer.download": "Download",
   "footer.contact": "Contattaci",
+  "nav.blog": "Blog",
+  "footer.blog": "Blog",
   "footer.copyright": "© 2026 Keeply. Tutti i diritti riservati.",
   "terms.tradedby": "Le presenti Condizioni di servizio sono fornite da TSAO TING-WEI, operante come <strong>Keeply</strong>.",
   "privacy.tradedby": "La presente Informativa sulla privacy è fornita da TSAO TING-WEI, operante come <strong>Keeply</strong>.",

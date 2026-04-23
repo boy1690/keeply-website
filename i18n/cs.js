@@ -7,6 +7,8 @@ window.__i18n["cs"] = {
   "footer.refund": "Zásady vrácení peněz",
   "footer.download": "Stáhnout",
   "footer.contact": "Kontaktujte nás",
+  "nav.blog": "Blog",
+  "footer.blog": "Blog",
   "footer.copyright": "© 2026 Keeply. Všechna práva vyhrazena.",
   "terms.tradedby": "Tyto Podmínky služby poskytuje TSAO TING-WEI, podnikající pod názvem <strong>Keeply</strong>.",
   "privacy.tradedby": "Tyto Zásady ochrany osobních údajů poskytuje TSAO TING-WEI, podnikající pod názvem <strong>Keeply</strong>.",
