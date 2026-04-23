@@ -75,7 +75,39 @@
   <link rel="preload" href="style.css" as="style" />
   <link rel="stylesheet" href="style.css" />
 
-  <!-- M PLUS Rounded 1c (self-hosted via input.css @font-face) -->
+  <!-- M PLUS Rounded 1c (self-hosted via input.css @font-face) -->  <!-- Schema.org JSON-LD (injected by _dev/inject-schema.js) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://keeply.work/#organization",
+        "name": "Keeply",
+        "url": "https://keeply.work",
+        "logo": "https://keeply.work/logo.svg",
+        "sameAs": [
+          "https://github.com/boy1690/keeply-releases"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://keeply.work/privacy.html#webpage",
+        "url": "https://keeply.work/privacy.html",
+        "name": "Privacy Policy — Keeply",
+        "description": "Keeply is a local-first desktop application. Your files never leave your computer. Learn how we handle your data.",
+        "inLanguage": "zh-Hant",
+        "isPartOf": {
+          "@id": "https://keeply.work/#website"
+        },
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        }
+      }
+    ]
+  }
+  </script>
+
 </head>
 
 <body class="bg-white text-gray-900 font-sans antialiased">
@@ -96,7 +128,6 @@
         </nav>
         <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3" data-i18n="privacy.title">隱私權政策</h1>
         <p class="text-sm text-gray-400" data-i18n="privacy.updated">最後更新日期：2026 年 4 月 4 日</p>
-        <p class="text-sm text-gray-400" data-i18n-html="privacy.tradedby">本隱私權政策由 TSAO TING-WEI（交易名稱：<strong>Keeply</strong>）提供。</p>
       </div>
 
       <!-- Highlight -->
@@ -162,7 +193,7 @@
           <p class="text-gray-600 leading-relaxed" data-i18n-html="privacy.license.p1">為驗證你的軟體授權，Keeply 與 <strong>Keygen.sh</strong>（Keygen LLC，美國維吉尼亞州）通訊。傳輸的資料包括：</p>
           <ul class="text-gray-600 space-y-1 ml-5 list-disc mt-2">
             <li data-i18n-html="privacy.license.li1"><strong>授權金鑰</strong> — 確認授權是否有效</li>
-            <li data-i18n-html="privacy.license.li2"><strong>保管庫位置識別碼</strong> — 專案保管庫唯一 ID 的單向雜湊值（無法還原為原始識別碼或檔案內容）</li>
+            <li data-i18n-html="privacy.license.li2"><strong>機器指紋</strong> — 裝置的單向雜湊識別碼（無法還原為裝置資訊）</li>
             <li data-i18n-html="privacy.license.li3"><strong>應用程式版本</strong> — 檢查相容性和授權範圍</li>
             <li data-i18n-html="privacy.license.li4"><strong>保管庫位置識別碼</strong> — 團隊保管庫位置的雜湊識別碼（無法還原為實際儲存路徑）</li>
           </ul>
@@ -202,7 +233,7 @@
                 <tr>
                   <td class="px-4 py-2.5 font-medium">Keygen.sh</td>
                   <td class="px-4 py-2.5" data-i18n="privacy.thirdparty.keygen.purpose">授權驗證</td>
-                  <td class="px-4 py-2.5" data-i18n="privacy.thirdparty.keygen.data">授權金鑰、保管庫位置識別碼（雜湊值）、版本</td>
+                  <td class="px-4 py-2.5" data-i18n="privacy.thirdparty.keygen.data">授權金鑰、雜湊後的機器指紋、版本</td>
                   <td class="px-4 py-2.5" data-i18n="privacy.thirdparty.keygen.location">美國</td>
                   <td class="px-4 py-2.5"><a href="https://keygen.sh/privacy/" class="text-brand-600 hover:underline" data-i18n="privacy.thirdparty.keygen.link">連結</a></td>
                 </tr>

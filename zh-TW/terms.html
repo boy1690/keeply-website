@@ -93,8 +93,41 @@
   <link rel="preload" href="../style.css" as="style" />
   <link rel="stylesheet" href="../style.css" />
 
-  <!-- M PLUS Rounded 1c (self-hosted via input.css @font-face) -->
+  <!-- M PLUS Rounded 1c (self-hosted via input.css @font-face) -->  <!-- Schema.org JSON-LD (injected by _dev/inject-schema.js) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://keeply.work/#organization",
+        "name": "Keeply",
+        "url": "https://keeply.work",
+        "logo": "https://keeply.work/logo.svg",
+        "sameAs": [
+          "https://github.com/boy1690/keeply-releases"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://keeply.work/zh-TW/terms.html#webpage",
+        "url": "https://keeply.work/zh-TW/terms.html",
+        "name": "服務條款 — Keeply",
+        "description": "Keeply 桌面應用程式服務條款。了解授權方案、付款政策與你的權利。",
+        "inLanguage": "zh-Hant",
+        "isPartOf": {
+          "@id": "https://keeply.work/#website"
+        },
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        }
+      }
+    ]
+  }
+  </script>
+
 </head>
+
 <body class="bg-white text-gray-900 font-sans antialiased">
 
   <!-- Nav (injected by components.js) -->
@@ -111,14 +144,11 @@
           <span class="text-gray-600" data-i18n="terms.breadcrumb">服務條款</span>
         </nav>
         <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3" data-i18n="terms.title">服務條款</h1>
-        <p class="text-sm text-gray-400" data-i18n="terms.updated">最後更新日期：2026 年 4 月 16 日</p>
-        <p class="text-sm text-gray-400" data-i18n-html="terms.tradedby">本服務條款由 TSAO TING-WEI（交易名稱：<strong>Keeply</strong>）提供。</p>
+        <p class="text-sm text-gray-400" data-i18n="terms.updated">最後更新日期：2026 年 4 月 21 日</p>
       </div>
 
       <div class="bg-amber-50 border border-amber-100 rounded-2xl p-6 mb-10">
-        <p class="text-amber-800 font-medium leading-relaxed" data-i18n-html="terms.highlight">
-          本服務條款（「本協議」）規範你對 Keeply 桌面應用程式（「軟體」）的使用。下載、安裝或使用本軟體，即表示你同意受本協議約束。如果你不同意，請不要使用本軟體。
-        </p>
+        <p class="text-amber-800 font-medium leading-relaxed" data-i18n-html="terms.highlight">本服務條款（「本協議」）規範你對 Keeply 桌面應用程式（「軟體」）的使用。下載、安裝或使用本軟體，即表示你同意受本協議約束。如果你不同意，請不要使用本軟體。</p>
       </div>
 
       <!-- TOC -->
@@ -137,10 +167,10 @@
           <a href="#s12" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s12">12. 一般條款</a>
           <a href="#s6" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s6">6. 智慧財產權</a>
           <a href="#s13" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s13">13. 聯繫</a>
-          <a href="#s7" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s7">7. 隱私與資料</a>
+          <a href="#s7" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s7">7. 資料隱私與活動紀錄</a>
           <a href="#s3-5" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s3a">3.5 定義</a>
           <a href="#s3-6" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s3b">3.6 保管庫位置規則</a>
-          <a href="#s3-7" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s3c">3.7 單一實體要求</a>
+          <a href="#s3-7" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s3c">3.7 授權範圍</a>
           <a href="#s3-8" class="text-brand-600 hover:text-brand-800 transition-colors" data-i18n="terms.toc.s3d">3.8 公平使用</a>
         </div>
       </div>
@@ -149,7 +179,7 @@
 
         <section id="s1">
           <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="terms.s1.title">1. 軟體</h2>
-          <p class="text-gray-600 leading-relaxed" data-i18n="terms.s1.p1">Keeply 是一款為專案檔案提供視覺化版本控制的桌面應用程式。它在你的電腦上本地運行，並將所有資料儲存在你的本地裝置或 NAS 上。Keeply 基於 Git 技術構建，但專為設計師、建築師和營建專業人員設計，使用者無需直接與 Git 互動。</p>
+          <p class="text-gray-600 leading-relaxed" data-i18n="terms.s1.p1">Keeply 是一款為專案檔案提供視覺化版本控制的桌面應用程式。它在你的電腦上本地運行，並將所有專案資料儲存在你的本地裝置或 NAS 上。Keeply 本身不提供使用者帳戶服務——軟體啟用透過授權碼（License Key）機制，授權綁定至你明確指定的裝置。</p>
         </section>
 
         <section id="s2">
@@ -182,7 +212,7 @@
                 <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.support">優先技術支援</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5 text-green-600">✅</td></tr>
                 <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.vaultloc">保管庫位置</td><td class="px-4 py-2.5" data-i18n="terms.s3.table.free.vaultloc">2 共用 + 1 個人備份（自行管理）</td><td class="px-4 py-2.5" data-i18n="terms.s3.table.team.vaultloc">2 共用 + 1 個人備份（管理員管理）</td></tr>
                 <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.perpetual">永久授權（Early Access）</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5" data-i18n="terms.s3.table.perpetual.team">$599（限量 500 份）</td></tr>
-                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.fallback">永久回退授權</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5 text-green-600" data-i18n="terms.s3.table.fallback.team">✅ 訂閱滿 12 個月</td></tr>
+                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.fallback">永久回退授權</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5 text-green-600" data-i18n="terms.s3.table.fallback.team">訂閱滿 12 個月</td></tr>
                 <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.refund">30 天退款保證</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5 text-green-600">✅</td></tr>
               </tbody>
             </table>
@@ -251,7 +281,7 @@
               <tbody class="divide-y divide-gray-100">
                 <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.4.compare.r1.label">怎麼拿到</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r1.perpetual">直接買 $599</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r1.fallback">訂閱滿 12 個月後取消</td></tr>
                 <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.4.compare.r2.label">你拿到什麼</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r2.perpetual">購買時主要版本內的所有更新（例如 v1.x）</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r2.fallback">永久使用取消當天的版本</td></tr>
-                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.4.compare.r3.label">之後會更新嗎？</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r3.perpetual">同一主要版本內免費更新</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r3.fallback">不會，凍結在取消當天的版本</td></tr>
+                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.4.compare.r3.label">之後會更新嗎？</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r3.val">不會</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r3.val">不會</td></tr>
                 <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.4.compare.r4.label">適合誰</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r4.perpetual">想要一次買斷、長期使用的團隊</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r4.fallback">想先訂閱看看、之後保留使用權的團隊</td></tr>
                 <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.4.compare.r5.label">可用性</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r5.perpetual">限量 500 份，售完即止</td><td class="px-4 py-2.5" data-i18n="terms.s3.4.compare.r5.fallback">永久適用於所有訂閱者</td></tr>
               </tbody>
@@ -275,7 +305,7 @@
           </ul>
           <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s3.6.p2">彈性位置由成員透過軟體申請，經管理員核准後生效。管理員得隨時撤銷任何成員的彈性位置。彈性位置連續 30 天未被存取時，將自動釋放。</p>
 
-          <h3 id="s3-7" class="text-lg font-bold text-gray-800 mt-8 mb-3" data-i18n="terms.s3.7.title">3.7 單一實體要求</h3>
+          <h3 id="s3-7" class="text-lg font-bold text-gray-800 mt-8 mb-3" data-i18n="terms.s3.7.title">3.7 授權範圍</h3>
           <p class="text-gray-600 leading-relaxed" data-i18n="terms.s3.7.p1">每組授權僅供單一法律實體（公司、合夥、獨資或同等組織）及其授權承包商使用。多個無關之法律實體不得共享單一授權，即使其共用實體儲存設施亦同。</p>
 
           <h3 id="s3-8" class="text-lg font-bold text-gray-800 mt-8 mb-3" data-i18n="terms.s3.8.title">3.8 公平使用</h3>
@@ -326,7 +356,7 @@
         </section>
 
         <section id="s7">
-          <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="terms.s7.title">7. 隱私與資料</h2>
+          <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="terms.s7.title">7. 資料隱私與活動紀錄</h2>
           <p class="text-gray-600 leading-relaxed" data-i18n-html="terms.s7.p1">你對本軟體的使用亦受我們的<a href="privacy.html" class="text-brand-600 hover:underline">隱私權政策</a>約束。<strong>我們不存取、收集、儲存或傳輸你的專案檔案或其內容。</strong></p>
         </section>
 
@@ -343,8 +373,8 @@
 
         <section id="s10">
           <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="terms.s10.title">10. 期限與終止</h2>
-          <p class="text-gray-600 leading-relaxed" data-i18n="terms.s10.p1">本協議自你首次使用本軟體起生效，直至終止。你可隨時解除安裝並銷毀所有副本以終止本協議。我們可在你違約時終止你的授權。</p>
-          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s10.p2">終止後，永久授權持有者和永久回退授權持有者保留使用其各自版本的權利。</p>
+          <p class="text-gray-600 leading-relaxed" data-i18n="terms.s10.p1">本協議自你首次使用本軟體起生效，直至終止。你可隨時解除本軟體的授權並移除本機所有 Keeply 資料（包括但不限於專案儲存庫、活動紀錄、影子備份、授權檔），以終止本協議。解除授權的方式包括：(a) 在 Keeply 應用程式內執行「解除授權並移除本機資料」功能；或 (b) 從系統解除安裝 Keeply 軟體並手動刪除本機 Keeply 資料目錄。</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s10.p2">我們可在你違約時撤銷你的授權。終止後，永久授權（Perpetual License）持有者和永久回退授權（Perpetual Fallback License）持有者保留使用其各自版本的權利，但將不再收到任何更新。</p>
           <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s10.p3">第 5、6、8、9、11 及 12 節於終止後繼續有效。</p>
         </section>
 

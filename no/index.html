@@ -95,37 +95,56 @@
 
   <!-- M PLUS Rounded 1c (self-hosted via input.css @font-face) -->
 
-  <!-- JSON-LD Structured Data -->
+  <!-- JSON-LD Structured Data injected post-build by _dev/inject-schema.js (spec 017) -->  <!-- Schema.org JSON-LD (injected by _dev/inject-schema.js) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Organization",
+        "@id": "https://keeply.work/#organization",
         "name": "Keeply",
         "url": "https://keeply.work",
-        "logo": "https://keeply.work/logo.svg"
+        "logo": "https://keeply.work/logo.svg",
+        "sameAs": [
+          "https://github.com/boy1690/keeply-releases"
+        ]
       },
       {
         "@type": "WebSite",
+        "@id": "https://keeply.work/#website",
+        "url": "https://keeply.work/no/",
         "name": "Keeply",
-        "url": "https://keeply.work"
+        "inLanguage": "no",
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        }
       },
       {
         "@type": "SoftwareApplication",
+        "@id": "https://keeply.work/#software",
         "name": "Keeply",
         "operatingSystem": "Windows, macOS",
         "applicationCategory": "UtilitiesApplication",
+        "softwareVersion": "1.0.2",
+        "description": "Den enkleste måten å administrere filversjoner uten teknisk kunnskap. Last ned gratis, klart på 30 sekunder.",
+        "url": "https://keeply.work/no/",
+        "downloadUrl": "https://github.com/boy1690/keeply-releases/releases/latest",
+        "screenshot": "https://keeply.work/og-image.png",
         "offers": {
           "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD"
+          "price": "599",
+          "priceCurrency": "USD",
+          "url": "https://keeply.work/no/buy.html"
         },
-        "description": "File version management for everyone. No technical knowledge required."
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        }
       }
     ]
   }
   </script>
+
 
 </head>
 
