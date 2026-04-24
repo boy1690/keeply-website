@@ -39,9 +39,12 @@ const resources = [
   'components.js',
   'i18n-loader.js',
   'i18n.js',
-  'consent-api.js',   // spec 023
-  'cookie-banner.js', // spec 023
-  'ga4-loader.js'     // spec 024
+  'consent-api.js',     // spec 023
+  'cookie-banner.js',   // spec 023
+  'ga4-loader.js',      // spec 024
+  'team-notify.js',     // spec 031
+  'activate-license.js',// spec 031
+  'paddle-checkout.js'  // spec 031
 ];
 for (const loc of LOCALES) resources.push(`i18n/${loc}.js`);
 
@@ -101,6 +104,10 @@ function patchHtml(content, filename) {
   content = rewriteTag(new RegExp('<script\\s+src="' + pathOpt + 'cookie-banner\\.js"[^>]*><\\/script>', 'g'), 'cookie-banner.js');
   // spec 024: GA4 consent-gated loader
   content = rewriteTag(new RegExp('<script\\s+src="' + pathOpt + 'ga4-loader\\.js"[^>]*><\\/script>', 'g'), 'ga4-loader.js');
+  // spec 031: inline-to-external refactor (CSP nonce-less)
+  content = rewriteTag(new RegExp('<script\\s+src="' + pathOpt + 'team-notify\\.js"[^>]*><\\/script>', 'g'), 'team-notify.js');
+  content = rewriteTag(new RegExp('<script\\s+src="' + pathOpt + 'activate-license\\.js"[^>]*><\\/script>', 'g'), 'activate-license.js');
+  content = rewriteTag(new RegExp('<script\\s+src="' + pathOpt + 'paddle-checkout\\.js"[^>]*><\\/script>', 'g'), 'paddle-checkout.js');
   return content;
 }
 

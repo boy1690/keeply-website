@@ -180,7 +180,7 @@
         <div class="text-5xl mb-6">⏳</div>
         <h1 class="text-xl font-bold text-gray-900 mb-2" data-i18n="activate.timeout.title">授权码准备中</h1>
         <p class="text-sm text-gray-500 mb-6 max-w-xs mx-auto leading-relaxed" data-i18n="activate.timeout.desc">处理时间比预期长一些。请稍后重新刷新此页面，或检查你的 email。</p>
-        <button onclick="location.reload()" class="bg-brand-600 hover:bg-brand-700 text-white font-medium text-sm px-6 py-2.5 rounded-full transition-all" data-i18n="activate.timeout.retry">重新刷新</button>
+        <button id="timeout-retry-btn" class="bg-brand-600 hover:bg-brand-700 text-white font-medium text-sm px-6 py-2.5 rounded-full transition-all" data-i18n="activate.timeout.retry">重新刷新</button>
         <p class="text-sm text-gray-400 mt-8">
           <span data-i18n="activate.timeout.help">需要帮助？联系</span>
           <a href="mailto:wei@keeply.work" class="text-brand-600 hover:underline">wei@<span class="e-decoy">null.</span>keeply.work</a>
@@ -207,139 +207,6 @@
   <script src="../cookie-banner.js" defer integrity="sha384-aDwCVUUSIWi62pJZ7PqUXIOz/bAoGadk/KUkD4HatS2r4S1C5cMfasX/UGBBap+8" crossorigin="anonymous"></script>
   <script src="../ga4-loader.js" defer integrity="sha384-jYO4ARZ+UCGY2v6qzLfw2yqhQ5tPFNYQia3QEljpr5okv2tjmBbXU6Pmzm9jTV8O" crossorigin="anonymous"></script>
   <script src="../i18n-loader.js" defer integrity="sha384-4/86z3+CQS2W1y+6+aUviORi8uQCOPnZcHyVgXNDVOzuap9rm02i3fXp1e1zHRj5" crossorigin="anonymous"></script>
-
-  <!-- Activate logic -->
-  <script>
-    (function () {
-      var WORKER_BASE = 'https://keeply-billing.boy1690.workers.dev';
-      var MAX_ATTEMPTS = 15;
-      var POLL_INTERVAL = 2000;
-
-      var txn = new URLSearchParams(location.search).get('txn');
-
-      function showState(id) {
-        ['loading', 'ready', 'timeout', 'error'].forEach(function (s) {
-          var el = document.getElementById('state-' + s);
-          if (el) el.classList.toggle('hidden', s !== id);
-        });
-      }
-
-      function showReady(data) {
-        // Fill in license key
-        var keyEl = document.getElementById('license-key');
-        var fullKey = data.key || '';
-        // Store full key for copy, show masked version in DOM
-        keyEl.setAttribute('data-full-key', fullKey);
-        if (keyEl) {
-          if (fullKey.length > 24) {
-            keyEl.textContent = fullKey.slice(0, 16) + ' •••••••• ' + fullKey.slice(-4);
-          } else {
-            keyEl.textContent = fullKey;
-          }
-        }
-
-        // Fill in deep link
-        var dlBtn = document.getElementById('deeplink-btn');
-        if (dlBtn && data.deepLink) {
-          dlBtn.href = data.deepLink;
-        } else if (dlBtn) {
-          dlBtn.style.display = 'none';
-        }
-
-        // Fill in email
-        var emailEl = document.getElementById('customer-email');
-        if (emailEl && data.email) {
-          emailEl.textContent = data.email;
-        }
-
-        showState('ready');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-
-      function setupCopy() {
-        var btn = document.getElementById('copy-btn');
-        var label = document.getElementById('copy-label');
-        var keyEl = document.getElementById('license-key');
-        if (!btn || !keyEl) return;
-
-        btn.addEventListener('click', function () {
-          var key = keyEl.getAttribute('data-full-key') || keyEl.textContent;
-          if (!key) return;
-
-          if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText(key).then(function () {
-              showCopied(label);
-            }).catch(function () {
-              fallbackCopy(key, label);
-            });
-          } else {
-            fallbackCopy(key, label);
-          }
-        });
-      }
-
-      function fallbackCopy(text, label) {
-        var ta = document.createElement('textarea');
-        ta.value = text;
-        ta.style.position = 'fixed';
-        ta.style.opacity = '0';
-        document.body.appendChild(ta);
-        ta.select();
-        try { document.execCommand('copy'); showCopied(label); }
-        catch (e) { /* silent */ }
-        document.body.removeChild(ta);
-      }
-
-      function showCopied(label) {
-        if (!label) return;
-        var original = label.textContent;
-        var lang = document.documentElement.lang || 'en';
-        var copied = (window.__i18n && window.__i18n[lang] && window.__i18n[lang]['activate.ready.copied']) || '✓';
-        label.textContent = copied;
-        setTimeout(function () { label.textContent = original; }, 2000);
-      }
-
-      var attempts = 0;
-
-      function poll() {
-        fetch(WORKER_BASE + '/license/lookup?txn=' + encodeURIComponent(txn))
-          .then(function (r) { return r.json(); })
-          .then(function (data) {
-            if (data.status === 'ready') {
-              showReady(data);
-            } else if (++attempts < MAX_ATTEMPTS) {
-              setTimeout(poll, POLL_INTERVAL);
-            } else {
-              showState('timeout');
-            }
-          })
-          .catch(function () {
-            if (++attempts < MAX_ATTEMPTS) {
-              setTimeout(poll, POLL_INTERVAL);
-            } else {
-              showState('timeout');
-            }
-          });
-      }
-
-      function init() {
-        setupCopy();
-
-        if (!txn) {
-          showState('error');
-          return;
-        }
-
-        showState('loading');
-        poll();
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-      } else {
-        init();
-      }
-    })();
-  </script>
+  <script src="../activate-license.js" defer></script>
 </body>
 </html>

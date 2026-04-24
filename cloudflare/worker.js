@@ -54,7 +54,7 @@ const SECURITY_HEADERS = {
   // in a meta CSP.
   'Content-Security-Policy':
     "default-src 'self'; " +
-    "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com; " +
+    "script-src 'self' https://www.googletagmanager.com https://static.cloudflareinsights.com; " +
     "style-src 'self' 'unsafe-inline'; " +
     "img-src 'self' data: https://www.google-analytics.com; " +
     "font-src 'self'; " +
