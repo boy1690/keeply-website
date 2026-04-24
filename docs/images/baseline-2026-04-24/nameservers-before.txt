@@ -1,0 +1,25 @@
+Pre-Cloudflare migration snapshot — 2026-04-24
+
+Registrar: Namecheap
+Domain: keeply.work
+
+OLD Nameservers (for rollback if Cloudflare proxy fails):
+  dns1.registrar-servers.com
+  dns2.registrar-servers.com
+
+NEW Nameservers (Cloudflare assigned):
+  bill.ns.cloudflare.com
+  evelyn.ns.cloudflare.com
+
+DNS records at time of migration (17 total scanned by Cloudflare):
+  4 x A     keeply.work       185.199.108-111.153 (GitHub Pages)
+  2 x CNAME www, blog         boy1690.github.io
+  4 x MX    Zoho + Resend send.keeply.work
+  7 x TXT   DMARC, SPF (root + send), Zoho+Resend DKIM, verifications
+
+Rollback procedure if needed:
+  1. Namecheap → Domain List → keeply.work → Manage
+  2. Nameservers section → switch from Custom DNS → back to "Namecheap BasicDNS"
+     (or manually paste dns1/dns2.registrar-servers.com)
+  3. Wait 5-60 min for DNS propagation
+  4. Site returns to direct GitHub Pages connection

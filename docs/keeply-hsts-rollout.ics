@@ -1,0 +1,67 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Keeply//HSTS Rollout//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+
+BEGIN:VEVENT
+UID:keeply-hsts-day2-2026-04-26@keeply.work
+DTSTAMP:20260424T140000Z
+DTSTART:20260426T010000Z
+DTEND:20260426T011000Z
+SUMMARY:Keeply HSTS Day 2 — 改 max-age=86400 (24h)
+DESCRIPTION:Phase 7 HSTS 分階段調整 — 第 1 次。\n\n動作 (30 秒)：\n1. Cloudflare dashboard → keeply.work → 規則 → 概觀\n2. 編輯 "Keeply Security Headers"\n3. Strict-Transport-Security 的值改成：\n   max-age=86400\\; includeSubDomains\n4. 部署\n\n事前檢查：過去 48h 站有沒有故障？若有，不要升級，先查原因。\n\n驗證：curl -I https://keeply.work/ | grep -i strict\n預期：Strict-Transport-Security: max-age=86400; includeSubDomains\n\nRunbook: docs/cloudflare-setup.md Phase 7\nSpec: specs/infra/022-cloudflare-headers/
+LOCATION:https://dash.cloudflare.com/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Keeply HSTS Day 2 bump
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:keeply-hsts-day9-2026-05-03@keeply.work
+DTSTAMP:20260424T140000Z
+DTSTART:20260503T010000Z
+DTEND:20260503T011000Z
+SUMMARY:Keeply HSTS Day 9 — 改 max-age=31536000 (1 年)
+DESCRIPTION:Phase 7 HSTS 分階段調整 — 第 2 次 (最重要！)。\n\n動作 (30 秒)：\n1. Cloudflare dashboard → keeply.work → 規則 → 概觀\n2. 編輯 "Keeply Security Headers"\n3. Strict-Transport-Security 的值改成：\n   max-age=31536000\\; includeSubDomains\n4. 部署\n\n⚠️ 事前檢查 (重要)：\n- 過去 1 週站有沒有故障？\n- 所有 subdomain (www / blog) 都 HTTPS 嗎？\n- Cloudflare SSL 還是 Full (strict)?\n若以上任一為否，不要升級，先查原因。\n\n一旦部署此值，訪客瀏覽器會記住「keeply.work 必須 HTTPS」1 年。\n若未來網站壞掉，1 年內訪客連不上。\n\n驗證：curl -I https://keeply.work/ | grep -i strict\n預期：Strict-Transport-Security: max-age=31536000; includeSubDomains
+LOCATION:https://dash.cloudflare.com/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Keeply HSTS Day 9 bump (重要，讀 description)
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:keeply-hsts-day23-2026-05-17@keeply.work
+DTSTAMP:20260424T140000Z
+DTSTART:20260517T010000Z
+DTEND:20260517T011000Z
+SUMMARY:Keeply HSTS Day 23 — 加 preload directive
+DESCRIPTION:Phase 7 HSTS 分階段調整 — 第 3 次。\n\n動作 (30 秒)：\n1. Cloudflare dashboard → keeply.work → 規則 → 概觀\n2. 編輯 "Keeply Security Headers"\n3. Strict-Transport-Security 的值改成：\n   max-age=31536000\\; includeSubDomains\\; preload\n4. 部署\n\n這一步只是告訴瀏覽器「我準備好被加入 preload list」，還沒真的提交。\n跑 1-2 週沒事後才進 Phase 8 (submit)。\n\n驗證：https://hstspreload.org/?domain=keeply.work\n預期：前 6 項 ✅ (HSTS / max-age / includeSubDomains / preload 都在)\n\n若前置檢查失敗 (例如某 subdomain 沒 HTTPS)，hstspreload.org 會列出原因。\n修好才繼續。
+LOCATION:https://dash.cloudflare.com/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Keeply HSTS Day 23 — 加 preload
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:keeply-hsts-submit-2026-05-31@keeply.work
+DTSTAMP:20260424T140000Z
+DTSTART:20260531T010000Z
+DTEND:20260531T013000Z
+SUMMARY:Keeply HSTS Phase 8 — submit preload list (不可逆！慎)
+DESCRIPTION:⚠️⚠️⚠️ 這是 runbook 最後一步，也是最不可逆的動作。⚠️⚠️⚠️\n\n事前檢查 — 任何一項答不出「100%」就不要 submit：\n\n☐ 未來 12+ 個月 keeply.work 會一直是 HTTPS?\n☐ 我不會把 domain 賣掉或轉作其他用途?\n☐ 所有 subdomain (www / blog / 任何未來新增) 也都永久 HTTPS?\n☐ 過去 2 週站沒有任何 HTTPS 故障?\n\n全部 Yes 才繼續。\n\n動作：\n1. 開 https://hstspreload.org/?domain=keeply.work\n2. 所有 prerequisites 應該全綠 ✅\n3. 點 Submit\n\n等 Chrome 團隊審核通過 (幾週)，keeply.work 進內建 preload list。\n\n⚠️ 一旦 submit，移除需 6-12 個月，且已下載舊版 preload list 的瀏覽器不會更新。\n\n若今天還在猶豫，就不要 submit。Phase 7 的 max-age=31536000 已經是「強 HSTS」，preload list 只是多一層兜底。不 submit 也 OK。
+LOCATION:https://hstspreload.org/?domain=keeply.work
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Keeply HSTS preload submit (不可逆，先讀完 description)
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+
+END:VCALENDAR
