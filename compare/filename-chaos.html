@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4F46E5" />
+  <!-- Content Security Policy (spec 019) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <title>Why cover_FINAL_real_FIXED.psd is a version tracking failure</title>
+  <meta name="description" content="Renaming files v1, v2, FINAL, FINAL_real is how most people version work. It fails silently. Keeply replaces the filename suffix with a real timeline — free forever." />
+
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://keeply.work/compare/filename-chaos.html" />
+  <link rel="alternate" hreflang="en" href="https://keeply.work/compare/filename-chaos.html" />
+  <link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/compare/filename-chaos.html" />
+  <link rel="alternate" hreflang="x-default" href="https://keeply.work/compare/filename-chaos.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="../favicon.ico" sizes="32x32" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://keeply.work/compare/filename-chaos.html" />
+  <meta property="og:title" content="Why cover_FINAL_real_FIXED.psd is a version tracking failure" />
+  <meta property="og:description" content="Renaming files v1, v2, FINAL, FINAL_real is how most people version work. It fails silently. Keeply replaces the filename suffix with a real timeline — free forever." />
+  <meta property="og:image" content="https://keeply.work/og-image.png" />
+  <meta property="og:site_name" content="Keeply" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Why cover_FINAL_real_FIXED.psd is a version tracking failure" />
+  <meta name="twitter:description" content="Renaming files v1, v2, FINAL, FINAL_real is how most people version work. It fails silently. Keeply replaces the filename suffix with a real timeline — free forever." />
+  <meta name="twitter:image" content="https://keeply.work/og-image.png" />
+
+  <!-- Tailwind CSS (compiled) -->
+  <link rel="preload" href="../style.css" as="style" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style.css" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
+
+  <!-- Hidden time for Article.datePublished (read by inject-schema.js) -->
+  <time datetime="2026-04-24" class="sr-only" aria-hidden="true">2026-04-24</time>  <!-- Schema.org JSON-LD (injected by _dev/inject-schema.js) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://keeply.work/#organization",
+        "name": "Keeply",
+        "url": "https://keeply.work",
+        "logo": "https://keeply.work/logo.svg",
+        "sameAs": [
+          "https://github.com/boy1690/keeply-releases"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://keeply.work/#website",
+        "url": "https://keeply.work/compare/filename-chaos.html",
+        "name": "Keeply",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://keeply.work/compare/filename-chaos.html#article",
+        "headline": "Why cover_FINAL_real_FIXED.psd is a version tracking failure",
+        "description": "Renaming files v1, v2, FINAL, FINAL_real is how most people version work. It fails silently. Keeply replaces the filename suffix with a real timeline — free forever.",
+        "datePublished": "2026-04-24",
+        "dateModified": "2026-04-24",
+        "inLanguage": "en",
+        "author": {
+          "@id": "https://keeply.work/#organization"
+        },
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        },
+        "mainEntityOfPage": "https://keeply.work/compare/filename-chaos.html",
+        "image": "https://keeply.work/og-image.png"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://keeply.work/compare/filename-chaos.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Isn't renaming files basically free? Why would I pay for this?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Personal tier is free forever, so cost is not the question — the question is whether filename chaos quietly costs you time. If you have ever spent 20 minutes finding \"the right version,\" emailed the wrong file to a client, or accidentally overwritten an approved version, the answer is yes. The dollar cost is zero; the time cost is what Keeply removes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I have to give up my naming scheme completely?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, and we'd suggest keeping it for a few weeks of transition. Your old cover_v1.psd through cover_FINAL_real_FIXED.psd files stay exactly where they are. Keeply starts a fresh timeline from today on one clean filename. After a few weeks of using the timeline you'll find you stop reaching for the old scheme — it was solving a problem Keeply now handles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if I actually want multiple parallel variants, not a linear history?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can still have them. Keep cover.psd and cover_alt.psd as two real files when they're genuinely different variants; Keeply tracks history for each independently. The v1/v2/FINAL pattern is specifically for capturing change over time on the same file — that's what the timeline replaces. Parallel variants are a different concept and still have real filenames."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will this slow me down when I'm just saving a quick fix?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Keeply hooks into Save with near-zero overhead. Each save is a small delta, not a full file copy, so disk cost is minimal. The one small addition is a short note you write — a sentence — to explain what the save was about. That single sentence is the difference between \"cover_v17.psd\" and a timeline you can actually navigate a year later."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will non-technical teammates understand this?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — that was a hard design constraint. There is no Git knowledge required, no command line, no branch or merge concepts. You open a project, you save files, Keeply tracks versions. The UI shows a timeline with notes you wrote in your own words. Designers, writers, contractors, and admin staff all use it without needing any developer background."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is my version history actually stored?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "On your own storage. Keeply keeps versions inside a hidden folder within your project on your local drive (Windows or macOS), plus up to three backup locations you configure: office NAS (SMB), USB drive, self-hosted Gitea, or a private GitHub repo. Keeply runs no server that stores your project data. Your files remain regular files you can open in Explorer or Finder at any time."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+  <!-- Nav (injected by components.js) -->
+  <div id="nav-root"></div>
+
+  <!-- ============================================ -->
+  <!-- SECTION 1: HERO                              -->
+  <!-- ============================================ -->
+  <section class="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-gradient-to-b from-brand-50 to-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 bg-amber-100 border border-amber-200 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-6">
+        <span>📘 Your filenames are your version control system. That's the problem.</span>
+      </div>
+      <!-- H1 -->
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-4"><span class="text-brand-600">cover_FINAL_real_FIXED.psd</span> is a symptom, not a naming style</h1>
+      <!-- Sub -->
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-4 leading-relaxed">Everyone starts with v1, v2, FINAL, FINAL_real. It costs nothing and it almost works. Until the client asks for "the one from Tuesday" and the 30 files in your project folder stare back. <strong class="text-gray-900">Keeply keeps the filename stable</strong> and tracks versions on a real timeline with notes — so v1/v2/FINAL becomes something you can actually navigate.</p>
+      <p class="text-sm text-gray-500 mb-8">Free forever for personal use · Team $25/mo flat (coming soon).</p>
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/#download" class="bg-brand-600 hover:bg-brand-700 text-white font-medium px-8 py-3 rounded-full transition-colors">Free Download</a>
+        <a href="#comparison" class="border-2 border-brand-600 text-brand-600 hover:bg-brand-50 font-medium px-8 py-3 rounded-full transition-colors">See comparison</a>
+        <a href="#migration" class="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 font-medium px-8 py-3 rounded-full transition-colors">Migration guide</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 2: WHAT HAPPENED                     -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Human memory has real limits, and filenames aren't designed to hold them</h2>
+      <div class="bg-gray-50 border-l-4 border-brand-600 rounded-r-lg p-6 mb-4">
+        <p class="text-gray-800 leading-relaxed">A typical project folder ends up with files like <code>cover_v1.psd</code>, <code>cover_v2.psd</code>, <code>cover_FINAL.psd</code>, <code>cover_FINAL_real.psd</code>, <code>cover_FINAL_real_FIXED.psd</code>. Three weeks later you cannot tell which one the client approved, which has the correct pricing, or which was sent on Tuesday. You open all five, squint, and <strong>guess</strong>. Sometimes you accidentally overwrite the good one. End-of-project, the folder has 30 files, and identifying the actual delivered version is an archaeology project. This is not a discipline problem — it's that filenames were never designed to carry version meaning.</p>
+      </div>
+      <p class="text-sm text-gray-500 italic">Source: every designer, writer, and contractor who has ever shipped work</p>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 3: COMPARISON TABLE                  -->
+  <!-- ============================================ -->
+  <section id="comparison" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Feature comparison</h2>
+      <p class="text-sm text-gray-600 mb-6">Based on public product information as of April 2026. Keeply rows reflect shipping v1.0.2.</p>
+      <div class="overflow-x-auto -mx-2">
+        <table class="min-w-[720px] w-full border-collapse text-sm bg-white rounded-xl shadow-sm">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Feature</th>
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Manual file naming<br /><span class="text-xs font-normal text-gray-400">(your current approach)</span></th>
+              <th class="text-left px-4 py-3 font-semibold text-brand-700 border-b border-gray-200 bg-brand-50">Keeply<br /><span class="text-xs font-normal text-brand-600">(recommended)</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Cost</td>
+              <td class="px-4 py-3 text-gray-700">Free (cost in time and sanity)</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50"><strong>Free forever</strong> · Team $25/mo flat (coming soon) · $599 Perpetual Founding Member (limited 500)</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">How versions are distinguished</td>
+              <td class="px-4 py-3 text-gray-700">Filename suffixes (v1, v2, FINAL, FINAL_real)</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">One filename, timeline underneath</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">"What changed between v3 and v4?"</td>
+              <td class="px-4 py-3 text-gray-700">Open both, squint, guess</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Side-by-side visual diff (Word, Excel, PPT, PDF, images)</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">"Which one did the client approve?"</td>
+              <td class="px-4 py-3 text-gray-700">Try to remember which filename meant what</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">The save note you wrote says it</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Accidental overwrites</td>
+              <td class="px-4 py-3 text-gray-700">Frequent — Save over the good version</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Every save is kept; nothing is lost</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">End-of-project archaeology</td>
+              <td class="px-4 py-3 text-gray-700">30 files, no idea which was shipped</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Timeline shows exactly which version was final</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">"Send me the Tuesday version"</td>
+              <td class="px-4 py-3 text-gray-700">Check file dates, cross-reference emails</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Filter timeline by date, pick version, export</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Space cost</td>
+              <td class="px-4 py-3 text-gray-700">Full duplicate per "version"</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Delta-efficient — tiny overhead per save</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Works offline</td>
+              <td class="px-4 py-3 text-gray-700">Yes (it's just filenames)</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Yes — fully local</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Team handoff</td>
+              <td class="px-4 py-3 text-gray-700">Hope they can decode your naming scheme</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Shared timeline with everyone's notes</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 4: PAIN POINTS                       -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">Why people switch</h2>
+      <ul class="space-y-5">
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">You can't remember what v3 vs v4 vs FINAL_real actually contains.</strong> Three weeks later, the filename tells you the order but not the meaning. You open them to check — and they look 90% identical, so the differences hide in plain sight.</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">Accidental overwrites are routine.</strong> You meant to save as cover_v5.psd. You hit Cmd+S out of habit. Now cover_FINAL.psd — the one the client approved — has your unfinished changes, and there is no going back.</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">"Send me the version from Tuesday."</strong> Which Tuesday? You check file modification dates and cross-reference emails, and you're still guessing. The information you need never existed in a usable form.</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">End-of-project folders are unreadable.</strong> 30 files in the final delivery folder. You're handing off to someone new, or revisiting in six months, and nobody can tell what the actual deliverable was. The naming scheme made sense only in your head, at the time.</span>
+        </li>
+        
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 5: MIGRATION                         -->
+  <!-- ============================================ -->
+  <section id="migration" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">How to switch to Keeply</h2>
+      <ol class="space-y-6">
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">1</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Pick the folder where the filename chaos is worst</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Usually your most active project — the one with the most FINAL_real_v2s. Don't try to fix every folder at once; start where the pain is biggest.</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">2</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Install Keeply and point it at that folder</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Download Keeply, open the folder, click Start protecting. Keeply begins tracking the current state as the first version. You don't have to rename or reorganise anything.</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">3</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Stop creating _v2, _FINAL, _real suffixes</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Keep one clean filename — cover.psd, not cover_FINAL_real.psd. Every save goes on the timeline with a short note you write ("client approved", "added pricing box", "Tuesday delivery"). The note is what the filename was pretending to be.</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">4</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Use the timeline, not File Explorer, when you need an old version</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Next time you need "the one from Tuesday" or "before I added the pricing box," open Keeply's timeline instead of digging through filenames. One click, visual diff, restore or export. The muscle memory takes a week.</p>
+          </div>
+        </li>
+        
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 6: FAQ                               -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">Frequently asked questions</h2>
+      <div class="space-y-3">
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Isn't renaming files basically free? Why would I pay for this?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">The Personal tier is free forever, so cost is not the question — the question is whether filename chaos quietly costs you time. If you have ever spent 20 minutes finding "the right version," emailed the wrong file to a client, or accidentally overwritten an approved version, the answer is yes. The dollar cost is zero; the time cost is what Keeply removes.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Do I have to give up my naming scheme completely?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">No, and we'd suggest keeping it for a few weeks of transition. Your old cover_v1.psd through cover_FINAL_real_FIXED.psd files stay exactly where they are. Keeply starts a fresh timeline from today on one clean filename. After a few weeks of using the timeline you'll find you stop reaching for the old scheme — it was solving a problem Keeply now handles.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>What if I actually want multiple parallel variants, not a linear history?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">You can still have them. Keep cover.psd and cover_alt.psd as two real files when they're genuinely different variants; Keeply tracks history for each independently. The v1/v2/FINAL pattern is specifically for capturing change over time on the same file — that's what the timeline replaces. Parallel variants are a different concept and still have real filenames.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Will this slow me down when I'm just saving a quick fix?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">No. Keeply hooks into Save with near-zero overhead. Each save is a small delta, not a full file copy, so disk cost is minimal. The one small addition is a short note you write — a sentence — to explain what the save was about. That single sentence is the difference between "cover_v17.psd" and a timeline you can actually navigate a year later.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Will non-technical teammates understand this?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">Yes — that was a hard design constraint. There is no Git knowledge required, no command line, no branch or merge concepts. You open a project, you save files, Keeply tracks versions. The UI shows a timeline with notes you wrote in your own words. Designers, writers, contractors, and admin staff all use it without needing any developer background.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Where is my version history actually stored?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">On your own storage. Keeply keeps versions inside a hidden folder within your project on your local drive (Windows or macOS), plus up to three backup locations you configure: office NAS (SMB), USB drive, self-hosted Gitea, or a private GitHub repo. Keeply runs no server that stores your project data. Your files remain regular files you can open in Explorer or Finder at any time.</div>
+        </details>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 7: FINAL CTA                         -->
+  <!-- ============================================ -->
+  <section class="bg-gradient-to-br from-brand-600 to-brand-700 px-6 py-16 md:py-20 text-center text-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to stop fighting your tools?</h2>
+      <p class="text-brand-100 max-w-xl mx-auto mb-8">Free download for Windows and macOS. Thirty-second setup. No account required — just install and open your project folder.</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/#download" class="bg-white text-brand-700 hover:bg-brand-50 font-bold px-8 py-4 rounded-full transition-colors">Free Download</a>
+        <a href="/buy.html" class="border-2 border-white text-white hover:bg-white/10 font-medium px-8 py-4 rounded-full transition-colors">See Founding Member pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (injected by components.js) -->
+  <div id="footer-root"></div>
+
+  <!-- Shared components + i18n + consent (spec 023/024) -->
+  <script src="../consent-api.js" defer integrity="sha384-AgMsIGCbo9mV0oP2ebvR5aNCzNPtSkIGXG5v29yY6A+vEktkTMAOZtlK0WiKSEUR" crossorigin="anonymous"></script>
+  <script src="../components.js" defer integrity="sha384-Y6/6phkijVlwQ9nqNUKQEGuFnHvvxA4NczoZsCHqQFkBGHLr/F3x7QPVgeDsAi6v" crossorigin="anonymous"></script>
+  <script src="../cookie-banner.js" defer integrity="sha384-aDwCVUUSIWi62pJZ7PqUXIOz/bAoGadk/KUkD4HatS2r4S1C5cMfasX/UGBBap+8" crossorigin="anonymous"></script>
+  <script src="../ga4-loader.js" defer integrity="sha384-jYO4ARZ+UCGY2v6qzLfw2yqhQ5tPFNYQia3QEljpr5okv2tjmBbXU6Pmzm9jTV8O" crossorigin="anonymous"></script>
+  <script src="../i18n-loader.js" defer integrity="sha384-4/86z3+CQS2W1y+6+aUviORi8uQCOPnZcHyVgXNDVOzuap9rm02i3fXp1e1zHRj5" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+{
+  "slug": "time-machine",
+  "bold_column": "free",
+  "published": "2026-04-24",
+  "locales": {
+    "en": {
+      "meta": {
+        "title": "Keeply vs Time Machine — Per-project version history, not a whole-disk snapshot",
+        "description": "Time Machine backs up your whole Mac. Keeply tracks version history per project with visual diffs, works on Windows + macOS, and restores a single file — not the whole folder."
+      },
+      "hero": {
+        "badge": "📘 Time Machine is a backup tool, not a version tracker",
+        "h1_html": "Time Machine saved you once. Can you find the <span class=\"text-brand-600\">specific version of a specific file</span> from last Tuesday?",
+        "sub_html": "Time Machine snapshots your whole disk hourly — great for drive failure, painful when you want one older copy of one file. It's macOS-only, has no diff, and restore means reverting folders. <strong class=\"text-gray-900\">Keeply tracks per-project version history</strong> with visual diff, per-file restore, on Windows and macOS.",
+        "tagline": "Free forever for personal use · Team $25/mo flat (coming soon)."
+      },
+      "what_happened": {
+        "title": "Great for disasters. Not great for everyday version retrieval.",
+        "body_html": "Time Machine is brilliant at what it was designed for: if your Mac dies, you plug in the backup drive and restore everything. But it treats every file as an anonymous binary blob and snapshots the whole disk. To find one older version of one project file you open Time Machine, fly through the hourly starfield, guess which snapshot had the version you want, and <strong>restore the whole folder</strong> because per-file targeting is fragile. There is no diff — you have two copies of a PSD and no idea what differs. And if you're on Windows, none of this exists for you at all.",
+        "source": "Source: Apple Support — About Time Machine backups"
+      },
+      "comparison": {
+        "target_header": "Time Machine",
+        "target_sub": "(macOS built-in)",
+        "rows": [
+          { "feature": "Pricing model", "target": "Free (built-in macOS)", "keeply": "**Free forever** · Team $25/mo flat (coming soon) · $599 Perpetual Founding Member (limited 500)" },
+          { "feature": "Platforms", "target": "macOS only — Windows teams can't use", "keeply": "Windows + macOS" },
+          { "feature": "Scope of tracking", "target": "Whole disk snapshot", "keeply": "Per-project version history" },
+          { "feature": "Visual file diff", "target": "No — binary blob only", "keeply": "Side-by-side diff for Word, Excel, PowerPoint, PDF, images" },
+          { "feature": "Finding a specific file's history", "target": "Fly through the starfield and guess", "keeply": "Per-file timeline, one click to any past version" },
+          { "feature": "Granular restore", "target": "Tends to revert whole folders", "keeply": "Restore a single file at a single save" },
+          { "feature": "Save descriptions", "target": "None — just hourly auto-snapshots", "keeply": "Add a note every time you save" },
+          { "feature": "Required storage", "target": "Second external drive, size of your Mac", "keeply": "Tiny overhead (only changes stored), fits on a USB stick" },
+          { "feature": "Team sharing", "target": "None — single Mac per backup", "keeply": "Push version history to shared NAS, Gitea, or GitHub" },
+          { "feature": "Large binary files", "target": "Whole file duplicated every snapshot", "keeply": "38 formats + >10 MB detected silently; delta-efficient" }
+        ]
+      },
+      "pain_points": [
+        { "title": "macOS only.", "body": "The moment someone on your team uses Windows, Time Machine stops being a team answer. You need a workflow that covers both operating systems." },
+        { "title": "No semantic understanding.", "body": "Time Machine treats a 200 MB PSD and a 2 KB text file the same: opaque blobs. It cannot tell you what changed between versions. You're looking at two identical-looking files side by side." },
+        { "title": "Restore is a whole-folder affair.", "body": "Getting one older version of one file without clobbering everything else is genuinely fiddly. Many people give up and just copy the old folder somewhere, creating new chaos." },
+        { "title": "Buried among everything else on your disk.", "body": "Time Machine backs up your Downloads folder, your system files, your entire Mac. Finding the right version of one client project's hero image means wading through all of that first." }
+      ],
+      "migration": [
+        { "step": 1, "title": "Keep Time Machine running — it's good at disaster recovery", "body": "Don't turn it off. Time Machine is a legitimate safety net for \"my whole Mac died\" scenarios. Keeply is for everyday version retrieval, a different job." },
+        { "step": 2, "title": "Install Keeply on each project folder that needs real history", "body": "Pick your active client folders, your design files, the work you edit daily. Open each in Keeply and click Start protecting. Versioning begins from the current state with notes you write." },
+        { "step": 3, "title": "Add a shared backup target for team members", "body": "For multi-person projects, configure a NAS, Gitea, or GitHub backup in Keeply. Now everyone's version history converges somewhere the whole team can reach — something Time Machine cannot do." },
+        { "step": 4, "title": "Use Time Machine for disaster, Keeply for retrieval", "body": "Hard drive fails? Time Machine. Client asks what the logo looked like three weeks ago? Keeply's timeline, one click, visual diff, done." }
+      ],
+      "faq": [
+        { "q": "Can I run Time Machine and Keeply at the same time?", "a": "Yes, and it's what we recommend. Time Machine snapshots your whole Mac as disaster recovery. Keeply tracks per-project version history with notes and visual diffs. They solve different problems and don't conflict — Keeply's data lives inside your project folder, so Time Machine just backs it up along with everything else. Belt and braces." },
+        { "q": "Does Keeply work on Windows? My team is mixed.", "a": "Yes. Keeply runs on both Windows and macOS, so mixed teams share the same tool, the same version history, and the same backup targets. Linux is on the roadmap but not shipping yet. If your team has someone on Windows today, Time Machine alone can never cover them — Keeply does." },
+        { "q": "What about finding a specific older version of a single file?", "a": "This is the big difference. In Time Machine you open the starfield, guess which hourly snapshot had the right version, and restore. In Keeply you open the project, click the file, see every save on a timeline with your own notes, click the version you want, and it's there. Finding a month-old version takes seconds." },
+        { "q": "Can Keeply show me what changed between two versions?", "a": "Yes. Keeply renders side-by-side visual diffs for Word, Excel, PowerPoint, PDF, and images — you see exactly what text, numbers, or pixels differ. Time Machine has no such feature; it treats every file as an opaque binary and leaves you to spot the changes yourself. For a design or document workflow, diff is what you actually need." },
+        { "q": "Do I need a separate external drive like Time Machine requires?", "a": "No. Keeply stores versions inside your project folder as small deltas, so overhead is a fraction of the full file size. You can add backup targets (USB, NAS, GitHub, Gitea) but they are optional, not required to get started. A Keeply project with months of history often fits on a USB stick where Time Machine would need a whole drive." },
+        { "q": "Where are my versions actually stored?", "a": "On your own storage by default: inside the project folder on your local drive, as delta-efficient data. You can add up to three backup locations: office NAS (SMB), USB drive, self-hosted Gitea, or a private GitHub repo. Keeply runs no server that stores your project data. Cancel or uninstall anytime; files and version history stay where they are." }
+      ]
+    },
+    "zh-TW": {
+      "meta": {
+        "title": "Keeply vs Time Machine — 單一專案的版本歷史，不是整顆硬碟快照",
+        "description": "Time Machine 備份整台 Mac。Keeply 以專案為單位管版本、提供視覺比對、Windows + macOS 雙平台、還原單一檔案而非整個資料夾。"
+      },
+      "hero": {
+        "badge": "📘 Time Machine 是備份工具，不是版本追蹤器",
+        "h1_html": "Time Machine 救過你一次。但要找上週二<span class=\"text-brand-600\">某個檔案的特定版本</span>呢？",
+        "sub_html": "Time Machine 每小時對整顆硬碟做快照——硬碟掛了好用，想找某個檔案的某個舊版本時很痛苦。它只支援 macOS、沒有比對、還原是整個資料夾。<strong class=\"text-gray-900\">Keeply 以專案為單位管版本歷史</strong>，附視覺比對、單檔案還原、Windows + macOS 都支援。",
+        "tagline": "個人永久免費 · Team $25/月 不按人頭（Coming Soon）。"
+      },
+      "what_happened": {
+        "title": "對災難很厲害。對日常找舊版本不太行。",
+        "body_html": "Time Machine 擅長它被設計的事情：Mac 掛了，插上備份硬碟還原整個系統。但它把每個檔案當成不具名的二進位 blob 快照整顆硬碟。想找某個專案檔案的某個舊版本，要打開 Time Machine、在時光星軌裡飛、猜哪個小時有你想要的版本、然後<strong>把整個資料夾還原</strong>——因為單檔案還原很脆弱。沒有比對——兩個 PSD 擺在一起你不知道差在哪。Windows 用戶？完全沒這東西。",
+        "source": "資料來源：Apple 支援 — 關於 Time Machine 備份"
+      },
+      "comparison": {
+        "target_header": "Time Machine",
+        "target_sub": "（macOS 內建）",
+        "rows": [
+          { "feature": "計費方式", "target": "免費（macOS 內建）", "keeply": "**永久免費** · Team $25/月 不按人頭（Coming Soon） · $599 永久授權 Founding Member（限 500 套）" },
+          { "feature": "作業系統", "target": "只支援 macOS——Windows 團隊用不了", "keeply": "Windows + macOS" },
+          { "feature": "追蹤範圍", "target": "整顆硬碟快照", "keeply": "以專案為單位的版本歷史" },
+          { "feature": "視覺化檔案比對", "target": "無——只有二進位 blob", "keeply": "Word、Excel、PowerPoint、PDF、圖片皆可並排比對" },
+          { "feature": "找某檔案的歷史", "target": "在時光星軌裡飛和猜", "keeply": "每個檔案一條時間軸，一點就到任何舊版本" },
+          { "feature": "細緻還原", "target": "傾向整個資料夾還原", "keeply": "還原單一檔案的單次存檔" },
+          { "feature": "版本附註", "target": "無——只有每小時自動快照", "keeply": "每次存檔可加筆記" },
+          { "feature": "所需儲存空間", "target": "第二顆外接硬碟，容量要跟 Mac 一樣", "keeply": "空間成本很小（只存差異），隨身碟就裝得下" },
+          { "feature": "團隊共享", "target": "無——一個 Mac 一個備份", "keeply": "版本歷史可推送到共用 NAS、Gitea、GitHub" },
+          { "feature": "大型二進位檔", "target": "每次快照都複製整個檔案", "keeply": "38 種格式 + 超過 10 MB 自動偵測；只存差異" }
+        ]
+      },
+      "pain_points": [
+        { "title": "只支援 macOS。", "body": "團隊裡一出現 Windows 使用者，Time Machine 就不再是團隊的答案。你需要的是跨作業系統都能用的流程。" },
+        { "title": "沒有語意理解。", "body": "Time Machine 把 200 MB 的 PSD 和 2 KB 的文字檔當成一樣的東西：不透明的 blob。它沒辦法告訴你兩個版本差在哪。你看著兩個長得一樣的檔案，完全無法判斷。" },
+        { "title": "還原是整個資料夾層級的事。", "body": "要只拿一個檔案的一個舊版本、又不想蓋掉其他東西，真的很麻煩。很多人最後就是把舊資料夾複製到別的地方——製造新的混亂。" },
+        { "title": "跟整顆硬碟的所有東西混在一起。", "body": "Time Machine 備份你的下載資料夾、系統檔案、整台 Mac。要找某個客戶專案的主視覺舊版本，要先從這一堆裡撈。" }
+      ],
+      "migration": [
+        { "step": 1, "title": "Time Machine 繼續跑——它的災難還原就是好用", "body": "別關掉。Time Machine 對「Mac 整台掛了」的情境是正當的保險。Keeply 管日常版本找回，是不同的工作。" },
+        { "step": 2, "title": "在需要真實版本歷史的專案裡裝 Keeply", "body": "挑你手上的客戶資料夾、設計檔、每天在改的作品。用 Keeply 打開、點「開始保護」。從目前狀態開始管版本，存檔時你自己寫附註。" },
+        { "step": 3, "title": "為團隊成員加一個共用備份目標", "body": "多人專案，在 Keeply 裡設定 NAS、Gitea、或 GitHub 備份。每個人的版本歷史匯集到整個團隊都能拿到的地方——這是 Time Machine 做不到的事。" },
+        { "step": 4, "title": "Time Machine 負責災難，Keeply 負責日常找回", "body": "硬碟掛了？Time Machine。客戶問三週前 Logo 長什麼樣？Keeply 時間軸，一點、視覺比對，搞定。" }
+      ],
+      "faq": [
+        { "q": "可以同時跑 Time Machine 和 Keeply 嗎？", "a": "可以，而且我們推薦這樣。Time Machine 對整台 Mac 做災難還原。Keeply 以專案為單位管版本歷史，附筆記和視覺比對。它們解決不同問題、不會衝突——Keeply 的資料放在你專案資料夾裡，Time Machine 照常把它跟其他東西一起備份。雙保險。" },
+        { "q": "Keeply 支援 Windows 嗎？我的團隊混合使用。", "a": "支援。Keeply 在 Windows 和 macOS 都能跑，所以混合團隊共用同一個工具、同一份版本歷史、同一個備份目標。Linux 在 roadmap 上但還沒出貨。你的團隊今天有人用 Windows 的話，光靠 Time Machine 完全覆蓋不到——Keeply 可以。" },
+        { "q": "要找單一檔案的特定舊版本怎麼辦？", "a": "這是最大差別。Time Machine 要打開時光星軌、猜哪個小時的快照有你要的版本、還原。Keeply 是打開專案、點那個檔案、在時間軸上看每次存檔附自己的筆記、點要的版本就到。找一個月前的版本是幾秒鐘的事。" },
+        { "q": "Keeply 能告訴我兩個版本差在哪嗎？", "a": "可以。Keeply 對 Word、Excel、PowerPoint、PDF、圖片都能並排視覺比對——直接告訴你哪段文字、哪個數字、哪個像素不一樣。Time Machine 沒有這種功能；它把每個檔案當成不透明二進位，差異要你自己找。對設計或文件工作來說，比對才是你真正需要的東西。" },
+        { "q": "我需要另外一顆像 Time Machine 要的外接硬碟嗎？", "a": "不用。Keeply 把版本放在你專案資料夾裡，只存差異，空間成本遠小於完整檔案。你可以加備份目標（隨身碟、NAS、GitHub、Gitea）但不是必要的，一開始不需要。一個有好幾個月歷史的 Keeply 專案常常一根隨身碟就裝得下，Time Machine 要整顆硬碟。" },
+        { "q": "我的版本實際存在哪裡？", "a": "預設放在你自己的儲存空間：在你專案資料夾裡，以差異方式高效儲存。你可以加最多三個備份位置：辦公室 NAS（SMB）、隨身碟、自架 Gitea、或私有 GitHub repo。Keeply 自家伺服器完全不存你的專案資料。隨時不用或移除，檔案和版本歷史都留在原地。" }
+      ]
+    }
+  }
+}

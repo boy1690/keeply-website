@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4F46E5" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <title>Compare Keeply — Alternatives to Dropbox, Time Machine, Snowtrack and more</title>
+  <meta name="description" content="How does Keeply compare to Dropbox version history, Google Drive, Time Machine, Snowtrack, the v1/v2/FINAL file-naming chaos, and manual email/USB backups? Pick the tool you're already wrestling with and see what Keeply does differently." />
+
+  <link rel="canonical" href="https://keeply.work/compare/" />
+  <link rel="alternate" hreflang="en" href="https://keeply.work/compare/" />
+  <link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/compare/" />
+  <link rel="alternate" hreflang="x-default" href="https://keeply.work/compare/" />
+
+  <link rel="icon" href="../favicon.ico" sizes="32x32" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://keeply.work/compare/" />
+  <meta property="og:title" content="Compare Keeply — Alternatives to Dropbox, Time Machine, Snowtrack and more" />
+  <meta property="og:description" content="How does Keeply compare to Dropbox version history, Google Drive, Time Machine, Snowtrack, the v1/v2/FINAL file-naming chaos, and manual email/USB backups? Pick the tool you're already wrestling with and see what Keeply does differently." />
+  <meta property="og:image" content="https://keeply.work/og-image.png" />
+  <meta property="og:site_name" content="Keeply" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Compare Keeply — Alternatives to Dropbox, Time Machine, Snowtrack and more" />
+  <meta name="twitter:description" content="How does Keeply compare to Dropbox version history, Google Drive, Time Machine, Snowtrack, the v1/v2/FINAL file-naming chaos, and manual email/USB backups? Pick the tool you're already wrestling with and see what Keeply does differently." />
+  <meta name="twitter:image" content="https://keeply.work/og-image.png" />
+
+  <link rel="preload" href="../style.css" as="style" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style.css" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />  <!-- Schema.org JSON-LD (injected by _dev/inject-schema.js) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://keeply.work/#organization",
+        "name": "Keeply",
+        "url": "https://keeply.work",
+        "logo": "https://keeply.work/logo.svg",
+        "sameAs": [
+          "https://github.com/boy1690/keeply-releases"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://keeply.work/#website",
+        "url": "https://keeply.work/compare/",
+        "name": "Keeply",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://keeply.work/compare/#webpage",
+        "url": "https://keeply.work/compare/",
+        "name": "Compare Keeply — Alternatives to Dropbox, Time Machine, Snowtrack and more",
+        "description": "How does Keeply compare to Dropbox version history, Google Drive, Time Machine, Snowtrack, the v1/v2/FINAL file-naming chaos, and manual email/USB backups? Pick the tool you're already wrestling with and see what Keeply does differently.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://keeply.work/#website"
+        },
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://keeply.work/compare/#itemlist",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "https://keeply.work/compare/filename-chaos.html",
+            "name": "vs the \"v1/v2/FINAL\" chaos"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "url": "https://keeply.work/compare/dropbox.html",
+            "name": "vs Dropbox version history"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "url": "https://keeply.work/compare/google-drive.html",
+            "name": "vs Google Drive"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "url": "https://keeply.work/compare/time-machine.html",
+            "name": "vs Time Machine"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "url": "https://keeply.work/compare/snowtrack.html",
+            "name": "vs Snowtrack (now P4 One)"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "url": "https://keeply.work/compare/email-usb.html",
+            "name": "vs Email & USB backup"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://keeply.work/compare/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://keeply.work/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Compare",
+            "item": "https://keeply.work/compare/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+  <div id="nav-root"></div>
+
+  <!-- Hero -->
+  <section class="relative pt-32 pb-16 md:pt-40 md:pb-20 overflow-hidden bg-gradient-to-b from-brand-50 to-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-4">Compare <span class="text-brand-600">Keeply</span></h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-2">How does Keeply stack up against tools you already use for managing project files?</p>
+      <p class="text-sm text-gray-500 max-w-2xl mx-auto">Pick the one you're currently wrestling with — we'll show you what Keeply does differently.</p>
+    </div>
+  </section>
+
+  <!-- Cards grid -->
+  <section class="py-12 md:py-16">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-6">
+        
+        <a href="/compare/filename-chaos.html" class="group bg-white border-2 border-gray-200 hover:border-brand-400 rounded-2xl p-6 transition-all">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center text-2xl shrink-0">📁</div>
+            <div class="flex-1">
+              <h3 class="text-lg font-bold text-gray-900 group-hover:text-brand-600">vs the "v1/v2/FINAL" chaos</h3>
+              <p class="text-sm text-gray-600 mt-1">Stop renaming files <code class="bg-gray-100 px-1">cover_FINAL_real_v3.psd</code> — let the tool track versions for you.</p>
+              <p class="text-xs text-brand-600 font-medium mt-3">Read comparison →</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/compare/dropbox.html" class="group bg-white border-2 border-gray-200 hover:border-brand-400 rounded-2xl p-6 transition-all">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-2xl shrink-0">📘</div>
+            <div class="flex-1">
+              <h3 class="text-lg font-bold text-gray-900 group-hover:text-brand-600">vs Dropbox version history</h3>
+              <p class="text-sm text-gray-600 mt-1">Dropbox's version history caps at 30 days. Keeply keeps every save forever — no subscription escalation.</p>
+              <p class="text-xs text-brand-600 font-medium mt-3">Read comparison →</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/compare/google-drive.html" class="group bg-white border-2 border-gray-200 hover:border-brand-400 rounded-2xl p-6 transition-all">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-2xl shrink-0">🟢</div>
+            <div class="flex-1">
+              <h3 class="text-lg font-bold text-gray-900 group-hover:text-brand-600">vs Google Drive</h3>
+              <p class="text-sm text-gray-600 mt-1">Drive has version history buried under <em>File → Version history</em>. Keeply makes it the primary interface.</p>
+              <p class="text-xs text-brand-600 font-medium mt-3">Read comparison →</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/compare/time-machine.html" class="group bg-white border-2 border-gray-200 hover:border-brand-400 rounded-2xl p-6 transition-all">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center text-2xl shrink-0">🍎</div>
+            <div class="flex-1">
+              <h3 class="text-lg font-bold text-gray-900 group-hover:text-brand-600">vs Time Machine</h3>
+              <p class="text-sm text-gray-600 mt-1">macOS-only, OS-level backup, no per-project view. Keeply works on Windows too and tracks meaningful changes.</p>
+              <p class="text-xs text-brand-600 font-medium mt-3">Read comparison →</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/compare/snowtrack.html" class="group bg-white border-2 border-gray-200 hover:border-brand-400 rounded-2xl p-6 transition-all">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-2xl shrink-0">🎨</div>
+            <div class="flex-1">
+              <h3 class="text-lg font-bold text-gray-900 group-hover:text-brand-600">vs Snowtrack (now P4 One)</h3>
+              <p class="text-sm text-gray-600 mt-1">Perforce acquired Snowtrack in March 2025 and moved it to enterprise pricing. Keeply picks up where it left off.</p>
+              <p class="text-xs text-brand-600 font-medium mt-3">Read comparison →</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/compare/email-usb.html" class="group bg-white border-2 border-gray-200 hover:border-brand-400 rounded-2xl p-6 transition-all">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-2xl shrink-0">📧</div>
+            <div class="flex-1">
+              <h3 class="text-lg font-bold text-gray-900 group-hover:text-brand-600">vs Email & USB backup</h3>
+              <p class="text-sm text-gray-600 mt-1">Emailing yourself files or copying to a USB every Friday — Keeply automates what you're already trying to do.</p>
+              <p class="text-xs text-brand-600 font-medium mt-3">Read comparison →</p>
+            </div>
+          </div>
+        </a>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- What is Keeply sub-callout -->
+  <section class="bg-brand-50 border-t border-brand-100 py-12 md:py-16">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">What is Keeply, exactly?</h2>
+      <p class="text-gray-700 leading-relaxed">A Windows and macOS desktop app that quietly tracks every save of your project files — Blender, PSD, Office docs, PDFs, images. No Git knowledge required; no per-seat licensing. Your files stay on your NAS (or local disk) — Keeply just handles the version history.</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center mt-6">
+        <a href="/#download" class="bg-brand-600 hover:bg-brand-700 text-white font-medium px-8 py-3 rounded-full transition-colors">Free Download</a>
+        <a href="/#pricing" class="border-2 border-brand-600 text-brand-600 hover:bg-brand-50 font-medium px-8 py-3 rounded-full transition-colors">See pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-root"></div>
+
+  <script src="../consent-api.js" defer integrity="sha384-AgMsIGCbo9mV0oP2ebvR5aNCzNPtSkIGXG5v29yY6A+vEktkTMAOZtlK0WiKSEUR" crossorigin="anonymous"></script>
+  <script src="../components.js" defer integrity="sha384-Y6/6phkijVlwQ9nqNUKQEGuFnHvvxA4NczoZsCHqQFkBGHLr/F3x7QPVgeDsAi6v" crossorigin="anonymous"></script>
+  <script src="../cookie-banner.js" defer integrity="sha384-aDwCVUUSIWi62pJZ7PqUXIOz/bAoGadk/KUkD4HatS2r4S1C5cMfasX/UGBBap+8" crossorigin="anonymous"></script>
+  <script src="../ga4-loader.js" defer integrity="sha384-jYO4ARZ+UCGY2v6qzLfw2yqhQ5tPFNYQia3QEljpr5okv2tjmBbXU6Pmzm9jTV8O" crossorigin="anonymous"></script>
+  <script src="../i18n-loader.js" defer integrity="sha384-4/86z3+CQS2W1y+6+aUviORi8uQCOPnZcHyVgXNDVOzuap9rm02i3fXp1e1zHRj5" crossorigin="anonymous"></script>
+
+</body>
+</html>

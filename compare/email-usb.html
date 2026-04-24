@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4F46E5" />
+  <!-- Content Security Policy (spec 019) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <title>Keeply vs the Friday-afternoon USB-and-email backup ritual</title>
+  <meta name="description" content="Emailing files to yourself and copying to a USB every Friday works until it doesn't. USBs corrupt, attachments hit size limits, and you forgot last week. Keeply automates what the ritual was trying to do — free forever." />
+
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://keeply.work/compare/email-usb.html" />
+  <link rel="alternate" hreflang="en" href="https://keeply.work/compare/email-usb.html" />
+  <link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/compare/email-usb.html" />
+  <link rel="alternate" hreflang="x-default" href="https://keeply.work/compare/email-usb.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="../favicon.ico" sizes="32x32" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://keeply.work/compare/email-usb.html" />
+  <meta property="og:title" content="Keeply vs the Friday-afternoon USB-and-email backup ritual" />
+  <meta property="og:description" content="Emailing files to yourself and copying to a USB every Friday works until it doesn't. USBs corrupt, attachments hit size limits, and you forgot last week. Keeply automates what the ritual was trying to do — free forever." />
+  <meta property="og:image" content="https://keeply.work/og-image.png" />
+  <meta property="og:site_name" content="Keeply" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Keeply vs the Friday-afternoon USB-and-email backup ritual" />
+  <meta name="twitter:description" content="Emailing files to yourself and copying to a USB every Friday works until it doesn't. USBs corrupt, attachments hit size limits, and you forgot last week. Keeply automates what the ritual was trying to do — free forever." />
+  <meta name="twitter:image" content="https://keeply.work/og-image.png" />
+
+  <!-- Tailwind CSS (compiled) -->
+  <link rel="preload" href="../style.css" as="style" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style.css" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
+
+  <!-- Hidden time for Article.datePublished (read by inject-schema.js) -->
+  <time datetime="2026-04-24" class="sr-only" aria-hidden="true">2026-04-24</time>  <!-- Schema.org JSON-LD (injected by _dev/inject-schema.js) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://keeply.work/#organization",
+        "name": "Keeply",
+        "url": "https://keeply.work",
+        "logo": "https://keeply.work/logo.svg",
+        "sameAs": [
+          "https://github.com/boy1690/keeply-releases"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://keeply.work/#website",
+        "url": "https://keeply.work/compare/email-usb.html",
+        "name": "Keeply",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://keeply.work/compare/email-usb.html#article",
+        "headline": "Keeply vs the Friday-afternoon USB-and-email backup ritual",
+        "description": "Emailing files to yourself and copying to a USB every Friday works until it doesn't. USBs corrupt, attachments hit size limits, and you forgot last week. Keeply automates what the ritual was trying to do — free forever.",
+        "datePublished": "2026-04-24",
+        "dateModified": "2026-04-24",
+        "inLanguage": "en",
+        "author": {
+          "@id": "https://keeply.work/#organization"
+        },
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        },
+        "mainEntityOfPage": "https://keeply.work/compare/email-usb.html",
+        "image": "https://keeply.work/og-image.png"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://keeply.work/compare/email-usb.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is emailing files to yourself really that unreliable?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It works until it doesn't, and the failure modes are nasty. Attachment caps (25 MB Gmail, 20 MB Outlook) silently block your biggest files. Providers sometimes flag repeated attachments as spam. Most importantly, it depends on you remembering every week for years. The ritual is fine as a belt-and-braces extra layer, but as a primary backup it fails exactly when you most need it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Keeply replace my USB drive completely?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, and it should, because a single USB is a single point of failure. Keeply lets you configure up to three backup destinations: local, USB, NAS, Gitea, or GitHub in any combination. A typical setup is local + NAS + private GitHub repo, giving you three independent copies automatically. If you still like carrying a USB as an occasional extra, fine — but it's no longer the only thing between you and a lost laptop."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if I work mostly offline and can't sync to a cloud backup?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Keeply versions locally the moment you save, regardless of internet. Configured backup targets (NAS, GitHub, Gitea) sync opportunistically whenever you're online again. On a plane, at a remote client site, or during an ISP outage, versioning keeps working — you just temporarily have one copy instead of three. The moment you reconnect, the backups catch up on their own."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "I have really big video files. Does Keeply handle those?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Keeply silently detects binary formats (38 file types including PSD, AI, Sketch, MP4, MOV, ZIP, and more) plus any file over 10 MB, and versions them efficiently using delta storage under the hood. You don't need to configure or flag anything — it just works. No 25 MB attachment cap, no manual LFS setup, no separate tool for large files."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will this work for a solo operator with no IT support?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "That's exactly who it's built for. There's no server to run, no command line, no Git knowledge required. Install, open a folder, click Start protecting. Optionally add a backup destination (your USB, your NAS, your own GitHub account) through a simple settings screen. The whole setup takes under ten minutes, and nothing after that requires weekly discipline."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where does my version history actually live?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "On your own storage. Keeply writes versions into a hidden folder inside your project on your local drive (Windows or macOS), plus up to three backup destinations you configure: office NAS (SMB), USB drive, self-hosted Gitea, or a private GitHub repo. Keeply runs no server that stores your project data. Stop using Keeply anytime; your files and history stay exactly where they are."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+  <!-- Nav (injected by components.js) -->
+  <div id="nav-root"></div>
+
+  <!-- ============================================ -->
+  <!-- SECTION 1: HERO                              -->
+  <!-- ============================================ -->
+  <section class="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-gradient-to-b from-brand-50 to-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 bg-amber-100 border border-amber-200 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-6">
+        <span>📘 The weekly-email-yourself backup is a ritual, not a system</span>
+      </div>
+      <!-- H1 -->
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-4">Did you <span class="text-brand-600">email yourself the file</span> last Friday?</h1>
+      <!-- Sub -->
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-4 leading-relaxed">The classic solo-operator backup: copy files to a USB, email key documents to yourself, hope nothing fails between now and next Friday. It mostly works — until the USB corrupts, the attachment hits 25 MB, or the laptop dies on a Wednesday. <strong class="text-gray-900">Keeply automates version history and backup</strong> so the ritual stops being your problem.</p>
+      <p class="text-sm text-gray-500 mb-8">Free forever for personal use · Team $25/mo flat (coming soon).</p>
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/#download" class="bg-brand-600 hover:bg-brand-700 text-white font-medium px-8 py-3 rounded-full transition-colors">Free Download</a>
+        <a href="#comparison" class="border-2 border-brand-600 text-brand-600 hover:bg-brand-50 font-medium px-8 py-3 rounded-full transition-colors">See comparison</a>
+        <a href="#migration" class="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 font-medium px-8 py-3 rounded-full transition-colors">Migration guide</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 2: WHAT HAPPENED                     -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">A backup that depends on your memory every Friday is not a backup</h2>
+      <div class="bg-gray-50 border-l-4 border-brand-600 rounded-r-lg p-6 mb-4">
+        <p class="text-gray-800 leading-relaxed">The email-plus-USB ritual works because you perform it. The week you skip it — stressful deadline, travel, forgot — is the week the laptop drops and the USB is unplugged in a drawer. Attachment size limits (<strong>25 MB on Gmail, 20 MB on Outlook</strong>) cut out exactly the design files and video drafts you most want backed up. USB drives physically fail or get left in coffee shops. And emailed copies have no version structure — five copies of "final_proposal.docx" in your Sent folder tell you nothing about which one is actually final. Keeply automates continuous per-save versioning and backup to targets you own, so you stop being the single point of failure.</p>
+      </div>
+      <p class="text-sm text-gray-500 italic">Source: Gmail / Outlook attachment limits; common solo-operator backup patterns</p>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 3: COMPARISON TABLE                  -->
+  <!-- ============================================ -->
+  <section id="comparison" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Feature comparison</h2>
+      <p class="text-sm text-gray-600 mb-6">Based on public product information as of April 2026. Keeply rows reflect shipping v1.0.2.</p>
+      <div class="overflow-x-auto -mx-2">
+        <table class="min-w-[720px] w-full border-collapse text-sm bg-white rounded-xl shadow-sm">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Feature</th>
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Email & USB backup<br /><span class="text-xs font-normal text-gray-400">(the Friday-afternoon ritual)</span></th>
+              <th class="text-left px-4 py-3 font-semibold text-brand-700 border-b border-gray-200 bg-brand-50">Keeply<br /><span class="text-xs font-normal text-brand-600">(recommended)</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Cost</td>
+              <td class="px-4 py-3 text-gray-700">Free (in dollars; costly in time and reliability)</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50"><strong>Free forever</strong> · Team $25/mo flat (coming soon) · $599 Perpetual Founding Member (limited 500)</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Frequency</td>
+              <td class="px-4 py-3 text-gray-700">Weekly if you remember</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Every save, automatically</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">File size cap</td>
+              <td class="px-4 py-3 text-gray-700">25 MB (Gmail) / 20 MB (Outlook)</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">No cap — 38 binary formats + >10 MB detected silently</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Version structure</td>
+              <td class="px-4 py-3 text-gray-700">None — just duplicates in Sent</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Real timeline with save notes and visual diff</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Mid-week failure</td>
+              <td class="px-4 py-3 text-gray-700">Lose up to 5 days of work</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Continuously versioned; lose at most the current save</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">USB reliability</td>
+              <td class="px-4 py-3 text-gray-700">Physical failure, lost, stolen, corrupted</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Optional USB + NAS + GitHub/Gitea (up to 3 destinations)</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">"What changed this week?"</td>
+              <td class="px-4 py-3 text-gray-700">Compare dated copies manually</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Side-by-side diff (Word, Excel, PPT, PDF, images)</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Offline</td>
+              <td class="px-4 py-3 text-gray-700">USB yes, email no (needs send)</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Versioning fully offline; backup syncs when online</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Sharing with team</td>
+              <td class="px-4 py-3 text-gray-700">Forward emails, pass the USB</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Shared NAS or GitHub/Gitea backup target</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Discipline required</td>
+              <td class="px-4 py-3 text-gray-700">Yours, every week, forever</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">None — it runs on save</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 4: PAIN POINTS                       -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">Why people switch</h2>
+      <ul class="space-y-5">
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">You have to remember, every single week.</strong> The week you forget is the week you need it. Illness, travel, a big deadline — that's when rituals slip, and that's when laptops die. Relying on your own discipline forever is not a backup strategy.</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">Attachment size limits kick exactly the wrong files.</strong> Gmail caps at 25 MB. Outlook at 20 MB. That's a typical PSD, a raw video draft, a big PDF with embeds — precisely the files you most want backed up. The ritual fails for the work that matters most.</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">USB drives fail in the ways you don't plan for.</strong> Corrupted in a pocket, forgotten at a coffee shop, borrowed and never returned, dropped at the worst moment. A USB is a single point of failure with no redundancy — which is the opposite of what a backup should be.</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">Five copies in Sent is not version history.</strong> You have final.docx, final_v2.docx, final_real.docx, final_sent.docx in your Sent folder. Which one did the client get? Which has the updated pricing? The emails don't know. You don't know either, three weeks later.</span>
+        </li>
+        
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 5: MIGRATION                         -->
+  <!-- ============================================ -->
+  <section id="migration" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">How to switch to Keeply</h2>
+      <ol class="space-y-6">
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">1</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Keep doing the Friday ritual for a week or two</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Don't rip out your safety net before the new one is trusted. Let Keeply version in parallel while you keep emailing yourself and plugging in the USB. After two weeks of Keeply running, the ritual starts to feel redundant.</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">2</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Install Keeply on your most important project folder</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">The one whose loss would be most painful — active client work, your business documents, your portfolio. Download Keeply, open the folder, click Start protecting. Every save from now on is on the timeline with a note.</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">3</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Add a real backup target — not just a USB</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">In Keeply, add a NAS if you have one, a USB drive as a secondary, and a private GitHub or Gitea repo as the cloud piece (up to three total). Now every save goes to multiple places automatically. No single point of failure, no weekly ritual.</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">4</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Retire the Friday afternoon email-yourself habit</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Once you trust Keeply, stop sending yourself files and unplug the USB ritual. Keep the USB as an occasional extra belt-and-braces copy if you like, but it's no longer the system — it's just extra.</p>
+          </div>
+        </li>
+        
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 6: FAQ                               -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">Frequently asked questions</h2>
+      <div class="space-y-3">
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Is emailing files to yourself really that unreliable?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">It works until it doesn't, and the failure modes are nasty. Attachment caps (25 MB Gmail, 20 MB Outlook) silently block your biggest files. Providers sometimes flag repeated attachments as spam. Most importantly, it depends on you remembering every week for years. The ritual is fine as a belt-and-braces extra layer, but as a primary backup it fails exactly when you most need it.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Can Keeply replace my USB drive completely?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">Yes, and it should, because a single USB is a single point of failure. Keeply lets you configure up to three backup destinations: local, USB, NAS, Gitea, or GitHub in any combination. A typical setup is local + NAS + private GitHub repo, giving you three independent copies automatically. If you still like carrying a USB as an occasional extra, fine — but it's no longer the only thing between you and a lost laptop.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>What if I work mostly offline and can't sync to a cloud backup?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">Keeply versions locally the moment you save, regardless of internet. Configured backup targets (NAS, GitHub, Gitea) sync opportunistically whenever you're online again. On a plane, at a remote client site, or during an ISP outage, versioning keeps working — you just temporarily have one copy instead of three. The moment you reconnect, the backups catch up on their own.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>I have really big video files. Does Keeply handle those?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">Yes. Keeply silently detects binary formats (38 file types including PSD, AI, Sketch, MP4, MOV, ZIP, and more) plus any file over 10 MB, and versions them efficiently using delta storage under the hood. You don't need to configure or flag anything — it just works. No 25 MB attachment cap, no manual LFS setup, no separate tool for large files.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Will this work for a solo operator with no IT support?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">That's exactly who it's built for. There's no server to run, no command line, no Git knowledge required. Install, open a folder, click Start protecting. Optionally add a backup destination (your USB, your NAS, your own GitHub account) through a simple settings screen. The whole setup takes under ten minutes, and nothing after that requires weekly discipline.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Where does my version history actually live?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">On your own storage. Keeply writes versions into a hidden folder inside your project on your local drive (Windows or macOS), plus up to three backup destinations you configure: office NAS (SMB), USB drive, self-hosted Gitea, or a private GitHub repo. Keeply runs no server that stores your project data. Stop using Keeply anytime; your files and history stay exactly where they are.</div>
+        </details>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 7: FINAL CTA                         -->
+  <!-- ============================================ -->
+  <section class="bg-gradient-to-br from-brand-600 to-brand-700 px-6 py-16 md:py-20 text-center text-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to stop fighting your tools?</h2>
+      <p class="text-brand-100 max-w-xl mx-auto mb-8">Free download for Windows and macOS. Thirty-second setup. No account required — just install and open your project folder.</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/#download" class="bg-white text-brand-700 hover:bg-brand-50 font-bold px-8 py-4 rounded-full transition-colors">Free Download</a>
+        <a href="/buy.html" class="border-2 border-white text-white hover:bg-white/10 font-medium px-8 py-4 rounded-full transition-colors">See Founding Member pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (injected by components.js) -->
+  <div id="footer-root"></div>
+
+  <!-- Shared components + i18n + consent (spec 023/024) -->
+  <script src="../consent-api.js" defer integrity="sha384-AgMsIGCbo9mV0oP2ebvR5aNCzNPtSkIGXG5v29yY6A+vEktkTMAOZtlK0WiKSEUR" crossorigin="anonymous"></script>
+  <script src="../components.js" defer integrity="sha384-Y6/6phkijVlwQ9nqNUKQEGuFnHvvxA4NczoZsCHqQFkBGHLr/F3x7QPVgeDsAi6v" crossorigin="anonymous"></script>
+  <script src="../cookie-banner.js" defer integrity="sha384-aDwCVUUSIWi62pJZ7PqUXIOz/bAoGadk/KUkD4HatS2r4S1C5cMfasX/UGBBap+8" crossorigin="anonymous"></script>
+  <script src="../ga4-loader.js" defer integrity="sha384-jYO4ARZ+UCGY2v6qzLfw2yqhQ5tPFNYQia3QEljpr5okv2tjmBbXU6Pmzm9jTV8O" crossorigin="anonymous"></script>
+  <script src="../i18n-loader.js" defer integrity="sha384-4/86z3+CQS2W1y+6+aUviORi8uQCOPnZcHyVgXNDVOzuap9rm02i3fXp1e1zHRj5" crossorigin="anonymous"></script>
+
+</body>
+</html>

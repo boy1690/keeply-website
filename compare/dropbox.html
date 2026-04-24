@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4F46E5" />
+  <!-- Content Security Policy (spec 019) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <title>Keeply vs Dropbox Version History — No 30-day cap, no per-seat fees</title>
+  <meta name="description" content="Dropbox keeps version history for 30 days on paid plans, then deletes it. Keeply keeps every save forever with a flat $25/month Team plan — no per-seat billing." />
+
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://keeply.work/compare/dropbox.html" />
+  <link rel="alternate" hreflang="en" href="https://keeply.work/compare/dropbox.html" />
+  <link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/compare/dropbox.html" />
+  <link rel="alternate" hreflang="x-default" href="https://keeply.work/compare/dropbox.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="../favicon.ico" sizes="32x32" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://keeply.work/compare/dropbox.html" />
+  <meta property="og:title" content="Keeply vs Dropbox Version History — No 30-day cap, no per-seat fees" />
+  <meta property="og:description" content="Dropbox keeps version history for 30 days on paid plans, then deletes it. Keeply keeps every save forever with a flat $25/month Team plan — no per-seat billing." />
+  <meta property="og:image" content="https://keeply.work/og-image.png" />
+  <meta property="og:site_name" content="Keeply" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Keeply vs Dropbox Version History — No 30-day cap, no per-seat fees" />
+  <meta name="twitter:description" content="Dropbox keeps version history for 30 days on paid plans, then deletes it. Keeply keeps every save forever with a flat $25/month Team plan — no per-seat billing." />
+  <meta name="twitter:image" content="https://keeply.work/og-image.png" />
+
+  <!-- Tailwind CSS (compiled) -->
+  <link rel="preload" href="../style.css" as="style" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style.css" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
+
+  <!-- Hidden time for Article.datePublished (read by inject-schema.js) -->
+  <time datetime="2026-04-24" class="sr-only" aria-hidden="true">2026-04-24</time>  <!-- Schema.org JSON-LD (injected by _dev/inject-schema.js) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://keeply.work/#organization",
+        "name": "Keeply",
+        "url": "https://keeply.work",
+        "logo": "https://keeply.work/logo.svg",
+        "sameAs": [
+          "https://github.com/boy1690/keeply-releases"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://keeply.work/#website",
+        "url": "https://keeply.work/compare/dropbox.html",
+        "name": "Keeply",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://keeply.work/compare/dropbox.html#article",
+        "headline": "Keeply vs Dropbox Version History — No 30-day cap, no per-seat fees",
+        "description": "Dropbox keeps version history for 30 days on paid plans, then deletes it. Keeply keeps every save forever with a flat $25/month Team plan — no per-seat billing.",
+        "datePublished": "2026-04-24",
+        "dateModified": "2026-04-24",
+        "inLanguage": "en",
+        "author": {
+          "@id": "https://keeply.work/#organization"
+        },
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        },
+        "mainEntityOfPage": "https://keeply.work/compare/dropbox.html",
+        "image": "https://keeply.work/og-image.png"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://keeply.work/compare/dropbox.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I use Keeply and Dropbox at the same time?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Dropbox keeps syncing files between devices in real time while Keeply tracks the version history locally. They don't conflict — Keeply's version data lives in a hidden folder inside your project, so Dropbox just syncs everything including the versioning. Most users keep both."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Keeply have a 30-day or 180-day retention limit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Every version you save is kept forever, because the history lives on storage you already own (your hard drive, NAS, USB, or a Git repo you control). There's no cloud subscription quietly deleting your history — retention is limited only by the disk space you have."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens when my team grows? Does pricing change?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No per-seat billing. The Team plan is a flat $25/month (coming soon) regardless of whether you have 3 people or 15. Free personal use stays free for each team member indefinitely. The Founding Member perpetual license ($599, limited to 500 seats) covers all future Team features for life with no subscription."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Keeply handle the Office files and PDFs I'm used to in Dropbox?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, and with richer comparison. Keeply renders side-by-side visual diffs for Word, Excel, PowerPoint, PDF, and images — showing exactly what text, numbers, or pixels changed. Dropbox can only show you separate previews of each version, leaving you to spot differences manually."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I lose Dropbox's sync if I switch to Keeply?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, because Keeply isn't a sync tool — it's a version tracker. If you like Dropbox's sync, keep using it (the free tier syncs unlimited files between your devices). Use Keeply on top for the version history, descriptions, and visual diffs Dropbox doesn't provide."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where are my versions actually stored?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "On storage you already own: your local drive by default, plus any backup location you configure — office NAS (SMB), USB drive, self-hosted Gitea, or a private GitHub repo. Keeply runs no server that stores your project data. Cancel or stop using Keeply anytime; your files and history stay where they are."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+  <!-- Nav (injected by components.js) -->
+  <div id="nav-root"></div>
+
+  <!-- ============================================ -->
+  <!-- SECTION 1: HERO                              -->
+  <!-- ============================================ -->
+  <section class="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-gradient-to-b from-brand-50 to-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 bg-amber-100 border border-amber-200 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-6">
+        <span>📘 The 30-day version history cap is real</span>
+      </div>
+      <!-- H1 -->
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-4">Tired of Dropbox deleting old versions after <span class="text-brand-600">30 days</span>?</h1>
+      <!-- Sub -->
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-4 leading-relaxed">Dropbox's version history quietly deletes anything older than 30 days on the standard paid plans — and charges per seat. <strong class="text-gray-900">Keeply keeps every save forever</strong> with a single flat team price, and your files stay on your own NAS.</p>
+      <p class="text-sm text-gray-500 mb-8">Free forever for personal use · Team $25/mo flat (coming soon).</p>
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/#download" class="bg-brand-600 hover:bg-brand-700 text-white font-medium px-8 py-3 rounded-full transition-colors">Free Download</a>
+        <a href="#comparison" class="border-2 border-brand-600 text-brand-600 hover:bg-brand-50 font-medium px-8 py-3 rounded-full transition-colors">See comparison</a>
+        <a href="#migration" class="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 font-medium px-8 py-3 rounded-full transition-colors">Migration guide</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 2: WHAT HAPPENED                     -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">The version history limit most users only discover when it's too late</h2>
+      <div class="bg-gray-50 border-l-4 border-brand-600 rounded-r-lg p-6 mb-4">
+        <p class="text-gray-800 leading-relaxed">Dropbox Standard, Plus, and Essentials plans <strong>automatically delete file versions older than 30 days</strong>. The higher-tier Advanced plan extends this to 180 days — still finite, and priced at $24 per user per month. For a 6-person studio, that's $1,440 per year in per-seat fees just to keep half a year of history. Keeply stores unlimited version history on storage you already own, with team pricing that doesn't balloon with headcount.</p>
+      </div>
+      <p class="text-sm text-gray-500 italic">Source: Dropbox Help Center — version history retention per plan tier</p>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 3: COMPARISON TABLE                  -->
+  <!-- ============================================ -->
+  <section id="comparison" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Feature comparison</h2>
+      <p class="text-sm text-gray-600 mb-6">Based on public product information as of April 2026. Keeply rows reflect shipping v1.0.2.</p>
+      <div class="overflow-x-auto -mx-2">
+        <table class="min-w-[720px] w-full border-collapse text-sm bg-white rounded-xl shadow-sm">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Feature</th>
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Dropbox Business<br /><span class="text-xs font-normal text-gray-400">(Standard / Advanced)</span></th>
+              <th class="text-left px-4 py-3 font-semibold text-brand-700 border-b border-gray-200 bg-brand-50">Keeply<br /><span class="text-xs font-normal text-brand-600">(recommended)</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Pricing model</td>
+              <td class="px-4 py-3 text-gray-700">$15–$24 per seat per month</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Free forever · <strong>Team $25/mo flat (coming soon)</strong> · $599 Perpetual Founding Member (limited 500)</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Version history retention</td>
+              <td class="px-4 py-3 text-gray-700">30 days (Standard) / 180 days (Advanced)</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Unlimited — every save kept forever</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Per-seat fees</td>
+              <td class="px-4 py-3 text-gray-700">Yes — scales with team size</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">No — one flat team price</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Visual file diff</td>
+              <td class="px-4 py-3 text-gray-700">Preview-only (no side-by-side changes)</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Side-by-side diff for Word, Excel, PowerPoint, PDF, images</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Where files live</td>
+              <td class="px-4 py-3 text-gray-700">Dropbox cloud</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Your local disk, NAS, USB, Gitea, or GitHub</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Version save descriptions</td>
+              <td class="px-4 py-3 text-gray-700">None (auto-versions only)</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Add a note every time you save — find decisions months later</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Works offline</td>
+              <td class="px-4 py-3 text-gray-700">Sync only — no offline versioning</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Versions tracked locally, syncs when reconnected</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Large binary files</td>
+              <td class="px-4 py-3 text-gray-700">Counts against storage cap</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">38 formats + >10 MB detected silently; no manual LFS setup</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Per-project history view</td>
+              <td class="px-4 py-3 text-gray-700">Mixed with all of Dropbox</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Focused per-project timeline and file tree</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Vendor lock-in risk</td>
+              <td class="px-4 py-3 text-gray-700">Files in Dropbox's proprietary sync system</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Files stay as regular files you can open in Explorer/Finder</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 4: PAIN POINTS                       -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">Why people switch</h2>
+      <ul class="space-y-5">
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">The 30-day version wall.</strong> Standard Dropbox plans silently drop versions older than 30 days. You only realise when you need a file from six months ago and it's gone.</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">Pricing that scales with team size.</strong> A 6-person studio pays $120-$144 per month for the storage tier that still caps history at 180 days — $1,440-$1,728 per year.</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">No real version comparison.</strong> Dropbox shows you a preview of each version but can't diff Word, PowerPoint, or image changes side-by-side. You open both, squint, and guess.</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">Your files live on Dropbox's servers.</strong> Cancel the subscription and access stops. With Keeply, your files stay on your own NAS or drive — Keeply just handles the version tracking.</span>
+        </li>
+        
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 5: MIGRATION                         -->
+  <!-- ============================================ -->
+  <section id="migration" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">How to switch to Keeply</h2>
+      <ol class="space-y-6">
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">1</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Decide which folder to version</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Pick your most-edited project folder — your current deliverables, active client work, or shared design files. Keep Dropbox sync running during the transition; Keeply works alongside it.</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">2</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Install Keeply and point it at that folder</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Download Keeply, open the folder you picked, click Start protecting. Versioning begins immediately from the current state.</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">3</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Add a backup location (NAS / USB / GitHub)</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">In Keeply, add a backup target: your office NAS, a USB drive, or a GitHub repo. Keeply pushes every version there — no Dropbox dependency for history.</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">4</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Once you trust it, downgrade Dropbox to the free tier</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Use Dropbox just for real-time sync between devices (free tier does this). Keeply handles the actual version history you rely on, at a fraction of the cost.</p>
+          </div>
+        </li>
+        
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 6: FAQ                               -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">Frequently asked questions</h2>
+      <div class="space-y-3">
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Can I use Keeply and Dropbox at the same time?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">Yes. Dropbox keeps syncing files between devices in real time while Keeply tracks the version history locally. They don't conflict — Keeply's version data lives in a hidden folder inside your project, so Dropbox just syncs everything including the versioning. Most users keep both.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Does Keeply have a 30-day or 180-day retention limit?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">No. Every version you save is kept forever, because the history lives on storage you already own (your hard drive, NAS, USB, or a Git repo you control). There's no cloud subscription quietly deleting your history — retention is limited only by the disk space you have.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>What happens when my team grows? Does pricing change?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">No per-seat billing. The Team plan is a flat $25/month (coming soon) regardless of whether you have 3 people or 15. Free personal use stays free for each team member indefinitely. The Founding Member perpetual license ($599, limited to 500 seats) covers all future Team features for life with no subscription.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Can Keeply handle the Office files and PDFs I'm used to in Dropbox?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">Yes, and with richer comparison. Keeply renders side-by-side visual diffs for Word, Excel, PowerPoint, PDF, and images — showing exactly what text, numbers, or pixels changed. Dropbox can only show you separate previews of each version, leaving you to spot differences manually.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Do I lose Dropbox's sync if I switch to Keeply?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">No, because Keeply isn't a sync tool — it's a version tracker. If you like Dropbox's sync, keep using it (the free tier syncs unlimited files between your devices). Use Keeply on top for the version history, descriptions, and visual diffs Dropbox doesn't provide.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Where are my versions actually stored?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">On storage you already own: your local drive by default, plus any backup location you configure — office NAS (SMB), USB drive, self-hosted Gitea, or a private GitHub repo. Keeply runs no server that stores your project data. Cancel or stop using Keeply anytime; your files and history stay where they are.</div>
+        </details>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 7: FINAL CTA                         -->
+  <!-- ============================================ -->
+  <section class="bg-gradient-to-br from-brand-600 to-brand-700 px-6 py-16 md:py-20 text-center text-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to stop fighting your tools?</h2>
+      <p class="text-brand-100 max-w-xl mx-auto mb-8">Free download for Windows and macOS. Thirty-second setup. No account required — just install and open your project folder.</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/#download" class="bg-white text-brand-700 hover:bg-brand-50 font-bold px-8 py-4 rounded-full transition-colors">Free Download</a>
+        <a href="/buy.html" class="border-2 border-white text-white hover:bg-white/10 font-medium px-8 py-4 rounded-full transition-colors">See Founding Member pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (injected by components.js) -->
+  <div id="footer-root"></div>
+
+  <!-- Shared components + i18n + consent (spec 023/024) -->
+  <script src="../consent-api.js" defer integrity="sha384-AgMsIGCbo9mV0oP2ebvR5aNCzNPtSkIGXG5v29yY6A+vEktkTMAOZtlK0WiKSEUR" crossorigin="anonymous"></script>
+  <script src="../components.js" defer integrity="sha384-Y6/6phkijVlwQ9nqNUKQEGuFnHvvxA4NczoZsCHqQFkBGHLr/F3x7QPVgeDsAi6v" crossorigin="anonymous"></script>
+  <script src="../cookie-banner.js" defer integrity="sha384-aDwCVUUSIWi62pJZ7PqUXIOz/bAoGadk/KUkD4HatS2r4S1C5cMfasX/UGBBap+8" crossorigin="anonymous"></script>
+  <script src="../ga4-loader.js" defer integrity="sha384-jYO4ARZ+UCGY2v6qzLfw2yqhQ5tPFNYQia3QEljpr5okv2tjmBbXU6Pmzm9jTV8O" crossorigin="anonymous"></script>
+  <script src="../i18n-loader.js" defer integrity="sha384-4/86z3+CQS2W1y+6+aUviORi8uQCOPnZcHyVgXNDVOzuap9rm02i3fXp1e1zHRj5" crossorigin="anonymous"></script>
+
+</body>
+</html>

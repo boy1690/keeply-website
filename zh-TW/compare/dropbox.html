@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4F46E5" />
+  <!-- Content Security Policy (spec 019) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <title>Keeply vs Dropbox 版本歷史 — 永久保存、不按人頭收費</title>
+  <meta name="description" content="Dropbox 付費方案的版本歷史只留 30 天就刪除。Keeply 每次存檔永久保留，Team 方案每月 $25 美金不按人頭——檔案放在你的 NAS 上。" />
+
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://keeply.work/zh-TW/compare/dropbox.html" />
+  <link rel="alternate" hreflang="en" href="https://keeply.work/compare/dropbox.html" />
+  <link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/compare/dropbox.html" />
+  <link rel="alternate" hreflang="x-default" href="https://keeply.work/compare/dropbox.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="../../favicon.ico" sizes="32x32" />
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+  <link rel="manifest" href="../../site.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://keeply.work/zh-TW/compare/dropbox.html" />
+  <meta property="og:title" content="Keeply vs Dropbox 版本歷史 — 永久保存、不按人頭收費" />
+  <meta property="og:description" content="Dropbox 付費方案的版本歷史只留 30 天就刪除。Keeply 每次存檔永久保留，Team 方案每月 $25 美金不按人頭——檔案放在你的 NAS 上。" />
+  <meta property="og:image" content="https://keeply.work/og-image.png" />
+  <meta property="og:site_name" content="Keeply" />
+  <meta property="og:locale" content="zh_TW" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Keeply vs Dropbox 版本歷史 — 永久保存、不按人頭收費" />
+  <meta name="twitter:description" content="Dropbox 付費方案的版本歷史只留 30 天就刪除。Keeply 每次存檔永久保留，Team 方案每月 $25 美金不按人頭——檔案放在你的 NAS 上。" />
+  <meta name="twitter:image" content="https://keeply.work/og-image.png" />
+
+  <!-- Tailwind CSS (compiled) -->
+  <link rel="preload" href="../../style.css" as="style" />
+  <link rel="stylesheet" href="../../style.css" />
+
+  <!-- Hidden time for Article.datePublished (read by inject-schema.js) -->
+  <time datetime="2026-04-24" class="sr-only" aria-hidden="true">2026-04-24</time>  <!-- Schema.org JSON-LD (injected by _dev/inject-schema.js) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://keeply.work/#organization",
+        "name": "Keeply",
+        "url": "https://keeply.work",
+        "logo": "https://keeply.work/logo.svg",
+        "sameAs": [
+          "https://github.com/boy1690/keeply-releases"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://keeply.work/#website",
+        "url": "https://keeply.work/zh-TW/compare/dropbox.html",
+        "name": "Keeply",
+        "inLanguage": "zh-Hant",
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://keeply.work/zh-TW/compare/dropbox.html#article",
+        "headline": "Keeply vs Dropbox 版本歷史 — 永久保存、不按人頭收費",
+        "description": "Dropbox 付費方案的版本歷史只留 30 天就刪除。Keeply 每次存檔永久保留，Team 方案每月 $25 美金不按人頭——檔案放在你的 NAS 上。",
+        "datePublished": "2026-04-24",
+        "dateModified": "2026-04-24",
+        "inLanguage": "zh-Hant",
+        "author": {
+          "@id": "https://keeply.work/#organization"
+        },
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        },
+        "mainEntityOfPage": "https://keeply.work/zh-TW/compare/dropbox.html",
+        "image": "https://keeply.work/og-image.png"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://keeply.work/zh-TW/compare/dropbox.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "可以同時用 Keeply 和 Dropbox 嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以。Dropbox 負責裝置間即時同步，Keeply 負責版本歷史。兩者不衝突——Keeply 把版本資料放在你專案裡的隱藏資料夾，Dropbox 照常同步所有檔案包括版本資料。多數用戶兩個都用。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Keeply 有沒有 30 天或 180 天的保留上限？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "沒有。每次存檔的版本永久保留，因為歷史放在你已經擁有的儲存空間（硬碟、NAS、隨身碟，或你自己掌握的 Git repo）。沒有雲端訂閱默默刪你的歷史——只會被你自己的硬碟容量限制。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "團隊人數增加時定價會變嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不按人頭收費。Team 方案不論 3 人還是 15 人都是每月 $25 美金固定價（Coming Soon）。每位成員的個人免費版也無限期免費。$599 Founding Member 永久授權（限 500 套）一次買斷未來所有 Team 功能，不用訂閱。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Keeply 能處理我在 Dropbox 用的 Office 和 PDF 嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以，而且比對功能更強。Keeply 對 Word、Excel、PowerPoint、PDF、圖片都能並排顯示視覺比對——告訴你哪段文字、哪個數字、哪個像素變了。Dropbox 只能分別預覽兩個版本，差異要你自己找。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "換成 Keeply 會失去 Dropbox 的同步嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不會，因為 Keeply 不是同步工具——它是版本追蹤器。喜歡 Dropbox 同步就繼續用（免費版就能在裝置間無限同步）。Keeply 疊在上面提供 Dropbox 沒有的版本歷史、附註、視覺比對。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "我的版本實際存在哪裡？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "放在你已經擁有的儲存空間：預設在本機硬碟，再加上你設定的任何備份位置——辦公室 NAS（SMB）、隨身碟、自架 Gitea、或私有 GitHub repo。Keeply 自家伺服器完全不存你的專案資料。隨時不用 Keeply，檔案和歷史都留在原地。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+  <!-- Nav (injected by components.js) -->
+  <div id="nav-root"></div>
+
+  <!-- ============================================ -->
+  <!-- SECTION 1: HERO                              -->
+  <!-- ============================================ -->
+  <section class="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-gradient-to-b from-brand-50 to-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 bg-amber-100 border border-amber-200 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-6">
+        <span>📘 30 天版本上限是真的</span>
+      </div>
+      <!-- H1 -->
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-4">受夠 Dropbox <span class="text-brand-600">30 天後</span>就刪掉舊版本？</h1>
+      <!-- Sub -->
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-4 leading-relaxed">Dropbox 標準付費方案默默刪除 30 天以前的版本——還按人頭收費。<strong class="text-gray-900">Keeply 每次存檔永久保留</strong>，Team 方案不論團隊幾人都是一個月 $25 美金，你的檔案繼續留在自己的 NAS 上。</p>
+      <p class="text-sm text-gray-500 mb-8">個人永久免費 · Team $25/月 不按人頭（Coming Soon）。</p>
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/zh-TW/#download" class="bg-brand-600 hover:bg-brand-700 text-white font-medium px-8 py-3 rounded-full transition-colors">免費下載</a>
+        <a href="#comparison" class="border-2 border-brand-600 text-brand-600 hover:bg-brand-50 font-medium px-8 py-3 rounded-full transition-colors">看對比</a>
+        <a href="#migration" class="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 font-medium px-8 py-3 rounded-full transition-colors">查看遷移指南</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 2: WHAT HAPPENED                     -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">那個多數用戶發現時都太遲的版本歷史上限</h2>
+      <div class="bg-gray-50 border-l-4 border-brand-600 rounded-r-lg p-6 mb-4">
+        <p class="text-gray-800 leading-relaxed">Dropbox 的 Standard、Plus、Essentials 方案<strong>自動刪除 30 天以前的檔案版本</strong>。要延長到 180 天必須升級到 Advanced 方案，每人每月 $24 美金——仍然是有限的。6 人工作室一年花 $1,440 美金，只是為了保留半年的版本歷史。Keeply 用你已經擁有的儲存空間存放無限版本歷史，Team 定價也不會隨人數翻倍。</p>
+      </div>
+      <p class="text-sm text-gray-500 italic">資料來源：Dropbox Help Center — 各方案版本歷史保留期</p>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 3: COMPARISON TABLE                  -->
+  <!-- ============================================ -->
+  <section id="comparison" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">功能對比</h2>
+      <p class="text-sm text-gray-600 mb-6">資料依 2026 年 4 月公開產品資訊整理，Keeply 欄位反映出貨版 v1.0.2。</p>
+      <div class="overflow-x-auto -mx-2">
+        <table class="min-w-[720px] w-full border-collapse text-sm bg-white rounded-xl shadow-sm">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">功能</th>
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Dropbox Business<br /><span class="text-xs font-normal text-gray-400">（Standard / Advanced）</span></th>
+              <th class="text-left px-4 py-3 font-semibold text-brand-700 border-b border-gray-200 bg-brand-50">Keeply<br /><span class="text-xs font-normal text-brand-600">（推薦）</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">計費方式</td>
+              <td class="px-4 py-3 text-gray-700">每人每月 $15–$24 美金</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">永久免費 · <strong>Team $25/月 不按人頭（Coming Soon）</strong> · $599 永久授權 Founding Member（限 500 套）</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">版本歷史保留期</td>
+              <td class="px-4 py-3 text-gray-700">30 天（Standard）/ 180 天（Advanced）</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">無限——每次存檔永久保留</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">按人頭計費</td>
+              <td class="px-4 py-3 text-gray-700">是——人多就貴</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">否——團隊一個固定價</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">視覺化檔案比對</td>
+              <td class="px-4 py-3 text-gray-700">只能預覽（無並排差異）</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Word、Excel、PowerPoint、PDF、圖片皆可並排比對</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">檔案實際位置</td>
+              <td class="px-4 py-3 text-gray-700">Dropbox 雲端</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">本機、NAS、隨身碟、Gitea、GitHub</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">版本附註</td>
+              <td class="px-4 py-3 text-gray-700">無（只有自動版本）</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">每次存檔可加筆記——幾個月後找決定的理由很好用</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">離線運作</td>
+              <td class="px-4 py-3 text-gray-700">只能同步——離線無版本控制</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">版本在本機追蹤，連線後自動同步</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">大型二進位檔</td>
+              <td class="px-4 py-3 text-gray-700">計入儲存容量上限</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">38 種格式 + 超過 10 MB 自動偵測；無需手動 LFS 設定</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">單一專案的歷史檢視</td>
+              <td class="px-4 py-3 text-gray-700">跟整個 Dropbox 混在一起</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">以專案為單位的時間軸和檔案樹</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">廠商鎖定風險</td>
+              <td class="px-4 py-3 text-gray-700">檔案存在 Dropbox 專有系統裡</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">檔案維持為一般檔案，Finder / 檔案總管直接可開</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 4: PAIN POINTS                       -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">為什麼要換</h2>
+      <ul class="space-y-5">
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">30 天版本之牆。</strong> Dropbox 標準方案默默刪除 30 天以前的版本。通常是你想找 6 個月前的檔案時才發現它不見了。</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">隨團隊人數漲的定價。</strong> 6 人工作室每月付 $120-$144 美金，卻仍然只能保留 180 天歷史——一年 $1,440-$1,728 美金。</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">沒有真正的版本比對。</strong> Dropbox 讓你預覽每個版本，但沒辦法並排比對 Word、PowerPoint 或圖片改了哪裡。你只能兩個都開、瞇著眼睛猜。</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">檔案住在 Dropbox 伺服器上。</strong> 取消訂閱，存取也跟著停。Keeply 的檔案留在你自己的 NAS 或硬碟，Keeply 只負責版本追蹤。</span>
+        </li>
+        
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 5: MIGRATION                         -->
+  <!-- ============================================ -->
+  <section id="migration" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">怎麼換到 Keeply</h2>
+      <ol class="space-y-6">
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">1</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">選一個要管版本的資料夾</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">挑你最常改的專案資料夾——手上的交件、在做的客戶案、共享的設計檔。轉換期間 Dropbox 同步照樣跑，Keeply 跟它並存。</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">2</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">安裝 Keeply 並指向那個資料夾</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">下載 Keeply、打開你選的資料夾、點「開始保護」。從目前狀態開始管版本。</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">3</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">新增一個備份位置（NAS / 隨身碟 / GitHub）</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">在 Keeply 裡新增備份目標：公司 NAS、隨身碟、或 GitHub repo。每次存檔 Keeply 都會推送過去——版本歷史不再依賴 Dropbox。</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">4</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">相信 Keeply 之後，Dropbox 降到免費版</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Dropbox 免費版就夠做裝置間即時同步。實際的版本歷史靠 Keeply——花費大幅降低。</p>
+          </div>
+        </li>
+        
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 6: FAQ                               -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">常見問題</h2>
+      <div class="space-y-3">
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>可以同時用 Keeply 和 Dropbox 嗎？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">可以。Dropbox 負責裝置間即時同步，Keeply 負責版本歷史。兩者不衝突——Keeply 把版本資料放在你專案裡的隱藏資料夾，Dropbox 照常同步所有檔案包括版本資料。多數用戶兩個都用。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Keeply 有沒有 30 天或 180 天的保留上限？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">沒有。每次存檔的版本永久保留，因為歷史放在你已經擁有的儲存空間（硬碟、NAS、隨身碟，或你自己掌握的 Git repo）。沒有雲端訂閱默默刪你的歷史——只會被你自己的硬碟容量限制。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>團隊人數增加時定價會變嗎？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">不按人頭收費。Team 方案不論 3 人還是 15 人都是每月 $25 美金固定價（Coming Soon）。每位成員的個人免費版也無限期免費。$599 Founding Member 永久授權（限 500 套）一次買斷未來所有 Team 功能，不用訂閱。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Keeply 能處理我在 Dropbox 用的 Office 和 PDF 嗎？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">可以，而且比對功能更強。Keeply 對 Word、Excel、PowerPoint、PDF、圖片都能並排顯示視覺比對——告訴你哪段文字、哪個數字、哪個像素變了。Dropbox 只能分別預覽兩個版本，差異要你自己找。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>換成 Keeply 會失去 Dropbox 的同步嗎？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">不會，因為 Keeply 不是同步工具——它是版本追蹤器。喜歡 Dropbox 同步就繼續用（免費版就能在裝置間無限同步）。Keeply 疊在上面提供 Dropbox 沒有的版本歷史、附註、視覺比對。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>我的版本實際存在哪裡？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">放在你已經擁有的儲存空間：預設在本機硬碟，再加上你設定的任何備份位置——辦公室 NAS（SMB）、隨身碟、自架 Gitea、或私有 GitHub repo。Keeply 自家伺服器完全不存你的專案資料。隨時不用 Keeply，檔案和歷史都留在原地。</div>
+        </details>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 7: FINAL CTA                         -->
+  <!-- ============================================ -->
+  <section class="bg-gradient-to-br from-brand-600 to-brand-700 px-6 py-16 md:py-20 text-center text-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">準備好不再跟工具打架了嗎？</h2>
+      <p class="text-brand-100 max-w-xl mx-auto mb-8">免費下載支援 Windows 和 macOS。30 秒完成設定，不用帳號——安裝後打開你的專案資料夾就能用。</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/zh-TW/#download" class="bg-white text-brand-700 hover:bg-brand-50 font-bold px-8 py-4 rounded-full transition-colors">免費下載</a>
+        <a href="/zh-TW/buy.html" class="border-2 border-white text-white hover:bg-white/10 font-medium px-8 py-4 rounded-full transition-colors">查看 Founding Member 定價</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (injected by components.js) -->
+  <div id="footer-root"></div>
+
+  <!-- Shared components + i18n + consent (spec 023/024) -->
+  <script src="../../consent-api.js" defer></script>
+  <script src="../../components.js" defer></script>
+  <script src="../../cookie-banner.js" defer></script>
+  <script src="../../ga4-loader.js" defer></script>
+  <script src="../../i18n-loader.js" defer></script>
+
+</body>
+</html>

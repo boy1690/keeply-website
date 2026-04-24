@@ -1,0 +1,113 @@
+{
+  "order": ["filename-chaos", "dropbox", "google-drive", "time-machine", "snowtrack", "email-usb"],
+  "locales": {
+    "en": {
+      "meta": {
+        "title": "Compare Keeply — Alternatives to Dropbox, Time Machine, Snowtrack and more",
+        "description": "How does Keeply compare to Dropbox version history, Google Drive, Time Machine, Snowtrack, the v1/v2/FINAL file-naming chaos, and manual email/USB backups? Pick the tool you're already wrestling with and see what Keeply does differently."
+      },
+      "hero": {
+        "h1_html": "Compare <span class=\"text-brand-600\">Keeply</span>",
+        "sub": "How does Keeply stack up against tools you already use for managing project files?",
+        "sub2": "Pick the one you're currently wrestling with — we'll show you what Keeply does differently."
+      },
+      "cta": {
+        "what_is": "What is Keeply, exactly?",
+        "what_is_body": "A Windows and macOS desktop app that quietly tracks every save of your project files — Blender, PSD, Office docs, PDFs, images. No Git knowledge required; no per-seat licensing. Your files stay on your NAS (or local disk) — Keeply just handles the version history.",
+        "primary": "Free Download",
+        "secondary": "See pricing"
+      }
+    },
+    "zh-TW": {
+      "meta": {
+        "title": "Keeply 工具比較 — Dropbox、Time Machine、Snowtrack 等替代方案",
+        "description": "Keeply 跟 Dropbox 版本歷史、Google Drive、Time Machine、Snowtrack、v1/v2/FINAL 檔名混亂、email/USB 手動備份怎麼比？挑一個你正在用的工具，直接看 Keeply 做了什麼不同。"
+      },
+      "hero": {
+        "h1_html": "Keeply 跟其他工具<span class=\"text-brand-600\">怎麼比</span>？",
+        "sub": "你現在管專案檔案的方式，Keeply 能幫你省掉什麼？",
+        "sub2": "挑一個你正在用、但有點煩的工具——下面直接告訴你 Keeply 做了什麼不同。"
+      },
+      "cta": {
+        "what_is": "Keeply 到底是什麼？",
+        "what_is_body": "一款 Windows 與 macOS 桌面應用程式，默默記錄你每一次存檔——Blender、PSD、Office 文件、PDF、圖片通通可以。不需要學 Git、不按人頭收費。你的檔案照樣留在 NAS（或本機磁碟），Keeply 只負責管版本歷史。",
+        "primary": "免費下載",
+        "secondary": "查看定價"
+      }
+    }
+  },
+  "cards": {
+    "filename-chaos": {
+      "icon": "📁",
+      "bg": "bg-gray-100",
+      "en": {
+        "title": "vs the \"v1/v2/FINAL\" chaos",
+        "hook_html": "Stop renaming files <code class=\"bg-gray-100 px-1\">cover_FINAL_real_v3.psd</code> — let the tool track versions for you."
+      },
+      "zh-TW": {
+        "title": "vs「v1/v2/FINAL」檔名混亂",
+        "hook_html": "不用再取 <code class=\"bg-gray-100 px-1\">封面_FINAL_真的最終版_v3.psd</code>——讓工具幫你記住每一版。"
+      }
+    },
+    "dropbox": {
+      "icon": "📘",
+      "bg": "bg-blue-100",
+      "en": {
+        "title": "vs Dropbox version history",
+        "hook_html": "Dropbox's version history caps at 30 days. Keeply keeps every save forever — no subscription escalation."
+      },
+      "zh-TW": {
+        "title": "vs Dropbox 版本歷史",
+        "hook_html": "Dropbox 版本歷史只留 30 天，之後就消失。Keeply 每次儲存都永久保留，不用年年升級方案。"
+      }
+    },
+    "google-drive": {
+      "icon": "🟢",
+      "bg": "bg-green-100",
+      "en": {
+        "title": "vs Google Drive",
+        "hook_html": "Drive has version history buried under <em>File → Version history</em>. Keeply makes it the primary interface."
+      },
+      "zh-TW": {
+        "title": "vs Google Drive",
+        "hook_html": "Google Drive 的版本歷史藏在「檔案 → 版本記錄」選單裡。Keeply 把版本管理直接做成主介面。"
+      }
+    },
+    "time-machine": {
+      "icon": "🍎",
+      "bg": "bg-gray-100",
+      "en": {
+        "title": "vs Time Machine",
+        "hook_html": "macOS-only, OS-level backup, no per-project view. Keeply works on Windows too and tracks meaningful changes."
+      },
+      "zh-TW": {
+        "title": "vs Time Machine",
+        "hook_html": "macOS 限定、作業系統層級備份、看不到單一專案的變動。Keeply 跨 Windows + macOS，記錄有意義的每次改動。"
+      }
+    },
+    "snowtrack": {
+      "icon": "🎨",
+      "bg": "bg-purple-100",
+      "en": {
+        "title": "vs Snowtrack (now P4 One)",
+        "hook_html": "Perforce acquired Snowtrack in March 2025 and moved it to enterprise pricing. Keeply picks up where it left off."
+      },
+      "zh-TW": {
+        "title": "vs Snowtrack（現已成 P4 One）",
+        "hook_html": "Perforce 在 2025 年 3 月收購了 Snowtrack，改名 P4 One 並改為企業訂閱。Keeply 接手獨立創作者的需求。"
+      }
+    },
+    "email-usb": {
+      "icon": "📧",
+      "bg": "bg-amber-100",
+      "en": {
+        "title": "vs Email & USB backup",
+        "hook_html": "Emailing yourself files or copying to a USB every Friday — Keeply automates what you're already trying to do."
+      },
+      "zh-TW": {
+        "title": "vs Email 寄自己 / USB 備份",
+        "hook_html": "每週五把檔案寄給自己、複製到隨身碟——Keeply 自動做你現在手動做的事，還不容易忘。"
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "slug": "email-usb",
+  "bold_column": "free",
+  "published": "2026-04-24",
+  "locales": {
+    "en": {
+      "meta": {
+        "title": "Keeply vs the Friday-afternoon USB-and-email backup ritual",
+        "description": "Emailing files to yourself and copying to a USB every Friday works until it doesn't. USBs corrupt, attachments hit size limits, and you forgot last week. Keeply automates what the ritual was trying to do — free forever."
+      },
+      "hero": {
+        "badge": "📘 The weekly-email-yourself backup is a ritual, not a system",
+        "h1_html": "Did you <span class=\"text-brand-600\">email yourself the file</span> last Friday?",
+        "sub_html": "The classic solo-operator backup: copy files to a USB, email key documents to yourself, hope nothing fails between now and next Friday. It mostly works — until the USB corrupts, the attachment hits 25 MB, or the laptop dies on a Wednesday. <strong class=\"text-gray-900\">Keeply automates version history and backup</strong> so the ritual stops being your problem.",
+        "tagline": "Free forever for personal use · Team $25/mo flat (coming soon)."
+      },
+      "what_happened": {
+        "title": "A backup that depends on your memory every Friday is not a backup",
+        "body_html": "The email-plus-USB ritual works because you perform it. The week you skip it — stressful deadline, travel, forgot — is the week the laptop drops and the USB is unplugged in a drawer. Attachment size limits (<strong>25 MB on Gmail, 20 MB on Outlook</strong>) cut out exactly the design files and video drafts you most want backed up. USB drives physically fail or get left in coffee shops. And emailed copies have no version structure — five copies of \"final_proposal.docx\" in your Sent folder tell you nothing about which one is actually final. Keeply automates continuous per-save versioning and backup to targets you own, so you stop being the single point of failure.",
+        "source": "Source: Gmail / Outlook attachment limits; common solo-operator backup patterns"
+      },
+      "comparison": {
+        "target_header": "Email & USB backup",
+        "target_sub": "(the Friday-afternoon ritual)",
+        "rows": [
+          { "feature": "Cost", "target": "Free (in dollars; costly in time and reliability)", "keeply": "**Free forever** · Team $25/mo flat (coming soon) · $599 Perpetual Founding Member (limited 500)" },
+          { "feature": "Frequency", "target": "Weekly if you remember", "keeply": "Every save, automatically" },
+          { "feature": "File size cap", "target": "25 MB (Gmail) / 20 MB (Outlook)", "keeply": "No cap — 38 binary formats + >10 MB detected silently" },
+          { "feature": "Version structure", "target": "None — just duplicates in Sent", "keeply": "Real timeline with save notes and visual diff" },
+          { "feature": "Mid-week failure", "target": "Lose up to 5 days of work", "keeply": "Continuously versioned; lose at most the current save" },
+          { "feature": "USB reliability", "target": "Physical failure, lost, stolen, corrupted", "keeply": "Optional USB + NAS + GitHub/Gitea (up to 3 destinations)" },
+          { "feature": "\"What changed this week?\"", "target": "Compare dated copies manually", "keeply": "Side-by-side diff (Word, Excel, PPT, PDF, images)" },
+          { "feature": "Offline", "target": "USB yes, email no (needs send)", "keeply": "Versioning fully offline; backup syncs when online" },
+          { "feature": "Sharing with team", "target": "Forward emails, pass the USB", "keeply": "Shared NAS or GitHub/Gitea backup target" },
+          { "feature": "Discipline required", "target": "Yours, every week, forever", "keeply": "None — it runs on save" }
+        ]
+      },
+      "pain_points": [
+        { "title": "You have to remember, every single week.", "body": "The week you forget is the week you need it. Illness, travel, a big deadline — that's when rituals slip, and that's when laptops die. Relying on your own discipline forever is not a backup strategy." },
+        { "title": "Attachment size limits kick exactly the wrong files.", "body": "Gmail caps at 25 MB. Outlook at 20 MB. That's a typical PSD, a raw video draft, a big PDF with embeds — precisely the files you most want backed up. The ritual fails for the work that matters most." },
+        { "title": "USB drives fail in the ways you don't plan for.", "body": "Corrupted in a pocket, forgotten at a coffee shop, borrowed and never returned, dropped at the worst moment. A USB is a single point of failure with no redundancy — which is the opposite of what a backup should be." },
+        { "title": "Five copies in Sent is not version history.", "body": "You have final.docx, final_v2.docx, final_real.docx, final_sent.docx in your Sent folder. Which one did the client get? Which has the updated pricing? The emails don't know. You don't know either, three weeks later." }
+      ],
+      "migration": [
+        { "step": 1, "title": "Keep doing the Friday ritual for a week or two", "body": "Don't rip out your safety net before the new one is trusted. Let Keeply version in parallel while you keep emailing yourself and plugging in the USB. After two weeks of Keeply running, the ritual starts to feel redundant." },
+        { "step": 2, "title": "Install Keeply on your most important project folder", "body": "The one whose loss would be most painful — active client work, your business documents, your portfolio. Download Keeply, open the folder, click Start protecting. Every save from now on is on the timeline with a note." },
+        { "step": 3, "title": "Add a real backup target — not just a USB", "body": "In Keeply, add a NAS if you have one, a USB drive as a secondary, and a private GitHub or Gitea repo as the cloud piece (up to three total). Now every save goes to multiple places automatically. No single point of failure, no weekly ritual." },
+        { "step": 4, "title": "Retire the Friday afternoon email-yourself habit", "body": "Once you trust Keeply, stop sending yourself files and unplug the USB ritual. Keep the USB as an occasional extra belt-and-braces copy if you like, but it's no longer the system — it's just extra." }
+      ],
+      "faq": [
+        { "q": "Is emailing files to yourself really that unreliable?", "a": "It works until it doesn't, and the failure modes are nasty. Attachment caps (25 MB Gmail, 20 MB Outlook) silently block your biggest files. Providers sometimes flag repeated attachments as spam. Most importantly, it depends on you remembering every week for years. The ritual is fine as a belt-and-braces extra layer, but as a primary backup it fails exactly when you most need it." },
+        { "q": "Can Keeply replace my USB drive completely?", "a": "Yes, and it should, because a single USB is a single point of failure. Keeply lets you configure up to three backup destinations: local, USB, NAS, Gitea, or GitHub in any combination. A typical setup is local + NAS + private GitHub repo, giving you three independent copies automatically. If you still like carrying a USB as an occasional extra, fine — but it's no longer the only thing between you and a lost laptop." },
+        { "q": "What if I work mostly offline and can't sync to a cloud backup?", "a": "Keeply versions locally the moment you save, regardless of internet. Configured backup targets (NAS, GitHub, Gitea) sync opportunistically whenever you're online again. On a plane, at a remote client site, or during an ISP outage, versioning keeps working — you just temporarily have one copy instead of three. The moment you reconnect, the backups catch up on their own." },
+        { "q": "I have really big video files. Does Keeply handle those?", "a": "Yes. Keeply silently detects binary formats (38 file types including PSD, AI, Sketch, MP4, MOV, ZIP, and more) plus any file over 10 MB, and versions them efficiently using delta storage under the hood. You don't need to configure or flag anything — it just works. No 25 MB attachment cap, no manual LFS setup, no separate tool for large files." },
+        { "q": "Will this work for a solo operator with no IT support?", "a": "That's exactly who it's built for. There's no server to run, no command line, no Git knowledge required. Install, open a folder, click Start protecting. Optionally add a backup destination (your USB, your NAS, your own GitHub account) through a simple settings screen. The whole setup takes under ten minutes, and nothing after that requires weekly discipline." },
+        { "q": "Where does my version history actually live?", "a": "On your own storage. Keeply writes versions into a hidden folder inside your project on your local drive (Windows or macOS), plus up to three backup destinations you configure: office NAS (SMB), USB drive, self-hosted Gitea, or a private GitHub repo. Keeply runs no server that stores your project data. Stop using Keeply anytime; your files and history stay exactly where they are." }
+      ]
+    },
+    "zh-TW": {
+      "meta": {
+        "title": "Keeply vs 週五下午那個寄信給自己 + 隨身碟的備份儀式",
+        "description": "寄信給自己、每週五拷貝到隨身碟，行得通直到行不通。隨身碟會壞、附件有大小限制、你上週忘了。Keeply 自動化這個儀式本來想做的事——永久免費。"
+      },
+      "hero": {
+        "badge": "📘 每週寄信給自己是儀式，不是系統",
+        "h1_html": "上週五你有<span class=\"text-brand-600\">把檔案寄給自己</span>嗎？",
+        "sub_html": "經典的單人營運備份：複製檔案到隨身碟、把重要文件寄給自己、希望到下週五之間什麼都不要壞。大多時候有用——直到隨身碟壞掉、附件撞上 25 MB、筆電在週三掛了。<strong class=\"text-gray-900\">Keeply 自動化版本歷史和備份</strong>，這個儀式不再需要是你的問題。",
+        "tagline": "個人永久免費 · Team $25/月 不按人頭（Coming Soon）。"
+      },
+      "what_happened": {
+        "title": "每週五要靠你記得的備份，不是備份",
+        "body_html": "寄信 + 隨身碟的儀式能用，是因為你執行它。你跳過的那一週——壓期、出差、忘了——就是筆電摔下去、隨身碟還插在抽屜裡的那一週。附件大小限制（<strong>Gmail 25 MB、Outlook 20 MB</strong>）剛好過濾掉你最想備份的設計檔和影片草稿。隨身碟會實體壞掉、會遺忘在咖啡廳。寄出的信裡五份「final_proposal.docx」擺在寄件匣，也沒有任何版本結構告訴你哪一個才是真的 final。Keeply 自動化每次存檔的版本管理和備份到你擁有的位置——你不再是單點故障。",
+        "source": "資料來源：Gmail / Outlook 附件上限、常見單人營運備份模式"
+      },
+      "comparison": {
+        "target_header": "Email 與隨身碟備份",
+        "target_sub": "（週五下午的儀式）",
+        "rows": [
+          { "feature": "成本", "target": "免費（美金；時間和可靠度要付）", "keeply": "**永久免費** · Team $25/月 不按人頭（Coming Soon） · $599 永久授權 Founding Member（限 500 套）" },
+          { "feature": "頻率", "target": "每週——如果你記得", "keeply": "每次存檔，自動" },
+          { "feature": "檔案大小上限", "target": "25 MB（Gmail）/ 20 MB（Outlook）", "keeply": "無上限——38 種格式 + 超過 10 MB 自動偵測" },
+          { "feature": "版本結構", "target": "無——寄件匣裡一堆重複", "keeply": "真實時間軸，附存檔筆記和視覺比對" },
+          { "feature": "週中故障", "target": "可能丟 5 天工作", "keeply": "每次存檔都管版本；最多丟當下未存的" },
+          { "feature": "隨身碟可靠度", "target": "實體壞、遺失、被偷、資料毀損", "keeply": "可選擇隨身碟 + NAS + GitHub/Gitea（最多 3 個目的地）" },
+          { "feature": "「這週改了什麼？」", "target": "手動比對不同日期的副本", "keeply": "並排比對（Word、Excel、PPT、PDF、圖片）" },
+          { "feature": "離線", "target": "隨身碟可以，Email 不行（要送出）", "keeply": "版本管理完全離線可用；有網路時備份自動同步" },
+          { "feature": "跟團隊分享", "target": "轉寄 Email、傳遞隨身碟", "keeply": "共用 NAS 或 GitHub / Gitea 備份目標" },
+          { "feature": "需要紀律", "target": "你的，每週，永遠", "keeply": "不需要——存檔時自己跑" }
+        ]
+      },
+      "pain_points": [
+        { "title": "你每週都要記得。", "body": "你忘記的那週，就是你需要它的那週。生病、出差、重要交件——儀式就是在這些時候斷掉，筆電也偏偏挑這些時候掛。永遠靠自己的紀律不是備份策略。" },
+        { "title": "附件大小限制剛好卡住最重要的檔案。", "body": "Gmail 25 MB。Outlook 20 MB。一般 PSD、一段影片草稿、含嵌入物的大 PDF——就是這些。你最想備份的那些檔案，儀式剛好護不到。" },
+        { "title": "隨身碟用你沒想到的方式壞掉。", "body": "口袋裡被壓壞、忘在咖啡廳、借走沒還、在最糟糕的時候摔到。隨身碟是沒有冗餘的單點故障——跟備份該做的事剛好相反。" },
+        { "title": "寄件匣裡五個副本不是版本歷史。", "body": "寄件匣裡有 final.docx、final_v2.docx、final_real.docx、final_sent.docx。哪一個是客戶收到的？哪一個有更新的定價？Email 不知道。三週後你也不知道。" }
+      ],
+      "migration": [
+        { "step": 1, "title": "週五儀式再做一兩週", "body": "新的還沒被信任以前別先拆掉舊的保險。讓 Keeply 平行跑版本管理，你繼續寄信給自己、繼續插隨身碟。Keeply 跑兩週後，儀式會開始變得多餘。" },
+        { "step": 2, "title": "在最重要的專案資料夾裝 Keeply", "body": "丟掉會最痛的那個——手上的客戶工作、你的業務文件、你的作品集。下載 Keeply、打開資料夾、點「開始保護」。從此每次存檔都進時間軸，帶著筆記。" },
+        { "step": 3, "title": "設一個真正的備份目標——不只是隨身碟", "body": "在 Keeply 裡新增：有 NAS 就加 NAS、隨身碟當次要、私有 GitHub 或 Gitea repo 當雲端那塊（總共最多三個）。從此每次存檔自動進多個地方。沒有單點故障，沒有每週儀式。" },
+        { "step": 4, "title": "退役週五下午寄信給自己的習慣", "body": "信任 Keeply 之後，停止寄檔案給自己、拔掉隨身碟儀式。想留隨身碟當偶爾的額外保險也行，但它不再是系統——只是額外的。" }
+      ],
+      "faq": [
+        { "q": "寄信給自己真的那麼不可靠？", "a": "它有用，直到它沒用，而且失效模式都很糟。附件上限（Gmail 25 MB、Outlook 20 MB）默默擋掉你最大的檔案。信件服務商有時會把重複附件標成垃圾信。最重要的是，它靠你每週記得，一做做好幾年。儀式當成額外一層保險沒問題，但當主要備份，它剛好在你最需要的時候失效。" },
+        { "q": "Keeply 能完全取代我的隨身碟嗎？", "a": "可以，而且應該，因為單一隨身碟是單點故障。Keeply 允許你設定最多三個備份目的地：本機、隨身碟、NAS、Gitea、GitHub 任意組合。典型設定是本機 + NAS + 私有 GitHub repo，自動拿到三份獨立副本。想繼續帶隨身碟當偶爾的額外副本也行——它只是不再是你和弄丟筆電之間唯一的東西。" },
+        { "q": "如果我大多時候離線、沒辦法同步雲端備份怎麼辦？", "a": "Keeply 存檔瞬間就在本機管版本，不管有沒有網路。你設定的備份目標（NAS、GitHub、Gitea）在連上網的時候機會性同步。在飛機上、偏遠客戶端、ISP 掛的時候，版本管理照常跑——你只是暫時只有一份副本而不是三份。重新上線時備份會自己追上。" },
+        { "q": "我有超大的影片檔。Keeply 處理得了嗎？", "a": "可以。Keeply 會默默偵測二進位格式（38 種檔案類型，包括 PSD、AI、Sketch、MP4、MOV、ZIP 等等）加上任何超過 10 MB 的檔案，底層用差異儲存高效管版本。你不用設定、不用標記——就是會動。沒有 25 MB 附件上限、不用手動設 LFS、大檔案不用另外的工具。" },
+        { "q": "單人營運、沒有 IT 支援的情境能用嗎？", "a": "那正是它被打造的對象。沒有要跑的伺服器、沒有命令列、不需要 Git 知識。安裝、打開資料夾、點「開始保護」。想加備份目的地（你的隨身碟、你的 NAS、你自己的 GitHub 帳號）就在一個簡單的設定畫面裡設定。整個安裝花不到十分鐘，之後不需要每週的紀律。" },
+        { "q": "我的版本歷史實際存在哪裡？", "a": "放在你自己的儲存空間。Keeply 把版本寫進你專案裡的隱藏資料夾（Windows 或 macOS 本機磁碟），再加上你設定的最多三個備份目的地：辦公室 NAS（SMB）、隨身碟、自架 Gitea、或私有 GitHub repo。Keeply 自家伺服器完全不存你的專案資料。隨時停止使用，檔案和歷史都留在原地。" }
+      ]
+    }
+  }
+}

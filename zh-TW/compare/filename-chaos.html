@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4F46E5" />
+  <!-- Content Security Policy (spec 019) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <title>為什麼 cover_FINAL_真的最終版_v3.psd 是一種版本控制失敗</title>
+  <meta name="description" content="把檔案改成 v1、v2、FINAL、真的最終版，是多數人管版本的方式。它會默默失敗。Keeply 把檔名後綴換成真實時間軸——永久免費。" />
+
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://keeply.work/zh-TW/compare/filename-chaos.html" />
+  <link rel="alternate" hreflang="en" href="https://keeply.work/compare/filename-chaos.html" />
+  <link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/compare/filename-chaos.html" />
+  <link rel="alternate" hreflang="x-default" href="https://keeply.work/compare/filename-chaos.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="../../favicon.ico" sizes="32x32" />
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+  <link rel="manifest" href="../../site.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://keeply.work/zh-TW/compare/filename-chaos.html" />
+  <meta property="og:title" content="為什麼 cover_FINAL_真的最終版_v3.psd 是一種版本控制失敗" />
+  <meta property="og:description" content="把檔案改成 v1、v2、FINAL、真的最終版，是多數人管版本的方式。它會默默失敗。Keeply 把檔名後綴換成真實時間軸——永久免費。" />
+  <meta property="og:image" content="https://keeply.work/og-image.png" />
+  <meta property="og:site_name" content="Keeply" />
+  <meta property="og:locale" content="zh_TW" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="為什麼 cover_FINAL_真的最終版_v3.psd 是一種版本控制失敗" />
+  <meta name="twitter:description" content="把檔案改成 v1、v2、FINAL、真的最終版，是多數人管版本的方式。它會默默失敗。Keeply 把檔名後綴換成真實時間軸——永久免費。" />
+  <meta name="twitter:image" content="https://keeply.work/og-image.png" />
+
+  <!-- Tailwind CSS (compiled) -->
+  <link rel="preload" href="../../style.css" as="style" />
+  <link rel="stylesheet" href="../../style.css" />
+
+  <!-- Hidden time for Article.datePublished (read by inject-schema.js) -->
+  <time datetime="2026-04-24" class="sr-only" aria-hidden="true">2026-04-24</time>  <!-- Schema.org JSON-LD (injected by _dev/inject-schema.js) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://keeply.work/#organization",
+        "name": "Keeply",
+        "url": "https://keeply.work",
+        "logo": "https://keeply.work/logo.svg",
+        "sameAs": [
+          "https://github.com/boy1690/keeply-releases"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://keeply.work/#website",
+        "url": "https://keeply.work/zh-TW/compare/filename-chaos.html",
+        "name": "Keeply",
+        "inLanguage": "zh-Hant",
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://keeply.work/zh-TW/compare/filename-chaos.html#article",
+        "headline": "為什麼 cover_FINAL_真的最終版_v3.psd 是一種版本控制失敗",
+        "description": "把檔案改成 v1、v2、FINAL、真的最終版，是多數人管版本的方式。它會默默失敗。Keeply 把檔名後綴換成真實時間軸——永久免費。",
+        "datePublished": "2026-04-24",
+        "dateModified": "2026-04-24",
+        "inLanguage": "zh-Hant",
+        "author": {
+          "@id": "https://keeply.work/#organization"
+        },
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        },
+        "mainEntityOfPage": "https://keeply.work/zh-TW/compare/filename-chaos.html",
+        "image": "https://keeply.work/og-image.png"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://keeply.work/zh-TW/compare/filename-chaos.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "改檔名不就是免費的嗎？為什麼要付錢？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "個人版永久免費，所以錢不是問題——問題是檔名混亂是不是默默在吃你的時間。如果你曾花 20 分鐘找「對的版本」、寄錯檔案給客戶、或不小心蓋掉客戶核准的版本，答案就是有。美金成本是零；時間成本才是 Keeply 幫你省的。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "我要完全放棄我的命名規則嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不用，而且我們建議轉換的前幾週先保留。你舊的 cover_v1.psd 到 cover_真的最終版_修正版.psd 照樣留在原地。Keeply 從今天開始用一個乾淨檔名建新的時間軸。用時間軸用幾週後，你會發現自己不再伸手去加後綴——那個舊規則原本要解決的問題，Keeply 已經接手了。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "如果我真的想要多個平行變體，不是線性歷史呢？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "還是可以。cover.psd 和 cover_alt.psd 真的是不同變體時就當兩個真實檔案；Keeply 各自管它們的歷史。v1 / v2 / FINAL 這個模式是專門用來記同一個檔案的時間變化——那就是時間軸要取代的事情。平行變體是不同概念，它們還是可以有真實的檔名。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "我只是要快速存個小修正，會不會變慢？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不會。Keeply 接在存檔動作上，額外成本接近零。每次存檔只存差異，不是整個檔案複製，磁碟成本很小。唯一多的一件事是你寫一句短筆記——一句話——說明這次存檔在做什麼。這一句話，就是「cover_v17.psd」和一年後你能操控的時間軸之間的差別。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "非技術背景的同事看得懂嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "看得懂——這是我們設計時的硬性要求。完全不需要 Git 知識、不用命令列、沒有 branch 或 merge 的概念。你打開專案、你存檔、Keeply 管版本。介面上是你自己用自己的話寫的筆記所組成的時間軸。設計師、寫手、接案者、行政同事都不需要工程背景就能用。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "我的版本歷史實際存在哪裡？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "放在你自己的儲存空間。Keeply 把版本放在你專案資料夾裡的隱藏資料夾（Windows 或 macOS 本機磁碟），再加上你設定的最多三個備份位置：辦公室 NAS（SMB）、隨身碟、自架 Gitea、或私有 GitHub repo。Keeply 自家伺服器完全不存你的專案資料。檔案本身維持為一般檔案，檔案總管或 Finder 隨時可開。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+  <!-- Nav (injected by components.js) -->
+  <div id="nav-root"></div>
+
+  <!-- ============================================ -->
+  <!-- SECTION 1: HERO                              -->
+  <!-- ============================================ -->
+  <section class="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-gradient-to-b from-brand-50 to-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 bg-amber-100 border border-amber-200 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-6">
+        <span>📘 你的檔名就是你的版本控制。這就是問題。</span>
+      </div>
+      <!-- H1 -->
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-4"><span class="text-brand-600">cover_FINAL_真的最終版_v3.psd</span> 是症狀，不是命名風格</h1>
+      <!-- Sub -->
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-4 leading-relaxed">大家都是從 v1、v2、FINAL、真的最終版開始。它不用錢，而且幾乎能用。直到客戶說「給我週二那版」，你專案資料夾裡 30 個檔案靜靜地盯著你。<strong class="text-gray-900">Keeply 讓檔名維持穩定</strong>，用真實的時間軸加筆記管版本——v1 / v2 / FINAL 終於變成你能操控的東西。</p>
+      <p class="text-sm text-gray-500 mb-8">個人永久免費 · Team $25/月 不按人頭（Coming Soon）。</p>
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/zh-TW/#download" class="bg-brand-600 hover:bg-brand-700 text-white font-medium px-8 py-3 rounded-full transition-colors">免費下載</a>
+        <a href="#comparison" class="border-2 border-brand-600 text-brand-600 hover:bg-brand-50 font-medium px-8 py-3 rounded-full transition-colors">看對比</a>
+        <a href="#migration" class="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 font-medium px-8 py-3 rounded-full transition-colors">查看遷移指南</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 2: WHAT HAPPENED                     -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">人的記憶有極限，而檔名從來不是設計來裝這些東西的</h2>
+      <div class="bg-gray-50 border-l-4 border-brand-600 rounded-r-lg p-6 mb-4">
+        <p class="text-gray-800 leading-relaxed">典型專案資料夾會長出 <code>cover_v1.psd</code>、<code>cover_v2.psd</code>、<code>cover_FINAL.psd</code>、<code>cover_真的最終版.psd</code>、<code>cover_真的最終版_修正版.psd</code>。三週後你根本分不出哪個是客戶核准的、哪個定價對、哪個是週二寄出的那版。你把五個都開起來、瞇著眼、<strong>用猜的</strong>。有時候不小心蓋掉對的那個。專案結束時資料夾裡 30 個檔案，哪個是真的交件版？考古等級的工程。這不是你沒紀律——是檔名從來不是設計來承載版本含義的。</p>
+      </div>
+      <p class="text-sm text-gray-500 italic">資料來源：每個交過件的設計師、寫手、接案者</p>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 3: COMPARISON TABLE                  -->
+  <!-- ============================================ -->
+  <section id="comparison" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">功能對比</h2>
+      <p class="text-sm text-gray-600 mb-6">資料依 2026 年 4 月公開產品資訊整理，Keeply 欄位反映出貨版 v1.0.2。</p>
+      <div class="overflow-x-auto -mx-2">
+        <table class="min-w-[720px] w-full border-collapse text-sm bg-white rounded-xl shadow-sm">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">功能</th>
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">手動檔名管理<br /><span class="text-xs font-normal text-gray-400">（你現在在用的方式）</span></th>
+              <th class="text-left px-4 py-3 font-semibold text-brand-700 border-b border-gray-200 bg-brand-50">Keeply<br /><span class="text-xs font-normal text-brand-600">（推薦）</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">成本</td>
+              <td class="px-4 py-3 text-gray-700">免費（時間和心力要付）</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50"><strong>永久免費</strong> · Team $25/月 不按人頭（Coming Soon） · $599 永久授權 Founding Member（限 500 套）</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">版本怎麼區分</td>
+              <td class="px-4 py-3 text-gray-700">檔名後綴（v1、v2、FINAL、真的最終版）</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">一個檔名，下面接時間軸</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">「v3 跟 v4 差在哪？」</td>
+              <td class="px-4 py-3 text-gray-700">兩個都開、瞇眼、用猜的</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">並排視覺比對（Word、Excel、PPT、PDF、圖片）</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">「客戶核准的是哪一版？」</td>
+              <td class="px-4 py-3 text-gray-700">試著回想哪個檔名代表什麼</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">你當時寫的存檔筆記會告訴你</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">不小心蓋檔</td>
+              <td class="px-4 py-3 text-gray-700">經常發生——存檔蓋掉好的版本</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">每次存檔都保留；什麼都不會丟</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">專案結束時考古</td>
+              <td class="px-4 py-3 text-gray-700">30 個檔案，不知道哪個是交件版</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">時間軸直接顯示哪個是最終版本</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">「寄週二那版給我」</td>
+              <td class="px-4 py-3 text-gray-700">查檔案日期、對照 Email</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">時間軸按日期篩選，選版本、匯出</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">空間成本</td>
+              <td class="px-4 py-3 text-gray-700">每一個「版本」都是完整複製</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">只存差異——每次存檔空間成本極小</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">離線運作</td>
+              <td class="px-4 py-3 text-gray-700">可以（就是檔名）</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">可以——完全本機</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">交棒給團隊</td>
+              <td class="px-4 py-3 text-gray-700">希望對方能解讀你的命名規則</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">共用時間軸，每個人的筆記都在</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 4: PAIN POINTS                       -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">為什麼要換</h2>
+      <ul class="space-y-5">
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">你記不得 v3、v4、真的最終版到底差什麼。</strong> 三週後檔名只告訴你先後順序，不告訴你內容。打開來看——90% 長得一樣，差異藏得好好的。</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">不小心蓋檔是日常。</strong> 你本來想存成 cover_v5.psd。Cmd+S 按下去是習慣動作。現在 cover_FINAL.psd——客戶核准的那個——變成你沒做完的版本。回不去。</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">「寄週二那版給我。」</strong> 哪個週二？你查檔案修改日期、對照 Email 來回翻，還是在猜。你需要的資訊從來沒有以可用的形式存在過。</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">專案結束後的資料夾沒人看得懂。</strong> 最終交件資料夾 30 個檔案。你要交棒給新人、或半年後自己回來看，沒人知道真正的交件版是哪個。命名規則只在你當時的腦袋裡有意義。</span>
+        </li>
+        
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 5: MIGRATION                         -->
+  <!-- ============================================ -->
+  <section id="migration" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">怎麼換到 Keeply</h2>
+      <ol class="space-y-6">
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">1</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">挑檔名最亂的那個資料夾</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">通常是你最活躍的專案——最多「真的最終版_v2」的那個。別想一次整理所有資料夾；從痛最深的地方開始。</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">2</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">安裝 Keeply，指向那個資料夾</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">下載 Keeply、打開資料夾、點「開始保護」。Keeply 把目前狀態當作第一個版本開始追蹤。你不用改名、不用重整。</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">3</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">停止再加 _v2、_FINAL、_真的最終版 後綴</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">檔名維持乾淨——cover.psd，不是 cover_真的最終版.psd。每次存檔進時間軸，你寫一句短筆記（「客戶核准」、「加了定價框」、「週二交件」）。筆記才是檔名原本假裝要做的事。</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">4</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">要找舊版本時看時間軸，不要看檔案總管</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">下次要找「週二那版」或「加定價框之前」，打開 Keeply 時間軸，不要翻檔名。一點、視覺比對、還原或匯出。肌肉記憶一週就練起來。</p>
+          </div>
+        </li>
+        
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 6: FAQ                               -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">常見問題</h2>
+      <div class="space-y-3">
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>改檔名不就是免費的嗎？為什麼要付錢？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">個人版永久免費，所以錢不是問題——問題是檔名混亂是不是默默在吃你的時間。如果你曾花 20 分鐘找「對的版本」、寄錯檔案給客戶、或不小心蓋掉客戶核准的版本，答案就是有。美金成本是零；時間成本才是 Keeply 幫你省的。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>我要完全放棄我的命名規則嗎？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">不用，而且我們建議轉換的前幾週先保留。你舊的 cover_v1.psd 到 cover_真的最終版_修正版.psd 照樣留在原地。Keeply 從今天開始用一個乾淨檔名建新的時間軸。用時間軸用幾週後，你會發現自己不再伸手去加後綴——那個舊規則原本要解決的問題，Keeply 已經接手了。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>如果我真的想要多個平行變體，不是線性歷史呢？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">還是可以。cover.psd 和 cover_alt.psd 真的是不同變體時就當兩個真實檔案；Keeply 各自管它們的歷史。v1 / v2 / FINAL 這個模式是專門用來記同一個檔案的時間變化——那就是時間軸要取代的事情。平行變體是不同概念，它們還是可以有真實的檔名。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>我只是要快速存個小修正，會不會變慢？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">不會。Keeply 接在存檔動作上，額外成本接近零。每次存檔只存差異，不是整個檔案複製，磁碟成本很小。唯一多的一件事是你寫一句短筆記——一句話——說明這次存檔在做什麼。這一句話，就是「cover_v17.psd」和一年後你能操控的時間軸之間的差別。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>非技術背景的同事看得懂嗎？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">看得懂——這是我們設計時的硬性要求。完全不需要 Git 知識、不用命令列、沒有 branch 或 merge 的概念。你打開專案、你存檔、Keeply 管版本。介面上是你自己用自己的話寫的筆記所組成的時間軸。設計師、寫手、接案者、行政同事都不需要工程背景就能用。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>我的版本歷史實際存在哪裡？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">放在你自己的儲存空間。Keeply 把版本放在你專案資料夾裡的隱藏資料夾（Windows 或 macOS 本機磁碟），再加上你設定的最多三個備份位置：辦公室 NAS（SMB）、隨身碟、自架 Gitea、或私有 GitHub repo。Keeply 自家伺服器完全不存你的專案資料。檔案本身維持為一般檔案，檔案總管或 Finder 隨時可開。</div>
+        </details>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 7: FINAL CTA                         -->
+  <!-- ============================================ -->
+  <section class="bg-gradient-to-br from-brand-600 to-brand-700 px-6 py-16 md:py-20 text-center text-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">準備好不再跟工具打架了嗎？</h2>
+      <p class="text-brand-100 max-w-xl mx-auto mb-8">免費下載支援 Windows 和 macOS。30 秒完成設定，不用帳號——安裝後打開你的專案資料夾就能用。</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/zh-TW/#download" class="bg-white text-brand-700 hover:bg-brand-50 font-bold px-8 py-4 rounded-full transition-colors">免費下載</a>
+        <a href="/zh-TW/buy.html" class="border-2 border-white text-white hover:bg-white/10 font-medium px-8 py-4 rounded-full transition-colors">查看 Founding Member 定價</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (injected by components.js) -->
+  <div id="footer-root"></div>
+
+  <!-- Shared components + i18n + consent (spec 023/024) -->
+  <script src="../../consent-api.js" defer></script>
+  <script src="../../components.js" defer></script>
+  <script src="../../cookie-banner.js" defer></script>
+  <script src="../../ga4-loader.js" defer></script>
+  <script src="../../i18n-loader.js" defer></script>
+
+</body>
+</html>

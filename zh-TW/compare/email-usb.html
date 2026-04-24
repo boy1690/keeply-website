@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4F46E5" />
+  <!-- Content Security Policy (spec 019) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <title>Keeply vs 週五下午那個寄信給自己 + 隨身碟的備份儀式</title>
+  <meta name="description" content="寄信給自己、每週五拷貝到隨身碟，行得通直到行不通。隨身碟會壞、附件有大小限制、你上週忘了。Keeply 自動化這個儀式本來想做的事——永久免費。" />
+
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://keeply.work/zh-TW/compare/email-usb.html" />
+  <link rel="alternate" hreflang="en" href="https://keeply.work/compare/email-usb.html" />
+  <link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/compare/email-usb.html" />
+  <link rel="alternate" hreflang="x-default" href="https://keeply.work/compare/email-usb.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="../../favicon.ico" sizes="32x32" />
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+  <link rel="manifest" href="../../site.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://keeply.work/zh-TW/compare/email-usb.html" />
+  <meta property="og:title" content="Keeply vs 週五下午那個寄信給自己 + 隨身碟的備份儀式" />
+  <meta property="og:description" content="寄信給自己、每週五拷貝到隨身碟，行得通直到行不通。隨身碟會壞、附件有大小限制、你上週忘了。Keeply 自動化這個儀式本來想做的事——永久免費。" />
+  <meta property="og:image" content="https://keeply.work/og-image.png" />
+  <meta property="og:site_name" content="Keeply" />
+  <meta property="og:locale" content="zh_TW" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Keeply vs 週五下午那個寄信給自己 + 隨身碟的備份儀式" />
+  <meta name="twitter:description" content="寄信給自己、每週五拷貝到隨身碟，行得通直到行不通。隨身碟會壞、附件有大小限制、你上週忘了。Keeply 自動化這個儀式本來想做的事——永久免費。" />
+  <meta name="twitter:image" content="https://keeply.work/og-image.png" />
+
+  <!-- Tailwind CSS (compiled) -->
+  <link rel="preload" href="../../style.css" as="style" />
+  <link rel="stylesheet" href="../../style.css" />
+
+  <!-- Hidden time for Article.datePublished (read by inject-schema.js) -->
+  <time datetime="2026-04-24" class="sr-only" aria-hidden="true">2026-04-24</time>  <!-- Schema.org JSON-LD (injected by _dev/inject-schema.js) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://keeply.work/#organization",
+        "name": "Keeply",
+        "url": "https://keeply.work",
+        "logo": "https://keeply.work/logo.svg",
+        "sameAs": [
+          "https://github.com/boy1690/keeply-releases"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://keeply.work/#website",
+        "url": "https://keeply.work/zh-TW/compare/email-usb.html",
+        "name": "Keeply",
+        "inLanguage": "zh-Hant",
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://keeply.work/zh-TW/compare/email-usb.html#article",
+        "headline": "Keeply vs 週五下午那個寄信給自己 + 隨身碟的備份儀式",
+        "description": "寄信給自己、每週五拷貝到隨身碟，行得通直到行不通。隨身碟會壞、附件有大小限制、你上週忘了。Keeply 自動化這個儀式本來想做的事——永久免費。",
+        "datePublished": "2026-04-24",
+        "dateModified": "2026-04-24",
+        "inLanguage": "zh-Hant",
+        "author": {
+          "@id": "https://keeply.work/#organization"
+        },
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        },
+        "mainEntityOfPage": "https://keeply.work/zh-TW/compare/email-usb.html",
+        "image": "https://keeply.work/og-image.png"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://keeply.work/zh-TW/compare/email-usb.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "寄信給自己真的那麼不可靠？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "它有用，直到它沒用，而且失效模式都很糟。附件上限（Gmail 25 MB、Outlook 20 MB）默默擋掉你最大的檔案。信件服務商有時會把重複附件標成垃圾信。最重要的是，它靠你每週記得，一做做好幾年。儀式當成額外一層保險沒問題，但當主要備份，它剛好在你最需要的時候失效。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Keeply 能完全取代我的隨身碟嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以，而且應該，因為單一隨身碟是單點故障。Keeply 允許你設定最多三個備份目的地：本機、隨身碟、NAS、Gitea、GitHub 任意組合。典型設定是本機 + NAS + 私有 GitHub repo，自動拿到三份獨立副本。想繼續帶隨身碟當偶爾的額外副本也行——它只是不再是你和弄丟筆電之間唯一的東西。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "如果我大多時候離線、沒辦法同步雲端備份怎麼辦？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Keeply 存檔瞬間就在本機管版本，不管有沒有網路。你設定的備份目標（NAS、GitHub、Gitea）在連上網的時候機會性同步。在飛機上、偏遠客戶端、ISP 掛的時候，版本管理照常跑——你只是暫時只有一份副本而不是三份。重新上線時備份會自己追上。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "我有超大的影片檔。Keeply 處理得了嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以。Keeply 會默默偵測二進位格式（38 種檔案類型，包括 PSD、AI、Sketch、MP4、MOV、ZIP 等等）加上任何超過 10 MB 的檔案，底層用差異儲存高效管版本。你不用設定、不用標記——就是會動。沒有 25 MB 附件上限、不用手動設 LFS、大檔案不用另外的工具。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "單人營運、沒有 IT 支援的情境能用嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "那正是它被打造的對象。沒有要跑的伺服器、沒有命令列、不需要 Git 知識。安裝、打開資料夾、點「開始保護」。想加備份目的地（你的隨身碟、你的 NAS、你自己的 GitHub 帳號）就在一個簡單的設定畫面裡設定。整個安裝花不到十分鐘，之後不需要每週的紀律。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "我的版本歷史實際存在哪裡？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "放在你自己的儲存空間。Keeply 把版本寫進你專案裡的隱藏資料夾（Windows 或 macOS 本機磁碟），再加上你設定的最多三個備份目的地：辦公室 NAS（SMB）、隨身碟、自架 Gitea、或私有 GitHub repo。Keeply 自家伺服器完全不存你的專案資料。隨時停止使用，檔案和歷史都留在原地。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+  <!-- Nav (injected by components.js) -->
+  <div id="nav-root"></div>
+
+  <!-- ============================================ -->
+  <!-- SECTION 1: HERO                              -->
+  <!-- ============================================ -->
+  <section class="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-gradient-to-b from-brand-50 to-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 bg-amber-100 border border-amber-200 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-6">
+        <span>📘 每週寄信給自己是儀式，不是系統</span>
+      </div>
+      <!-- H1 -->
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-4">上週五你有<span class="text-brand-600">把檔案寄給自己</span>嗎？</h1>
+      <!-- Sub -->
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-4 leading-relaxed">經典的單人營運備份：複製檔案到隨身碟、把重要文件寄給自己、希望到下週五之間什麼都不要壞。大多時候有用——直到隨身碟壞掉、附件撞上 25 MB、筆電在週三掛了。<strong class="text-gray-900">Keeply 自動化版本歷史和備份</strong>，這個儀式不再需要是你的問題。</p>
+      <p class="text-sm text-gray-500 mb-8">個人永久免費 · Team $25/月 不按人頭（Coming Soon）。</p>
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/zh-TW/#download" class="bg-brand-600 hover:bg-brand-700 text-white font-medium px-8 py-3 rounded-full transition-colors">免費下載</a>
+        <a href="#comparison" class="border-2 border-brand-600 text-brand-600 hover:bg-brand-50 font-medium px-8 py-3 rounded-full transition-colors">看對比</a>
+        <a href="#migration" class="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 font-medium px-8 py-3 rounded-full transition-colors">查看遷移指南</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 2: WHAT HAPPENED                     -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">每週五要靠你記得的備份，不是備份</h2>
+      <div class="bg-gray-50 border-l-4 border-brand-600 rounded-r-lg p-6 mb-4">
+        <p class="text-gray-800 leading-relaxed">寄信 + 隨身碟的儀式能用，是因為你執行它。你跳過的那一週——壓期、出差、忘了——就是筆電摔下去、隨身碟還插在抽屜裡的那一週。附件大小限制（<strong>Gmail 25 MB、Outlook 20 MB</strong>）剛好過濾掉你最想備份的設計檔和影片草稿。隨身碟會實體壞掉、會遺忘在咖啡廳。寄出的信裡五份「final_proposal.docx」擺在寄件匣，也沒有任何版本結構告訴你哪一個才是真的 final。Keeply 自動化每次存檔的版本管理和備份到你擁有的位置——你不再是單點故障。</p>
+      </div>
+      <p class="text-sm text-gray-500 italic">資料來源：Gmail / Outlook 附件上限、常見單人營運備份模式</p>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 3: COMPARISON TABLE                  -->
+  <!-- ============================================ -->
+  <section id="comparison" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">功能對比</h2>
+      <p class="text-sm text-gray-600 mb-6">資料依 2026 年 4 月公開產品資訊整理，Keeply 欄位反映出貨版 v1.0.2。</p>
+      <div class="overflow-x-auto -mx-2">
+        <table class="min-w-[720px] w-full border-collapse text-sm bg-white rounded-xl shadow-sm">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">功能</th>
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Email 與隨身碟備份<br /><span class="text-xs font-normal text-gray-400">（週五下午的儀式）</span></th>
+              <th class="text-left px-4 py-3 font-semibold text-brand-700 border-b border-gray-200 bg-brand-50">Keeply<br /><span class="text-xs font-normal text-brand-600">（推薦）</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">成本</td>
+              <td class="px-4 py-3 text-gray-700">免費（美金；時間和可靠度要付）</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50"><strong>永久免費</strong> · Team $25/月 不按人頭（Coming Soon） · $599 永久授權 Founding Member（限 500 套）</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">頻率</td>
+              <td class="px-4 py-3 text-gray-700">每週——如果你記得</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">每次存檔，自動</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">檔案大小上限</td>
+              <td class="px-4 py-3 text-gray-700">25 MB（Gmail）/ 20 MB（Outlook）</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">無上限——38 種格式 + 超過 10 MB 自動偵測</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">版本結構</td>
+              <td class="px-4 py-3 text-gray-700">無——寄件匣裡一堆重複</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">真實時間軸，附存檔筆記和視覺比對</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">週中故障</td>
+              <td class="px-4 py-3 text-gray-700">可能丟 5 天工作</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">每次存檔都管版本；最多丟當下未存的</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">隨身碟可靠度</td>
+              <td class="px-4 py-3 text-gray-700">實體壞、遺失、被偷、資料毀損</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">可選擇隨身碟 + NAS + GitHub/Gitea（最多 3 個目的地）</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">「這週改了什麼？」</td>
+              <td class="px-4 py-3 text-gray-700">手動比對不同日期的副本</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">並排比對（Word、Excel、PPT、PDF、圖片）</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">離線</td>
+              <td class="px-4 py-3 text-gray-700">隨身碟可以，Email 不行（要送出）</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">版本管理完全離線可用；有網路時備份自動同步</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">跟團隊分享</td>
+              <td class="px-4 py-3 text-gray-700">轉寄 Email、傳遞隨身碟</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">共用 NAS 或 GitHub / Gitea 備份目標</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">需要紀律</td>
+              <td class="px-4 py-3 text-gray-700">你的，每週，永遠</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">不需要——存檔時自己跑</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 4: PAIN POINTS                       -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">為什麼要換</h2>
+      <ul class="space-y-5">
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">你每週都要記得。</strong> 你忘記的那週，就是你需要它的那週。生病、出差、重要交件——儀式就是在這些時候斷掉，筆電也偏偏挑這些時候掛。永遠靠自己的紀律不是備份策略。</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">附件大小限制剛好卡住最重要的檔案。</strong> Gmail 25 MB。Outlook 20 MB。一般 PSD、一段影片草稿、含嵌入物的大 PDF——就是這些。你最想備份的那些檔案，儀式剛好護不到。</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">隨身碟用你沒想到的方式壞掉。</strong> 口袋裡被壓壞、忘在咖啡廳、借走沒還、在最糟糕的時候摔到。隨身碟是沒有冗餘的單點故障——跟備份該做的事剛好相反。</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">寄件匣裡五個副本不是版本歷史。</strong> 寄件匣裡有 final.docx、final_v2.docx、final_real.docx、final_sent.docx。哪一個是客戶收到的？哪一個有更新的定價？Email 不知道。三週後你也不知道。</span>
+        </li>
+        
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 5: MIGRATION                         -->
+  <!-- ============================================ -->
+  <section id="migration" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">怎麼換到 Keeply</h2>
+      <ol class="space-y-6">
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">1</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">週五儀式再做一兩週</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">新的還沒被信任以前別先拆掉舊的保險。讓 Keeply 平行跑版本管理，你繼續寄信給自己、繼續插隨身碟。Keeply 跑兩週後，儀式會開始變得多餘。</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">2</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">在最重要的專案資料夾裝 Keeply</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">丟掉會最痛的那個——手上的客戶工作、你的業務文件、你的作品集。下載 Keeply、打開資料夾、點「開始保護」。從此每次存檔都進時間軸，帶著筆記。</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">3</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">設一個真正的備份目標——不只是隨身碟</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">在 Keeply 裡新增：有 NAS 就加 NAS、隨身碟當次要、私有 GitHub 或 Gitea repo 當雲端那塊（總共最多三個）。從此每次存檔自動進多個地方。沒有單點故障，沒有每週儀式。</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">4</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">退役週五下午寄信給自己的習慣</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">信任 Keeply 之後，停止寄檔案給自己、拔掉隨身碟儀式。想留隨身碟當偶爾的額外保險也行，但它不再是系統——只是額外的。</p>
+          </div>
+        </li>
+        
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 6: FAQ                               -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">常見問題</h2>
+      <div class="space-y-3">
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>寄信給自己真的那麼不可靠？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">它有用，直到它沒用，而且失效模式都很糟。附件上限（Gmail 25 MB、Outlook 20 MB）默默擋掉你最大的檔案。信件服務商有時會把重複附件標成垃圾信。最重要的是，它靠你每週記得，一做做好幾年。儀式當成額外一層保險沒問題，但當主要備份，它剛好在你最需要的時候失效。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Keeply 能完全取代我的隨身碟嗎？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">可以，而且應該，因為單一隨身碟是單點故障。Keeply 允許你設定最多三個備份目的地：本機、隨身碟、NAS、Gitea、GitHub 任意組合。典型設定是本機 + NAS + 私有 GitHub repo，自動拿到三份獨立副本。想繼續帶隨身碟當偶爾的額外副本也行——它只是不再是你和弄丟筆電之間唯一的東西。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>如果我大多時候離線、沒辦法同步雲端備份怎麼辦？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">Keeply 存檔瞬間就在本機管版本，不管有沒有網路。你設定的備份目標（NAS、GitHub、Gitea）在連上網的時候機會性同步。在飛機上、偏遠客戶端、ISP 掛的時候，版本管理照常跑——你只是暫時只有一份副本而不是三份。重新上線時備份會自己追上。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>我有超大的影片檔。Keeply 處理得了嗎？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">可以。Keeply 會默默偵測二進位格式（38 種檔案類型，包括 PSD、AI、Sketch、MP4、MOV、ZIP 等等）加上任何超過 10 MB 的檔案，底層用差異儲存高效管版本。你不用設定、不用標記——就是會動。沒有 25 MB 附件上限、不用手動設 LFS、大檔案不用另外的工具。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>單人營運、沒有 IT 支援的情境能用嗎？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">那正是它被打造的對象。沒有要跑的伺服器、沒有命令列、不需要 Git 知識。安裝、打開資料夾、點「開始保護」。想加備份目的地（你的隨身碟、你的 NAS、你自己的 GitHub 帳號）就在一個簡單的設定畫面裡設定。整個安裝花不到十分鐘，之後不需要每週的紀律。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>我的版本歷史實際存在哪裡？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">放在你自己的儲存空間。Keeply 把版本寫進你專案裡的隱藏資料夾（Windows 或 macOS 本機磁碟），再加上你設定的最多三個備份目的地：辦公室 NAS（SMB）、隨身碟、自架 Gitea、或私有 GitHub repo。Keeply 自家伺服器完全不存你的專案資料。隨時停止使用，檔案和歷史都留在原地。</div>
+        </details>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 7: FINAL CTA                         -->
+  <!-- ============================================ -->
+  <section class="bg-gradient-to-br from-brand-600 to-brand-700 px-6 py-16 md:py-20 text-center text-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">準備好不再跟工具打架了嗎？</h2>
+      <p class="text-brand-100 max-w-xl mx-auto mb-8">免費下載支援 Windows 和 macOS。30 秒完成設定，不用帳號——安裝後打開你的專案資料夾就能用。</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/zh-TW/#download" class="bg-white text-brand-700 hover:bg-brand-50 font-bold px-8 py-4 rounded-full transition-colors">免費下載</a>
+        <a href="/zh-TW/buy.html" class="border-2 border-white text-white hover:bg-white/10 font-medium px-8 py-4 rounded-full transition-colors">查看 Founding Member 定價</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (injected by components.js) -->
+  <div id="footer-root"></div>
+
+  <!-- Shared components + i18n + consent (spec 023/024) -->
+  <script src="../../consent-api.js" defer></script>
+  <script src="../../components.js" defer></script>
+  <script src="../../cookie-banner.js" defer></script>
+  <script src="../../ga4-loader.js" defer></script>
+  <script src="../../i18n-loader.js" defer></script>
+
+</body>
+</html>

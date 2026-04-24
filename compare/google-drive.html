@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4F46E5" />
+  <!-- Content Security Policy (spec 019) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <title>Keeply vs Google Drive Version History — Out of the menu, into the timeline</title>
+  <meta name="description" content="Google Drive hides version history three clicks deep, offers no visual diff, and caps retention. Keeply surfaces every save on a per-project timeline with side-by-side diffs — free forever." />
+
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://keeply.work/compare/google-drive.html" />
+  <link rel="alternate" hreflang="en" href="https://keeply.work/compare/google-drive.html" />
+  <link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/compare/google-drive.html" />
+  <link rel="alternate" hreflang="x-default" href="https://keeply.work/compare/google-drive.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="../favicon.ico" sizes="32x32" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://keeply.work/compare/google-drive.html" />
+  <meta property="og:title" content="Keeply vs Google Drive Version History — Out of the menu, into the timeline" />
+  <meta property="og:description" content="Google Drive hides version history three clicks deep, offers no visual diff, and caps retention. Keeply surfaces every save on a per-project timeline with side-by-side diffs — free forever." />
+  <meta property="og:image" content="https://keeply.work/og-image.png" />
+  <meta property="og:site_name" content="Keeply" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Keeply vs Google Drive Version History — Out of the menu, into the timeline" />
+  <meta name="twitter:description" content="Google Drive hides version history three clicks deep, offers no visual diff, and caps retention. Keeply surfaces every save on a per-project timeline with side-by-side diffs — free forever." />
+  <meta name="twitter:image" content="https://keeply.work/og-image.png" />
+
+  <!-- Tailwind CSS (compiled) -->
+  <link rel="preload" href="../style.css" as="style" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style.css" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
+
+  <!-- Hidden time for Article.datePublished (read by inject-schema.js) -->
+  <time datetime="2026-04-24" class="sr-only" aria-hidden="true">2026-04-24</time>  <!-- Schema.org JSON-LD (injected by _dev/inject-schema.js) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://keeply.work/#organization",
+        "name": "Keeply",
+        "url": "https://keeply.work",
+        "logo": "https://keeply.work/logo.svg",
+        "sameAs": [
+          "https://github.com/boy1690/keeply-releases"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://keeply.work/#website",
+        "url": "https://keeply.work/compare/google-drive.html",
+        "name": "Keeply",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://keeply.work/compare/google-drive.html#article",
+        "headline": "Keeply vs Google Drive Version History — Out of the menu, into the timeline",
+        "description": "Google Drive hides version history three clicks deep, offers no visual diff, and caps retention. Keeply surfaces every save on a per-project timeline with side-by-side diffs — free forever.",
+        "datePublished": "2026-04-24",
+        "dateModified": "2026-04-24",
+        "inLanguage": "en",
+        "author": {
+          "@id": "https://keeply.work/#organization"
+        },
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        },
+        "mainEntityOfPage": "https://keeply.work/compare/google-drive.html",
+        "image": "https://keeply.work/og-image.png"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://keeply.work/compare/google-drive.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I keep using Google Drive for sharing and still use Keeply?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, they solve different problems. Drive shares files with collaborators in real time; Keeply tracks the version history of your working files locally. Sync Drive to your desktop, point Keeply at the synced folder, and both run in parallel. Drive handles sharing, Keeply handles the history you actually need to retrieve."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Keeply work with Google Docs, Sheets, and Slides?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Only after you download them to real file formats (.docx, .xlsx, .pptx). Google's native Docs format lives only on Google's servers and Keeply never sees it. For documents you care about keeping long-term, File → Download regularly — Keeply then versions those files with full visual diff support."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is Drive's version history considered limited?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Three reasons. Retention defaults to 30 days or 100 revisions, whichever hits first. There is no side-by-side diff — only a preview of each picked version. And on non-Google file types the history is a list of opaque snapshots without descriptions. Keeply addresses all three: unlimited retention, real visual diff, and required save notes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I have to stop paying for Workspace?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not at all. Keep Workspace for email, shared drives, and Meet — those are worth the money. Use Keeply's free tier to replace the version history part specifically. You stop paying per seat for a version feature you outgrow in a month, without losing any of the collaboration value Workspace provides."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What about working offline?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Keeply works fully offline — versions get tracked to your local disk the instant you save, regardless of internet. When you reconnect, any configured backup locations (NAS, GitHub, Gitea) sync automatically. Drive, by contrast, needs a live connection to read or write version history, which breaks the moment you board a plane."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where are my versions actually stored?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "On your own storage. Keeply writes version data to a hidden folder inside your project on your local drive, then optionally mirrors it to any backup location you pick: office NAS (SMB), USB drive, self-hosted Gitea, or a private GitHub repo (up to three destinations). Keeply runs no server that holds your project data. Cancel anytime; files and history stay with you."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+  <!-- Nav (injected by components.js) -->
+  <div id="nav-root"></div>
+
+  <!-- ============================================ -->
+  <!-- SECTION 1: HERO                              -->
+  <!-- ============================================ -->
+  <section class="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-gradient-to-b from-brand-50 to-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 bg-amber-100 border border-amber-200 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-6">
+        <span>📘 Drive's version history is buried for a reason</span>
+      </div>
+      <!-- H1 -->
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-4">Tired of hunting for <span class="text-brand-600">File → Version history</span> every time you want a past version?</h1>
+      <!-- Sub -->
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-4 leading-relaxed">Google Drive keeps versions, but they're buried behind a menu, capped at 30 days or 100 revisions, and impossible to diff visually. <strong class="text-gray-900">Keeply puts every save on a project timeline</strong> with side-by-side visual diff — and it's free forever for personal use.</p>
+      <p class="text-sm text-gray-500 mb-8">Free forever for personal use · Team $25/mo flat (coming soon).</p>
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/#download" class="bg-brand-600 hover:bg-brand-700 text-white font-medium px-8 py-3 rounded-full transition-colors">Free Download</a>
+        <a href="#comparison" class="border-2 border-brand-600 text-brand-600 hover:bg-brand-50 font-medium px-8 py-3 rounded-full transition-colors">See comparison</a>
+        <a href="#migration" class="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 font-medium px-8 py-3 rounded-full transition-colors">Migration guide</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 2: WHAT HAPPENED                     -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Version history you have to dig for — and that quietly expires</h2>
+      <div class="bg-gray-50 border-l-4 border-brand-600 rounded-r-lg p-6 mb-4">
+        <p class="text-gray-800 leading-relaxed">Google Drive stores file revisions, but by default <strong>keeps them only for 30 days or 100 revisions, whichever comes first</strong>. You can manually mark individual revisions as "Keep forever" — if you remember, one file at a time. Opening that history means File → Version history → See version history, then clicking each revision to preview. There is no side-by-side diff — only a full-document preview of the picked version. For Workspace Business plans at $12–$18 per user per month, that is a lot of clicks and a lot of money for a feature most teams outgrow.</p>
+      </div>
+      <p class="text-sm text-gray-500 italic">Source: Google Drive Help — file versions and revision retention</p>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 3: COMPARISON TABLE                  -->
+  <!-- ============================================ -->
+  <section id="comparison" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Feature comparison</h2>
+      <p class="text-sm text-gray-600 mb-6">Based on public product information as of April 2026. Keeply rows reflect shipping v1.0.2.</p>
+      <div class="overflow-x-auto -mx-2">
+        <table class="min-w-[720px] w-full border-collapse text-sm bg-white rounded-xl shadow-sm">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Feature</th>
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Google Drive<br /><span class="text-xs font-normal text-gray-400">(Personal / Workspace)</span></th>
+              <th class="text-left px-4 py-3 font-semibold text-brand-700 border-b border-gray-200 bg-brand-50">Keeply<br /><span class="text-xs font-normal text-brand-600">(recommended)</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Pricing model</td>
+              <td class="px-4 py-3 text-gray-700">$12–$18/user/mo (Workspace Business)</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50"><strong>Free forever</strong> · Team $25/mo flat (coming soon) · $599 Perpetual Founding Member (limited 500)</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Where version history lives</td>
+              <td class="px-4 py-3 text-gray-700">Buried in File → Version history menu</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Front and centre on the project timeline</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Retention by default</td>
+              <td class="px-4 py-3 text-gray-700">30 days or 100 revisions (whichever first)</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Unlimited — every save kept forever</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Visual file diff</td>
+              <td class="px-4 py-3 text-gray-700">No — preview only, one version at a time</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Side-by-side diff for Word, Excel, PowerPoint, PDF, images</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Offline version tracking</td>
+              <td class="px-4 py-3 text-gray-700">No — requires online sync</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Versions tracked locally, works fully offline</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Where files live</td>
+              <td class="px-4 py-3 text-gray-700">Google's cloud</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Your local disk, NAS, USB, Gitea, or GitHub</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Non-Google file formats</td>
+              <td class="px-4 py-3 text-gray-700">Treated as opaque blobs in history</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">38 binary formats auto-detected, visual diff where it matters</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Version descriptions</td>
+              <td class="px-4 py-3 text-gray-700">None on standard files (Docs only)</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Add a note every time you save — any file type</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Per-project focus</td>
+              <td class="px-4 py-3 text-gray-700">Mixed into one giant My Drive</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">One timeline per project folder</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Vendor lock-in risk</td>
+              <td class="px-4 py-3 text-gray-700">Docs/Sheets/Slides are Google-proprietary</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Files stay as regular files you can open anywhere</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 4: PAIN POINTS                       -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">Why people switch</h2>
+      <ul class="space-y-5">
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">Version history hidden three clicks deep.</strong> File → Version history → See version history → click each revision to preview. You do this ten times a week and it never gets faster.</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">No way to compare what actually changed.</strong> Drive shows you the old version as a preview — but you can't see what text, numbers, or pixels differ from the current file. You open both, tab between them, and guess.</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">The 30-day / 100-revision cap.</strong> Drive quietly deletes old revisions unless you remember to mark each one "Keep forever." For active projects with daily edits, the cap hits within weeks.</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">Offline? No version history at all.</strong> Versioning lives in Google's cloud. If you're on a plane, at a client site without Wi-Fi, or Drive is having an outage, the history is simply unreachable.</span>
+        </li>
+        
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 5: MIGRATION                         -->
+  <!-- ============================================ -->
+  <section id="migration" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">How to switch to Keeply</h2>
+      <ol class="space-y-6">
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">1</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Sync your Drive folder to local</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Install Google Drive for Desktop and let it mirror your working folders locally. Keeply needs real files on your disk to track versions — not web-only documents.</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">2</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Install Keeply and open the local Drive folder</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Download Keeply, open the synced project folder, click Start protecting. Every save from now on goes on the timeline with a description you write.</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">3</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Export your Google Docs to real file formats</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">For Docs/Sheets/Slides you want to version properly, File → Download as .docx / .xlsx / .pptx. Keeply's visual diff works on these real files, not on Google's proprietary formats.</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">4</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Add a backup location you control</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">In Keeply, add a NAS, USB drive, or GitHub repo as a backup target. Now your version history lives on storage you own — Google outages and retention caps don't reach it.</p>
+          </div>
+        </li>
+        
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 6: FAQ                               -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">Frequently asked questions</h2>
+      <div class="space-y-3">
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Can I keep using Google Drive for sharing and still use Keeply?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">Yes, they solve different problems. Drive shares files with collaborators in real time; Keeply tracks the version history of your working files locally. Sync Drive to your desktop, point Keeply at the synced folder, and both run in parallel. Drive handles sharing, Keeply handles the history you actually need to retrieve.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Does Keeply work with Google Docs, Sheets, and Slides?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">Only after you download them to real file formats (.docx, .xlsx, .pptx). Google's native Docs format lives only on Google's servers and Keeply never sees it. For documents you care about keeping long-term, File → Download regularly — Keeply then versions those files with full visual diff support.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Why is Drive's version history considered limited?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">Three reasons. Retention defaults to 30 days or 100 revisions, whichever hits first. There is no side-by-side diff — only a preview of each picked version. And on non-Google file types the history is a list of opaque snapshots without descriptions. Keeply addresses all three: unlimited retention, real visual diff, and required save notes.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Do I have to stop paying for Workspace?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">Not at all. Keep Workspace for email, shared drives, and Meet — those are worth the money. Use Keeply's free tier to replace the version history part specifically. You stop paying per seat for a version feature you outgrow in a month, without losing any of the collaboration value Workspace provides.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>What about working offline?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">Keeply works fully offline — versions get tracked to your local disk the instant you save, regardless of internet. When you reconnect, any configured backup locations (NAS, GitHub, Gitea) sync automatically. Drive, by contrast, needs a live connection to read or write version history, which breaks the moment you board a plane.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Where are my versions actually stored?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">On your own storage. Keeply writes version data to a hidden folder inside your project on your local drive, then optionally mirrors it to any backup location you pick: office NAS (SMB), USB drive, self-hosted Gitea, or a private GitHub repo (up to three destinations). Keeply runs no server that holds your project data. Cancel anytime; files and history stay with you.</div>
+        </details>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 7: FINAL CTA                         -->
+  <!-- ============================================ -->
+  <section class="bg-gradient-to-br from-brand-600 to-brand-700 px-6 py-16 md:py-20 text-center text-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to stop fighting your tools?</h2>
+      <p class="text-brand-100 max-w-xl mx-auto mb-8">Free download for Windows and macOS. Thirty-second setup. No account required — just install and open your project folder.</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/#download" class="bg-white text-brand-700 hover:bg-brand-50 font-bold px-8 py-4 rounded-full transition-colors">Free Download</a>
+        <a href="/buy.html" class="border-2 border-white text-white hover:bg-white/10 font-medium px-8 py-4 rounded-full transition-colors">See Founding Member pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (injected by components.js) -->
+  <div id="footer-root"></div>
+
+  <!-- Shared components + i18n + consent (spec 023/024) -->
+  <script src="../consent-api.js" defer integrity="sha384-AgMsIGCbo9mV0oP2ebvR5aNCzNPtSkIGXG5v29yY6A+vEktkTMAOZtlK0WiKSEUR" crossorigin="anonymous"></script>
+  <script src="../components.js" defer integrity="sha384-Y6/6phkijVlwQ9nqNUKQEGuFnHvvxA4NczoZsCHqQFkBGHLr/F3x7QPVgeDsAi6v" crossorigin="anonymous"></script>
+  <script src="../cookie-banner.js" defer integrity="sha384-aDwCVUUSIWi62pJZ7PqUXIOz/bAoGadk/KUkD4HatS2r4S1C5cMfasX/UGBBap+8" crossorigin="anonymous"></script>
+  <script src="../ga4-loader.js" defer integrity="sha384-jYO4ARZ+UCGY2v6qzLfw2yqhQ5tPFNYQia3QEljpr5okv2tjmBbXU6Pmzm9jTV8O" crossorigin="anonymous"></script>
+  <script src="../i18n-loader.js" defer integrity="sha384-4/86z3+CQS2W1y+6+aUviORi8uQCOPnZcHyVgXNDVOzuap9rm02i3fXp1e1zHRj5" crossorigin="anonymous"></script>
+
+</body>
+</html>

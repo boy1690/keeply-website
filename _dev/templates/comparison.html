@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4F46E5" />
+  <!-- Content Security Policy (spec 019) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <title>{{META_TITLE}}</title>
+  <meta name="description" content="{{META_DESCRIPTION}}" />
+
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="{{CANONICAL_URL}}" />
+  <link rel="alternate" hreflang="en" href="{{HREF_EN}}" />
+  <link rel="alternate" hreflang="zh-TW" href="{{HREF_ZH_TW}}" />
+  <link rel="alternate" hreflang="x-default" href="{{HREF_EN}}" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="{{ASSET_PREFIX}}favicon.ico" sizes="32x32" />
+  <link rel="icon" href="{{ASSET_PREFIX}}favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="{{ASSET_PREFIX}}apple-touch-icon.png" />
+  <link rel="manifest" href="{{ASSET_PREFIX}}site.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{CANONICAL_URL}}" />
+  <meta property="og:title" content="{{META_TITLE}}" />
+  <meta property="og:description" content="{{META_DESCRIPTION}}" />
+  <meta property="og:image" content="https://keeply.work/og-image.png" />
+  <meta property="og:site_name" content="Keeply" />
+  <meta property="og:locale" content="{{OG_LOCALE}}" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{META_TITLE}}" />
+  <meta name="twitter:description" content="{{META_DESCRIPTION}}" />
+  <meta name="twitter:image" content="https://keeply.work/og-image.png" />
+
+  <!-- Tailwind CSS (compiled) -->
+  <link rel="preload" href="{{ASSET_PREFIX}}style.css" as="style" />
+  <link rel="stylesheet" href="{{ASSET_PREFIX}}style.css" />
+
+  <!-- Hidden time for Article.datePublished (read by inject-schema.js) -->
+  <time datetime="{{PUBLISHED}}" class="sr-only" aria-hidden="true">{{PUBLISHED}}</time>
+</head>
+
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+  <!-- Nav (injected by components.js) -->
+  <div id="nav-root"></div>
+
+  <!-- ============================================ -->
+  <!-- SECTION 1: HERO                              -->
+  <!-- ============================================ -->
+  <section class="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-gradient-to-b from-brand-50 to-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 bg-amber-100 border border-amber-200 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-6">
+        <span>{{HERO_BADGE}}</span>
+      </div>
+      <!-- H1 -->
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-4">{{HERO_H1_HTML}}</h1>
+      <!-- Sub -->
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-4 leading-relaxed">{{HERO_SUB_HTML}}</p>
+      <p class="text-sm text-gray-500 mb-8">{{HERO_TAGLINE}}</p>
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="{{CTA_HOME}}#download" class="bg-brand-600 hover:bg-brand-700 text-white font-medium px-8 py-3 rounded-full transition-colors">{{CTA_PRIMARY}}</a>
+        <a href="#comparison" class="border-2 border-brand-600 text-brand-600 hover:bg-brand-50 font-medium px-8 py-3 rounded-full transition-colors">{{CTA_SECONDARY}}</a>
+        <a href="#migration" class="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 font-medium px-8 py-3 rounded-full transition-colors">{{CTA_TERTIARY}}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 2: WHAT HAPPENED                     -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">{{WHAT_HAPPENED_TITLE}}</h2>
+      <div class="bg-gray-50 border-l-4 border-brand-600 rounded-r-lg p-6 mb-4">
+        <p class="text-gray-800 leading-relaxed">{{WHAT_HAPPENED_BODY_HTML}}</p>
+      </div>
+      <p class="text-sm text-gray-500 italic">{{WHAT_HAPPENED_SOURCE}}</p>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 3: COMPARISON TABLE                  -->
+  <!-- ============================================ -->
+  <section id="comparison" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">{{COMPARISON_TITLE}}</h2>
+      <p class="text-sm text-gray-600 mb-6">{{COMPARISON_SUB}}</p>
+      <div class="overflow-x-auto -mx-2">
+        <table class="min-w-[720px] w-full border-collapse text-sm bg-white rounded-xl shadow-sm">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">{{COL_FEATURE}}</th>
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">{{COL_TARGET_HEADER}}<br /><span class="text-xs font-normal text-gray-400">{{COL_TARGET_SUB}}</span></th>
+              <th class="text-left px-4 py-3 font-semibold text-brand-700 border-b border-gray-200 bg-brand-50">Keeply<br /><span class="text-xs font-normal text-brand-600">{{COL_KEEPLY_SUB}}</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#EACH comparison.rows}}
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">{{feature}}</td>
+              <td class="px-4 py-3 text-gray-700">{{target}}</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">{{keeply_html}}</td>
+            </tr>
+            {{/EACH}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 4: PAIN POINTS                       -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">{{PAIN_POINTS_TITLE}}</h2>
+      <ul class="space-y-5">
+        {{#EACH pain_points}}
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">{{title}}</strong> {{body}}</span>
+        </li>
+        {{/EACH}}
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 5: MIGRATION                         -->
+  <!-- ============================================ -->
+  <section id="migration" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">{{MIGRATION_TITLE}}</h2>
+      <ol class="space-y-6">
+        {{#EACH migration}}
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">{{step}}</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">{{title}}</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">{{body}}</p>
+          </div>
+        </li>
+        {{/EACH}}
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 6: FAQ                               -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">{{FAQ_TITLE}}</h2>
+      <div class="space-y-3">
+        {{#EACH faq}}
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>{{q}}</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">{{a}}</div>
+        </details>
+        {{/EACH}}
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 7: FINAL CTA                         -->
+  <!-- ============================================ -->
+  <section class="bg-gradient-to-br from-brand-600 to-brand-700 px-6 py-16 md:py-20 text-center text-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">{{FINAL_CTA_TITLE}}</h2>
+      <p class="text-brand-100 max-w-xl mx-auto mb-8">{{FINAL_CTA_BODY}}</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="{{CTA_HOME}}#download" class="bg-white text-brand-700 hover:bg-brand-50 font-bold px-8 py-4 rounded-full transition-colors">{{CTA_PRIMARY}}</a>
+        <a href="{{CTA_BUY_URL}}" class="border-2 border-white text-white hover:bg-white/10 font-medium px-8 py-4 rounded-full transition-colors">{{CTA_SEE_PRICING}}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (injected by components.js) -->
+  <div id="footer-root"></div>
+
+  <!-- Shared components + i18n + consent (spec 023/024) -->
+  <script src="{{ASSET_PREFIX}}consent-api.js" defer></script>
+  <script src="{{ASSET_PREFIX}}components.js" defer></script>
+  <script src="{{ASSET_PREFIX}}cookie-banner.js" defer></script>
+  <script src="{{ASSET_PREFIX}}ga4-loader.js" defer></script>
+  <script src="{{ASSET_PREFIX}}i18n-loader.js" defer></script>
+
+</body>
+</html>

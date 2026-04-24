@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4F46E5" />
+  <!-- Content Security Policy (spec 019) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <title>Keeply vs Time Machine — Per-project version history, not a whole-disk snapshot</title>
+  <meta name="description" content="Time Machine backs up your whole Mac. Keeply tracks version history per project with visual diffs, works on Windows + macOS, and restores a single file — not the whole folder." />
+
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://keeply.work/compare/time-machine.html" />
+  <link rel="alternate" hreflang="en" href="https://keeply.work/compare/time-machine.html" />
+  <link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/compare/time-machine.html" />
+  <link rel="alternate" hreflang="x-default" href="https://keeply.work/compare/time-machine.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="../favicon.ico" sizes="32x32" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://keeply.work/compare/time-machine.html" />
+  <meta property="og:title" content="Keeply vs Time Machine — Per-project version history, not a whole-disk snapshot" />
+  <meta property="og:description" content="Time Machine backs up your whole Mac. Keeply tracks version history per project with visual diffs, works on Windows + macOS, and restores a single file — not the whole folder." />
+  <meta property="og:image" content="https://keeply.work/og-image.png" />
+  <meta property="og:site_name" content="Keeply" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Keeply vs Time Machine — Per-project version history, not a whole-disk snapshot" />
+  <meta name="twitter:description" content="Time Machine backs up your whole Mac. Keeply tracks version history per project with visual diffs, works on Windows + macOS, and restores a single file — not the whole folder." />
+  <meta name="twitter:image" content="https://keeply.work/og-image.png" />
+
+  <!-- Tailwind CSS (compiled) -->
+  <link rel="preload" href="../style.css" as="style" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style.css" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
+
+  <!-- Hidden time for Article.datePublished (read by inject-schema.js) -->
+  <time datetime="2026-04-24" class="sr-only" aria-hidden="true">2026-04-24</time>  <!-- Schema.org JSON-LD (injected by _dev/inject-schema.js) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://keeply.work/#organization",
+        "name": "Keeply",
+        "url": "https://keeply.work",
+        "logo": "https://keeply.work/logo.svg",
+        "sameAs": [
+          "https://github.com/boy1690/keeply-releases"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://keeply.work/#website",
+        "url": "https://keeply.work/compare/time-machine.html",
+        "name": "Keeply",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://keeply.work/compare/time-machine.html#article",
+        "headline": "Keeply vs Time Machine — Per-project version history, not a whole-disk snapshot",
+        "description": "Time Machine backs up your whole Mac. Keeply tracks version history per project with visual diffs, works on Windows + macOS, and restores a single file — not the whole folder.",
+        "datePublished": "2026-04-24",
+        "dateModified": "2026-04-24",
+        "inLanguage": "en",
+        "author": {
+          "@id": "https://keeply.work/#organization"
+        },
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        },
+        "mainEntityOfPage": "https://keeply.work/compare/time-machine.html",
+        "image": "https://keeply.work/og-image.png"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://keeply.work/compare/time-machine.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I run Time Machine and Keeply at the same time?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, and it's what we recommend. Time Machine snapshots your whole Mac as disaster recovery. Keeply tracks per-project version history with notes and visual diffs. They solve different problems and don't conflict — Keeply's data lives inside your project folder, so Time Machine just backs it up along with everything else. Belt and braces."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Keeply work on Windows? My team is mixed.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Keeply runs on both Windows and macOS, so mixed teams share the same tool, the same version history, and the same backup targets. Linux is on the roadmap but not shipping yet. If your team has someone on Windows today, Time Machine alone can never cover them — Keeply does."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What about finding a specific older version of a single file?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This is the big difference. In Time Machine you open the starfield, guess which hourly snapshot had the right version, and restore. In Keeply you open the project, click the file, see every save on a timeline with your own notes, click the version you want, and it's there. Finding a month-old version takes seconds."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Keeply show me what changed between two versions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Keeply renders side-by-side visual diffs for Word, Excel, PowerPoint, PDF, and images — you see exactly what text, numbers, or pixels differ. Time Machine has no such feature; it treats every file as an opaque binary and leaves you to spot the changes yourself. For a design or document workflow, diff is what you actually need."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a separate external drive like Time Machine requires?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Keeply stores versions inside your project folder as small deltas, so overhead is a fraction of the full file size. You can add backup targets (USB, NAS, GitHub, Gitea) but they are optional, not required to get started. A Keeply project with months of history often fits on a USB stick where Time Machine would need a whole drive."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where are my versions actually stored?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "On your own storage by default: inside the project folder on your local drive, as delta-efficient data. You can add up to three backup locations: office NAS (SMB), USB drive, self-hosted Gitea, or a private GitHub repo. Keeply runs no server that stores your project data. Cancel or uninstall anytime; files and version history stay where they are."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+  <!-- Nav (injected by components.js) -->
+  <div id="nav-root"></div>
+
+  <!-- ============================================ -->
+  <!-- SECTION 1: HERO                              -->
+  <!-- ============================================ -->
+  <section class="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-gradient-to-b from-brand-50 to-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 bg-amber-100 border border-amber-200 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-6">
+        <span>📘 Time Machine is a backup tool, not a version tracker</span>
+      </div>
+      <!-- H1 -->
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-4">Time Machine saved you once. Can you find the <span class="text-brand-600">specific version of a specific file</span> from last Tuesday?</h1>
+      <!-- Sub -->
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-4 leading-relaxed">Time Machine snapshots your whole disk hourly — great for drive failure, painful when you want one older copy of one file. It's macOS-only, has no diff, and restore means reverting folders. <strong class="text-gray-900">Keeply tracks per-project version history</strong> with visual diff, per-file restore, on Windows and macOS.</p>
+      <p class="text-sm text-gray-500 mb-8">Free forever for personal use · Team $25/mo flat (coming soon).</p>
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/#download" class="bg-brand-600 hover:bg-brand-700 text-white font-medium px-8 py-3 rounded-full transition-colors">Free Download</a>
+        <a href="#comparison" class="border-2 border-brand-600 text-brand-600 hover:bg-brand-50 font-medium px-8 py-3 rounded-full transition-colors">See comparison</a>
+        <a href="#migration" class="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 font-medium px-8 py-3 rounded-full transition-colors">Migration guide</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 2: WHAT HAPPENED                     -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Great for disasters. Not great for everyday version retrieval.</h2>
+      <div class="bg-gray-50 border-l-4 border-brand-600 rounded-r-lg p-6 mb-4">
+        <p class="text-gray-800 leading-relaxed">Time Machine is brilliant at what it was designed for: if your Mac dies, you plug in the backup drive and restore everything. But it treats every file as an anonymous binary blob and snapshots the whole disk. To find one older version of one project file you open Time Machine, fly through the hourly starfield, guess which snapshot had the version you want, and <strong>restore the whole folder</strong> because per-file targeting is fragile. There is no diff — you have two copies of a PSD and no idea what differs. And if you're on Windows, none of this exists for you at all.</p>
+      </div>
+      <p class="text-sm text-gray-500 italic">Source: Apple Support — About Time Machine backups</p>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 3: COMPARISON TABLE                  -->
+  <!-- ============================================ -->
+  <section id="comparison" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Feature comparison</h2>
+      <p class="text-sm text-gray-600 mb-6">Based on public product information as of April 2026. Keeply rows reflect shipping v1.0.2.</p>
+      <div class="overflow-x-auto -mx-2">
+        <table class="min-w-[720px] w-full border-collapse text-sm bg-white rounded-xl shadow-sm">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Feature</th>
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Time Machine<br /><span class="text-xs font-normal text-gray-400">(macOS built-in)</span></th>
+              <th class="text-left px-4 py-3 font-semibold text-brand-700 border-b border-gray-200 bg-brand-50">Keeply<br /><span class="text-xs font-normal text-brand-600">(recommended)</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Pricing model</td>
+              <td class="px-4 py-3 text-gray-700">Free (built-in macOS)</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50"><strong>Free forever</strong> · Team $25/mo flat (coming soon) · $599 Perpetual Founding Member (limited 500)</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Platforms</td>
+              <td class="px-4 py-3 text-gray-700">macOS only — Windows teams can't use</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Windows + macOS</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Scope of tracking</td>
+              <td class="px-4 py-3 text-gray-700">Whole disk snapshot</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Per-project version history</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Visual file diff</td>
+              <td class="px-4 py-3 text-gray-700">No — binary blob only</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Side-by-side diff for Word, Excel, PowerPoint, PDF, images</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Finding a specific file's history</td>
+              <td class="px-4 py-3 text-gray-700">Fly through the starfield and guess</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Per-file timeline, one click to any past version</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Granular restore</td>
+              <td class="px-4 py-3 text-gray-700">Tends to revert whole folders</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Restore a single file at a single save</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Save descriptions</td>
+              <td class="px-4 py-3 text-gray-700">None — just hourly auto-snapshots</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Add a note every time you save</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Required storage</td>
+              <td class="px-4 py-3 text-gray-700">Second external drive, size of your Mac</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Tiny overhead (only changes stored), fits on a USB stick</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Team sharing</td>
+              <td class="px-4 py-3 text-gray-700">None — single Mac per backup</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Push version history to shared NAS, Gitea, or GitHub</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">Large binary files</td>
+              <td class="px-4 py-3 text-gray-700">Whole file duplicated every snapshot</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">38 formats + >10 MB detected silently; delta-efficient</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 4: PAIN POINTS                       -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">Why people switch</h2>
+      <ul class="space-y-5">
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">macOS only.</strong> The moment someone on your team uses Windows, Time Machine stops being a team answer. You need a workflow that covers both operating systems.</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">No semantic understanding.</strong> Time Machine treats a 200 MB PSD and a 2 KB text file the same: opaque blobs. It cannot tell you what changed between versions. You're looking at two identical-looking files side by side.</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">Restore is a whole-folder affair.</strong> Getting one older version of one file without clobbering everything else is genuinely fiddly. Many people give up and just copy the old folder somewhere, creating new chaos.</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">Buried among everything else on your disk.</strong> Time Machine backs up your Downloads folder, your system files, your entire Mac. Finding the right version of one client project's hero image means wading through all of that first.</span>
+        </li>
+        
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 5: MIGRATION                         -->
+  <!-- ============================================ -->
+  <section id="migration" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">How to switch to Keeply</h2>
+      <ol class="space-y-6">
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">1</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Keep Time Machine running — it's good at disaster recovery</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Don't turn it off. Time Machine is a legitimate safety net for "my whole Mac died" scenarios. Keeply is for everyday version retrieval, a different job.</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">2</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Install Keeply on each project folder that needs real history</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Pick your active client folders, your design files, the work you edit daily. Open each in Keeply and click Start protecting. Versioning begins from the current state with notes you write.</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">3</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Add a shared backup target for team members</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">For multi-person projects, configure a NAS, Gitea, or GitHub backup in Keeply. Now everyone's version history converges somewhere the whole team can reach — something Time Machine cannot do.</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">4</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Use Time Machine for disaster, Keeply for retrieval</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Hard drive fails? Time Machine. Client asks what the logo looked like three weeks ago? Keeply's timeline, one click, visual diff, done.</p>
+          </div>
+        </li>
+        
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 6: FAQ                               -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">Frequently asked questions</h2>
+      <div class="space-y-3">
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Can I run Time Machine and Keeply at the same time?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">Yes, and it's what we recommend. Time Machine snapshots your whole Mac as disaster recovery. Keeply tracks per-project version history with notes and visual diffs. They solve different problems and don't conflict — Keeply's data lives inside your project folder, so Time Machine just backs it up along with everything else. Belt and braces.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Does Keeply work on Windows? My team is mixed.</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">Yes. Keeply runs on both Windows and macOS, so mixed teams share the same tool, the same version history, and the same backup targets. Linux is on the roadmap but not shipping yet. If your team has someone on Windows today, Time Machine alone can never cover them — Keeply does.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>What about finding a specific older version of a single file?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">This is the big difference. In Time Machine you open the starfield, guess which hourly snapshot had the right version, and restore. In Keeply you open the project, click the file, see every save on a timeline with your own notes, click the version you want, and it's there. Finding a month-old version takes seconds.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Can Keeply show me what changed between two versions?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">Yes. Keeply renders side-by-side visual diffs for Word, Excel, PowerPoint, PDF, and images — you see exactly what text, numbers, or pixels differ. Time Machine has no such feature; it treats every file as an opaque binary and leaves you to spot the changes yourself. For a design or document workflow, diff is what you actually need.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Do I need a separate external drive like Time Machine requires?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">No. Keeply stores versions inside your project folder as small deltas, so overhead is a fraction of the full file size. You can add backup targets (USB, NAS, GitHub, Gitea) but they are optional, not required to get started. A Keeply project with months of history often fits on a USB stick where Time Machine would need a whole drive.</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Where are my versions actually stored?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">On your own storage by default: inside the project folder on your local drive, as delta-efficient data. You can add up to three backup locations: office NAS (SMB), USB drive, self-hosted Gitea, or a private GitHub repo. Keeply runs no server that stores your project data. Cancel or uninstall anytime; files and version history stay where they are.</div>
+        </details>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 7: FINAL CTA                         -->
+  <!-- ============================================ -->
+  <section class="bg-gradient-to-br from-brand-600 to-brand-700 px-6 py-16 md:py-20 text-center text-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to stop fighting your tools?</h2>
+      <p class="text-brand-100 max-w-xl mx-auto mb-8">Free download for Windows and macOS. Thirty-second setup. No account required — just install and open your project folder.</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/#download" class="bg-white text-brand-700 hover:bg-brand-50 font-bold px-8 py-4 rounded-full transition-colors">Free Download</a>
+        <a href="/buy.html" class="border-2 border-white text-white hover:bg-white/10 font-medium px-8 py-4 rounded-full transition-colors">See Founding Member pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (injected by components.js) -->
+  <div id="footer-root"></div>
+
+  <!-- Shared components + i18n + consent (spec 023/024) -->
+  <script src="../consent-api.js" defer integrity="sha384-AgMsIGCbo9mV0oP2ebvR5aNCzNPtSkIGXG5v29yY6A+vEktkTMAOZtlK0WiKSEUR" crossorigin="anonymous"></script>
+  <script src="../components.js" defer integrity="sha384-Y6/6phkijVlwQ9nqNUKQEGuFnHvvxA4NczoZsCHqQFkBGHLr/F3x7QPVgeDsAi6v" crossorigin="anonymous"></script>
+  <script src="../cookie-banner.js" defer integrity="sha384-aDwCVUUSIWi62pJZ7PqUXIOz/bAoGadk/KUkD4HatS2r4S1C5cMfasX/UGBBap+8" crossorigin="anonymous"></script>
+  <script src="../ga4-loader.js" defer integrity="sha384-jYO4ARZ+UCGY2v6qzLfw2yqhQ5tPFNYQia3QEljpr5okv2tjmBbXU6Pmzm9jTV8O" crossorigin="anonymous"></script>
+  <script src="../i18n-loader.js" defer integrity="sha384-4/86z3+CQS2W1y+6+aUviORi8uQCOPnZcHyVgXNDVOzuap9rm02i3fXp1e1zHRj5" crossorigin="anonymous"></script>
+
+</body>
+</html>

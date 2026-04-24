@@ -1,0 +1,113 @@
+{
+  "slug": "filename-chaos",
+  "bold_column": "free",
+  "published": "2026-04-24",
+  "locales": {
+    "en": {
+      "meta": {
+        "title": "Why cover_FINAL_real_FIXED.psd is a version tracking failure",
+        "description": "Renaming files v1, v2, FINAL, FINAL_real is how most people version work. It fails silently. Keeply replaces the filename suffix with a real timeline — free forever."
+      },
+      "hero": {
+        "badge": "📘 Your filenames are your version control system. That's the problem.",
+        "h1_html": "<span class=\"text-brand-600\">cover_FINAL_real_FIXED.psd</span> is a symptom, not a naming style",
+        "sub_html": "Everyone starts with v1, v2, FINAL, FINAL_real. It costs nothing and it almost works. Until the client asks for \"the one from Tuesday\" and the 30 files in your project folder stare back. <strong class=\"text-gray-900\">Keeply keeps the filename stable</strong> and tracks versions on a real timeline with notes — so v1/v2/FINAL becomes something you can actually navigate.",
+        "tagline": "Free forever for personal use · Team $25/mo flat (coming soon)."
+      },
+      "what_happened": {
+        "title": "Human memory has real limits, and filenames aren't designed to hold them",
+        "body_html": "A typical project folder ends up with files like <code>cover_v1.psd</code>, <code>cover_v2.psd</code>, <code>cover_FINAL.psd</code>, <code>cover_FINAL_real.psd</code>, <code>cover_FINAL_real_FIXED.psd</code>. Three weeks later you cannot tell which one the client approved, which has the correct pricing, or which was sent on Tuesday. You open all five, squint, and <strong>guess</strong>. Sometimes you accidentally overwrite the good one. End-of-project, the folder has 30 files, and identifying the actual delivered version is an archaeology project. This is not a discipline problem — it's that filenames were never designed to carry version meaning.",
+        "source": "Source: every designer, writer, and contractor who has ever shipped work"
+      },
+      "comparison": {
+        "target_header": "Manual file naming",
+        "target_sub": "(your current approach)",
+        "rows": [
+          { "feature": "Cost", "target": "Free (cost in time and sanity)", "keeply": "**Free forever** · Team $25/mo flat (coming soon) · $599 Perpetual Founding Member (limited 500)" },
+          { "feature": "How versions are distinguished", "target": "Filename suffixes (v1, v2, FINAL, FINAL_real)", "keeply": "One filename, timeline underneath" },
+          { "feature": "\"What changed between v3 and v4?\"", "target": "Open both, squint, guess", "keeply": "Side-by-side visual diff (Word, Excel, PPT, PDF, images)" },
+          { "feature": "\"Which one did the client approve?\"", "target": "Try to remember which filename meant what", "keeply": "The save note you wrote says it" },
+          { "feature": "Accidental overwrites", "target": "Frequent — Save over the good version", "keeply": "Every save is kept; nothing is lost" },
+          { "feature": "End-of-project archaeology", "target": "30 files, no idea which was shipped", "keeply": "Timeline shows exactly which version was final" },
+          { "feature": "\"Send me the Tuesday version\"", "target": "Check file dates, cross-reference emails", "keeply": "Filter timeline by date, pick version, export" },
+          { "feature": "Space cost", "target": "Full duplicate per \"version\"", "keeply": "Delta-efficient — tiny overhead per save" },
+          { "feature": "Works offline", "target": "Yes (it's just filenames)", "keeply": "Yes — fully local" },
+          { "feature": "Team handoff", "target": "Hope they can decode your naming scheme", "keeply": "Shared timeline with everyone's notes" }
+        ]
+      },
+      "pain_points": [
+        { "title": "You can't remember what v3 vs v4 vs FINAL_real actually contains.", "body": "Three weeks later, the filename tells you the order but not the meaning. You open them to check — and they look 90% identical, so the differences hide in plain sight." },
+        { "title": "Accidental overwrites are routine.", "body": "You meant to save as cover_v5.psd. You hit Cmd+S out of habit. Now cover_FINAL.psd — the one the client approved — has your unfinished changes, and there is no going back." },
+        { "title": "\"Send me the version from Tuesday.\"", "body": "Which Tuesday? You check file modification dates and cross-reference emails, and you're still guessing. The information you need never existed in a usable form." },
+        { "title": "End-of-project folders are unreadable.", "body": "30 files in the final delivery folder. You're handing off to someone new, or revisiting in six months, and nobody can tell what the actual deliverable was. The naming scheme made sense only in your head, at the time." }
+      ],
+      "migration": [
+        { "step": 1, "title": "Pick the folder where the filename chaos is worst", "body": "Usually your most active project — the one with the most FINAL_real_v2s. Don't try to fix every folder at once; start where the pain is biggest." },
+        { "step": 2, "title": "Install Keeply and point it at that folder", "body": "Download Keeply, open the folder, click Start protecting. Keeply begins tracking the current state as the first version. You don't have to rename or reorganise anything." },
+        { "step": 3, "title": "Stop creating _v2, _FINAL, _real suffixes", "body": "Keep one clean filename — cover.psd, not cover_FINAL_real.psd. Every save goes on the timeline with a short note you write (\"client approved\", \"added pricing box\", \"Tuesday delivery\"). The note is what the filename was pretending to be." },
+        { "step": 4, "title": "Use the timeline, not File Explorer, when you need an old version", "body": "Next time you need \"the one from Tuesday\" or \"before I added the pricing box,\" open Keeply's timeline instead of digging through filenames. One click, visual diff, restore or export. The muscle memory takes a week." }
+      ],
+      "faq": [
+        { "q": "Isn't renaming files basically free? Why would I pay for this?", "a": "The Personal tier is free forever, so cost is not the question — the question is whether filename chaos quietly costs you time. If you have ever spent 20 minutes finding \"the right version,\" emailed the wrong file to a client, or accidentally overwritten an approved version, the answer is yes. The dollar cost is zero; the time cost is what Keeply removes." },
+        { "q": "Do I have to give up my naming scheme completely?", "a": "No, and we'd suggest keeping it for a few weeks of transition. Your old cover_v1.psd through cover_FINAL_real_FIXED.psd files stay exactly where they are. Keeply starts a fresh timeline from today on one clean filename. After a few weeks of using the timeline you'll find you stop reaching for the old scheme — it was solving a problem Keeply now handles." },
+        { "q": "What if I actually want multiple parallel variants, not a linear history?", "a": "You can still have them. Keep cover.psd and cover_alt.psd as two real files when they're genuinely different variants; Keeply tracks history for each independently. The v1/v2/FINAL pattern is specifically for capturing change over time on the same file — that's what the timeline replaces. Parallel variants are a different concept and still have real filenames." },
+        { "q": "Will this slow me down when I'm just saving a quick fix?", "a": "No. Keeply hooks into Save with near-zero overhead. Each save is a small delta, not a full file copy, so disk cost is minimal. The one small addition is a short note you write — a sentence — to explain what the save was about. That single sentence is the difference between \"cover_v17.psd\" and a timeline you can actually navigate a year later." },
+        { "q": "Will non-technical teammates understand this?", "a": "Yes — that was a hard design constraint. There is no Git knowledge required, no command line, no branch or merge concepts. You open a project, you save files, Keeply tracks versions. The UI shows a timeline with notes you wrote in your own words. Designers, writers, contractors, and admin staff all use it without needing any developer background." },
+        { "q": "Where is my version history actually stored?", "a": "On your own storage. Keeply keeps versions inside a hidden folder within your project on your local drive (Windows or macOS), plus up to three backup locations you configure: office NAS (SMB), USB drive, self-hosted Gitea, or a private GitHub repo. Keeply runs no server that stores your project data. Your files remain regular files you can open in Explorer or Finder at any time." }
+      ]
+    },
+    "zh-TW": {
+      "meta": {
+        "title": "為什麼 cover_FINAL_真的最終版_v3.psd 是一種版本控制失敗",
+        "description": "把檔案改成 v1、v2、FINAL、真的最終版，是多數人管版本的方式。它會默默失敗。Keeply 把檔名後綴換成真實時間軸——永久免費。"
+      },
+      "hero": {
+        "badge": "📘 你的檔名就是你的版本控制。這就是問題。",
+        "h1_html": "<span class=\"text-brand-600\">cover_FINAL_真的最終版_v3.psd</span> 是症狀，不是命名風格",
+        "sub_html": "大家都是從 v1、v2、FINAL、真的最終版開始。它不用錢，而且幾乎能用。直到客戶說「給我週二那版」，你專案資料夾裡 30 個檔案靜靜地盯著你。<strong class=\"text-gray-900\">Keeply 讓檔名維持穩定</strong>，用真實的時間軸加筆記管版本——v1 / v2 / FINAL 終於變成你能操控的東西。",
+        "tagline": "個人永久免費 · Team $25/月 不按人頭（Coming Soon）。"
+      },
+      "what_happened": {
+        "title": "人的記憶有極限，而檔名從來不是設計來裝這些東西的",
+        "body_html": "典型專案資料夾會長出 <code>cover_v1.psd</code>、<code>cover_v2.psd</code>、<code>cover_FINAL.psd</code>、<code>cover_真的最終版.psd</code>、<code>cover_真的最終版_修正版.psd</code>。三週後你根本分不出哪個是客戶核准的、哪個定價對、哪個是週二寄出的那版。你把五個都開起來、瞇著眼、<strong>用猜的</strong>。有時候不小心蓋掉對的那個。專案結束時資料夾裡 30 個檔案，哪個是真的交件版？考古等級的工程。這不是你沒紀律——是檔名從來不是設計來承載版本含義的。",
+        "source": "資料來源：每個交過件的設計師、寫手、接案者"
+      },
+      "comparison": {
+        "target_header": "手動檔名管理",
+        "target_sub": "（你現在在用的方式）",
+        "rows": [
+          { "feature": "成本", "target": "免費（時間和心力要付）", "keeply": "**永久免費** · Team $25/月 不按人頭（Coming Soon） · $599 永久授權 Founding Member（限 500 套）" },
+          { "feature": "版本怎麼區分", "target": "檔名後綴（v1、v2、FINAL、真的最終版）", "keeply": "一個檔名，下面接時間軸" },
+          { "feature": "「v3 跟 v4 差在哪？」", "target": "兩個都開、瞇眼、用猜的", "keeply": "並排視覺比對（Word、Excel、PPT、PDF、圖片）" },
+          { "feature": "「客戶核准的是哪一版？」", "target": "試著回想哪個檔名代表什麼", "keeply": "你當時寫的存檔筆記會告訴你" },
+          { "feature": "不小心蓋檔", "target": "經常發生——存檔蓋掉好的版本", "keeply": "每次存檔都保留；什麼都不會丟" },
+          { "feature": "專案結束時考古", "target": "30 個檔案，不知道哪個是交件版", "keeply": "時間軸直接顯示哪個是最終版本" },
+          { "feature": "「寄週二那版給我」", "target": "查檔案日期、對照 Email", "keeply": "時間軸按日期篩選，選版本、匯出" },
+          { "feature": "空間成本", "target": "每一個「版本」都是完整複製", "keeply": "只存差異——每次存檔空間成本極小" },
+          { "feature": "離線運作", "target": "可以（就是檔名）", "keeply": "可以——完全本機" },
+          { "feature": "交棒給團隊", "target": "希望對方能解讀你的命名規則", "keeply": "共用時間軸，每個人的筆記都在" }
+        ]
+      },
+      "pain_points": [
+        { "title": "你記不得 v3、v4、真的最終版到底差什麼。", "body": "三週後檔名只告訴你先後順序，不告訴你內容。打開來看——90% 長得一樣，差異藏得好好的。" },
+        { "title": "不小心蓋檔是日常。", "body": "你本來想存成 cover_v5.psd。Cmd+S 按下去是習慣動作。現在 cover_FINAL.psd——客戶核准的那個——變成你沒做完的版本。回不去。" },
+        { "title": "「寄週二那版給我。」", "body": "哪個週二？你查檔案修改日期、對照 Email 來回翻，還是在猜。你需要的資訊從來沒有以可用的形式存在過。" },
+        { "title": "專案結束後的資料夾沒人看得懂。", "body": "最終交件資料夾 30 個檔案。你要交棒給新人、或半年後自己回來看，沒人知道真正的交件版是哪個。命名規則只在你當時的腦袋裡有意義。" }
+      ],
+      "migration": [
+        { "step": 1, "title": "挑檔名最亂的那個資料夾", "body": "通常是你最活躍的專案——最多「真的最終版_v2」的那個。別想一次整理所有資料夾；從痛最深的地方開始。" },
+        { "step": 2, "title": "安裝 Keeply，指向那個資料夾", "body": "下載 Keeply、打開資料夾、點「開始保護」。Keeply 把目前狀態當作第一個版本開始追蹤。你不用改名、不用重整。" },
+        { "step": 3, "title": "停止再加 _v2、_FINAL、_真的最終版 後綴", "body": "檔名維持乾淨——cover.psd，不是 cover_真的最終版.psd。每次存檔進時間軸，你寫一句短筆記（「客戶核准」、「加了定價框」、「週二交件」）。筆記才是檔名原本假裝要做的事。" },
+        { "step": 4, "title": "要找舊版本時看時間軸，不要看檔案總管", "body": "下次要找「週二那版」或「加定價框之前」，打開 Keeply 時間軸，不要翻檔名。一點、視覺比對、還原或匯出。肌肉記憶一週就練起來。" }
+      ],
+      "faq": [
+        { "q": "改檔名不就是免費的嗎？為什麼要付錢？", "a": "個人版永久免費，所以錢不是問題——問題是檔名混亂是不是默默在吃你的時間。如果你曾花 20 分鐘找「對的版本」、寄錯檔案給客戶、或不小心蓋掉客戶核准的版本，答案就是有。美金成本是零；時間成本才是 Keeply 幫你省的。" },
+        { "q": "我要完全放棄我的命名規則嗎？", "a": "不用，而且我們建議轉換的前幾週先保留。你舊的 cover_v1.psd 到 cover_真的最終版_修正版.psd 照樣留在原地。Keeply 從今天開始用一個乾淨檔名建新的時間軸。用時間軸用幾週後，你會發現自己不再伸手去加後綴——那個舊規則原本要解決的問題，Keeply 已經接手了。" },
+        { "q": "如果我真的想要多個平行變體，不是線性歷史呢？", "a": "還是可以。cover.psd 和 cover_alt.psd 真的是不同變體時就當兩個真實檔案；Keeply 各自管它們的歷史。v1 / v2 / FINAL 這個模式是專門用來記同一個檔案的時間變化——那就是時間軸要取代的事情。平行變體是不同概念，它們還是可以有真實的檔名。" },
+        { "q": "我只是要快速存個小修正，會不會變慢？", "a": "不會。Keeply 接在存檔動作上，額外成本接近零。每次存檔只存差異，不是整個檔案複製，磁碟成本很小。唯一多的一件事是你寫一句短筆記——一句話——說明這次存檔在做什麼。這一句話，就是「cover_v17.psd」和一年後你能操控的時間軸之間的差別。" },
+        { "q": "非技術背景的同事看得懂嗎？", "a": "看得懂——這是我們設計時的硬性要求。完全不需要 Git 知識、不用命令列、沒有 branch 或 merge 的概念。你打開專案、你存檔、Keeply 管版本。介面上是你自己用自己的話寫的筆記所組成的時間軸。設計師、寫手、接案者、行政同事都不需要工程背景就能用。" },
+        { "q": "我的版本歷史實際存在哪裡？", "a": "放在你自己的儲存空間。Keeply 把版本放在你專案資料夾裡的隱藏資料夾（Windows 或 macOS 本機磁碟），再加上你設定的最多三個備份位置：辦公室 NAS（SMB）、隨身碟、自架 Gitea、或私有 GitHub repo。Keeply 自家伺服器完全不存你的專案資料。檔案本身維持為一般檔案，檔案總管或 Finder 隨時可開。" }
+      ]
+    }
+  }
+}

@@ -32,6 +32,11 @@ const PAGES = ['index.html', 'privacy.html', 'terms.html', 'contact.html'];
 // Spec 025: was missing before, caused Google/Bing to not discover these pages.
 const EXTRA_SITEMAP_PAGES = ['buy.html', 'refund.html', 'activate.html'];
 
+// Spec 028: compare pages exist only for en + zh-TW (bilingual scope).
+// Sitemap entries are generated separately with hreflang cross-refs limited to these 2 locales.
+const COMPARE_LOCALES = ['en', 'zh-TW'];
+const COMPARISONS_DIR = path.join(__dirname, 'comparisons');
+
 const BASE_URL = 'https://keeply.work';
 const TEMPLATE_DIR = path.join(__dirname, 'templates');
 const I18N_DIR = path.join(ROOT_DIR, 'i18n');
@@ -326,6 +331,48 @@ function fixResourcePaths(html) {
 
 // ─── Sitemap Generation ─────────────────────────────────────────────────────
 
+/**
+ * Spec 028: collect compare hub + sub-page sitemap entries.
+ * English lives at /compare/ (no locale prefix, matches build-comparisons.js output).
+ * zh-TW lives at /zh-TW/compare/. Hreflang cross-refs limited to these 2 locales.
+ */
+function generateCompareSitemapEntries(today) {
+  if (!fs.existsSync(COMPARISONS_DIR)) return '';
+
+  const slugs = fs.readdirSync(COMPARISONS_DIR)
+    .filter(f => f.endsWith('.json') && !f.startsWith('_'))
+    .map(f => f.replace(/\.json$/, ''))
+    .sort();
+
+  // Entries: hub (path '') + one per slug.
+  const entries = [{ path: '', priority: '0.9' }]
+    .concat(slugs.map(slug => ({ path: `${slug}.html`, priority: '0.85' })));
+
+  // URL builder mirrors canonical URLs produced by build-comparisons.js.
+  const urlFor = (locale, entryPath) => locale === 'en'
+    ? `${BASE_URL}/compare/${entryPath}`
+    : `${BASE_URL}/${locale}/compare/${entryPath}`;
+
+  let xml = '';
+  for (const locale of COMPARE_LOCALES) {
+    for (const entry of entries) {
+      const url = urlFor(locale, entry.path);
+      xml += '  <url>\n';
+      xml += `    <loc>${url}</loc>\n`;
+      xml += `    <lastmod>${today}</lastmod>\n`;
+      xml += '    <changefreq>monthly</changefreq>\n';
+      xml += `    <priority>${entry.priority}</priority>\n`;
+
+      for (const altLocale of COMPARE_LOCALES) {
+        xml += `    <xhtml:link rel="alternate" hreflang="${altLocale}" href="${urlFor(altLocale, entry.path)}" />\n`;
+      }
+      xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${urlFor('en', entry.path)}" />\n`;
+      xml += '  </url>\n';
+    }
+  }
+  return xml;
+}
+
 function generateSitemap() {
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n';
@@ -368,6 +415,9 @@ function generateSitemap() {
   xml += '    <changefreq>monthly</changefreq>\n';
   xml += '    <priority>0.8</priority>\n';
   xml += '  </url>\n';
+
+  // Spec 028: compare hub + sub-pages (en + zh-TW).
+  xml += generateCompareSitemapEntries(today);
 
   xml += '</urlset>\n';
   return xml;
@@ -425,7 +475,8 @@ function main() {
   // Generate sitemap
   const sitemap = generateSitemap();
   fs.writeFileSync(path.join(OUTPUT_DIR, 'sitemap.xml'), sitemap, 'utf8');
-  console.log(`Generated sitemap.xml (${LOCALES.length * PAGES.length + 1} URLs)\n`);
+  const sitemapCount = (sitemap.match(/<url>/g) || []).length;
+  console.log(`Generated sitemap.xml (${sitemapCount} URLs)\n`);
 
   // Sync i18n/*.js from *.json
   for (const locale of LOCALES) {

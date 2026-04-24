@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4F46E5" />
+  <!-- Content Security Policy (spec 019) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <title>Snowtrack 替代方案 — Keeply</title>
+  <meta name="description" content="Perforce 在 2025 年 3 月收購 Snowtrack 並改為 P4 One 企業訂閱制。Keeply 接手獨立創作者的需求——視覺化檔案版本管理，不用學 Git。" />
+
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://keeply.work/zh-TW/compare/snowtrack.html" />
+  <link rel="alternate" hreflang="en" href="https://keeply.work/compare/snowtrack.html" />
+  <link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/compare/snowtrack.html" />
+  <link rel="alternate" hreflang="x-default" href="https://keeply.work/compare/snowtrack.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="../../favicon.ico" sizes="32x32" />
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+  <link rel="manifest" href="../../site.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://keeply.work/zh-TW/compare/snowtrack.html" />
+  <meta property="og:title" content="Snowtrack 替代方案 — Keeply" />
+  <meta property="og:description" content="Perforce 在 2025 年 3 月收購 Snowtrack 並改為 P4 One 企業訂閱制。Keeply 接手獨立創作者的需求——視覺化檔案版本管理，不用學 Git。" />
+  <meta property="og:image" content="https://keeply.work/og-image.png" />
+  <meta property="og:site_name" content="Keeply" />
+  <meta property="og:locale" content="zh_TW" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Snowtrack 替代方案 — Keeply" />
+  <meta name="twitter:description" content="Perforce 在 2025 年 3 月收購 Snowtrack 並改為 P4 One 企業訂閱制。Keeply 接手獨立創作者的需求——視覺化檔案版本管理，不用學 Git。" />
+  <meta name="twitter:image" content="https://keeply.work/og-image.png" />
+
+  <!-- Tailwind CSS (compiled) -->
+  <link rel="preload" href="../../style.css" as="style" />
+  <link rel="stylesheet" href="../../style.css" />
+
+  <!-- Hidden time for Article.datePublished (read by inject-schema.js) -->
+  <time datetime="2026-04-24" class="sr-only" aria-hidden="true">2026-04-24</time>  <!-- Schema.org JSON-LD (injected by _dev/inject-schema.js) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://keeply.work/#organization",
+        "name": "Keeply",
+        "url": "https://keeply.work",
+        "logo": "https://keeply.work/logo.svg",
+        "sameAs": [
+          "https://github.com/boy1690/keeply-releases"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://keeply.work/#website",
+        "url": "https://keeply.work/zh-TW/compare/snowtrack.html",
+        "name": "Keeply",
+        "inLanguage": "zh-Hant",
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://keeply.work/zh-TW/compare/snowtrack.html#article",
+        "headline": "Snowtrack 替代方案 — Keeply",
+        "description": "Perforce 在 2025 年 3 月收購 Snowtrack 並改為 P4 One 企業訂閱制。Keeply 接手獨立創作者的需求——視覺化檔案版本管理，不用學 Git。",
+        "datePublished": "2026-04-24",
+        "dateModified": "2026-04-24",
+        "inLanguage": "zh-Hant",
+        "author": {
+          "@id": "https://keeply.work/#organization"
+        },
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        },
+        "mainEntityOfPage": "https://keeply.work/zh-TW/compare/snowtrack.html",
+        "image": "https://keeply.work/og-image.png"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://keeply.work/zh-TW/compare/snowtrack.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Snowtrack 發生什麼事？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Perforce 在 2025 年 3 月收購 Snowtrack 並改名為 P4 One。獨立版 Snowtrack 不再販售——新授權必須訂閱 Perforce Helix Server，企業方案起價約每人每月 
+9 美金。獨立創作者被迫尋找替代品。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Keeply 真的免費嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "是的，出貨版對個人永久免費。核心功能包括無限版本歷史、視覺比對、檔案差異、版本筆記、單一位置備份都免費。Team 方案（含管理控制與多位置同步）正在積極開發中。$599 永久授權 Founding Member（限 500 套）一次購買即可永久使用未來所有 Team 功能。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "使用 Keeply 需要懂 Git 嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不需要。Keeply 專為不想碰 Git 的創作者設計——「介面零 Git 術語」是我們堅守的產品原則。操作名稱用辦公室語言：儲存版本、瀏覽歷史、回復到此版本、比較版本。沒有 commit、branch、merge 要學。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Keeply 能處理大檔案嗎？像 3D、影片、Blender 專案？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以，而且完全不用設定。Keeply 自動偵測 38 種二進位格式（Blender、PSD、影片、3D、壓縮檔等）加上任何超過 10 MB 的檔案，把它們靜默轉到大檔儲存通道。repo 不會膨脹；也不會看到別的工具讓你搞 LFS 設定那一套。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "哪些檔案類型能看到並排視覺比對？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Keeply 對 Microsoft Office 文件（Word .docx、Excel .xlsx、PowerPoint .pptx）、PDF、點陣圖（PNG / JPG / WebP）都能產生真正的視覺比對。你會看到兩個版本並排、差異高亮——不是只看一串改過的 byte。其他檔案類型仍可追蹤版本，隨時回復任一時間點。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "我的資料實際存放在哪裡？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "你的專案檔案留在你的電腦上，備份副本可選 5 種自我託管位置：本機資料夾、隨身碟、NAS（SMB 路徑）、自架 Gitea、或 GitHub repo。Keeply 自家伺服器完全不接觸你的專案資料——只在授權驗證時收到雜湊過的裝置識別碼。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+  <!-- Nav (injected by components.js) -->
+  <div id="nav-root"></div>
+
+  <!-- ============================================ -->
+  <!-- SECTION 1: HERO                              -->
+  <!-- ============================================ -->
+  <section class="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-gradient-to-b from-brand-50 to-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 bg-amber-100 border border-amber-200 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-6">
+        <span>⚡ 時效性 · Perforce 於 2025 年 3 月收購 Snowtrack</span>
+      </div>
+      <!-- H1 -->
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-4">在找 <span class="text-brand-600">Snowtrack 替代方案</span>？</h1>
+      <!-- Sub -->
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-4 leading-relaxed">Perforce 在 2025 年 3 月收購 Snowtrack 並改為 P4 One 企業訂閱制。<strong class="text-gray-900">Keeply 接手 Snowtrack 留下的空缺</strong>——視覺化檔案版本管理，不用學 Git。</p>
+      <p class="text-sm text-gray-500 mb-8">支援 Windows / macOS，永久免費版可用。</p>
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/zh-TW/#download" class="bg-brand-600 hover:bg-brand-700 text-white font-medium px-8 py-3 rounded-full transition-colors">免費下載</a>
+        <a href="#comparison" class="border-2 border-brand-600 text-brand-600 hover:bg-brand-50 font-medium px-8 py-3 rounded-full transition-colors">看對比</a>
+        <a href="#migration" class="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 font-medium px-8 py-3 rounded-full transition-colors">查看遷移指南</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 2: WHAT HAPPENED                     -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Snowtrack 發生什麼事？</h2>
+      <div class="bg-gray-50 border-l-4 border-brand-600 rounded-r-lg p-6 mb-4">
+        <p class="text-gray-800 leading-relaxed"><strong>Perforce 在 2025 年 3 月收購了 Snowtrack</strong>，並把產品改名為 <strong>P4 One</strong>。獨立版 Snowtrack 不再販售——新客戶必須訂閱 Perforce 的企業版授權，最低約 <strong>每人每月 $19 美金</strong>，產品定位從獨立創作者工具轉為 Helix 版本控制生態系的一環。</p>
+      </div>
+      <p class="text-sm text-gray-500 italic">資料來源：Perforce 2025 年 3 月 6 日公告 · P4 One 定價頁</p>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 3: COMPARISON TABLE                  -->
+  <!-- ============================================ -->
+  <section id="comparison" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">功能對比</h2>
+      <p class="text-sm text-gray-600 mb-6">資料依 2026 年 4 月公開產品資訊整理，Keeply 欄位反映出貨版 v1.0.2。</p>
+      <div class="overflow-x-auto -mx-2">
+        <table class="min-w-[720px] w-full border-collapse text-sm bg-white rounded-xl shadow-sm">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">功能</th>
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Snowtrack / P4 One<br /><span class="text-xs font-normal text-gray-400">（停售 → 轉 Perforce）</span></th>
+              <th class="text-left px-4 py-3 font-semibold text-brand-700 border-b border-gray-200 bg-brand-50">Keeply<br /><span class="text-xs font-normal text-brand-600">（推薦）</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">定價</td>
+              <td class="px-4 py-3 text-gray-700">約 $19/人/月（企業方案）</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">永久免費 · Team 月費 $25 不按人頭（Coming Soon）· $599 永久授權 Founding Member（限 500 套）</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">平台</td>
+              <td class="px-4 py-3 text-gray-700">Windows / macOS + Helix Server</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Windows / macOS</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">介面風格</td>
+              <td class="px-4 py-3 text-gray-700">專業 / 技術導向</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">視覺化、辦公室用語</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">需要 Git 知識</td>
+              <td class="px-4 py-3 text-gray-700">有幫助</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">不需要——介面零 Git 術語</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">大檔案自動處理</td>
+              <td class="px-4 py-3 text-gray-700">手動設定 LFS / Perforce 大檔</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">自動偵測 38 種二進位格式 + 超過 10 MB 的檔案</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">視覺化檔案比對</td>
+              <td class="px-4 py-3 text-gray-700">企業工具組</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Word、Excel、PowerPoint、PDF、圖片都可並排比對</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">團隊協作</td>
+              <td class="px-4 py-3 text-gray-700">按授權座位數計費</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">今日以共享 NAS 協作 · 專屬 Team 方案開發中</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">檔案實際存放位置</td>
+              <td class="px-4 py-3 text-gray-700">Helix Server（付費）</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">本機、隨身碟、NAS、Gitea、GitHub——都是你自己的</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">強制 SSO / 帳號</td>
+              <td class="px-4 py-3 text-gray-700">是（Perforce 帳號）</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">不需要——僅授權碼（Founding 計畫上線後）</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">持續開發</td>
+              <td class="px-4 py-3 text-gray-700">持續（企業導向）</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">持續 · 週週更新</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 4: PAIN POINTS                       -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">為什麼要換</h2>
+      <ul class="space-y-5">
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">企業級定價。</strong> P4 One 起價約每人每月 $19 美金，把 Snowtrack 過去服務的獨立藝術家和小型工作室擠出市場。</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">強制 Perforce 帳號 + SSO。</strong> 新授權需要註冊 Perforce 認證系統——對只想管 Figma 或 Blender 檔案的創作者很不友善。</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">依賴 Helix Server。</strong> P4 One 工作流必須建立在中央 Helix Server 上——這種企業基礎設施對自由工作者或 3 人工作室是殺雞用牛刀。</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">檔案被鎖在伺服器裡。</strong> P4 One 把版本存在 Helix 裡，你不能直接打開 NAS 用檔案總管看你的專案。Keeply 讓所有檔案維持成普通檔案，用 Finder 或檔案總管就看得到。</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">失去「輕量創作」的精神。</strong> P4 One 的路線圖明顯轉向大型工作室，離 Snowtrack 過去服務的獨立創作者族群越來越遠。</span>
+        </li>
+        
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 5: MIGRATION                         -->
+  <!-- ============================================ -->
+  <section id="migration" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">怎麼換到 Keeply</h2>
+      <ol class="space-y-6">
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">1</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">趁還能用的時候匯出 Snowtrack 歷史</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">如果你的 Snowtrack 還能開，打開你的專案資料夾，把 .snowtrack/ 整個目錄複製到外接硬碟。把舊版本歷史當唯讀封存保留。</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">2</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">安裝 Keeply 並指向你的專案資料夾</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">下載 Keeply、打開你的專案資料夾、點「開始保護」。Keeply 從目前狀態開始記錄版本——新的版本歷史、同樣的檔案、不需要任何轉換工具。</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">3</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">選一個備份位置（NAS / 隨身碟 / Gitea / GitHub）</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">在 Keeply → 備份位置新增一個：本機資料夾、隨身碟、NAS（SMB 路徑）、自架 Gitea、或 GitHub repo。每次存檔 Keeply 都會自動同步到那邊——不需要中央伺服器。</p>
+          </div>
+        </li>
+        
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 6: FAQ                               -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">常見問題</h2>
+      <div class="space-y-3">
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Snowtrack 發生什麼事？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">Perforce 在 2025 年 3 月收購 Snowtrack 並改名為 P4 One。獨立版 Snowtrack 不再販售——新授權必須訂閱 Perforce Helix Server，企業方案起價約每人每月 $19 美金。獨立創作者被迫尋找替代品。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Keeply 真的免費嗎？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">是的，出貨版對個人永久免費。核心功能包括無限版本歷史、視覺比對、檔案差異、版本筆記、單一位置備份都免費。Team 方案（含管理控制與多位置同步）正在積極開發中。$599 永久授權 Founding Member（限 500 套）一次購買即可永久使用未來所有 Team 功能。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>使用 Keeply 需要懂 Git 嗎？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">不需要。Keeply 專為不想碰 Git 的創作者設計——「介面零 Git 術語」是我們堅守的產品原則。操作名稱用辦公室語言：儲存版本、瀏覽歷史、回復到此版本、比較版本。沒有 commit、branch、merge 要學。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Keeply 能處理大檔案嗎？像 3D、影片、Blender 專案？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">可以，而且完全不用設定。Keeply 自動偵測 38 種二進位格式（Blender、PSD、影片、3D、壓縮檔等）加上任何超過 10 MB 的檔案，把它們靜默轉到大檔儲存通道。repo 不會膨脹；也不會看到別的工具讓你搞 LFS 設定那一套。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>哪些檔案類型能看到並排視覺比對？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">Keeply 對 Microsoft Office 文件（Word .docx、Excel .xlsx、PowerPoint .pptx）、PDF、點陣圖（PNG / JPG / WebP）都能產生真正的視覺比對。你會看到兩個版本並排、差異高亮——不是只看一串改過的 byte。其他檔案類型仍可追蹤版本，隨時回復任一時間點。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>我的資料實際存放在哪裡？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">你的專案檔案留在你的電腦上，備份副本可選 5 種自我託管位置：本機資料夾、隨身碟、NAS（SMB 路徑）、自架 Gitea、或 GitHub repo。Keeply 自家伺服器完全不接觸你的專案資料——只在授權驗證時收到雜湊過的裝置識別碼。</div>
+        </details>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 7: FINAL CTA                         -->
+  <!-- ============================================ -->
+  <section class="bg-gradient-to-br from-brand-600 to-brand-700 px-6 py-16 md:py-20 text-center text-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">準備好不再跟工具打架了嗎？</h2>
+      <p class="text-brand-100 max-w-xl mx-auto mb-8">免費下載支援 Windows 和 macOS。30 秒完成設定，不用帳號——安裝後打開你的專案資料夾就能用。</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/zh-TW/#download" class="bg-white text-brand-700 hover:bg-brand-50 font-bold px-8 py-4 rounded-full transition-colors">免費下載</a>
+        <a href="/zh-TW/buy.html" class="border-2 border-white text-white hover:bg-white/10 font-medium px-8 py-4 rounded-full transition-colors">查看 Founding Member 定價</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (injected by components.js) -->
+  <div id="footer-root"></div>
+
+  <!-- Shared components + i18n + consent (spec 023/024) -->
+  <script src="../../consent-api.js" defer></script>
+  <script src="../../components.js" defer></script>
+  <script src="../../cookie-banner.js" defer></script>
+  <script src="../../ga4-loader.js" defer></script>
+  <script src="../../i18n-loader.js" defer></script>
+
+</body>
+</html>

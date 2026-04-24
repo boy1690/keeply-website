@@ -1,0 +1,113 @@
+{
+  "slug": "dropbox",
+  "bold_column": "team",
+  "published": "2026-04-24",
+  "locales": {
+    "en": {
+      "meta": {
+        "title": "Keeply vs Dropbox Version History — No 30-day cap, no per-seat fees",
+        "description": "Dropbox keeps version history for 30 days on paid plans, then deletes it. Keeply keeps every save forever with a flat $25/month Team plan — no per-seat billing."
+      },
+      "hero": {
+        "badge": "📘 The 30-day version history cap is real",
+        "h1_html": "Tired of Dropbox deleting old versions after <span class=\"text-brand-600\">30 days</span>?",
+        "sub_html": "Dropbox's version history quietly deletes anything older than 30 days on the standard paid plans — and charges per seat. <strong class=\"text-gray-900\">Keeply keeps every save forever</strong> with a single flat team price, and your files stay on your own NAS.",
+        "tagline": "Free forever for personal use · Team $25/mo flat (coming soon)."
+      },
+      "what_happened": {
+        "title": "The version history limit most users only discover when it's too late",
+        "body_html": "Dropbox Standard, Plus, and Essentials plans <strong>automatically delete file versions older than 30 days</strong>. The higher-tier Advanced plan extends this to 180 days — still finite, and priced at $24 per user per month. For a 6-person studio, that's $1,440 per year in per-seat fees just to keep half a year of history. Keeply stores unlimited version history on storage you already own, with team pricing that doesn't balloon with headcount.",
+        "source": "Source: Dropbox Help Center — version history retention per plan tier"
+      },
+      "comparison": {
+        "target_header": "Dropbox Business",
+        "target_sub": "(Standard / Advanced)",
+        "rows": [
+          { "feature": "Pricing model", "target": "$15–$24 per seat per month", "keeply": "Free forever · **Team $25/mo flat (coming soon)** · $599 Perpetual Founding Member (limited 500)" },
+          { "feature": "Version history retention", "target": "30 days (Standard) / 180 days (Advanced)", "keeply": "Unlimited — every save kept forever" },
+          { "feature": "Per-seat fees", "target": "Yes — scales with team size", "keeply": "No — one flat team price" },
+          { "feature": "Visual file diff", "target": "Preview-only (no side-by-side changes)", "keeply": "Side-by-side diff for Word, Excel, PowerPoint, PDF, images" },
+          { "feature": "Where files live", "target": "Dropbox cloud", "keeply": "Your local disk, NAS, USB, Gitea, or GitHub" },
+          { "feature": "Version save descriptions", "target": "None (auto-versions only)", "keeply": "Add a note every time you save — find decisions months later" },
+          { "feature": "Works offline", "target": "Sync only — no offline versioning", "keeply": "Versions tracked locally, syncs when reconnected" },
+          { "feature": "Large binary files", "target": "Counts against storage cap", "keeply": "38 formats + >10 MB detected silently; no manual LFS setup" },
+          { "feature": "Per-project history view", "target": "Mixed with all of Dropbox", "keeply": "Focused per-project timeline and file tree" },
+          { "feature": "Vendor lock-in risk", "target": "Files in Dropbox's proprietary sync system", "keeply": "Files stay as regular files you can open in Explorer/Finder" }
+        ]
+      },
+      "pain_points": [
+        { "title": "The 30-day version wall.", "body": "Standard Dropbox plans silently drop versions older than 30 days. You only realise when you need a file from six months ago and it's gone." },
+        { "title": "Pricing that scales with team size.", "body": "A 6-person studio pays $120-$144 per month for the storage tier that still caps history at 180 days — $1,440-$1,728 per year." },
+        { "title": "No real version comparison.", "body": "Dropbox shows you a preview of each version but can't diff Word, PowerPoint, or image changes side-by-side. You open both, squint, and guess." },
+        { "title": "Your files live on Dropbox's servers.", "body": "Cancel the subscription and access stops. With Keeply, your files stay on your own NAS or drive — Keeply just handles the version tracking." }
+      ],
+      "migration": [
+        { "step": 1, "title": "Decide which folder to version", "body": "Pick your most-edited project folder — your current deliverables, active client work, or shared design files. Keep Dropbox sync running during the transition; Keeply works alongside it." },
+        { "step": 2, "title": "Install Keeply and point it at that folder", "body": "Download Keeply, open the folder you picked, click Start protecting. Versioning begins immediately from the current state." },
+        { "step": 3, "title": "Add a backup location (NAS / USB / GitHub)", "body": "In Keeply, add a backup target: your office NAS, a USB drive, or a GitHub repo. Keeply pushes every version there — no Dropbox dependency for history." },
+        { "step": 4, "title": "Once you trust it, downgrade Dropbox to the free tier", "body": "Use Dropbox just for real-time sync between devices (free tier does this). Keeply handles the actual version history you rely on, at a fraction of the cost." }
+      ],
+      "faq": [
+        { "q": "Can I use Keeply and Dropbox at the same time?", "a": "Yes. Dropbox keeps syncing files between devices in real time while Keeply tracks the version history locally. They don't conflict — Keeply's version data lives in a hidden folder inside your project, so Dropbox just syncs everything including the versioning. Most users keep both." },
+        { "q": "Does Keeply have a 30-day or 180-day retention limit?", "a": "No. Every version you save is kept forever, because the history lives on storage you already own (your hard drive, NAS, USB, or a Git repo you control). There's no cloud subscription quietly deleting your history — retention is limited only by the disk space you have." },
+        { "q": "What happens when my team grows? Does pricing change?", "a": "No per-seat billing. The Team plan is a flat $25/month (coming soon) regardless of whether you have 3 people or 15. Free personal use stays free for each team member indefinitely. The Founding Member perpetual license ($599, limited to 500 seats) covers all future Team features for life with no subscription." },
+        { "q": "Can Keeply handle the Office files and PDFs I'm used to in Dropbox?", "a": "Yes, and with richer comparison. Keeply renders side-by-side visual diffs for Word, Excel, PowerPoint, PDF, and images — showing exactly what text, numbers, or pixels changed. Dropbox can only show you separate previews of each version, leaving you to spot differences manually." },
+        { "q": "Do I lose Dropbox's sync if I switch to Keeply?", "a": "No, because Keeply isn't a sync tool — it's a version tracker. If you like Dropbox's sync, keep using it (the free tier syncs unlimited files between your devices). Use Keeply on top for the version history, descriptions, and visual diffs Dropbox doesn't provide." },
+        { "q": "Where are my versions actually stored?", "a": "On storage you already own: your local drive by default, plus any backup location you configure — office NAS (SMB), USB drive, self-hosted Gitea, or a private GitHub repo. Keeply runs no server that stores your project data. Cancel or stop using Keeply anytime; your files and history stay where they are." }
+      ]
+    },
+    "zh-TW": {
+      "meta": {
+        "title": "Keeply vs Dropbox 版本歷史 — 永久保存、不按人頭收費",
+        "description": "Dropbox 付費方案的版本歷史只留 30 天就刪除。Keeply 每次存檔永久保留，Team 方案每月 $25 美金不按人頭——檔案放在你的 NAS 上。"
+      },
+      "hero": {
+        "badge": "📘 30 天版本上限是真的",
+        "h1_html": "受夠 Dropbox <span class=\"text-brand-600\">30 天後</span>就刪掉舊版本？",
+        "sub_html": "Dropbox 標準付費方案默默刪除 30 天以前的版本——還按人頭收費。<strong class=\"text-gray-900\">Keeply 每次存檔永久保留</strong>，Team 方案不論團隊幾人都是一個月 $25 美金，你的檔案繼續留在自己的 NAS 上。",
+        "tagline": "個人永久免費 · Team $25/月 不按人頭（Coming Soon）。"
+      },
+      "what_happened": {
+        "title": "那個多數用戶發現時都太遲的版本歷史上限",
+        "body_html": "Dropbox 的 Standard、Plus、Essentials 方案<strong>自動刪除 30 天以前的檔案版本</strong>。要延長到 180 天必須升級到 Advanced 方案，每人每月 $24 美金——仍然是有限的。6 人工作室一年花 $1,440 美金，只是為了保留半年的版本歷史。Keeply 用你已經擁有的儲存空間存放無限版本歷史，Team 定價也不會隨人數翻倍。",
+        "source": "資料來源：Dropbox Help Center — 各方案版本歷史保留期"
+      },
+      "comparison": {
+        "target_header": "Dropbox Business",
+        "target_sub": "（Standard / Advanced）",
+        "rows": [
+          { "feature": "計費方式", "target": "每人每月 $15–$24 美金", "keeply": "永久免費 · **Team $25/月 不按人頭（Coming Soon）** · $599 永久授權 Founding Member（限 500 套）" },
+          { "feature": "版本歷史保留期", "target": "30 天（Standard）/ 180 天（Advanced）", "keeply": "無限——每次存檔永久保留" },
+          { "feature": "按人頭計費", "target": "是——人多就貴", "keeply": "否——團隊一個固定價" },
+          { "feature": "視覺化檔案比對", "target": "只能預覽（無並排差異）", "keeply": "Word、Excel、PowerPoint、PDF、圖片皆可並排比對" },
+          { "feature": "檔案實際位置", "target": "Dropbox 雲端", "keeply": "本機、NAS、隨身碟、Gitea、GitHub" },
+          { "feature": "版本附註", "target": "無（只有自動版本）", "keeply": "每次存檔可加筆記——幾個月後找決定的理由很好用" },
+          { "feature": "離線運作", "target": "只能同步——離線無版本控制", "keeply": "版本在本機追蹤，連線後自動同步" },
+          { "feature": "大型二進位檔", "target": "計入儲存容量上限", "keeply": "38 種格式 + 超過 10 MB 自動偵測；無需手動 LFS 設定" },
+          { "feature": "單一專案的歷史檢視", "target": "跟整個 Dropbox 混在一起", "keeply": "以專案為單位的時間軸和檔案樹" },
+          { "feature": "廠商鎖定風險", "target": "檔案存在 Dropbox 專有系統裡", "keeply": "檔案維持為一般檔案，Finder / 檔案總管直接可開" }
+        ]
+      },
+      "pain_points": [
+        { "title": "30 天版本之牆。", "body": "Dropbox 標準方案默默刪除 30 天以前的版本。通常是你想找 6 個月前的檔案時才發現它不見了。" },
+        { "title": "隨團隊人數漲的定價。", "body": "6 人工作室每月付 $120-$144 美金，卻仍然只能保留 180 天歷史——一年 $1,440-$1,728 美金。" },
+        { "title": "沒有真正的版本比對。", "body": "Dropbox 讓你預覽每個版本，但沒辦法並排比對 Word、PowerPoint 或圖片改了哪裡。你只能兩個都開、瞇著眼睛猜。" },
+        { "title": "檔案住在 Dropbox 伺服器上。", "body": "取消訂閱，存取也跟著停。Keeply 的檔案留在你自己的 NAS 或硬碟，Keeply 只負責版本追蹤。" }
+      ],
+      "migration": [
+        { "step": 1, "title": "選一個要管版本的資料夾", "body": "挑你最常改的專案資料夾——手上的交件、在做的客戶案、共享的設計檔。轉換期間 Dropbox 同步照樣跑，Keeply 跟它並存。" },
+        { "step": 2, "title": "安裝 Keeply 並指向那個資料夾", "body": "下載 Keeply、打開你選的資料夾、點「開始保護」。從目前狀態開始管版本。" },
+        { "step": 3, "title": "新增一個備份位置（NAS / 隨身碟 / GitHub）", "body": "在 Keeply 裡新增備份目標：公司 NAS、隨身碟、或 GitHub repo。每次存檔 Keeply 都會推送過去——版本歷史不再依賴 Dropbox。" },
+        { "step": 4, "title": "相信 Keeply 之後，Dropbox 降到免費版", "body": "Dropbox 免費版就夠做裝置間即時同步。實際的版本歷史靠 Keeply——花費大幅降低。" }
+      ],
+      "faq": [
+        { "q": "可以同時用 Keeply 和 Dropbox 嗎？", "a": "可以。Dropbox 負責裝置間即時同步，Keeply 負責版本歷史。兩者不衝突——Keeply 把版本資料放在你專案裡的隱藏資料夾，Dropbox 照常同步所有檔案包括版本資料。多數用戶兩個都用。" },
+        { "q": "Keeply 有沒有 30 天或 180 天的保留上限？", "a": "沒有。每次存檔的版本永久保留，因為歷史放在你已經擁有的儲存空間（硬碟、NAS、隨身碟，或你自己掌握的 Git repo）。沒有雲端訂閱默默刪你的歷史——只會被你自己的硬碟容量限制。" },
+        { "q": "團隊人數增加時定價會變嗎？", "a": "不按人頭收費。Team 方案不論 3 人還是 15 人都是每月 $25 美金固定價（Coming Soon）。每位成員的個人免費版也無限期免費。$599 Founding Member 永久授權（限 500 套）一次買斷未來所有 Team 功能，不用訂閱。" },
+        { "q": "Keeply 能處理我在 Dropbox 用的 Office 和 PDF 嗎？", "a": "可以，而且比對功能更強。Keeply 對 Word、Excel、PowerPoint、PDF、圖片都能並排顯示視覺比對——告訴你哪段文字、哪個數字、哪個像素變了。Dropbox 只能分別預覽兩個版本，差異要你自己找。" },
+        { "q": "換成 Keeply 會失去 Dropbox 的同步嗎？", "a": "不會，因為 Keeply 不是同步工具——它是版本追蹤器。喜歡 Dropbox 同步就繼續用（免費版就能在裝置間無限同步）。Keeply 疊在上面提供 Dropbox 沒有的版本歷史、附註、視覺比對。" },
+        { "q": "我的版本實際存在哪裡？", "a": "放在你已經擁有的儲存空間：預設在本機硬碟，再加上你設定的任何備份位置——辦公室 NAS（SMB）、隨身碟、自架 Gitea、或私有 GitHub repo。Keeply 自家伺服器完全不存你的專案資料。隨時不用 Keeply，檔案和歷史都留在原地。" }
+      ]
+    }
+  }
+}

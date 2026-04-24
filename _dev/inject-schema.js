@@ -37,6 +37,9 @@ const BASE_URL = 'https://keeply.work';
 const ROOT_PAGES = ['index.html', 'buy.html', 'privacy.html', 'terms.html', 'refund.html', 'contact.html', 'activate.html'];
 const INDEX_PAGE = 'index.html';
 
+// Spec 028: comparison pages at /compare/{slug}.html + /zh-TW/compare/{slug}.html
+const COMPARISONS_DIR = path.join(ROOT_DIR, '_dev', 'comparisons');
+
 // Organization constants — shared across all 140 pages via @id reference.
 const ORG = {
   '@type': 'Organization',
@@ -265,13 +268,19 @@ function processFile(filePath, ctx) {
   const locale = localeFromPath(filePath) || 'en'; // Root pages are English fallback.
   const page = pageFromPath(filePath);
 
-  if (!PAGE_META_PREFIX[page]) {
+  // Spec 028: comparison pages have their own schema pipeline.
+  const compare = detectComparePage(filePath);
+  let graph;
+  if (compare) {
+    if (compare.type === 'hub') {
+      graph = buildCompareHubGraph({ canonicalUrl, htmlLang, locale: compare.locale });
+    } else {
+      graph = buildCompareSubPageGraph({ canonicalUrl, htmlLang, slug: compare.slug, locale: compare.locale });
+    }
+  } else if (!PAGE_META_PREFIX[page]) {
     console.warn(`  SKIP: ${path.relative(ROOT_DIR, filePath)} — not in known page list`);
     return { skipped: true };
-  }
-
-  let graph;
-  if (page === INDEX_PAGE) {
+  } else if (page === INDEX_PAGE) {
     graph = buildIndexGraph({
       canonicalUrl,
       htmlLang,
@@ -305,6 +314,134 @@ function processFile(filePath, ctx) {
   return { skipped: false };
 }
 
+// ─── Spec 028: Comparison page schema builders ──────────────────────────────
+
+// Detect if the file is a spec 028 comparison page. Returns { type, slug, locale } or null.
+function detectComparePage(filePath) {
+  const rel = path.relative(ROOT_DIR, filePath).replace(/\\/g, '/');
+  // Patterns:
+  //   compare/index.html           → hub, en
+  //   compare/{slug}.html          → sub, en
+  //   zh-TW/compare/index.html     → hub, zh-TW
+  //   zh-TW/compare/{slug}.html    → sub, zh-TW
+  let m = rel.match(/^compare\/(index|[\w-]+)\.html$/);
+  if (m) {
+    return { type: m[1] === 'index' ? 'hub' : 'sub', slug: m[1] === 'index' ? null : m[1], locale: 'en' };
+  }
+  m = rel.match(/^([a-z]{2}-[A-Z]{2}|[a-z]{2})\/compare\/(index|[\w-]+)\.html$/);
+  if (m) {
+    return { type: m[2] === 'index' ? 'hub' : 'sub', slug: m[2] === 'index' ? null : m[2], locale: m[1] };
+  }
+  return null;
+}
+
+function buildCompareSubPageGraph({ canonicalUrl, htmlLang, slug, locale }) {
+  const jsonPath = path.join(COMPARISONS_DIR, `${slug}.json`);
+  if (!fs.existsSync(jsonPath)) {
+    console.warn(`  WARN: ${slug}.json not found; falling back to minimal schema`);
+    return [ORG];
+  }
+  const data = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+  const L = data.locales[locale] || data.locales.en;
+  if (!L) return [ORG];
+
+  const faqItems = (L.faq || []).map(f => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a }
+  }));
+
+  return [
+    ORG,
+    {
+      '@type': 'WebSite',
+      '@id': `${BASE_URL}/#website`,
+      url: canonicalUrl,
+      name: 'Keeply',
+      inLanguage: htmlLang,
+      publisher: { '@id': `${BASE_URL}/#organization` }
+    },
+    {
+      '@type': 'Article',
+      '@id': `${canonicalUrl}#article`,
+      headline: L.meta.title,
+      description: L.meta.description,
+      datePublished: data.published,
+      dateModified: data.published,
+      inLanguage: htmlLang,
+      author: { '@id': `${BASE_URL}/#organization` },
+      publisher: { '@id': `${BASE_URL}/#organization` },
+      mainEntityOfPage: canonicalUrl,
+      image: `${BASE_URL}/og-image.png`
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${canonicalUrl}#faq`,
+      mainEntity: faqItems
+    }
+  ];
+}
+
+function buildCompareHubGraph({ canonicalUrl, htmlLang, locale }) {
+  const hubPath = path.join(COMPARISONS_DIR, '_hub.json');
+  if (!fs.existsSync(hubPath)) return [ORG];
+  const hub = JSON.parse(fs.readFileSync(hubPath, 'utf8'));
+
+  const hubUrl = locale === 'en' ? `${BASE_URL}/compare/` : `${BASE_URL}/${locale}/compare/`;
+  const homeUrl = locale === 'en' ? `${BASE_URL}/` : `${BASE_URL}/${locale}/`;
+
+  const itemList = hub.order.map((slug, i) => {
+    const cardMeta = (hub.cards && hub.cards[slug]) ? (hub.cards[slug][locale] || {}) : {};
+    const subUrl = locale === 'en' ? `${BASE_URL}/compare/${slug}.html` : `${BASE_URL}/${locale}/compare/${slug}.html`;
+    return {
+      '@type': 'ListItem',
+      position: i + 1,
+      url: subUrl,
+      name: cardMeta.title || slug
+    };
+  });
+
+  const homeLabel = locale === 'en' ? 'Home' : '首頁';
+  const compareLabel = locale === 'en' ? 'Compare' : '工具比較';
+
+  const hubMeta = hub.locales[locale] || hub.locales.en;
+
+  return [
+    ORG,
+    {
+      '@type': 'WebSite',
+      '@id': `${BASE_URL}/#website`,
+      url: hubUrl,
+      name: 'Keeply',
+      inLanguage: htmlLang,
+      publisher: { '@id': `${BASE_URL}/#organization` }
+    },
+    {
+      '@type': 'WebPage',
+      '@id': `${hubUrl}#webpage`,
+      url: hubUrl,
+      name: hubMeta.meta.title,
+      description: hubMeta.meta.description,
+      inLanguage: htmlLang,
+      isPartOf: { '@id': `${BASE_URL}/#website` },
+      publisher: { '@id': `${BASE_URL}/#organization` }
+    },
+    {
+      '@type': 'ItemList',
+      '@id': `${hubUrl}#itemlist`,
+      itemListElement: itemList
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${hubUrl}#breadcrumb`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: homeLabel, item: homeUrl },
+        { '@type': 'ListItem', position: 2, name: compareLabel, item: hubUrl }
+      ]
+    }
+  ];
+}
+
 // ─── Main ────────────────────────────────────────────────────────────────────
 
 function collectTargetFiles(locales) {
@@ -323,6 +460,15 @@ function collectTargetFiles(locales) {
     for (const page of ROOT_PAGES) {
       const full = path.join(localeDir, page);
       if (fs.existsSync(full)) files.push(full);
+    }
+  }
+
+  // Spec 028: comparison pages (compare/*.html + zh-TW/compare/*.html).
+  for (const rel of ['compare', 'zh-TW/compare']) {
+    const dir = path.join(ROOT_DIR, rel);
+    if (!fs.existsSync(dir)) continue;
+    for (const f of fs.readdirSync(dir)) {
+      if (f.endsWith('.html')) files.push(path.join(dir, f));
     }
   }
 

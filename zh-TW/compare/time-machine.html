@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4F46E5" />
+  <!-- Content Security Policy (spec 019) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <title>Keeply vs Time Machine — 單一專案的版本歷史，不是整顆硬碟快照</title>
+  <meta name="description" content="Time Machine 備份整台 Mac。Keeply 以專案為單位管版本、提供視覺比對、Windows + macOS 雙平台、還原單一檔案而非整個資料夾。" />
+
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://keeply.work/zh-TW/compare/time-machine.html" />
+  <link rel="alternate" hreflang="en" href="https://keeply.work/compare/time-machine.html" />
+  <link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/compare/time-machine.html" />
+  <link rel="alternate" hreflang="x-default" href="https://keeply.work/compare/time-machine.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="../../favicon.ico" sizes="32x32" />
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+  <link rel="manifest" href="../../site.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://keeply.work/zh-TW/compare/time-machine.html" />
+  <meta property="og:title" content="Keeply vs Time Machine — 單一專案的版本歷史，不是整顆硬碟快照" />
+  <meta property="og:description" content="Time Machine 備份整台 Mac。Keeply 以專案為單位管版本、提供視覺比對、Windows + macOS 雙平台、還原單一檔案而非整個資料夾。" />
+  <meta property="og:image" content="https://keeply.work/og-image.png" />
+  <meta property="og:site_name" content="Keeply" />
+  <meta property="og:locale" content="zh_TW" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Keeply vs Time Machine — 單一專案的版本歷史，不是整顆硬碟快照" />
+  <meta name="twitter:description" content="Time Machine 備份整台 Mac。Keeply 以專案為單位管版本、提供視覺比對、Windows + macOS 雙平台、還原單一檔案而非整個資料夾。" />
+  <meta name="twitter:image" content="https://keeply.work/og-image.png" />
+
+  <!-- Tailwind CSS (compiled) -->
+  <link rel="preload" href="../../style.css" as="style" />
+  <link rel="stylesheet" href="../../style.css" />
+
+  <!-- Hidden time for Article.datePublished (read by inject-schema.js) -->
+  <time datetime="2026-04-24" class="sr-only" aria-hidden="true">2026-04-24</time>  <!-- Schema.org JSON-LD (injected by _dev/inject-schema.js) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://keeply.work/#organization",
+        "name": "Keeply",
+        "url": "https://keeply.work",
+        "logo": "https://keeply.work/logo.svg",
+        "sameAs": [
+          "https://github.com/boy1690/keeply-releases"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://keeply.work/#website",
+        "url": "https://keeply.work/zh-TW/compare/time-machine.html",
+        "name": "Keeply",
+        "inLanguage": "zh-Hant",
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        }
+      },
+      {
+        "@type": "Article",
+        "@id": "https://keeply.work/zh-TW/compare/time-machine.html#article",
+        "headline": "Keeply vs Time Machine — 單一專案的版本歷史，不是整顆硬碟快照",
+        "description": "Time Machine 備份整台 Mac。Keeply 以專案為單位管版本、提供視覺比對、Windows + macOS 雙平台、還原單一檔案而非整個資料夾。",
+        "datePublished": "2026-04-24",
+        "dateModified": "2026-04-24",
+        "inLanguage": "zh-Hant",
+        "author": {
+          "@id": "https://keeply.work/#organization"
+        },
+        "publisher": {
+          "@id": "https://keeply.work/#organization"
+        },
+        "mainEntityOfPage": "https://keeply.work/zh-TW/compare/time-machine.html",
+        "image": "https://keeply.work/og-image.png"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://keeply.work/zh-TW/compare/time-machine.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "可以同時跑 Time Machine 和 Keeply 嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以，而且我們推薦這樣。Time Machine 對整台 Mac 做災難還原。Keeply 以專案為單位管版本歷史，附筆記和視覺比對。它們解決不同問題、不會衝突——Keeply 的資料放在你專案資料夾裡，Time Machine 照常把它跟其他東西一起備份。雙保險。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Keeply 支援 Windows 嗎？我的團隊混合使用。",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "支援。Keeply 在 Windows 和 macOS 都能跑，所以混合團隊共用同一個工具、同一份版本歷史、同一個備份目標。Linux 在 roadmap 上但還沒出貨。你的團隊今天有人用 Windows 的話，光靠 Time Machine 完全覆蓋不到——Keeply 可以。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "要找單一檔案的特定舊版本怎麼辦？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "這是最大差別。Time Machine 要打開時光星軌、猜哪個小時的快照有你要的版本、還原。Keeply 是打開專案、點那個檔案、在時間軸上看每次存檔附自己的筆記、點要的版本就到。找一個月前的版本是幾秒鐘的事。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Keeply 能告訴我兩個版本差在哪嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以。Keeply 對 Word、Excel、PowerPoint、PDF、圖片都能並排視覺比對——直接告訴你哪段文字、哪個數字、哪個像素不一樣。Time Machine 沒有這種功能；它把每個檔案當成不透明二進位，差異要你自己找。對設計或文件工作來說，比對才是你真正需要的東西。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "我需要另外一顆像 Time Machine 要的外接硬碟嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不用。Keeply 把版本放在你專案資料夾裡，只存差異，空間成本遠小於完整檔案。你可以加備份目標（隨身碟、NAS、GitHub、Gitea）但不是必要的，一開始不需要。一個有好幾個月歷史的 Keeply 專案常常一根隨身碟就裝得下，Time Machine 要整顆硬碟。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "我的版本實際存在哪裡？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "預設放在你自己的儲存空間：在你專案資料夾裡，以差異方式高效儲存。你可以加最多三個備份位置：辦公室 NAS（SMB）、隨身碟、自架 Gitea、或私有 GitHub repo。Keeply 自家伺服器完全不存你的專案資料。隨時不用或移除，檔案和版本歷史都留在原地。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+  <!-- Nav (injected by components.js) -->
+  <div id="nav-root"></div>
+
+  <!-- ============================================ -->
+  <!-- SECTION 1: HERO                              -->
+  <!-- ============================================ -->
+  <section class="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-gradient-to-b from-brand-50 to-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 bg-amber-100 border border-amber-200 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-6">
+        <span>📘 Time Machine 是備份工具，不是版本追蹤器</span>
+      </div>
+      <!-- H1 -->
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-4">Time Machine 救過你一次。但要找上週二<span class="text-brand-600">某個檔案的特定版本</span>呢？</h1>
+      <!-- Sub -->
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-4 leading-relaxed">Time Machine 每小時對整顆硬碟做快照——硬碟掛了好用，想找某個檔案的某個舊版本時很痛苦。它只支援 macOS、沒有比對、還原是整個資料夾。<strong class="text-gray-900">Keeply 以專案為單位管版本歷史</strong>，附視覺比對、單檔案還原、Windows + macOS 都支援。</p>
+      <p class="text-sm text-gray-500 mb-8">個人永久免費 · Team $25/月 不按人頭（Coming Soon）。</p>
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/zh-TW/#download" class="bg-brand-600 hover:bg-brand-700 text-white font-medium px-8 py-3 rounded-full transition-colors">免費下載</a>
+        <a href="#comparison" class="border-2 border-brand-600 text-brand-600 hover:bg-brand-50 font-medium px-8 py-3 rounded-full transition-colors">看對比</a>
+        <a href="#migration" class="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 font-medium px-8 py-3 rounded-full transition-colors">查看遷移指南</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 2: WHAT HAPPENED                     -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">對災難很厲害。對日常找舊版本不太行。</h2>
+      <div class="bg-gray-50 border-l-4 border-brand-600 rounded-r-lg p-6 mb-4">
+        <p class="text-gray-800 leading-relaxed">Time Machine 擅長它被設計的事情：Mac 掛了，插上備份硬碟還原整個系統。但它把每個檔案當成不具名的二進位 blob 快照整顆硬碟。想找某個專案檔案的某個舊版本，要打開 Time Machine、在時光星軌裡飛、猜哪個小時有你想要的版本、然後<strong>把整個資料夾還原</strong>——因為單檔案還原很脆弱。沒有比對——兩個 PSD 擺在一起你不知道差在哪。Windows 用戶？完全沒這東西。</p>
+      </div>
+      <p class="text-sm text-gray-500 italic">資料來源：Apple 支援 — 關於 Time Machine 備份</p>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 3: COMPARISON TABLE                  -->
+  <!-- ============================================ -->
+  <section id="comparison" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">功能對比</h2>
+      <p class="text-sm text-gray-600 mb-6">資料依 2026 年 4 月公開產品資訊整理，Keeply 欄位反映出貨版 v1.0.2。</p>
+      <div class="overflow-x-auto -mx-2">
+        <table class="min-w-[720px] w-full border-collapse text-sm bg-white rounded-xl shadow-sm">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">功能</th>
+              <th class="text-left px-4 py-3 font-semibold text-gray-700 border-b border-gray-200">Time Machine<br /><span class="text-xs font-normal text-gray-400">（macOS 內建）</span></th>
+              <th class="text-left px-4 py-3 font-semibold text-brand-700 border-b border-gray-200 bg-brand-50">Keeply<br /><span class="text-xs font-normal text-brand-600">（推薦）</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">計費方式</td>
+              <td class="px-4 py-3 text-gray-700">免費（macOS 內建）</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50"><strong>永久免費</strong> · Team $25/月 不按人頭（Coming Soon） · $599 永久授權 Founding Member（限 500 套）</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">作業系統</td>
+              <td class="px-4 py-3 text-gray-700">只支援 macOS——Windows 團隊用不了</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Windows + macOS</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">追蹤範圍</td>
+              <td class="px-4 py-3 text-gray-700">整顆硬碟快照</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">以專案為單位的版本歷史</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">視覺化檔案比對</td>
+              <td class="px-4 py-3 text-gray-700">無——只有二進位 blob</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">Word、Excel、PowerPoint、PDF、圖片皆可並排比對</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">找某檔案的歷史</td>
+              <td class="px-4 py-3 text-gray-700">在時光星軌裡飛和猜</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">每個檔案一條時間軸，一點就到任何舊版本</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">細緻還原</td>
+              <td class="px-4 py-3 text-gray-700">傾向整個資料夾還原</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">還原單一檔案的單次存檔</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">版本附註</td>
+              <td class="px-4 py-3 text-gray-700">無——只有每小時自動快照</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">每次存檔可加筆記</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">所需儲存空間</td>
+              <td class="px-4 py-3 text-gray-700">第二顆外接硬碟，容量要跟 Mac 一樣</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">空間成本很小（只存差異），隨身碟就裝得下</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">團隊共享</td>
+              <td class="px-4 py-3 text-gray-700">無——一個 Mac 一個備份</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">版本歷史可推送到共用 NAS、Gitea、GitHub</td>
+            </tr>
+            
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-3 font-medium text-gray-900">大型二進位檔</td>
+              <td class="px-4 py-3 text-gray-700">每次快照都複製整個檔案</td>
+              <td class="px-4 py-3 text-brand-700 bg-brand-50">38 種格式 + 超過 10 MB 自動偵測；只存差異</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 4: PAIN POINTS                       -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">為什麼要換</h2>
+      <ul class="space-y-5">
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">只支援 macOS。</strong> 團隊裡一出現 Windows 使用者，Time Machine 就不再是團隊的答案。你需要的是跨作業系統都能用的流程。</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">沒有語意理解。</strong> Time Machine 把 200 MB 的 PSD 和 2 KB 的文字檔當成一樣的東西：不透明的 blob。它沒辦法告訴你兩個版本差在哪。你看著兩個長得一樣的檔案，完全無法判斷。</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">還原是整個資料夾層級的事。</strong> 要只拿一個檔案的一個舊版本、又不想蓋掉其他東西，真的很麻煩。很多人最後就是把舊資料夾複製到別的地方——製造新的混亂。</span>
+        </li>
+        
+        <li class="flex gap-3">
+          <span class="text-amber-500 mt-1 shrink-0">→</span>
+          <span class="text-gray-700 leading-relaxed"><strong class="text-gray-900">跟整顆硬碟的所有東西混在一起。</strong> Time Machine 備份你的下載資料夾、系統檔案、整台 Mac。要找某個客戶專案的主視覺舊版本，要先從這一堆裡撈。</span>
+        </li>
+        
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 5: MIGRATION                         -->
+  <!-- ============================================ -->
+  <section id="migration" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">怎麼換到 Keeply</h2>
+      <ol class="space-y-6">
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">1</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Time Machine 繼續跑——它的災難還原就是好用</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">別關掉。Time Machine 對「Mac 整台掛了」的情境是正當的保險。Keeply 管日常版本找回，是不同的工作。</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">2</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">在需要真實版本歷史的專案裡裝 Keeply</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">挑你手上的客戶資料夾、設計檔、每天在改的作品。用 Keeply 打開、點「開始保護」。從目前狀態開始管版本，存檔時你自己寫附註。</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">3</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">為團隊成員加一個共用備份目標</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">多人專案，在 Keeply 裡設定 NAS、Gitea、或 GitHub 備份。每個人的版本歷史匯集到整個團隊都能拿到的地方——這是 Time Machine 做不到的事。</p>
+          </div>
+        </li>
+        
+        <li class="flex gap-4">
+          <span class="flex-shrink-0 w-9 h-9 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">4</span>
+          <div>
+            <h3 class="font-semibold text-gray-900 mb-1">Time Machine 負責災難，Keeply 負責日常找回</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">硬碟掛了？Time Machine。客戶問三週前 Logo 長什麼樣？Keeply 時間軸，一點、視覺比對，搞定。</p>
+          </div>
+        </li>
+        
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 6: FAQ                               -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8">常見問題</h2>
+      <div class="space-y-3">
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>可以同時跑 Time Machine 和 Keeply 嗎？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">可以，而且我們推薦這樣。Time Machine 對整台 Mac 做災難還原。Keeply 以專案為單位管版本歷史，附筆記和視覺比對。它們解決不同問題、不會衝突——Keeply 的資料放在你專案資料夾裡，Time Machine 照常把它跟其他東西一起備份。雙保險。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Keeply 支援 Windows 嗎？我的團隊混合使用。</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">支援。Keeply 在 Windows 和 macOS 都能跑，所以混合團隊共用同一個工具、同一份版本歷史、同一個備份目標。Linux 在 roadmap 上但還沒出貨。你的團隊今天有人用 Windows 的話，光靠 Time Machine 完全覆蓋不到——Keeply 可以。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>要找單一檔案的特定舊版本怎麼辦？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">這是最大差別。Time Machine 要打開時光星軌、猜哪個小時的快照有你要的版本、還原。Keeply 是打開專案、點那個檔案、在時間軸上看每次存檔附自己的筆記、點要的版本就到。找一個月前的版本是幾秒鐘的事。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>Keeply 能告訴我兩個版本差在哪嗎？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">可以。Keeply 對 Word、Excel、PowerPoint、PDF、圖片都能並排視覺比對——直接告訴你哪段文字、哪個數字、哪個像素不一樣。Time Machine 沒有這種功能；它把每個檔案當成不透明二進位，差異要你自己找。對設計或文件工作來說，比對才是你真正需要的東西。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>我需要另外一顆像 Time Machine 要的外接硬碟嗎？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">不用。Keeply 把版本放在你專案資料夾裡，只存差異，空間成本遠小於完整檔案。你可以加備份目標（隨身碟、NAS、GitHub、Gitea）但不是必要的，一開始不需要。一個有好幾個月歷史的 Keeply 專案常常一根隨身碟就裝得下，Time Machine 要整顆硬碟。</div>
+        </details>
+        
+        <details class="group bg-gray-50 rounded-lg overflow-hidden">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span>我的版本實際存在哪裡？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed">預設放在你自己的儲存空間：在你專案資料夾裡，以差異方式高效儲存。你可以加最多三個備份位置：辦公室 NAS（SMB）、隨身碟、自架 Gitea、或私有 GitHub repo。Keeply 自家伺服器完全不存你的專案資料。隨時不用或移除，檔案和版本歷史都留在原地。</div>
+        </details>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SECTION 7: FINAL CTA                         -->
+  <!-- ============================================ -->
+  <section class="bg-gradient-to-br from-brand-600 to-brand-700 px-6 py-16 md:py-20 text-center text-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">準備好不再跟工具打架了嗎？</h2>
+      <p class="text-brand-100 max-w-xl mx-auto mb-8">免費下載支援 Windows 和 macOS。30 秒完成設定，不用帳號——安裝後打開你的專案資料夾就能用。</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/zh-TW/#download" class="bg-white text-brand-700 hover:bg-brand-50 font-bold px-8 py-4 rounded-full transition-colors">免費下載</a>
+        <a href="/zh-TW/buy.html" class="border-2 border-white text-white hover:bg-white/10 font-medium px-8 py-4 rounded-full transition-colors">查看 Founding Member 定價</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (injected by components.js) -->
+  <div id="footer-root"></div>
+
+  <!-- Shared components + i18n + consent (spec 023/024) -->
+  <script src="../../consent-api.js" defer></script>
+  <script src="../../components.js" defer></script>
+  <script src="../../cookie-banner.js" defer></script>
+  <script src="../../ga4-loader.js" defer></script>
+  <script src="../../i18n-loader.js" defer></script>
+
+</body>
+</html>
