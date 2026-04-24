@@ -94,8 +94,8 @@
   <meta name="twitter:image" content="https://keeply.work/og-image.png" />
 
   <!-- Tailwind CSS (compiled) -->
-  <link rel="preload" href="../style.css" as="style" integrity="sha384-JzT5j3lZnf9P5tPIZ6k23p3dYSO1WTESyeWqnpCtFEIjBGWwU6NHNbxADHe+AlWP" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../style.css" integrity="sha384-JzT5j3lZnf9P5tPIZ6k23p3dYSO1WTESyeWqnpCtFEIjBGWwU6NHNbxADHe+AlWP" crossorigin="anonymous" />
+  <link rel="preload" href="../style.css" as="style" integrity="sha384-IBTjVk7b7smDurz0+RfciP3FlBAWp7mQTyur0FoGm6zSbwGJH2JGtZqXis5xgoft" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style.css" integrity="sha384-IBTjVk7b7smDurz0+RfciP3FlBAWp7mQTyur0FoGm6zSbwGJH2JGtZqXis5xgoft" crossorigin="anonymous" />
 
   <!-- M PLUS Rounded 1c (self-hosted via input.css @font-face) -->
 
@@ -281,6 +281,36 @@
           <p class="text-gray-500 leading-relaxed mb-4" data-i18n="index.features.3.desc">No more choosing between &quot;make it better&quot; and &quot;too scared to change it.&quot;</p>
           <p class="text-sm text-gray-400 leading-relaxed" data-i18n="index.features.3.detail">Keeply protects every version so you can experiment freely. No matter what you change, you can always go back.</p>
         </div>
+
+        <!-- Feature 4: Visual Diff (spec 027 MISSING M1) -->
+        <div class="bg-white rounded-2xl p-8 border border-gray-100 glow-hover transition-all duration-300 animate-float">
+          <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-2xl mb-6">
+            🔍
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3" data-i18n="index.features.4.title">See every change, side-by-side</h3>
+          <p class="text-gray-500 leading-relaxed mb-4" data-i18n="index.features.4.desc">Visual diff for Word, Excel, PowerPoint, PDFs, and images.</p>
+          <p class="text-sm text-gray-400 leading-relaxed" data-i18n="index.features.4.detail">Not just a list of modified files — Keeply shows you exactly what changed, with Office documents, PDFs, and images displayed side-by-side with highlighted differences. For every other file type, track versions and restore any point in seconds.</p>
+        </div>
+
+        <!-- Feature 5: Silent LFS (spec 027 MISSING M2) -->
+        <div class="bg-white rounded-2xl p-8 border border-gray-100 glow-hover transition-all duration-300 animate-float-delayed">
+          <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center text-2xl mb-6">
+            📦
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3" data-i18n="index.features.5.title">Handles big files silently</h3>
+          <p class="text-gray-500 leading-relaxed mb-4" data-i18n="index.features.5.desc">Blender, PSD, video — all work out of the box.</p>
+          <p class="text-sm text-gray-400 leading-relaxed" data-i18n="index.features.5.detail">Keeply automatically detects 38 binary file formats and any file over 10 MB, routing them through large-file storage without a single configuration step. No LFS setup, no repo bloat, no broken saves on large projects.</p>
+        </div>
+
+        <!-- Feature 6: Work Copies (spec 027 MISSING M3) -->
+        <div class="bg-white rounded-2xl p-8 border border-gray-100 glow-hover transition-all duration-300 animate-float-delayed-2">
+          <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-2xl mb-6">
+            🌿
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3" data-i18n="index.features.6.title">Try bold changes safely</h3>
+          <p class="text-gray-500 leading-relaxed mb-4" data-i18n="index.features.6.desc">Create a work copy, experiment, then merge back.</p>
+          <p class="text-sm text-gray-400 leading-relaxed" data-i18n="index.features.6.detail">Work copies let you branch off from your project to try a radical new design or a risky refactor, then merge the changes back when they're ready — or delete the work copy if the experiment didn't pan out. Your main project stays untouched the whole time.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -396,7 +426,7 @@
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.4">Version notes</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.5">Local &amp; NAS storage</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.6">File diff</span></li>
-            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.7">Unlimited users</span></li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.7">Shared via NAS — no per-seat licensing</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.8">Up to 3 vault locations</span></li>
           </ul>
           <a href="#download" class="block border-2 border-gray-200 hover:border-brand-300 text-gray-700 hover:text-brand-700 font-medium py-3.5 rounded-full transition-all" data-i18n="index.pricing.free.cta">Free Download</a>
@@ -414,12 +444,12 @@
           <div class="text-xs text-brand-500 mb-8" data-i18n="index.pricing.team.flat">One price, no per-seat charges</div>
           <ul class="text-sm text-gray-600 space-y-3 text-left mb-8">
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.1">Everything in Free</span></li>
-            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.2">Invite-code team management</span></li>
-            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.3">Admin vault dashboard</span></li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.2">Invite-code team onboarding (planned)</span></li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.3">Admin vault dashboard (planned)</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.4">Priority technical support</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.5">30-day money-back guarantee</span></li>
-            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.6">Perpetual fallback after 12 months</span></li>
-            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.7">Location approval &amp; cooldown controls</span></li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.6">Perpetual fallback after 12 months (planned policy)</span></li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.7">Location approval &amp; cooldown controls (planned)</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.8">Conflict detection &amp; resolution</span></li>
           </ul>
           <p class="text-sm text-gray-500 mb-3" data-i18n="index.pricing.team.coming">Currently in development. Leave your email to get notified when it launches.</p>
@@ -464,7 +494,7 @@
             </div>
             <div class="bg-white rounded-lg px-4 py-3 border border-brand-100">
               <p class="text-xs font-bold text-brand-500 mb-1">Team</p>
-              <p class="text-sm text-gray-600" data-i18n="index.teamvault.team">2 shared team locations + 1 backup location per member (up to 15 total). Admin approval, cooldowns, and annual limits keep backup space organized.</p>
+              <p class="text-sm text-gray-600" data-i18n="index.teamvault.team">Planned for Team plan: 2 shared team locations + 1 backup location per member. Admin approval, cooldowns, and annual limits to keep backup space organized.</p>
             </div>
           </div>
         </div>
