@@ -87,16 +87,33 @@
 
 ## 一次性 checklist
 
+```text
+[x] Namecheap / GoDaddy / Cloudflare / Porkbun 或其他：你的 registrar 是 Namecheap
+[x] 2FA enabled（authenticator app，不是 SMS）
+[x] 10 組 backup codes 存在 1Password + 實體副本
+[x] Registrar lock / Transfer lock = ON
+[x] Auto-renewal = ON
+[x] WHOIS privacy = ON（若免費則開；付費則評估）
+[x] 登出登入測試 2FA 真的生效
+[x] who.is 查 keeply.work 確認 clientTransferProhibited
 ```
-[ ] Namecheap / GoDaddy / Cloudflare / Porkbun 或其他：你的 registrar 是 ________
-[ ] 2FA enabled（authenticator app，不是 SMS）
-[ ] 10 組 backup codes 存在 1Password + 實體副本
-[ ] Registrar lock / Transfer lock = ON
-[ ] Auto-renewal = ON
-[ ] WHOIS privacy = ON（若免費則開；付費則評估）
-[ ] 登出登入測試 2FA 真的生效
-[ ] who.is 查 keeply.work 確認 clientTransferProhibited
+
+**完成紀錄**：2026-04-24 由 boy1690 完成並由外部 RDAP 查詢驗證
+
+驗證截取（`https://rdap.namecheap.com/domain/keeply.work` 2026-04-24）：
+
+```text
+Status:
+  client transfer prohibited  ← registrar 端鎖生效
+  server transfer prohibited  ← registry 端鎖生效（更強）
+
+Registrant:
+  org:   Privacy service provided by Withheld for Privacy ehf
+  adr:   Kalkofnsvegur 2, Reykjavik, Capital Region
+  email: 2266933d7c8f…@withheldforprivacy.com
 ```
+
+雙鎖（client + server transfer prohibited）是最強狀態——即使 Namecheap 登入被盜，攻擊者仍無法發起網域轉移。
 
 ---
 
