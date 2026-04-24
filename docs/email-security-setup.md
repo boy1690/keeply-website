@@ -1,10 +1,56 @@
 # Email Security Setup Runbook — keeply.work (SPF / DKIM / DMARC)
 
-> Spec 026 / audit #9 | 2026-04-23
+> Spec 026 / audit #9 | 2026-04-23 (current state snapshot: 2026-04-24)
 >
 > 把 `@keeply.work` 的 email 加上「數位簽章 + 寄件人白名單 + 偽冒拒收策略」，讓 Gmail / Outlook / Apple iCloud / Yahoo 等收件人能驗證信件是官方的；任何偽冒 `hello@keeply.work` 的釣魚信被收件方自動丟棄。
 >
 > **預估時間**：初次設定 30-45 分鐘；2-4 週觀察期；最終 `p=reject` 升級 5 分鐘。**不可一次做完**。
+
+---
+
+## 📸 生產狀態快照 — 2026-04-24（live DNS 驗證）
+
+**核對過 Namecheap DNS 的實況**：8 成已經跑在 production，不需要「從零開始」。下方 Phase 0-3 的大部分步驟**已完成**，保留作為參考 / rollback 依據。
+
+| DNS 記錄 | 位置 | 現值 | 狀態 |
+|---|---|---|---|
+| **Root SPF** | `keeply.work` TXT | `v=spf1 include:zohomail.com -all` | ✅ Live |
+| **Zoho DKIM** | `zmail._domainkey.keeply.work` TXT | `v=DKIM1; k=rsa; p=…` (RSA public key) | ✅ Verified |
+| **Resend DKIM** | `resend._domainkey.keeply.work` TXT | `p=…` (RSA public key) | ✅ Verified |
+| **Resend 子網域 SPF** | `send.keeply.work` TXT | `v=spf1 include:amazonses.com ~all` | ✅ Live |
+| **Resend return-path MX** | `send.keeply.work` MX | `10 feedback-smtp.ap-northeast-1.amazonses.com` | ✅ Live |
+| **Inbound MX (Zoho)** | `keeply.work` MX | `10 mx.zoho.com; 50 mx3.zoho.com; 20 mx2.zoho.com` | ✅ Live |
+| **DMARC** | `_dmarc.keeply.work` TXT | `v=DMARC1; p=none; rua=mailto:wei@keeply.work` | ✅ Live（監測模式）|
+| **Zoho domain verification** | `keeply.work` TXT | `zoho-verification=zb42495208.zmverify.zoho.com` | ✅ Live |
+
+### 三個 sender 的 DMARC alignment 現狀
+
+| Sender | From domain | SPF path | DKIM path | DMARC |
+|---|---|---|---|---|
+| Zoho `hello@keeply.work` | keeply.work | `include:zohomail.com` root（align ✓）| `zmail._domainkey` root（align ✓）| ✅ PASS via both |
+| Zoho `wei@keeply.work` | keeply.work | 同上 | 同上 | ✅ PASS |
+| Resend `noreply@keeply.work` | keeply.work | envelope → `send.keeply.work`（子網域 align fail；root SPF 也無 Resend include）| `resend._domainkey` root（align ✓）| ✅ PASS via DKIM only |
+
+**關鍵技術細節（spec 027 補充）**：Resend 刻意把 Return-Path 放子網域 `send.keeply.work`，**不污染 root SPF**。DMARC alignment 只需要 SPF 或 DKIM 其中一個對 From: domain align 即算通過——DKIM 在 root 簽章（`resend._domainkey.keeply.work`）就已足夠。這是 Resend 的正確架構。
+
+### 週末剩下真正要做的事
+
+- [x] Phase 0.1 — 3 個 sender 清單（Zoho hello / Zoho wei / Resend noreply）
+- [x] Phase 0.2 — Paddle 不從 `@keeply.work` 寄，確認於 2026-04-24
+- [x] Phase 1 — SPF root 已設 `include:zohomail.com -all`
+- [x] Phase 2.1-2.4 — Zoho DKIM `zmail._domainkey` 已 verified
+- [x] Phase 2b — Resend DKIM `resend._domainkey` 已 verified
+- [x] Phase 3.1 — DMARC `p=none` 已設（監測模式 live）
+- [x] Phase 3.2 — `rua` 收到 `wei@keeply.work`（可選擇升級到 EasyDMARC 免費解析，見下方）
+- [ ] **Cloudflare 遷移後：確認以上 8 條 records 全被完整搬過去**（Cloudflare 自動爬 DNS，通常 100%，仍需 diff 比對）
+- [ ] **Phase 3.2 升級（選）**：改用 EasyDMARC 免費 dashboard 代替 `wei@` 收 XML
+- [ ] **Phase 3.3-3.5**：2-6 週後分階段 `p=none` → `p=quarantine pct=25/50/100` → `p=reject`
+
+### 兩個建議但非緊急的優化
+
+**A. Root SPF 是 `-all`（hard fail）**：非常嚴格。凡未授權 IP 發 `From: @keeply.work` 直接 reject。好處是 DMARC 嚴格性高；代價是未來加新 sender（例如 Mailgun transactional）若忘了更新 SPF 會立刻斷信。現狀可接受，記在心裡。
+
+**B. DMARC `rua` 收件**：目前每日 aggregate report 寄到 `wei@keeply.work`——你 inbox 會多 XML 格式信，人類讀不懂。可選：註冊 EasyDMARC / Postmark 免費 plan，用 dashboard 看解析結果。**週末 Cloudflare 做完順手改 DMARC record 即可。**
 
 ---
 
