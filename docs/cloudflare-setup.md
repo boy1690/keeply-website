@@ -35,7 +35,19 @@
 
 ## Phase 1 — 註冊 Cloudflare 並加入 keeply.work（10 分鐘）
 
-### 1.1 註冊帳號
+### 1.1 登入 / 註冊帳號
+
+> 📌 **你已經有 Cloudflare 帳號**——跑 `keeply-billing` Worker（Paddle webhook → Keygen → Resend 金流橋）的那個。**直接登入同一個帳號即可**，不要開新的。跨帳號管理很麻煩。
+>
+> 證據：`D:/tools/doing/Keeply/cf-worker/wrangler.toml` 的 `account_id` 指向這個帳號，它跑著 `keeply-billing` Worker 在 `*.workers.dev` subdomain。**`keeply.work` zone 尚未加進這個帳號**（Worker 不用 custom domain），所以 Phase 1.2 Add Site 仍要做。
+
+**登入（已有帳號）**：
+
+1. 開 `https://dash.cloudflare.com/login`
+2. email + 密碼（+ 2FA，應該已設）→ 進 Dashboard
+3. 登入後會看到左側 **Workers & Pages** 下方有 `keeply-billing` Worker 在跑——對，就是這個帳號
+
+**若 somehow 你真的沒有帳號**（不太可能，但以防萬一）：
 
 1. 開 `https://dash.cloudflare.com/sign-up`
 2. email + 密碼 → 驗證 email
@@ -473,6 +485,12 @@ A：Cloudflare 能看到 request metadata（IP、URL、UA）。這已在 Privacy
 **Q：我想收 CSP violation reports 怎麼辦？**
 A：Path 2 (Worker) 可以加 `report-uri` / `report-to`，把 reports 送到外部 endpoint（例如 Sentry 免費層）。本 spec 範圍不含此；未來 spec 可加。
 
+**Q：把 `keeply.work` zone 加進 Cloudflare 會不會把既有的 `keeply-billing` Worker 搞壞？**
+A：**不會**。那個 Worker 綁在 `keeply-billing.<subdomain>.workers.dev`（workers.dev subdomain）——跟 `keeply.work` zone 完全獨立。`keeply.work` 變成 Cloudflare DNS 管理後，Worker 繼續在 `*.workers.dev` 上跑，Paddle 的 webhook URL 也不變。若未來你想把 Worker 搬到 `pay.keeply.work` 這種子網域，是另外一個任務（本 runbook 範圍不含）。
+
+**Q：既有 `keeply-billing` Worker 的 secrets（PADDLE_WEBHOOK_SECRET 等）會不會受影響？**
+A：**完全不會**。Worker 的 secrets 是綁在 Worker 本身，不是綁在 zone。把新 zone 加進同一個 Cloudflare account，對既有 Worker 零影響。
+
 ---
 
-*Spec 022 Runbook v1.0 | 2026-04-23*
+*Spec 022 Runbook v1.0 | 2026-04-23 (amended 2026-04-24 by spec 027)*
