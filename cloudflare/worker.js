@@ -54,11 +54,11 @@ const SECURITY_HEADERS = {
   // in a meta CSP.
   'Content-Security-Policy':
     "default-src 'self'; " +
-    "script-src 'self' 'unsafe-inline'; " +
+    "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com; " +
     "style-src 'self' 'unsafe-inline'; " +
-    "img-src 'self' data:; " +
+    "img-src 'self' data: https://www.google-analytics.com; " +
     "font-src 'self'; " +
-    "connect-src 'self' https://docs.google.com; " +
+    "connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com https://cloudflareinsights.com; " +
     "form-action 'self' https://docs.google.com; " +
     "frame-ancestors 'none'; " +
     "base-uri 'self'; " +
