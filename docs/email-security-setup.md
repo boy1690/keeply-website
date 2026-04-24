@@ -44,12 +44,16 @@
 
 **情境** 3（Resend）特別關鍵——這是 Founding Member 付 $599 後收到授權碼的唯一管道。一旦漏設，使用者付完錢收不到授權 = P0 incident + 退款潮。
 
-### 0.2 Paddle 自己的收據 email（逐一確認）
+### 0.2 Paddle 自己的收據 email（已驗證於 2026-04-24）
 
-- [ ] **Paddle 交易 email**：Paddle 會在付款成功後**也**寄一封自己的 receipt email 給客戶。這封的 `From:` 是 `@paddle.com`（預設）還是 `billing@keeply.work`（啟用 custom sender 才會）？
-  - 登入 Paddle dashboard → Settings → Emails → Sender address
-  - 若顯示 `From: @keeply.work`，**必加** Paddle 的 SPF include value（到 Paddle dashboard 或 `help.paddle.com` 查當下正確值）
-  - 若顯示 `From: noreply@paddle.com` 或預設值——**不需加**（Paddle 用自己的 domain，與 `@keeply.work` SPF 無關）
+- [x] **Paddle 交易 email**：實測一封 Paddle 於 2026-04-16 寄給 boy1690@gmail.com 的 receipt，header 顯示：
+  - `From: Paddle <help@paddle.com>`
+  - `Return-Path (bounce): pm-bounces.paddle.com`
+  - `DKIM signed by: paddle.com`
+  - 正文頂部：「Keeply via paddle.com」
+
+  **結論**：Paddle **用自己的 `@paddle.com` 寄**，不使用 `@keeply.work` 作為 `From`。
+  **Keeply 的 SPF 不需要 include Paddle**。若未來你在 Paddle dashboard 特意設定 custom sender domain（需 Paddle 審核），這條結論要重新驗證。
 
 ### 0.3 其他可能
 
