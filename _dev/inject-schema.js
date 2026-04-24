@@ -162,6 +162,33 @@ function escapeJsonForScript(obj) {
 
 // ─── Schema Builders ─────────────────────────────────────────────────────────
 
+// Spec 029: homepage FAQ — 7 Q&A keys read from i18n, with English fallback
+// when a locale lacks native translations (build.js applies the same fallback
+// in rendered HTML, so JSON-LD matches on-page content).
+const FAQ_COUNT = 7;
+
+function buildFaqPageNode({ canonicalUrl, htmlLang, locale, translations }) {
+  const mainEntity = [];
+  for (let i = 1; i <= FAQ_COUNT; i++) {
+    const q = getTranslation(translations, locale, `index.faq.${i}.q`) ||
+              getTranslation(translations, 'en', `index.faq.${i}.q`);
+    const a = getTranslation(translations, locale, `index.faq.${i}.a`) ||
+              getTranslation(translations, 'en', `index.faq.${i}.a`);
+    if (!q || !a) continue;
+    mainEntity.push({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a }
+    });
+  }
+  return {
+    '@type': 'FAQPage',
+    '@id': `${canonicalUrl}#faq`,
+    inLanguage: htmlLang,
+    mainEntity
+  };
+}
+
 function buildIndexGraph({ canonicalUrl, htmlLang, locale, translations, releaseConfig }) {
   const localizedDesc = getTranslation(translations, locale, 'index.meta.description') || '';
   const buyUrl = locale ? `${BASE_URL}/${locale}/buy.html` : `${BASE_URL}/buy.html`;
@@ -194,7 +221,8 @@ function buildIndexGraph({ canonicalUrl, htmlLang, locale, translations, release
         url: buyUrl
       },
       publisher: { '@id': `${BASE_URL}/#organization` }
-    }
+    },
+    buildFaqPageNode({ canonicalUrl, htmlLang, locale, translations })
   ];
 }
 

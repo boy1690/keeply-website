@@ -96,8 +96,8 @@
   <meta name="twitter:image" content="https://keeply.work/og-image.png" />
 
   <!-- Tailwind CSS (compiled) -->
-  <link rel="preload" href="../style.css" as="style" />
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="preload" href="../style.css" as="style" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style.css" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
 
   <!-- M PLUS Rounded 1c (self-hosted via input.css @font-face) -->
 
@@ -146,6 +146,69 @@
         "publisher": {
           "@id": "https://keeply.work/#organization"
         }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://keeply.work/zh-TW/#faq",
+        "inLanguage": "zh-Hant",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Keeply 可以離線使用嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以。Keeply 是完全本地的軟體——不用雲端、不用帳號、不依賴網路。你的專案檔案、版本歷史、筆記全部留在你的硬碟或 NAS 上。你可以在飛航模式、地下室、或完全離網的電腦上使用 Keeply。唯一會連網的時機是檢查 App 更新，而這個你也可以關掉。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Keeply 和 Dropbox 或 Google Drive 有什麼不同？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dropbox 和 Google Drive 同步的是檔案目前的狀態；Keeply 把每一個版本都記錄成獨立快照。Dropbox 和 Drive 按使用者人數每月收費；Keeply 個人版永久免費，未來的 Team 方案（規劃中）將是每月 25 美金的平頭價，不看團隊規模。你的檔案存在你的硬碟上，不是廠商的伺服器，所以你不會被訂閱綁架。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "如果我停止付費，我的檔案會怎樣？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不會怎樣。Keeply 的檔案以你掌控的標準資料夾結構存在你的硬碟或 NAS 上。即使你把 Keeply 解除安裝，檔案和版本歷史仍然可以用任何檔案總管讀取。你不是在為了存取自己的作品付費——Founding Member 是一次性買斷的永久授權，免費版則永久免費。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "我的團隊可以不按人頭付費共享檔案嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以。免費版團隊就已經能透過 NAS 或共用磁碟共享同一個保管庫——Keeply 不計算席次。即將推出的 Team 方案（每月 25 美金平頭價，規劃中）會加入邀請碼上架流程和管理員儀表板，但仍然不按人頭收費。對比 Dropbox Business 每人每月 20 美金，6 人團隊一個月就是 120 美金。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Keeply 支援哪些檔案類型？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "任何檔案。Keeply 對 Word、Excel、PowerPoint、PDF 和圖片提供並排視覺化 diff。其他所有類型——Blender、PSD、影片、CAD、3D 模型、原始碼——Keeply 都會追蹤版本，讓你幾秒內還原到任何時間點。超過 10MB 的檔案和 38 種已知的二進位格式會自動偵測並路由到大檔儲存，不需要任何設定或 LFS。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "有 Linux 版本嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Keeply 目前支援 Windows 10 以上和 macOS（僅限 Apple Silicon）。Linux 版本在 roadmap 上但還沒推出。如果 Linux 支援對你的工作流程很關鍵，請透過聯絡表單告訴我們——我們根據實際使用者需求排優先序，每一則請求都會被記錄。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "$599 的 Founding Member 方案是什麼？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "一次性付費、永久授權，限定前 500 位買家。你永久擁有 Keeply 目前所有功能，加上 Team 方案上線後自動取得所有 Team 功能。沒有訂閱週期性扣款，沒有未來漲價的驚喜。對比每月 25 美金 × 24 個月 = 600 美金——Founding Member 不到兩年就回本，而且繼續用。"
+            }
+          }
+        ]
       }
     ]
   }
@@ -580,15 +643,75 @@
     </div>
   </section>
 
+  <!-- ============================================ -->
+  <!-- FAQ (spec 029 — Homepage FAQPage schema)      -->
+  <!-- ============================================ -->
+  <section id="faq" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center" data-i18n="index.faq.title">常見問題</h2>
+      <div class="space-y-3">
+        <details class="group bg-white rounded-lg overflow-hidden border border-gray-200">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span data-i18n="index.faq.1.q">Keeply 可以離線使用嗎？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed" data-i18n="index.faq.1.a">可以。Keeply 是完全本地的軟體——不用雲端、不用帳號、不依賴網路。你的專案檔案、版本歷史、筆記全部留在你的硬碟或 NAS 上。你可以在飛航模式、地下室、或完全離網的電腦上使用 Keeply。唯一會連網的時機是檢查 App 更新，而這個你也可以關掉。</div>
+        </details>
+        <details class="group bg-white rounded-lg overflow-hidden border border-gray-200">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span data-i18n="index.faq.2.q">Keeply 和 Dropbox 或 Google Drive 有什麼不同？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed" data-i18n="index.faq.2.a">Dropbox 和 Google Drive 同步的是檔案目前的狀態；Keeply 把每一個版本都記錄成獨立快照。Dropbox 和 Drive 按使用者人數每月收費；Keeply 個人版永久免費，未來的 Team 方案（規劃中）將是每月 25 美金的平頭價，不看團隊規模。你的檔案存在你的硬碟上，不是廠商的伺服器，所以你不會被訂閱綁架。</div>
+        </details>
+        <details class="group bg-white rounded-lg overflow-hidden border border-gray-200">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span data-i18n="index.faq.3.q">如果我停止付費，我的檔案會怎樣？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed" data-i18n="index.faq.3.a">不會怎樣。Keeply 的檔案以你掌控的標準資料夾結構存在你的硬碟或 NAS 上。即使你把 Keeply 解除安裝，檔案和版本歷史仍然可以用任何檔案總管讀取。你不是在為了存取自己的作品付費——Founding Member 是一次性買斷的永久授權，免費版則永久免費。</div>
+        </details>
+        <details class="group bg-white rounded-lg overflow-hidden border border-gray-200">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span data-i18n="index.faq.4.q">我的團隊可以不按人頭付費共享檔案嗎？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed" data-i18n="index.faq.4.a">可以。免費版團隊就已經能透過 NAS 或共用磁碟共享同一個保管庫——Keeply 不計算席次。即將推出的 Team 方案（每月 25 美金平頭價，規劃中）會加入邀請碼上架流程和管理員儀表板，但仍然不按人頭收費。對比 Dropbox Business 每人每月 20 美金，6 人團隊一個月就是 120 美金。</div>
+        </details>
+        <details class="group bg-white rounded-lg overflow-hidden border border-gray-200">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span data-i18n="index.faq.5.q">Keeply 支援哪些檔案類型？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed" data-i18n="index.faq.5.a">任何檔案。Keeply 對 Word、Excel、PowerPoint、PDF 和圖片提供並排視覺化 diff。其他所有類型——Blender、PSD、影片、CAD、3D 模型、原始碼——Keeply 都會追蹤版本，讓你幾秒內還原到任何時間點。超過 10MB 的檔案和 38 種已知的二進位格式會自動偵測並路由到大檔儲存，不需要任何設定或 LFS。</div>
+        </details>
+        <details class="group bg-white rounded-lg overflow-hidden border border-gray-200">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span data-i18n="index.faq.6.q">有 Linux 版本嗎？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed" data-i18n="index.faq.6.a">Keeply 目前支援 Windows 10 以上和 macOS（僅限 Apple Silicon）。Linux 版本在 roadmap 上但還沒推出。如果 Linux 支援對你的工作流程很關鍵，請透過聯絡表單告訴我們——我們根據實際使用者需求排優先序，每一則請求都會被記錄。</div>
+        </details>
+        <details class="group bg-white rounded-lg overflow-hidden border border-gray-200">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span data-i18n="index.faq.7.q">$599 的 Founding Member 方案是什麼？</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed" data-i18n="index.faq.7.a">一次性付費、永久授權，限定前 500 位買家。你永久擁有 Keeply 目前所有功能，加上 Team 方案上線後自動取得所有 Team 功能。沒有訂閱週期性扣款，沒有未來漲價的驚喜。對比每月 25 美金 × 24 個月 = 600 美金——Founding Member 不到兩年就回本，而且繼續用。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer (injected by components.js) -->
   <div id="footer-root"></div>
 
   <!-- Shared components + i18n + consent (spec 023) -->
-  <script src="../consent-api.js" defer></script>
-  <script src="../components.js" defer></script>
-  <script src="../cookie-banner.js" defer></script>
-  <script src="../ga4-loader.js" defer></script>
-  <script src="../i18n-loader.js" defer></script>
+  <script src="../consent-api.js" defer integrity="sha384-AgMsIGCbo9mV0oP2ebvR5aNCzNPtSkIGXG5v29yY6A+vEktkTMAOZtlK0WiKSEUR" crossorigin="anonymous"></script>
+  <script src="../components.js" defer integrity="sha384-Y6/6phkijVlwQ9nqNUKQEGuFnHvvxA4NczoZsCHqQFkBGHLr/F3x7QPVgeDsAi6v" crossorigin="anonymous"></script>
+  <script src="../cookie-banner.js" defer integrity="sha384-aDwCVUUSIWi62pJZ7PqUXIOz/bAoGadk/KUkD4HatS2r4S1C5cMfasX/UGBBap+8" crossorigin="anonymous"></script>
+  <script src="../ga4-loader.js" defer integrity="sha384-jYO4ARZ+UCGY2v6qzLfw2yqhQ5tPFNYQia3QEljpr5okv2tjmBbXU6Pmzm9jTV8O" crossorigin="anonymous"></script>
+  <script src="../i18n-loader.js" defer integrity="sha384-4/86z3+CQS2W1y+6+aUviORi8uQCOPnZcHyVgXNDVOzuap9rm02i3fXp1e1zHRj5" crossorigin="anonymous"></script>
 
 
 </body>

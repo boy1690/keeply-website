@@ -96,8 +96,8 @@
   <meta name="twitter:image" content="https://keeply.work/og-image.png" />
 
   <!-- Tailwind CSS (compiled) -->
-  <link rel="preload" href="../style.css" as="style" />
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="preload" href="../style.css" as="style" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style.css" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
 
   <!-- M PLUS Rounded 1c (self-hosted via input.css @font-face) -->
 
@@ -146,6 +146,71 @@
         "publisher": {
           "@id": "https://keeply.work/#organization"
         }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://keeply.work/ja/#faq",
+        "inLanguage": "ja",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does Keeply work offline?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Keeply is fully local software — no cloud, no account, no network dependency. Your project files, version history, and notes all stay on your hard drive or NAS. You can use Keeply in airplane mode, in a basement, or on an air-gapped machine. The only time Keeply touches the network is when you check for app updates, which you can disable."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is Keeply different from Dropbox or Google Drive?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dropbox and Google Drive sync the current state of files; Keeply records every version as a separate snapshot. Dropbox and Drive charge per user per month; Keeply is free for individuals and will have a flat $25/month Team plan (coming soon) regardless of team size. Your files live on your disk, not a vendor server, so you are not locked into a subscription."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens to my files if I stop paying?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nothing. Keeply files are stored on your hard drive or NAS in a standard folder structure you control. Even if you uninstall Keeply, the files and their version history remain readable by any file manager. You are not paying for access to your own work — the Founding Member license is a one-time perpetual payment, and the free tier stays free forever."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can my team share files without per-seat licensing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. In the free tier, teams already share a single vault folder over NAS or a shared drive — Keeply does not count seats. The upcoming Team plan ($25/month flat, planned) adds invite-code onboarding and an admin dashboard, but still without per-seat fees. Compare this with Dropbox Business at $20 per seat per month, which costs 
+
+20/month for a 6-person team."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What file types does Keeply support?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Any file. Keeply shows side-by-side visual diff for Word, Excel, PowerPoint, PDF, and images. For every other file type — Blender, PSD, video, CAD, 3D models, source code — Keeply tracks versions and lets you restore any point in seconds. Files over 10MB and 38 known binary formats are auto-detected and routed to large-file storage without any setup or LFS configuration."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a Linux version?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Keeply currently ships for Windows 10 or later and macOS on Apple Silicon. A Linux build is on the roadmap but has not shipped yet. If Linux support is critical for your workflow, please tell us via the contact form — we prioritize platform support based on actual user demand, and every request is logged."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the $599 Founding Member plan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A one-time payment for a perpetual license, limited to the first 500 buyers. You get current Keeply features forever, plus all Team plan features automatically when the Team plan ships. No recurring billing, no surprise price hikes. For comparison, $25/month for 24 months equals $600 — Founding Member pays for itself in under two years and keeps going."
+            }
+          }
+        ]
       }
     ]
   }
@@ -580,15 +645,75 @@
     </div>
   </section>
 
+  <!-- ============================================ -->
+  <!-- FAQ (spec 029 — Homepage FAQPage schema)      -->
+  <!-- ============================================ -->
+  <section id="faq" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center" data-i18n="index.faq.title">Frequently asked questions</h2>
+      <div class="space-y-3">
+        <details class="group bg-white rounded-lg overflow-hidden border border-gray-200">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span data-i18n="index.faq.1.q">Does Keeply work offline?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed" data-i18n="index.faq.1.a">Yes. Keeply is fully local software — no cloud, no account, no network dependency. Your project files, version history, and notes all stay on your hard drive or NAS. You can use Keeply in airplane mode, in a basement, or on an air-gapped machine. The only time Keeply touches the network is when you check for app updates, which you can disable.</div>
+        </details>
+        <details class="group bg-white rounded-lg overflow-hidden border border-gray-200">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span data-i18n="index.faq.2.q">How is Keeply different from Dropbox or Google Drive?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed" data-i18n="index.faq.2.a">Dropbox and Google Drive sync the current state of files; Keeply records every version as a separate snapshot. Dropbox and Drive charge per user per month; Keeply is free for individuals and will have a flat $25/month Team plan (coming soon) regardless of team size. Your files live on your disk, not a vendor server, so you are not locked into a subscription.</div>
+        </details>
+        <details class="group bg-white rounded-lg overflow-hidden border border-gray-200">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span data-i18n="index.faq.3.q">What happens to my files if I stop paying?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed" data-i18n="index.faq.3.a">Nothing. Keeply files are stored on your hard drive or NAS in a standard folder structure you control. Even if you uninstall Keeply, the files and their version history remain readable by any file manager. You are not paying for access to your own work — the Founding Member license is a one-time perpetual payment, and the free tier stays free forever.</div>
+        </details>
+        <details class="group bg-white rounded-lg overflow-hidden border border-gray-200">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span data-i18n="index.faq.4.q">Can my team share files without per-seat licensing?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed" data-i18n="index.faq.4.a">Yes. In the free tier, teams already share a single vault folder over NAS or a shared drive — Keeply does not count seats. The upcoming Team plan ($25/month flat, planned) adds invite-code onboarding and an admin dashboard, but still without per-seat fees. Compare this with Dropbox Business at $20 per seat per month, which costs $120/month for a 6-person team.</div>
+        </details>
+        <details class="group bg-white rounded-lg overflow-hidden border border-gray-200">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span data-i18n="index.faq.5.q">What file types does Keeply support?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed" data-i18n="index.faq.5.a">Any file. Keeply shows side-by-side visual diff for Word, Excel, PowerPoint, PDF, and images. For every other file type — Blender, PSD, video, CAD, 3D models, source code — Keeply tracks versions and lets you restore any point in seconds. Files over 10MB and 38 known binary formats are auto-detected and routed to large-file storage without any setup or LFS configuration.</div>
+        </details>
+        <details class="group bg-white rounded-lg overflow-hidden border border-gray-200">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span data-i18n="index.faq.6.q">Is there a Linux version?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed" data-i18n="index.faq.6.a">Keeply currently ships for Windows 10 or later and macOS on Apple Silicon. A Linux build is on the roadmap but has not shipped yet. If Linux support is critical for your workflow, please tell us via the contact form — we prioritize platform support based on actual user demand, and every request is logged.</div>
+        </details>
+        <details class="group bg-white rounded-lg overflow-hidden border border-gray-200">
+          <summary class="cursor-pointer px-5 py-4 font-medium text-gray-900 list-none flex justify-between items-center">
+            <span data-i18n="index.faq.7.q">What is the $599 Founding Member plan?</span>
+            <span class="text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-3">▼</span>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-gray-700 leading-relaxed" data-i18n="index.faq.7.a">A one-time payment for a perpetual license, limited to the first 500 buyers. You get current Keeply features forever, plus all Team plan features automatically when the Team plan ships. No recurring billing, no surprise price hikes. For comparison, $25/month for 24 months equals $600 — Founding Member pays for itself in under two years and keeps going.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer (injected by components.js) -->
   <div id="footer-root"></div>
 
   <!-- Shared components + i18n + consent (spec 023) -->
-  <script src="../consent-api.js" defer></script>
-  <script src="../components.js" defer></script>
-  <script src="../cookie-banner.js" defer></script>
-  <script src="../ga4-loader.js" defer></script>
-  <script src="../i18n-loader.js" defer></script>
+  <script src="../consent-api.js" defer integrity="sha384-AgMsIGCbo9mV0oP2ebvR5aNCzNPtSkIGXG5v29yY6A+vEktkTMAOZtlK0WiKSEUR" crossorigin="anonymous"></script>
+  <script src="../components.js" defer integrity="sha384-Y6/6phkijVlwQ9nqNUKQEGuFnHvvxA4NczoZsCHqQFkBGHLr/F3x7QPVgeDsAi6v" crossorigin="anonymous"></script>
+  <script src="../cookie-banner.js" defer integrity="sha384-aDwCVUUSIWi62pJZ7PqUXIOz/bAoGadk/KUkD4HatS2r4S1C5cMfasX/UGBBap+8" crossorigin="anonymous"></script>
+  <script src="../ga4-loader.js" defer integrity="sha384-jYO4ARZ+UCGY2v6qzLfw2yqhQ5tPFNYQia3QEljpr5okv2tjmBbXU6Pmzm9jTV8O" crossorigin="anonymous"></script>
+  <script src="../i18n-loader.js" defer integrity="sha384-4/86z3+CQS2W1y+6+aUviORi8uQCOPnZcHyVgXNDVOzuap9rm02i3fXp1e1zHRj5" crossorigin="anonymous"></script>
 
 
 </body>
