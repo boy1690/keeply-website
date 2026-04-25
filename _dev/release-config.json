@@ -1,13 +1,13 @@
 {
-  "version": "1.0.2",
-  "versionTag": "v1.0.2",
+  "version": "1.0.5",
+  "versionTag": "v1.0.5",
   "price": "599",
   "priceCurrency": "USD",
   "checksums": {
-    "WIN": "ba73dac75680e0b8f0a2945fa1630a3621ed2f1ade7e1be9a68d2f880037cd4f",
-    "MAC": "176686cfe69d2f0fa445fc990a78f2c9767662f6260686a763e18a8cc3301b2d",
-    "MSI": "c5986b0647f454730bfb97a924674b1f1d78f5a14ac9ff00e80efdadee916d06",
-    "APPTAR": "d9d7cceb00a39ae16c057052b93f2c31e200453f1c227261631e2fbc5b113c97",
+    "WIN": "",
+    "MAC": "",
+    "MSI": "",
+    "APPTAR": "",
     "_releaseTag": "v1.0.2",
     "_fetchedAt": "2026-04-24T06:00:46.988Z"
   },
