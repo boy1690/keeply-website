@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#4F46E5" />
   <!-- Content Security Policy (spec 019) -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com https://cloudflareinsights.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
 
   <title>Keeply vs the Friday-afternoon USB-and-email backup ritual</title>
@@ -39,8 +39,8 @@
   <meta name="twitter:image" content="https://keeply.work/og-image.png" />
 
   <!-- Tailwind CSS (compiled) -->
-  <link rel="preload" href="../style.css" as="style" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../style.css" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
+  <link rel="preload" href="../style.css" as="style" integrity="sha384-l54z6FMz7t1ZALf/GQjXnAsFYHWUiseGM++vmZBf8+q9baL5AQJ9S4SxiaG0+aHy" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style.css" integrity="sha384-l54z6FMz7t1ZALf/GQjXnAsFYHWUiseGM++vmZBf8+q9baL5AQJ9S4SxiaG0+aHy" crossorigin="anonymous" />
 
   <!-- Hidden time for Article.datePublished (read by inject-schema.js) -->
   <time datetime="2026-04-24" class="sr-only" aria-hidden="true">2026-04-24</time>  <!-- Schema.org JSON-LD (injected by _dev/inject-schema.js) -->
@@ -192,7 +192,7 @@
   <section id="comparison" class="py-16 md:py-20 bg-gray-50">
     <div class="max-w-5xl mx-auto px-6">
       <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Feature comparison</h2>
-      <p class="text-sm text-gray-600 mb-6">Based on public product information as of April 2026. Keeply rows reflect shipping v1.0.2.</p>
+      <p class="text-sm text-gray-600 mb-6">Based on public product information as of April 2026. Keeply rows reflect shipping v1.0.7.</p>
       <div class="overflow-x-auto -mx-2">
         <table class="min-w-[720px] w-full border-collapse text-sm bg-white rounded-xl shadow-sm">
           <thead>

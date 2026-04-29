@@ -6,12 +6,10 @@
   <meta name="theme-color" content="#4F46E5" />
   <!-- Content Security Policy (spec 019). frame-ancestors / HSTS / Permissions-Policy
        are header-only and deferred to future Cloudflare migration (audit #8). -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com https://cloudflareinsights.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>利用規約 — Keeply</title>
   <meta name="description" content="Keeplyデスクトップアプリの利用規約。ライセンスプラン、支払いポリシー、お客様の権利について。" />
-
-  <meta name="robots" content="noindex, follow" />
 
   <!-- Canonical -->
   <link rel="canonical" href="https://keeply.work/ja/terms.html" />
@@ -96,8 +94,8 @@
   <meta name="twitter:image" content="https://keeply.work/og-image.png" />
 
   <!-- Tailwind CSS (compiled) -->
-  <link rel="preload" href="../style.css" as="style" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../style.css" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
+  <link rel="preload" href="../style.css" as="style" integrity="sha384-l54z6FMz7t1ZALf/GQjXnAsFYHWUiseGM++vmZBf8+q9baL5AQJ9S4SxiaG0+aHy" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style.css" integrity="sha384-l54z6FMz7t1ZALf/GQjXnAsFYHWUiseGM++vmZBf8+q9baL5AQJ9S4SxiaG0+aHy" crossorigin="anonymous" />
 
   <!-- M PLUS Rounded 1c (self-hosted via input.css @font-face) -->  <!-- Schema.org JSON-LD (injected by _dev/inject-schema.js) -->
   <script type="application/ld+json">
@@ -150,7 +148,7 @@
           <span class="text-gray-600" data-i18n="terms.breadcrumb">利用規約</span>
         </nav>
         <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3" data-i18n="terms.title">利用規約</h1>
-        <p class="text-sm text-gray-400" data-i18n="terms.updated">Last updated: April 21, 2026</p>
+        <p class="text-sm text-gray-400" data-i18n="terms.updated">Last updated: April 29, 2026</p>
       </div>
 
       <div class="bg-amber-50 border border-amber-100 rounded-2xl p-6 mb-10">
@@ -216,7 +214,7 @@
                 <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.activity">チームアクティビティログ</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5 text-green-600">✅</td></tr>
                 <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.conflict">競合検出と解決</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5 text-green-600">✅</td></tr>
                 <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.support">優先テクニカルサポート</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5 text-green-600">✅</td></tr>
-                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.vaultloc">ボールトの場所</td><td class="px-4 py-2.5" data-i18n="terms.s3.table.free.vaultloc">共有 2 + 個人 1（自己管理）</td><td class="px-4 py-2.5" data-i18n="terms.s3.table.team.vaultloc">共有 2 + 個人 1（管理者管理）</td></tr>
+                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.vaultloc">ボールトの場所</td><td class="px-4 py-2.5" data-i18n="terms.s3.table.free.vaultloc">1 Canonical + 1 Shared Mirror (self-managed)</td><td class="px-4 py-2.5" data-i18n="terms.s3.table.team.vaultloc">1 Canonical + 1 Shared Mirror (admin-approved)</td></tr>
                 <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.perpetual">永久ライセンス（早期アクセス）</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5" data-i18n="terms.s3.table.perpetual.team">$599（500本限定）</td></tr>
                 <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.fallback">永久フォールバックライセンス</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5 text-green-600" data-i18n="terms.s3.table.fallback.team">12ヶ月のサブスクリプション後</td></tr>
                 <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.refund">30日間返金保証</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5 text-green-600">✅</td></tr>
@@ -296,20 +294,24 @@
 
           <h3 id="s3-5" class="text-lg font-bold text-gray-800 mt-8 mb-3" data-i18n="terms.s3.5.title">3.5 定義</h3>
           <p class="text-gray-600 leading-relaxed" data-i18n="terms.s3.5.p1">「チームボールト」とは、中央のコラボレーションポイントとして指定された共有ストレージの場所を意味します。これには、ネットワーク接続ストレージ（NAS）デバイス、ファイルサーバー、セルフホスト型 Git サーバー、またはクラウドホスト型 Git リモートリポジトリが含まれますが、これらに限定されません。チームボールトは、ソフトウェアによって生成され、リポジトリ内に保存される一意の場所トークンによって識別されます。</p>
-          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s3.5.p2">「ボールトの場所」とは、チームボールトに関連付けられた一意の識別子を意味し、リポジトリに埋め込まれた場所トークンおよび/または正規化された Git リモート URL から派生します。ボールトの場所は次の 2 種類に分類されます：</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s3.5.p2">&quot;Vault Location&quot; means the logical location marker associated with a Team Vault, derived from the repository's embedded location token and/or the normalized remote URL. Vault Locations are classified into the following types:</p>
           <ul class="text-gray-600 space-y-1 ml-5 list-disc mt-2">
-            <li data-i18n="terms.s3.5.p2a">(a) 「固定の場所」とは、チーム管理者が設定し、すべてのチームメンバーが共有するボールトの場所を意味し、最大 2 つまでです。</li>
-            <li data-i18n="terms.s3.5.p2b">(b) 「フレキシブルな場所」とは、チームメンバーが申請し、管理者がそのメンバーの個人使用のために承認したボールトの場所を意味し、メンバーごとに最大 1 つです。</li>
+            <li data-i18n="terms.s3.5.p2a">(a) &quot;Canonical&quot; means the Vault Location designated as the source of truth for team versions; exactly one (1) per Team Vault;</li>
+            <li data-i18n="terms.s3.5.p2b">(b) &quot;Shared Mirror&quot; means a Vault Location that is a full snapshot synchronized from the Canonical and shared across the team; at most one (1) per Team Vault;</li>
+            <li data-i18n="terms.s3.5.p2c">(c) &quot;Release&quot; means a version snapshot produced from the Canonical at a specific point in time; unlimited in number;</li>
+            <li data-i18n="terms.s3.5.p2d">(d) &quot;Clone&quot; means a local working copy derived from the Canonical on a member's device; unlimited in number.</li>
           </ul>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s3.5.p3">The data form of a Vault Location may be selected at creation time: &quot;Standard mode&quot; allows direct browsing and editing of the Canonical via the file explorer, and the Canonical may be modified by any user with access to that folder; &quot;Protected mode&quot; uses a protected repository format, where the Canonical contents may only be modified through the Software interface and destructive history-changing operations are rejected. Both Standard and Protected modes are available on the Free and Team plans. Personal workflows (version history, file diff, Release publishing, unlimited users, etc.) are identical between the two plans; the Team plan's distinguishing features are team governance tools, not increased capacity or additional locations.</p>
 
           <h3 id="s3-6" class="text-lg font-bold text-gray-800 mt-8 mb-3" data-i18n="terms.s3.6.title">3.6 ボールトの場所に関する規則</h3>
-          <p class="text-gray-600 leading-relaxed" data-i18n="terms.s3.6.p1">固定の場所の変更には、以下の条件が適用されます：</p>
+          <p class="text-gray-600 leading-relaxed" data-i18n="terms.s3.6.p1">Changes to a Shared Mirror Location are subject to the following (applicable only to the Team plan):</p>
           <ul class="text-gray-600 space-y-1 ml-5 list-disc mt-2">
-            <li data-i18n="terms.s3.6.li1">(a) 直近の変更から 7 日間のクールダウン期間；</li>
-            <li data-i18n="terms.s3.6.li2">(b) 年間 6 回以下の変更；</li>
-            <li data-i18n="terms.s3.6.li3">(c) リポジトリデータ（埋め込みの場所トークンを含む）を新しいストレージハードウェアに移行することは、場所トークンが変更されない限り、固定の場所の変更とはみなされません。</li>
+            <li data-i18n="terms.s3.6.li1">(a) A cool-down period of seven (7) days from the most recent change taking effect (a period during which no further changes may be made);</li>
+            <li data-i18n="terms.s3.6.li2">(b) No more than six (6) changes within any rolling 365-day period;</li>
+            <li data-i18n="terms.s3.6.li3">(c) Migration of repository data (including the embedded location token) to new storage hardware does not constitute a Shared Mirror Location change, provided the location token remains unchanged.</li>
           </ul>
-          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s3.6.p2">フレキシブルな場所は、メンバーがソフトウェアを通じて申請し、管理者の承認により有効となります。管理者はいつでもメンバーのフレキシブルな場所を取り消すことができます。30 日間連続してアクセスされなかったフレキシブルな場所は自動的に解放されます。</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s3.6.p2">When a Shared Mirror Location has not been accessed for ninety (90) consecutive days, the Software will notify the admin, but will not automatically release the location.</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s3.6.p3">Vault Location changes on the Free plan are not subject to cooldowns or annual limits; the foregoing limits apply to the Team plan only.</p>
 
           <h3 id="s3-7" class="text-lg font-bold text-gray-800 mt-8 mb-3" data-i18n="terms.s3.7.title">3.7 License Scope</h3>
           <p class="text-gray-600 leading-relaxed" data-i18n="terms.s3.7.p1">每組授權僅供單一法律實體（公司、合夥、獨資或同等組織）及其授權承包商使用。多個無關之法律實體不得共享單一授權，即使其共用實體儲存設施亦同。</p>

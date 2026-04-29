@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#4F46E5" />
   <!-- Content Security Policy (spec 019). frame-ancestors / HSTS / Permissions-Policy
        are header-only and deferred to future Cloudflare migration (audit #8). -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com https://cloudflareinsights.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Keeply — Dine filer har historier. Keeply husker dem alle.</title>
   <meta name="description" content="Den nemmeste måde at administrere filversioner uden teknisk viden. Download gratis, klar på 30 sekunder." />
@@ -96,8 +96,8 @@
   <meta name="twitter:image" content="https://keeply.work/og-image.png" />
 
   <!-- Tailwind CSS (compiled) -->
-  <link rel="preload" href="../style.css" as="style" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../style.css" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
+  <link rel="preload" href="../style.css" as="style" integrity="sha384-l54z6FMz7t1ZALf/GQjXnAsFYHWUiseGM++vmZBf8+q9baL5AQJ9S4SxiaG0+aHy" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style.css" integrity="sha384-l54z6FMz7t1ZALf/GQjXnAsFYHWUiseGM++vmZBf8+q9baL5AQJ9S4SxiaG0+aHy" crossorigin="anonymous" />
 
   <!-- M PLUS Rounded 1c (self-hosted via input.css @font-face) -->
 
@@ -132,7 +132,7 @@
         "name": "Keeply",
         "operatingSystem": "Windows, macOS",
         "applicationCategory": "UtilitiesApplication",
-        "softwareVersion": "1.0.2",
+        "softwareVersion": "1.0.7",
         "description": "Den nemmeste måde at administrere filversioner uden teknisk viden. Download gratis, klar på 30 sekunder.",
         "url": "https://keeply.work/da/",
         "downloadUrl": "https://github.com/boy1690/keeply-releases/releases/latest",
@@ -491,10 +491,10 @@
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.2">Gendan til enhver version med ét klik</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.3">Sammenligning af ændringer</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.4">Versionsnoter</span></li>
-            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.5">Lokal og NAS-lagring</span></li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.5">Local &amp; NAS storage (Standard or Protected mode)</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.6">Filsammenligning</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.7">Ubegrænset antal brugere</span></li>
-            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.8">Op til 3 boksplaceringer</span></li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.free.feat.8">1 Canonical + 1 Shared Mirror + unlimited Releases</span></li>
           </ul>
           <a href="#download" class="block border-2 border-gray-200 hover:border-brand-300 text-gray-700 hover:text-brand-700 font-medium py-3.5 rounded-full transition-all" data-i18n="index.pricing.free.cta">Download gratis</a>
         </div>
@@ -512,15 +512,15 @@
           <ul class="text-sm text-gray-600 space-y-3 text-left mb-8">
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.1">Alt i Free</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.2">Invitationskodebaseret teamadministration</span></li>
-            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.3">Admin-dashboard for boksen</span></li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.3">Admin vault dashboard with location requests (planned)</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.4">Prioriteret teknisk support</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.5">30 dages pengene-tilbage-garanti</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.6">Permanent fallback efter 12 måneder</span></li>
-            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.7">Placeringsgodkendelse og afkølingskontroller</span></li>
+            <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.7">Shared Mirror governance: admin gatekeeping, prevent accidental Canonical changes (planned)</span></li>
             <li class="flex items-start gap-2"><span class="text-brand-500 mt-0.5">✓</span> <span data-i18n="index.pricing.team.feat.8">Konfliktdetektering og -løsning</span></li>
           </ul>
           <p class="text-sm text-gray-500 mb-3" data-i18n="index.pricing.team.coming">I øjeblikket under udvikling. Efterlad din email for at få besked ved lancering.</p>
-          <form id="team-notify-form" onsubmit="return submitTeamNotify(event)">
+          <form id="team-notify-form">
             <div class="grid grid-cols-2 gap-2 mb-2">
               <input type="text" id="tn-name" required placeholder="Name" data-i18n="index.pricing.team.name.placeholder" class="border border-gray-200 rounded-full px-4 py-3 text-sm focus:outline-none focus:border-brand-400" />
               <input type="email" id="tn-email" required placeholder="your@email.com" data-i18n="index.pricing.team.placeholder" class="border border-gray-200 rounded-full px-4 py-3 text-sm focus:outline-none focus:border-brand-400" />
@@ -532,9 +532,6 @@
             <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-medium py-3 rounded-full transition-all text-sm" data-i18n="index.pricing.team.cta.notify">Giv mig besked</button>
           </form>
           <p id="team-notify-thanks" class="text-sm text-green-600 font-medium" style="display:none" data-i18n="index.pricing.team.thanks">Modtaget! Vi giver dig besked, når Team-planen lanceres.</p>
-          <script>
-          function submitTeamNotify(e){e.preventDefault();var f=document.getElementById('team-notify-form'),t=document.getElementById('team-notify-thanks');var d=new FormData();d.append('entry.811615319',document.getElementById('tn-name').value);d.append('entry.1905692581',document.getElementById('tn-email').value);if(document.getElementById('tn-newsletter').checked)d.append('entry.1908384673','yes');fetch('https://docs.google.com/forms/d/e/1FAIpQLSe8WpbHAy8wcAfZRdV1kiHOZa7riuxaOg7X_kgJadQX4GX0RA/formResponse',{method:'POST',mode:'no-cors',body:d});f.style.display='none';t.style.display='block';return false}
-          </script>
         </div>
       </div>
 
@@ -552,16 +549,16 @@
         <div class="bg-gray-50 border border-gray-200 rounded-2xl px-8 py-6">
           <p class="text-sm font-bold text-brand-600 mb-1" data-i18n="index.teamvault.tagline">Ét boks. Ét team. Fuld kontrol.</p>
           <h3 class="text-lg font-bold text-gray-900 mb-3" data-i18n="index.teamvault.title">Hvad er en &quot;Teamboks&quot;?</h3>
-          <p class="text-sm text-gray-600 leading-relaxed mb-3" data-i18n="index.teamvault.desc">En &quot;hvelvplacering&quot; er, hvor du gemmer projektversioner — et kontor-NAS, en cloud-lagringstjeneste eller et teammedlems personlige backup-drev. Keeply lader dig frit kombinere disse placeringer.</p>
+          <p class="text-sm text-gray-600 leading-relaxed mb-3" data-i18n="index.teamvault.desc">Team Vault uses a &quot;1 Canonical + 1 Shared Mirror&quot; topology: the Canonical is the source of truth for project versions (NAS, shared folder, or external drive); the Shared Mirror is a full snapshot synced from the Canonical so any team member can quickly get the latest. Each member also has their own Work Copy. The data form can be Standard mode (browse and edit files directly) or Protected mode (prevent destructive history changes).</p>
           <p class="text-sm text-brand-600 font-medium mb-3" data-i18n="index.teamvault.highlight">Ingen cloud-afhængighed. Ingen omkostninger per bruger. Dine data forbliver på dit eget hardware.</p>
           <div class="grid md:grid-cols-2 gap-3 mt-3">
             <div class="bg-white rounded-lg px-4 py-3 border border-gray-100">
               <p class="text-xs font-bold text-gray-500 mb-1">Free</p>
-              <p class="text-sm text-gray-600" data-i18n="index.teamvault.free">3 hvelvplaceringer, fuldt selvadministreret. Ingen godkendelse, ingen ventetider.</p>
+              <p class="text-sm text-gray-600" data-i18n="index.teamvault.free">Free: 1 Canonical + 1 Shared Mirror, fully self-managed. No approval needed, no cooldowns.</p>
             </div>
             <div class="bg-white rounded-lg px-4 py-3 border border-brand-100">
               <p class="text-xs font-bold text-brand-500 mb-1">Team</p>
-              <p class="text-sm text-gray-600" data-i18n="index.teamvault.team">2 delte teamplaceringer + 1 backup-placering per medlem (op til 15 i alt). Admin-godkendelse, ventetider og årlige grænser holder backup-pladsen organiseret.</p>
+              <p class="text-sm text-gray-600" data-i18n="index.teamvault.team">Team plan (planned): same 1 Canonical + 1 Shared Mirror topology, plus member management, Shared Mirror location governance (admin approval gatekeeping and change-rate throttling, so the location won't be carelessly altered to disrupt the team), conflict detection, and team activity logs.</p>
             </div>
           </div>
         </div>
@@ -585,7 +582,7 @@
         <!-- Windows column -->
         <div class="flex flex-col items-center gap-2 max-w-sm w-full">
           <a id="download-btn-win"
-             href="https://github.com/boy1690/keeply-releases/releases/download/v1.0.2/Keeply_1.0.2_x64-setup.exe"
+             href="https://github.com/boy1690/keeply-releases/releases/download/v1.0.7/Keeply_1.0.7_x64-setup.exe"
              class="group bg-white text-brand-700 font-bold px-8 py-4 rounded-full text-lg transition-all hover:shadow-xl hover:shadow-black/10 flex items-center justify-center gap-3 min-w-[260px]">
             <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M3 5.479L10.5 4.5V11.5H3V5.479zM11.5 4.363L21 3V11.5H11.5V4.363zM3 12.5H10.5V19.521L3 18.521V12.5zM11.5 12.5H21V21L11.5 19.637V12.5z"/>
@@ -598,13 +595,23 @@
             <div class="mt-3 verify-box">
               <div class="verify-section">
                 <div class="verify-label">SHA-256</div>
-                <code class="verify-code">ba73dac75680e0b8f0a2945fa1630a3621ed2f1ade7e1be9a68d2f880037cd4f</code>
+                <code class="verify-code">925aec7e7e2d33e761baa9b06285566b8a5cbac5bb8b3b780a2bf6f3564d8ace</code>
               </div>
               <div class="verify-section">
                 <div class="verify-label" data-i18n="index.download.verify.cmdLabel.win">PowerShell-bekræftelseskommando</div>
-                <code class="verify-code">Get-FileHash $HOME\Downloads\Keeply_1.0.2_x64-setup.exe -Algorithm SHA256</code>
+                <code class="verify-code">Get-FileHash $HOME\Downloads\Keeply_1.0.7_x64-setup.exe -Algorithm SHA256</code>
               </div>
               <p class="verify-note" data-i18n="index.download.verify.howto">Den udskrevne hash-værdi skal stemme overens med værdien ovenfor — hvis de matcher, er filen officiel og uændret.</p>
+            </div>
+          </details>
+          <details class="mt-2 text-left verify-disclosure w-full">
+            <summary class="verify-summary"><span class="verify-arrow">›</span><span data-i18n="index.download.winget.label">📦 Install via winget</span></summary>
+            <div class="mt-3 verify-box">
+              <div class="verify-section">
+                <div class="verify-label" data-i18n="index.download.winget.cmdLabel">PowerShell command</div>
+                <code class="verify-code">winget install Boy1690.Keeply</code>
+              </div>
+              <p class="verify-note" data-i18n="index.download.winget.howto">Requires Windows Package Manager (built into Windows 10 1809+ / Windows 11). Package published to the official microsoft/winget-pkgs repo.</p>
             </div>
           </details>
         </div>
@@ -612,7 +619,7 @@
         <!-- Mac column -->
         <div class="flex flex-col items-center gap-2 max-w-sm w-full">
           <a id="download-btn-mac"
-             href="https://github.com/boy1690/keeply-releases/releases/download/v1.0.2/Keeply_1.0.2_aarch64.dmg"
+             href="https://github.com/boy1690/keeply-releases/releases/download/v1.0.7/Keeply_1.0.7_aarch64.dmg"
              class="group bg-white text-brand-700 font-bold px-8 py-4 rounded-full text-lg transition-all hover:shadow-xl hover:shadow-black/10 flex items-center justify-center gap-3 min-w-[260px]">
             <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
@@ -625,11 +632,11 @@
             <div class="mt-3 verify-box">
               <div class="verify-section">
                 <div class="verify-label">SHA-256</div>
-                <code class="verify-code">176686cfe69d2f0fa445fc990a78f2c9767662f6260686a763e18a8cc3301b2d</code>
+                <code class="verify-code">c03497309bb2aa7100ed0fd4d7b4df4808b65d0814d58cec614f8e376e7b4daa</code>
               </div>
               <div class="verify-section">
                 <div class="verify-label" data-i18n="index.download.verify.cmdLabel.mac">Terminal-bekræftelseskommando</div>
-                <code class="verify-code">shasum -a 256 ~/Downloads/Keeply_1.0.2_aarch64.dmg</code>
+                <code class="verify-code">shasum -a 256 ~/Downloads/Keeply_1.0.7_aarch64.dmg</code>
               </div>
               <p class="verify-note" data-i18n="index.download.verify.howto">Den udskrevne hash-værdi skal stemme overens med værdien ovenfor — hvis de matcher, er filen officiel og uændret.</p>
             </div>
@@ -714,6 +721,7 @@
   <script src="../cookie-banner.js" defer integrity="sha384-aDwCVUUSIWi62pJZ7PqUXIOz/bAoGadk/KUkD4HatS2r4S1C5cMfasX/UGBBap+8" crossorigin="anonymous"></script>
   <script src="../ga4-loader.js" defer integrity="sha384-jYO4ARZ+UCGY2v6qzLfw2yqhQ5tPFNYQia3QEljpr5okv2tjmBbXU6Pmzm9jTV8O" crossorigin="anonymous"></script>
   <script src="../i18n-loader.js" defer integrity="sha384-4/86z3+CQS2W1y+6+aUviORi8uQCOPnZcHyVgXNDVOzuap9rm02i3fXp1e1zHRj5" crossorigin="anonymous"></script>
+  <script src="team-notify.js" defer integrity="sha384-kQUIeDWtAKHyIrSPoncROrE3SSvzakx5e3Ll8GT1Zjgqqr7nAyhVHZ7qyXYC+wVU" crossorigin="anonymous"></script>
 
 
 </body>

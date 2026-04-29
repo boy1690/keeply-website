@@ -6,12 +6,10 @@
   <meta name="theme-color" content="#4F46E5" />
   <!-- Content Security Policy (spec 019). frame-ancestors / HSTS / Permissions-Policy
        are header-only and deferred to future Cloudflare migration (audit #8). -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com https://cloudflareinsights.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Términos de servicio — Keeply</title>
   <meta name="description" content="Términos de servicio de la aplicación de escritorio Keeply. Conoce los planes de licencia, políticas de pago y tus derechos." />
-
-  <meta name="robots" content="noindex, follow" />
 
   <!-- Canonical -->
   <link rel="canonical" href="https://keeply.work/es/terms.html" />
@@ -96,8 +94,8 @@
   <meta name="twitter:image" content="https://keeply.work/og-image.png" />
 
   <!-- Tailwind CSS (compiled) -->
-  <link rel="preload" href="../style.css" as="style" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../style.css" integrity="sha384-WSWn4bmP2VGMsMuEifQsVJAxY51OyVqEgCW2tXiGRC+ItLqawLwluSKU7O+J9Zco" crossorigin="anonymous" />
+  <link rel="preload" href="../style.css" as="style" integrity="sha384-l54z6FMz7t1ZALf/GQjXnAsFYHWUiseGM++vmZBf8+q9baL5AQJ9S4SxiaG0+aHy" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style.css" integrity="sha384-l54z6FMz7t1ZALf/GQjXnAsFYHWUiseGM++vmZBf8+q9baL5AQJ9S4SxiaG0+aHy" crossorigin="anonymous" />
 
   <!-- M PLUS Rounded 1c (self-hosted via input.css @font-face) -->  <!-- Schema.org JSON-LD (injected by _dev/inject-schema.js) -->
   <script type="application/ld+json">
@@ -150,7 +148,7 @@
           <span class="text-gray-600" data-i18n="terms.breadcrumb">Términos de servicio</span>
         </nav>
         <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3" data-i18n="terms.title">Términos de servicio</h1>
-        <p class="text-sm text-gray-400" data-i18n="terms.updated">Last updated: April 21, 2026</p>
+        <p class="text-sm text-gray-400" data-i18n="terms.updated">Last updated: April 29, 2026</p>
       </div>
 
       <div class="bg-amber-50 border border-amber-100 rounded-2xl p-6 mb-10">
@@ -216,7 +214,7 @@
                 <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.activity">Registro de actividad del equipo</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5 text-green-600">✅</td></tr>
                 <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.conflict">Detección y resolución de conflictos</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5 text-green-600">✅</td></tr>
                 <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.support">Soporte técnico prioritario</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5 text-green-600">✅</td></tr>
-                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.vaultloc">Ubicaciones de bóveda</td><td class="px-4 py-2.5" data-i18n="terms.s3.table.free.vaultloc">2 compartidas + 1 personal (autogestión)</td><td class="px-4 py-2.5" data-i18n="terms.s3.table.team.vaultloc">2 compartidas + 1 personal (gestión del admin)</td></tr>
+                <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.vaultloc">Ubicaciones de bóveda</td><td class="px-4 py-2.5" data-i18n="terms.s3.table.free.vaultloc">1 Canonical + 1 Shared Mirror (self-managed)</td><td class="px-4 py-2.5" data-i18n="terms.s3.table.team.vaultloc">1 Canonical + 1 Shared Mirror (admin-approved)</td></tr>
                 <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.perpetual">Licencia perpetua (Acceso anticipado)</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5" data-i18n="terms.s3.table.perpetual.team">$599 (limitado a 500)</td></tr>
                 <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.fallback">Licencia perpetua de respaldo</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5 text-green-600" data-i18n="terms.s3.table.fallback.team">Después de 12 meses de suscripción</td></tr>
                 <tr><td class="px-4 py-2.5 text-gray-500" data-i18n="terms.s3.table.refund">Garantía de reembolso de 30 días</td><td class="px-4 py-2.5 text-gray-300">—</td><td class="px-4 py-2.5 text-green-600">✅</td></tr>
@@ -296,20 +294,24 @@
 
           <h3 id="s3-5" class="text-lg font-bold text-gray-800 mt-8 mb-3" data-i18n="terms.s3.5.title">3.5 Definiciones</h3>
           <p class="text-gray-600 leading-relaxed" data-i18n="terms.s3.5.p1">&quot;Bóveda de equipo&quot; significa una ubicación de almacenamiento compartida — incluyendo, pero no limitado a, un dispositivo de almacenamiento conectado a la red (NAS), servidor de archivos, servidor Git autoalojado o repositorio Git remoto alojado en la nube — designada como el punto central de colaboración. Una Bóveda de equipo se identifica mediante un token de ubicación único generado por el Software y almacenado dentro del repositorio.</p>
-          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s3.5.p2">&quot;Ubicación de bóveda&quot; significa el identificador único asociado a una Bóveda de equipo, derivado del token de ubicación incrustado en el repositorio y/o la URL Git remota normalizada. Las Ubicaciones de bóveda se clasifican en dos tipos:</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s3.5.p2">&quot;Vault Location&quot; means the logical location marker associated with a Team Vault, derived from the repository's embedded location token and/or the normalized remote URL. Vault Locations are classified into the following types:</p>
           <ul class="text-gray-600 space-y-1 ml-5 list-disc mt-2">
-            <li data-i18n="terms.s3.5.p2a">(a) &quot;Ubicación fija&quot; significa una Ubicación de bóveda establecida por el administrador del equipo y compartida por todos los miembros del equipo, hasta un máximo de 2;</li>
-            <li data-i18n="terms.s3.5.p2b">(b) &quot;Ubicación flexible&quot; significa una Ubicación de bóveda solicitada por un miembro del equipo y aprobada por el administrador para el uso personal de ese miembro, hasta 1 por miembro.</li>
+            <li data-i18n="terms.s3.5.p2a">(a) &quot;Canonical&quot; means the Vault Location designated as the source of truth for team versions; exactly one (1) per Team Vault;</li>
+            <li data-i18n="terms.s3.5.p2b">(b) &quot;Shared Mirror&quot; means a Vault Location that is a full snapshot synchronized from the Canonical and shared across the team; at most one (1) per Team Vault;</li>
+            <li data-i18n="terms.s3.5.p2c">(c) &quot;Release&quot; means a version snapshot produced from the Canonical at a specific point in time; unlimited in number;</li>
+            <li data-i18n="terms.s3.5.p2d">(d) &quot;Clone&quot; means a local working copy derived from the Canonical on a member's device; unlimited in number.</li>
           </ul>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s3.5.p3">The data form of a Vault Location may be selected at creation time: &quot;Standard mode&quot; allows direct browsing and editing of the Canonical via the file explorer, and the Canonical may be modified by any user with access to that folder; &quot;Protected mode&quot; uses a protected repository format, where the Canonical contents may only be modified through the Software interface and destructive history-changing operations are rejected. Both Standard and Protected modes are available on the Free and Team plans. Personal workflows (version history, file diff, Release publishing, unlimited users, etc.) are identical between the two plans; the Team plan's distinguishing features are team governance tools, not increased capacity or additional locations.</p>
 
           <h3 id="s3-6" class="text-lg font-bold text-gray-800 mt-8 mb-3" data-i18n="terms.s3.6.title">3.6 Reglas de ubicación de bóveda</h3>
-          <p class="text-gray-600 leading-relaxed" data-i18n="terms.s3.6.p1">Los cambios en las Ubicaciones fijas están sujetos a lo siguiente:</p>
+          <p class="text-gray-600 leading-relaxed" data-i18n="terms.s3.6.p1">Changes to a Shared Mirror Location are subject to the following (applicable only to the Team plan):</p>
           <ul class="text-gray-600 space-y-1 ml-5 list-disc mt-2">
-            <li data-i18n="terms.s3.6.li1">(a) Un período de espera de siete (7) días desde el cambio más reciente;</li>
-            <li data-i18n="terms.s3.6.li2">(b) No más de 6 cambios por año;</li>
-            <li data-i18n="terms.s3.6.li3">(c) La migración de datos del repositorio (incluido el token de ubicación incrustado) a nuevo hardware de almacenamiento no constituye un cambio de Ubicación fija, siempre que el token de ubicación permanezca sin cambios.</li>
+            <li data-i18n="terms.s3.6.li1">(a) A cool-down period of seven (7) days from the most recent change taking effect (a period during which no further changes may be made);</li>
+            <li data-i18n="terms.s3.6.li2">(b) No more than six (6) changes within any rolling 365-day period;</li>
+            <li data-i18n="terms.s3.6.li3">(c) Migration of repository data (including the embedded location token) to new storage hardware does not constitute a Shared Mirror Location change, provided the location token remains unchanged.</li>
           </ul>
-          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s3.6.p2">Las Ubicaciones flexibles son solicitadas por los miembros a través del Software y entran en vigor tras la aprobación del administrador. El administrador puede revocar la Ubicación flexible de cualquier miembro en cualquier momento. Las Ubicaciones flexibles a las que no se acceda durante 30 días consecutivos se liberan automáticamente.</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s3.6.p2">When a Shared Mirror Location has not been accessed for ninety (90) consecutive days, the Software will notify the admin, but will not automatically release the location.</p>
+          <p class="text-gray-600 leading-relaxed mt-3" data-i18n="terms.s3.6.p3">Vault Location changes on the Free plan are not subject to cooldowns or annual limits; the foregoing limits apply to the Team plan only.</p>
 
           <h3 id="s3-7" class="text-lg font-bold text-gray-800 mt-8 mb-3" data-i18n="terms.s3.7.title">3.7 License Scope</h3>
           <p class="text-gray-600 leading-relaxed" data-i18n="terms.s3.7.p1">每組授權僅供單一法律實體（公司、合夥、獨資或同等組織）及其授權承包商使用。多個無關之法律實體不得共享單一授權，即使其共用實體儲存設施亦同。</p>
