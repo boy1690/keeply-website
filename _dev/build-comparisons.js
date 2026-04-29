@@ -135,7 +135,7 @@ function renderSubPage(data, locale, templateText) {
   const pricingLabels = locale.code === 'en'
     ? {
         compTitle: 'Feature comparison',
-        compSub: 'Based on public product information as of April 2026. Keeply rows reflect shipping v1.0.5.',
+        compSub: 'Based on public product information as of April 2026. Keeply rows reflect shipping v1.0.7.',
         colFeature: 'Feature',
         colKeeplySub: '(recommended)',
         painTitle: 'Why people switch',
@@ -148,7 +148,7 @@ function renderSubPage(data, locale, templateText) {
       }
     : {
         compTitle: '功能對比',
-        compSub: '資料依 2026 年 4 月公開產品資訊整理，Keeply 欄位反映出貨版 v1.0.5。',
+        compSub: '資料依 2026 年 4 月公開產品資訊整理，Keeply 欄位反映出貨版 v1.0.7。',
         colFeature: '功能',
         colKeeplySub: '（推薦）',
         painTitle: '為什麼要換',
