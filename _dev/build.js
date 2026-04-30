@@ -226,6 +226,14 @@ function replaceOgTags(html, translations, locale, page, pagePrefix) {
     );
   }
 
+  // og:image:alt — mirror og:title so each locale's preview alt-text matches its title
+  if (title) {
+    html = html.replace(
+      /(<meta\s+property="og:image:alt"\s+content=")[^"]*(")/,
+      `$1${escapeAttr(title)}$2`
+    );
+  }
+
   // og:locale — replace primary and remove alternates, then add correct ones
   html = html.replace(
     /(<meta\s+property="og:locale"\s+content=")[^"]*(")/,
@@ -257,6 +265,14 @@ function replaceOgTags(html, translations, locale, page, pagePrefix) {
     html = html.replace(
       /(<meta\s+name="twitter:description"\s+content=")[^"]*(")/,
       `$1${escapeAttr(desc)}$2`
+    );
+  }
+
+  // twitter:image:alt — same locale-aware alt as og:image:alt
+  if (title) {
+    html = html.replace(
+      /(<meta\s+name="twitter:image:alt"\s+content=")[^"]*(")/,
+      `$1${escapeAttr(title)}$2`
     );
   }
 
