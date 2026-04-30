@@ -26,6 +26,9 @@ const ROOT = path.resolve(__dirname, '..');
 const COMPARISONS_DIR = path.join(ROOT, '_dev', 'comparisons');
 const TEMPLATES_DIR = path.join(ROOT, '_dev', 'templates');
 const BASE_URL = 'https://keeply.work';
+const RELEASE_CONFIG = JSON.parse(
+  fs.readFileSync(path.join(ROOT, '_dev', 'release-config.json'), 'utf8')
+);
 
 const LOCALES = [
   { code: 'en', lang: 'en', ogLocale: 'en_US', readLink: 'Read comparison →' },
@@ -135,7 +138,7 @@ function renderSubPage(data, locale, templateText) {
   const pricingLabels = locale.code === 'en'
     ? {
         compTitle: 'Feature comparison',
-        compSub: 'Based on public product information as of April 2026. Keeply rows reflect shipping v1.0.7.',
+        compSub: `Based on public product information as of April 2026. Keeply rows reflect shipping ${RELEASE_CONFIG.versionTag}.`,
         colFeature: 'Feature',
         colKeeplySub: '(recommended)',
         painTitle: 'Why people switch',
@@ -148,7 +151,7 @@ function renderSubPage(data, locale, templateText) {
       }
     : {
         compTitle: '功能對比',
-        compSub: '資料依 2026 年 4 月公開產品資訊整理，Keeply 欄位反映出貨版 v1.0.7。',
+        compSub: `資料依 2026 年 4 月公開產品資訊整理，Keeply 欄位反映出貨版 ${RELEASE_CONFIG.versionTag}。`,
         colFeature: '功能',
         colKeeplySub: '（推薦）',
         painTitle: '為什麼要換',
