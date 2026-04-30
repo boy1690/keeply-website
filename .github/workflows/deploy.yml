@@ -52,52 +52,26 @@ jobs:
         uses: actions/deploy-pages@v5
 
   # IndexNow: notify Bing / Yandex / others when site content updates.
-  # Mirrors the blog's IndexNow flow. Key file (65439d009e66d54f18da6c854ec6cb3a.txt)
-  # is already at site root; this job POSTs the sitemap URL list to the API.
+  # Manual-only — `_dev/ping-indexnow.js` explicitly states "NOT on every
+  # build" because IndexNow throttles excessive pings. Trigger via
+  # workflow_dispatch after a meaningful content release.
   indexnow:
     needs: deploy
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Build sitemap (so the local script has fresh URLs)
+        run: npm run build:pages
       - name: Wait for Pages CDN propagation
         run: sleep 30
-      - name: Collect URLs from live sitemap
-        id: collect
-        run: |
-          set -euo pipefail
-          URLS=$(curl -fsS "https://keeply.work/sitemap.xml" \
-            | grep -oE '<loc>[^<]+</loc>' \
-            | sed -e 's|<loc>||' -e 's|</loc>||' \
-            | sort -u | grep -v '^$' || true)
-          if [ -z "$URLS" ]; then
-            echo "No URLs found in sitemap; nothing to submit"
-            echo "skip=true" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-          COUNT=$(echo "$URLS" | wc -l)
-          echo "Will submit $COUNT URL(s) (first 5 shown):"
-          echo "$URLS" | head -5
-          URL_JSON=$(echo "$URLS" | jq -R . | jq -s .)
-          jq -n \
-            --arg host "keeply.work" \
-            --arg key "65439d009e66d54f18da6c854ec6cb3a" \
-            --arg keyLocation "https://keeply.work/65439d009e66d54f18da6c854ec6cb3a.txt" \
-            --argjson urlList "$URL_JSON" \
-            '{host: $host, key: $key, keyLocation: $keyLocation, urlList: $urlList}' \
-            > payload.json
-          echo "skip=false" >> "$GITHUB_OUTPUT"
-          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
-      - name: POST to IndexNow API
-        if: steps.collect.outputs.skip != 'true'
-        run: |
-          echo "Submitting ${{ steps.collect.outputs.count }} URL(s) to IndexNow"
-          HTTP_CODE=$(curl -sS -X POST 'https://api.indexnow.org/indexnow' \
-            -H 'Content-Type: application/json; charset=utf-8' \
-            --data-binary @payload.json \
-            -o response.txt \
-            -w '%{http_code}')
-          echo "HTTP $HTTP_CODE"
-          cat response.txt || true
-          case "$HTTP_CODE" in
-            200|202) echo "IndexNow submission OK" ;;
-            *) echo "IndexNow submission failed"; exit 1 ;;
-          esac
+      - name: Ping IndexNow
+        run: npm run ping:indexnow
