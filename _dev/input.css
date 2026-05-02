@@ -2,27 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Self-hosted M PLUS Rounded 1c (full character set incl. CJK) */
+/* Self-hosted M PLUS Rounded 1c (Latin subset only — 17 KB per weight, was 1+ MB).
+   Subsetted via fontTools to U+0000-00FF + extended Latin per Google Fonts'
+   canonical Latin range. CJK characters fall through to system fonts (JhengHei
+   / Hiragino / Apple SD) via the font-family fallback chain — same visual
+   experience for zh/ja/ko readers as before. -v2 suffix busts Cloudflare
+   1 yr edge cache that pinned the old large versions to the original URL. */
 @font-face {
   font-family: 'M PLUS Rounded 1c';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('./fonts/MPLUSRounded1c-Regular.woff2') format('woff2');
+  src: url('./fonts/MPLUSRounded1c-Regular-v2.woff2') format('woff2');
 }
 @font-face {
   font-family: 'M PLUS Rounded 1c';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('./fonts/MPLUSRounded1c-Medium.woff2') format('woff2');
+  src: url('./fonts/MPLUSRounded1c-Medium-v2.woff2') format('woff2');
 }
 @font-face {
   font-family: 'M PLUS Rounded 1c';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('./fonts/MPLUSRounded1c-Bold.woff2') format('woff2');
+  src: url('./fonts/MPLUSRounded1c-Bold-v2.woff2') format('woff2');
 }
 
 /* Email-harvesting bot decoy. See spec 019 / audit #10.

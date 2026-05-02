@@ -37,3 +37,4 @@ i18n/*.zip
 i18n/_*.cjs
 i18n/_*.js
 .playwright-mcp/
+fonts/_full-backup/
