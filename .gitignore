@@ -38,3 +38,7 @@ i18n/_*.cjs
 i18n/_*.js
 .playwright-mcp/
 fonts/_full-backup/
+
+# Fingerprint manifest (spec 15) — regenerated every build; the hashed JS
+# files themselves ARE tracked because they get served by GitHub Pages.
+fingerprint-manifest.json

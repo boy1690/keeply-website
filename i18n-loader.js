@@ -14,8 +14,17 @@
  * SRI (spec 020): when sri-manifest.json is reachable, dynamically-injected
  * <script> tags carry their integrity hash. Manifest fetch failure is a
  * graceful degradation (scripts load without SRI rather than the page breaking).
+ *
+ * URL fingerprinting (spec 15): `_dev/build-fingerprint.js` replaces the
+ * inline FINGERPRINT_MANIFEST token at build time with a JSON map of
+ * original → hashed pack paths (e.g. "i18n/en.js" → "i18n/en.abc1234567.js").
+ * The runtime uses the hashed path for both the script `src` and the SRI
+ * manifest lookup. If the token is left empty (file served pre-build), the
+ * fallback path is the original unhashed filename.
  */
 (function () {
+  var FINGERPRINT_MANIFEST = /*__FINGERPRINT_MANIFEST__*/{};
+
   var SUPPORTED = [
     'zh-TW', 'zh-CN', 'en', 'ja', 'ko',
     'de', 'fr', 'es', 'pt', 'it',
@@ -44,12 +53,17 @@
   var currentLocale = detectLocale();
 
   // Compute basePath relative to current page (e.g. ../ from a locale subdir).
+  // Match either the original "i18n-loader.js" or the fingerprinted variant
+  // "i18n-loader.<10-hex>.js" so this loader works whether served pre- or
+  // post-fingerprint build.
+  var LOADER_FILENAME_RE = /i18n-loader(?:\.[0-9a-f]{10})?\.js$/;
   var scripts = document.getElementsByTagName('script');
   var basePath = '';
   for (var i = 0; i < scripts.length; i++) {
     var src = scripts[i].getAttribute('src') || '';
-    if (src.indexOf('i18n-loader.js') !== -1) {
-      basePath = src.replace('i18n-loader.js', '');
+    var m = src.match(LOADER_FILENAME_RE);
+    if (m) {
+      basePath = src.slice(0, src.length - m[0].length);
       break;
     }
   }
@@ -66,15 +80,20 @@
     }
   }
 
+  function fingerprinted(key) {
+    return (FINGERPRINT_MANIFEST && FINGERPRINT_MANIFEST[key]) || key;
+  }
+
   function loadEngine() {
     var s = document.createElement('script');
-    applySri(s, 'i18n.js');
-    s.src = basePath + 'i18n.js';
+    var key = fingerprinted('i18n.js');
+    applySri(s, key);
+    s.src = basePath + key;
     document.body.appendChild(s);
   }
 
   function loadCurrentLocalePack() {
-    var key = 'i18n/' + currentLocale + '.js';
+    var key = fingerprinted('i18n/' + currentLocale + '.js');
     var s = document.createElement('script');
     applySri(s, key);
     s.src = basePath + key;
