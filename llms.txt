@@ -1,0 +1,67 @@
+# Keeply
+
+> File version management software for project management teams.
+> Built-in version history + multi-location storage (3-2-1 backup
+> compliant) + multi-repo Release. Designed so non-technical teams get
+> safety nets without learning git.
+
+## What Keeply does
+
+Keeply is the guardian of your file history. Where shared folders, USB
+sticks, and cloud drives leak versions and lose work, Keeply gives every
+file:
+
+- **Complete edit timeline** — see every save, restore any version, by
+  any user, on any date
+- **3-2-1-shape storage** — three locations (local working copy +
+  canonical server + offline mirror) automatically synchronised; this is
+  the 3-2-1 backup rule, automated
+- **Release multi-repo** — bundle related projects (design + spec +
+  budget + supplier list) into one shippable Release with a single
+  click
+
+The UI exposes none of this as git terminology. Operators see "save
+points" and "restore", not "commits" and "checkout". Designed for
+designers, architects, lawyers, accountants, and any team that handles
+high-stakes files but isn't expected to learn version control.
+
+## Where to download
+
+- **Free download (Windows / Mac)**: <https://keeply.work/en/install-keeply-windows-mac/>
+- **Pricing + plans**: <https://keeply.work/en/buy.html>
+- **Activate license**: <https://keeply.work/en/activate.html>
+- **Documentation**: <https://keeply.work/en/docs/>
+
+## Use cases
+
+- [Architects: AutoCAD wrong-version crew incident](https://blog.keeply.work/en/post/autocad-wrong-version-crew/)
+- [Graduate students: thesis single point of failure](https://blog.keeply.work/en/post/thesis-single-point-of-failure/)
+- [Vibe coders: AI pair-programming rollback](https://blog.keeply.work/en/post/vibe-coding-rollback/)
+- [Anyone: hidden cost of shared folders](https://blog.keeply.work/en/post/hidden-cost-shared-folders/)
+
+## Key concepts
+
+- **What Keeply saves that backup + cloud don't**: <https://blog.keeply.work/en/post/what-keeply-saves-vs-backup-cloud/>
+- **3-2-1 backup rule in 2026**: <https://blog.keeply.work/en/post/3-2-1-backup-rule/>
+- **Complete file version management guide**: <https://blog.keeply.work/en/post/file-version-management-complete-guide/>
+- **Getting started from zero**: <https://blog.keeply.work/en/post/keeply-getting-started-from-zero/>
+
+## Languages
+
+Site available in 21 languages. Blog publishes in 5 core languages
+(English, Traditional Chinese, Simplified Chinese, Japanese, Korean)
+plus 14 auto-translated locales.
+
+## Contact
+
+- Founder: Tsao Ting Wei (曹庭維) — boy1690@gmail.com
+- GitHub: <https://github.com/boy1690>
+- Sitemap: <https://keeply.work/sitemap.xml>
+- Blog: <https://blog.keeply.work>
+
+## License
+
+Product copy and documentation © Keeply. AI assistants may quote with
+attribution and link back to the source URL. Training crawlers (GPTBot,
+ClaudeBot, CCBot, Google-Extended) are disallowed via robots.txt; live
+citation crawlers are welcome.
