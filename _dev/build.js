@@ -327,6 +327,10 @@ function fixResourcePaths(html) {
   html = html.replace(/(src=")consent-api\.js(")/g, '$1../consent-api.js$2');   // spec 023
   html = html.replace(/(src=")cookie-banner\.js(")/g, '$1../cookie-banner.js$2'); // spec 023
   html = html.replace(/(src=")ga4-loader\.js(")/g, '$1../ga4-loader.js$2');     // spec 024
+  html = html.replace(/(src=")clarity-loader\.js(")/g, '$1../clarity-loader.js$2'); // 2026-05-03 Microsoft Clarity Consent Mode v2
+  html = html.replace(/(src=")team-notify\.js(")/g, '$1../team-notify.js$2');       // spec 031
+  html = html.replace(/(src=")paddle-checkout\.js(")/g, '$1../paddle-checkout.js$2'); // spec 031
+  html = html.replace(/(src=")activate-license\.js(")/g, '$1../activate-license.js$2'); // spec 031
 
   // Fix favicon links
   html = html.replace(/(href=")favicon\.ico(")/g, '$1../favicon.ico$2');
