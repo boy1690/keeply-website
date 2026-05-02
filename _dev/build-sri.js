@@ -42,6 +42,7 @@ const resources = [
   'consent-api.js',     // spec 023
   'cookie-banner.js',   // spec 023
   'ga4-loader.js',      // spec 024
+  'clarity-loader.js',  // 2026-05-03 Microsoft Clarity Consent Mode v2 integration
   'team-notify.js',     // spec 031
   'activate-license.js',// spec 031
   'paddle-checkout.js'  // spec 031
@@ -104,6 +105,8 @@ function patchHtml(content, filename) {
   content = rewriteTag(new RegExp('<script\\s+src="' + pathOpt + 'cookie-banner\\.js"[^>]*><\\/script>', 'g'), 'cookie-banner.js');
   // spec 024: GA4 consent-gated loader
   content = rewriteTag(new RegExp('<script\\s+src="' + pathOpt + 'ga4-loader\\.js"[^>]*><\\/script>', 'g'), 'ga4-loader.js');
+  // 2026-05-03: Microsoft Clarity Consent Mode v2 (mirrors GA4 pattern)
+  content = rewriteTag(new RegExp('<script\\s+src="' + pathOpt + 'clarity-loader\\.js"[^>]*><\\/script>', 'g'), 'clarity-loader.js');
   // spec 031: inline-to-external refactor (CSP nonce-less)
   content = rewriteTag(new RegExp('<script\\s+src="' + pathOpt + 'team-notify\\.js"[^>]*><\\/script>', 'g'), 'team-notify.js');
   content = rewriteTag(new RegExp('<script\\s+src="' + pathOpt + 'activate-license\\.js"[^>]*><\\/script>', 'g'), 'activate-license.js');

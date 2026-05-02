@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#4F46E5" />
   <!-- Content Security Policy (spec 019). frame-ancestors / HSTS / Permissions-Policy
        are header-only and deferred to future Cloudflare migration (audit #8). -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com https://cloudflareinsights.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://static.cloudflareinsights.com https://www.clarity.ms; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://*.clarity.ms; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google-analytics.com https://*.analytics.google.com https://cloudflareinsights.com https://*.clarity.ms; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Keeply — 你的檔案有故事。Keeply 記住全部。</title>
   <meta name="description" content="讓非技術使用者以最簡單的方式管理檔案版本。免費下載，30 秒開始使用。" />
@@ -650,6 +650,7 @@
   <script src="components.js" defer></script>
   <script src="cookie-banner.js" defer></script>
   <script src="ga4-loader.js" defer></script>
+  <script src="clarity-loader.js" defer></script>
   <script src="i18n-loader.js" defer></script>
   <script src="team-notify.js" defer></script>
 

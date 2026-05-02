@@ -1,11 +1,12 @@
 {
-  "style.css": "sha384-aCdHtcwqwgru3xSeRDwlJXHlOGJz6jrLNnKgUp5YnmrGmquZeKi22eopDrseZSM1",
+  "style.css": "sha384-YZiY0ndSTJNetk+9wWbbzxqAUpVAkb9YJzw8m+ON9XTe/JbhQKuleBS8eR2fhGG0",
   "components.js": "sha384-Y6/6phkijVlwQ9nqNUKQEGuFnHvvxA4NczoZsCHqQFkBGHLr/F3x7QPVgeDsAi6v",
   "i18n-loader.js": "sha384-VUDvZsztnx2OkyctCisBeyPSfyeD1YSQeJbGx9H3FWJKhCvn3NumncgFAPt0APX0",
   "i18n.js": "sha384-7gu44Iy6XNbpyECtIIOezSb6j/6R4CdipcUaxQfM2aUVJEM13Qrny6qJeeW+Xjjt",
   "consent-api.js": "sha384-AgMsIGCbo9mV0oP2ebvR5aNCzNPtSkIGXG5v29yY6A+vEktkTMAOZtlK0WiKSEUR",
   "cookie-banner.js": "sha384-aDwCVUUSIWi62pJZ7PqUXIOz/bAoGadk/KUkD4HatS2r4S1C5cMfasX/UGBBap+8",
   "ga4-loader.js": "sha384-jYO4ARZ+UCGY2v6qzLfw2yqhQ5tPFNYQia3QEljpr5okv2tjmBbXU6Pmzm9jTV8O",
+  "clarity-loader.js": "sha384-rdROtDi/pws+RrJtXaeyRY20mP1RJMaVL3DuCPi4UU7tkWHea6vyx01XW/4tbkL/",
   "team-notify.js": "sha384-kQUIeDWtAKHyIrSPoncROrE3SSvzakx5e3Ll8GT1Zjgqqr7nAyhVHZ7qyXYC+wVU",
   "activate-license.js": "sha384-W8ZDBiOjDHDcXhi+V/B19Sc82MN/14+aIEfQaAxrD6S8+ZsGsCdq8CxFiuja6CTb",
   "paddle-checkout.js": "sha384-nNpjxDJ80ngRYOkyVdYcEcac+Q9Lss/2dblaqirutM1FMMev5gJpxgepaxHPX4Lp",
