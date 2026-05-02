@@ -5,8 +5,9 @@
     "build:pages": "node _dev/build.js",
     "build:comparisons": "node _dev/build-comparisons.js",
     "build:schema": "node _dev/inject-schema.js",
+    "build:fingerprint": "node _dev/build-fingerprint.js",
     "build:sri": "node _dev/build-sri.js",
-    "build": "npm run build:checksums && npm run build:css && npm run build:pages && npm run build:comparisons && npm run build:schema && npm run build:sri",
+    "build": "npm run build:checksums && npm run build:css && npm run build:pages && npm run build:comparisons && npm run build:schema && npm run build:fingerprint && npm run build:sri",
     "ping:indexnow": "node _dev/ping-indexnow.js"
   },
   "devDependencies": {
