@@ -23,7 +23,7 @@
  * fallback path is the original unhashed filename.
  */
 (function () {
-  var FINGERPRINT_MANIFEST = {"i18n/zh-TW.js":"i18n/zh-TW.3eef25df53.js","i18n/zh-CN.js":"i18n/zh-CN.dbb7f1fa4c.js","i18n/en.js":"i18n/en.2727507dab.js","i18n/ja.js":"i18n/ja.2a0ae2b0f7.js","i18n/ko.js":"i18n/ko.97914310d4.js","i18n/de.js":"i18n/de.1f65425dbd.js","i18n/fr.js":"i18n/fr.e4e1649bb1.js","i18n/es.js":"i18n/es.ec585de178.js","i18n/pt.js":"i18n/pt.b9a0a92c43.js","i18n/it.js":"i18n/it.02c7572738.js","i18n/nl.js":"i18n/nl.e6a9201ab8.js","i18n/pl.js":"i18n/pl.52c0e47b9e.js","i18n/cs.js":"i18n/cs.5cb4ca5a87.js","i18n/hu.js":"i18n/hu.9ab34ce1d0.js","i18n/tr.js":"i18n/tr.9fb153f96a.js","i18n/fi.js":"i18n/fi.12bef20b59.js","i18n/sv.js":"i18n/sv.fbb4c39c3f.js","i18n/no.js":"i18n/no.13efd391cc.js","i18n/da.js":"i18n/da.8b069bca7e.js","i18n.js":"i18n.da65a15415.js"};
+  var FINGERPRINT_MANIFEST = {"i18n/zh-TW.js":"i18n/zh-TW.3eef25df53.js","i18n/zh-CN.js":"i18n/zh-CN.dbb7f1fa4c.js","i18n/en.js":"i18n/en.2727507dab.js","i18n/ja.js":"i18n/ja.2a0ae2b0f7.js","i18n/ko.js":"i18n/ko.97914310d4.js","i18n/de.js":"i18n/de.1f65425dbd.js","i18n/fr.js":"i18n/fr.e4e1649bb1.js","i18n/es.js":"i18n/es.ec585de178.js","i18n/pt.js":"i18n/pt.b9a0a92c43.js","i18n/it.js":"i18n/it.02c7572738.js","i18n/nl.js":"i18n/nl.e6a9201ab8.js","i18n/pl.js":"i18n/pl.52c0e47b9e.js","i18n/cs.js":"i18n/cs.5cb4ca5a87.js","i18n/hu.js":"i18n/hu.9ab34ce1d0.js","i18n/tr.js":"i18n/tr.9fb153f96a.js","i18n/fi.js":"i18n/fi.12bef20b59.js","i18n/sv.js":"i18n/sv.fbb4c39c3f.js","i18n/no.js":"i18n/no.13efd391cc.js","i18n/da.js":"i18n/da.8b069bca7e.js","i18n.js":"i18n.94cf6c19d2.js"};
 
   var SUPPORTED = [
     'zh-TW', 'zh-CN', 'en', 'ja', 'ko',

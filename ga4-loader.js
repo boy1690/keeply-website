@@ -87,4 +87,45 @@
   } else {
     console.warn('[ga4-loader] window.keeplyConsent missing; staying at default-denied');
   }
+
+  // ─── Download CTA tracking ────────────────────────────────────────────
+  // Hook the two stable download button IDs (#download-btn-win /
+  // #download-btn-mac) shared across all locale index.html files.
+  // Consent Mode v2 自己會依 analytics_storage 決定 event 真正送不送出。
+
+  function trackDownloadClick(e) {
+    var a = e.currentTarget;
+    var href = a.getAttribute('href') || '';
+    var fileName = href.split('/').pop() || 'unknown';
+    var fileExt = (fileName.match(/\.([a-z0-9]+)$/i) || [, 'unknown'])[1].toLowerCase();
+    var versionMatch = href.match(/\/v(\d+\.\d+\.\d+)\//);
+    var os = a.id === 'download-btn-mac' ? 'macos'
+           : a.id === 'download-btn-win' ? 'windows'
+           : 'unknown';
+
+    gtag('event', 'download_click', {
+      file_name: fileName,
+      file_extension: fileExt,
+      os: os,
+      app_version: versionMatch ? versionMatch[1] : 'unknown',
+      link_url: href,
+      transport_type: 'beacon'
+    });
+  }
+
+  function attachDownloadHandlers() {
+    ['download-btn-win', 'download-btn-mac'].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el && !el.dataset.ga4Hooked) {
+        el.addEventListener('click', trackDownloadClick);
+        el.dataset.ga4Hooked = '1';
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', attachDownloadHandlers);
+  } else {
+    attachDownloadHandlers();
+  }
 })();
