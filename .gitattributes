@@ -1,0 +1,19 @@
+# Spec 36: force LF line endings on text files so Windows CRLF / Linux LF
+# checkout produces the same source bytes → same SHA-256 fingerprint hash
+# regardless of platform.
+* text=auto eol=lf
+
+# Binary file types — exempt from text normalization to avoid corruption.
+*.woff2 binary
+*.woff  binary
+*.ttf   binary
+*.otf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.webp  binary
+*.avif  binary
+*.pdf   binary
+*.zip   binary
