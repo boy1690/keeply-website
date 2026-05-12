@@ -549,5 +549,20 @@
   "terms.s3.5.p2c": "(c) \"Release\" means a version snapshot produced from the Canonical at a specific point in time; unlimited in number;",
   "terms.s3.5.p2d": "(d) \"Clone\" means a local working copy derived from the Canonical on a member's device; unlimited in number.",
   "terms.s3.5.p3": "The data form of a Vault Location may be selected at creation time: \"Standard mode\" allows direct browsing and editing of the Canonical via the file explorer, and the Canonical may be modified by any user with access to that folder; \"Protected mode\" uses a protected repository format, where the Canonical contents may only be modified through the Software interface and destructive history-changing operations are rejected. Both Standard and Protected modes are available on the Free and Team plans. Personal workflows (version history, file diff, Release publishing, unlimited users, etc.) are identical between the two plans; the Team plan's distinguishing features are team governance tools, not increased capacity or additional locations.",
-  "terms.s3.6.p3": "Vault Location changes on the Free plan are not subject to cooldowns or annual limits; the foregoing limits apply to the Team plan only."
+  "terms.s3.6.p3": "Vault Location changes on the Free plan are not subject to cooldowns or annual limits; the foregoing limits apply to the Team plan only.",
+  "index.faq.title": "よくある質問",
+  "index.faq.1.q": "Keeply はオフラインで使えますか？",
+  "index.faq.1.a": "使えます。Keeply は完全ローカルのソフトウェアです——クラウドもアカウントも不要、ネットワーク依存もありません。プロジェクトファイル、バージョン履歴、メモはすべてハードディスクや NAS に残ります。機内モードでも、地下室でも、完全にネットから切り離されたマシンでも Keeply は使えます。ネットに接続するのは App のアップデート確認のときだけで、それも無効化できます。",
+  "index.faq.2.q": "Keeply は Dropbox や Google Drive とどう違いますか？",
+  "index.faq.2.a": "Dropbox と Google Drive はファイルの現在の状態を同期しますが、Keeply はすべてのバージョンを独立したスナップショットとして記録します。Dropbox と Drive はユーザー単位で月額課金しますが、Keeply は個人なら永久無料、今後の Team プラン（近日公開）はチーム規模に関係なく月額 $25 のフラット料金になる予定です。ファイルはベンダーのサーバーではなく自分のディスクにあるので、サブスクに縛られることはありません。",
+  "index.faq.3.q": "支払いをやめたらファイルはどうなりますか？",
+  "index.faq.3.a": "何も起こりません。Keeply のファイルは、あなたが管理する標準的なフォルダ構造でハードディスクや NAS に保存されています。Keeply をアンインストールしても、ファイルとバージョン履歴はどんなファイルマネージャーでも読み取れます。自分の作品にアクセスするためにお金を払うわけではありません——Founding Member は一度きりの買い切り永久ライセンスで、無料プランは永久に無料です。",
+  "index.faq.4.q": "シート単位のライセンスなしでチームでファイル共有できますか？",
+  "index.faq.4.a": "できます。無料プランでも、チームはすでに NAS や共有ドライブで同じ保管庫フォルダを共有できます——Keeply はシートを数えません。今後リリース予定の Team プラン（月額 $25 フラット、計画中）では招待コードによるオンボーディングと管理者ダッシュボードが追加されますが、それでもシート課金はありません。比較として、Dropbox Business は 1 シート月額 $20 で、6 人チームなら月額 $120 になります。",
+  "index.faq.5.q": "Keeply はどんなファイル形式に対応していますか？",
+  "index.faq.5.a": "あらゆるファイルです。Keeply は Word、Excel、PowerPoint、PDF、画像について並列ビジュアル diff を表示します。それ以外のすべての形式——Blender、PSD、動画、CAD、3D モデル、ソースコード——についても Keeply はバージョンを追跡し、どの時点にも数秒で復元できます。10MB を超えるファイルと、既知の 38 種類のバイナリ形式は自動検出され、設定不要・LFS の設定も不要で大容量ファイルストレージに振り分けられます。",
+  "index.faq.6.q": "Linux 版はありますか？",
+  "index.faq.6.a": "Keeply は現在、Windows 10 以降と macOS（Apple Silicon のみ対応）向けに提供されています。Linux ビルドは roadmap には入っていますが、まだリリースされていません。Linux 対応がワークフローに必須なら、お問い合わせフォームから教えてください——プラットフォーム対応は実際のユーザー需要に基づいて優先順位を決めており、すべてのリクエストは記録されます。",
+  "index.faq.7.q": "$599 の Founding Member プランとは何ですか？",
+  "index.faq.7.a": "永久ライセンスの一括払いで、先着 500 名限定です。Keeply の現行機能を永久に使えるうえに、Team プランがリリースされたら自動ですべての Team プラン機能も手に入ります。継続課金もなく、将来の値上げに驚かされることもありません。比較すると、月額 $25 × 24 か月 = $600——Founding Member は 2 年経たずに元が取れて、その後もずっと使えます。"
 }

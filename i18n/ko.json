@@ -549,5 +549,20 @@
   "terms.s3.5.p2c": "(c) \"Release\" means a version snapshot produced from the Canonical at a specific point in time; unlimited in number;",
   "terms.s3.5.p2d": "(d) \"Clone\" means a local working copy derived from the Canonical on a member's device; unlimited in number.",
   "terms.s3.5.p3": "The data form of a Vault Location may be selected at creation time: \"Standard mode\" allows direct browsing and editing of the Canonical via the file explorer, and the Canonical may be modified by any user with access to that folder; \"Protected mode\" uses a protected repository format, where the Canonical contents may only be modified through the Software interface and destructive history-changing operations are rejected. Both Standard and Protected modes are available on the Free and Team plans. Personal workflows (version history, file diff, Release publishing, unlimited users, etc.) are identical between the two plans; the Team plan's distinguishing features are team governance tools, not increased capacity or additional locations.",
-  "terms.s3.6.p3": "Vault Location changes on the Free plan are not subject to cooldowns or annual limits; the foregoing limits apply to the Team plan only."
+  "terms.s3.6.p3": "Vault Location changes on the Free plan are not subject to cooldowns or annual limits; the foregoing limits apply to the Team plan only.",
+  "index.faq.title": "자주 묻는 질문",
+  "index.faq.1.q": "Keeply는 오프라인에서 사용할 수 있나요？",
+  "index.faq.1.a": "가능합니다. Keeply는 완전한 로컬 소프트웨어입니다——클라우드도, 계정도, 네트워크 의존성도 없습니다. 프로젝트 파일, 버전 기록, 메모 모두 하드 디스크나 NAS에 그대로 남습니다. 비행기 모드에서도, 지하실에서도, 완전히 네트워크가 차단된 머신에서도 Keeply를 쓸 수 있습니다. 네트워크에 연결되는 유일한 순간은 App 업데이트를 확인할 때이며, 이것도 끌 수 있습니다.",
+  "index.faq.2.q": "Keeply는 Dropbox나 Google Drive와 어떻게 다른가요？",
+  "index.faq.2.a": "Dropbox와 Google Drive는 파일의 현재 상태를 동기화하지만, Keeply는 모든 버전을 별도의 스냅샷으로 기록합니다. Dropbox와 Drive는 사용자당 월 단위로 과금하지만, Keeply는 개인은 영구 무료이고, 곧 출시될 Team 플랜은 팀 규모와 무관하게 월 $25 정액제로 제공될 예정입니다. 파일은 벤더 서버가 아니라 본인의 디스크에 있으므로 구독에 묶일 일이 없습니다.",
+  "index.faq.3.q": "결제를 중단하면 제 파일은 어떻게 되나요？",
+  "index.faq.3.a": "아무 일도 일어나지 않습니다. Keeply 파일은 본인이 통제하는 표준 폴더 구조로 하드 디스크나 NAS에 저장되어 있습니다. Keeply를 제거해도 파일과 버전 기록은 어떤 파일 관리자로도 읽을 수 있습니다. 자기 작업물에 접근하려고 돈을 내는 게 아닙니다——Founding Member는 일회성 영구 라이선스이고, 무료 플랜은 영구히 무료로 유지됩니다.",
+  "index.faq.4.q": "시트 단위 라이선스 없이 팀이 파일을 공유할 수 있나요？",
+  "index.faq.4.a": "가능합니다. 무료 플랜에서도 팀은 이미 NAS나 공유 드라이브를 통해 하나의 보관소 폴더를 공유할 수 있습니다——Keeply는 시트를 세지 않습니다. 곧 출시될 Team 플랜(월 $25 정액, 계획 중)은 초대 코드 온보딩과 관리자 대시보드가 추가되지만, 여전히 시트당 과금이 없습니다. 비교하자면 Dropbox Business는 시트당 월 $20이며, 6명 팀이면 월 $120입니다.",
+  "index.faq.5.q": "Keeply는 어떤 파일 형식을 지원하나요？",
+  "index.faq.5.a": "모든 파일입니다. Keeply는 Word, Excel, PowerPoint, PDF, 이미지에 대해 나란히 보이는 시각적 diff를 제공합니다. 그 외의 모든 형식——Blender, PSD, 동영상, CAD, 3D 모델, 소스 코드——도 Keeply가 버전을 추적해서 어느 시점으로든 몇 초 안에 복원할 수 있습니다. 10MB를 초과하는 파일과 알려진 38가지 바이너리 형식은 자동으로 감지되어, 별도 설정이나 LFS 구성 없이 대용량 파일 저장소로 라우팅됩니다.",
+  "index.faq.6.q": "Linux 버전이 있나요？",
+  "index.faq.6.a": "Keeply는 현재 Windows 10 이상과 macOS(Apple Silicon 전용)용으로 제공됩니다. Linux 빌드는 roadmap에 있지만 아직 출시되지 않았습니다. Linux 지원이 워크플로에 필수라면 문의 양식으로 알려주세요——플랫폼 지원은 실제 사용자 수요에 따라 우선순위를 정하고 있으며 모든 요청은 기록됩니다.",
+  "index.faq.7.q": "$599 Founding Member 플랜은 무엇인가요？",
+  "index.faq.7.a": "일회성 결제로 영구 라이선스를 받는 플랜이며, 선착순 500명으로 한정됩니다. Keeply의 현재 기능을 평생 사용할 수 있고, Team 플랜이 출시되면 모든 Team 플랜 기능도 자동으로 받게 됩니다. 정기 결제도, 갑작스러운 가격 인상도 없습니다. 비교하자면 월 $25 × 24개월 = $600——Founding Member는 2년이 채 되기 전에 본전을 뽑고 그 뒤로도 계속 쓸 수 있습니다."
 }

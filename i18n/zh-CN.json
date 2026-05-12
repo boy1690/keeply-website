@@ -549,5 +549,20 @@
   "terms.s3.5.p2c": "(c) \"Release\" means a version snapshot produced from the Canonical at a specific point in time; unlimited in number;",
   "terms.s3.5.p2d": "(d) \"Clone\" means a local working copy derived from the Canonical on a member's device; unlimited in number.",
   "terms.s3.5.p3": "The data form of a Vault Location may be selected at creation time: \"Standard mode\" allows direct browsing and editing of the Canonical via the file explorer, and the Canonical may be modified by any user with access to that folder; \"Protected mode\" uses a protected repository format, where the Canonical contents may only be modified through the Software interface and destructive history-changing operations are rejected. Both Standard and Protected modes are available on the Free and Team plans. Personal workflows (version history, file diff, Release publishing, unlimited users, etc.) are identical between the two plans; the Team plan's distinguishing features are team governance tools, not increased capacity or additional locations.",
-  "terms.s3.6.p3": "Vault Location changes on the Free plan are not subject to cooldowns or annual limits; the foregoing limits apply to the Team plan only."
+  "terms.s3.6.p3": "Vault Location changes on the Free plan are not subject to cooldowns or annual limits; the foregoing limits apply to the Team plan only.",
+  "index.faq.title": "常见问题",
+  "index.faq.1.q": "Keeply 可以离线使用吗？",
+  "index.faq.1.a": "可以。Keeply 是完全本地的软件——不用云端、不用账号、不依赖网络。你的项目文件、版本历史、笔记全部留在你的硬盘或 NAS 上。你可以在飞行模式、地下室、或完全离网的电脑上使用 Keeply。唯一会联网的时机是检查 App 更新，而这个你也可以关掉。",
+  "index.faq.2.q": "Keeply 和 Dropbox 或 Google Drive 有什么不同？",
+  "index.faq.2.a": "Dropbox 和 Google Drive 同步的是文件当前的状态；Keeply 把每一个版本都记录成独立快照。Dropbox 和 Drive 按使用者人数每月收费；Keeply 个人版永久免费，未来的 Team 方案（即将推出）将是每月 $25 美元的统一价，不看团队规模。你的文件存在你的硬盘上，不是厂商的服务器，所以你不会被订阅绑架。",
+  "index.faq.3.q": "如果我停止付费，我的文件会怎样？",
+  "index.faq.3.a": "不会怎样。Keeply 的文件以你掌控的标准文件夹结构存在你的硬盘或 NAS 上。即使你把 Keeply 卸载，文件和版本历史仍然可以用任何文件管理器读取。你不是在为了存取自己的作品付费——Founding Member 是一次性买断的永久授权，免费版则永久免费。",
+  "index.faq.4.q": "我的团队可以不按人头付费共享文件吗？",
+  "index.faq.4.a": "可以。免费版团队就已经能透过 NAS 或共用磁盘共享同一个保管库——Keeply 不计算席次。即将推出的 Team 方案（每月 $25 美元统一价，规划中）会加入邀请码上手流程和管理员仪表板，但仍然不按人头收费。对比 Dropbox Business 每人每月 $20 美元，6 人团队一个月就是 $120 美元。",
+  "index.faq.5.q": "Keeply 支持哪些文件类型？",
+  "index.faq.5.a": "任何文件。Keeply 对 Word、Excel、PowerPoint、PDF 和图片提供并排可视化 diff。其他所有类型——Blender、PSD、视频、CAD、3D 模型、源代码——Keeply 都会追踪版本，让你几秒内还原到任何时间点。超过 10MB 的文件和 38 种已知的二进制格式会自动检测并路由到大文件存储，不需要任何配置或 LFS 设定。",
+  "index.faq.6.q": "有 Linux 版本吗？",
+  "index.faq.6.a": "Keeply 目前支持 Windows 10 以上和 macOS（仅限 Apple Silicon）。Linux 版本在 roadmap 上但还没推出。如果 Linux 支持对你的工作流程很关键，请透过联络表单告诉我们——我们根据实际使用者需求排优先级，每一则请求都会被记录。",
+  "index.faq.7.q": "$599 的 Founding Member 方案是什么？",
+  "index.faq.7.a": "一次性付费、永久授权，限定前 500 位买家。你永久拥有 Keeply 目前所有功能，加上 Team 方案上线后自动取得所有 Team 功能。没有订阅周期性扣款，没有未来涨价的惊喜。对比每月 $25 美元 × 24 个月 = $600 美元——Founding Member 不到两年就回本，而且继续用。"
 }
