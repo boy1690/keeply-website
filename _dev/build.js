@@ -498,13 +498,9 @@ function main() {
   const sitemapCount = (sitemap.match(/<url>/g) || []).length;
   console.log(`Generated sitemap.xml (${sitemapCount} URLs)\n`);
 
-  // Sync i18n/*.js from *.json
-  for (const locale of LOCALES) {
-    const jsonData = translations[locale];
-    const jsContent = `window.__i18n = window.__i18n || {};\nwindow.__i18n["${locale}"] = ${JSON.stringify(jsonData, null, 2)};\n`;
-    fs.writeFileSync(path.join(I18N_DIR, `${locale}.js`), jsContent, 'utf8');
-  }
-  console.log(`Synced ${LOCALES.length} i18n .js files from .json`);
+  // Spec 36: locale pack .js generation moved to _dev/build-fingerprint.js,
+  // which synthesizes pack content from i18n/*.json in-memory and writes
+  // only the hashed file. No intermediate i18n/<locale>.js is produced.
 
   // Copy templates to root as fallback pages (with version substitution applied)
   for (const page of PAGES) {
