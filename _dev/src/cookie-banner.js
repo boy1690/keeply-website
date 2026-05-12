@@ -181,6 +181,14 @@
       document.body.appendChild(wrapper.firstChild);
     }
     attachPanelHandlers();
+    // Re-run i18n on the newly inserted DOM (zh-TW fallback otherwise persists).
+    if (window.__keeplyI18n) {
+      window.__keeplyI18n.apply();
+      var closeBtn = document.querySelector('#' + PANEL_ID + ' [data-cookie-action="close"]');
+      if (closeBtn) closeBtn.setAttribute('aria-label', window.__keeplyI18n.t('cookie.panel.aria.close'));
+      var panelEl = document.getElementById(PANEL_ID);
+      if (panelEl) panelEl.setAttribute('aria-label', window.__keeplyI18n.t('cookie.panel.aria.dialog'));
+    }
     // Focus first focusable inside panel (the close button) for WCAG dialog pattern.
     var panel = document.getElementById(PANEL_ID);
     var firstFocusable = panel.querySelector('button, [href], input, [tabindex]:not([tabindex="-1"])');

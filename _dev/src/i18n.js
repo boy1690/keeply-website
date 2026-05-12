@@ -366,6 +366,15 @@
   window.__keeplyI18n = {
     setLang: setLang,
     currentLang: function () { return currentLang; },
-    sanitizeHtml: sanitizeHtml
+    sanitizeHtml: sanitizeHtml,
+    // Re-run translation pass — needed when DOM is mutated after initial load
+    // (e.g. cookie-banner.js injects the panel on demand).
+    apply: function () { applyTranslations(data[currentLang]); },
+    // Translate a single key — for attributes (aria-label, etc) that data-i18n
+    // can't currently target.
+    t: function (key) {
+      var pack = data[currentLang] || {};
+      return pack[key] != null ? pack[key] : key;
+    }
   };
 })();
