@@ -231,6 +231,57 @@
     return 'index.html';
   }
 
+  // Spec 043 bug-fix: 取得「邏輯路徑」——locale 子目錄以外的整段 path。
+  //   /                            → ''
+  //   /index.html                  → ''
+  //   /buy.html                    → 'buy.html'
+  //   /compare/time-machine.html   → 'compare/time-machine.html'
+  //   /en/install.html             → 'install.html'
+  //   /zh-TW/compare/dropbox.html  → 'compare/dropbox.html'
+  function getLogicalPath() {
+    var path = location.pathname.replace(/^\//, '');
+    var localeMatch = path.match(/^([a-z]{2}(?:-[A-Z]{2})?)\/(.*)$/);
+    if (localeMatch) path = localeMatch[2];
+    if (path === '' || path.endsWith('/')) {
+      // /foo/ → /foo/ index 還是首頁？ /compare/ 是 hub 首頁，/zh-TW/ 是 zh-TW 首頁
+      // 對 compare hub，保留路徑；對 locale root，去除
+      // 此處 path 已剝掉 locale prefix，所以剩下 'compare/' 就是 compare hub
+      // 而 '' 就是 locale 首頁
+      return path;
+    }
+    return path;
+  }
+
+  // 根據目標語言 + 當前邏輯路徑，算出該語言對應的 URL。
+  // 處理「不是所有 locale 都有此頁」的 fallback。
+  //   compare/* 只在 en (root) 與 zh-TW 有
+  //   install.html 只在 en, zh-TW, zh-CN, ja, ko, it 有完整翻譯
+  function getLocalizedUrlFor(lang, relPath) {
+    // compare 系列：en 在 root（/compare/...），zh-TW 在 /zh-TW/compare/...
+    if (relPath === 'compare/' || relPath.indexOf('compare/') === 0) {
+      if (lang === 'en') return '/' + relPath;
+      if (lang === 'zh-TW') return '/zh-TW/' + relPath;
+      // 其他 locale 沒 compare → 回到該 locale 首頁，避免 404
+      return '/' + lang + '/';
+    }
+
+    // locale 首頁
+    if (relPath === '' || relPath === 'index.html') {
+      return '/' + lang + '/';
+    }
+
+    // install.html 翻譯 locale 範圍（spec 043 D）
+    if (relPath === 'install.html') {
+      var INSTALL_AVAILABLE = ['en', 'zh-TW', 'zh-CN', 'ja', 'ko', 'it'];
+      if (INSTALL_AVAILABLE.indexOf(lang) === -1) {
+        return '/en/install.html'; // fallback
+      }
+    }
+
+    // 預設：所有 19 locale 都有此頁（index/privacy/terms/contact/buy/refund/activate）
+    return '/' + lang + '/' + relPath;
+  }
+
   // setLang(lang, persist)
   //   persist === true  → write the choice to localStorage
   //                       (use when the change reflects an explicit user action:
@@ -248,12 +299,20 @@
       try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) { /* ignore */ }
     }
 
-    // If in a locale subdirectory, navigate to the new locale URL
+    // 切換語言：根據邏輯路徑 + 目標語言推算正確 URL（spec 043 bug-fix）。
+    // 處理：
+    //   - locale 子目錄 → 換成 /<lang>/<relPath>
+    //   - root /compare/* → en/zh-TW 切換正確路徑；其他 locale fallback 到 /<lang>/
+    //   - root /foo.html → /<lang>/foo.html
+    //   - root / → /<lang>/
     var urlLocale = detectLocaleFromUrl();
-    if (urlLocale && urlLocale !== lang) {
-      var page = getCurrentPage();
-      var pagePath = page === 'index.html' ? '' : page;
-      window.location.href = '/' + lang + '/' + pagePath;
+    var relPath = getLogicalPath();
+    var targetUrl = getLocalizedUrlFor(lang, relPath);
+    var currentUrl = location.pathname;
+    // 已在目標 locale 對應的 URL → 不導航，做 in-page 替換（root + zh-TW 互通的 edge case 也算）
+    var alreadyAtTarget = (urlLocale === lang) || (currentUrl === targetUrl);
+    if (!alreadyAtTarget) {
+      window.location.href = targetUrl;
       return;
     }
 
@@ -294,13 +353,14 @@
     dropdown.className = 'absolute right-0 top-full mt-2 bg-white border border-gray-200 rounded-xl shadow-xl py-2 z-[100] w-48 max-h-80 overflow-y-auto hidden';
     dropdown.style.scrollbarWidth = 'thin';
 
-    var page = getCurrentPage();
-    var pagePath = page === 'index.html' ? '' : page;
+    // spec 043 bug-fix：dropdown 連結用 logical path + 各語言可用性 fallback，
+    // 避免 /compare/time-machine.html → 切到 ja → /ja/time-machine.html (404)。
+    var relPath = getLogicalPath();
 
     for (var i = 0; i < LANGUAGES.length; i++) {
       var lang = LANGUAGES[i];
       var item = document.createElement('a');
-      item.href = '/' + lang.code + '/' + pagePath;
+      item.href = getLocalizedUrlFor(lang.code, relPath);
       item.className = 'block w-full text-left px-4 py-2 text-sm hover:bg-brand-50 transition-colors text-gray-700';
       item.setAttribute('data-lang-code', lang.code);
       item.textContent = lang.label;

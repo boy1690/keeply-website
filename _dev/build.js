@@ -280,6 +280,17 @@ function replaceOgTags(html, translations, locale, page, pagePrefix) {
   return html;
 }
 
+// Spec 043 bug-fix B1：homepage compare 卡片用 __COMPARE_PATH__ placeholder，
+// 依 locale 替換為對應 compare hub 路徑（避免 zh-TW 用戶點卡片進 EN 版）。
+//   en + 13 其他 locale → /compare（en compare 是 root level，無 locale prefix）
+//   zh-TW → /zh-TW/compare
+// 注意：對 13 其他 locale，本意是 fallback 到 en compare（與 components.js
+// COMPARE_LOCALES 一致）。
+function applyComparePath(html, locale) {
+  const comparePath = locale === 'zh-TW' ? '/zh-TW/compare' : '/compare';
+  return html.replace(/__COMPARE_PATH__/g, comparePath);
+}
+
 function replaceDataI18n(html, translations, locale) {
   const t = translations[locale] || {};
   const fallback = translations['en'] || {};
@@ -523,6 +534,7 @@ function main() {
       html = replaceHreflangTags(html, locale, page);
       html = replaceOgTags(html, translations, locale, page, pagePrefix);
       html = replaceDataI18n(html, translations, locale);
+      html = applyComparePath(html, locale);
       html = fixResourcePaths(html);
 
       // Write output
@@ -543,19 +555,18 @@ function main() {
   // only the hashed file. No intermediate i18n/<locale>.js is produced.
 
   // Copy templates to root as fallback pages (spec 043 C).
-  // 大多數頁面用 zh-TW.json 套 i18n（解 root FAQ 中英混雜問題）；
-  // 但 install.html 例外——用 en.json，與其 x-default → /en/install.html
-  // 對齊，避免 root /install.html 顯示中文卻 hreflang 標 en。
-  const DEFAULT_ROOT_LOCALE = 'zh-TW';
-  const ROOT_LOCALE_OVERRIDE = { 'install.html': 'en' };
+  // 所有 root pages 統一套 zh-TW.json（root 顯示繁中，與站內主語言一致）。
+  // 包含 install.html（spec 043 D 原 EN override 在 bug-fix 時撤銷，
+  // 因為 root 應該整體一致 = zh-TW，不應該 install 例外英文）。
+  const ROOT_LOCALE = 'zh-TW';
   for (const page of PAGES) {
     let rootHtml = fs.readFileSync(path.join(TEMPLATE_DIR, page), 'utf8');
     rootHtml = applyVersionSubstitution(rootHtml, releaseConfig);
-    const rootLocale = ROOT_LOCALE_OVERRIDE[page] || DEFAULT_ROOT_LOCALE;
-    rootHtml = replaceDataI18n(rootHtml, translations, rootLocale);
+    rootHtml = replaceDataI18n(rootHtml, translations, ROOT_LOCALE);
+    rootHtml = applyComparePath(rootHtml, ROOT_LOCALE);
     fs.writeFileSync(path.join(OUTPUT_DIR, page), rootHtml, 'utf8');
   }
-  console.log(`Copied ${PAGES.length} templates to root (zh-TW i18n, install.html → en)`);
+  console.log(`Copied ${PAGES.length} templates to root (${ROOT_LOCALE} i18n applied)`);
 
   console.log(`\nBuild complete: ${fileCount} files generated across ${LOCALES.length} locales`);
 }

@@ -32,9 +32,9 @@
   var downloadLink = isHome ? '#download' : localePrefix + 'index.html#download';
   var pricingLink = isHome ? '#pricing' : (localePrefix || '/') + '#pricing';
 
-  // install.html（spec 043 Stage 2）：6 core locale 各有母語版；其他 13 locale
-  // fallback 到 /en/install.html（不是 root /install.html）—— root 是 x-default
-  // 入口，但對已知 locale 用戶來說連到 /en/ 比較直覺。
+  // install.html（spec 043 Stage 2 + bug-fix）：6 core locale 各有母語版；
+  // 13 其他 locale fallback /en/install.html；root pages（無 locale prefix）
+  // 因為 root 顯示繁中（spec 043 C），nav 從 root 點「安裝」應連到 /zh-TW/install.html
   var INSTALL_LOCALES = {
     'en': '/en/install.html',
     'zh-TW': '/zh-TW/install.html',
@@ -43,11 +43,22 @@
     'ko': '/ko/install.html',
     'it': '/it/install.html'
   };
-  var installLink = INSTALL_LOCALES[localeCode] || '/en/install.html';
+  var installLink;
+  if (localeCode === null) {
+    installLink = '/zh-TW/install.html'; // root = zh-TW 顯示
+  } else {
+    installLink = INSTALL_LOCALES[localeCode] || '/en/install.html';
+  }
 
-  // compare hub：en + zh-TW 各有獨立版本；其他 locale fallback 到 root (en)
+  // compare hub：en（root level）+ zh-TW 各有獨立版本；17 其他 locale
+  // fallback 到 /compare/（en）；root pages 因為顯示繁中 → /zh-TW/compare/
   var COMPARE_LOCALES = { en: '/compare/', 'zh-TW': '/zh-TW/compare/' };
-  var compareLink = COMPARE_LOCALES[localeCode] || '/compare/';
+  var compareLink;
+  if (localeCode === null) {
+    compareLink = '/zh-TW/compare/'; // root = zh-TW 顯示
+  } else {
+    compareLink = COMPARE_LOCALES[localeCode] || '/compare/';
+  }
 
   // === SVG ===
   var NAV_SVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" class="w-9 h-9">'
