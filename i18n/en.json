@@ -498,7 +498,7 @@
   "buy.trust.tax": "Global tax compliance",
   "buy.trust.refund": "30-day refund",
   "footer.buy": "Buy Perpetual",
-  "index.pricing.perpetual.cta": "Learn about perpetual →",
+  "index.pricing.perpetual.cta": "Buy now — $599",
   "buy.success.title": "Payment Successful!",
   "buy.success.thanks": "Thank you for purchasing Keeply Perpetual License — Founding Member",
   "buy.success.email.title": "License key sent to your email",
@@ -576,6 +576,19 @@
   "cookie.panel.aria.close": "Close",
   "footer.cookie-settings": "Cookie settings",
   "nav.install": "Install Guide",
-  "footer.install": "Install Guide"
-
+  "footer.install": "Install Guide",
+  "nav.compare": "Compare",
+  "nav.pricing": "Pricing",
+  "nav.menu": "Menu",
+  "footer.compare": "Compare",
+  "footer.activate": "Activate License",
+  "index.compare.title": "Already using something else? Here's how Keeply compares.",
+  "index.compare.subtitle": "We rebuilt versioning for people who store files locally — not for cloud sync, not for engineers.",
+  "index.compare.cta": "See all comparisons",
+  "index.compare.card.filename-chaos.sub": "Filename chaos",
+  "index.compare.card.dropbox.sub": "30-day version cap",
+  "index.compare.card.google-drive.sub": "Version history buried in menu",
+  "index.compare.card.time-machine.sub": "OS-level, no per-project view",
+  "index.compare.card.snowtrack.sub": "Now enterprise-only (P4 One)",
+  "index.compare.card.email-usb.sub": "Automating manual backup"
 }

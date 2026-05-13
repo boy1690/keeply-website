@@ -471,7 +471,7 @@
   "buy.trust.tax": "글로벌 세무 준수",
   "buy.trust.refund": "30일 환불",
   "footer.buy": "영구 라이선스 구매",
-  "index.pricing.perpetual.cta": "영구 라이선스 알아보기 →",
+  "index.pricing.perpetual.cta": "지금 구매 — $599",
   "buy.success.title": "결제 완료!",
   "buy.success.thanks": "Keeply 영구 라이선스를 구매해 주셔서 감사합니다 — Founding Member",
   "buy.success.email.title": "라이선스 키가 이메일로 발송되었습니다",
@@ -566,6 +566,19 @@
   "index.faq.7.q": "$599 Founding Member 플랜은 무엇인가요？",
   "index.faq.7.a": "일회성 결제로 영구 라이선스를 받는 플랜이며, 선착순 500명으로 한정됩니다. Keeply의 현재 기능을 평생 사용할 수 있고, Team 플랜이 출시되면 모든 Team 플랜 기능도 자동으로 받게 됩니다. 정기 결제도, 갑작스러운 가격 인상도 없습니다. 비교하자면 월 $25 × 24개월 = $600——Founding Member는 2년이 채 되기 전에 본전을 뽑고 그 뒤로도 계속 쓸 수 있습니다.",
   "nav.install": "설치 가이드",
-  "footer.install": "설치 가이드"
-
+  "footer.install": "설치 가이드",
+  "nav.compare": "비교",
+  "nav.pricing": "가격",
+  "nav.menu": "메뉴",
+  "footer.compare": "비교",
+  "footer.activate": "라이선스 활성화",
+  "index.compare.title": "이미 다른 도구를 쓰고 있나요? Keeply와 어떻게 다른지 확인하세요.",
+  "index.compare.subtitle": "로컬에 파일을 저장하는 사람들을 위해 버전 관리를 다시 만들었습니다. 클라우드 동기화도, 엔지니어용도 아닙니다.",
+  "index.compare.cta": "모든 비교 보기",
+  "index.compare.card.filename-chaos.sub": "파일명 혼돈",
+  "index.compare.card.dropbox.sub": "30일 버전 제한",
+  "index.compare.card.google-drive.sub": "버전 기록 메뉴에 숨어 있음",
+  "index.compare.card.time-machine.sub": "OS 수준, 프로젝트별 보기 없음",
+  "index.compare.card.snowtrack.sub": "이제 기업 전용 (P4 One)",
+  "index.compare.card.email-usb.sub": "수동 백업 자동화"
 }

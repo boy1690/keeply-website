@@ -471,7 +471,7 @@
   "buy.trust.tax": "Globális adószabályoknak megfelelő",
   "buy.trust.refund": "30 napos visszatérítés",
   "footer.buy": "Örökös licenc vásárlás",
-  "index.pricing.perpetual.cta": "Tudjon meg többet az örökös licencről →",
+  "index.pricing.perpetual.cta": "Vásárlás most — $599",
   "buy.success.title": "Fizetés sikeres!",
   "buy.success.thanks": "Köszönjük a Keeply örökös licenc megvásárlását — Founding Member",
   "buy.success.email.title": "Licenckulcs elküldve az email címére",
@@ -566,6 +566,19 @@
   "index.faq.7.q": "Mi az a $599-os Founding Member csomag?",
   "index.faq.7.a": "Egyszeri fizetés örökös licencért, az első 500 vásárlóra korlátozva. Örökre megkapod a jelenlegi Keeply-funkciókat, plusz minden Team plan funkciót automatikusan, amint a Team plan elindul. Nincs ismétlődő számlázás, nincs meglepetésszerű árdrágulás. Összehasonlításul: $25/month 24 hónapon át $600 — a Founding Member két évnél hamarabb megtérül, és utána is megy tovább.",
   "nav.install": "Telepítési útmutató",
-  "footer.install": "Telepítési útmutató"
-
+  "footer.install": "Telepítési útmutató",
+  "nav.compare": "Összehasonlítás",
+  "nav.pricing": "Árak",
+  "nav.menu": "Menü",
+  "footer.compare": "Összehasonlítás",
+  "footer.activate": "Licenc aktiválása",
+  "index.compare.title": "Már mást használ? Így viszonyul a Keeply.",
+  "index.compare.subtitle": "Újraírtuk a verziókezelést azoknak, akik helyileg tárolnak fájlokat — nem felhő szinkronra, nem mérnököknek.",
+  "index.compare.cta": "Összes összehasonlítás",
+  "index.compare.card.filename-chaos.sub": "Fájlnév-káosz",
+  "index.compare.card.dropbox.sub": "30 napos verziókorlát",
+  "index.compare.card.google-drive.sub": "Verziótörténet a menüben",
+  "index.compare.card.time-machine.sub": "OS szintű, nincs projektnézet",
+  "index.compare.card.snowtrack.sub": "Most csak vállalati (P4 One)",
+  "index.compare.card.email-usb.sub": "Kézi mentés automatizálása"
 }

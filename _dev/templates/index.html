@@ -389,6 +389,81 @@
   </section>
 
   <!-- ============================================ -->
+  <!-- COMPARE WITH… (spec 043 B1: 6 對手卡片入口)   -->
+  <!-- ============================================ -->
+  <section id="compare-cards" class="py-20 md:py-28 bg-gray-50/50">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n="index.compare.title">已經在用別的？看 Keeply 跟它差在哪。</h2>
+        <p class="mt-4 text-gray-500 text-lg max-w-2xl mx-auto" data-i18n="index.compare.subtitle">我們為「檔案放在本地」的人重寫了版本管理——不是雲端同步、不是給工程師用。</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <a href="/compare/filename-chaos.html" class="group bg-white p-5 rounded-2xl border border-gray-100 hover:border-brand-200 hover:shadow-md transition-all flex items-center gap-4">
+          <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center text-2xl">📁</span>
+          <span class="flex-1">
+            <span class="block text-base font-bold text-gray-900 group-hover:text-brand-700 transition-colors">vs v1/v2/FINAL</span>
+            <span class="block text-xs text-gray-400 mt-0.5" data-i18n="index.compare.card.filename-chaos.sub">檔名混亂</span>
+          </span>
+          <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-500 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+        </a>
+
+        <a href="/compare/dropbox.html" class="group bg-white p-5 rounded-2xl border border-gray-100 hover:border-brand-200 hover:shadow-md transition-all flex items-center gap-4">
+          <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center text-2xl">📘</span>
+          <span class="flex-1">
+            <span class="block text-base font-bold text-gray-900 group-hover:text-brand-700 transition-colors">vs Dropbox</span>
+            <span class="block text-xs text-gray-400 mt-0.5" data-i18n="index.compare.card.dropbox.sub">30 天版本上限</span>
+          </span>
+          <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-500 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+        </a>
+
+        <a href="/compare/google-drive.html" class="group bg-white p-5 rounded-2xl border border-gray-100 hover:border-brand-200 hover:shadow-md transition-all flex items-center gap-4">
+          <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center text-2xl">🟢</span>
+          <span class="flex-1">
+            <span class="block text-base font-bold text-gray-900 group-hover:text-brand-700 transition-colors">vs Google Drive</span>
+            <span class="block text-xs text-gray-400 mt-0.5" data-i18n="index.compare.card.google-drive.sub">版本歷史藏選單裡</span>
+          </span>
+          <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-500 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+        </a>
+
+        <a href="/compare/time-machine.html" class="group bg-white p-5 rounded-2xl border border-gray-100 hover:border-brand-200 hover:shadow-md transition-all flex items-center gap-4">
+          <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center text-2xl">🍎</span>
+          <span class="flex-1">
+            <span class="block text-base font-bold text-gray-900 group-hover:text-brand-700 transition-colors">vs Time Machine</span>
+            <span class="block text-xs text-gray-400 mt-0.5" data-i18n="index.compare.card.time-machine.sub">系統層備份，無專案視角</span>
+          </span>
+          <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-500 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+        </a>
+
+        <a href="/compare/snowtrack.html" class="group bg-white p-5 rounded-2xl border border-gray-100 hover:border-brand-200 hover:shadow-md transition-all flex items-center gap-4">
+          <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center text-2xl">🎨</span>
+          <span class="flex-1">
+            <span class="block text-base font-bold text-gray-900 group-hover:text-brand-700 transition-colors">vs Snowtrack</span>
+            <span class="block text-xs text-gray-400 mt-0.5" data-i18n="index.compare.card.snowtrack.sub">現已成企業版 P4 One</span>
+          </span>
+          <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-500 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+        </a>
+
+        <a href="/compare/email-usb.html" class="group bg-white p-5 rounded-2xl border border-gray-100 hover:border-brand-200 hover:shadow-md transition-all flex items-center gap-4">
+          <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-2xl">📧</span>
+          <span class="flex-1">
+            <span class="block text-base font-bold text-gray-900 group-hover:text-brand-700 transition-colors">vs Email / USB</span>
+            <span class="block text-xs text-gray-400 mt-0.5" data-i18n="index.compare.card.email-usb.sub">手動備份的自動化</span>
+          </span>
+          <svg class="w-5 h-5 text-gray-300 group-hover:text-brand-500 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+        </a>
+      </div>
+
+      <div class="text-center mt-10">
+        <a href="/compare/" class="inline-flex items-center gap-2 text-sm font-medium text-brand-600 hover:text-brand-700 transition-colors">
+          <span data-i18n="index.compare.cta">看所有對比</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
   <!-- PRICING — HIDDEN                             -->
   <!-- ============================================ -->
   <section id="pricing" class="py-20 md:py-32">
@@ -464,7 +539,8 @@
         <div class="bg-gradient-to-r from-amber-50 to-brand-50 border border-amber-200 rounded-2xl px-8 py-6 text-center">
           <div class="inline-flex items-center gap-2 bg-amber-500 text-white text-xs font-bold px-4 py-1 rounded-full mb-3" data-i18n="index.pricing.perpetual.badge">Early Access · 限量 500 份</div>
           <h3 class="text-lg font-bold text-gray-900 mb-1" data-i18n="index.pricing.perpetual.title">永久授權 — $599 一次買斷</h3>
-          <p class="text-sm text-gray-500 max-w-lg mx-auto leading-relaxed" data-i18n="index.pricing.perpetual.desc">包含團隊版所有功能，永久使用購買時的版本。售完即止。</p>
+          <p class="text-sm text-gray-500 max-w-lg mx-auto leading-relaxed mb-5" data-i18n="index.pricing.perpetual.desc">包含團隊版所有功能，永久使用購買時的版本。售完即止。</p>
+          <a href="buy.html" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 active:bg-amber-700 text-white font-bold px-7 py-3 rounded-full shadow-lg shadow-amber-500/30 transition-all" data-i18n="index.pricing.perpetual.cta">立即購買 — $599</a>
         </div>
       </div>
 

@@ -471,7 +471,7 @@
   "buy.trust.tax": "グローバル税務対応",
   "buy.trust.refund": "30 日間返金",
   "footer.buy": "永久ライセンス購入",
-  "index.pricing.perpetual.cta": "永久ライセンスについて →",
+  "index.pricing.perpetual.cta": "今すぐ購入 — $599",
   "buy.success.title": "お支払い完了！",
   "buy.success.thanks": "Keeply 永久ライセンスをご購入いただきありがとうございます — Founding Member",
   "buy.success.email.title": "ライセンスキーをメールで送信しました",
@@ -566,6 +566,19 @@
   "index.faq.7.q": "$599 の Founding Member プランとは何ですか？",
   "index.faq.7.a": "永久ライセンスの一括払いで、先着 500 名限定です。Keeply の現行機能を永久に使えるうえに、Team プランがリリースされたら自動ですべての Team プラン機能も手に入ります。継続課金もなく、将来の値上げに驚かされることもありません。比較すると、月額 $25 × 24 か月 = $600——Founding Member は 2 年経たずに元が取れて、その後もずっと使えます。",
   "nav.install": "インストールガイド",
-  "footer.install": "インストールガイド"
-
+  "footer.install": "インストールガイド",
+  "nav.compare": "比較",
+  "nav.pricing": "料金",
+  "nav.menu": "メニュー",
+  "footer.compare": "比較",
+  "footer.activate": "ライセンス認証",
+  "index.compare.title": "他のツールを使っていますか？Keeply との比較をご覧ください。",
+  "index.compare.subtitle": "ローカルにファイルを保存する人のためにバージョン管理を作り直しました。クラウド同期ではなく、エンジニア向けでもありません。",
+  "index.compare.cta": "すべての比較を見る",
+  "index.compare.card.filename-chaos.sub": "ファイル名混乱",
+  "index.compare.card.dropbox.sub": "30日のバージョン上限",
+  "index.compare.card.google-drive.sub": "バージョン履歴がメニューに埋もれる",
+  "index.compare.card.time-machine.sub": "OS レベル、プロジェクト単位なし",
+  "index.compare.card.snowtrack.sub": "現在は企業版（P4 One）のみ",
+  "index.compare.card.email-usb.sub": "手動バックアップの自動化"
 }

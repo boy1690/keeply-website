@@ -471,7 +471,7 @@
   "buy.trust.tax": "全球税务合规",
   "buy.trust.refund": "30 天退款",
   "footer.buy": "购买永久授权",
-  "index.pricing.perpetual.cta": "了解永久授权 →",
+  "index.pricing.perpetual.cta": "立即购买 — $599",
   "buy.success.title": "付款成功！",
   "buy.success.thanks": "感谢购买 Keeply 永久授权 — Founding Member",
   "buy.success.email.title": "授权码已寄到你的 email",
@@ -566,6 +566,19 @@
   "index.faq.7.q": "$599 的 Founding Member 方案是什么？",
   "index.faq.7.a": "一次性付费、永久授权，限定前 500 位买家。你永久拥有 Keeply 目前所有功能，加上 Team 方案上线后自动取得所有 Team 功能。没有订阅周期性扣款，没有未来涨价的惊喜。对比每月 $25 美元 × 24 个月 = $600 美元——Founding Member 不到两年就回本，而且继续用。",
   "nav.install": "安装指南",
-  "footer.install": "安装指南"
-
+  "footer.install": "安装指南",
+  "nav.compare": "对比",
+  "nav.pricing": "定价",
+  "nav.menu": "菜单",
+  "footer.compare": "对比",
+  "footer.activate": "激活授权",
+  "index.compare.title": "已经在用别的？看 Keeply 跟它差在哪。",
+  "index.compare.subtitle": "我们为\"文件放在本地\"的人重写了版本管理——不是云端同步、不是给工程师用。",
+  "index.compare.cta": "看所有对比",
+  "index.compare.card.filename-chaos.sub": "文件名混乱",
+  "index.compare.card.dropbox.sub": "30 天版本上限",
+  "index.compare.card.google-drive.sub": "版本历史藏菜单里",
+  "index.compare.card.time-machine.sub": "系统层备份，无项目视角",
+  "index.compare.card.snowtrack.sub": "现已成企业版 P4 One",
+  "index.compare.card.email-usb.sub": "手动备份的自动化"
 }

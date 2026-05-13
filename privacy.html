@@ -82,8 +82,8 @@
   <meta name="twitter:image:alt" content="隱私權政策 — Keeply" />
 
   <!-- Tailwind CSS (compiled) -->
-  <link rel="preload" href="style.css" as="style" integrity="sha384-/X1Si/XxQftKzi1G5YgD2HR+ejUf1hjF6VVQx9ZBmk3irkVm+45Natyjxy/ozq9y" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css" integrity="sha384-/X1Si/XxQftKzi1G5YgD2HR+ejUf1hjF6VVQx9ZBmk3irkVm+45Natyjxy/ozq9y" crossorigin="anonymous" />
+  <link rel="preload" href="style.css" as="style" integrity="sha384-PiuiZAuaMye5drgnGPoNXxQBGWYgP0Lc8/R7vkOp6W2NAbqHi19T7z7m1wh11pZB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" integrity="sha384-PiuiZAuaMye5drgnGPoNXxQBGWYgP0Lc8/R7vkOp6W2NAbqHi19T7z7m1wh11pZB" crossorigin="anonymous" />
 
   <!-- M PLUS Rounded 1c font preload (eliminates CLS from late font discovery) -->
   <link rel="preload" href="fonts/MPLUSRounded1c-Regular-v2.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
@@ -147,9 +147,7 @@
 
       <!-- Highlight -->
       <div class="bg-brand-50 border border-brand-100 rounded-2xl p-6 mb-10">
-        <p class="text-brand-800 font-medium leading-relaxed" data-i18n-html="privacy.highlight">
-          Keeply 是一款本地優先的桌面應用程式——<strong>你的檔案絕不離開你的電腦</strong>。本隱私權政策說明我們實際處理的少量資料、由誰處理，以及你的權利。
-        </p>
+        <p class="text-brand-800 font-medium leading-relaxed" data-i18n-html="privacy.highlight">Keeply 是一款本地優先的桌面應用程式——<strong>你的檔案絕不離開你的電腦</strong>。本隱私權政策說明我們實際處理的少量資料、由誰處理，以及你的權利。</p>
       </div>
 
       <!-- TOC -->
@@ -208,7 +206,7 @@
           <p class="text-gray-600 leading-relaxed" data-i18n-html="privacy.license.p1">為驗證你的軟體授權，Keeply 與 <strong>Keygen.sh</strong>（Keygen LLC，美國維吉尼亞州）通訊。傳輸的資料包括：</p>
           <ul class="text-gray-600 space-y-1 ml-5 list-disc mt-2">
             <li data-i18n-html="privacy.license.li1"><strong>授權金鑰</strong> — 確認授權是否有效</li>
-            <li data-i18n-html="privacy.license.li2"><strong>機器指紋</strong> — 裝置的單向雜湊識別碼（無法還原為裝置資訊）</li>
+            <li data-i18n-html="privacy.license.li2"><strong>保管庫位置識別碼</strong> — 專案保管庫唯一 ID 的單向雜湊值（無法還原為原始識別碼或檔案內容）</li>
             <li data-i18n-html="privacy.license.li3"><strong>應用程式版本</strong> — 檢查相容性和授權範圍</li>
             <li data-i18n-html="privacy.license.li4"><strong>保管庫位置識別碼</strong> — 團隊保管庫位置的雜湊識別碼（無法還原為實際儲存路徑）</li>
           </ul>
@@ -227,7 +225,7 @@
 
         <section id="website-data">
           <h2 class="text-xl font-bold text-gray-900 border-b border-gray-100 pb-3 mb-4" data-i18n="privacy.website.title">我們網站上收集的資料</h2>
-          <p class="text-gray-600 leading-relaxed" data-i18n="privacy.website.p1">Keeply 行銷網站（keeply.work）目前不使用任何分析或追蹤工具。</p>
+          <p class="text-gray-600 leading-relaxed" data-i18n="privacy.website.p1">Keeply 行銷網站（keeply.work）的語言偵測完全在您的瀏覽器本地執行——我們不會為此目的將您的 IP 位址傳送給任何第三方。只有在您從語言選單手動選擇語言、或開啟含語系路徑的連結（例如 keeply.work/zh-TW/）時，您的語言偏好才會儲存至瀏覽器的 local storage。</p>
           <p class="text-gray-600 leading-relaxed mt-3" data-i18n="privacy.website.p2">如果你透過電子郵件聯繫我們，我們會保留通訊內容以回覆你的詢問。除非你明確選擇加入，否則不會將你加入行銷名單。</p>
         </section>
 
@@ -248,7 +246,7 @@
                 <tr>
                   <td class="px-4 py-2.5 font-medium">Keygen.sh</td>
                   <td class="px-4 py-2.5" data-i18n="privacy.thirdparty.keygen.purpose">授權驗證</td>
-                  <td class="px-4 py-2.5" data-i18n="privacy.thirdparty.keygen.data">授權金鑰、雜湊後的機器指紋、版本</td>
+                  <td class="px-4 py-2.5" data-i18n="privacy.thirdparty.keygen.data">授權金鑰、保管庫位置識別碼（雜湊值）、版本</td>
                   <td class="px-4 py-2.5" data-i18n="privacy.thirdparty.keygen.location">美國</td>
                   <td class="px-4 py-2.5"><a href="https://keygen.sh/privacy/" class="text-brand-600 hover:underline" data-i18n="privacy.thirdparty.keygen.link">連結</a></td>
                 </tr>
@@ -338,10 +336,10 @@
 
   <!-- Shared components + i18n + consent (spec 023) -->
   <script src="consent-api.b29ceadb9e.js" defer integrity="sha384-AgMsIGCbo9mV0oP2ebvR5aNCzNPtSkIGXG5v29yY6A+vEktkTMAOZtlK0WiKSEUR" crossorigin="anonymous"></script>
-  <script src="components.9c24adc8e0.js" defer integrity="sha384-07YmyNifBIW8vWAm1QpBGxizbWpXte6X3sFOFkuVc+YIquJX2JKJqUsgbVvBiMB3" crossorigin="anonymous"></script>
+  <script src="components.4398e7af8f.js" defer integrity="sha384-9Hf2fIAUFpqcRW9u5VjM+PxSUzoUxZ4N0palAAS++/xtLf5uPFa/Yi4frKWG7df8" crossorigin="anonymous"></script>
   <script src="cookie-banner.8a90f5095a.js" defer integrity="sha384-FkrIUHI4EiKuF7c0lI0I+k/SpAC6SN6GAiU3tqGZBNs1nvMH4R/g+hpuVB/UGk63" crossorigin="anonymous"></script>
   <script src="ga4-loader.f5ebaf533f.js" defer integrity="sha384-U+G0F+gL0htHsJ1w1r/1uHQ1cyT+IbcPNBAtAN3Gx37qoxqkn9eBS7VsV04cuebt" crossorigin="anonymous"></script>
   <script src="clarity-loader.60a9a5160f.js" defer integrity="sha384-rdROtDi/pws+RrJtXaeyRY20mP1RJMaVL3DuCPi4UU7tkWHea6vyx01XW/4tbkL/" crossorigin="anonymous"></script>
-  <script src="i18n-loader.d67ce80e5d.js" defer integrity="sha384-nHbKXNCEfs+EbW94ePoG6Xmd6sfvzM9n9Re+8/JYEG0FSvRzhtHIymZW0uviiUEX" crossorigin="anonymous"></script>
+  <script src="i18n-loader.b8c4b6fa26.js" defer integrity="sha384-HMLU7kIueGk4ktIk/6+YJmV8q0P9qQJVyc3R2EvfCPBaaroAGyG/EkDt9e4nSyeD" crossorigin="anonymous"></script>
 </body>
 </html>

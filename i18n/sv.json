@@ -471,7 +471,7 @@
   "buy.trust.tax": "Global skatteöverensstämmelse",
   "buy.trust.refund": "30 dagars återbetalning",
   "footer.buy": "Köp evig",
-  "index.pricing.perpetual.cta": "Läs mer om evig licens →",
+  "index.pricing.perpetual.cta": "Köp nu — $599",
   "buy.success.title": "Betalning lyckades!",
   "buy.success.thanks": "Tack för att du köpte Keeply evig licens — Founding Member",
   "buy.success.email.title": "Licensnyckel skickad till din e-post",
@@ -566,6 +566,19 @@
   "index.faq.7.q": "Vad är $599 Founding Member-abonnemanget?",
   "index.faq.7.a": "En engångsbetalning för en evig licens, begränsad till de första 500 köparna. Du får Keeplys nuvarande funktioner för alltid, plus alla Team plan-funktioner automatiskt när Team plan lanseras. Ingen återkommande fakturering, inga överraskningshöjningar. Som jämförelse: $25/month i 24 månader blir $600 — Founding Member betalar tillbaka sig själv på under två år och fortsätter sedan.",
   "nav.install": "Installationsguide",
-  "footer.install": "Installationsguide"
-
+  "footer.install": "Installationsguide",
+  "nav.compare": "Jämför",
+  "nav.pricing": "Priser",
+  "nav.menu": "Meny",
+  "footer.compare": "Jämför",
+  "footer.activate": "Aktivera licens",
+  "index.compare.title": "Använder du redan något annat? Så här står sig Keeply.",
+  "index.compare.subtitle": "Vi byggde om versionshanteringen för folk som lagrar filer lokalt — inte för molnsync, inte för ingenjörer.",
+  "index.compare.cta": "Se alla jämförelser",
+  "index.compare.card.filename-chaos.sub": "Filnamnskaos",
+  "index.compare.card.dropbox.sub": "30-dagars versionsgräns",
+  "index.compare.card.google-drive.sub": "Versionshistorik gömd i meny",
+  "index.compare.card.time-machine.sub": "OS-nivå, ingen projektvy",
+  "index.compare.card.snowtrack.sub": "Nu endast företag (P4 One)",
+  "index.compare.card.email-usb.sub": "Automatisera manuell säkerhetskopiering"
 }

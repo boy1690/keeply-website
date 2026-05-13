@@ -471,7 +471,7 @@
   "buy.trust.tax": "Küresel vergi uyumluluğu",
   "buy.trust.refund": "30 gün iade",
   "footer.buy": "Sürekli lisans al",
-  "index.pricing.perpetual.cta": "Sürekli lisans hakkında →",
+  "index.pricing.perpetual.cta": "Hemen satın al — $599",
   "buy.success.title": "Ödeme başarılı!",
   "buy.success.thanks": "Keeply sürekli lisansını satın aldığınız için teşekkürler — Founding Member",
   "buy.success.email.title": "Lisans anahtarı emailinize gönderildi",
@@ -566,6 +566,19 @@
   "index.faq.7.q": "$599'luk Founding Member planı nedir?",
   "index.faq.7.a": "Kalıcı bir lisans için tek seferlik ödeme, ilk 500 alıcıyla sınırlı. Mevcut Keeply özelliklerini sonsuza dek alırsın, ayrıca Team plan çıktığında tüm Team plan özelliklerini otomatik olarak edinirsin. Tekrarlayan faturalandırma yok, sürpriz zam yok. Karşılaştırma için: $25/month, 24 ay boyunca $600 eder — Founding Member iki yıldan kısa sürede kendini amorti eder ve sonrası devam eder.",
   "nav.install": "Kurulum kılavuzu",
-  "footer.install": "Kurulum kılavuzu"
-
+  "footer.install": "Kurulum kılavuzu",
+  "nav.compare": "Karşılaştır",
+  "nav.pricing": "Fiyatlandırma",
+  "nav.menu": "Menü",
+  "footer.compare": "Karşılaştır",
+  "footer.activate": "Lisansı etkinleştir",
+  "index.compare.title": "Zaten başka bir araç mı kullanıyorsunuz? Keeply nasıl karşılaştırılır?",
+  "index.compare.subtitle": "Dosyalarını yerel olarak saklayan kişiler için sürüm yönetimini yeniden tasarladık — bulut senkronizasyonu veya mühendisler için değil.",
+  "index.compare.cta": "Tüm karşılaştırmaları gör",
+  "index.compare.card.filename-chaos.sub": "Dosya adı kaosu",
+  "index.compare.card.dropbox.sub": "30 günlük sürüm sınırı",
+  "index.compare.card.google-drive.sub": "Sürüm geçmişi menüde gizli",
+  "index.compare.card.time-machine.sub": "OS düzeyi, proje görünümü yok",
+  "index.compare.card.snowtrack.sub": "Artık sadece kurumsal (P4 One)",
+  "index.compare.card.email-usb.sub": "Manuel yedeklemeyi otomatikleştir"
 }

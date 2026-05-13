@@ -471,7 +471,7 @@
   "buy.trust.tax": "Wereldwijde belastingnaleving",
   "buy.trust.refund": "30 dagen terugbetaling",
   "footer.buy": "Koop eeuwigdurend",
-  "index.pricing.perpetual.cta": "Meer over eeuwigdurende licentie →",
+  "index.pricing.perpetual.cta": "Nu kopen — $599",
   "buy.success.title": "Betaling geslaagd!",
   "buy.success.thanks": "Bedankt voor de aankoop van de eeuwigdurende Keeply licentie — Founding Member",
   "buy.success.email.title": "Licentiesleutel verzonden naar je email",
@@ -566,6 +566,19 @@
   "index.faq.7.q": "Wat is het $599 Founding Member-plan?",
   "index.faq.7.a": "Een eenmalige betaling voor een eeuwigdurende licentie, beperkt tot de eerste 500 kopers. Je krijgt de huidige Keeply-functies voor altijd, plus alle Team plan-functies automatisch zodra het Team plan beschikbaar komt. Geen terugkerende facturatie, geen verrassende prijsverhogingen. Ter vergelijking: $25/month maal 24 maanden is $600 — Founding Member verdient zichzelf in minder dan twee jaar terug en blijft daarna draaien.",
   "nav.install": "Installatiegids",
-  "footer.install": "Installatiegids"
-
+  "footer.install": "Installatiegids",
+  "nav.compare": "Vergelijken",
+  "nav.pricing": "Prijzen",
+  "nav.menu": "Menu",
+  "footer.compare": "Vergelijken",
+  "footer.activate": "Licentie activeren",
+  "index.compare.title": "Gebruik je al iets anders? Zo verhoudt Keeply zich.",
+  "index.compare.subtitle": "We hebben versiebeheer opnieuw gebouwd voor mensen die lokaal opslaan — niet voor cloud sync, niet voor engineers.",
+  "index.compare.cta": "Alle vergelijkingen bekijken",
+  "index.compare.card.filename-chaos.sub": "Bestandsnaamchaos",
+  "index.compare.card.dropbox.sub": "30-dagen versielimiet",
+  "index.compare.card.google-drive.sub": "Versiegeschiedenis verstopt in menu",
+  "index.compare.card.time-machine.sub": "OS-niveau, geen projectweergave",
+  "index.compare.card.snowtrack.sub": "Nu alleen enterprise (P4 One)",
+  "index.compare.card.email-usb.sub": "Handmatige back-up automatiseren"
 }

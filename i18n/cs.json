@@ -471,7 +471,7 @@
   "buy.trust.tax": "Globální daňová shoda",
   "buy.trust.refund": "Vrácení do 30 dní",
   "footer.buy": "Koupit trvalou",
-  "index.pricing.perpetual.cta": "Více o trvalé licenci →",
+  "index.pricing.perpetual.cta": "Koupit nyní — $599",
   "buy.success.title": "Platba úspěšná!",
   "buy.success.thanks": "Děkujeme za zakoupení trvalé licence Keeply — Founding Member",
   "buy.success.email.title": "Licenční klíč odeslán na váš email",
@@ -566,6 +566,19 @@
   "index.faq.7.q": "Co je plán Founding Member za $599?",
   "index.faq.7.a": "Jednorázová platba za doživotní licenci, omezená na prvních 500 kupujících. Dostaneš současné funkce Keeply navždy a všechny funkce Team plan automaticky, jakmile Team plan vyjde. Žádné opakované platby, žádné překvapivé zdražování. Pro srovnání: $25/month po 24 měsíců dělá $600 — Founding Member se zaplatí za necelé dva roky a běží dál.",
   "nav.install": "Návod k instalaci",
-  "footer.install": "Návod k instalaci"
-
+  "footer.install": "Návod k instalaci",
+  "nav.compare": "Porovnání",
+  "nav.pricing": "Ceník",
+  "nav.menu": "Menu",
+  "footer.compare": "Porovnání",
+  "footer.activate": "Aktivovat licenci",
+  "index.compare.title": "Už používáte něco jiného? Podívejte se, jak se Keeply srovnává.",
+  "index.compare.subtitle": "Přepracovali jsme verzování pro lidi, kteří ukládají soubory lokálně — ne pro cloud sync, ne pro inženýry.",
+  "index.compare.cta": "Zobrazit všechna porovnání",
+  "index.compare.card.filename-chaos.sub": "Chaos názvů souborů",
+  "index.compare.card.dropbox.sub": "30denní limit verzí",
+  "index.compare.card.google-drive.sub": "Historie verzí skrytá v menu",
+  "index.compare.card.time-machine.sub": "Úroveň OS, žádný pohled na projekt",
+  "index.compare.card.snowtrack.sub": "Nyní pouze enterprise (P4 One)",
+  "index.compare.card.email-usb.sub": "Automatizace ručního zálohování"
 }

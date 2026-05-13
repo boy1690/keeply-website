@@ -471,7 +471,7 @@
   "buy.trust.tax": "Maailmanlaajuinen verovaatimusten noudattaminen",
   "buy.trust.refund": "30 päivän palautus",
   "footer.buy": "Osta ikuinen",
-  "index.pricing.perpetual.cta": "Lisää ikuisesta lisenssistä →",
+  "index.pricing.perpetual.cta": "Osta nyt — $599",
   "buy.success.title": "Maksu onnistui!",
   "buy.success.thanks": "Kiitos Keeply ikuisen lisenssin ostamisesta — Founding Member",
   "buy.success.email.title": "Lisenssiavain lähetetty sähköpostiisi",
@@ -566,6 +566,19 @@
   "index.faq.7.q": "Mikä on $599 Founding Member -paketti?",
   "index.faq.7.a": "Kertamaksu pysyvästä lisenssistä, rajattuna 500 ensimmäiselle ostajalle. Saat Keeplyn nykyiset ominaisuudet ikuisesti, plus kaikki Team plan -ominaisuudet automaattisesti, kun Team plan julkaistaan. Ei toistuvaa laskutusta, ei yllätyshinnankorotuksia. Vertailun vuoksi: $25/month 24 kuukauden ajalta on $600 — Founding Member maksaa itsensä takaisin alle kahdessa vuodessa ja jatkaa siitä eteenpäin.",
   "nav.install": "Asennusopas",
-  "footer.install": "Asennusopas"
-
+  "footer.install": "Asennusopas",
+  "nav.compare": "Vertailu",
+  "nav.pricing": "Hinnoittelu",
+  "nav.menu": "Valikko",
+  "footer.compare": "Vertailu",
+  "footer.activate": "Aktivoi lisenssi",
+  "index.compare.title": "Käytätkö jo jotain muuta? Näin Keeply vertautuu.",
+  "index.compare.subtitle": "Rakensimme versionhallinnan uudelleen ihmisille, jotka tallentavat tiedostot paikallisesti — ei pilvisynkronoinnille, ei insinööreille.",
+  "index.compare.cta": "Katso kaikki vertailut",
+  "index.compare.card.filename-chaos.sub": "Tiedostonimisotku",
+  "index.compare.card.dropbox.sub": "30 päivän versioraja",
+  "index.compare.card.google-drive.sub": "Versiohistoria piilossa valikossa",
+  "index.compare.card.time-machine.sub": "OS-tason, ei projektikohtaista",
+  "index.compare.card.snowtrack.sub": "Nyt vain yritys (P4 One)",
+  "index.compare.card.email-usb.sub": "Manuaalisen varmuuskopion automatisointi"
 }

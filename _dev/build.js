@@ -542,13 +542,18 @@ function main() {
   // which synthesizes pack content from i18n/*.json in-memory and writes
   // only the hashed file. No intermediate i18n/<locale>.js is produced.
 
-  // Copy templates to root as fallback pages (with version substitution applied)
+  // Copy templates to root as zh-Hant fallback pages (spec 043 C):
+  // root pages 用 zh-TW.json 套 i18n（不是純複製），避免 root index FAQ 等
+  // 區塊保留 template 的英文 fallback、與其他內容語言不一致。
+  // 不替換 canonical / hreflang / OG（root 是 x-default 預設）。
+  const ROOT_LOCALE = 'zh-TW';
   for (const page of PAGES) {
     let rootHtml = fs.readFileSync(path.join(TEMPLATE_DIR, page), 'utf8');
     rootHtml = applyVersionSubstitution(rootHtml, releaseConfig);
+    rootHtml = replaceDataI18n(rootHtml, translations, ROOT_LOCALE);
     fs.writeFileSync(path.join(OUTPUT_DIR, page), rootHtml, 'utf8');
   }
-  console.log(`Copied ${PAGES.length} templates to root (version-substituted)`);
+  console.log(`Copied ${PAGES.length} templates to root (version-substituted + ${ROOT_LOCALE} i18n applied)`);
 
   console.log(`\nBuild complete: ${fileCount} files generated across ${LOCALES.length} locales`);
 }

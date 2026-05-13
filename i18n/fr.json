@@ -471,7 +471,7 @@
   "buy.trust.tax": "Conformité fiscale mondiale",
   "buy.trust.refund": "Remboursement 30 jours",
   "footer.buy": "Acheter à vie",
-  "index.pricing.perpetual.cta": "En savoir plus sur la licence perpétuelle →",
+  "index.pricing.perpetual.cta": "Acheter maintenant — $599",
   "buy.success.title": "Paiement réussi !",
   "buy.success.thanks": "Merci pour l'achat de la licence perpétuelle Keeply — Founding Member",
   "buy.success.email.title": "Clé de licence envoyée par email",
@@ -566,6 +566,19 @@
   "index.faq.7.q": "Qu'est-ce que le plan Founding Member à $599 ?",
   "index.faq.7.a": "Un paiement unique pour une licence à perpétuité, limité aux 500 premiers acheteurs. Tu obtiens les fonctionnalités actuelles de Keeply pour toujours, plus toutes les fonctionnalités du Team plan automatiquement dès sa sortie. Pas de facturation récurrente, pas de hausse surprise. À titre de comparaison, $25/month sur 24 mois équivaut à $600 — le Founding Member est rentabilisé en moins de deux ans, et il continue ensuite.",
   "nav.install": "Guide d'installation",
-  "footer.install": "Guide d'installation"
-
+  "footer.install": "Guide d'installation",
+  "nav.compare": "Comparer",
+  "nav.pricing": "Tarifs",
+  "nav.menu": "Menu",
+  "footer.compare": "Comparer",
+  "footer.activate": "Activer la licence",
+  "index.compare.title": "Vous utilisez déjà autre chose ? Voici comment Keeply se compare.",
+  "index.compare.subtitle": "Nous avons reconçu le versioning pour ceux qui stockent localement — pas pour le sync cloud, pas pour les ingénieurs.",
+  "index.compare.cta": "Voir toutes les comparaisons",
+  "index.compare.card.filename-chaos.sub": "Chaos des noms de fichiers",
+  "index.compare.card.dropbox.sub": "Limite 30 jours",
+  "index.compare.card.google-drive.sub": "Historique caché dans le menu",
+  "index.compare.card.time-machine.sub": "Niveau OS, pas de vue projet",
+  "index.compare.card.snowtrack.sub": "Désormais entreprise uniquement (P4 One)",
+  "index.compare.card.email-usb.sub": "Automatiser la sauvegarde manuelle"
 }

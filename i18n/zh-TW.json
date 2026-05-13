@@ -498,7 +498,7 @@
   "buy.trust.tax": "全球稅務合規",
   "buy.trust.refund": "30 天退款",
   "footer.buy": "購買永久授權",
-  "index.pricing.perpetual.cta": "了解永久授權 →",
+  "index.pricing.perpetual.cta": "立即購買 — $599",
   "buy.success.title": "付款成功！",
   "buy.success.thanks": "感謝購買 Keeply 永久授權 — Founding Member",
   "buy.success.email.title": "授權碼已寄到你的 email",
@@ -576,6 +576,19 @@
   "cookie.panel.aria.close": "關閉",
   "footer.cookie-settings": "Cookie 設定",
   "nav.install": "安裝指南",
-  "footer.install": "安裝指南"
-
+  "footer.install": "安裝指南",
+  "nav.compare": "對比",
+  "nav.pricing": "定價",
+  "nav.menu": "選單",
+  "footer.compare": "對比",
+  "footer.activate": "啟用授權",
+  "index.compare.title": "已經在用別的？看 Keeply 跟它差在哪。",
+  "index.compare.subtitle": "我們為「檔案放在本地」的人重寫了版本管理——不是雲端同步、不是給工程師用。",
+  "index.compare.cta": "看所有對比",
+  "index.compare.card.filename-chaos.sub": "檔名混亂",
+  "index.compare.card.dropbox.sub": "30 天版本上限",
+  "index.compare.card.google-drive.sub": "版本歷史藏選單裡",
+  "index.compare.card.time-machine.sub": "系統層備份，無專案視角",
+  "index.compare.card.snowtrack.sub": "現已成企業版 P4 One",
+  "index.compare.card.email-usb.sub": "手動備份的自動化"
 }

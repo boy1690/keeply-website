@@ -471,7 +471,7 @@
   "buy.trust.tax": "Conformidade fiscal global",
   "buy.trust.refund": "Reembolso 30 dias",
   "footer.buy": "Comprar perpétua",
-  "index.pricing.perpetual.cta": "Mais sobre licença perpétua →",
+  "index.pricing.perpetual.cta": "Comprar agora — $599",
   "buy.success.title": "Pagamento bem-sucedido!",
   "buy.success.thanks": "Obrigado por comprar a licença perpétua Keeply — Founding Member",
   "buy.success.email.title": "Chave de licença enviada para o seu email",
@@ -566,6 +566,19 @@
   "index.faq.7.q": "O que é o plano Founding Member de $599?",
   "index.faq.7.a": "Um pagamento único por uma licença perpétua, limitado aos primeiros 500 compradores. Ficas com as funcionalidades atuais do Keeply para sempre, mais todas as funcionalidades do Team plan automaticamente quando este for lançado. Sem cobranças recorrentes, sem subidas de preço inesperadas. Para comparar, $25/month durante 24 meses dá $600 — o Founding Member paga-se a si próprio em menos de dois anos e continua a render depois disso.",
   "nav.install": "Guia de instalação",
-  "footer.install": "Guia de instalação"
-
+  "footer.install": "Guia de instalação",
+  "nav.compare": "Comparar",
+  "nav.pricing": "Preços",
+  "nav.menu": "Menu",
+  "footer.compare": "Comparar",
+  "footer.activate": "Ativar licença",
+  "index.compare.title": "Já usa outra ferramenta? Veja como Keeply se compara.",
+  "index.compare.subtitle": "Reconstruímos o versionamento para quem guarda ficheiros localmente — não para sync na nuvem, nem para engenheiros.",
+  "index.compare.cta": "Ver todas as comparações",
+  "index.compare.card.filename-chaos.sub": "Caos de nomes",
+  "index.compare.card.dropbox.sub": "Limite de 30 dias",
+  "index.compare.card.google-drive.sub": "Histórico escondido no menu",
+  "index.compare.card.time-machine.sub": "Nível OS, sem vista por projeto",
+  "index.compare.card.snowtrack.sub": "Agora só empresarial (P4 One)",
+  "index.compare.card.email-usb.sub": "Automatizar backup manual"
 }
