@@ -17,6 +17,43 @@
   var localeCode = localeMatch ? localeMatch[1] : null;
   var localePrefix = localeMatch ? '/' + localeMatch[1] + '/' : '';
 
+  // === 跨子網域 locale 一致性（blog.keeply.work）===
+  // Blog 端讀 .keeply.work 範圍的 keeply_locale cookie 走 fallback chain。
+  // 主站每頁載入時：(1) 寫 cookie (2) Blog 連結 href 帶 locale path。
+  // Blog 的 SUPPORTED 必須與此清單嚴格一致（大小寫、code 對齊）。
+  var BLOG_SUPPORTED = [
+    'en', 'zh-tw', 'zh-cn', 'ja', 'ko', 'de', 'es', 'fr', 'it', 'pt',
+    'ru', 'nl', 'pl', 'tr', 'vi', 'th', 'id', 'ar', 'hi'
+  ];
+  // 主站 URL 第一段（zh-TW / zh-CN / en / …）normalize 為 blog locale code。
+  // 主站 root 顯示繁中（與 install/compare 一致），對應 blog 'zh-tw'。
+  var blogLocale = null;
+  if (localeCode) {
+    var normalized = localeCode.toLowerCase();
+    if (BLOG_SUPPORTED.indexOf(normalized) !== -1) blogLocale = normalized;
+  } else {
+    blogLocale = 'zh-tw';
+  }
+
+  // 在 .keeply.work 子網域可讀的 cookie；非 HTTPS 或非 keeply.work 主機略過。
+  (function writeLocaleCookie() {
+    try {
+      if (!blogLocale) return;
+      if (location.protocol !== 'https:') return;
+      var host = location.hostname;
+      if (host !== 'keeply.work' && host.indexOf('.keeply.work') === -1) return;
+      var m = document.cookie.match(/(?:^|;\s*)keeply_locale=([^;]+)/);
+      if (m && decodeURIComponent(m[1]) === blogLocale) return;
+      document.cookie = 'keeply_locale=' + blogLocale +
+        '; domain=.keeply.work; path=/; max-age=31536000; SameSite=Lax; Secure';
+    } catch (e) {}
+  })();
+
+  // Blog 連結：在 blog SUPPORTED 內 → 直接帶 locale path；否則 fallback root。
+  var blogLink = blogLocale
+    ? 'https://blog.keeply.work/' + blogLocale + '/'
+    : 'https://blog.keeply.work/';
+
   // 首頁判斷
   var isHome = path === '/' || path.endsWith('/index.html') || path.endsWith('/keeply-website/') || path === '';
   if (localeMatch) {
@@ -105,7 +142,7 @@
     { href: compareLink,  key: 'nav.compare',  label: '對比',     external: false },
     { href: pricingLink,  key: 'nav.pricing',  label: '定價',     external: false },
     { href: installLink,  key: 'nav.install',  label: '安裝指南', external: false },
-    { href: 'https://blog.keeply.work', key: 'nav.blog', label: '部落格', external: true }
+    { href: blogLink, key: 'nav.blog', label: '部落格', external: true }
   ];
 
   function renderNavLinks(extraClass) {
@@ -182,7 +219,7 @@
     + '<a href="' + localePrefix + 'refund.html" class="hover:text-white transition-colors" data-i18n="footer.refund">退款政策</a>'
     + '<a href="' + compareLink + '" class="hover:text-white transition-colors" data-i18n="footer.compare">對比</a>'
     + '<a href="' + installLink + '" class="hover:text-white transition-colors" data-i18n="footer.install">安裝指南</a>'
-    + '<a href="https://blog.keeply.work" target="_blank" rel="noopener" class="hover:text-white transition-colors" data-i18n="footer.blog">部落格</a>'
+    + '<a href="' + blogLink + '" target="_blank" rel="noopener" class="hover:text-white transition-colors" data-i18n="footer.blog">部落格</a>'
     + '<a href="' + localePrefix + 'buy.html" class="text-amber-400 hover:text-amber-300 font-semibold transition-colors" data-i18n="footer.buy">購買永久授權</a>'
     + '<a href="' + localePrefix + 'activate.html" class="hover:text-white transition-colors" data-i18n="footer.activate">啟用授權</a>'
     + '<a href="https://github.com/boy1690/keeply-releases/releases/latest" class="hover:text-white transition-colors" data-i18n="footer.download">下載</a>'
