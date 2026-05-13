@@ -564,5 +564,8 @@
   "index.faq.6.q": "Esiste una versione per Linux?",
   "index.faq.6.a": "Keeply è attualmente disponibile per Windows 10 o successivo e macOS su Apple Silicon. Una build Linux è nella roadmap ma non è ancora uscita. Se il supporto Linux è critico per il tuo flusso di lavoro, faccelo sapere tramite il modulo di contatto — diamo priorità alle piattaforme in base alla domanda reale degli utenti, e ogni richiesta viene registrata.",
   "index.faq.7.q": "Cos'è il piano Founding Member da $599?",
-  "index.faq.7.a": "Un pagamento unico per una licenza a vita, limitato ai primi 500 acquirenti. Ottieni le funzionalità attuali di Keeply per sempre, più tutte le funzionalità del Team plan in automatico quando uscirà. Niente addebiti ricorrenti, niente aumenti a sorpresa. Per confronto, $25/month per 24 mesi equivale a $600 — il Founding Member si ripaga in meno di due anni e continua a funzionare anche dopo."
+  "index.faq.7.a": "Un pagamento unico per una licenza a vita, limitato ai primi 500 acquirenti. Ottieni le funzionalità attuali di Keeply per sempre, più tutte le funzionalità del Team plan in automatico quando uscirà. Niente addebiti ricorrenti, niente aumenti a sorpresa. Per confronto, $25/month per 24 mesi equivale a $600 — il Founding Member si ripaga in meno di due anni e continua a funzionare anche dopo.",
+  "nav.install": "Guida all'installazione",
+  "footer.install": "Guida all'installazione"
+
 }

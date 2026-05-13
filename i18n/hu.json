@@ -564,5 +564,8 @@
   "index.faq.6.q": "Van Linux verzió?",
   "index.faq.6.a": "A Keeply jelenleg Windows 10 vagy újabbra és Apple Silicon-os macOS-re jelenik meg. Linux build van a roadmap-en, de még nem szállítottuk. Ha a Linux támogatás kritikus a workflow-d szempontjából, kérlek jelezd a kapcsolati űrlapon — a platformtámogatást a valós felhasználói igények alapján priorizáljuk, és minden kérést rögzítünk.",
   "index.faq.7.q": "Mi az a $599-os Founding Member csomag?",
-  "index.faq.7.a": "Egyszeri fizetés örökös licencért, az első 500 vásárlóra korlátozva. Örökre megkapod a jelenlegi Keeply-funkciókat, plusz minden Team plan funkciót automatikusan, amint a Team plan elindul. Nincs ismétlődő számlázás, nincs meglepetésszerű árdrágulás. Összehasonlításul: $25/month 24 hónapon át $600 — a Founding Member két évnél hamarabb megtérül, és utána is megy tovább."
+  "index.faq.7.a": "Egyszeri fizetés örökös licencért, az első 500 vásárlóra korlátozva. Örökre megkapod a jelenlegi Keeply-funkciókat, plusz minden Team plan funkciót automatikusan, amint a Team plan elindul. Nincs ismétlődő számlázás, nincs meglepetésszerű árdrágulás. Összehasonlításul: $25/month 24 hónapon át $600 — a Founding Member két évnél hamarabb megtérül, és utána is megy tovább.",
+  "nav.install": "Telepítési útmutató",
+  "footer.install": "Telepítési útmutató"
+
 }

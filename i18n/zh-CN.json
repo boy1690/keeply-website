@@ -564,5 +564,8 @@
   "index.faq.6.q": "有 Linux 版本吗？",
   "index.faq.6.a": "Keeply 目前支持 Windows 10 以上和 macOS（仅限 Apple Silicon）。Linux 版本在 roadmap 上但还没推出。如果 Linux 支持对你的工作流程很关键，请透过联络表单告诉我们——我们根据实际使用者需求排优先级，每一则请求都会被记录。",
   "index.faq.7.q": "$599 的 Founding Member 方案是什么？",
-  "index.faq.7.a": "一次性付费、永久授权，限定前 500 位买家。你永久拥有 Keeply 目前所有功能，加上 Team 方案上线后自动取得所有 Team 功能。没有订阅周期性扣款，没有未来涨价的惊喜。对比每月 $25 美元 × 24 个月 = $600 美元——Founding Member 不到两年就回本，而且继续用。"
+  "index.faq.7.a": "一次性付费、永久授权，限定前 500 位买家。你永久拥有 Keeply 目前所有功能，加上 Team 方案上线后自动取得所有 Team 功能。没有订阅周期性扣款，没有未来涨价的惊喜。对比每月 $25 美元 × 24 个月 = $600 美元——Founding Member 不到两年就回本，而且继续用。",
+  "nav.install": "安装指南",
+  "footer.install": "安装指南"
+
 }

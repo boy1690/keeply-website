@@ -564,5 +564,8 @@
   "index.faq.6.q": "Linux sürümü var mı?",
   "index.faq.6.a": "Keeply şu anda Windows 10 veya daha yenisi ile Apple Silicon üzerindeki macOS için yayınlanıyor. Linux build roadmap'te ama henüz çıkmadı. Linux desteği workflow'un için kritikse, lütfen iletişim formundan bize bildir — platform desteğini gerçek kullanıcı talebine göre önceliklendiriyoruz ve her talep kayıt altına alınıyor.",
   "index.faq.7.q": "$599'luk Founding Member planı nedir?",
-  "index.faq.7.a": "Kalıcı bir lisans için tek seferlik ödeme, ilk 500 alıcıyla sınırlı. Mevcut Keeply özelliklerini sonsuza dek alırsın, ayrıca Team plan çıktığında tüm Team plan özelliklerini otomatik olarak edinirsin. Tekrarlayan faturalandırma yok, sürpriz zam yok. Karşılaştırma için: $25/month, 24 ay boyunca $600 eder — Founding Member iki yıldan kısa sürede kendini amorti eder ve sonrası devam eder."
+  "index.faq.7.a": "Kalıcı bir lisans için tek seferlik ödeme, ilk 500 alıcıyla sınırlı. Mevcut Keeply özelliklerini sonsuza dek alırsın, ayrıca Team plan çıktığında tüm Team plan özelliklerini otomatik olarak edinirsin. Tekrarlayan faturalandırma yok, sürpriz zam yok. Karşılaştırma için: $25/month, 24 ay boyunca $600 eder — Founding Member iki yıldan kısa sürede kendini amorti eder ve sonrası devam eder.",
+  "nav.install": "Kurulum kılavuzu",
+  "footer.install": "Kurulum kılavuzu"
+
 }

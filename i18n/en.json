@@ -574,5 +574,8 @@
   "cookie.panel.cancel": "Cancel",
   "cookie.panel.aria.dialog": "Cookie preferences dialog",
   "cookie.panel.aria.close": "Close",
-  "footer.cookie-settings": "Cookie settings"
+  "footer.cookie-settings": "Cookie settings",
+  "nav.install": "Install Guide",
+  "footer.install": "Install Guide"
+
 }

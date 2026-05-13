@@ -231,11 +231,18 @@ function listHtmlFiles(rootAbs) {
 
 // Match each fingerprintable script tag, preserving the "../" or "/" prefix
 // (so locale subdir pages keep their relative paths) and any extra attributes.
+// Matches both:
+//   1. Unhashed refs like `<script src="components.js">` (template-driven HTML).
+//   2. Previously-hashed refs like `<script src="components.46663acb11.js">`
+//      (static-copy HTML where build:pages never regenerates the file).
 function applyRewrites(html) {
   for (const [orig, hashed] of Object.entries(manifest)) {
     const origPath = orig.split(path.sep).join('/');
+    // origPath e.g. "components.js" → match "components.js" OR "components.<10hex>.js"
+    const base = origPath.replace(/\.js$/, '');
+    const variant = escapeRegex(base) + '(?:\\.[0-9a-f]{10})?\\.js';
     const re = new RegExp(
-      '(<script\\s+src=")((?:\\.\\.\\/|\\/)?)' + escapeRegex(origPath) + '("[^>]*></script>)',
+      '(<script\\s+src=")((?:\\.\\.\\/|\\/)?)' + variant + '("[^>]*></script>)',
       'g'
     );
     html = html.replace(re, (_m, p1, p2, p3) => `${p1}${p2}${hashed}${p3}`);

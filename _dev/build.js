@@ -439,7 +439,47 @@ function generateSitemap() {
   // Spec 028: compare hub + sub-pages (en + zh-TW).
   xml += generateCompareSitemapEntries(today);
 
+  // Spec 042: install pages (Stage 1 = root + en only, expand later).
+  xml += generateInstallSitemapEntries(today);
+
   xml += '</urlset>\n';
+  return xml;
+}
+
+// Stage 1: install.html exists only at root (x-default / en) and /en/install.html.
+// Other locales currently link to the root install page via components.js
+// INSTALL_LOCALES fallback. When more locales translate, add them here.
+function generateInstallSitemapEntries(today) {
+  const installLocales = ['en']; // expand as translations land
+  const rootUrl = `${BASE_URL}/install.html`;
+
+  // Cross-ref block shared by root + each locale entry.
+  const altLinks = installLocales.map(loc =>
+    `    <xhtml:link rel="alternate" hreflang="${loc}" href="${BASE_URL}/${loc}/install.html" />`
+  ).join('\n') +
+    `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${rootUrl}" />\n`;
+
+  let xml = '';
+  // Root install page (x-default).
+  xml += '  <url>\n';
+  xml += `    <loc>${rootUrl}</loc>\n`;
+  xml += `    <lastmod>${today}</lastmod>\n`;
+  xml += '    <changefreq>monthly</changefreq>\n';
+  xml += '    <priority>0.7</priority>\n';
+  xml += altLinks;
+  xml += '  </url>\n';
+
+  // Per-locale install pages.
+  for (const loc of installLocales) {
+    xml += '  <url>\n';
+    xml += `    <loc>${BASE_URL}/${loc}/install.html</loc>\n`;
+    xml += `    <lastmod>${today}</lastmod>\n`;
+    xml += '    <changefreq>monthly</changefreq>\n';
+    xml += '    <priority>0.7</priority>\n';
+    xml += altLinks;
+    xml += '  </url>\n';
+  }
+
   return xml;
 }
 

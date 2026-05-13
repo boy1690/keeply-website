@@ -574,5 +574,8 @@
   "cookie.panel.cancel": "取消",
   "cookie.panel.aria.dialog": "Cookie 偏好設定對話框",
   "cookie.panel.aria.close": "關閉",
-  "footer.cookie-settings": "Cookie 設定"
+  "footer.cookie-settings": "Cookie 設定",
+  "nav.install": "安裝指南",
+  "footer.install": "安裝指南"
+
 }

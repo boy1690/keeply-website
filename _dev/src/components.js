@@ -26,6 +26,10 @@
   var logoLink = isHome ? '#' : localePrefix + 'index.html';
   var downloadLink = isHome ? '#download' : localePrefix + 'index.html#download';
 
+  // Stage 1 install pages exist only for en + root; other locales point at root.
+  var INSTALL_LOCALES = { en: '/en/install.html' };
+  var installLink = INSTALL_LOCALES[localeMatch ? localeMatch[1] : null] || '/install.html';
+
   // === NAV ===
   var NAV_SVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" class="w-9 h-9">'
     + '<defs>'
@@ -66,6 +70,7 @@
     + '<svg class="w-3 h-3 opacity-50" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>'
     + '</button>'
     + '</div>'
+    + '<a href="' + installLink + '" class="hidden sm:inline-block text-sm font-medium text-gray-600 hover:text-brand-600 transition-colors" data-i18n="nav.install">安裝指南</a>'
     + '<a href="https://blog.keeply.work" target="_blank" rel="noopener" class="hidden sm:inline-block text-sm font-medium text-gray-600 hover:text-brand-600 transition-colors" data-i18n="nav.blog">部落格</a>'
     + '<a href="' + downloadLink + '" class="bg-brand-600 hover:bg-brand-700 text-white text-sm font-medium px-5 py-2.5 rounded-full transition-all hover:shadow-lg hover:shadow-brand-600/25" data-i18n="nav.download">'
     + '免費下載'
@@ -94,6 +99,7 @@
     + '<a href="' + localePrefix + 'privacy.html" class="hover:text-white transition-colors" data-i18n="footer.privacy">隱私權政策</a>'
     + '<a href="' + localePrefix + 'terms.html" class="hover:text-white transition-colors" data-i18n="footer.terms">服務條款</a>'
     + '<a href="' + localePrefix + 'refund.html" class="hover:text-white transition-colors" data-i18n="footer.refund">退款政策</a>'
+    + '<a href="' + installLink + '" class="hover:text-white transition-colors" data-i18n="footer.install">安裝指南</a>'
     + '<a href="https://blog.keeply.work" target="_blank" rel="noopener" class="hover:text-white transition-colors" data-i18n="footer.blog">部落格</a>'
     + '<a href="' + localePrefix + 'buy.html" class="text-amber-400 hover:text-amber-300 font-semibold transition-colors" data-i18n="footer.buy">購買永久授權</a>'
     + '<a href="https://github.com/boy1690/keeply-releases/releases/latest" class="hover:text-white transition-colors" data-i18n="footer.download">下載</a>'

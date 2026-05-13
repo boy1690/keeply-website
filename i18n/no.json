@@ -564,5 +564,8 @@
   "index.faq.6.q": "Finnes det en Linux-versjon?",
   "index.faq.6.a": "Keeply leveres for øyeblikket til Windows 10 eller senere og macOS på Apple Silicon. En Linux-versjon ligger på roadmap, men er ikke levert ennå. Hvis Linux-støtte er kritisk for arbeidsflyten din, fortell oss det via kontaktskjemaet — vi prioriterer plattformstøtte basert på faktisk brukerbehov, og hver forespørsel logges.",
   "index.faq.7.q": "Hva er $599 Founding Member-pakken?",
-  "index.faq.7.a": "En engangsbetaling for en evig lisens, begrenset til de første 500 kjøperne. Du får Keeplys nåværende funksjoner for alltid, pluss alle Team plan-funksjoner automatisk når Team plan lanseres. Ingen gjentakende fakturering, ingen overraskelsesprisøkninger. Til sammenligning: $25/month i 24 måneder blir $600 — Founding Member betaler seg selv tilbake på under to år og fortsetter deretter."
+  "index.faq.7.a": "En engangsbetaling for en evig lisens, begrenset til de første 500 kjøperne. Du får Keeplys nåværende funksjoner for alltid, pluss alle Team plan-funksjoner automatisk når Team plan lanseres. Ingen gjentakende fakturering, ingen overraskelsesprisøkninger. Til sammenligning: $25/month i 24 måneder blir $600 — Founding Member betaler seg selv tilbake på under to år og fortsetter deretter.",
+  "nav.install": "Installasjonsveiledning",
+  "footer.install": "Installasjonsveiledning"
+
 }

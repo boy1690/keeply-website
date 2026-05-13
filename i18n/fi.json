@@ -564,5 +564,8 @@
   "index.faq.6.q": "Onko Linux-versiota?",
   "index.faq.6.a": "Keeply toimitetaan tällä hetkellä Windows 10 -käyttöjärjestelmälle tai uudemmalle sekä macOS-järjestelmälle Apple Silicon -laitteilla. Linux-versio on roadmapissa, mutta sitä ei ole vielä julkaistu. Jos Linux-tuki on kriittistä työnkulullesi, kerro siitä yhteydenottolomakkeen kautta — priorisoimme alustatukea todellisen käyttäjäkysynnän perusteella, ja jokainen pyyntö kirjataan.",
   "index.faq.7.q": "Mikä on $599 Founding Member -paketti?",
-  "index.faq.7.a": "Kertamaksu pysyvästä lisenssistä, rajattuna 500 ensimmäiselle ostajalle. Saat Keeplyn nykyiset ominaisuudet ikuisesti, plus kaikki Team plan -ominaisuudet automaattisesti, kun Team plan julkaistaan. Ei toistuvaa laskutusta, ei yllätyshinnankorotuksia. Vertailun vuoksi: $25/month 24 kuukauden ajalta on $600 — Founding Member maksaa itsensä takaisin alle kahdessa vuodessa ja jatkaa siitä eteenpäin."
+  "index.faq.7.a": "Kertamaksu pysyvästä lisenssistä, rajattuna 500 ensimmäiselle ostajalle. Saat Keeplyn nykyiset ominaisuudet ikuisesti, plus kaikki Team plan -ominaisuudet automaattisesti, kun Team plan julkaistaan. Ei toistuvaa laskutusta, ei yllätyshinnankorotuksia. Vertailun vuoksi: $25/month 24 kuukauden ajalta on $600 — Founding Member maksaa itsensä takaisin alle kahdessa vuodessa ja jatkaa siitä eteenpäin.",
+  "nav.install": "Asennusopas",
+  "footer.install": "Asennusopas"
+
 }
