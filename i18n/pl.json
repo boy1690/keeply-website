@@ -580,5 +580,17 @@
   "index.compare.card.google-drive.sub": "Historia ukryta w menu",
   "index.compare.card.time-machine.sub": "Poziom systemu, brak widoku projektu",
   "index.compare.card.snowtrack.sub": "Teraz tylko enterprise (P4 One)",
-  "index.compare.card.email-usb.sub": "Automatyzacja kopii ręcznych"
+  "index.compare.card.email-usb.sub": "Automatyzacja kopii ręcznych",
+  "index.features.4.title": "Zobacz każdą zmianę obok siebie",
+  "index.features.4.desc": "Wizualne porównanie dla Word, Excel, PowerPoint, PDF i obrazów.",
+  "index.features.4.detail": "To nie tylko lista zmodyfikowanych plików — Keeply pokazuje ci dokładnie, co się zmieniło, wyświetlając dokumenty Office, PDF i obrazy obok siebie z podświetlonymi różnicami. Dla każdego innego typu pliku możesz śledzić wersje i przywrócić dowolny moment w kilka sekund.",
+  "index.features.5.title": "Obsługuje duże pliki bezgłośnie",
+  "index.features.5.desc": "Blender, PSD, wideo — wszystko działa od ręki.",
+  "index.features.5.detail": "Keeply automatycznie wykrywa 38 binarnych formatów plików oraz każdy plik powyżej 10 MB, kierując je do magazynu dużych plików bez ani jednego kroku konfiguracji. Bez konfigurowania LFS, bez puchnięcia repo, bez uszkodzonych zapisów w dużych projektach.",
+  "index.features.6.title": "Wypróbuj śmiałe zmiany bezpiecznie",
+  "index.features.6.desc": "Utwórz kopię roboczą, eksperymentuj, a potem scal z powrotem.",
+  "index.features.6.detail": "Kopie robocze pozwalają ci odgałęzić się od projektu, by wypróbować radykalnie nowy projekt lub ryzykowny refaktoring, a następnie scalić zmiany z powrotem, gdy będą gotowe — lub usunąć kopię roboczą, jeśli eksperyment się nie powiódł. Twój główny projekt pozostaje przez cały czas nietknięty.",
+  "index.download.winget.label": "📦 Zainstaluj przez winget",
+  "index.download.winget.cmdLabel": "Polecenie PowerShell",
+  "index.download.winget.howto": "Wymaga Windows Package Manager (wbudowanego w Windows 10 1809+ / Windows 11). Pakiet opublikowany w oficjalnym repo microsoft/winget-pkgs."
 }

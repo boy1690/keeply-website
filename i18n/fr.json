@@ -580,5 +580,17 @@
   "index.compare.card.google-drive.sub": "Historique caché dans le menu",
   "index.compare.card.time-machine.sub": "Niveau OS, pas de vue projet",
   "index.compare.card.snowtrack.sub": "Désormais entreprise uniquement (P4 One)",
-  "index.compare.card.email-usb.sub": "Automatiser la sauvegarde manuelle"
+  "index.compare.card.email-usb.sub": "Automatiser la sauvegarde manuelle",
+  "index.features.4.title": "Vois chaque changement, côte à côte",
+  "index.features.4.desc": "Diff visuel pour Word, Excel, PowerPoint, PDF et images.",
+  "index.features.4.detail": "Pas juste une liste de fichiers modifiés — Keeply te montre exactement ce qui a changé, avec les documents Office, les PDF et les images affichés côte à côte avec les différences surlignées. Pour tous les autres types de fichiers, suis les versions et restaure n'importe quel point en quelques secondes.",
+  "index.features.5.title": "Gère les gros fichiers en silence",
+  "index.features.5.desc": "Blender, PSD, vidéo — tout fonctionne dès le départ.",
+  "index.features.5.detail": "Keeply détecte automatiquement 38 formats de fichiers binaires et tout fichier de plus de 10 MB, en les acheminant vers le stockage pour gros fichiers sans la moindre étape de configuration. Pas de configuration LFS, pas de repo qui gonfle, pas de sauvegardes cassées sur les gros projets.",
+  "index.features.6.title": "Tente des changements audacieux en toute sécurité",
+  "index.features.6.desc": "Crée une copie de travail, expérimente, puis fusionne.",
+  "index.features.6.detail": "Les copies de travail te permettent de te détacher de ton projet pour essayer un design radicalement nouveau ou un refactoring risqué, puis de réintégrer les changements quand ils sont prêts — ou de supprimer la copie de travail si l'expérience n'a pas abouti. Ton projet principal reste intact tout le temps.",
+  "index.download.winget.label": "📦 Installer via winget",
+  "index.download.winget.cmdLabel": "Commande PowerShell",
+  "index.download.winget.howto": "Nécessite Windows Package Manager (intégré à Windows 10 1809+ / Windows 11). Paquet publié sur le repo officiel microsoft/winget-pkgs."
 }

@@ -32,9 +32,18 @@
   var downloadLink = isHome ? '#download' : localePrefix + 'index.html#download';
   var pricingLink = isHome ? '#pricing' : (localePrefix || '/') + '#pricing';
 
-  // install.html：Stage 1 只有 root + en；Stage 2 補翻譯後在此擴展
-  var INSTALL_LOCALES = { en: '/en/install.html' };
-  var installLink = INSTALL_LOCALES[localeCode] || '/install.html';
+  // install.html（spec 043 Stage 2）：6 core locale 各有母語版；其他 13 locale
+  // fallback 到 /en/install.html（不是 root /install.html）—— root 是 x-default
+  // 入口，但對已知 locale 用戶來說連到 /en/ 比較直覺。
+  var INSTALL_LOCALES = {
+    'en': '/en/install.html',
+    'zh-TW': '/zh-TW/install.html',
+    'zh-CN': '/zh-CN/install.html',
+    'ja': '/ja/install.html',
+    'ko': '/ko/install.html',
+    'it': '/it/install.html'
+  };
+  var installLink = INSTALL_LOCALES[localeCode] || '/en/install.html';
 
   // compare hub：en + zh-TW 各有獨立版本；其他 locale fallback 到 root (en)
   var COMPARE_LOCALES = { en: '/compare/', 'zh-TW': '/zh-TW/compare/' };

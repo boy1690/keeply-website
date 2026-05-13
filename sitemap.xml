@@ -1978,6 +1978,500 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
   </url>
   <url>
+    <loc>https://keeply.work/zh-TW/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/install.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/install.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/install.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/install.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/install.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/install.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/install.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/install.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/install.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/install.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/install.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/zh-CN/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/install.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/install.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/install.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/install.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/install.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/install.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/install.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/install.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/install.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/install.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/install.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/en/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/install.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/install.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/install.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/install.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/install.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/install.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/install.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/install.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/install.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/install.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/install.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/ja/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/install.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/install.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/install.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/install.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/install.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/install.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/install.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/install.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/install.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/install.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/install.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/ko/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/install.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/install.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/install.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/install.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/install.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/install.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/install.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/install.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/install.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/install.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/install.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/de/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/install.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/install.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/install.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/install.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/install.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/install.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/install.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/install.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/install.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/install.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/install.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/fr/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/install.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/install.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/install.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/install.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/install.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/install.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/install.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/install.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/install.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/install.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/install.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/es/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/install.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/install.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/install.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/install.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/install.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/install.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/install.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/install.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/install.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/install.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/install.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/pt/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/install.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/install.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/install.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/install.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/install.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/install.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/install.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/install.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/install.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/install.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/install.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/it/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/install.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/install.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/install.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/install.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/install.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/install.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/install.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/install.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/install.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/install.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/install.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/nl/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/install.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/install.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/install.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/install.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/install.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/install.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/install.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/install.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/install.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/install.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/install.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/pl/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/install.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/install.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/install.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/install.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/install.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/install.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/install.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/install.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/install.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/install.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/install.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/cs/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/install.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/install.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/install.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/install.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/install.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/install.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/install.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/install.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/install.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/install.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/install.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/hu/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/install.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/install.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/install.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/install.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/install.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/install.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/install.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/install.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/install.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/install.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/install.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/tr/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/install.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/install.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/install.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/install.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/install.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/install.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/install.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/install.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/install.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/install.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/install.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/fi/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/install.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/install.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/install.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/install.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/install.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/install.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/install.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/install.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/install.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/install.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/install.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/sv/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/install.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/install.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/install.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/install.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/install.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/install.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/install.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/install.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/install.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/install.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/install.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/no/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/install.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/install.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/install.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/install.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/install.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/install.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/install.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/install.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/install.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/install.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/install.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
+    <loc>https://keeply.work/da/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://keeply.work/de/install.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://keeply.work/fr/install.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://keeply.work/es/install.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://keeply.work/pt/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://keeply.work/nl/install.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://keeply.work/pl/install.html" />
+    <xhtml:link rel="alternate" hreflang="cs" href="https://keeply.work/cs/install.html" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://keeply.work/hu/install.html" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://keeply.work/tr/install.html" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://keeply.work/fi/install.html" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://keeply.work/sv/install.html" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://keeply.work/no/install.html" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://keeply.work/da/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/" />
+  </url>
+  <url>
     <loc>https://keeply.work/zh-TW/buy.html</loc>
     <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -3597,6 +4091,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/install.html" />
   </url>
   <url>
@@ -3605,6 +4104,76 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/install.html" />
+  </url>
+  <url>
+    <loc>https://keeply.work/zh-TW/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/install.html" />
+  </url>
+  <url>
+    <loc>https://keeply.work/zh-CN/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/install.html" />
+  </url>
+  <url>
+    <loc>https://keeply.work/ja/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/install.html" />
+  </url>
+  <url>
+    <loc>https://keeply.work/ko/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/install.html" />
+  </url>
+  <url>
+    <loc>https://keeply.work/it/install.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://keeply.work/en/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://keeply.work/zh-TW/install.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://keeply.work/zh-CN/install.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://keeply.work/ja/install.html" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://keeply.work/ko/install.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://keeply.work/it/install.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://keeply.work/install.html" />
   </url>
 </urlset>

@@ -580,5 +580,17 @@
   "index.compare.card.google-drive.sub": "Verziótörténet a menüben",
   "index.compare.card.time-machine.sub": "OS szintű, nincs projektnézet",
   "index.compare.card.snowtrack.sub": "Most csak vállalati (P4 One)",
-  "index.compare.card.email-usb.sub": "Kézi mentés automatizálása"
+  "index.compare.card.email-usb.sub": "Kézi mentés automatizálása",
+  "index.features.4.title": "Lásd minden változást egymás mellett",
+  "index.features.4.desc": "Vizuális diff Word, Excel, PowerPoint, PDF és képek számára.",
+  "index.features.4.detail": "Nem csupán a módosított fájlok listája — a Keeply pontosan megmutatja, mi változott: az Office-dokumentumok, PDF-ek és képek egymás mellett jelennek meg kiemelt eltérésekkel. Minden más fájltípusnál követheted a verziókat, és másodpercek alatt visszaállíthatsz bármelyik pontot.",
+  "index.features.5.title": "Csendben kezeli a nagy fájlokat",
+  "index.features.5.desc": "Blender, PSD, videó — minden azonnal működik.",
+  "index.features.5.detail": "A Keeply automatikusan felismer 38 bináris fájlformátumot és minden 10 MB-nál nagyobb fájlt, és egyetlen konfigurációs lépés nélkül a nagyfájl-tárolón keresztül kezeli őket. Nincs LFS-beállítás, nincs felpuffadt repo, nincsenek elrontott mentések a nagy projekteknél.",
+  "index.features.6.title": "Próbálj ki bátor változtatásokat biztonságosan",
+  "index.features.6.desc": "Hozz létre egy munkamásolatot, kísérletezz, majd egyesítsd vissza.",
+  "index.features.6.detail": "A munkamásolatokkal leágazhatsz a projektedről, hogy kipróbálj egy radikálisan új dizájnt vagy egy kockázatos refaktort, majd visszafűzheted a változtatásokat, ha készen állnak — vagy törölheted a munkamásolatot, ha a kísérlet nem jött be. A fő projekted végig érintetlen marad.",
+  "index.download.winget.label": "📦 Telepítés winget segítségével",
+  "index.download.winget.cmdLabel": "PowerShell parancs",
+  "index.download.winget.howto": "Windows Package Manager szükséges (a Windows 10 1809+ / Windows 11 része). A csomag a hivatalos microsoft/winget-pkgs repóban van közzétéve."
 }

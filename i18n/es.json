@@ -580,5 +580,17 @@
   "index.compare.card.google-drive.sub": "Historial oculto en el menú",
   "index.compare.card.time-machine.sub": "Nivel OS, sin vista por proyecto",
   "index.compare.card.snowtrack.sub": "Ahora solo empresarial (P4 One)",
-  "index.compare.card.email-usb.sub": "Automatizar respaldo manual"
+  "index.compare.card.email-usb.sub": "Automatizar respaldo manual",
+  "index.features.4.title": "Mira cada cambio, lado a lado",
+  "index.features.4.desc": "Diff visual para Word, Excel, PowerPoint, PDF e imágenes.",
+  "index.features.4.detail": "No solo una lista de archivos modificados — Keeply te muestra exactamente qué cambió, con documentos de Office, PDF e imágenes mostrados lado a lado con las diferencias resaltadas. Para cualquier otro tipo de archivo, sigue las versiones y restaura cualquier punto en segundos.",
+  "index.features.5.title": "Maneja archivos grandes en silencio",
+  "index.features.5.desc": "Blender, PSD, vídeo — todo funciona desde el primer momento.",
+  "index.features.5.detail": "Keeply detecta automáticamente 38 formatos de archivo binarios y cualquier archivo de más de 10 MB, llevándolos al almacenamiento de archivos grandes sin un solo paso de configuración. Sin configurar LFS, sin que el repo se infle, sin guardados rotos en proyectos grandes.",
+  "index.features.6.title": "Prueba cambios atrevidos con seguridad",
+  "index.features.6.desc": "Crea una copia de trabajo, experimenta y luego fusiónala.",
+  "index.features.6.detail": "Las copias de trabajo te permiten ramificar tu proyecto para probar un diseño radicalmente nuevo o una refactorización arriesgada, y luego fusionar los cambios cuando estén listos — o eliminar la copia de trabajo si el experimento no salió. Tu proyecto principal permanece intacto todo el tiempo.",
+  "index.download.winget.label": "📦 Instalar mediante winget",
+  "index.download.winget.cmdLabel": "Comando de PowerShell",
+  "index.download.winget.howto": "Requiere Windows Package Manager (incluido en Windows 10 1809+ / Windows 11). Paquete publicado en el repo oficial microsoft/winget-pkgs."
 }

@@ -580,5 +580,17 @@
   "index.compare.card.google-drive.sub": "Sürüm geçmişi menüde gizli",
   "index.compare.card.time-machine.sub": "OS düzeyi, proje görünümü yok",
   "index.compare.card.snowtrack.sub": "Artık sadece kurumsal (P4 One)",
-  "index.compare.card.email-usb.sub": "Manuel yedeklemeyi otomatikleştir"
+  "index.compare.card.email-usb.sub": "Manuel yedeklemeyi otomatikleştir",
+  "index.features.4.title": "Her değişikliği yan yana gör",
+  "index.features.4.desc": "Word, Excel, PowerPoint, PDF ve görseller için görsel diff.",
+  "index.features.4.detail": "Sadece değiştirilen dosyaların bir listesi değil — Keeply tam olarak neyin değiştiğini gösterir; Office belgeleri, PDF'ler ve görseller, farkları vurgulanmış olarak yan yana görüntülenir. Diğer tüm dosya türleri için sürümleri takip edebilir ve herhangi bir noktayı saniyeler içinde geri yükleyebilirsin.",
+  "index.features.5.title": "Büyük dosyaları sessizce halleder",
+  "index.features.5.desc": "Blender, PSD, video — hepsi kutudan çıkar çıkmaz çalışır.",
+  "index.features.5.detail": "Keeply 38 ikili dosya formatını ve 10 MB'ın üzerindeki her dosyayı otomatik olarak algılar ve tek bir yapılandırma adımı olmadan büyük dosya depolaması üzerinden yönlendirir. LFS kurulumu yok, repo şişmesi yok, büyük projelerde bozuk kayıt yok.",
+  "index.features.6.title": "Cesur değişiklikleri güvenle dene",
+  "index.features.6.desc": "Bir çalışma kopyası oluştur, deney yap, sonra geri birleştir.",
+  "index.features.6.detail": "Çalışma kopyaları, projenden dallanarak radikal yeni bir tasarımı veya riskli bir refactor'ı denemene ve hazır olduklarında değişiklikleri geri birleştirmene olanak tanır — ya da deney işe yaramadıysa çalışma kopyasını silebilirsin. Ana projen bu süre boyunca dokunulmadan kalır.",
+  "index.download.winget.label": "📦 winget ile kur",
+  "index.download.winget.cmdLabel": "PowerShell komutu",
+  "index.download.winget.howto": "Windows Package Manager gerektirir (Windows 10 1809+ / Windows 11'de yerleşiktir). Paket resmi microsoft/winget-pkgs repo'sunda yayınlanmıştır."
 }

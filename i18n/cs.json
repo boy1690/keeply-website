@@ -580,5 +580,17 @@
   "index.compare.card.google-drive.sub": "Historie verzí skrytá v menu",
   "index.compare.card.time-machine.sub": "Úroveň OS, žádný pohled na projekt",
   "index.compare.card.snowtrack.sub": "Nyní pouze enterprise (P4 One)",
-  "index.compare.card.email-usb.sub": "Automatizace ručního zálohování"
+  "index.compare.card.email-usb.sub": "Automatizace ručního zálohování",
+  "index.features.4.title": "Uvidíš každou změnu vedle sebe",
+  "index.features.4.desc": "Vizuální diff pro Word, Excel, PowerPoint, PDF a obrázky.",
+  "index.features.4.detail": "Nejen seznam upravených souborů — Keeply ti přesně ukáže, co se změnilo, s dokumenty Office, PDF a obrázky zobrazenými vedle sebe se zvýrazněnými rozdíly. U všech ostatních typů souborů můžeš sledovat verze a v sekundách obnovit kterýkoli okamžik.",
+  "index.features.5.title": "Zvládá velké soubory potichu",
+  "index.features.5.desc": "Blender, PSD, video — vše funguje rovnou.",
+  "index.features.5.detail": "Keeply automaticky detekuje 38 binárních formátů souborů a jakýkoli soubor větší než 10 MB a směruje je přes úložiště pro velké soubory bez jediného konfiguračního kroku. Žádné nastavování LFS, žádné nafouknuté repo, žádné poškozené ukládání u velkých projektů.",
+  "index.features.6.title": "Zkoušej odvážné změny bezpečně",
+  "index.features.6.desc": "Vytvoř pracovní kopii, experimentuj a pak ji zase sluč zpět.",
+  "index.features.6.detail": "Pracovní kopie ti umožní odbočit z projektu a vyzkoušet radikálně nový design nebo riskantní refactor, a pak změny sloučit zpět, až budou hotové — nebo pracovní kopii smazat, pokud experiment nevyšel. Tvůj hlavní projekt zůstává po celou dobu nedotčený.",
+  "index.download.winget.label": "📦 Nainstalovat přes winget",
+  "index.download.winget.cmdLabel": "Příkaz PowerShell",
+  "index.download.winget.howto": "Vyžaduje Windows Package Manager (zabudovaný ve Windows 10 1809+ / Windows 11). Balíček publikovaný v oficiálním repo microsoft/winget-pkgs."
 }

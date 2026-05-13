@@ -25,7 +25,7 @@ const LOCALES = [
   'fi', 'sv', 'no', 'da'
 ];
 
-const PAGES = ['index.html', 'privacy.html', 'terms.html', 'contact.html'];
+const PAGES = ['index.html', 'privacy.html', 'terms.html', 'contact.html', 'install.html'];
 
 // Pages that exist per-locale but are NOT template-driven (maintained as static
 // copies in each {locale}/ directory). Listed in sitemap.xml for SEO.
@@ -65,7 +65,8 @@ const PAGE_META_PREFIX = {
   'index.html': 'index',
   'privacy.html': 'privacy',
   'terms.html': 'terms',
-  'contact.html': 'contact'
+  'contact.html': 'contact',
+  'install.html': 'install'
 };
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
@@ -446,11 +447,10 @@ function generateSitemap() {
   return xml;
 }
 
-// Stage 1: install.html exists only at root (x-default / en) and /en/install.html.
-// Other locales currently link to the root install page via components.js
-// INSTALL_LOCALES fallback. When more locales translate, add them here.
+// Spec 043 D (Stage 2): install.html template-driven + 6 core locale 翻譯。
+// 其他 13 locale 透過 components.js INSTALL_LOCALES fallback 到 /en/install.html。
 function generateInstallSitemapEntries(today) {
-  const installLocales = ['en']; // expand as translations land
+  const installLocales = ['en', 'zh-TW', 'zh-CN', 'ja', 'ko', 'it'];
   const rootUrl = `${BASE_URL}/install.html`;
 
   // Cross-ref block shared by root + each locale entry.
@@ -542,18 +542,20 @@ function main() {
   // which synthesizes pack content from i18n/*.json in-memory and writes
   // only the hashed file. No intermediate i18n/<locale>.js is produced.
 
-  // Copy templates to root as zh-Hant fallback pages (spec 043 C):
-  // root pages 用 zh-TW.json 套 i18n（不是純複製），避免 root index FAQ 等
-  // 區塊保留 template 的英文 fallback、與其他內容語言不一致。
-  // 不替換 canonical / hreflang / OG（root 是 x-default 預設）。
-  const ROOT_LOCALE = 'zh-TW';
+  // Copy templates to root as fallback pages (spec 043 C).
+  // 大多數頁面用 zh-TW.json 套 i18n（解 root FAQ 中英混雜問題）；
+  // 但 install.html 例外——用 en.json，與其 x-default → /en/install.html
+  // 對齊，避免 root /install.html 顯示中文卻 hreflang 標 en。
+  const DEFAULT_ROOT_LOCALE = 'zh-TW';
+  const ROOT_LOCALE_OVERRIDE = { 'install.html': 'en' };
   for (const page of PAGES) {
     let rootHtml = fs.readFileSync(path.join(TEMPLATE_DIR, page), 'utf8');
     rootHtml = applyVersionSubstitution(rootHtml, releaseConfig);
-    rootHtml = replaceDataI18n(rootHtml, translations, ROOT_LOCALE);
+    const rootLocale = ROOT_LOCALE_OVERRIDE[page] || DEFAULT_ROOT_LOCALE;
+    rootHtml = replaceDataI18n(rootHtml, translations, rootLocale);
     fs.writeFileSync(path.join(OUTPUT_DIR, page), rootHtml, 'utf8');
   }
-  console.log(`Copied ${PAGES.length} templates to root (version-substituted + ${ROOT_LOCALE} i18n applied)`);
+  console.log(`Copied ${PAGES.length} templates to root (zh-TW i18n, install.html → en)`);
 
   console.log(`\nBuild complete: ${fileCount} files generated across ${LOCALES.length} locales`);
 }

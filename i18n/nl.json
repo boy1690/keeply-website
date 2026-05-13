@@ -580,5 +580,17 @@
   "index.compare.card.google-drive.sub": "Versiegeschiedenis verstopt in menu",
   "index.compare.card.time-machine.sub": "OS-niveau, geen projectweergave",
   "index.compare.card.snowtrack.sub": "Nu alleen enterprise (P4 One)",
-  "index.compare.card.email-usb.sub": "Handmatige back-up automatiseren"
+  "index.compare.card.email-usb.sub": "Handmatige back-up automatiseren",
+  "index.features.4.title": "Zie elke wijziging, naast elkaar",
+  "index.features.4.desc": "Visuele diff voor Word, Excel, PowerPoint, PDF's en afbeeldingen.",
+  "index.features.4.detail": "Niet zomaar een lijst met gewijzigde bestanden — Keeply laat je precies zien wat er is veranderd, met Office-documenten, PDF's en afbeeldingen naast elkaar weergegeven met gemarkeerde verschillen. Voor elk ander bestandstype kun je versies bijhouden en in seconden naar elk punt terugkeren.",
+  "index.features.5.title": "Verwerkt grote bestanden geruisloos",
+  "index.features.5.desc": "Blender, PSD, video — alles werkt meteen.",
+  "index.features.5.detail": "Keeply detecteert automatisch 38 binaire bestandsformaten en elk bestand groter dan 10 MB, en stuurt ze via opslag voor grote bestanden zonder ook maar één configuratiestap. Geen LFS-installatie, geen opgeblazen repo, geen mislukte opslag bij grote projecten.",
+  "index.features.6.title": "Probeer gedurfde wijzigingen veilig uit",
+  "index.features.6.desc": "Maak een werkkopie, experimenteer, voeg dan weer samen.",
+  "index.features.6.detail": "Met werkkopieën kun je vanuit je project een aftakking maken om een radicaal nieuw ontwerp of een riskante refactor te proberen, en de wijzigingen weer samenvoegen wanneer ze klaar zijn — of de werkkopie verwijderen als het experiment niets opleverde. Je hoofdproject blijft de hele tijd onaangeroerd.",
+  "index.download.winget.label": "📦 Installeren via winget",
+  "index.download.winget.cmdLabel": "PowerShell-commando",
+  "index.download.winget.howto": "Vereist Windows Package Manager (ingebouwd in Windows 10 1809+ / Windows 11). Pakket gepubliceerd in de officiële microsoft/winget-pkgs repo."
 }

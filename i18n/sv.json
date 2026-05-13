@@ -580,5 +580,17 @@
   "index.compare.card.google-drive.sub": "Versionshistorik gömd i meny",
   "index.compare.card.time-machine.sub": "OS-nivå, ingen projektvy",
   "index.compare.card.snowtrack.sub": "Nu endast företag (P4 One)",
-  "index.compare.card.email-usb.sub": "Automatisera manuell säkerhetskopiering"
+  "index.compare.card.email-usb.sub": "Automatisera manuell säkerhetskopiering",
+  "index.features.4.title": "Se varje ändring, sida vid sida",
+  "index.features.4.desc": "Visuell jämförelse för Word, Excel, PowerPoint, PDF och bilder.",
+  "index.features.4.detail": "Inte bara en lista över ändrade filer — Keeply visar dig exakt vad som ändrats, med Office-dokument, PDF:er och bilder visade sida vid sida med markerade skillnader. För alla andra filtyper kan du spåra versioner och återställa vilken tidpunkt som helst på några sekunder.",
+  "index.features.5.title": "Hanterar stora filer ljudlöst",
+  "index.features.5.desc": "Blender, PSD, video — allt fungerar direkt.",
+  "index.features.5.detail": "Keeply upptäcker automatiskt 38 binära filformat och alla filer över 10 MB, och dirigerar dem genom lagring för stora filer utan ett enda konfigurationssteg. Ingen LFS-inställning, ingen repo-svullnad, inga trasiga sparningar i stora projekt.",
+  "index.features.6.title": "Prova djärva ändringar tryggt",
+  "index.features.6.desc": "Skapa en arbetskopia, experimentera och slå sedan ihop tillbaka.",
+  "index.features.6.detail": "Arbetskopior låter dig grena av från ditt projekt för att testa en radikal ny design eller en riskfylld refaktorering, och sedan slå ihop ändringarna tillbaka när de är klara — eller radera arbetskopian om experimentet inte gick vägen. Ditt huvudprojekt förblir orört hela tiden.",
+  "index.download.winget.label": "📦 Installera via winget",
+  "index.download.winget.cmdLabel": "PowerShell-kommando",
+  "index.download.winget.howto": "Kräver Windows Package Manager (inbyggd i Windows 10 1809+ / Windows 11). Paketet publicerat till den officiella microsoft/winget-pkgs repo."
 }

@@ -580,5 +580,17 @@
   "index.compare.card.google-drive.sub": "Versiohistoria piilossa valikossa",
   "index.compare.card.time-machine.sub": "OS-tason, ei projektikohtaista",
   "index.compare.card.snowtrack.sub": "Nyt vain yritys (P4 One)",
-  "index.compare.card.email-usb.sub": "Manuaalisen varmuuskopion automatisointi"
+  "index.compare.card.email-usb.sub": "Manuaalisen varmuuskopion automatisointi",
+  "index.features.4.title": "Näe jokainen muutos rinnakkain",
+  "index.features.4.desc": "Visuaalinen vertailu Word-, Excel-, PowerPoint-, PDF- ja kuvatiedostoille.",
+  "index.features.4.detail": "Ei pelkkä lista muutetuista tiedostoista — Keeply näyttää sinulle tarkalleen, mikä muuttui: Office-dokumentit, PDF:t ja kuvat näkyvät rinnakkain korostetuilla eroilla. Kaikille muille tiedostotyypeille voit seurata versioita ja palauttaa minkä tahansa ajankohdan sekunneissa.",
+  "index.features.5.title": "Käsittelee suuret tiedostot huomaamattomasti",
+  "index.features.5.desc": "Blender, PSD, video — kaikki toimivat heti.",
+  "index.features.5.detail": "Keeply tunnistaa automaattisesti 38 binääritiedostomuotoa ja kaikki yli 10 MB:n tiedostot ohjaten ne suurten tiedostojen tallennustilaan ilman yhtäkään määritysvaihetta. Ei LFS-asetuksia, ei repo-pullistumaa, ei rikkoutuneita tallennuksia suurissa projekteissa.",
+  "index.features.6.title": "Kokeile rohkeita muutoksia turvallisesti",
+  "index.features.6.desc": "Luo työkopio, kokeile ja yhdistä sitten takaisin.",
+  "index.features.6.detail": "Työkopioiden avulla voit haarautua projektistasi kokeillaksesi radikaalia uutta suunnittelua tai riskialtista refaktorointia ja yhdistää muutokset takaisin, kun ne ovat valmiita — tai poistaa työkopion, jos kokeilu ei onnistunut. Pääprojektisi pysyy koskemattomana koko ajan.",
+  "index.download.winget.label": "📦 Asenna winget kautta",
+  "index.download.winget.cmdLabel": "PowerShell-komento",
+  "index.download.winget.howto": "Vaatii Windows Package Managerin (sisäänrakennettu Windows 10 1809+ / Windows 11 -versioihin). Paketti julkaistu viralliseen microsoft/winget-pkgs repo:on."
 }
