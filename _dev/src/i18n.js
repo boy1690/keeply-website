@@ -396,22 +396,40 @@
     });
   }
 
+  // <html lang> → 我們的 SUPPORTED code
+  //   zh-Hant → zh-TW
+  //   zh-Hans → zh-CN
+  //   其餘原樣回（en, ja, ko, de, fr, ...）
+  function htmlLangToCode(htmlLang) {
+    if (!htmlLang) return null;
+    var map = { 'zh-Hant': 'zh-TW', 'zh-Hans': 'zh-CN' };
+    return map[htmlLang] || htmlLang;
+  }
+
   function init() {
-    // If in a locale subdirectory, use that locale as the current language.
-    // Visiting a locale URL (including via shared link or bookmark) is treated
-    // as an explicit preference, so the choice is persisted.
+    // 決定 currentLang 的優先序（spec 043 bug-fix）：
+    //   1. URL locale prefix (/zh-TW/, /en/, ...) — 最權威
+    //   2. <html lang> — 頁面內容語言，build 時決定，與 body 一致
+    //   3. localStorage / navigator.language — 用戶過往偏好（fallback）
+    //
+    // 之前只有 1 + 3，導致 root + /compare/* 等沒 locale prefix 的頁面
+    // 直接走 localStorage，與 <html lang> 不符 → nav 翻譯與 body 語言混雜。
     var urlLocale = detectLocaleFromUrl();
     var persistOnApply;
     if (urlLocale && SUPPORTED.indexOf(urlLocale) !== -1) {
       currentLang = urlLocale;
       persistOnApply = true;
     } else {
-      currentLang = detectLang();
-      // If detectLang() returned a value from a prior localStorage entry,
-      // storage already reflects the choice; if it came from navigator.language
-      // (first visit), we deliberately do NOT write storage — the visitor has
-      // not yet taken any explicit action. See /law Privacy §2.4.
-      persistOnApply = false;
+      var pageLang = htmlLangToCode(document.documentElement.lang);
+      if (pageLang && SUPPORTED.indexOf(pageLang) !== -1) {
+        // <html lang> 是 build 時決定的「該頁面 body 語言」，必須讓 nav/footer
+        // 與其一致。不寫 localStorage（這只是頁面 lang 推導，不算用戶選擇）。
+        currentLang = pageLang;
+        persistOnApply = false;
+      } else {
+        currentLang = detectLang();
+        persistOnApply = false;
+      }
     }
     buildDropdown();
     setLang(currentLang, persistOnApply);
