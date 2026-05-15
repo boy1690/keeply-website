@@ -558,15 +558,22 @@ function main() {
   // 所有 root pages 統一套 zh-TW.json（root 顯示繁中，與站內主語言一致）。
   // 包含 install.html（spec 043 D 原 EN override 在 bug-fix 時撤銷，
   // 因為 root 應該整體一致 = zh-TW，不應該 install 例外英文）。
+  //
+  // Spec 045: root compare path 強制套 /compare (EN canonical) 而非 /zh-TW/compare。
+  // 根因：root 是 site 最高權重頁面（canonical https://keeply.work/，x-default
+  // hreflang 目標），若 root compare 卡片連 /zh-TW/compare/*，EN canonical compare
+  // 從 root 拿到的 PageRank 訊號 = 0，導致 GSC「discovered but not crawled」。
+  // UX 取捨：root 訪客看繁中卡片標題但點下去進英文 compare 頁；繁中流量正常
+  // 路徑會從 nav 切 /zh-TW/，那邊 compare 卡片仍正確指 /zh-TW/compare/。
   const ROOT_LOCALE = 'zh-TW';
   for (const page of PAGES) {
     let rootHtml = fs.readFileSync(path.join(TEMPLATE_DIR, page), 'utf8');
     rootHtml = applyVersionSubstitution(rootHtml, releaseConfig);
     rootHtml = replaceDataI18n(rootHtml, translations, ROOT_LOCALE);
-    rootHtml = applyComparePath(rootHtml, ROOT_LOCALE);
+    rootHtml = rootHtml.replace(/__COMPARE_PATH__/g, '/compare');
     fs.writeFileSync(path.join(OUTPUT_DIR, page), rootHtml, 'utf8');
   }
-  console.log(`Copied ${PAGES.length} templates to root (${ROOT_LOCALE} i18n applied)`);
+  console.log(`Copied ${PAGES.length} templates to root (${ROOT_LOCALE} i18n applied, EN compare path)`);
 
   console.log(`\nBuild complete: ${fileCount} files generated across ${LOCALES.length} locales`);
 }
