@@ -75,3 +75,42 @@ jobs:
         run: sleep 30
       - name: Ping IndexNow
         run: npm run ping:indexnow
+
+  # Cloudflare cache purge for edge-cached static manifest files (robots.txt,
+  # sitemap.xml). Other assets are fingerprinted (cache-busts on hash change)
+  # so they don't need explicit purging. Spec 047 A+C.
+  #
+  # Requires repo secrets:
+  #   CF_PURGE_TOKEN — API token with Zone.Cache Purge on keeply.work zone
+  #   CF_ZONE_ID     — Zone ID for keeply.work (shared with blog.keeply.work)
+  #
+  # The job no-ops gracefully (logs a warning) if secrets are absent, so
+  # contributors can still run the deploy workflow.
+  cf-purge:
+    needs: deploy
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Skip if secrets missing
+        id: gate
+        env:
+          CF_PURGE_TOKEN: ${{ secrets.CF_PURGE_TOKEN }}
+          CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+        run: |
+          if [ -z "$CF_PURGE_TOKEN" ] || [ -z "$CF_ZONE_ID" ]; then
+            echo "::warning::CF_PURGE_TOKEN or CF_ZONE_ID not set — skipping purge"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Purge robots.txt + sitemap.xml
+        if: steps.gate.outputs.skip == 'false'
+        env:
+          CF_PURGE_TOKEN: ${{ secrets.CF_PURGE_TOKEN }}
+          CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+        run: |
+          curl -fsS -X POST \
+            "https://api.cloudflare.com/client/v4/zones/${CF_ZONE_ID}/purge_cache" \
+            -H "Authorization: Bearer ${CF_PURGE_TOKEN}" \
+            -H "Content-Type: application/json" \
+            --data '{"files":["https://keeply.work/robots.txt","https://keeply.work/sitemap.xml"]}'
