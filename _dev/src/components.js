@@ -226,7 +226,10 @@
     + '<a href="#cookie-settings" data-cookie-settings class="hover:text-white transition-colors" data-i18n="footer.cookie-settings">Cookie 設定</a>'
     + '<a href="' + localePrefix + 'contact.html" class="hover:text-white transition-colors" data-i18n="footer.contact">聯繫我們</a>'
     + '</div>'
-    + '<p class="text-sm" data-i18n="footer.copyright">&copy; 2026 Keeply. All rights reserved.</p>'
+    + '<div class="flex flex-col items-center md:items-end text-sm gap-1">'
+    + '<p data-i18n="footer.copyright">&copy; 2026 Keeply. All rights reserved.</p>'
+    + '<p class="text-gray-500" data-i18n-html="footer.founder-byline">由創辦人 <a href="https://www.linkedin.com/in/ting-wei-tsao-b57480152/" class="underline hover:text-white" rel="noopener" target="_blank">Tsao Ting Wei (曹庭維)</a> 親手打造。</p>'
+    + '</div>'
     + '</div>'
     + '</div>'
     + '</footer>';

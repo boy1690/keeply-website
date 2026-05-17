@@ -100,8 +100,8 @@
   <meta name="twitter:image:alt" content="Keeply — I tuoi file hanno una storia. Keeply le ricorda tutte." />
 
   <!-- Tailwind CSS (compiled) -->
-  <link rel="preload" href="../style.css" as="style" integrity="sha384-bmPgIvNlsuWB/BsGRnpkVL6UjBPqcdUaEQWusjQUwBVrVk2sOQx68hhu08QnPLP9" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../style.css" integrity="sha384-bmPgIvNlsuWB/BsGRnpkVL6UjBPqcdUaEQWusjQUwBVrVk2sOQx68hhu08QnPLP9" crossorigin="anonymous" />
+  <link rel="preload" href="../style.css" as="style" integrity="sha384-StVcXtMksUhM8v9Z5e/ptrBnGyMvDgaZCTHXZ85oaFKXvrtpXmx3F2fSXUe3lcuY" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style.css" integrity="sha384-StVcXtMksUhM8v9Z5e/ptrBnGyMvDgaZCTHXZ85oaFKXvrtpXmx3F2fSXUe3lcuY" crossorigin="anonymous" />
 
   <!-- M PLUS Rounded 1c font preload (eliminates CLS from late font discovery) -->
   <link rel="preload" href="../fonts/MPLUSRounded1c-Regular-v2.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
@@ -122,7 +122,10 @@
         "url": "https://keeply.work",
         "logo": "https://keeply.work/logo.svg",
         "sameAs": [
-          "https://github.com/boy1690/keeply-releases"
+          "https://keeply.work",
+          "https://blog.keeply.work",
+          "https://github.com/boy1690/keeply-releases",
+          "https://www.linkedin.com/in/ting-wei-tsao-b57480152/"
         ]
       },
       {
@@ -155,6 +158,54 @@
         "publisher": {
           "@id": "https://keeply.work/#organization"
         }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://keeply.work/#founder",
+        "name": "Tsao Ting Wei",
+        "alternateName": "曹庭維",
+        "jobTitle": "Founder, Keeply",
+        "url": "https://keeply.work/about",
+        "sameAs": [
+          "https://github.com/boy1690",
+          "https://www.linkedin.com/in/ting-wei-tsao-b57480152/"
+        ],
+        "worksFor": {
+          "@id": "https://keeply.work/#organization"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://keeply.work/it/#install-howto",
+        "name": "Come si inizia a usare Keeply e quanto ci vuole?",
+        "totalTime": "PT30S",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Windows 10/11 or macOS (Apple Silicon)"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Scarica e Installa",
+            "text": "Fatto in 30 secondi. Supporta Windows 10+ e macOS.",
+            "url": "https://keeply.work/it/#download"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Scegli una cartella",
+            "text": "Qualsiasi cartella in cui lavori — progetti, contratti, file di design."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Inizia a proteggere",
+            "text": "Da ora in poi, ogni modifica viene ricordata. Vuoi tornare indietro? Un clic."
+          }
+        ]
       },
       {
         "@type": "FAQPage",
@@ -323,8 +374,8 @@
   <section id="features" class="py-20 md:py-32 bg-gray-50">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.features.title">Ogni nota. Ogni versione. <span class="text-brand-600">Sempre rintracciabile.</span></h2>
-        <p class="mt-4 text-gray-500 text-lg max-w-xl mx-auto" data-i18n="index.features.subtitle">Più di uno strumento di backup. Keeply protegge ogni momento del tuo lavoro.</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.features.title">Perché Keeply non è solo uno strumento di backup?</h2>
+        <p class="mt-4 text-gray-500 text-lg max-w-xl mx-auto" data-i18n="index.features.subtitle">Gli strumenti di backup ricordano solo il file &quot;attuale&quot;; Keeply ricorda ogni versione, ogni nota, ogni decisione che hai preso. Sei mesi dopo, quando un cliente chiede &quot;chi l'ha deciso?&quot;, apri Keeply e trovi la risposta in pochi secondi — una capacità che i backup non possono offrirti.</p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
@@ -397,7 +448,8 @@
   <section class="py-20 md:py-32">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.usecases.title">Chiunque tu sia, <span class="text-brand-600">le informazioni critiche vanno ricordate.</span></h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.usecases.title">Chi usa Keeply e per quali lavori è pensato?</h2>
+        <p class="mt-4 text-gray-500 text-lg max-w-2xl mx-auto" data-i18n="index.usecases.answer">Project manager, designer, legali, accademici, ingegneri e team remoti — chiunque abbia bisogno di una cronologia delle versioni a lungo termine, del contesto delle decisioni o di fuggire dal caos dei nomi &quot;final_v3&quot;. I file restano sul tuo disco, sotto il tuo controllo, mai sui server di un fornitore.</p>
       </div>
 
       <div class="grid md:grid-cols-2 gap-6">
@@ -447,8 +499,8 @@
   <section class="py-20 md:py-32 bg-gray-50">
     <div class="max-w-4xl mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.howto.title">Tre passi per iniziare, <span class="text-brand-600">zero barriere.</span></h2>
-        <p class="mt-4 text-gray-500 text-lg" data-i18n="index.howto.subtitle">Nessun account, nessun server, nessuna competenza tecnica necessaria.</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.howto.title">Come si inizia a usare Keeply e quanto ci vuole?</h2>
+        <p class="mt-4 text-gray-500 text-lg" data-i18n="index.howto.subtitle">Tre passaggi: scarica e installa (30 secondi), scegli una cartella, inizia a proteggere. Nessun account, nessun server, nessun comando da imparare. Funziona su Windows 10+ e macOS Apple Silicon. Vuoi annullare una modifica? Un solo clic.</p>
       </div>
 
       <div class="space-y-8">
@@ -485,8 +537,8 @@
   <section id="compare-cards" class="py-20 md:py-28 bg-gray-50/50">
     <div class="max-w-5xl mx-auto px-6">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n="index.compare.title">Stai già usando un altro strumento? Ecco come si confronta Keeply.</h2>
-        <p class="mt-4 text-gray-500 text-lg max-w-2xl mx-auto" data-i18n="index.compare.subtitle">Abbiamo ricostruito il versionamento per chi salva i file localmente — non per la sync cloud, non per gli ingegneri.</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n="index.compare.title">In cosa Keeply è diverso da Dropbox, Google Drive o Git?</h2>
+        <p class="mt-4 text-gray-500 text-lg max-w-2xl mx-auto" data-i18n="index.compare.subtitle">Dropbox e Google Drive sincronizzano il file corrente e cancellano la cronologia delle versioni dopo 30 giorni; Git è pensato per gli ingegneri, con una curva di apprendimento ripida. Keeply riscrive il controllo versione per i file locali: ogni versione conservata per sempre, nessun lock-in cloud, nessuna barriera tecnica, installa e parti.</p>
       </div>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -560,8 +612,8 @@
   <section id="pricing" class="py-20 md:py-32">
     <div class="max-w-5xl mx-auto px-6">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.pricing.title">Prezzi semplici, <span class="text-brand-600">si parte gratis.</span></h2>
-        <p class="mt-4 text-gray-500 text-lg max-w-xl mx-auto" data-i18n="index.pricing.subtitle">I tuoi file. Il tuo NAS. Il vault del tuo team.</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.pricing.title">Quanto costa Keeply e i team pagano per postazione?</h2>
+        <p class="mt-4 text-gray-500 text-lg max-w-xl mx-auto" data-i18n="index.pricing.subtitle">Il piano individuale è gratuito per sempre, senza scadenza; il piano Team è una tariffa fissa di 25 $/mese (nessun limite di postazioni) con i file sul tuo NAS. Founding Member è una licenza perpetua una tantum a 599 $, limitata a 500 acquirenti. Nessun abbonamento, nessun costo per utente.</p>
       </div>
 
       <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -660,8 +712,8 @@
     <div class="absolute bottom-0 left-0 w-96 h-96 bg-brand-400/20 rounded-full blur-3xl"></div>
 
     <div class="max-w-3xl mx-auto px-6 text-center relative">
-      <h2 class="text-3xl md:text-5xl font-bold leading-tight" data-i18n="index.download.title">I tuoi file meritano di essere ricordati.</h2>
-      <p class="mt-6 text-brand-200 text-lg max-w-xl mx-auto leading-relaxed" data-i18n="index.download.subtitle">Ogni nota che lasci al lavoro ti rende un professionista migliore. Da oggi, lascia che Keeply ricordi per te.</p>
+      <h2 class="text-3xl md:text-5xl font-bold leading-tight" data-i18n="index.download.title">Come si scarica Keeply ed è a pagamento?</h2>
+      <p class="mt-6 text-brand-200 text-lg max-w-xl mx-auto leading-relaxed" data-i18n="index.download.subtitle">Download gratuito, installazione in 30 secondi, subito utilizzabile. Supporta Windows 10/11 e macOS Apple Silicon. Nessuna carta di credito, nessuna scadenza di prova, nessun account da creare. Dopo l'installazione, apri qualsiasi cartella e ogni salvataggio diventa una versione tracciata.</p>
 
       <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-4">
         <!-- Windows column -->
@@ -802,11 +854,11 @@
 
   <!-- Shared components + i18n + consent (spec 023) -->
   <script src="../consent-api.b29ceadb9e.js" defer integrity="sha384-AgMsIGCbo9mV0oP2ebvR5aNCzNPtSkIGXG5v29yY6A+vEktkTMAOZtlK0WiKSEUR" crossorigin="anonymous"></script>
-  <script src="../components.5625835755.js" defer integrity="sha384-3BYVz883vt5c/utG+5WSS9NP7tCqnTA1/xgImZs+lR1sXFQWp5Uqp8PY5oE8dKhB" crossorigin="anonymous"></script>
+  <script src="../components.a5dd3847dd.js" defer integrity="sha384-BdwwJdZy8d/q4lISMhozafEB4OYKFnqFwBsorzvEe5asU6ZWR4QN+keuXZNXxUKy" crossorigin="anonymous"></script>
   <script src="../cookie-banner.8a90f5095a.js" defer integrity="sha384-FkrIUHI4EiKuF7c0lI0I+k/SpAC6SN6GAiU3tqGZBNs1nvMH4R/g+hpuVB/UGk63" crossorigin="anonymous"></script>
   <script src="../ga4-loader.f5ebaf533f.js" defer integrity="sha384-U+G0F+gL0htHsJ1w1r/1uHQ1cyT+IbcPNBAtAN3Gx37qoxqkn9eBS7VsV04cuebt" crossorigin="anonymous"></script>
   <script src="../clarity-loader.60a9a5160f.js" defer integrity="sha384-rdROtDi/pws+RrJtXaeyRY20mP1RJMaVL3DuCPi4UU7tkWHea6vyx01XW/4tbkL/" crossorigin="anonymous"></script>
-  <script src="../i18n-loader.fb14dbde65.js" defer integrity="sha384-9kGbCt37FtQ0TEc95skh/qlh99sZJyQwHQVwQqf6weR4I56RmqzeXR8dlK9I/B2C" crossorigin="anonymous"></script>
+  <script src="../i18n-loader.60a9511617.js" defer integrity="sha384-vrXulbm1vtNZF9G412NN3Ll2B+Am3PVt6yq5HKpmdpEbVA1qzagN3rtzt2hz+hQt" crossorigin="anonymous"></script>
   <script src="../team-notify.73d70ab047.js" defer integrity="sha384-kQUIeDWtAKHyIrSPoncROrE3SSvzakx5e3Ll8GT1Zjgqqr7nAyhVHZ7qyXYC+wVU" crossorigin="anonymous"></script>
 
 

@@ -100,8 +100,8 @@
   <meta name="twitter:image:alt" content="Keeply — 你的文件有故事，Keeply 帮你全部记住。" />
 
   <!-- Tailwind CSS (compiled) -->
-  <link rel="preload" href="../style.css" as="style" integrity="sha384-bmPgIvNlsuWB/BsGRnpkVL6UjBPqcdUaEQWusjQUwBVrVk2sOQx68hhu08QnPLP9" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../style.css" integrity="sha384-bmPgIvNlsuWB/BsGRnpkVL6UjBPqcdUaEQWusjQUwBVrVk2sOQx68hhu08QnPLP9" crossorigin="anonymous" />
+  <link rel="preload" href="../style.css" as="style" integrity="sha384-StVcXtMksUhM8v9Z5e/ptrBnGyMvDgaZCTHXZ85oaFKXvrtpXmx3F2fSXUe3lcuY" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style.css" integrity="sha384-StVcXtMksUhM8v9Z5e/ptrBnGyMvDgaZCTHXZ85oaFKXvrtpXmx3F2fSXUe3lcuY" crossorigin="anonymous" />
 
   <!-- M PLUS Rounded 1c font preload (eliminates CLS from late font discovery) -->
   <link rel="preload" href="../fonts/MPLUSRounded1c-Regular-v2.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
@@ -122,7 +122,10 @@
         "url": "https://keeply.work",
         "logo": "https://keeply.work/logo.svg",
         "sameAs": [
-          "https://github.com/boy1690/keeply-releases"
+          "https://keeply.work",
+          "https://blog.keeply.work",
+          "https://github.com/boy1690/keeply-releases",
+          "https://www.linkedin.com/in/ting-wei-tsao-b57480152/"
         ]
       },
       {
@@ -155,6 +158,54 @@
         "publisher": {
           "@id": "https://keeply.work/#organization"
         }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://keeply.work/#founder",
+        "name": "Tsao Ting Wei",
+        "alternateName": "曹庭維",
+        "jobTitle": "Founder, Keeply",
+        "url": "https://keeply.work/about",
+        "sameAs": [
+          "https://github.com/boy1690",
+          "https://www.linkedin.com/in/ting-wei-tsao-b57480152/"
+        ],
+        "worksFor": {
+          "@id": "https://keeply.work/#organization"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://keeply.work/zh-CN/#install-howto",
+        "name": "怎么开始用 Keeply？需要多久？",
+        "totalTime": "PT30S",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Windows 10/11 or macOS (Apple Silicon)"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "下载安装",
+            "text": "30 秒完成。支持 Windows 10+ 和 macOS。",
+            "url": "https://keeply.work/zh-CN/#download"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "选个文件夹",
+            "text": "你工作的任何文件夹 —— 图纸、合同、设计文件。"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "开始保护",
+            "text": "从此以后，每次变动都被记住。想回退？一键搞定。"
+          }
+        ]
       },
       {
         "@type": "FAQPage",
@@ -323,8 +374,8 @@
   <section id="features" class="py-20 md:py-32 bg-gray-50">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.features.title">每一条备注。每一个版本。<span class="text-brand-600">随时可查。</span></h2>
-        <p class="mt-4 text-gray-500 text-lg max-w-xl mx-auto" data-i18n="index.features.subtitle">不只是备份工具。Keeply 守护你工作中的每一个瞬间。</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.features.title">为什么 Keeply 不只是备份工具？</h2>
+        <p class="mt-4 text-gray-500 text-lg max-w-xl mx-auto" data-i18n="index.features.subtitle">备份工具只记住「现在」的文件；Keeply 记住每一个版本、每一条笔记、每一个你做过的决定。半年后客户问「这个是谁决定的？」打开 Keeply 三秒就找到答案——这是备份工具给不了的能力。</p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
@@ -397,7 +448,8 @@
   <section class="py-20 md:py-32">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.usecases.title">无论你是谁，<span class="text-brand-600">重要信息都值得被记住。</span></h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.usecases.title">谁会用 Keeply？适合什么样的工作？</h2>
+        <p class="mt-4 text-gray-500 text-lg max-w-2xl mx-auto" data-i18n="index.usecases.answer">从项目经理、设计师、法务、学者、工程师到远端团队——只要工作需要长期保留版本、追踪决定脉络、或避免「最终版_v3」文件名混乱，Keeply 都比同步工具更合适。所有文件放本地，由你掌控。</p>
       </div>
 
       <div class="grid md:grid-cols-2 gap-6">
@@ -447,8 +499,8 @@
   <section class="py-20 md:py-32 bg-gray-50">
     <div class="max-w-4xl mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.howto.title">三步开始，<span class="text-brand-600">零门槛。</span></h2>
-        <p class="mt-4 text-gray-500 text-lg" data-i18n="index.howto.subtitle">不需要账号，不需要服务器，不需要技术知识。</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.howto.title">怎么开始用 Keeply？需要多久？</h2>
+        <p class="mt-4 text-gray-500 text-lg" data-i18n="index.howto.subtitle">三步：下载安装（30 秒）、选任何文件夹、开始保护。不需要帐号、不需要服务器、不需要学任何指令。Windows 10+ 与 macOS Apple Silicon 都支持。改完想退回？一键就回去。</p>
       </div>
 
       <div class="space-y-8">
@@ -485,8 +537,8 @@
   <section id="compare-cards" class="py-20 md:py-28 bg-gray-50/50">
     <div class="max-w-5xl mx-auto px-6">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n="index.compare.title">已经在用别的？看 Keeply 跟它差在哪。</h2>
-        <p class="mt-4 text-gray-500 text-lg max-w-2xl mx-auto" data-i18n="index.compare.subtitle">我们为&quot;文件放在本地&quot;的人重写了版本管理——不是云端同步、不是给工程师用。</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n="index.compare.title">Keeply 跟 Dropbox / Google Drive / Git 差在哪？</h2>
+        <p class="mt-4 text-gray-500 text-lg max-w-2xl mx-auto" data-i18n="index.compare.subtitle">Dropbox 与 Google Drive 同步当下文件、版本历史 30 天清空；Git 给工程师用、学习门槛高。Keeply 为本地文件重写版本管理：所有版本永久保留、不云端锁定、不分工程师非工程师，下载即用。</p>
       </div>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -560,8 +612,8 @@
   <section id="pricing" class="py-20 md:py-32">
     <div class="max-w-5xl mx-auto px-6">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.pricing.title">简单定价，<span class="text-brand-600">免费起步。</span></h2>
-        <p class="mt-4 text-gray-500 text-lg max-w-xl mx-auto" data-i18n="index.pricing.subtitle">你的文件。你的 NAS。你的团队保管库。</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.pricing.title">Keeply 多少钱？团队要每人付费吗？</h2>
+        <p class="mt-4 text-gray-500 text-lg max-w-xl mx-auto" data-i18n="index.pricing.subtitle">个人版永久免费，无使用期限；团队版每月 25 美元定价（无人数上限），文件放你家 NAS。Founding Member 599 美元一次付清拿永久授权，限量 500 名。没有订阅、没有人头费。</p>
       </div>
 
       <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -660,8 +712,8 @@
     <div class="absolute bottom-0 left-0 w-96 h-96 bg-brand-400/20 rounded-full blur-3xl"></div>
 
     <div class="max-w-3xl mx-auto px-6 text-center relative">
-      <h2 class="text-3xl md:text-5xl font-bold leading-tight" data-i18n="index.download.title">你的文件，值得被记住。</h2>
-      <p class="mt-6 text-brand-200 text-lg max-w-xl mx-auto leading-relaxed" data-i18n="index.download.subtitle">工作中留下的每一条备注，都让你成为更好的专业人士。从今天起，让 Keeply 帮你记住。</p>
+      <h2 class="text-3xl md:text-5xl font-bold leading-tight" data-i18n="index.download.title">怎么下载 Keeply？要付费吗？</h2>
+      <p class="mt-6 text-brand-200 text-lg max-w-xl mx-auto leading-relaxed" data-i18n="index.download.subtitle">免费下载、30 秒安装、立即可用。Windows 10/11 与 macOS Apple Silicon 都支持。不需要信用卡、不需要试用期、不需要建立帐号。下载完打开任何文件夹，每一次保存自动保留版本。</p>
 
       <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-4">
         <!-- Windows column -->
@@ -802,11 +854,11 @@
 
   <!-- Shared components + i18n + consent (spec 023) -->
   <script src="../consent-api.b29ceadb9e.js" defer integrity="sha384-AgMsIGCbo9mV0oP2ebvR5aNCzNPtSkIGXG5v29yY6A+vEktkTMAOZtlK0WiKSEUR" crossorigin="anonymous"></script>
-  <script src="../components.5625835755.js" defer integrity="sha384-3BYVz883vt5c/utG+5WSS9NP7tCqnTA1/xgImZs+lR1sXFQWp5Uqp8PY5oE8dKhB" crossorigin="anonymous"></script>
+  <script src="../components.a5dd3847dd.js" defer integrity="sha384-BdwwJdZy8d/q4lISMhozafEB4OYKFnqFwBsorzvEe5asU6ZWR4QN+keuXZNXxUKy" crossorigin="anonymous"></script>
   <script src="../cookie-banner.8a90f5095a.js" defer integrity="sha384-FkrIUHI4EiKuF7c0lI0I+k/SpAC6SN6GAiU3tqGZBNs1nvMH4R/g+hpuVB/UGk63" crossorigin="anonymous"></script>
   <script src="../ga4-loader.f5ebaf533f.js" defer integrity="sha384-U+G0F+gL0htHsJ1w1r/1uHQ1cyT+IbcPNBAtAN3Gx37qoxqkn9eBS7VsV04cuebt" crossorigin="anonymous"></script>
   <script src="../clarity-loader.60a9a5160f.js" defer integrity="sha384-rdROtDi/pws+RrJtXaeyRY20mP1RJMaVL3DuCPi4UU7tkWHea6vyx01XW/4tbkL/" crossorigin="anonymous"></script>
-  <script src="../i18n-loader.fb14dbde65.js" defer integrity="sha384-9kGbCt37FtQ0TEc95skh/qlh99sZJyQwHQVwQqf6weR4I56RmqzeXR8dlK9I/B2C" crossorigin="anonymous"></script>
+  <script src="../i18n-loader.60a9511617.js" defer integrity="sha384-vrXulbm1vtNZF9G412NN3Ll2B+Am3PVt6yq5HKpmdpEbVA1qzagN3rtzt2hz+hQt" crossorigin="anonymous"></script>
   <script src="../team-notify.73d70ab047.js" defer integrity="sha384-kQUIeDWtAKHyIrSPoncROrE3SSvzakx5e3Ll8GT1Zjgqqr7nAyhVHZ7qyXYC+wVU" crossorigin="anonymous"></script>
 
 

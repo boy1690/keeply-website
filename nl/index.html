@@ -100,8 +100,8 @@
   <meta name="twitter:image:alt" content="Keeply — Je bestanden hebben verhalen. Keeply onthoudt ze allemaal." />
 
   <!-- Tailwind CSS (compiled) -->
-  <link rel="preload" href="../style.css" as="style" integrity="sha384-bmPgIvNlsuWB/BsGRnpkVL6UjBPqcdUaEQWusjQUwBVrVk2sOQx68hhu08QnPLP9" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../style.css" integrity="sha384-bmPgIvNlsuWB/BsGRnpkVL6UjBPqcdUaEQWusjQUwBVrVk2sOQx68hhu08QnPLP9" crossorigin="anonymous" />
+  <link rel="preload" href="../style.css" as="style" integrity="sha384-StVcXtMksUhM8v9Z5e/ptrBnGyMvDgaZCTHXZ85oaFKXvrtpXmx3F2fSXUe3lcuY" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style.css" integrity="sha384-StVcXtMksUhM8v9Z5e/ptrBnGyMvDgaZCTHXZ85oaFKXvrtpXmx3F2fSXUe3lcuY" crossorigin="anonymous" />
 
   <!-- M PLUS Rounded 1c font preload (eliminates CLS from late font discovery) -->
   <link rel="preload" href="../fonts/MPLUSRounded1c-Regular-v2.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
@@ -122,7 +122,10 @@
         "url": "https://keeply.work",
         "logo": "https://keeply.work/logo.svg",
         "sameAs": [
-          "https://github.com/boy1690/keeply-releases"
+          "https://keeply.work",
+          "https://blog.keeply.work",
+          "https://github.com/boy1690/keeply-releases",
+          "https://www.linkedin.com/in/ting-wei-tsao-b57480152/"
         ]
       },
       {
@@ -155,6 +158,54 @@
         "publisher": {
           "@id": "https://keeply.work/#organization"
         }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://keeply.work/#founder",
+        "name": "Tsao Ting Wei",
+        "alternateName": "曹庭維",
+        "jobTitle": "Founder, Keeply",
+        "url": "https://keeply.work/about",
+        "sameAs": [
+          "https://github.com/boy1690",
+          "https://www.linkedin.com/in/ting-wei-tsao-b57480152/"
+        ],
+        "worksFor": {
+          "@id": "https://keeply.work/#organization"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://keeply.work/nl/#install-howto",
+        "name": "Hoe begin ik met Keeply, en hoe lang duurt het?",
+        "totalTime": "PT30S",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Windows 10/11 or macOS (Apple Silicon)"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Download & Installeer",
+            "text": "Klaar in 30 seconden. Ondersteunt Windows 10+ en macOS.",
+            "url": "https://keeply.work/nl/#download"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Kies een map",
+            "text": "Elke map waarin je werkt — ontwerpen, contracten, designbestanden."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Begin met beschermen",
+            "text": "Vanaf nu wordt elke wijziging onthouden. Wil je terug? Eén klik."
+          }
+        ]
       },
       {
         "@type": "FAQPage",
@@ -323,8 +374,8 @@
   <section id="features" class="py-20 md:py-32 bg-gray-50">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.features.title">Elke notitie. Elke versie. <span class="text-brand-600">Altijd vindbaar.</span></h2>
-        <p class="mt-4 text-gray-500 text-lg max-w-xl mx-auto" data-i18n="index.features.subtitle">Meer dan een back-uptool. Keeply beschermt elk moment van je werk.</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.features.title">Waarom is Keeply meer dan een back-uptool?</h2>
+        <p class="mt-4 text-gray-500 text-lg max-w-xl mx-auto" data-i18n="index.features.subtitle">Back-uptools onthouden alleen het &quot;huidige&quot; bestand; Keeply onthoudt elke versie, elke notitie, elke beslissing die je hebt genomen. Zes maanden later, als een klant vraagt &quot;wie heeft dit besloten?&quot;, open je Keeply en vind je het antwoord in seconden — iets wat back-uptools je niet kunnen geven.</p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
@@ -397,7 +448,8 @@
   <section class="py-20 md:py-32">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.usecases.title">Wie je ook bent, <span class="text-brand-600">kritieke informatie moet onthouden worden.</span></h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.usecases.title">Wie gebruikt Keeply, en voor welke taken is het gemaakt?</h2>
+        <p class="mt-4 text-gray-500 text-lg max-w-2xl mx-auto" data-i18n="index.usecases.answer">Projectmanagers, ontwerpers, juristen, academici, ingenieurs en externe teams — iedereen wiens werk vraagt om langdurige versiegeschiedenis, beslissingscontext of ontsnapping aan &quot;final_v3&quot;-bestandsnaamchaos. Bestanden blijven op je schijf, onder jouw controle, nooit op een leverancier-server.</p>
       </div>
 
       <div class="grid md:grid-cols-2 gap-6">
@@ -447,8 +499,8 @@
   <section class="py-20 md:py-32 bg-gray-50">
     <div class="max-w-4xl mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.howto.title">Drie stappen om te beginnen, <span class="text-brand-600">nul drempels.</span></h2>
-        <p class="mt-4 text-gray-500 text-lg" data-i18n="index.howto.subtitle">Geen account nodig, geen server nodig, geen technische kennis nodig.</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.howto.title">Hoe begin ik met Keeply, en hoe lang duurt het?</h2>
+        <p class="mt-4 text-gray-500 text-lg" data-i18n="index.howto.subtitle">Drie stappen: downloaden en installeren (30 seconden), kies een map, begin met beschermen. Geen account, geen server, geen commando's te leren. Werkt op Windows 10+ en macOS Apple Silicon. Een wijziging terugdraaien? Eén klik.</p>
       </div>
 
       <div class="space-y-8">
@@ -485,8 +537,8 @@
   <section id="compare-cards" class="py-20 md:py-28 bg-gray-50/50">
     <div class="max-w-5xl mx-auto px-6">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n="index.compare.title">Gebruik je al iets anders? Zo verhoudt Keeply zich.</h2>
-        <p class="mt-4 text-gray-500 text-lg max-w-2xl mx-auto" data-i18n="index.compare.subtitle">We hebben versiebeheer opnieuw gebouwd voor mensen die lokaal opslaan — niet voor cloud sync, niet voor engineers.</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n="index.compare.title">Hoe verschilt Keeply van Dropbox, Google Drive of Git?</h2>
+        <p class="mt-4 text-gray-500 text-lg max-w-2xl mx-auto" data-i18n="index.compare.subtitle">Dropbox en Google Drive synchroniseren het huidige bestand en wissen de versiegeschiedenis na 30 dagen; Git is gemaakt voor ingenieurs met een steile leercurve. Keeply herschrijft versiebeheer voor lokale bestanden: elke versie blijft voor altijd, geen cloudvergrendeling, geen technische drempel, installeren en gebruiken.</p>
       </div>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -560,8 +612,8 @@
   <section id="pricing" class="py-20 md:py-32">
     <div class="max-w-5xl mx-auto px-6">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.pricing.title">Eenvoudige prijzen, <span class="text-brand-600">begin gratis.</span></h2>
-        <p class="mt-4 text-gray-500 text-lg max-w-xl mx-auto" data-i18n="index.pricing.subtitle">Jouw bestanden. Jouw NAS. De kluis van jouw team.</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.pricing.title">Wat kost Keeply, en betalen teams per gebruiker?</h2>
+        <p class="mt-4 text-gray-500 text-lg max-w-xl mx-auto" data-i18n="index.pricing.subtitle">De individuele versie is voor altijd gratis zonder vervaldatum; het Team-abonnement is een vast bedrag van 25 $/maand (geen gebruikerslimiet) met bestanden op je eigen NAS. Founding Member is een eenmalige levenslange licentie van 599 $, beperkt tot 500 kopers. Geen abonnementen, geen kosten per seat.</p>
       </div>
 
       <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -660,8 +712,8 @@
     <div class="absolute bottom-0 left-0 w-96 h-96 bg-brand-400/20 rounded-full blur-3xl"></div>
 
     <div class="max-w-3xl mx-auto px-6 text-center relative">
-      <h2 class="text-3xl md:text-5xl font-bold leading-tight" data-i18n="index.download.title">Je bestanden verdienen het om onthouden te worden.</h2>
-      <p class="mt-6 text-brand-200 text-lg max-w-xl mx-auto leading-relaxed" data-i18n="index.download.subtitle">Elke notitie die je op het werk achterlaat maakt je een betere professional. Laat Keeply vanaf vandaag voor je onthouden.</p>
+      <h2 class="text-3xl md:text-5xl font-bold leading-tight" data-i18n="index.download.title">Hoe download ik Keeply, en kost het geld?</h2>
+      <p class="mt-6 text-brand-200 text-lg max-w-xl mx-auto leading-relaxed" data-i18n="index.download.subtitle">Gratis download, installatie van 30 seconden, direct bruikbaar. Ondersteunt Windows 10/11 en macOS Apple Silicon. Geen creditcard, geen proefverloop, geen accountaanmaak. Na installatie open je een map — elke opslag wordt automatisch als versie bijgehouden.</p>
 
       <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-4">
         <!-- Windows column -->
@@ -802,11 +854,11 @@
 
   <!-- Shared components + i18n + consent (spec 023) -->
   <script src="../consent-api.b29ceadb9e.js" defer integrity="sha384-AgMsIGCbo9mV0oP2ebvR5aNCzNPtSkIGXG5v29yY6A+vEktkTMAOZtlK0WiKSEUR" crossorigin="anonymous"></script>
-  <script src="../components.5625835755.js" defer integrity="sha384-3BYVz883vt5c/utG+5WSS9NP7tCqnTA1/xgImZs+lR1sXFQWp5Uqp8PY5oE8dKhB" crossorigin="anonymous"></script>
+  <script src="../components.a5dd3847dd.js" defer integrity="sha384-BdwwJdZy8d/q4lISMhozafEB4OYKFnqFwBsorzvEe5asU6ZWR4QN+keuXZNXxUKy" crossorigin="anonymous"></script>
   <script src="../cookie-banner.8a90f5095a.js" defer integrity="sha384-FkrIUHI4EiKuF7c0lI0I+k/SpAC6SN6GAiU3tqGZBNs1nvMH4R/g+hpuVB/UGk63" crossorigin="anonymous"></script>
   <script src="../ga4-loader.f5ebaf533f.js" defer integrity="sha384-U+G0F+gL0htHsJ1w1r/1uHQ1cyT+IbcPNBAtAN3Gx37qoxqkn9eBS7VsV04cuebt" crossorigin="anonymous"></script>
   <script src="../clarity-loader.60a9a5160f.js" defer integrity="sha384-rdROtDi/pws+RrJtXaeyRY20mP1RJMaVL3DuCPi4UU7tkWHea6vyx01XW/4tbkL/" crossorigin="anonymous"></script>
-  <script src="../i18n-loader.fb14dbde65.js" defer integrity="sha384-9kGbCt37FtQ0TEc95skh/qlh99sZJyQwHQVwQqf6weR4I56RmqzeXR8dlK9I/B2C" crossorigin="anonymous"></script>
+  <script src="../i18n-loader.60a9511617.js" defer integrity="sha384-vrXulbm1vtNZF9G412NN3Ll2B+Am3PVt6yq5HKpmdpEbVA1qzagN3rtzt2hz+hQt" crossorigin="anonymous"></script>
   <script src="../team-notify.73d70ab047.js" defer integrity="sha384-kQUIeDWtAKHyIrSPoncROrE3SSvzakx5e3Ll8GT1Zjgqqr7nAyhVHZ7qyXYC+wVU" crossorigin="anonymous"></script>
 
 

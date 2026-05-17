@@ -47,7 +47,28 @@ const ORG = {
   name: 'Keeply',
   url: BASE_URL,
   logo: `${BASE_URL}/logo.svg`,
-  sameAs: ['https://github.com/boy1690/keeply-releases']
+  sameAs: [
+    'https://keeply.work',
+    'https://blog.keeply.work',
+    'https://github.com/boy1690/keeply-releases',
+    'https://www.linkedin.com/in/ting-wei-tsao-b57480152/'
+  ]
+};
+
+// Founder Person node (E-E-A-T) — referenced from index @graph + cross-linked via
+// visible footer byline on every locale page.
+const FOUNDER = {
+  '@type': 'Person',
+  '@id': `${BASE_URL}/#founder`,
+  name: 'Tsao Ting Wei',
+  alternateName: '曹庭維',
+  jobTitle: 'Founder, Keeply',
+  url: `${BASE_URL}/about`,
+  sameAs: [
+    'https://github.com/boy1690',
+    'https://www.linkedin.com/in/ting-wei-tsao-b57480152/'
+  ],
+  worksFor: { '@id': `${BASE_URL}/#organization` }
 };
 
 const SOFTWARE_CONST = {
@@ -162,6 +183,39 @@ function escapeJsonForScript(obj) {
 
 // ─── Schema Builders ─────────────────────────────────────────────────────────
 
+// HowTo node — mirrors the on-page "三步開始" section (index.howto.step{1..3}.*).
+// Step urls anchor to the visible section (#how-it-works); only step 1 carries a
+// concrete page anchor (#download) because the install / first-save flows happen
+// inside the desktop app, not on the marketing site.
+const HOWTO_STEP_COUNT = 3;
+
+function buildHowToNode({ canonicalUrl, locale, translations }) {
+  const steps = [];
+  for (let i = 1; i <= HOWTO_STEP_COUNT; i++) {
+    const name = getTranslation(translations, locale, `index.howto.step${i}.title`) ||
+                 getTranslation(translations, 'en', `index.howto.step${i}.title`);
+    const text = getTranslation(translations, locale, `index.howto.step${i}.desc`) ||
+                 getTranslation(translations, 'en', `index.howto.step${i}.desc`);
+    if (!name || !text) continue;
+    const step = { '@type': 'HowToStep', position: i, name, text };
+    if (i === 1) step.url = `${canonicalUrl}#download`;
+    steps.push(step);
+  }
+  const howtoName = getTranslation(translations, locale, 'index.howto.title') ||
+                    getTranslation(translations, 'en', 'index.howto.title') ||
+                    'Install Keeply in 30 seconds';
+  // index.howto.title contains HTML (<span>) so strip tags for schema name.
+  const plainName = String(howtoName).replace(/<[^>]+>/g, '').trim();
+  return {
+    '@type': 'HowTo',
+    '@id': `${canonicalUrl}#install-howto`,
+    name: plainName,
+    totalTime: 'PT30S',
+    supply: [{ '@type': 'HowToSupply', name: 'Windows 10/11 or macOS (Apple Silicon)' }],
+    step: steps
+  };
+}
+
 // Spec 029: homepage FAQ — 7 Q&A keys read from i18n, with English fallback
 // when a locale lacks native translations (build.js applies the same fallback
 // in rendered HTML, so JSON-LD matches on-page content).
@@ -222,6 +276,8 @@ function buildIndexGraph({ canonicalUrl, htmlLang, locale, translations, release
       },
       publisher: { '@id': `${BASE_URL}/#organization` }
     },
+    FOUNDER,
+    buildHowToNode({ canonicalUrl, locale, translations }),
     buildFaqPageNode({ canonicalUrl, htmlLang, locale, translations })
   ];
 }

@@ -100,8 +100,8 @@
   <meta name="twitter:image:alt" content="Keeply — あなたのファイルには物語がある。Keeplyがすべて覚えています。" />
 
   <!-- Tailwind CSS (compiled) -->
-  <link rel="preload" href="../style.css" as="style" integrity="sha384-bmPgIvNlsuWB/BsGRnpkVL6UjBPqcdUaEQWusjQUwBVrVk2sOQx68hhu08QnPLP9" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../style.css" integrity="sha384-bmPgIvNlsuWB/BsGRnpkVL6UjBPqcdUaEQWusjQUwBVrVk2sOQx68hhu08QnPLP9" crossorigin="anonymous" />
+  <link rel="preload" href="../style.css" as="style" integrity="sha384-StVcXtMksUhM8v9Z5e/ptrBnGyMvDgaZCTHXZ85oaFKXvrtpXmx3F2fSXUe3lcuY" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style.css" integrity="sha384-StVcXtMksUhM8v9Z5e/ptrBnGyMvDgaZCTHXZ85oaFKXvrtpXmx3F2fSXUe3lcuY" crossorigin="anonymous" />
 
   <!-- M PLUS Rounded 1c font preload (eliminates CLS from late font discovery) -->
   <link rel="preload" href="../fonts/MPLUSRounded1c-Regular-v2.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
@@ -122,7 +122,10 @@
         "url": "https://keeply.work",
         "logo": "https://keeply.work/logo.svg",
         "sameAs": [
-          "https://github.com/boy1690/keeply-releases"
+          "https://keeply.work",
+          "https://blog.keeply.work",
+          "https://github.com/boy1690/keeply-releases",
+          "https://www.linkedin.com/in/ting-wei-tsao-b57480152/"
         ]
       },
       {
@@ -155,6 +158,54 @@
         "publisher": {
           "@id": "https://keeply.work/#organization"
         }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://keeply.work/#founder",
+        "name": "Tsao Ting Wei",
+        "alternateName": "曹庭維",
+        "jobTitle": "Founder, Keeply",
+        "url": "https://keeply.work/about",
+        "sameAs": [
+          "https://github.com/boy1690",
+          "https://www.linkedin.com/in/ting-wei-tsao-b57480152/"
+        ],
+        "worksFor": {
+          "@id": "https://keeply.work/#organization"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://keeply.work/ja/#install-howto",
+        "name": "Keeply の始め方は？何分かかる？",
+        "totalTime": "PT30S",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Windows 10/11 or macOS (Apple Silicon)"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "ダウンロード＆インストール",
+            "text": "30秒で完了。Windows 10以降とmacOSに対応。",
+            "url": "https://keeply.work/ja/#download"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "フォルダを選ぶ",
+            "text": "作業中のフォルダなら何でも — 設計図、契約書、デザインファイル。"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "保護を開始",
+            "text": "これからは、すべての変更が記録されます。戻りたい？ワンクリック。"
+          }
+        ]
       },
       {
         "@type": "FAQPage",
@@ -323,8 +374,8 @@
   <section id="features" class="py-20 md:py-32 bg-gray-50">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.features.title">すべてのメモ。すべてのバージョン。<span class="text-brand-600">いつでも見つかる。</span></h2>
-        <p class="mt-4 text-gray-500 text-lg max-w-xl mx-auto" data-i18n="index.features.subtitle">バックアップ以上のツール。Keeplyはあなたの仕事のすべての瞬間を守ります。</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.features.title">Keeply はなぜ単なるバックアップツールではないのか？</h2>
+        <p class="mt-4 text-gray-500 text-lg max-w-xl mx-auto" data-i18n="index.features.subtitle">バックアップツールが記憶するのは「現在」のファイルだけ。Keeply は版ごと、メモごと、決定ごとに記憶します。半年後にクライアントが「これは誰が決めたの？」と聞いてきても、Keeply を開けば3秒で答えが見つかります。</p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
@@ -397,7 +448,8 @@
   <section class="py-20 md:py-32">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.usecases.title">あなたが誰であっても、<span class="text-brand-600">大切な情報は覚えておくべきです。</span></h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.usecases.title">Keeply は誰のため？どんな仕事に向いているのか？</h2>
+        <p class="mt-4 text-gray-500 text-lg max-w-2xl mx-auto" data-i18n="index.usecases.answer">プロジェクトマネージャー、デザイナー、法務、研究者、エンジニア、リモートチームまで——長期的な版管理、決定の経緯追跡、「最終版_v3」のような名前の混乱を避けたい人すべてに向いています。ファイルは常にローカルにあり、あなたが管理します。</p>
       </div>
 
       <div class="grid md:grid-cols-2 gap-6">
@@ -447,8 +499,8 @@
   <section class="py-20 md:py-32 bg-gray-50">
     <div class="max-w-4xl mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.howto.title">3ステップで開始、<span class="text-brand-600">障壁ゼロ。</span></h2>
-        <p class="mt-4 text-gray-500 text-lg" data-i18n="index.howto.subtitle">アカウント不要、サーバー不要、技術知識不要。</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.howto.title">Keeply の始め方は？何分かかる？</h2>
+        <p class="mt-4 text-gray-500 text-lg" data-i18n="index.howto.subtitle">3ステップ：ダウンロードしてインストール（30秒）、フォルダを選ぶ、保護開始。アカウントもサーバーもコマンドも不要。Windows 10+ と macOS Apple Silicon に対応。元に戻したい？ワンクリックで戻ります。</p>
       </div>
 
       <div class="space-y-8">
@@ -485,8 +537,8 @@
   <section id="compare-cards" class="py-20 md:py-28 bg-gray-50/50">
     <div class="max-w-5xl mx-auto px-6">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n="index.compare.title">他のツールを使っていますか？Keeply との比較をご覧ください。</h2>
-        <p class="mt-4 text-gray-500 text-lg max-w-2xl mx-auto" data-i18n="index.compare.subtitle">ローカルにファイルを保存する人のためにバージョン管理を作り直しました。クラウド同期ではなく、エンジニア向けでもありません。</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n="index.compare.title">Keeply は Dropbox / Google Drive / Git と何が違う？</h2>
+        <p class="mt-4 text-gray-500 text-lg max-w-2xl mx-auto" data-i18n="index.compare.subtitle">Dropbox と Google Drive は現在のファイルを同期し、版履歴は30日で消えます。Git はエンジニア向けで学習コストが高い。Keeply はローカルファイル向けに版管理を再設計：版は永久保存、クラウドロックなし、エンジニア限定でもなく、インストール即使用可能。</p>
       </div>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -560,8 +612,8 @@
   <section id="pricing" class="py-20 md:py-32">
     <div class="max-w-5xl mx-auto px-6">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.pricing.title">シンプルな価格、<span class="text-brand-600">まず無料から。</span></h2>
-        <p class="mt-4 text-gray-500 text-lg max-w-xl mx-auto" data-i18n="index.pricing.subtitle">あなたのファイル。あなたの NAS。あなたのチームのボールト。</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" data-i18n-html="index.pricing.title">Keeply の料金は？チームは1人ずつ払うの？</h2>
+        <p class="mt-4 text-gray-500 text-lg max-w-xl mx-auto" data-i18n="index.pricing.subtitle">個人版は永久無料、有効期限なし。チーム版は月額25ドル定額（人数制限なし）でファイルは自社の NAS に保存。Founding Member は一回払いの永久ライセンスで599ドル、500名限定。サブスクなし、シート課金なし。</p>
       </div>
 
       <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -660,8 +712,8 @@
     <div class="absolute bottom-0 left-0 w-96 h-96 bg-brand-400/20 rounded-full blur-3xl"></div>
 
     <div class="max-w-3xl mx-auto px-6 text-center relative">
-      <h2 class="text-3xl md:text-5xl font-bold leading-tight" data-i18n="index.download.title">あなたのファイルは、覚えてもらう価値がある。</h2>
-      <p class="mt-6 text-brand-200 text-lg max-w-xl mx-auto leading-relaxed" data-i18n="index.download.subtitle">仕事で残すメモの一つ一つが、あなたをより良いプロフェッショナルにします。今日からKeeplyに覚えてもらいましょう。</p>
+      <h2 class="text-3xl md:text-5xl font-bold leading-tight" data-i18n="index.download.title">Keeply はどうやってダウンロードする？有料？</h2>
+      <p class="mt-6 text-brand-200 text-lg max-w-xl mx-auto leading-relaxed" data-i18n="index.download.subtitle">無料ダウンロード、30秒でインストール、すぐ使えます。Windows 10/11 と macOS Apple Silicon に対応。クレジットカード不要、トライアル期限なし、アカウント作成なし。インストール後、任意のフォルダを開けば保存ごとに自動で版が残ります。</p>
 
       <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-4">
         <!-- Windows column -->
@@ -802,11 +854,11 @@
 
   <!-- Shared components + i18n + consent (spec 023) -->
   <script src="../consent-api.b29ceadb9e.js" defer integrity="sha384-AgMsIGCbo9mV0oP2ebvR5aNCzNPtSkIGXG5v29yY6A+vEktkTMAOZtlK0WiKSEUR" crossorigin="anonymous"></script>
-  <script src="../components.5625835755.js" defer integrity="sha384-3BYVz883vt5c/utG+5WSS9NP7tCqnTA1/xgImZs+lR1sXFQWp5Uqp8PY5oE8dKhB" crossorigin="anonymous"></script>
+  <script src="../components.a5dd3847dd.js" defer integrity="sha384-BdwwJdZy8d/q4lISMhozafEB4OYKFnqFwBsorzvEe5asU6ZWR4QN+keuXZNXxUKy" crossorigin="anonymous"></script>
   <script src="../cookie-banner.8a90f5095a.js" defer integrity="sha384-FkrIUHI4EiKuF7c0lI0I+k/SpAC6SN6GAiU3tqGZBNs1nvMH4R/g+hpuVB/UGk63" crossorigin="anonymous"></script>
   <script src="../ga4-loader.f5ebaf533f.js" defer integrity="sha384-U+G0F+gL0htHsJ1w1r/1uHQ1cyT+IbcPNBAtAN3Gx37qoxqkn9eBS7VsV04cuebt" crossorigin="anonymous"></script>
   <script src="../clarity-loader.60a9a5160f.js" defer integrity="sha384-rdROtDi/pws+RrJtXaeyRY20mP1RJMaVL3DuCPi4UU7tkWHea6vyx01XW/4tbkL/" crossorigin="anonymous"></script>
-  <script src="../i18n-loader.fb14dbde65.js" defer integrity="sha384-9kGbCt37FtQ0TEc95skh/qlh99sZJyQwHQVwQqf6weR4I56RmqzeXR8dlK9I/B2C" crossorigin="anonymous"></script>
+  <script src="../i18n-loader.60a9511617.js" defer integrity="sha384-vrXulbm1vtNZF9G412NN3Ll2B+Am3PVt6yq5HKpmdpEbVA1qzagN3rtzt2hz+hQt" crossorigin="anonymous"></script>
   <script src="../team-notify.73d70ab047.js" defer integrity="sha384-kQUIeDWtAKHyIrSPoncROrE3SSvzakx5e3Ll8GT1Zjgqqr7nAyhVHZ7qyXYC+wVU" crossorigin="anonymous"></script>
 
 
