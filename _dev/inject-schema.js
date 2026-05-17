@@ -326,7 +326,11 @@ function insertJsonLd(html, jsonLdBlock) {
     .map(line => (line.length ? `  ${line}` : line))
     .join('\n');
   const injection = `  <!-- Schema.org JSON-LD (injected by _dev/inject-schema.js) -->\n${indented}\n`;
-  return html.replace(/(\s*)<\/head>/i, `${injection}$1</head>`);
+  // Function-form replace so `$N` sequences inside the injection (e.g. "$120"
+  // in FAQ pricing copy) are not interpreted as capture-group backreferences.
+  // Prior bug: string-form replacement made V8 read "$120" as $1 + "20", and
+  // $1 was the captured whitespace before </head>, so prices became "\n\n20".
+  return html.replace(/(\s*)<\/head>/i, (_match, leading) => `${injection}${leading}</head>`);
 }
 
 function processFile(filePath, ctx) {
